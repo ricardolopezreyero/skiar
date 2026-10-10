@@ -32,18 +32,20 @@
   const num = (x) => (typeof x === "number" && isFinite(x) ? x : null);
 
   // ---------- estado (se guarda en la URL para compartir) ----------
-  const state = { v: "B", r: null, l: null, f: "cocinando" };
+  const state = { v: "B", r: null, l: null, f: "cocinando", tab: "decidir" };
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     if (p.get("v")) state.v = p.get("v");
     if (p.get("r")) state.r = p.get("r");
     if (p.get("l") != null) state.l = Number(p.get("l"));
     if (p.get("f")) state.f = p.get("f");
+    if (p.get("tab")) state.tab = p.get("tab");
     if (p.get("lista")) Nube.setId(p.get("lista"));
   }
   function writeHash() {
     const p = new URLSearchParams({ v: state.v, r: state.r || "", l: state.l ?? "", f: state.f });
     if (Nube.id()) p.set("lista", Nube.id());
+    if (state.tab !== "decidir") p.set("tab", state.tab);
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -578,6 +580,7 @@
       error: ["warn", "⚠️ No se pudo conectar; se guardó en este dispositivo y se reintentará."],
     }[st];
     const hechos = list.filter((t) => done[(t.de || "g") + ":" + (t.texto || t).slice(0, 60)]).length;
+    const tc = $("#tab-count"); if (tc) tc.textContent = `${hechos}/${list.length}`;
     $("#todo").replaceChildren(
       el("div", { class: "sync " + aviso[0] }, el("span", {}, aviso[1], " ", el("strong", {}, `${hechos}/${list.length} listos`)),
         Nube.id() ? el("button", { type: "button", onclick: async () => { try { await navigator.clipboard.writeText(liga); alert("Liga copiada. Mándasela a Ana y guárdenla en favoritos."); } catch (e) { prompt("Copia esta liga para Ana:", liga); } } }, "📲 Copiar liga para Ana") : null),
@@ -598,8 +601,23 @@
     $("#links").replaceChildren(...ls);
   }
 
+  function renderTabs() {
+    const check = state.tab === "checklist";
+    $("#vista-decidir").hidden = check;
+    $("#vista-checklist").hidden = !check;
+    $("#fab").hidden = check;
+    document.querySelector(".hero .steps").hidden = check;
+    document.querySelectorAll(".tab").forEach((b) => { b.classList.toggle("on", b.dataset.tab === state.tab); b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)); });
+  }
+  document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
+    state.tab = b.dataset.tab; renderTabs(); writeHash();
+    if (state.tab === "decidir" && mapa) setTimeout(() => mapa.invalidateSize(), 50);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }));
+
   function render() {
     if (state.r && !D.resorts.some((r) => r.slug === state.r)) state.r = null;
+    renderTabs();
     renderVentanas();
     renderNieve();
     renderResorts();
