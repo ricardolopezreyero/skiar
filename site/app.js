@@ -8,9 +8,9 @@
   const TOPE = 8000;
 
   const VENTANAS = [
-    { id: "A", titulo: "Dom 10 – Sáb 16 enero", nota: "Lo más barato y con menos gente · el más frío" },
-    { id: "B", titulo: "Dom 24 – Sáb 30 enero", nota: "Mejor equilibrio entre precio, nieve y poca gente" },
-    { id: "C", titulo: "Dom 28 feb – Sáb 6 marzo", nota: "La mejor nieve y días menos fríos · precio medio" },
+    { id: "A", corto: "10–16 ene", titulo: "Dom 10 – Sáb 16 enero", nota: "Lo más barato y con menos gente · el más frío" },
+    { id: "B", corto: "24–30 ene", titulo: "Dom 24 – Sáb 30 enero", nota: "Mejor equilibrio entre precio, nieve y poca gente" },
+    { id: "C", corto: "28 feb–6 mar", titulo: "Dom 28 feb – Sáb 6 marzo", nota: "La mejor nieve y días menos fríos · precio medio" },
   ];
 
   const $ = (sel) => document.querySelector(sel);
@@ -224,23 +224,77 @@
         faltan ? ` Ojo: ${faltan} concepto(s) sin dato.` : ""));
   }
 
-  function renderMatrix() {
-    const head = el("tr", {}, el("th", {}, "Destino / hospedaje"), ...VENTANAS.map((w) => el("th", {}, w.titulo)));
+  // ---------- cuadro comparativo ----------
+  const cmp = { sort: "total", dir: 1, soloSki: false, soloPres: false, soloGratis: false };
+  const corto = (x) => (x || "").split(/[;(]| — /)[0].trim();
+
+  function filasComparativo() {
     const rows = [];
-    D.resorts.forEach((r) => {
-      rows.push(el("tr", { class: "grp" }, el("td", { colspan: 4 }, r.nombre)));
-      (r.alojamientos || []).forEach((l, i) => {
-        rows.push(el("tr", {}, el("td", {}, l.nombre, l.ski_in_out === "verdadero" ? " ⛷" : ""),
-          ...VENTANAS.map((w) => {
-            const t = tripTotal(r, i, w.id, state.f);
-            const sel = state.r === r.slug && state.l === i && state.v === w.id;
-            const cls = t.sinHospedaje ? "" : level(t.total);
-            return el("td", { class: "n " + cls, style: sel ? "outline:2px solid var(--accent)" : null, title: t.sinHospedaje ? "Sin precio de hospedaje para estas fechas" : t.faltan ? t.faltan + " concepto(s) sin dato" : "Elegir esta combinación", onclick: () => { state.r = r.slug; state.l = i; state.v = w.id; render(); $("#combo").scrollIntoView(); } }, t.sinHospedaje ? "sin precio" : money(t.total) + (t.faltan ? "*" : ""));
-          })));
+    D.resorts.forEach((r) => (r.alojamientos || []).forEach((l, i) => {
+      const t = tripTotal(r, i, state.v, state.f);
+      const lp = lodgingPrice(l, state.v);
+      rows.push({
+        r, l, i, t,
+        porFecha: VENTANAS.map((w) => tripTotal(r, i, w.id, state.f)),
+        hosp: lp.total, conf: lp.conf,
+        ski: l.ski_in_out === "verdadero" ? 2 : l.ski_in_out === "caminando" ? 1 : 0,
+        gratis: l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0,
+        alt: r.altitud_base_m || 0,
+        cb: r.costo_beneficio || 0,
       });
-    });
-    $("#matrix").replaceChildren(el("thead", {}, head), el("tbody", {}, rows));
+    }));
+    return rows;
   }
+
+  function renderComparativo() {
+    $("#cmp-ventana").replaceChildren(...VENTANAS.map((w) => el("button", { type: "button", class: state.v === w.id ? "on" : "", onclick: () => { state.v = w.id; render(); } }, "📅 " + w.corto)));
+    const f = [["soloSki", "⛷️ Solo ski-in/ski-out"], ["soloGratis", "👧 Niña esquía gratis"], ["soloPres", "💰 Hasta $8,000"]];
+    $("#cmp-filtros").replaceChildren(...f.map(([k, txt]) => el("button", { type: "button", class: "filter" + (cmp[k] ? " on" : ""), "aria-pressed": String(cmp[k]), onclick: () => { cmp[k] = !cmp[k]; renderComparativo(); } }, txt)));
+
+    let rows = filasComparativo();
+    if (cmp.soloSki) rows = rows.filter((x) => x.ski === 2);
+    if (cmp.soloGratis) rows = rows.filter((x) => x.gratis);
+    if (cmp.soloPres) rows = rows.filter((x) => !x.t.sinHospedaje && x.t.total <= TOPE);
+    const key = { total: (x) => (x.t.sinHospedaje ? 1e9 : x.t.total), hosp: (x) => x.hosp ?? 1e9, ski: (x) => -x.ski, gratis: (x) => (x.gratis ? 0 : 1), alt: (x) => x.alt, cb: (x) => -x.cb, nombre: (x) => x.r.nombre + x.l.nombre }[cmp.sort];
+    rows.sort((a, b) => { const ka = key(a), kb = key(b); return (ka > kb ? 1 : ka < kb ? -1 : 0) * cmp.dir; });
+
+    const conPrecio = rows.filter((x) => !x.t.sinHospedaje);
+    const minTotal = Math.min(...conPrecio.map((x) => x.t.total));
+    const minHosp = Math.min(...rows.map((x) => x.hosp ?? Infinity));
+    const minAlt = Math.min(...rows.map((x) => x.alt || Infinity));
+    const maxCb = Math.max(...rows.map((x) => x.cb));
+    const star = (c) => (c ? " ⭐" : "");
+
+    // podio: las 3 más baratas con ski-in/ski-out real
+    const podio = filasComparativo().filter((x) => x.ski === 2 && !x.t.sinHospedaje).sort((a, b) => a.t.total - b.t.total).slice(0, 3);
+    $("#cmp-podio").replaceChildren(...podio.map((x, n) => el("button", { type: "button", class: "podio-item", onclick: () => elegir(x) },
+      el("span", { class: "medal" }, ["🥇", "🥈", "🥉"][n]),
+      el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre))),
+      el("span", { class: "podio-total " + level(x.t.total) }, money(x.t.total)))));
+
+    const th = (k, txt) => el("th", { class: "sortable" + (cmp.sort === k ? " on" : ""), onclick: () => { cmp.dir = cmp.sort === k ? -cmp.dir : 1; cmp.sort = k; renderComparativo(); } }, txt, cmp.sort === k ? (cmp.dir > 0 ? " ▲" : " ▼") : "");
+    const head = el("tr", {}, th("nombre", "Opción"), th("total", "💰 Total del viaje"), el("th", {}, "📅 Las 3 fechas"), th("hosp", "🏔️ Hospedaje"), th("ski", "⛷️ Acceso a pista"), th("gratis", "👧 Niña gratis"), el("th", {}, "🏫 Escuela infantil"), el("th", {}, "🛏️ Cuartos / cocina"), th("alt", "📏 Altitud"), th("cb", "✨ Costo-beneficio"), el("th", {}, ""));
+    const sel = (x) => state.r === x.r.slug && state.l === x.i;
+    const body = rows.map((x) => {
+      const pct = x.t.sinHospedaje ? 0 : Math.min(100, (x.t.total / 12000) * 100);
+      const color = { ok: "var(--ok)", warn: "var(--warn)", bad: "var(--bad)" }[level(x.t.total)];
+      return el("tr", { class: sel(x) ? "sel" : "" },
+        el("td", { class: "opt" }, el("strong", {}, x.r.nombre), el("span", {}, corto(x.l.nombre))),
+        el("td", { class: "tot" }, x.t.sinHospedaje ? el("span", { class: "missing" }, "sin precio") : [el("div", { class: "tot-n " + level(x.t.total) }, money(x.t.total) + star(x.t.total === minTotal)), el("div", { class: "mini-bar" }, el("i", { style: `width:${pct}%;background:${color}` }))]),
+        el("td", { class: "fechas" }, VENTANAS.map((w, n) => el("span", { class: "f " + (x.porFecha[n].sinHospedaje ? "" : level(x.porFecha[n].total)) + (w.id === state.v ? " cur" : ""), title: w.titulo }, x.porFecha[n].sinHospedaje ? "—" : "$" + (x.porFecha[n].total / 1000).toFixed(1) + "k"))),
+        el("td", { class: "n" }, money(x.hosp), " ", conf(x.conf), star(x.hosp === minHosp)),
+        el("td", {}, ["🔴 Shuttle", "🟡 Caminando", "🟢 Ski-in/ski-out"][x.ski]),
+        el("td", {}, x.gratis ? "✅ Sí" : "— Paga"),
+        el("td", { class: "txt" }, el("div", { class: "clamp" }, corto(x.l.distancia_escuela) || "—")),
+        el("td", { class: "txt" }, el("div", { class: "clamp" }, [corto(x.l.recamaras), x.l.cocina ? "con cocina" : "sin cocina"].filter(Boolean).join(" · "))),
+        el("td", { class: "n" }, x.alt ? x.alt.toLocaleString("es-MX") + " m" + star(x.alt === minAlt) : "—"),
+        el("td", { class: "n" }, x.cb + "/10" + star(x.cb === maxCb)),
+        el("td", {}, el("button", { type: "button", class: "btn sm", onclick: () => elegir(x) }, sel(x) ? "✓" : "Elegir")));
+    });
+    $("#cmp").replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : [el("tr", {}, el("td", { colspan: 11, class: "muted" }, "Ninguna opción cumple esos filtros."))]));
+  }
+
+  function elegir(x) { state.r = x.r.slug; state.l = x.i; render(); $("#combo").scrollIntoView(); }
 
   let galSlug = null;
   function renderGallery() {
@@ -364,7 +418,7 @@
     renderResorts();
     renderLodgings();
     renderCombo();
-    renderMatrix();
+    renderComparativo();
     renderGallery();
     renderTodo();
     renderLinks();

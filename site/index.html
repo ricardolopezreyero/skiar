@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=623b26beae">
+  <link rel="stylesheet" href="styles.css?v=8ab2517dbf">
 </head>
 <body>
   <header class="hero">
@@ -22,6 +22,7 @@
         <li><a href="#destinos">Destino</a></li>
         <li><a href="#hospedaje">Hospedaje</a></li>
         <li><a href="#combo">Presupuesto</a></li>
+        <li><a href="#comparar">Comparar todo</a></li>
       </ol>
     </div>
   </header>
@@ -65,10 +66,16 @@
       </div>
     </section>
 
-    <section id="matriz">
-      <h2>Todas las opciones de un vistazo</h2>
-      <p class="hint">Total del viaje por hospedaje y por fechas. En verde, lo que cabe en $6,000; en amarillo, hasta $8,000.</p>
-      <div class="table-scroll"><table id="matrix" class="matrix"></table></div>
+    <section id="comparar">
+      <h2><span class="num">5</span> Cuadro comparativo: todas contra todas</h2>
+      <p class="hint">Las 16 combinaciones (destino + hospedaje) en una sola tabla. Toca un encabezado para ordenar, filtra con los botones y toca <strong>Elegir</strong> para ver su presupuesto completo.</p>
+      <div class="cmp-tools">
+        <div class="seg" id="cmp-ventana" role="radiogroup" aria-label="Fechas"></div>
+        <div class="filters" id="cmp-filtros"></div>
+      </div>
+      <div id="cmp-podio" class="podio"></div>
+      <div class="table-scroll"><table id="cmp" class="cmp"></table></div>
+      <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
     </section>
 
     <section id="galeria">
@@ -111,7 +118,9 @@
     </div>
   </footer>
 
+  <a href="#comparar" class="fab" id="fab">📊 Comparar todo</a>
+
   <script src="data.js?v=7777135a62"></script>
-  <script src="app.js?v=25c5709afb"></script>
+  <script src="app.js?v=1ec5a42390"></script>
 </body>
 </html>
