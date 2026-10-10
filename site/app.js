@@ -272,6 +272,25 @@
         faltan ? ` Ojo: ${faltan} concepto(s) sin dato.` : ""));
   }
 
+  // ---------- contacto en un clic: llamar, copiar dirección, Google Maps, Waze ----------
+  function puntoHospedaje(l) { return ((D.mapa || {}).puntos || []).find((p) => p.tipo === "hospedaje" && p.nombre === l.nombre) || null; }
+  function contactos(c) {
+    const nombre = c.nombre || "", dir = c.direccion || "";
+    const lat = c.lat ?? null, lng = c.lng ?? null;
+    if (!c.telefono && !dir && lat == null) return null;
+    const q = encodeURIComponent([nombre, dir].filter(Boolean).join(", "));
+    const gmaps = dir || lat == null ? `https://www.google.com/maps/search/?api=1&query=${q}` : `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+    const waze = lat != null ? `https://waze.com/ul?ll=${lat},${lng}&navigate=yes` : `https://waze.com/ul?q=${encodeURIComponent(dir || nombre)}&navigate=yes`;
+    const copiarBtn = dir ? el("button", { type: "button", class: "ct" }, "📋 Copiar dirección") : null;
+    if (copiarBtn) copiarBtn.addEventListener("click", () => copiar(`${nombre}\n${dir}`, copiarBtn));
+    return el("div", { class: "contacto" },
+      c.telefono ? el("a", { class: "ct", href: "tel:" + c.telefono.replace(/[^+\d]/g, "") }, "📞 Llamar", c.telefono_texto ? el("small", {}, c.telefono_texto) : null) : null,
+      copiarBtn,
+      el("a", { class: "ct", href: gmaps, target: "_blank", rel: "noopener" }, "📍 Google Maps"),
+      el("a", { class: "ct", href: waze, target: "_blank", rel: "noopener" }, "🚗 Waze"),
+      dir ? el("p", { class: "ct-dir" }, dir) : null);
+  }
+
   // ---------- ficha del hospedaje: características, qué pedir y textos para Booking ----------
   async function copiar(texto, btn) {
     try { await navigator.clipboard.writeText(texto); } catch (e) {
@@ -303,6 +322,7 @@
           el("span", { class: "badge star" }, `⭐ ${pt.score}/100`),
           lp.total ? el("span", { class: "badge" }, `💰 ${money(lp.total)} · 6 noches`) : null,
           l.ski_in_out === "verdadero" ? el("span", { class: "badge ok" }, "Ski-in/ski-out real") : null),
+        (() => { const pt0 = puntoHospedaje(l); return contactos({ nombre: l.nombre.split(" (")[0].split(",")[0], telefono: p.telefono, telefono_texto: p.telefono_texto, direccion: p.direccion, lat: p.lat ?? (pt0 && pt0.lat), lng: p.lng ?? (pt0 && pt0.lng) }); })(),
         el("div", { class: "reco" },
           el("div", { class: "reco-h" }, "🎯 Qué pedir"),
           el("p", { class: "reco-pedir" }, rec.pedir || "—"),
@@ -359,6 +379,7 @@
         niv.some(([, v]) => v) ? el("div", { class: "niveles", title: "Principiante · Intermedio · Avanzado" },
           niv.map(([k, v]) => v ? el("span", { class: "nv-" + k, style: `flex:${v}` }, `${Math.round(v)}%`) : null)) : null,
         p.ninos ? el("p", { class: "pista-ninos" }, "👧 ", p.ninos) : null,
+        contactos({ nombre: p.nombre, telefono: p.telefono, telefono_texto: p.telefono_texto, direccion: p.direccion, lat: p.lat, lng: p.lng }),
         el("div", { class: "row" },
           tieneMapa ? el("button", { type: "button", class: "btn", onclick: () => abrirMapa(p) }, "🗺️ Ver mapa") : null,
           urlOk(p.mapa_pdf) ? el("a", { class: "btn ghost", href: p.mapa_pdf, target: "_blank", rel: "noopener", download: "" }, "⬇️ PDF") : null,

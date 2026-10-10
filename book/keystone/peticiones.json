@@ -1,0 +1,210 @@
+{
+  "The Timbers (River Run), 1 recámara, reservado con Keystone Resort": {
+    "caracteristicas": [
+      "Condo de 1 recámara de unos 818 ft² (76 m²) con 2 baños; hay unidades de 1 rec./1 baño más chicas (espacio.json).",
+      "Cama grande en la recámara y sofá cama queen en la sala; algunas unidades tienen cama Murphy. Cocina completa.",
+      "Ski-in/ski-out por un puente de esquiadores en el 2º piso; los lockers de esquí están en el 1er piso (reseñas de TripAdvisor).",
+      "Da a la góndola River Run y al telesilla Summit Express. Al pueblo se llega en unos 5 min por un camino de ladrillo con calefacción y un puente sobre el río Snake (listados). Otros listados dan 10-14 min a la góndola; las cifras no coinciden.",
+      "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde Timbers, estimamos 5-10 min a pie con el equipo de la niña.",
+      "Alberca climatizada interior/exterior, jacuzzi exterior con cascada, sauna, vapor, gimnasio, fogata y asadores.",
+      "Edificio en el bosque al final de un camino privado con calefacción, más apartado de la pista que Lone Eagle, así que es más tranquilo de noche.",
+      "Timbers y Lone Eagle suman unos 40 condos y no tienen recepción en el edificio. Según los listados, el check-in es de 4 a 7 pm; confirmen dónde se recogen las llaves.",
+      "Los listados de Expedia y HotelTonight dicen que el estacionamiento propio es gratis. Hay un resort fee que se paga en el hotel, de monto no publicado.",
+      "Cada unidad tiene su propio dueño, así que la decoración y el mantenimiento varían. Las quejas más repetidas son camas duras y limpieza no diaria.",
+      "Calificación de 9.2/10 en Hotels.com/Expedia y unas 4/5 en TripAdvisor (26 reseñas).",
+      "En la planta baja, un reseñista dijo que el cuarto era sofocante y que no se animaban a dormir con la puerta del patio abierta.",
+      "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+    ],
+    "recomendacion": {
+      "pedir": "1 recámara en el 2º piso (nivel del puente de esquiadores) o en el 3º, del lado sur con balcón hacia la pista, cerca del elevador. Si no hay, el lado con vista al pueblo de River Run.",
+      "por_que": "Los 'Room tips' de TripAdvisor dicen que el 1er y 2º piso son los más prácticos, porque los lockers están en el 1º y la salida a la pista en el 2º; así se carga poco el equipo de la niña. Según los reseñistas, los balcones hacia la pista tienen la mejor vista. Los listados de las unidades del lado sur (3078, 3080) hablan de sol todo el día y vista a las pistas. Un piso intermedio evita el encierro y la falta de privacidad de la planta baja.",
+      "unidades": [],
+      "evitar": [
+        "Planta baja: sofocante, y no se puede dormir con la puerta del patio abierta (reseña de TripAdvisor).",
+        "El lado que da al camino de acceso. Un reseñista de 2017 dice que las unidades impares dan al camino; es una sola reseña, sin confirmar.",
+        "Unidades al fondo del pasillo, lejos del elevador y del puente de esquiadores.",
+        "Unidades de 1 rec./1 baño si hay disponibles de 1 rec./2 baños."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad de 1 recámara en el 2º o 3º piso, del lado de la pista (sur) con balcón, cerca del elevador y del puente de esquiadores. Así caminaríamos poco con su equipo y descansaríamos tranquilos. Si no se puede, cualquier opción que nos recomienden estará perfecta. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+    "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 1-bedroom on the 2nd or 3rd floor, on the slope-facing (south) side with a balcony, close to the elevator and the skier bridge. That would keep the walk with her gear short and our nights quiet. If that's not possible, we're happy with whatever you recommend. We expect to arrive around [arrival time]. Thank you so much!",
+    "fuentes": [
+      "https://www.tripadvisor.com/Hotel_Review-g33501-d1146524-Reviews-Timbers_Lone_Eagle_by_Vail_Resorts-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r470970504-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r548509096-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r122006380-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowTopic-g33501-i2108-k3920294-Lone_Eagle_and_Timbers_condos-Keystone_Colorado.html",
+      "https://www.thebrecklife.com/listing/1806147133-224-trailhead-dr-keystone-co-80435/",
+      "https://www.thebrecklife.com/listing/1804490965-224-trailhead-dr-keystone-co-80435/",
+      "https://www.travelocity.ca/Keystone-Hotels-Timbers-3076.h64067747.Hotel-Information",
+      "https://www.redawning.com/rental-property/3069-timbers-keystone",
+      "https://www.hotels.com/ho497801184/timbers-and-lone-eagle-by-keystone-resort-keystone-united-states-of-america",
+      "https://www.expedia.co.uk/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+      "https://hoteltonight.com/es/hotel/timbers-lone-eagle-by-keystone-resort-in-keystone-co",
+      "https://www.undercovertourist.com/keystone-colorado/timbers-lone-eagle-keystone-hotel/",
+      "https://www.stayz.com.au/pdp/lo/15525037",
+      "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+      "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+    ]
+  },
+  "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort": {
+    "caracteristicas": [
+      "Condo de 2 recámaras y 2 baños de unos 1,170-1,205 ft² (109-112 m²); la distribución de camas varía por unidad (espacio.json).",
+      "Cocina completa. Algunas unidades tienen lavadora y secadora propias (p. ej., la 3037) y muchas tienen jacuzzi privado.",
+      "Es el edificio pegado a la pista. Del lobby se sale esquiando a la góndola River Run y al Summit Express, junto al puente de esquiadores de River Run.",
+      "Al pueblo se cruza un puente sobre el río Snake.",
+      "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde Lone Eagle, estimamos 5-10 min a pie con el equipo de la niña.",
+      "Alberca exterior climatizada todo el año, jacuzzi, vapor y gimnasio. Lockers de esquí con calentador de botas y patio con fogata y vista a las pistas.",
+      "Edificio de 5 pisos. Según los dueños, el lado de la pista tiene las mejores vistas, y la 2 rec. más alta de ese lado está en el 4º piso.",
+      "El elevador es la queja más repetida: estuvo meses descompuesto en 2022-2023, y los listados recientes advierten fallas intermitentes. Conviene preguntar si funciona antes de llegar.",
+      "El garaje es limitado. Un reseñista dice que sólo cupo un auto y que el resto quedó a 10 min a pie, en el lote de River Run.",
+      "No hay recepción en el edificio. Según los listados de Timbers & Lone Eagle, el check-in es de 4 a 7 pm.",
+      "Cada unidad tiene su propio dueño, así que la calidad varía. Hay quejas de decoración vieja, camas duras y baja presión de agua en algunas unidades.",
+      "Calificación de 3.7/5 en TripAdvisor (71 reseñas, 2012-2023) y 9.2/10 en el listado combinado de Hotels.com/Expedia.",
+      "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+    ],
+    "recomendacion": {
+      "pedir": "Una 2 recámaras del lado de la pista (sur), con balcón hacia el trail River Run, en piso 2 a 4, cerca del elevador y del puente de esquiadores. Si el elevador anda fallando, mejor el 2º o 3º piso.",
+      "por_que": "Las reseñas de TripAdvisor piden expresamente una unidad con vista al trail River Run, porque la 3007 daba a la entrada principal. También recomiendan las suites del lado sur por la vista. Los anuncios coinciden en que el lado de la pista tiene las mejores vistas. Un piso intermedio da vista sin depender demasiado de un elevador poco confiable cuando se sube con la niña y los esquís.",
+      "unidades": [
+        "3044 (2 rec./2 baños, pegada al puente de esquiadores de River Run, con vista a la montaña; listado de Marriott Homes & Villas y reseña de TripAdvisor 'Awesome')",
+        "3037 (4º piso, vista a la montaña, lavadora y secadora; listado de Travelocity, recámaras sin confirmar)",
+        "3014 (vista a las pistas de River Run; listado de C21, recámaras sin confirmar)"
+      ],
+      "evitar": [
+        "La 3007 y las que dan a la entrada principal (reseña de TripAdvisor).",
+        "La 3046 (3 recámaras; reseñas con quejas de estacionamiento y presión de agua).",
+        "El 5º piso o pisos altos si el elevador está fallando.",
+        "La 3015 si lo que buscan es vista a la pista: es esquina, con vista al río y a la góndola entre árboles, según su listado."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría un condo de 2 recámaras del lado de la pista, con vista al trail River Run, en piso 2 a 4 y cerca del elevador. Así caminaríamos poco con su equipo y tendríamos noches tranquilas. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias!",
+    "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 2-bedroom on the slope side, overlooking the River Run trail, on floors 2-4 and close to the elevator. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Many thanks!",
+    "fuentes": [
+      "https://www.tripadvisor.com/Hotel_Review-g33501-d572133-Reviews-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/Hotel_Feature-g33501-d572133-zft1-Lone_Eagle_Condos_at_River_Run_Village.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r874821874-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r452810394-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r363175205-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r151506837-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowTopic-g33501-i2108-k3920294-Lone_Eagle_and_Timbers_condos-Keystone_Colorado.html",
+      "https://homes-and-villas.marriott.com/en/properties/40403187-keystone-0-lone-eagle",
+      "https://homes-and-villas.marriott.com/en/properties/40128854-keystone-lone-eagle-3015",
+      "https://bearfactsrealty.c21.com/property/280-trailhead-drive-3014-keystone-co-80435-REN032189665",
+      "https://www.travelocity.com/Keystone-Hotels-Lone-Eagle-3037.h109851515.Hotel-Information",
+      "https://www.travelocity.com/es/Keystone-Hoteles-True-Ski-InSki-Out-Luxury-At-Lone-Eagle-Highest-2BR-On-The-Slope-Side.h19070971.Opiniones-Hotel",
+      "https://www.redawning.com/rental-property/1br-ski-inski-outon-mountainlone-eagle-3031kids-ski-free-keystone",
+      "https://www.hotels.com/ho497801184/timbers-and-lone-eagle-by-keystone-resort-keystone-united-states-of-america",
+      "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+      "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+    ]
+  },
+  "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort": {
+    "caracteristicas": [
+      "Condo de 1 recámara de unos 560 ft² (52 m²). Por edificio: Silver Mill 512-562 ft², Expedition Station 565-700 ft² y Dakota Lodge 508-810 ft² (espacio.json).",
+      "Cama en la recámara y sofá cama (varía por unidad). Cocina completa. Casi siempre con 1 baño; algunas de Expedition Station tienen 2.",
+      "No es ski-in/ski-out. Silver Mill queda a unos 2 min a pie de la góndola River Run y el Summit Express, Dakota Lodge a unos 3 min y Expedition Station a 'unos cientos de yardas' (unos 5 min).",
+      "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Silver Mill es el edificio más práctico para la escuela y la renta infantil.",
+      "Silver Mill es el primer edificio a la izquierda al entrar a River Run. Tiene 295 unidades en 4 pisos (1996), elevador, lockers de esquí, gimnasio, sauna y 3 jacuzzis.",
+      "Alberca: varios listados ubican la alberca exterior climatizada en Dakota Lodge, al cruzar el patio, y se llega por el estacionamiento subterráneo. Expedition Station y Dakota tienen alberca y jacuzzis propios.",
+      "Estacionamiento subterráneo con calefacción en Silver Mill, sin lugar asignado. Desde el 1 de noviembre de 2025, Expedition Station cobra $8 por día.",
+      "Las vistas varían: muchos balcones dan al patio con los jacuzzis o al pueblo, y otros tienen vista parcial a las pistas. Las unidades del último piso de Silver Mill tienen techos altos y vista al área de esquí.",
+      "El check-in de River Run se hace en la recepción del edificio Buffalo Lodge, en Dercum Square, según el listado de ski.com. Confírmenlo en la confirmación.",
+      "En la plaza de River Run y Dercum Square hay pista de hielo, restaurantes y eventos de Kidtopia (fuegos artificiales los sábados en temporadas pasadas). Las unidades que dan a la plaza o al patio de jacuzzis pueden ser más ruidosas de noche (inferencia).",
+      "Calidad muy variable por dueño. Las unidades con número que citamos vienen de anuncios y pueden no estar en el inventario de Keystone.",
+      "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+    ],
+    "recomendacion": {
+      "pedir": "Una unidad en Silver Mill (segunda opción: Dakota Lodge), en el piso más alto posible, con vista a la montaña o a las pistas, cerca del elevador y lejos de la plaza y del patio de jacuzzis.",
+      "por_que": "Silver Mill es el edificio más cercano a la góndola (unos 2 min), a la carpa de la escuela infantil y a la oficina de renta infantil (Silver Mill F3). Tiene elevador, lockers y garaje con calefacción, así que se camina muy poco con la niña. El último piso da vista al área de esquí, techos altos y nadie arriba. Alejarse de la plaza y de los jacuzzis del patio ayuda a dormir mejor. Dakota Lodge tiene la alberca en el mismo edificio.",
+      "unidades": [
+        "Silver Mill 8307 (último piso, vista al pueblo y a la montaña; listados de Marriott Homes & Villas y Hotels.com, que no coinciden en el tamaño)",
+        "Silver Mill 8156 (1 rec., mucha luz y vista a la montaña; listado MLS de The Breck Life)",
+        "Silver Mill 8192 (1 rec., ventanales con vista alpina y balcón; listado MLS de The Breck Life)"
+      ],
+      "evitar": [
+        "Unidades que dan a Dercum Square, a la plaza o a restaurantes y bares (ruido nocturno y eventos).",
+        "Balcones sobre el patio de jacuzzis, por el ruido en la noche.",
+        "Planta baja o nivel de calle junto a la entrada y el lobby.",
+        "Expedition Station si lo prioritario es caminar poco: queda más lejos (~5 min) y cobra $8 por día de estacionamiento.",
+        "Unidades al fondo del pasillo, lejos del elevador."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad en Silver Mill (o Dakota Lodge), en piso alto, con vista a la montaña o a las pistas, cerca del elevador y lejos de la plaza y de los jacuzzis del patio. Así caminaríamos poco con su equipo y dormiríamos tranquilos. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Muchas gracias!",
+    "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a unit in Silver Mill (or Dakota Lodge), on an upper floor with a mountain or slope view, close to the elevator and away from the plaza and the courtyard hot tubs. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+    "fuentes": [
+      "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+      "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+      "https://www.homes.com/building/silvermill-condominiums-keystone-co/b-6ns79210wxgze/",
+      "https://www.luckymountainhome.com/keystone-real-estate/silver-mill-condominiums/S1070687/",
+      "https://www.luckymountainhome.com/keystone-real-estate/S374678",
+      "https://homes-and-villas.marriott.com/en/properties/40719040-keystone-silver-mill-8307",
+      "https://homes-and-villas.marriott.com/en/properties/40241051-keystone-updated-top-floor-w-king-walk-to-slopes",
+      "https://jp.hotels.com/en/ho1833906912/silver-mill-8307-keystone-united-states-of-america",
+      "https://www.thebrecklife.com/listing/1804184854-140-ida-belle-dr-keystone-co-80435/",
+      "https://www.thebrecklife.com/listing/1804329690-140-ida-belle-dr-keystone-co-80435/",
+      "https://homes-and-villas.marriott.com/en/properties/40129042-keystone-silver-mill",
+      "https://www.expedia.com/es/Keystone-Hoteles-Balcony-Overlooks-Courtyard.h22128424.Informacion-Hotel",
+      "https://www.booking.com/hotel/us/silver-mill-8268.html",
+      "https://www.redawning.com/rental-property/silver-mill-8260-2br-walk-slopes-kids-ski-free-keystone",
+      "https://www.travelocity.com/Keystone-Hotels-Silver-Mill-8154-River-Run-Village-In-Keystone-Resort-Colorado.h36854392.Hotel-Information",
+      "https://vrbo.com/1084444",
+      "https://lodgingcompany.com/lodging/keystone/river-run/condo/expedition-station?adults=8",
+      "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h22210570.Hotel-Information",
+      "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h21692236.Hotel-Information",
+      "https://www.ski.com/property/SYNX-40066"
+    ]
+  },
+  "Keystone Lodge & Spa (Lakeside Village)": {
+    "caracteristicas": [
+      "Habitación de hotel con 2 camas queen, de unos 25-32 m² (estimado; la king mide 25 m² y el loft 32 m²). Sin cocina: mini-refri y cafetera (espacio.json).",
+      "152 habitaciones y 14 lofts. La mayoría tiene balcón con vista al lago o a la montaña.",
+      "Los lofts son amplios, pero los reseñistas advierten que la escalera es muy empinada, algo a considerar con una niña de 5.",
+      "No es ski-in/ski-out. River Run queda a 1.5 millas, con shuttle de esquí gratuito desde la entrada del hotel.",
+      "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde el hotel, estimamos 10-15 min de puerta a puerta en shuttle.",
+      "Alberca exterior climatizada, jacuzzis interior y exterior, sauna, vapor de eucalipto y Alpenglow Spa.",
+      "El patinaje en Keystone Lake (Lakeside Village) queda junto al hotel.",
+      "Resort fee: los listados dicen 14.92% de la tarifa e incluye alberca, jacuzzi y guardaesquís. Hay cifras viejas de $25-35 por noche.",
+      "Estacionamiento descubierto de $15 por noche según los listados; antes eran $10.",
+      "Wi-Fi gratis, caja fuerte y TV de 42 pulgadas. Sin aire acondicionado; un reseñista dice que el ventilador del clóset ayuda.",
+      "Ruido: según un 'Room tip' de 2014, todas las habitaciones dan hacia el lado contrario a la carretera. Varios reseñistas se quejan de paredes delgadas y de equipos mecánicos ruidosos.",
+      "Cada piso tiene un solo elevador, y las habitaciones de número más bajo son las más cercanas (reseña de TripAdvisor).",
+      "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+    ],
+    "recomendacion": {
+      "pedir": "Habitación estándar con 2 queens en el 5º o 6º piso, con balcón y vista al lago o a la montaña, renovada si es posible, a media distancia del elevador (ni pegada ni al fondo del pasillo) y lejos de cuartos de máquinas o de hielo. No loft.",
+      "por_que": "Los 'Room tips' de TripAdvisor coinciden: el 6º piso tiene la mejor vista al lago y la montaña, y el 5º las mejores habitaciones y las terrazas más grandes. Las habitaciones a la mitad del pasillo, cerca de la escalera del spa, son prácticas para ir a la alberca y no quedan tan lejos del único elevador al cargar el equipo para el shuttle. Por las paredes delgadas conviene alejarse del elevador y de los equipos mecánicos. Otro reseñista sugiere pedir el ala renovada.",
+      "unidades": [
+        "311 (respaldo: estándar de 2 camas en la que un reseñista no oyó ruido; sin vista destacada)"
+      ],
+      "evitar": [
+        "Loft, por la escalera muy empinada.",
+        "Pisos bajos: un reseñista dice que la queen del 1er piso era oscura.",
+        "Pegada al elevador, a los cuartos de máquinas o de hielo, por las paredes delgadas.",
+        "Unidades al fondo del pasillo largo, por la caminata con el equipo hasta el elevador."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí. Si fuera posible, nos encantaría una habitación con 2 camas queen en el 5º o 6º piso, con balcón y vista al lago o a la montaña, a media distancia del elevador y lejos de cuartos de máquinas, para descansar tranquilos y llevar su equipo al shuttle sin complicarnos. Preferimos habitación estándar en vez de loft por las escaleras. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Gracias!",
+    "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip. If at all possible, we'd love a room with 2 queen beds on the 5th or 6th floor, with a balcony and a lake or mountain view, a short walk from the elevator but away from machine rooms, so we can rest well and get her gear to the ski shuttle easily. We'd prefer a standard room over a loft because of the stairs. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+    "fuentes": [
+      "https://www.tripadvisor.com/Hotel_Feature-g33501-d484128-zft1-Keystone_Lodge_Spa.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r116821022-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r137460924-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r142398899-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r258254707-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r454254621-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r190209922-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r873943539-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+      "https://scoutski.com/keystone-lodge-spa-by-keystone-resort",
+      "https://oyster.com/breckenridge/hotels/keystone-lodge-and-spa",
+      "https://www.undercovertourist.com/keystone-colorado/keystone-lodge-hotel/",
+      "https://www.expedia.co.uk/Keystone-Hotels-Keystone-Lodge-Spa-By-Keystone-Resort.h16001.Hotel-Information",
+      "https://www.hotelplanner.com/Hotels/53496/Reservations-Keystone-Lodge-Spa-by-Keystone-Resort-Keystone-22101-Us-Highway-6-80435",
+      "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx"
+    ]
+  }
+}

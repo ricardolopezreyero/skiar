@@ -98,6 +98,55 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
       "descripcion": "Alfombra mágica en Keystone Mountain",
       "credito": "David Shankbone / Wikimedia Commons"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 1 recámara de unos 818 ft² (76 m²) con 2 baños; hay unidades de 1 rec./1 baño más chicas (espacio.json).",
+       "Cama grande en la recámara y sofá cama queen en la sala; algunas unidades tienen cama Murphy. Cocina completa.",
+       "Ski-in/ski-out por un puente de esquiadores en el 2º piso; los lockers de esquí están en el 1er piso (reseñas de TripAdvisor).",
+       "Da a la góndola River Run y al telesilla Summit Express. Al pueblo se llega en unos 5 min por un camino de ladrillo con calefacción y un puente sobre el río Snake (listados). Otros listados dan 10-14 min a la góndola; las cifras no coinciden.",
+       "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde Timbers, estimamos 5-10 min a pie con el equipo de la niña.",
+       "Alberca climatizada interior/exterior, jacuzzi exterior con cascada, sauna, vapor, gimnasio, fogata y asadores.",
+       "Edificio en el bosque al final de un camino privado con calefacción, más apartado de la pista que Lone Eagle, así que es más tranquilo de noche.",
+       "Timbers y Lone Eagle suman unos 40 condos y no tienen recepción en el edificio. Según los listados, el check-in es de 4 a 7 pm; confirmen dónde se recogen las llaves.",
+       "Los listados de Expedia y HotelTonight dicen que el estacionamiento propio es gratis. Hay un resort fee que se paga en el hotel, de monto no publicado.",
+       "Cada unidad tiene su propio dueño, así que la decoración y el mantenimiento varían. Las quejas más repetidas son camas duras y limpieza no diaria.",
+       "Calificación de 9.2/10 en Hotels.com/Expedia y unas 4/5 en TripAdvisor (26 reseñas).",
+       "En la planta baja, un reseñista dijo que el cuarto era sofocante y que no se animaban a dormir con la puerta del patio abierta.",
+       "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+      ],
+      "recomendacion": {
+       "pedir": "1 recámara en el 2º piso (nivel del puente de esquiadores) o en el 3º, del lado sur con balcón hacia la pista, cerca del elevador. Si no hay, el lado con vista al pueblo de River Run.",
+       "por_que": "Los 'Room tips' de TripAdvisor dicen que el 1er y 2º piso son los más prácticos, porque los lockers están en el 1º y la salida a la pista en el 2º; así se carga poco el equipo de la niña. Según los reseñistas, los balcones hacia la pista tienen la mejor vista. Los listados de las unidades del lado sur (3078, 3080) hablan de sol todo el día y vista a las pistas. Un piso intermedio evita el encierro y la falta de privacidad de la planta baja.",
+       "unidades": [],
+       "evitar": [
+        "Planta baja: sofocante, y no se puede dormir con la puerta del patio abierta (reseña de TripAdvisor).",
+        "El lado que da al camino de acceso. Un reseñista de 2017 dice que las unidades impares dan al camino; es una sola reseña, sin confirmar.",
+        "Unidades al fondo del pasillo, lejos del elevador y del puente de esquiadores.",
+        "Unidades de 1 rec./1 baño si hay disponibles de 1 rec./2 baños."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad de 1 recámara en el 2º o 3º piso, del lado de la pista (sur) con balcón, cerca del elevador y del puente de esquiadores. Así caminaríamos poco con su equipo y descansaríamos tranquilos. Si no se puede, cualquier opción que nos recomienden estará perfecta. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 1-bedroom on the 2nd or 3rd floor, on the slope-facing (south) side with a balcony, close to the elevator and the skier bridge. That would keep the walk with her gear short and our nights quiet. If that's not possible, we're happy with whatever you recommend. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://www.tripadvisor.com/Hotel_Review-g33501-d1146524-Reviews-Timbers_Lone_Eagle_by_Vail_Resorts-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r470970504-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r548509096-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r122006380-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowTopic-g33501-i2108-k3920294-Lone_Eagle_and_Timbers_condos-Keystone_Colorado.html",
+       "https://www.thebrecklife.com/listing/1806147133-224-trailhead-dr-keystone-co-80435/",
+       "https://www.thebrecklife.com/listing/1804490965-224-trailhead-dr-keystone-co-80435/",
+       "https://www.travelocity.ca/Keystone-Hotels-Timbers-3076.h64067747.Hotel-Information",
+       "https://www.redawning.com/rental-property/3069-timbers-keystone",
+       "https://www.hotels.com/ho497801184/timbers-and-lone-eagle-by-keystone-resort-keystone-united-states-of-america",
+       "https://www.expedia.co.uk/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+       "https://hoteltonight.com/es/hotel/timbers-lone-eagle-by-keystone-resort-in-keystone-co",
+       "https://www.undercovertourist.com/keystone-colorado/timbers-lone-eagle-keystone-hotel/",
+       "https://www.stayz.com.au/pdp/lo/15525037",
+       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+      ]
      }
     },
     {
@@ -154,6 +203,59 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
       "descripcion": "Alfombra mágica en Keystone Mountain",
       "credito": "David Shankbone / Wikimedia Commons"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 2 recámaras y 2 baños de unos 1,170-1,205 ft² (109-112 m²); la distribución de camas varía por unidad (espacio.json).",
+       "Cocina completa. Algunas unidades tienen lavadora y secadora propias (p. ej., la 3037) y muchas tienen jacuzzi privado.",
+       "Es el edificio pegado a la pista. Del lobby se sale esquiando a la góndola River Run y al Summit Express, junto al puente de esquiadores de River Run.",
+       "Al pueblo se cruza un puente sobre el río Snake.",
+       "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde Lone Eagle, estimamos 5-10 min a pie con el equipo de la niña.",
+       "Alberca exterior climatizada todo el año, jacuzzi, vapor y gimnasio. Lockers de esquí con calentador de botas y patio con fogata y vista a las pistas.",
+       "Edificio de 5 pisos. Según los dueños, el lado de la pista tiene las mejores vistas, y la 2 rec. más alta de ese lado está en el 4º piso.",
+       "El elevador es la queja más repetida: estuvo meses descompuesto en 2022-2023, y los listados recientes advierten fallas intermitentes. Conviene preguntar si funciona antes de llegar.",
+       "El garaje es limitado. Un reseñista dice que sólo cupo un auto y que el resto quedó a 10 min a pie, en el lote de River Run.",
+       "No hay recepción en el edificio. Según los listados de Timbers & Lone Eagle, el check-in es de 4 a 7 pm.",
+       "Cada unidad tiene su propio dueño, así que la calidad varía. Hay quejas de decoración vieja, camas duras y baja presión de agua en algunas unidades.",
+       "Calificación de 3.7/5 en TripAdvisor (71 reseñas, 2012-2023) y 9.2/10 en el listado combinado de Hotels.com/Expedia.",
+       "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+      ],
+      "recomendacion": {
+       "pedir": "Una 2 recámaras del lado de la pista (sur), con balcón hacia el trail River Run, en piso 2 a 4, cerca del elevador y del puente de esquiadores. Si el elevador anda fallando, mejor el 2º o 3º piso.",
+       "por_que": "Las reseñas de TripAdvisor piden expresamente una unidad con vista al trail River Run, porque la 3007 daba a la entrada principal. También recomiendan las suites del lado sur por la vista. Los anuncios coinciden en que el lado de la pista tiene las mejores vistas. Un piso intermedio da vista sin depender demasiado de un elevador poco confiable cuando se sube con la niña y los esquís.",
+       "unidades": [
+        "3044 (2 rec./2 baños, pegada al puente de esquiadores de River Run, con vista a la montaña; listado de Marriott Homes & Villas y reseña de TripAdvisor 'Awesome')",
+        "3037 (4º piso, vista a la montaña, lavadora y secadora; listado de Travelocity, recámaras sin confirmar)",
+        "3014 (vista a las pistas de River Run; listado de C21, recámaras sin confirmar)"
+       ],
+       "evitar": [
+        "La 3007 y las que dan a la entrada principal (reseña de TripAdvisor).",
+        "La 3046 (3 recámaras; reseñas con quejas de estacionamiento y presión de agua).",
+        "El 5º piso o pisos altos si el elevador está fallando.",
+        "La 3015 si lo que buscan es vista a la pista: es esquina, con vista al río y a la góndola entre árboles, según su listado."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría un condo de 2 recámaras del lado de la pista, con vista al trail River Run, en piso 2 a 4 y cerca del elevador. Así caminaríamos poco con su equipo y tendríamos noches tranquilas. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 2-bedroom on the slope side, overlooking the River Run trail, on floors 2-4 and close to the elevator. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Many thanks!",
+      "fuentes": [
+       "https://www.tripadvisor.com/Hotel_Review-g33501-d572133-Reviews-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/Hotel_Feature-g33501-d572133-zft1-Lone_Eagle_Condos_at_River_Run_Village.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r874821874-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r452810394-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r363175205-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d572133-r151506837-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowTopic-g33501-i2108-k3920294-Lone_Eagle_and_Timbers_condos-Keystone_Colorado.html",
+       "https://homes-and-villas.marriott.com/en/properties/40403187-keystone-0-lone-eagle",
+       "https://homes-and-villas.marriott.com/en/properties/40128854-keystone-lone-eagle-3015",
+       "https://bearfactsrealty.c21.com/property/280-trailhead-drive-3014-keystone-co-80435-REN032189665",
+       "https://www.travelocity.com/Keystone-Hotels-Lone-Eagle-3037.h109851515.Hotel-Information",
+       "https://www.travelocity.com/es/Keystone-Hoteles-True-Ski-InSki-Out-Luxury-At-Lone-Eagle-Highest-2BR-On-The-Slope-Side.h19070971.Opiniones-Hotel",
+       "https://www.redawning.com/rental-property/1br-ski-inski-outon-mountainlone-eagle-3031kids-ski-free-keystone",
+       "https://www.hotels.com/ho497801184/timbers-and-lone-eagle-by-keystone-resort-keystone-united-states-of-america",
+       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+      ]
      }
     },
     {
@@ -209,6 +311,63 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
       "descripcion": "Alfombra mágica en Keystone Mountain",
       "credito": "David Shankbone / Wikimedia Commons"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 1 recámara de unos 560 ft² (52 m²). Por edificio: Silver Mill 512-562 ft², Expedition Station 565-700 ft² y Dakota Lodge 508-810 ft² (espacio.json).",
+       "Cama en la recámara y sofá cama (varía por unidad). Cocina completa. Casi siempre con 1 baño; algunas de Expedition Station tienen 2.",
+       "No es ski-in/ski-out. Silver Mill queda a unos 2 min a pie de la góndola River Run y el Summit Express, Dakota Lodge a unos 3 min y Expedition Station a 'unos cientos de yardas' (unos 5 min).",
+       "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Silver Mill es el edificio más práctico para la escuela y la renta infantil.",
+       "Silver Mill es el primer edificio a la izquierda al entrar a River Run. Tiene 295 unidades en 4 pisos (1996), elevador, lockers de esquí, gimnasio, sauna y 3 jacuzzis.",
+       "Alberca: varios listados ubican la alberca exterior climatizada en Dakota Lodge, al cruzar el patio, y se llega por el estacionamiento subterráneo. Expedition Station y Dakota tienen alberca y jacuzzis propios.",
+       "Estacionamiento subterráneo con calefacción en Silver Mill, sin lugar asignado. Desde el 1 de noviembre de 2025, Expedition Station cobra $8 por día.",
+       "Las vistas varían: muchos balcones dan al patio con los jacuzzis o al pueblo, y otros tienen vista parcial a las pistas. Las unidades del último piso de Silver Mill tienen techos altos y vista al área de esquí.",
+       "El check-in de River Run se hace en la recepción del edificio Buffalo Lodge, en Dercum Square, según el listado de ski.com. Confírmenlo en la confirmación.",
+       "En la plaza de River Run y Dercum Square hay pista de hielo, restaurantes y eventos de Kidtopia (fuegos artificiales los sábados en temporadas pasadas). Las unidades que dan a la plaza o al patio de jacuzzis pueden ser más ruidosas de noche (inferencia).",
+       "Calidad muy variable por dueño. Las unidades con número que citamos vienen de anuncios y pueden no estar en el inventario de Keystone.",
+       "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+      ],
+      "recomendacion": {
+       "pedir": "Una unidad en Silver Mill (segunda opción: Dakota Lodge), en el piso más alto posible, con vista a la montaña o a las pistas, cerca del elevador y lejos de la plaza y del patio de jacuzzis.",
+       "por_que": "Silver Mill es el edificio más cercano a la góndola (unos 2 min), a la carpa de la escuela infantil y a la oficina de renta infantil (Silver Mill F3). Tiene elevador, lockers y garaje con calefacción, así que se camina muy poco con la niña. El último piso da vista al área de esquí, techos altos y nadie arriba. Alejarse de la plaza y de los jacuzzis del patio ayuda a dormir mejor. Dakota Lodge tiene la alberca en el mismo edificio.",
+       "unidades": [
+        "Silver Mill 8307 (último piso, vista al pueblo y a la montaña; listados de Marriott Homes & Villas y Hotels.com, que no coinciden en el tamaño)",
+        "Silver Mill 8156 (1 rec., mucha luz y vista a la montaña; listado MLS de The Breck Life)",
+        "Silver Mill 8192 (1 rec., ventanales con vista alpina y balcón; listado MLS de The Breck Life)"
+       ],
+       "evitar": [
+        "Unidades que dan a Dercum Square, a la plaza o a restaurantes y bares (ruido nocturno y eventos).",
+        "Balcones sobre el patio de jacuzzis, por el ruido en la noche.",
+        "Planta baja o nivel de calle junto a la entrada y el lobby.",
+        "Expedition Station si lo prioritario es caminar poco: queda más lejos (~5 min) y cobra $8 por día de estacionamiento.",
+        "Unidades al fondo del pasillo, lejos del elevador."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad en Silver Mill (o Dakota Lodge), en piso alto, con vista a la montaña o a las pistas, cerca del elevador y lejos de la plaza y de los jacuzzis del patio. Así caminaríamos poco con su equipo y dormiríamos tranquilos. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Muchas gracias!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a unit in Silver Mill (or Dakota Lodge), on an upper floor with a mountain or slope view, close to the elevator and away from the plaza and the courtyard hot tubs. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+       "https://www.homes.com/building/silvermill-condominiums-keystone-co/b-6ns79210wxgze/",
+       "https://www.luckymountainhome.com/keystone-real-estate/silver-mill-condominiums/S1070687/",
+       "https://www.luckymountainhome.com/keystone-real-estate/S374678",
+       "https://homes-and-villas.marriott.com/en/properties/40719040-keystone-silver-mill-8307",
+       "https://homes-and-villas.marriott.com/en/properties/40241051-keystone-updated-top-floor-w-king-walk-to-slopes",
+       "https://jp.hotels.com/en/ho1833906912/silver-mill-8307-keystone-united-states-of-america",
+       "https://www.thebrecklife.com/listing/1804184854-140-ida-belle-dr-keystone-co-80435/",
+       "https://www.thebrecklife.com/listing/1804329690-140-ida-belle-dr-keystone-co-80435/",
+       "https://homes-and-villas.marriott.com/en/properties/40129042-keystone-silver-mill",
+       "https://www.expedia.com/es/Keystone-Hoteles-Balcony-Overlooks-Courtyard.h22128424.Informacion-Hotel",
+       "https://www.booking.com/hotel/us/silver-mill-8268.html",
+       "https://www.redawning.com/rental-property/silver-mill-8260-2br-walk-slopes-kids-ski-free-keystone",
+       "https://www.travelocity.com/Keystone-Hotels-Silver-Mill-8154-River-Run-Village-In-Keystone-Resort-Colorado.h36854392.Hotel-Information",
+       "https://vrbo.com/1084444",
+       "https://lodgingcompany.com/lodging/keystone/river-run/condo/expedition-station?adults=8",
+       "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h22210570.Hotel-Information",
+       "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h21692236.Hotel-Information",
+       "https://www.ski.com/property/SYNX-40066"
+      ]
      }
     },
     {
@@ -266,6 +425,55 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Keystone_Lake_and_Resort.jpg",
       "descripcion": "Keystone Lake y el resort (foto de 2001)",
       "credito": "K.warterbeck / Wikimedia Commons"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Habitación de hotel con 2 camas queen, de unos 25-32 m² (estimado; la king mide 25 m² y el loft 32 m²). Sin cocina: mini-refri y cafetera (espacio.json).",
+       "152 habitaciones y 14 lofts. La mayoría tiene balcón con vista al lago o a la montaña.",
+       "Los lofts son amplios, pero los reseñistas advierten que la escalera es muy empinada, algo a considerar con una niña de 5.",
+       "No es ski-in/ski-out. River Run queda a 1.5 millas, con shuttle de esquí gratuito desde la entrada del hotel.",
+       "Escuela infantil de River Run: oficina en Kindred Resort, lado este de la góndola River Run; los niños que ya traen equipo se registran en la carpa azul, a la izquierda de la góndola. La oficina de renta infantil está en Silver Mill, edificio F3. Llegar 30 min antes (60 si rentan). Desde el hotel, estimamos 10-15 min de puerta a puerta en shuttle.",
+       "Alberca exterior climatizada, jacuzzis interior y exterior, sauna, vapor de eucalipto y Alpenglow Spa.",
+       "El patinaje en Keystone Lake (Lakeside Village) queda junto al hotel.",
+       "Resort fee: los listados dicen 14.92% de la tarifa e incluye alberca, jacuzzi y guardaesquís. Hay cifras viejas de $25-35 por noche.",
+       "Estacionamiento descubierto de $15 por noche según los listados; antes eran $10.",
+       "Wi-Fi gratis, caja fuerte y TV de 42 pulgadas. Sin aire acondicionado; un reseñista dice que el ventilador del clóset ayuda.",
+       "Ruido: según un 'Room tip' de 2014, todas las habitaciones dan hacia el lado contrario a la carretera. Varios reseñistas se quejan de paredes delgadas y de equipos mecánicos ruidosos.",
+       "Cada piso tiene un solo elevador, y las habitaciones de número más bajo son las más cercanas (reseña de TripAdvisor).",
+       "Ojo: el programa 'Kids Ski Free' (boleto gratis de la niña) sólo aplica reservando directo con Keystone Resort; por Booking.com u otros terceros no aplica (ver opciones.json)."
+      ],
+      "recomendacion": {
+       "pedir": "Habitación estándar con 2 queens en el 5º o 6º piso, con balcón y vista al lago o a la montaña, renovada si es posible, a media distancia del elevador (ni pegada ni al fondo del pasillo) y lejos de cuartos de máquinas o de hielo. No loft.",
+       "por_que": "Los 'Room tips' de TripAdvisor coinciden: el 6º piso tiene la mejor vista al lago y la montaña, y el 5º las mejores habitaciones y las terrazas más grandes. Las habitaciones a la mitad del pasillo, cerca de la escalera del spa, son prácticas para ir a la alberca y no quedan tan lejos del único elevador al cargar el equipo para el shuttle. Por las paredes delgadas conviene alejarse del elevador y de los equipos mecánicos. Otro reseñista sugiere pedir el ala renovada.",
+       "unidades": [
+        "311 (respaldo: estándar de 2 camas en la que un reseñista no oyó ruido; sin vista destacada)"
+       ],
+       "evitar": [
+        "Loft, por la escalera muy empinada.",
+        "Pisos bajos: un reseñista dice que la queen del 1er piso era oscura.",
+        "Pegada al elevador, a los cuartos de máquinas o de hielo, por las paredes delgadas.",
+        "Unidades al fondo del pasillo largo, por la caminata con el equipo hasta el elevador."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí. Si fuera posible, nos encantaría una habitación con 2 camas queen en el 5º o 6º piso, con balcón y vista al lago o a la montaña, a media distancia del elevador y lejos de cuartos de máquinas, para descansar tranquilos y llevar su equipo al shuttle sin complicarnos. Preferimos habitación estándar en vez de loft por las escaleras. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Gracias!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip. If at all possible, we'd love a room with 2 queen beds on the 5th or 6th floor, with a balcony and a lake or mountain view, a short walk from the elevator but away from machine rooms, so we can rest well and get her gear to the ski shuttle easily. We'd prefer a standard room over a loft because of the stairs. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://www.tripadvisor.com/Hotel_Feature-g33501-d484128-zft1-Keystone_Lodge_Spa.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r116821022-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r137460924-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r142398899-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r258254707-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r454254621-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r190209922-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r873943539-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
+       "https://scoutski.com/keystone-lodge-spa-by-keystone-resort",
+       "https://oyster.com/breckenridge/hotels/keystone-lodge-and-spa",
+       "https://www.undercovertourist.com/keystone-colorado/keystone-lodge-hotel/",
+       "https://www.expedia.co.uk/Keystone-Hotels-Keystone-Lodge-Spa-By-Keystone-Resort.h16001.Hotel-Information",
+       "https://www.hotelplanner.com/Hotels/53496/Reservations-Keystone-Lodge-Spa-by-Keystone-Resort-Keystone-22101-Us-Highway-6-80435",
+       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx"
+      ]
      }
     }
    ],
@@ -1750,6 +1958,64 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
       "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
       "credito": "CarTick (Wikimedia Commons)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 1 recámara en la torre Plaza: ~715 ft² (66 m²) y 1 baño (ventas MLS de las unidades 206 y 506).",
+       "Camas: king en la recámara + sofá cama en la sala para la niña; algunas unidades tienen cuna y periquera (varía por dueño).",
+       "Cocina completa; muchas unidades con chimenea de gas y lavadora/secadora propia (varía por dueño, confirmar).",
+       "Hay dos edificios: la torre Plaza (8 pisos, condos de 1 a 3 rec.) y Creekside (2 a 6 rec.). La de 1 rec. que cotizaron está en la Plaza.",
+       "Ski-in/ski-out verdadero en Ski Time Square, junto al abordaje de la góndola y del Christie Peak Express; un listado lo pone a ~100 yardas (~90 m) de la góndola.",
+       "Escuela infantil (Mountain Camp, junto al Gondola Transit Center): ~3-5 min a pie (estimado, sin verificar en mapa).",
+       "Alberca exterior climatizada, 3-4 jacuzzis exteriores y 2 interiores, sauna y gimnasio. Un huésped reportó los jacuzzis interiores fuera de servicio toda una semana.",
+       "Tiene elevador y clóset/locker de esquí gratis junto a cada unidad: la caminata con el equipo es muy corta.",
+       "Estacionamiento subterráneo: varios listados dicen gratis para 1 vehículo, por orden de llegada, con pase que se recoge en el lobby. No admite campers; la altura del garaje no está publicada.",
+       "Check-in: las llaves se entregan en la recepción de Torian Plum, que tiene horario limitado según Ski.com. Avisen su hora de llegada.",
+       "Shuttle de invierno gratis a pedido (on-demand) hacia el pueblo.",
+       "Ruido: la obra del hotel The Stockman (Auberge, 9 pisos, apertura en 2030) arrancó en 2026 junto a Torian Plum, cuesta arriba del edificio Creekside. En ene/mar 2027 habrá obra, normalmente de día.",
+       "Vistas: las unidades de pisos altos de la Plaza con balcón hacia la base miran a las pistas, a Gondola Square y al valle del Yampa (listados de 506, 606, 607, 702, 802 y 805).",
+       "La calidad varía por dueño: un huésped encontró la 606 más chica de lo esperado y con un sofá cama incómodo."
+      ],
+      "recomendacion": {
+       "pedir": "Una unidad de 1 rec. en la torre Plaza, en piso alto (5º a 8º), con balcón hacia la base, las pistas y Gondola Square, cerca del elevador y del lado más alejado de la obra del Stockman.",
+       "por_que": "La Plaza es la torre pegada a la góndola. Con elevador y locker junto a la puerta, la niña camina muy poco con el equipo. Los listados de unidades de 1 rec. en pisos 5-6 con balcón a la base (607, 606 y 506) describen vista a pistas, base y Gondola Square. La obra del Stockman queda cuesta arriba del edificio Creekside, así que la Plaza en piso alto debería ser lo más tranquilo y con mejor vista. Ojo: si reservan por Booking, el administrador (Vacasa, Casago u otro) asigna de su propio inventario; los números sirven como ejemplo de lo que buscan. Si suben a 2 rec., las 702, 802 y 805 (pisos altos) también describen vista a las pistas.",
+       "unidades": [
+        "607 (1 rec./1 baño, king, balcón amueblado; vista a la base, la montaña y Gondola Square)",
+        "606 (listada como 1 rec. 'eficiente'; balcón hacia la zona de esquí y vista sur al valle; un huésped la sintió chica)",
+        "506 (1 rec./1 baño, 715 ft²; vista panorámica de la base desde el balcón)",
+        "Si cambian a 2 rec.: 702 (balcón sobre los lifts y la base), 802 y 805 (piso 8, último piso, vistas a pistas y valle)"
+       ],
+       "evitar": [
+        "El edificio Creekside, si les ofrecen cambio: la obra del Stockman queda cuesta arriba de ese edificio",
+        "Pisos bajos o unidades sin balcón hacia la base (sin vista a pistas)",
+        "Unidades sin remodelar: pidan fotos recientes de la unidad asignada",
+        "Contar con los jacuzzis interiores sin confirmar que funcionan"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México para el primer viaje de esquí de nuestra hija de 5 años (irá a la escuela infantil en Mountain Camp). Si es posible, nos encantaría una unidad en la torre Plaza en piso alto, con balcón hacia la base y Gondola Square (como la 607, 606 o 506), cerca del elevador y lejos de la obra del Stockman, para caminar poquito con los esquís y descansar bien. Entendemos que depende de la disponibilidad y somos flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias, ya estamos muy emocionados!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico for our 5-year-old daughter's very first ski trip (she'll be in ski school at Mountain Camp). If possible, we'd love a unit in the Plaza tower on a higher floor with a balcony facing the base area and Gondola Square (like 607, 606 or 506), close to the elevator and away from the Stockman construction, so the walk with gear is short and nights are quiet. We understand it depends on availability and we're flexible. We expect to arrive around [arrival time]. Thank you so much, we're so excited!",
+      "fuentes": [
+       "https://www.vacasa.com/unit/38246",
+       "https://vacasa.com/unit/38245",
+       "https://vacasa.ca/unit/37809",
+       "https://vacasa.com/unit/37811",
+       "https://www.vacasa.com/unit/37810",
+       "https://www.vacasa.com/unit/38247",
+       "https://www.vacasa.com/unit/38249",
+       "https://vacasa.ca/unit/38251",
+       "https://casago.com/rentals/1029612/",
+       "https://casago.com/rentals/1029137/?adults=1",
+       "https://www.vacasa.com/usa/Torian-Plum-CO/",
+       "https://www.expedia.com/cn/Steamboat-Springs-Hotels-Creekside-Base-Area-Location-Pool-And-Hot-Tubs.h51273972.Hotel-Information",
+       "https://www.airbnb.co.uk/rooms/53460736",
+       "https://www.ski.com/h/913875",
+       "https://www.undercovertourist.com/steamboat-springs/torian-plum-condominiums-hotel/",
+       "https://www.tripadvisor.com/Hotel_Review-d207673",
+       "https://www.steamboatpilot.com/news/steamboat-council-signals-approval-for-ski-time-square-condo-hotel-development",
+       "https://milehighcre.com/?p=61959",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1069402/"
+      ]
      }
     },
     {
@@ -1810,6 +2076,67 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
       "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
       "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Habitación de hotel Double Queen: 2 camas queen y 1 baño completo, ~400-450 ft² (37-42 m²), máximo 4 personas. Menores de 17 gratis con las camas existentes.",
+       "Sin cocina: sólo mini-refri. La Deluxe King (350 ft², chimenea, balcón y tina de hidromasaje) es para 2 personas máximo, así que no les sirve.",
+       "Hotel grande (328 unidades: habitaciones, condos de 1-3 rec. y penthouses en el 7º piso) con elevadores, en 2300 Mount Werner Circle.",
+       "NO es ski-in/ski-out: hay que cruzar Mount Werner Circle. Un listado lo pone a ~273 m de Gondola Square y ~388 m de la góndola; otra guía dice a menos de 250 yardas.",
+       "Escuela infantil (Mountain Camp, junto al Gondola Transit Center): ~3-5 min a pie (estimado).",
+       "Guardaesquís incluido, y un listado menciona ski valet gratis. Confirmen dónde se entrega el equipo para no cargarlo desde el cuarto.",
+       "Alberca exterior climatizada todo el año, 2 jacuzzis grandes, sauna, vapor y gimnasio. Cierran por temporada a mediados de mayo (no afecta sus fechas).",
+       "Vistas: todas las habitaciones dan a la montaña (Mt. Werner y la zona de esquí) o al valle del Yampa y el pueblo. La vista no se garantiza al reservar.",
+       "Estacionamiento: self-parking de US$25-35/noche (las fuentes difieren) y valet de ~US$30, con límite de altura. Resort fee de 0% según los listados (incluye guardaesquís, alberca y jacuzzi).",
+       "Check-in 16:00 y check-out 11:00; early check-in con costo, según disponibilidad.",
+       "Shuttle gratis al pueblo, cuna disponible, restaurante The Crooked Antler (desayuno con costo).",
+       "Ruido: un huésped describe la habitación como 'muy silenciosa'. Un listado avisó de remodelación en el lobby y algunas habitaciones, sólo en horario hábil entre semana (confirmar si sigue).",
+       "La recepción a veces da upgrades en el check-in: un huésped de 2025 pasó de estudio a 1 rec. con estacionamiento gratis."
+      ],
+      "recomendacion": {
+       "pedir": "Una Double Queen en piso alto (5º-6º), con vista a la zona de esquí y Mt. Werner (no al valle ni al estacionamiento), en el ala más cercana a la góndola y no pegada al elevador ni a la máquina de hielo.",
+       "por_que": "Las habitaciones dan a la montaña o al valle; sólo el lado de la montaña tiene la vista de las pistas. Varios listados de venta (MLS) de condos del hotel en pisos 5 y 6 describen balcones hacia la zona de esquí (519/520/523, 619/622/623, 624/625), igual que algunos del 2º y 3er piso. Esos números son combinaciones lock-off de propietarios: cada número es una llave que puede rentarse como habitación de hotel, así que no se sabe cuál es una Double Queen. Sirven para indicarle a la recepción qué lado y qué pisos quieren. El piso alto da mejor vista y menos ruido de la calle. Como no es ski-in, el ala del lado de la góndola acorta la caminata con la niña.",
+       "unidades": [
+        "519/520/523 (5º piso; balcón hacia la zona de esquí; listado MLS)",
+        "619/622/623 (6º piso; terraza de la recámara principal hacia la montaña; listado MLS)",
+        "624/625 (6º piso; balcón sobre la zona de esquí; listado MLS)",
+        "331/334/335 (3er piso; vista directa a la zona de esquí desde el balcón; listado MLS)",
+        "235/236/239, 318, 321, 220, 353 y 357 (listados MLS que mencionan vista a la zona de esquí o a Mt. Werner)"
+       ],
+       "evitar": [
+        "Vista al valle o al pueblo, si lo que quieren es ver la montaña",
+        "Pisos bajos hacia Mount Werner Circle (tráfico y autobuses)",
+        "Habitación pegada al elevador o a la máquina de hielo",
+        "Deluxe King: tiene chimenea y balcón, pero es para 2 personas máximo"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México para el primer viaje de esquí de nuestra hija de 5 años (irá a la escuela infantil en Mountain Camp). Si es posible, nos encantaría una habitación con 2 camas queen en piso alto (5º o 6º), con vista a la montaña y las pistas, del lado más cercano a la góndola y no pegada al elevador, para disfrutar la vista y descansar bien. Entendemos que depende de la disponibilidad y somos flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias por su ayuda, ya estamos muy emocionados!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico for our 5-year-old daughter's very first ski trip (she'll be in ski school at Mountain Camp). If possible, we'd love a room with 2 queen beds on a higher floor (5th or 6th) facing the ski area and Mt. Werner, on the side closest to the gondola and not right next to the elevator, so we can enjoy the view and rest well. We understand it depends on availability and we're flexible. We expect to arrive around [arrival time]. Thank you so much for your help, we're so excited!",
+      "fuentes": [
+       "https://www.tripadvisor.com/Hotel_Review-d209917",
+       "https://www.voyagesgendron.com/en/ski/accommodation/the-steamboat-grand/",
+       "https://snowscene.com.au/accommodation/the-steamboat-grand/",
+       "https://destinationcolorado.com/venues/the-steamboat-grand/",
+       "https://www.expedia.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+       "https://www.hotels.com/ho217282",
+       "https://www.ca.kayak.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
+       "https://us.lastminute.com/hotels/united-states/steamboat-springs/the-steamboat-grand_hid-582601",
+       "https://www.powderhounds.com/USA/Colorado/Steamboat/Facilities-Services.aspx",
+       "https://www.skibound.co.uk/destination/west-coast-usa/steamboat/steamboat-grand/",
+       "https://www.logitravel.com/hoteles/estados-unidos-ee-uu/estado-de-colorado/steamboat-springs-co/the-steamboat-grand--hotel-1792199",
+       "https://dejongteamsteamboat.realgeeks.com/property/SS6910182/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1069545/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1062040/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1056075/",
+       "https://dejongteamsteamboat.realgeeks.com/property/SS7652126/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1056442/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1057032/",
+       "https://dejongteamsteamboat.realgeeks.com/property/SS9741334/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1056551/",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1064454/"
+      ]
      }
     },
     {
@@ -1870,6 +2197,59 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
       "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
       "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 2 rec./2 baños: ~990-1,460 ft² (92-136 m²), típico ~1,200 ft² (111 m²). Algunas unidades tienen loft y varios niveles.",
+       "Camas típicas: queen + 2 individuales + sofá cama queen (varía por unidad). La niña tiene su propia recámara.",
+       "Cocina completa y chimenea en muchas unidades. La lavandería varía: algunas tienen lavadora/secadora propia y otras compartida (confirmar).",
+       "Complejo chico de 1982: ~32 unidades de 2 a 4 rec. en dos edificios en Ski Time Square (2000-2010 Ski Time Square Dr), junto a Burgess Creek.",
+       "Acceso: se llega esquiando por un sendero que termina justo arriba de Kutuk y luego se bajan escaleras al sundeck. Para salir hay que caminar y cruzar la calle a las pistas; a la góndola, ~10-11 min a pie según los listados.",
+       "Escuela infantil (Mountain Camp): ~10 min a pie o en el shuttle on-call de invierno (estimado).",
+       "SIN elevador: son edificios walk-up y los listados advierten que hay que poder subir escaleras. Las unidades de varios niveles tienen escaleras internas (una con escalera de caracol).",
+       "No tiene alberca: hay 2 jacuzzis exteriores comunes junto a la fogata y al sundeck, con vista al arroyo, al valle y a la base.",
+       "Lockers de esquí gratis para los huéspedes.",
+       "Estacionamiento subterráneo, apretado en semanas pico. Algunos listados lo cobran (por vehículo); confirmen.",
+       "Check-in a las 16:00 (Vacasa). Hay varios administradores (Vacasa, Steamboat Resorts, Resort Lodging Co.), y el check-in es en la oficina del que opere su unidad.",
+       "Tranquilo: no hay restaurante ni bar; de noche se oye el arroyo.",
+       "No todas las unidades están remodeladas."
+      ],
+      "recomendacion": {
+       "pedir": "Una unidad de 2 rec. en planta baja (serie 100) o con las menos escaleras posibles, del lado del arroyo y el sundeck, remodelada y lo más cerca del sendero de ski-in y de los jacuzzis.",
+       "por_que": "Kutuk no tiene elevador y muchas unidades son de varios niveles. Subir esquís, botas y a una niña cansada por escaleras todos los días es lo que más pesa aquí. La 108 se describe en planta baja con el arroyo enfrente y la 109 con vista al arroyo y la nieve (aunque es de las más chicas, ~991 ft²). El lado del arroyo es el más tranquilo y bonito. Las de vista a la montaña con loft (309, 3 niveles) dan más espacio, pero con muchas escaleras. En Booking asigna el administrador, así que pidan 'planta baja / pocas escaleras' aunque no les den esos números.",
+       "unidades": [
+        "108 (2 rec./2 baños, hasta 8 personas; planta baja de edificio walk-up, con el arroyo enfrente)",
+        "109 (2 rec./2 baños, hasta 6; vista al arroyo y la nieve desde ventanales; ~991 ft²)",
+        "309 (2 rec./3 baños; tres niveles con loft y vista a la montaña: más espacio, pero con escaleras)"
+       ],
+       "evitar": [
+        "Unidades de tercer piso o de tres niveles, si no quieren subir escaleras con el equipo",
+        "Unidades sin remodelar: pidan fotos de la unidad asignada",
+        "Llegar tarde sin coordinar el check-in con el administrador",
+        "Dar por hecho que hay estacionamiento gratis o lavadora propia"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México para el primer viaje de esquí de nuestra hija de 5 años (irá a la escuela infantil junto a la góndola). Si es posible, nos encantaría una unidad de 2 recámaras en planta baja o con pocas escaleras (como la 108 o 109), del lado del arroyo y cerca del sendero de esquí y los jacuzzis, para cargar el equipo con la niña sin batallar y descansar tranquilos. Entendemos que depende de la disponibilidad y somos flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico for our 5-year-old daughter's very first ski trip (she'll be in ski school by the gondola). If possible, we'd love a 2-bedroom unit on the ground floor or with as few stairs as possible (like 108 or 109), on the creek side and close to the ski trail and hot tubs, so carrying gear with a little one is easy and nights are quiet. We understand it depends on availability and we're flexible. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://www.vacasa.com/unit/38042",
+       "https://vacasa.com/unit/38043",
+       "https://vacasa.com/unit/41180",
+       "https://vacasa.com/unit/111623",
+       "https://www.vacasa.ca/unit/38052",
+       "https://vacasa.com/usa/Kutuk-Condos-CO",
+       "https://scoutski.com/kutuk-condos",
+       "https://www.expedia.com/es/Steamboat-Springs-Hoteles-Walk-Across-The-Street-To-The-Ski-Slopes.h99112631.Informacion-Hotel",
+       "https://www.expedia.com/Steamboat-Springs-Hotels-Creekside-Condo-W-Beautiful-Views-Plus-A-Shared-Sundeck-W-A-Firepit-Hot-Tubs.h52180784.Hotel-Information",
+       "https://www.expedia.com/es/Steamboat-Springs-Hoteles-Perfect-Ski-Condo-W-Shared-Hot-Tubs-Firepit-Walk-To-The-Base-Area-Trails.h70519469.Informacion-Hotel",
+       "https://homes-and-villas.marriott.com/en/properties/40005262-steamboat-springs-wonderfully-remodeled-condo-w-a-mountain-view-shared-sundeck-and-hot-tubs",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Steamboat-Resorts.h791198.Hotel-Information",
+       "https://www.ski.com/h/18315161",
+       "https://dejongteamsteamboat.realgeeks.com/property/S1064511/",
+       "https://dejongteamsteamboat.realgeeks.com/kutuk/",
+       "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information"
+      ]
      }
     },
     {
@@ -1926,6 +2306,60 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
       "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
       "credito": "CarTick (Wikimedia Commons)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Residencia de 2 rec., normalmente una de 3-4 rec. con recámaras bloqueadas (lock-off). Los listados '2BR' anuncian 2,062-2,577 ft², pero es el área total; el espacio que se usa es menor.",
+       "Cada recámara tiene su baño. Cocina gourmet (Viking en algunas), chimenea y terraza con asador de gas en varias residencias.",
+       "Ski-in/ski-out real en Gondola Square: el ski valet está justo afuera del edificio, en el Plaza Level, y de ahí se camina directo a los lifts.",
+       "Escuela infantil: es lo más cerca posible. Sage Creek #105 se describe 'justo junto' al punto de reunión de la escuela y al Kids Vacation Center.",
+       "Ski valet gratis si rentan con el proveedor oficial o traen su propio equipo; con equipo rentado en otra tienda cobran cuota diaria.",
+       "Alberca climatizada todo el año y jacuzzis. Un listado decía que estaban cerrados por reparación en verano; confirmen que estén abiertos.",
+       "Cuarto de juegos familiar, Little Tykes playroom, gimnasio y estudio de movimiento. Desayuno continental y après-ski incluidos según los listados, y shuttle dentro de Steamboat.",
+       "Cargos extra: resort fee de ~16%, club fee de ~US$80/noche y limpieza (según la cotización previa).",
+       "Dos edificios, uno principal y otro más chico. La planta baja del chico está junto al game room y al playroom, y un huésped dijo que aun así no era ruidosa.",
+       "Vistas: del lado de las pistas se ven Mt. Werner, Gondola Square y la escuela infantil. Del otro lado se ven la alberca, Emerald Mountain y el valle del Yampa.",
+       "Burgess Creek corre junto a algunas residencias (Crestone Peak); se oye sobre todo en verano.",
+       "Hay accesos sin escaleras a los lockers, a la cava y a Steamboat Square desde algunas residencias (p. ej. Zen Mountain).",
+       "Estacionamiento y check-in: no se encontró el costo ni el procedimiento; confírmenlos con el administrador."
+      ],
+      "recomendacion": {
+       "pedir": "Una residencia del lado de las pistas (vista a Mt. Werner, Gondola Square y la escuela infantil), en planta baja o piso bajo, cerca del ski valet y del elevador; ideal Sage Creek #105 configurada como 2 rec.",
+       "por_que": "Sage Creek #105 es planta baja, tiene vista a las pistas y queda pegada al punto de reunión de la escuela y al Kids Vacation Center, con el playroom al fondo del pasillo. Un huésped dijo que era muy fácil cargar el equipo y que no era ruidosa. Se puede bloquear para 1 o 2 rec. Si no está, las residencias del 2º piso del lado de las pistas (Deer Mountain #204 y Crestone Peak #205) ven pistas, Gondola Plaza y la escuela, y en pisos altos Sopris Mountain #602 y Mountain Vista #503 tienen vista a la zona de esquí. En Booking cada residencia suele anunciarse por nombre y número: elijan una del lado de las pistas al reservar y usen la nota para confirmarlo.",
+       "unidades": [
+        "Sage Creek #105 (planta baja, vista a las pistas, junto a la escuela infantil y al Kids Vacation Center; se configura como 1 o 2 rec.)",
+        "Deer Mountain #204 (4 rec.; vista a pistas, Gondola Plaza y la escuela infantil desde la sala, el balcón y las recámaras)",
+        "Crestone Peak #205 (3 rec., la cotizada; vista a la zona de esquí desde la sala y todas las recámaras, terraza hacia Mt. Werner)",
+        "Sopris Mountain #602 (sala y terraza con vista a la zona de esquí)",
+        "Mountain Vista #503 (4 rec.; vistas amplias a la zona de esquí)"
+       ],
+       "evitar": [
+        "Residencias del lado de la alberca o del valle, si quieren ver las pistas: Horsetooth Mountain #408 (vista a la alberca y Emerald Mountain) y Buck Mountain #307 (vista al valle, sobre la alberca y los jacuzzis)",
+        "Residencias de nombre '2BR' sin número ni vista descrita (p. ej. Three Forks #306 o Wild Card Peak #616): pidan confirmar la orientación antes de pagar",
+        "Rentar el equipo fuera del proveedor oficial (el ski valet cobra cuota diaria)"
+       ],
+       "confianza": "alta"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México para el primer viaje de esquí de nuestra hija de 5 años (irá a la escuela infantil junto a la góndola). Si es posible, nos encantaría una residencia del lado de las pistas, con vista a Mt. Werner y Gondola Square, en planta baja o piso bajo y cerca del ski valet (como Sage Creek #105 en 2 recámaras), para caminar poquito con el equipo y la niña. Entendemos que depende de la disponibilidad y somos flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias, ya estamos muy emocionados!",
+      "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico for our 5-year-old daughter's very first ski trip (she'll be in ski school right by the gondola). If possible, we'd love a slope-side residence facing Mt. Werner and Gondola Square, on the ground or a lower floor near the ski valet (like Sage Creek #105 set up as a 2-bedroom), so the walk with gear and a little one is short. We understand it depends on availability and we're flexible. We expect to arrive around [arrival time]. Thank you so much, we're so excited!",
+      "fuentes": [
+       "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+       "https://homes-and-villas.marriott.com/en/properties/40202514-steamboat-springs-one-steamboat-place-0-crestone-peak",
+       "https://homes-and-villas.marriott.com/en/properties/40202502-steamboat-springs-one-steamboat-place-105-sage-creek",
+       "https://www.vacationrenter.com/p/1739518",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Sage-Creek-2BR-Ski-Inski-Out-Luxury.h69720774.Hotel-Information",
+       "https://villainfo.villasofdistinction.com/villas/colorado/one-steamboat-place-deer-mountain",
+       "https://www.airbnb.com.bz/rooms/18755162",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-Slopeside-Residence-At-One-Steamboat-Place-W-Pool-Access-Sopris-Mountain-602.h94259978.Hotel-Information",
+       "https://homes-and-villas.marriott.com/40202846",
+       "https://www.airbnb.com/rooms/30795168",
+       "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/one-steamboat-place-307-buck-mountain",
+       "https://mvcowner.villasofdistinction.com/villa/colorado/steamboat-springs/one-steamboat-place-307-buck-mountain-2-bedrooms",
+       "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Three-Forks-306-2BR-Ski-InSki-Out-Luxury.h69720783.Informacion-Hotel",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Slopeside-Residence-Wild-Card-Peak-616-2BR.h88243157.Hotel-Information",
+       "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Zen-Mountain-1BR-Slopeside-Deluxe.h69720793.Hotel-Information",
+       "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Diamond-Peak-616-2BR-Penthouse.h69720848.Informacion-Hotel"
+      ]
      }
     }
    ],
@@ -2461,6 +2895,48 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
       "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
       "credito": "Werdna (Wikimedia Commons, obra propia)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Unidad cotizada: Deluxe con 2 queens, ~450 ft² (42 m²). Otras categorías: Terrace 2Q (~463 ft², con terraza), Luxury 2Q (~495 ft², chimenea y balcón) y Grand Deluxe 2Q (balcón y wet bar)",
+       "Duerme hasta 5: cama extra $50/noche y cuna gratis; 1 baño con regadera walk-in",
+       "Sin cocina (algunos listados mencionan mini-refri o wet bar según la categoría); desayuno buffet incluido de 7 a 10 am",
+       "Ski-in/ski-out real: la góndola Elk Camp sale junto a la puerta y un catwalk llega hasta la puerta del cuarto de esquís. Según Scout, algunas Grand Deluxe tienen salida directa a la pista desde el deck",
+       "Treehouse a 1-3 min caminando: es el traslado con equipo más corto de las 4 opciones",
+       "Alberca exterior y 2 jacuzzis grandes con fogatas, más un muro de escalar de 5 pisos y un Kids' Room",
+       "Estacionamiento cubierto subterráneo: $45 por noche, con entradas y salidas",
+       "Resort fee del 10% más una cuota de destino del 1.5% sobre la tarifa, más 13.05% de impuesto",
+       "Check-out a las 11 am (la hora de check-in no se confirmó). Algunos listados anuncian un shuttle gratis al aeropuerto; hay que verificar el horario",
+       "Ruido: el lounge del lobby tiene música en vivo varias noches por semana y la plaza frente al hotel es la pista de hielo (abierta de 1 a 9 pm). Un agregador de reseñas menciona ruido de pasillos y de cuartos vecinos",
+       "Según un listado, las 11 residencias de 2-3 recámaras están principalmente en el 5º piso",
+       "No se encontró información de lavandería: preguntar en el hotel"
+      ],
+      "recomendacion": {
+       "pedir": "Una Deluxe de 2 queens en piso alto con vista a la montaña (del lado de la góndola Elk Camp y las pistas), lejos del elevador y que no quede encima del lounge del lobby ni de la plaza con la pista de hielo. Si hay upgrade sin costo, una Terrace o Luxury con balcón.",
+       "por_que": "Todo el hotel queda a 1-3 min del Treehouse y de la góndola, así que entre un cuarto y otro solo cambian la vista y el ruido. El lounge del lobby tiene música en vivo varias noches y la pista de hielo de la plaza está activa hasta ~9 pm. Las Luxury y Terrace anuncian balcón con vista a la montaña y al pueblo, y algunas Grand Deluxe salen directo a la pista desde el deck. No se encontró ninguna fuente que diga qué números de cuarto o qué lado dan a la pista, por eso la petición se basa en orientación y piso.",
+       "unidades": [],
+       "evitar": [
+        "Cuartos sobre el lobby o el lounge: hay música en vivo en las noches",
+        "Cuartos pegados al elevador o a la máquina de hielo (hay reseñas con quejas de ruido de pasillos)",
+        "Pisos bajos que dan a la plaza o a la pista de hielo, si tienen sueño ligero (aunque a la niña le encantaría ver la pista)"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años: es su primer viaje de esquí y estamos muy emocionados. Si fuera posible, nos encantaría una habitación en piso alto con vista a la montaña (del lado de la góndola Elk Camp), lejos del elevador y que no quede justo encima del lounge ni de la pista de hielo, para que la niña duerma tranquila. ¡Y si hubiera una con balcón, sería un sueño! Sabemos que depende de la disponibilidad y somos muy flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias por su ayuda!",
+      "solicitud_en": "Hello! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter for her very first ski trip, and we're so excited! If possible, we'd love a room on a higher floor with a mountain view (Elk Camp gondola side), away from the elevator and not right above the lounge or the ice rink, so our little one can sleep well. If one with a balcony happened to be available, that would be a dream! We know it depends on availability and we're very flexible. We expect to arrive around [arrival time]. Thank you so much for your help!",
+      "fuentes": [
+       "https://scoutski.com/limelight-hotel-snowmass",
+       "https://www.luxurylink.com/5star/hotels/snowmass-village-colorado/limelight-snowmass",
+       "https://inspirato.com/destinations/snowmass-village-colorado/residences/limelight-luxury-room-two-queens/",
+       "https://inspirato.com/destinations/snowmass-village-colorado/residences/limelight-terrace-room-one-king/",
+       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-base-village/hotel/limelight-hotel-snowmass?u=5064",
+       "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
+       "https://expedia.com/Colorado-hotels-Limelight-Hotel-Snowmass.h25062460.Hotel-information",
+       "https://www.americanexpress.com/en-us/travel/the-hotel-collection/property/Colorado-US/Snowmass-Village/Limelight-Snowmass",
+       "https://ratepunk.com/hotel/us/snowmass-village/limelight-hotel-snowmass",
+       "https://wanderlog.com/place/details/1008892/limelight-hotel",
+       "https://www.hotel-online.com/press_releases/release/aspen-skiing-company-opens-the-99-room-limelight-hotel-snowmass"
+      ]
      }
     },
     {
@@ -2523,6 +2999,56 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
       "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
       "credito": "Werdna (Wikimedia Commons, obra propia)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Unidad cotizada: residencia de 1 recámara en la Pinnacle Tower, ~550 ft² (51 m²), con king + sofá cama doble. El estudio mide ~375 ft² y la de 1 rec. + den ~900 ft²",
+       "Todas las unidades tienen cocina (en las suites es tipo 'butler's kitchen'); confirmar si es completa o cocineta",
+       "Pinnacle Tower es el edificio original ski-in/ski-out, con restaurantes, spa y alberca. Cirque Tower es más nueva, con plantas más grandes, techos más altos y más privada y silenciosa",
+       "Ski-in/ski-out junto al telesilla Assay Hill, que pasa sobre la zona de la alberca, y a pasos de la góndola Elk Camp y del Village Express",
+       "Treehouse a ~530 m: unos 7 min caminando (Trip.com)",
+       "Alberca exterior climatizada (salina), 3 jacuzzis, cabañas y fogata; las reseñas destacan la vista a la montaña desde la alberca y el jacuzzi",
+       "Ski valet con calentadores de botas; según las reseñas, los valets ayudan a los niños con las botas (se paga o se da propina)",
+       "Estacionamiento solo con valet: ~$60 por noche, cubierto, con entradas y salidas",
+       "Resort fee de ~$55 por noche (Kayak), más 13.05% de impuesto",
+       "Desayuno con costo en Toro Kitchen; el hotel tiene tienda de esquí para renta y clases",
+       "Muy familiar: los cuartos suelen ser interconectables y hay programa infantil. En vacaciones escolares se llena de niños",
+       "Algunas residencias tienen lavadora y secadora (el listado de la 530 la menciona); confirmar en la unidad asignada",
+       "Ruido y ubicación: Fathom recomienda evitar los cuartos al norte que dan al camino de acceso. Una reseña de ago-2025 dice que la categoría estándar en 2º piso se siente como sótano, y otra se queja de un cuarto junto al elevador"
+      ],
+      "recomendacion": {
+       "pedir": "Una residencia de 1 recámara en la Pinnacle Tower, en piso alto y del lado de las pistas (Assay Hill) y la alberca, no al norte sobre el camino de acceso, cerca del elevador pero no pegada a él.",
+       "por_que": "Fathom recomienda evitar los cuartos al norte con vista al camino de acceso. El telesilla Assay Hill pasa sobre la alberca, así que ese es el lado 'slopeside' con vista. Pinnacle reúne el ski-in/ski-out, la alberca y los restaurantes, lo que acorta las caminatas con equipo. Una reseña de 2025 describe la categoría estándar del 2º piso como de sótano. Cirque es más grande y silenciosa, pero la cotización fue en Pinnacle.",
+       "unidades": [
+        "530: 1 rec., 569 ft², 'slope side view', sofá cama queen y lavadora/secadora (listado de venta en 130 Wood Rd, la dirección del Viceroy; solo aplica si está en el programa de renta del hotel)",
+        "631: 2 rec. en esquina, la recámara principal ve a Assay Hill y a la alberca (listado MLS; solo si reservan 2 recámaras)"
+       ],
+       "evitar": [
+        "Cuartos al norte con vista al camino de acceso a la villa (Fathom)",
+        "Categoría estándar en 2º piso ('se siente como sótano', reseña de ago-2025)",
+        "Cuarto pegado al elevador",
+        "Si lo que quieren es ver la pista: unidades con vista 'down-valley' hacia Brush Creek, como la 514 (vista bonita, pero de valle)"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, viajamos desde México con nuestra hija de 5 años para su primer viaje de esquí. Si fuera posible, nos encantaría una residencia en la Pinnacle Tower en piso alto, del lado de las pistas (Assay Hill) y la alberca, y no hacia el camino de acceso, cerca del elevador pero no pegada a él. Así nos moveríamos fácil con el equipo y la niña dormiría tranquila. Sabemos que depende de la disponibilidad y somos muy flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias por su ayuda!",
+      "solicitud_en": "Hello! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter for her very first ski trip. If possible, we'd love a residence in the Pinnacle Tower on a higher floor, on the slope side (Assay Hill) facing the pool rather than the access road, and close to, but not right next to, the elevator. That way we can move easily with our ski gear and our little one can sleep well. We know it depends on availability and we're very flexible. We expect to arrive around [arrival time]. Thank you so much for your help!",
+      "fuentes": [
+       "https://fathomaway.com/review-viceroy-hotel-snowmass-aspen/",
+       "https://www.tastingtable.com/691452/viceroy-snowmass-ski-resort-aspen-colorado-vacation-guide-fathom",
+       "https://www.oyster.com/snowmass-village/hotels/viceroy-snowmass/",
+       "https://www.viceroyhotelsandresorts.com/es/node/350",
+       "https://www.travelocity.com/Grand-Mesa-Hotels-Viceroy-Snowmass.h2814387.Hotel-Information",
+       "https://www.trip.com/t/sHhrY9TzNQ2",
+       "https://www.luxurylink.com/5star/hotels/snowmass-village-colorado/viceroy-snowmass?rooms=0",
+       "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
+       "https://www.hotelplanner.com/Hotels/251495/Reservations-Viceroy-Snowmass-Snowmass-Village-130-Wood-Rd-81615",
+       "https://theluxtraveller.com/?p=8499",
+       "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
+       "https://www.homes.com/snowmass-village-co/under-2m/",
+       "https://aspenglenwoodmls.com/listings/CO/Snowmass-Village/81615/10189/130-wood-road-631-snowmass-village-co-81615/460826679",
+       "https://www.elliman.com/listing/130-wood-rd-514-snowmass-village-co-81615/13790694"
+      ]
      }
     },
     {
@@ -2585,6 +3111,55 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
       "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
       "credito": "Werdna (Wikimedia Commons, obra propia)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Unidad cotizada: Classic con 2 queens, ~340 ft² (32 m²), la más chica de las 4 opciones. La Valley View 2Q mide ~334 ft², y existe una Slope Side con balcón y vista a la montaña",
+       "Sin cocina y 1 baño. Para más espacio hay cuartos interconectados y suites de 1 recámara",
+       "Ski-in/ski-out sobre Fanny Hill, a media montaña, junto al Snowmass Mall y la góndola Sky Cab, con vista directa al telesilla principal",
+       "Treehouse a ~10-15 min (estimación): caminar al Mall y tomar la Sky Cab a Base Village. El resort fee incluye un shuttle local de 5 am a 11 pm",
+       "Alberca exterior climatizada con vista a la montaña, 2 jacuzzis grandes y spa",
+       "Resort fee: las fuentes van de $15 a $60 por noche. Incluiría internet, shuttle local y al aeropuerto, ski valet con calentador de botas, bebida de bienvenida y chocolate caliente con galletas cada día",
+       "Estacionamiento: ~$30 por día propio y ~$50 con valet. Un listado dice que el estacionamiento propio va incluido en el resort fee; hay que verificarlo",
+       "Desayuno no incluido. Restaurantes: Stark's Alpine Grill, Lobby Bar y First Chair (café)",
+       "Kids club Lupine Kids Zone (4-12 años, con costo)",
+       "Renovación de ~$40M; reabrió como Autograph Collection en 2022. Las calificaciones son mixtas (Kayak: 6.5/10)",
+       "Distribución heredada del Westin: el ala Pinnacle tiene vista a las pistas y acceso directo al Mall y la alberca; el ala Alpine es más silenciosa, con balcones grandes, pero requiere más elevadores y más caminata",
+       "Un aviso en Booking recomienda evitar los pisos más altos porque hay que tomar varios elevadores",
+       "Según Scout, la vista a la pista solo está garantizada en las categorías Premium o Mountain Front; algunos cuartos dan al pueblo o a otros edificios"
+      ],
+      "recomendacion": {
+       "pedir": "Un cuarto con vista a las pistas (Fanny Hill / Village Express) en el ala Pinnacle, cerca del lobby, el ski valet y la alberca, en un piso intermedio al que se llegue con un solo elevador, y que no dé al pueblo, a otros edificios ni al estacionamiento. Si el presupuesto alcanza, conviene reservar directamente Premium o Mountain Front, que garantizan vista a la pista.",
+       "por_que": "Scout dice que solo Premium y Mountain Front garantizan la vista a la pista y que algunos cuartos dan al pueblo o a otros edificios. El ala Pinnacle (nombre de la era Westin) tiene vista a la pista y acceso directo al Mall y la alberca. El ala Alpine es más silenciosa, pero implica varios elevadores y caminatas más largas, lo cual pesa con equipo y una niña de 5 años. Booking advierte que los pisos más altos requieren cambiar de elevador. Como el Classic mide solo 340 ft², la vista y la ubicación pesan más.",
+       "unidades": [],
+       "evitar": [
+        "Pisos más altos que obligan a cambiar de elevador (aviso en Booking)",
+        "El ala Alpine si traen mucho equipo (más elevadores y caminata), aunque sea más silenciosa",
+        "Cuartos que dan al pueblo, a otros edificios o al estacionamiento",
+        "Cuartos pegados al elevador"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, viajamos desde México con nuestra hija de 5 años para su primer viaje de esquí. Si fuera posible, nos encantaría un cuarto con vista a las pistas (Fanny Hill), en un piso intermedio al que se llegue con un solo elevador y cerca del lobby, el ski valet y la alberca, para movernos fácil con el equipo y la niña. De preferencia un cuarto tranquilo, que no quede pegado al elevador ni dé al estacionamiento. Sabemos que depende de la disponibilidad y somos muy flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Muchas gracias!",
+      "solicitud_en": "Hello! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter for her very first ski trip. If possible, we'd love a slope-view room (Fanny Hill) on a middle floor reachable with a single elevator, close to the lobby, ski valet and pool, so it's easy to get around with ski gear and a little one. A quiet room away from the elevator and not facing the parking would be wonderful. We know it depends on availability and we're very flexible. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://scoutski.com/viewline-snowmass",
+       "https://www.blacktomato.com/us/destinations/usa/westin-snowmass/",
+       "https://www.ivvy.com/venue/snowmass-village--colorado/the-westin-snowmass-resort.html",
+       "https://foursquare.com/thewesti6116823",
+       "https://sp.booking.com/hotel/us/westin-snowmass.html",
+       "https://snowscene.com.au/accommodation/viewline-resort-snowmass/",
+       "https://www.expedia.com/cn/Snowmass-Village-Hotels-The-Westin-Snowmass-Resort.h5279655.Hotel-Information",
+       "https://www.travelocity.com/Snowmass-Village-Hotels-The-Westin-Snowmass-Resort.h5279655.Hotel-Information",
+       "https://www.costcotravel.com/hotels/colorado/aspen/AspenViewlineResort",
+       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass?u=11671",
+       "https://www.hotelplanner.com/Hotels/26107/Reservations-Viewline-Resort-Snowmass-Autograph-Collection-Snowmass-Village-100-Elbert-Lane-81615",
+       "https://ph.sembo.com/d/hotel-211664_viewline_resort_snowmass_autograph_collection_aspen_co",
+       "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
+       "https://www.hotelmanagement.net/own/iconic-snowmass-resort-reopens-following-40-million-transformation",
+       "https://sunset.com/travel/travel-directory/viewline-resort-snowmass-2",
+       "https://gettys.com/a-retro-motor-lodge-a-frame-colony-and-5-more-ski-hotels-opening-this-winter"
+      ]
      }
     },
     {
@@ -2646,6 +3221,61 @@ window.SKIAR = {
       "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
       "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
       "credito": "Wolfgang Moroder"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Unidad cotizada: condo de 2 recámaras de ~1,135-1,207 ft² (≈107 m²) con 2-3 baños. Cada unidad es de un dueño distinto, así que la decoración y el mantenimiento varían",
+       "Hay condos de un solo nivel con acceso por elevador y unidades de varios niveles tipo townhome, con escaleras internas",
+       "Cocina completa y chimenea en la mayoría; muchas tienen balcón o patio",
+       "Ski-in/ski-out sobre Fanny Hill (pista verde), con acceso al Village Express y a la góndola Elk Camp; es una zona más tranquila que Base Village",
+       "Treehouse a ~10-20 min (estimación): caminar al Mall (~7 min y 0.4 mi, según un listado) y tomar la Sky Cab a Base Village, o usar el shuttle",
+       "Alberca exterior climatizada, jacuzzis y sauna. Un listado de venta menciona alberca nueva, varios jacuzzis y vestidores renovados",
+       "Ski lockers y tienda de renta y reparación en el edificio, con afinado nocturno de esquís",
+       "Estacionamiento cubierto o subterráneo; algunos listados aclaran que no es gratis, así que hay que confirmar el costo con la unidad",
+       "Check-in desde las 4 pm (según un listado de Expedia), con el administrador. Se paga limpieza y no hay servicio diario",
+       "Edificio de ~4 pisos construido en 1983, con el lobby renovado",
+       "No hay desayuno ni ski valet de hotel. La lavadora y secadora varían por unidad: confirmar",
+       "Una reseña de 2020 describe una unidad como desgastada: elegir una con fotos recientes"
+      ],
+      "recomendacion": {
+       "pedir": "Si reservan por número de unidad (Expedia o Lodging Company), escoger una de 2 recámaras que anuncie vista a las pistas, como la 35 o la 36. Si reservan un '2 rec.' genérico, pedir una unidad del lado de Fanny Hill, de un solo nivel con elevador y cerca de los ski lockers y la alberca.",
+       "por_que": "Las unidades varían mucho y solo algunas anuncian vista a Fanny Hill o a las pistas (35, 36, 52, 48); otras ven al arroyo o al valle (04, 14). Un condo de un nivel con elevador evita subir escaleras internas con equipo y una niña de 5 años. Estar cerca de los ski lockers y la alberca reduce lo que hay que caminar en botas. Las unidades 35 y 36 son de varios niveles: buena vista a cambio de escaleras.",
+       "unidades": [
+        "35: 2 rec./2 baños, 992 ft², varios niveles, ski-in/ski-out, vista a Snowmass Mountain (Expedia)",
+        "36: 2 rec. + área extra, 2.5 baños, dos niveles, vista amplia a las pistas, ski-in/ski-out directo (listado MLS; Lodging Company también la renta)",
+        "23: 2 rec./2 baños, vista a la alberca (Marriott Homes & Villas)",
+        "52: 3 rec., patio con vista a Fanny Hill (Expedia; solo si suben a 3 recámaras)",
+        "48: 3 rec., último piso, sala y deck hacia Fanny Hill (listado de venta; puede no estar en renta)"
+       ],
+       "evitar": [
+        "Si la prioridad es ver la pista: la 04 (patio hacia el arroyo) y la 14 (vista al valle, con loft)",
+        "Lofts o unidades de varios niveles, si quieren evitar escaleras con la niña",
+        "Unidades sin fotos recientes o descritas como sin renovar (reseña de 2020)",
+        "Confundirla con Woodrun V, los townhomes vecinos, que son otro edificio"
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos Ricardo y Ana, viajamos desde México con nuestra hija de 5 años para su primer viaje de esquí. Si fuera posible, nos encantaría un condo de 2 recámaras con vista a Fanny Hill o las pistas (vimos que unidades como la 35 o la 36 la tienen), de preferencia con acceso por elevador y cerca de los ski lockers y la alberca, para movernos fácil con el equipo y la niña. ¿Nos podrían confirmar el número de unidad, el estacionamiento y cómo es el check-in? Somos muy flexibles. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias!",
+      "solicitud_en": "Hello! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter for her very first ski trip. If possible, we'd love a 2-bedroom condo with a view of Fanny Hill or the slopes (we saw units like #35 or #36 have one), ideally with elevator access and close to the ski lockers and pool, so it's easy to get around with ski gear and a little one. Could you please confirm our unit number, parking and check-in details? We're very flexible. We expect to arrive around [arrival time]. Thank you so much!",
+      "fuentes": [
+       "https://scoutski.com/woodrun-place",
+       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+       "https://lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place?u=4522",
+       "https://lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place?t=3%2C2",
+       "https://www.expedia.com/cn/Snowmass-Village-Hotels-Woodrun-Place-35-Two-Bedroom-Residence.h110439392.Hotel-Information",
+       "https://aspenglenwoodmls.com/listings/CO/Snowmass-Village/81615/10189/425-wood-run-road-36-snowmass-village-co-81615/734515205",
+       "https://homes-and-villas.marriott.com/en/properties/40474032-snowmass-woodrun-place-23",
+       "https://www.expedia.com/Snowmass-Village-Hotels-Woodrun-Place-52-Three-Bedroom-Residence.h110439433.Hotel-Information",
+       "https://www.exprealty.com/snowmass-village-co-real-estate/wood-run-place/48-425-wood-rd",
+       "https://www.expedia.co.uk/Snowmass-Village-Hotels-Woodrun-Place-02-Two-Bedroom-Residence.h110439338.Hotel-Information",
+       "https://www.expedia.com/es/Snowmass-Village-Hoteles-Woodrun-Place-04-Two-Bedroom-Residence.h110439341.Informacion-Hotel",
+       "https://www.expedia.com/cn/Snowmass-Village-Hotels-Woodrun-Place-14-Two-Bedroom-Loft-Residence.h110439366.Hotel-Information",
+       "https://www.expedia.com/Snowmass-Village-Hotels-Woodrun-Place-37-Two-Bedroom-Residence.h110439403.Hotel-Information",
+       "https://www.travelocity.com/Snowmass-Village-Hotels-Woodrun-Place-38-One-Bedroom-Residence.h110439405.Hotel-Reviews",
+       "https://aspensnowmass.com/visit/lodging/properties/woodrun-place",
+       "https://www.successfulmeetings.com/Meeting-Event-Venues/Snowmass-Village-CO/Convention-Hotel/Woodrun-Place-Condominium-Hotel-p5530602",
+       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/town-home/woodrun-v?t=1&u=5528"
+      ]
      }
     }
    ],
