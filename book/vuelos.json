@@ -54,7 +54,10 @@
         }
       },
       "equipaje": "Tarifa base: sólo artículo personal. Maleta documentada se paga aparte: lista Viva (fecha no clara) MXN 371 hasta 20 kg, +MXN 604 para 25 kg, maleta extra 25 kg MXN 1,010; nota 2026: primera maleta MXN 500-900 (nacional); rutas a EE.UU. (dato antiguo) US$38-65 por maleta 25 kg por trayecto. Esquís = equipaje especial, ~US$60-100 por trayecto (estimación de terceros). Estimado familia: 2 maletas de 25 kg ida y vuelta ≈ US$150-260.",
-      "notas": "Estimado = tarifas mínimas observadas recientemente (no son de ene-mar 2027): Kayak US$229 (rango típico 189-371), Skyscanner US$232, Google Flights US$243, Expedia US$245-246, FareCompare típico 217-403; Viva desde MXN 1,458 sencillo (ago 2026). Rango probable por persona 230-370. Única ruta sin escala. Viva vende tramos sencillos: se puede volar ida en otra aerolínea y regreso en Viva. Salida ~10-11 am: salir de Torreón 4-5 am o dormir en Monterrey la víspera. Volaris dejó la ruta el 30-may-2025."
+      "notas": "Estimado = tarifas mínimas observadas recientemente (no son de ene-mar 2027): Kayak US$229 (rango típico 189-371), Skyscanner US$232, Google Flights US$243, Expedia US$245-246, FareCompare típico 217-403; Viva desde MXN 1,458 sencillo (ago 2026). Rango probable por persona 230-370. Única ruta sin escala. Viva vende tramos sencillos: se puede volar ida en otra aerolínea y regreso en Viva. Salida ~10-11 am: salir de Torreón 4-5 am o dormir en Monterrey la víspera. Volaris dejó la ruta el 30-may-2025.",
+      "equipaje_total_usd": 200,
+      "equipaje_total_nota": "2 maletas de 25 kg ida y vuelta (rango US$150-260 según la nota de equipaje)",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "mty-den-conexion",
@@ -93,7 +96,10 @@
         }
       },
       "equipaje": "No verificado para 2027. Tarifas básicas de United/American normalmente no incluyen maleta documentada; revisar al cotizar.",
-      "notas": "No se encontró tarifa observada de United/AA MTY-DEN. Estimado entre el tope del rango típico de Viva (US$371-403) y las conexiones TRC-DEN observadas (US$503-578). Sirve como respaldo si Viva no vuela el domingo, o para combinar ida en United/AA (domingo) + regreso Viva (sábado)."
+      "notas": "No se encontró tarifa observada de United/AA MTY-DEN. Estimado entre el tope del rango típico de Viva (US$371-403) y las conexiones TRC-DEN observadas (US$503-578). Sirve como respaldo si Viva no vuela el domingo, o para combinar ida en United/AA (domingo) + regreso Viva (sábado).",
+      "equipaje_total_usd": 280,
+      "equipaje_total_nota": "Estimado: 2 maletas ida y vuelta en tarifa básica",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "trc-den-aa",
@@ -132,7 +138,10 @@
         }
       },
       "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
-      "notas": "Observado TRC-DEN ida y vuelta: Expedia desde US$538 (Aeroméxico/Delta), Kiwi mínimo US$503 / promedio US$559. No se observó tarifa específica de AA vía DFW. Evita manejar a MTY; inmigración en DFW."
+      "notas": "Observado TRC-DEN ida y vuelta: Expedia desde US$538 (Aeroméxico/Delta), Kiwi mínimo US$503 / promedio US$559. No se observó tarifa específica de AA vía DFW. Evita manejar a MTY; inmigración en DFW.",
+      "equipaje_total_usd": 280,
+      "equipaje_total_nota": "Estimado: 2 maletas ida y vuelta en tarifa básica",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "trc-hdn-aa",
@@ -168,7 +177,10 @@
         }
       },
       "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
-      "notas": "Estimado: TRC-DFW enero 2026 'desde' MXN 7,555 r/t en aa.com (~US$445) + DFW-HDN r/t observado US$323 (Skyscanner) a US$381 (Kayak, AA, fechas de marzo); un boleto único suele costar menos que la suma (~US$770-825). Referencia verano 2026 (Mundial) TRC-DFW: MXN 10,320-13,104 r/t. Ruta más cómoda: sin manejo en México ni en la montaña."
+      "notas": "Estimado: TRC-DFW enero 2026 'desde' MXN 7,555 r/t en aa.com (~US$445) + DFW-HDN r/t observado US$323 (Skyscanner) a US$381 (Kayak, AA, fechas de marzo); un boleto único suele costar menos que la suma (~US$770-825). Referencia verano 2026 (Mundial) TRC-DFW: MXN 10,320-13,104 r/t. Ruta más cómoda: sin manejo en México ni en la montaña.",
+      "equipaje_total_usd": 280,
+      "equipaje_total_nota": "Estimado: 2 maletas ida y vuelta en tarifa básica",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "mty-ase-1escala",
@@ -204,7 +216,10 @@
         }
       },
       "equipaje": "No verificado; tarifas básicas United/AA sin maleta documentada.",
-      "notas": "Observado (fechas fuera de temporada de esquí): Google Flights US$546 r/t United 1 escala; Expedia US$562; AA desde US$697 (otoño 2026); Skyscanner £455. Invierno en ASE suele ser más caro. ASE tiene riesgo de desvíos/cancelaciones por clima."
+      "notas": "Observado (fechas fuera de temporada de esquí): Google Flights US$546 r/t United 1 escala; Expedia US$562; AA desde US$697 (otoño 2026); Skyscanner £455. Invierno en ASE suele ser más caro. ASE tiene riesgo de desvíos/cancelaciones por clima.",
+      "equipaje_total_usd": 280,
+      "equipaje_total_nota": "Estimado: 2 maletas ida y vuelta en tarifa básica",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "mty-ege-1escala",
@@ -242,7 +257,10 @@
         }
       },
       "equipaje": "No verificado.",
-      "notas": "Único dato: EGE→MTY sencillo desde US$280 en United (Google Flights) → ~US$560 r/t + prima de invierno. Traslado EGE→Snowmass o EGE→Keystone no cotizado."
+      "notas": "Único dato: EGE→MTY sencillo desde US$280 en United (Google Flights) → ~US$560 r/t + prima de invierno. Traslado EGE→Snowmass o EGE→Keystone no cotizado.",
+      "equipaje_total_usd": 280,
+      "equipaje_total_nota": "Estimado: 2 maletas ida y vuelta en tarifa básica",
+      "equipaje_confianza": "baja"
     },
     {
       "id": "trc-ase-ege-aa",
@@ -445,5 +463,7 @@
     "https://www.milenio.com/estados/aumento-casetas-carreteras-coahuila-durango-2026-costo",
     "https://www.posta.com.mx/coahuila/congreso-de-coahuila-exige-frenar-aumentos-en-tarifa-de-la-autopista-saltillo-monterrey/vl2194050",
     "https://www.liderempresarial.com/superpeso-peso-mexicano-dolar-16-94-cuanto-durara/"
-  ]
+  ],
+  "hotel_denver_usd": 160,
+  "hotel_denver_nota": "Estimado: 1 noche cerca del aeropuerto de Denver para aclimatarse (recomendación de Children's Hospital Colorado). Aplica cuando se vuela a DEN."
 }

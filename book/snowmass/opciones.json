@@ -1,0 +1,677 @@
+{
+  "slug": "snowmass",
+  "nombre": "Snowmass",
+  "resumen": "Es el destino más mágico de Colorado para una niña de 5 años: Treehouse, esquí gratis hasta los 6 y una villa peatonal con pista de hielo y s'mores gratis. Pero no cabe en un precio cómodo: un combo realista ski-in/ski-out cuesta ~US$10,400 (mínimo ~$8,900) sin contar visas.",
+  "magia": [
+    "Treehouse Kids' Adventure Center: un edificio infantil de ~25,000 ft² con Alpine Climb Room, sede de la escuela y junto a la góndola Elk Camp",
+    "La niña esquía gratis (6 años o menos, en las 4 montañas)",
+    "Pista de hielo gratis en Base Village con patines gratis (1-9 pm, datos de 2023-24)",
+    "S'mores gratis todos los días desde las 3:30 pm en Base Village y en el Mall",
+    "La góndola de colores 'Skittles' (Sky Cab), gratis, entre el Mall y Base Village",
+    "Ullr Nights en Elk Camp: fogata, s'mores, tubing nocturno iluminado y el Breathtaker Alpine Coaster con lucecitas en el Lost Forest (verificar la operación 2026-27)",
+    "Buttermilk, la montaña de los niños: The Hideout y el fuerte Fort Frog",
+    "Aspen de noche y las Maroon Bells, el paisaje más famoso de Colorado"
+  ],
+  "costo_beneficio": 5,
+  "altitud_base_m": 2470,
+  "aeropuerto": "ASE",
+  "traslado": "Recomendado: ASE (Aspen), a 15-20 min de Snowmass (taxi o shuttle ~$100 en total, estimación; ver si el hospedaje tiene shuttle gratis). Alternativa económica: DEN, a 3.5-4 h en auto (~200-220 mi por la I-70 y Glenwood Springs; Independence Pass cierra en invierno). Esa opción cuesta ~$650 de SUV AWD con gasolina + ~$150 de una noche en Denver + estacionamiento. EGE queda a ~70 mi (1h20-1h30, taxi ~$174) y no tiene transporte público a Snowmass. ASE cierra del 4-abr al 19-nov-2027 por obras, pero no afecta la temporada 2026-27.",
+  "ruta": "Cómoda: Torreón (TRC) → Dallas (DFW, American sin escalas) → Aspen (ASE, American DFW-ASE sin escalas). Económica: Torreón → auto 3.5-4 h → Monterrey → Viva Aerobus MTY-DEN sin escalas (~2h40) → SUV AWD → noche en Denver → 3.5-4 h a Snowmass. Las ventanas empiezan en domingo y el vuelo de Viva podría ser solo jueves y domingo, así que hay que confirmar el regreso.",
+  "ninos_gratis": "Sí aplica a la niña de 5 años: en Aspen Snowmass los niños de 6 años o menos esquían gratis en las 4 montañas. Snowthere menciona '5 and under' en una página; aun así queda cubierta.",
+  "escuela": {
+    "programa": "Clase grupal infantil de día completo, 3-6 años (Aspen Snowmass Ski & Snowboard School)",
+    "punto_encuentro": "Treehouse Kids' Adventure Center, Snowmass Base Village (alternativa: The Hideout, Buttermilk)",
+    "precio_dia_usd": 310,
+    "total_5_dias_usd": 1550,
+    "incluye": "Clase de ~9:30 a 15:00, forfait, equipo (2.5-6 años), comida y snack, en grupos de 4-5 niños. Todo esto según fuentes de terceros; hay que verificarlo. Reservar con 30+ días de anticipación da hasta 20% de descuento.",
+    "fuente": "https://www.aspensnowmass.com/visit/lessons/child-and-teen-lessons",
+    "confianza": "media"
+  },
+  "forfaits": {
+    "adultos_total_usd": 990,
+    "nina_total_usd": 0,
+    "como_comprar": "Oferta 'Sheer Bliss': forfait de adulto a $99 por día al comprar un paquete de renta Premium de adulto de 2+ días en Four Mountain Sports. Hay que reservar ANTES DEL 31-OCT-2026 y es válido desde el 1-ene-2027 (2 adultos × 5 días = $990). Plan B: Flex Pass de 5 días (en primavera costaba $749; hoy es más caro), válido en las 4 montañas y sin blackouts. El Ikon Base (~$1,019+) solo da 5 días en Snowmass y no incluye Buttermilk; conviene solo si van a esquiar en otros resorts Ikon.",
+    "fuente": "https://scoutski.com/best-aspen-snowmass-ski-deals-for-26-27-winter-season",
+    "confianza": "media"
+  },
+  "renta_equipo_total_usd": 900,
+  "traslados_total_usd": 100,
+  "comida_total_usd": {
+    "cocinando": 770,
+    "restaurantes": 1330
+  },
+  "alojamientos": [
+    {
+      "nombre": "Limelight Hotel Snowmass",
+      "tipo": "hotel",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "En Snowmass Base Village, junto a la góndola Elk Camp; se sale esquiando y se regresa esquiando.",
+      "distancia_escuela": "Al lado del Treehouse Kids' Adventure Center (1-3 min caminando)",
+      "recamaras": "99 habitaciones (2 queens para la familia) + 11 residencias de 2-3 recámaras; cama extra $50/noche, cuna gratis",
+      "cocina": false,
+      "amenidades": [
+        "Desayuno buffet incluido (7-10 am)",
+        "Albercas y jacuzzis exteriores con cabañas y chimenea",
+        "Muro de escalar interior de 5 pisos",
+        "Sala de juegos/arcade",
+        "Lounge",
+        "Estacionamiento $45/noche"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 750,
+          "total_6_noches_con_impuestos_usd": 5672,
+          "fuente": "https://www.travelocity.com/es/4Estrellas-Snowmass-Village-Hoteles.s40-0-d56101.Guia-Viajes-Filter-Hoteles",
+          "confianza": "baja",
+          "nota": "Estimación: la tarifa real del 28-29 ene ($976) menos ~23% por ser la semana de valor después de las fiestas. Incluye resort fee 10% + 1.5% de cuota de destino + 13.05% de impuesto."
+        },
+        "B": {
+          "noche_usd": 976,
+          "total_6_noches_con_impuestos_usd": 7382,
+          "fuente": "https://www.travelocity.com/es/4Estrellas-Snowmass-Village-Hoteles.s40-0-d56101.Guia-Viajes-Filter-Hoteles",
+          "confianza": "media",
+          "nota": "Tarifa real observada en Travelocity del 28 al 29 de enero (temporada 2025-26): $976 por noche, $1,103 con impuestos. El total suma el resort fee de 11.5% y el impuesto de 13.05%."
+        },
+        "C": {
+          "noche_usd": 1000,
+          "total_6_noches_con_impuestos_usd": 7563,
+          "fuente": "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
+          "confianza": "media",
+          "nota": "Entre dos tarifas reales de marzo: $1,149 (8-9 mar, Hotels.com) y $890 (23-24 mar, Travelocity)."
+        }
+      },
+      "link": "https://www.aspensnowmass.com/visit/lodging/properties/limelight-snowmass",
+      "galeria": "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
+      "pros": [
+        "Es lo más cómodo para una niña de 5 años: Treehouse, góndola Elk Camp, pista de hielo y s'mores a pasos",
+        "El desayuno incluido ahorra unos $60-75 al día",
+        "Muro de escalar, albercas y ambiente familiar",
+        "El paquete 'Stay & Ski' de 2025-26 incluía 2 forfaits de adulto por cada día completo (si regresa, cambia la cuenta)"
+      ],
+      "contras": [
+        "Es la opción más cara: ~$1,000-1,250 por noche con cargos en enero y marzo",
+        "Resort fee de 11.5% más estacionamiento de $45 por noche",
+        "Las habitaciones estándar no tienen cocina",
+        "Para 2026-27 todavía no se publican el Stay & Ski ni el descuento de 20% para passholders"
+      ],
+      "ideal_si": "Estiran el presupuesto a ~$12-13k o regresa el paquete Stay & Ski con forfaits incluidos: es la experiencia más 'mágica y sin estrés'."
+    },
+    {
+      "nombre": "Viceroy Snowmass",
+      "tipo": "hotel",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Slopeside, sobre la montaña junto a Base Village; ski-in/ski-out según varios listados. Nest Bar & Grill está a pie de pista.",
+      "distancia_escuela": "~530 m, unos 7 min caminando al Treehouse (Trip.com)",
+      "recamaras": "Estudios y residencias de 1, 2 y 3 recámaras (Cirque y Pinnacle Tower)",
+      "cocina": true,
+      "amenidades": [
+        "Cocina o cocineta en todas las unidades",
+        "Alberca exterior climatizada (salina)",
+        "3 jacuzzis",
+        "Cabañas y fogata",
+        "Spa",
+        "Restaurante Toro Kitchen (cocina latinoamericana)"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 650,
+          "total_6_noches_con_impuestos_usd": 4783,
+          "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
+          "confianza": "baja",
+          "nota": "Estimación a partir del promedio de Kayak entre semana ($779), ajustado a la semana de valor. Incluye resort fee de $55.20 por noche y 13.05% de impuesto."
+        },
+        "B": {
+          "noche_usd": 780,
+          "total_6_noches_con_impuestos_usd": 5665,
+          "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
+          "confianza": "baja",
+          "nota": "Promedio de Kayak entre semana: $779. Los datos de Kayak son inconsistentes (el fin de semana sale en $453 y febrero es el mes más caro)."
+        },
+        "C": {
+          "noche_usd": 950,
+          "total_6_noches_con_impuestos_usd": 6818,
+          "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
+          "confianza": "baja",
+          "nota": "Estimación: Kayak marca febrero como el mes más caro; principios de marzo debería ser parecido."
+        }
+      },
+      "link": "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass",
+      "galeria": "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
+      "pros": [
+        "Cocina en todas las unidades: se puede desayunar y cenar en el cuarto",
+        "Hay residencias de 1-2 recámaras, así la niña duerme aparte",
+        "Alberca salina climatizada y 3 jacuzzis",
+        "Lujo a pie de pista"
+      ],
+      "contras": [
+        "Resort fee de ~$55 por noche",
+        "Queda a 7 min caminando del Treehouse (con botas y equipo, con una niña de 5)",
+        "Los precios de invierno son de baja confianza; no se encontró la tarifa por fecha",
+        "No apareció el sitio oficial en las búsquedas"
+      ],
+      "ideal_si": "Quieren lujo con cocina y una recámara aparte para la niña, y les da igual caminar 7 min a la escuela."
+    },
+    {
+      "nombre": "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)",
+      "tipo": "hotel",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Ski-in/ski-out junto al Snowmass Mall, en la zona de Fanny Hill; la montaña queda a ~1 min caminando, según los listados.",
+      "distancia_escuela": "~10-15 min al Treehouse (Base Village) en la góndola gratuita Sky Cab 'Skittles' que va del Mall a Base Village (estimación)",
+      "recamaras": "254 habitaciones: Classic de 2 queens, slopeside de 340 ft² con balcón, suites de 1 y 2 recámaras",
+      "cocina": false,
+      "amenidades": [
+        "Alberca exterior climatizada",
+        "2 jacuzzis grandes",
+        "Spa",
+        "Ski concierge",
+        "Restaurante Stark's Alpine Grill",
+        "Estacionamiento con costo"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 560,
+          "total_6_noches_con_impuestos_usd": 4070,
+          "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
+          "confianza": "baja",
+          "nota": "Estimación: promedio de Kayak para enero (5 noches entre semana a $626 + 1 de fin de semana a $877 = $668) menos ~15% por ser la semana de valor. El total incluye un resort fee de ~$40 por noche (las fuentes dan $30 o $50) y 13.05% de impuesto."
+        },
+        "B": {
+          "noche_usd": 668,
+          "total_6_noches_con_impuestos_usd": 4802,
+          "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
+          "confianza": "media",
+          "nota": "Promedio de Kayak para enero, ponderado para domingo a sábado: $626 entre semana × 5 + $877 de fin de semana × 1."
+        },
+        "C": {
+          "noche_usd": 700,
+          "total_6_noches_con_impuestos_usd": 5019,
+          "fuente": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
+          "confianza": "baja",
+          "nota": "Tarifas reales de febrero en Hotels.com: $598 (9-10 feb) y $749 (10-11 feb). Para principios de marzo se usa ~$700."
+        }
+      },
+      "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass",
+      "galeria": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
+      "pros": [
+        "Es el hotel ski-in/ski-out más barato de los que se evaluaron",
+        "Alberca y jacuzzis",
+        "Junto al Mall, con restaurantes y tiendas",
+        "Scout Ski reporta descuentos de hasta 30% para 26/27 (verificar)"
+      ],
+      "contras": [
+        "Queda lejos del Treehouse: hay que tomar la góndola Skittles con el equipo todas las mañanas",
+        "No tiene cocina",
+        "Las reseñas son mixtas (ski.com habla de cuartos desgastados)",
+        "Cambió de dueño en 2025 y el resort fee no está claro ($30-50)"
+      ],
+      "ideal_si": "Quieren hotel con alberca al menor precio posible en Snowmass y no les molesta un traslado corto en góndola a la escuela."
+    },
+    {
+      "nombre": "Woodrun Place (condo, Fanny Hill)",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Directamente sobre Fanny Hill, una pista ancha y fácil en el corazón de Snowmass; ski-in/ski-out según Ski.com y Lodging Company.",
+      "distancia_escuela": "~10-20 min al Treehouse: bajar esquiando o caminando al Mall y tomar la góndola gratuita Skittles a Base Village (estimación)",
+      "recamaras": "Unidades de 2 recámaras (algunas con loft) y 2-3.5 baños",
+      "cocina": true,
+      "amenidades": [
+        "Cocina completa",
+        "Alberca exterior climatizada",
+        "Jacuzzi",
+        "Sauna",
+        "Renta de esquís en el mismo edificio"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 500,
+          "total_6_noches_con_impuestos_usd": 3731,
+          "fuente": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+          "confianza": "baja",
+          "nota": "Estimación: Lodging Company publica tarifas 'desde' $184-446 para 2 recámaras (sin fecha) y el listado 'Snowmass Woodrun' de Hotels.com promedia $742 en enero. El total incluye limpieza de ~$300 (estimación) y 13.05% de impuesto."
+        },
+        "B": {
+          "noche_usd": 650,
+          "total_6_noches_con_impuestos_usd": 4748,
+          "fuente": "https://www.hotels.com/ho1703232192/snowmass-woodrun-9954-snowmass-village-united-states-of-america",
+          "confianza": "baja",
+          "nota": "Cercano al promedio de enero ($742) del listado 'Snowmass Woodrun' de Hotels.com."
+        },
+        "C": {
+          "noche_usd": 750,
+          "total_6_noches_con_impuestos_usd": 5426,
+          "fuente": "https://www.hotels.com/ho1703232192/snowmass-woodrun-9954-snowmass-village-united-states-of-america",
+          "confianza": "baja",
+          "nota": "Promedio de marzo ($798) del listado 'Snowmass Woodrun' de Hotels.com; Kayak da un promedio de $863 para las rentas vacacionales de Snowmass en febrero."
+        }
+      },
+      "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+      "galeria": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place?u=14276",
+      "pros": [
+        "Tiene 2 recámaras y cocina por menos que un cuarto de hotel en Base Village",
+        "Ski-in/ski-out verdadero sobre Fanny Hill, una pista fácil",
+        "Alberca, jacuzzi, sauna y renta de esquís en el edificio",
+        "Cocinar desayuno y cena ahorra ~$400-600 en la semana"
+      ],
+      "contras": [
+        "No está junto al Treehouse: el traslado de cada mañana es de 10-20 min",
+        "Cada unidad es distinta y una reseña de 2020 describe una como desgastada",
+        "Se paga limpieza, no hay servicio diario y el check-in es con el administrador",
+        "Las tarifas para las fechas exactas son de baja confianza"
+      ],
+      "ideal_si": "Buscan el mejor costo-beneficio ski-in/ski-out en Snowmass y les gusta tener cocina y una recámara aparte. Alternativas parecidas: Top of the Village (2 recámaras, alberca, shuttle) o Timberline (recién renovado)."
+    }
+  ],
+  "fotos": [
+    {
+      "categoria": "ubicacion",
+      "opcion": "Snowmass Village",
+      "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+      "credito": "Werdna (Wikimedia Commons, obra propia)",
+      "licencia": "CC BY-SA 4.0 (multilicencia)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Aspen",
+      "descripcion": "Centro de Aspen (calle Galena) con vista a las pistas de Aspen Mountain (verano de 2010)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg",
+      "credito": "Daniel Case",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Aspen",
+      "descripcion": "Centro de Aspen con Aspen Mountain al fondo (27-abr-2005)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_of_Aspen,_Colorado.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_of_Aspen,_Colorado.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Aspen",
+      "descripcion": "Main Street de Aspen junto al Hotel Jerome",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_Street,_Aspen,_CO.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Main_Street,_Aspen,_CO.jpg",
+      "credito": "Daniel Case (según el resumen de búsqueda; verificar)",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Maroon Bells",
+      "descripcion": "Maroon Bells (temporada no confirmada)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells_%2811553%29a.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells_(11553)a.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Maroon Bells",
+      "descripcion": "Maroon Bells (temporada no confirmada)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Maroon Bells",
+      "descripcion": "Maroon Bells reflejadas en Maroon Lake (probablemente no invernal)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Snowmass (montaña)",
+      "descripcion": "Snowmass Mountain, Elk Mountains cerca de Aspen (HDR); página de Flickr",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/wboland/3219495270/",
+      "credito": "wboland (Flickr)",
+      "licencia": "No se mostró; verificar en Flickr"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Aspen",
+      "descripcion": "Galería de Commons 'Aspen, Colorado' (incluye 'Aspen after Blizzard.jpg' y 'Main Street in Aspen.jpg'; elegir una foto nevada)",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Aspen,_Colorado",
+      "credito": "Varios",
+      "licencia": "Varias; verificar por archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Maroon Bells",
+      "descripcion": "Galería de Commons 'Maroon Bells' (~158 archivos; incluye una foto de la NARA con los picos nevados)",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Maroon_Bells",
+      "credito": "Varios",
+      "licencia": "Varias; verificar por archivo"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Aspen",
+      "descripcion": "Búsqueda en Unsplash 'Aspen Colorado' (calles nevadas, góndola, Maroon Bells)",
+      "url_imagen": "",
+      "url_pagina": "https://unsplash.com/s/photos/aspen-colorado",
+      "credito": "Varios (Unsplash)",
+      "licencia": "Licencia Unsplash (según el resumen; verificar por foto)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Snowmass Base Village",
+      "descripcion": "GoSnowmass: actividades de invierno para niños (pista de hielo, s'mores, Base Village)",
+      "url_imagen": "",
+      "url_pagina": "https://www.gosnowmass.com/top-kids-winter-activities/",
+      "credito": "Snowmass Tourism (oficial del destino)",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Elk Camp",
+      "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
+      "credito": "Wolfgang Moroder",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Buttermilk",
+      "descripcion": "Vista desde Buttermilk en invierno (ene-2008)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk_in_Winter.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg",
+      "credito": "Werdna (Wikimedia Commons, obra propia)",
+      "licencia": "CC BY-SA 4.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Aspen Mountain",
+      "descripcion": "Esquí de primavera en Aspen Mountain (2015)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_spring_skiing.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_spring_skiing.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Aspen Mountain",
+      "descripcion": "Telesilla Lift 1A en Aspen Mountain",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lift_1A_on_Aspen_Mountain.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Aspen Highlands",
+      "descripcion": "Base de Aspen Highlands",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_base_area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_base_area.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Aspen Highlands",
+      "descripcion": "Cloud 9, Aspen Highlands",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_cloud_9.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_cloud_9.jpg",
+      "credito": "No se mostró en los resultados; verificar en la página del archivo",
+      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Snowmass",
+      "descripcion": "Galería de Commons 'Snowmass Mountain' (fotos de la NARA de Big Burn y del telesilla a la cumbre; vista desde Bull Run, abr-2018)",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Snowmass_Mountain",
+      "credito": "Varios (las de la NARA probablemente son de dominio público)",
+      "licencia": "Varias; verificar por archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Treehouse",
+      "descripcion": "Treehouse Kids' Adventure Center: página oficial de GoSnowmass",
+      "url_imagen": "",
+      "url_pagina": "https://gosnowmass.com/things-to-do/parent-info/the-treehouse/",
+      "credito": "Snowmass Tourism (oficial)",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Escuela infantil",
+      "descripcion": "Aspen Snowmass, 'Ski School, By the Ages' (clases de 3-4 y de 5-6 años)",
+      "url_imagen": "",
+      "url_pagina": "https://aspensnowmass.com/discover/experiences/stories/ski-school-by-the-ages",
+      "credito": "Aspen Skiing Company (oficial)",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Escuela infantil",
+      "descripcion": "Aspen Snowmass: guía familiar oficial",
+      "url_imagen": "",
+      "url_pagina": "https://aspensnowmass.com/discover/experiences/guides/family-guide",
+      "credito": "Aspen Skiing Company (oficial)",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Buttermilk",
+      "descripcion": "The Hideout de Buttermilk (centro infantil); blog de Ski.com",
+      "url_imagen": "",
+      "url_pagina": "https://www.ski.com/blog/3-reasons-kids-will-love-buttermilks-new-hideout-facility/",
+      "credito": "Ski.com",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Snowmass",
+      "descripcion": "OnTheSnow: galería de fotos de Aspen Snowmass",
+      "url_imagen": "",
+      "url_pagina": "https://www.onthesnow.com/colorado/aspen-snowmass/resort-photos-id519332--aspen-snow-12-13-18.html",
+      "credito": "OnTheSnow / usuarios",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Limelight Snowmass",
+      "descripcion": "Galería en Hotels.com: habitaciones, albercas, lobby",
+      "url_imagen": "",
+      "url_pagina": "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
+      "credito": "Hotels.com / hotel",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Limelight Snowmass",
+      "descripcion": "Ficha oficial del resort (alojamiento de Aspen Snowmass)",
+      "url_imagen": "",
+      "url_pagina": "https://www.aspensnowmass.com/visit/lodging/properties/limelight-snowmass",
+      "credito": "Aspen Skiing Company",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Limelight Snowmass",
+      "descripcion": "Ficha de Stay Aspen Snowmass (fotos)",
+      "url_imagen": "",
+      "url_pagina": "https://www.stayaspensnowmass.com/lodging/snowmass/limelight-hotel-snowmass",
+      "credito": "Stay Aspen Snowmass",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viceroy Snowmass",
+      "descripcion": "Galería en Hotels.com: residencias Cirque/Pinnacle, alberca, terraza",
+      "url_imagen": "",
+      "url_pagina": "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
+      "credito": "Hotels.com / hotel",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viceroy Snowmass",
+      "descripcion": "Oyster: fotos y reseña",
+      "url_imagen": "",
+      "url_pagina": "https://www.oyster.com/snowmass-village/hotels/viceroy-snowmass/",
+      "credito": "Oyster",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viceroy Snowmass",
+      "descripcion": "Virtuoso: ficha con fotos",
+      "url_imagen": "",
+      "url_pagina": "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass",
+      "credito": "Virtuoso",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viewline Resort Snowmass (antes Westin)",
+      "descripcion": "Galería en Hotels.com: alberca, lobby, suites",
+      "url_imagen": "",
+      "url_pagina": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
+      "credito": "Hotels.com / hotel",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viewline Resort Snowmass (antes Westin)",
+      "descripcion": "Lodging Company: ficha con fotos",
+      "url_imagen": "",
+      "url_pagina": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass",
+      "credito": "Lodging Company",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Viewline Resort Snowmass (antes Westin)",
+      "descripcion": "Ski.com: ficha con fotos",
+      "url_imagen": "",
+      "url_pagina": "https://ca.ski.com/snowmass-lodging/viewline-resort-snowmass",
+      "credito": "Ski.com",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Woodrun Place (condo)",
+      "descripcion": "Lodging Company: complejo Woodrun Place (Fanny Hill)",
+      "url_imagen": "",
+      "url_pagina": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+      "credito": "Lodging Company",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Woodrun Place (condo)",
+      "descripcion": "Lodging Company: ficha de una unidad de Woodrun Place (fotos del interior)",
+      "url_imagen": "",
+      "url_pagina": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place?u=14276",
+      "credito": "Lodging Company",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Woodrun Place (condo)",
+      "descripcion": "Ski.com: condos ski-in/ski-out de Snowmass (Woodrun, Top of the Village, Timberline, Crestwood)",
+      "url_imagen": "",
+      "url_pagina": "https://www.ski.com/ski-in-ski-out-snowmass",
+      "credito": "Ski.com",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Top of the Village (condo alterno)",
+      "descripcion": "CoralTree: Top of the Village Slope 102 (2 recámaras)",
+      "url_imagen": "",
+      "url_pagina": "https://bookings.coraltreeresidencecollection.com/rentals/top-of-the-village-slope-102",
+      "credito": "CoralTree Residence Collection",
+      "licencia": "Uso editorial; pedir permiso"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Top of the Village (condo alterno)",
+      "descripcion": "CoralTree: Top of the Village Slope 307 (2 recámaras, 1,080 ft²)",
+      "url_imagen": "",
+      "url_pagina": "https://bookings.coraltreeresidencecollection.com/rentals/top-of-the-village-slope-307",
+      "credito": "CoralTree Residence Collection",
+      "licencia": "Uso editorial; pedir permiso"
+    }
+  ],
+  "verificar": [
+    "Sheer Bliss 2026-27: precio de $99 por día, fecha límite 31-oct-2026, que el paquete Premium de renta sea obligatorio y si vale en las 4 montañas",
+    "Si el Limelight relanza 'Stay & Ski' (2 forfaits de adulto por día completo) o el 20% de descuento para passholders en 2026-27",
+    "Escuela 2026-27: precio por día, horario, que el grupo de 5-6 años se reúna en el Treehouse (y no en Buttermilk) y que incluya forfait, renta y comida",
+    "Tarifas reales para las fechas exactas (Google Hotels, Kayak, sitio oficial) y resort fees: Viewline $30 o $50, Viceroy $55.20, Limelight 11.5% + estacionamiento de $45",
+    "Fechas de los X Games Aspen 2027 en Buttermilk (históricamente a finales de enero; dato no verificado), porque pueden encarecer la ventana del 24 al 30 de enero",
+    "Horario de Viva MTY-DEN (¿solo jueves y domingo o diario?) y tarifa TRC-DFW-ASE en American para las fechas",
+    "Condo: unidad exacta, distancia real al Treehouse, cuota de limpieza, estacionamiento y estado de la renovación (Timberline)",
+    "Si Ullr Nights, el tubing nocturno y el Breathtaker Alpine Coaster operan en el invierno 2026-27, con sus precios y su altura mínima",
+    "Visas B1/B2 vigentes para los 3, sobre todo la de la niña",
+    "Altitud: la base está a 2,470 m; el primer día debe ser tranquilo",
+    "I-70 y Glenwood Canyon en invierno, si se va por DEN (se necesita AWD y aplica la Traction Law)"
+  ],
+  "fuentes": [
+    "https://andersonranch.org/our-campus/getting-here",
+    "https://aspen.com/articles/winter-season-dates-pass-deadlines/",
+    "https://aspensnowmass.com/discover/experiences/stories/ski-school-by-the-ages",
+    "https://childrenscolorado.org/just-ask-childrens/articles/altitude-sickness",
+    "https://deeparrival.com/news/aspen-airport-ase-2027-runway-closure-construction/",
+    "https://en.wikipedia.org/wiki/Snowmass_(ski_area)",
+    "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
+    "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
+    "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
+    "https://limelighthotels.com/snowmass/offers/passholder-package",
+    "https://scoutski.com/best-aspen-snowmass-ski-deals-for-26-27-winter-season",
+    "https://sg.trip.com/moments/colorado-1421/",
+    "https://shop.aspensnowmass.com/winter-rentals",
+    "https://snowbrains.com/aspen-snowmass-flex-pass-2026-27/",
+    "https://snowmass.gov/141",
+    "https://thepointsguy.com/deals/ikon-ski-pass/?tw=1",
+    "https://thepointsguy.com/reviews/westin-snowmass/",
+    "https://www.aspendailynews.com/news/snowmass-property-fetches-144-million/article_c23bbdd9-62cb-4c58-9ded-b5546488d1ae.html",
+    "https://www.aspensnowmass.com/partner-passes/ikon-pass/ikon-pass-faq",
+    "https://www.aspensnowmass.com/visit/lessons/child-and-teen-lessons",
+    "https://www.aspensnowmass.com/visit/lodging/properties/limelight-snowmass",
+    "https://www.aspensnowmass.com/visit/packages-and-deals/kids-ski-free",
+    "https://www.cvent.com/meeting-event-planning/usa/co/snowmass/travel",
+    "https://www.expedia.com/lp/flight-routes/american-airlines-from-dallas-fort-worth-intl-to-pitkin-county/aa/dfw/ase",
+    "https://www.flightsfrom.com/DEN-ASE",
+    "https://www.friasproperties.com/blog/ullr-nights-festive-winter-snowmass",
+    "https://www.gosnowmass.com/about-us/maps-travel/snowmass-airport-info/",
+    "https://www.gosnowmass.com/press-release/whats-new-for-winter-2026-2027-in-snowmass-village-co/",
+    "https://www.gosnowmass.com/top-kids-winter-activities/",
+    "https://www.gosnowmass.com/wp-content/uploads/2013/10/Snowmass-Winter-Fact-Sheet.pdf",
+    "https://www.gosnowmass.com/wp-content/uploads/2022/10/Final-Free-in-Snowmass-Winter-2023.24.pdf",
+    "https://www.hotels.com/ho1703232192/snowmass-woodrun-9954-snowmass-village-united-states-of-america",
+    "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
+    "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
+    "https://www.kayak.com/Snowmass-Village-Hotels.19389.hotel.ksp",
+    "https://www.kayak.com/Snowmass-Village-Vacation-Rentals.19389.rental.ksp",
+    "https://www.limelighthotels.com/snowmass/offers/stay-ski",
+    "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+    "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place?u=14276",
+    "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass",
+    "https://www.onthesnow.com/colorado/aspen-snowmass/historical-snowfall",
+    "https://www.reservationdesk.com/hotel/60294f7/viceroy-snowmass",
+    "https://www.ski.com/ski-in-ski-out-snowmass",
+    "https://www.snowthere.com/resorts/united-states/aspen-snowmass",
+    "https://www.theavantski.com/aspensnowmass-family",
+    "https://www.travelocity.com/es/4Estrellas-Snowmass-Village-Hoteles.s40-0-d56101.Guia-Viajes-Filter-Hoteles",
+    "https://www.trip.com/hotels/snowmass-village-hotel-detail-2878179/viceroy-snowmass/",
+    "https://www.uncovercolorado.com/hotels/limelight-hotel-snowmass/",
+    "https://www.undercovertourist.com/aspen-snowmass/viceroy-snowmass-hotel/",
+    "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass"
+  ]
+}

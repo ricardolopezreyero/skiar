@@ -85,6 +85,8 @@
     const r = route(resort, v);
     if (r.vuelo) out.push({ label: "Vuelos redondos (3 personas)", amount: r.vuelo.total, conf: r.vuelo.conf, src: r.vuelo.src, note: [r.vuelo.ruta.descripcion, r.vuelo.fechas].filter(Boolean).join(" · ") });
     else out.push({ label: "Vuelos redondos (3 personas)", amount: null, note: "Falta dato" });
+    if (r.vuelo && num(r.vuelo.ruta.equipaje_total_usd) != null) out.push({ label: "Equipaje documentado", amount: r.vuelo.ruta.equipaje_total_usd, conf: r.vuelo.ruta.equipaje_confianza || "baja", note: r.vuelo.ruta.equipaje_total_nota });
+    if (r.vuelo && /den/i.test(r.vuelo.ruta.id) && num(V.hotel_denver_usd) != null) out.push({ label: "Primera noche en Denver (aclimatación)", amount: V.hotel_denver_usd, conf: "baja", note: V.hotel_denver_nota });
     if (r.desdeMty) {
       const g = num(V.gasolina_casetas_trc_mty_redondo_usd), e = num(V.estacionamiento_mty_usd);
       out.push({ label: "Torreón ↔ Monterrey en carro + estacionamiento", amount: g == null && e == null ? null : (g || 0) + (e || 0), conf: "media", note: "Gasolina, casetas y estacionamiento en el aeropuerto" });

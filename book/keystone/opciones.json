@@ -1,0 +1,671 @@
+{
+  "slug": "keystone",
+  "nombre": "Keystone",
+  "resumen": "El resort de Colorado con mejor costo-beneficio para una niña de 5 años: su boleto sale gratis al reservar el hospedaje con Keystone, aprende a esquiar en la cima tras subir en góndola y tiene actividades gratuitas diarias (Kidtopia). Hay ski-in/ski-out verdadero en River Run (The Timbers, Lone Eagle) por unos $345-485 la noche.",
+  "magia": [
+    "Sube en góndola a la escuela de la cima de Dercum: alfombra mágica, zona de 'esquí lento' y zona de aventura infantil.",
+    "Kidtopia: actividades gratis todos los días; en temporadas pasadas hubo fuegos artificiales los sábados en River Run, s'mores y chocolate caliente.",
+    "Fuerte o castillo de nieve en la cumbre, con túneles, resbaladillas y 'trono de hielo'; gratis con pase.",
+    "Patinaje sobre Keystone Lake, descrito como la pista exterior con Zamboni más grande de Norteamérica, y en Dercum Square de día y de noche.",
+    "Tubing en Adventure Point, en la cima de la góndola (mínimo reportado: 42 pulgadas, 107 cm).",
+    "Esquí nocturno en 15 pistas iluminadas, de 4 a 8 pm, en fines de semana y algunos días entre semana de enero a marzo.",
+    "Kidventure Zones: senderos entre árboles y minicampamentos temáticos.",
+    "Alberca climatizada interior/exterior en The Timbers, con nieve alrededor."
+  ],
+  "costo_beneficio": 8,
+  "altitud_base_m": 2829,
+  "aeropuerto": "DEN",
+  "traslado": "DEN–Keystone: ~145 km (90 mi), unas 1 h 45 min en camioneta AWD rentada (el tráfico de fin de semana en la I-70 puede duplicarlo). Como Viva vuela jueves y domingo, con hospedaje de domingo a sábado se duerme en Denver el sábado y se vuela el domingo; la alternativa es hospedarse de lunes a domingo y dormir en Denver la primera noche para aclimatarse. El total incluye Torreón↔Monterrey (gasolina, casetas y Superpark) y la camioneta AWD con gasolina; no incluye vuelos.",
+  "ruta": "Torreón → Monterrey en carro (~3.5-4 h; Superpark Terminal C, MXN 1,400 por 7 días) → Viva Aerobus VB720 MTY 10:10 → DEN 12:10 (directo; jueves y domingo según el horario de 2024) → camioneta AWD → Keystone. Regreso: VB721 DEN 13:55 → MTY 17:35.",
+  "ninos_gratis": "Sí aplica a los 5 años. Los niños de 12 años o menos reciben días de esquí gratis al reservar 2 noches o más directo con Keystone Resort: 1 día por noche, o 1 día por las primeras 2 noches más 1 por noche adicional, según la fuente. 6 noches dan 5-6 días. Sin fechas bloqueadas, con vouchers en el check-in. No aplica con VRBO, Airbnb u otros terceros ni en Hyatt Place. Sin el programa, a los 5 años pagaría boleto infantil (5-12: $149-219 por día en taquilla en 2025-26), así que el ahorro es de unos $750-1,100. Los términos 2026-27 todavía no se publican.",
+  "escuela": {
+    "programa": "Keystone Ski & Ride School: Children's Group Lesson (esquí de 3 a 14 años, grupos por edad y nivel). Opción premium Ultimate 4 (4 niños o menos). Camp Keystone tiene sede en Mountain House.",
+    "punto_encuentro": "Las clases grupales infantiles salen de River Run y de Mountain House (Camp Keystone es todo en Mountain House). Los niños se recogen en el 'backyard' del edificio infantil. Hay que confirmar en qué base se presenta una principiante de 5 años.",
+    "precio_dia_usd": 350,
+    "total_5_dias_usd": 1750,
+    "incluye": "Día completo: la reservación guarda el lugar hasta las 9:30; comida de 11:30 a 13:00 (sándwich o pizza con fruta y verdura); termina a las 15:30. La renta va incluida sólo si se compra en paquete. PRECIO ESTIMADO: no hay tarifa oficial 2026-27; la referencia es Vail, con $239 por día no festivo y $175-200 en paquete, y Breckenridge, con unos $470 por día. Se recomiendan 4 días de escuela más 1 día en familia (≈$1,400).",
+    "fuente": "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+    "confianza": "baja"
+  },
+  "forfaits": {
+    "adultos_total_usd": 1100,
+    "nina_total_usd": 0,
+    "como_comprar": "Adultos: Epic Day Pass de 5 días en epicpass.com, comprado antes del cierre de ventas (en 2025 fue el 4 de diciembre). Al lanzarse costaba $46-97 por día; un revendedor tenía en octubre de 2026 el de 5 días sin restricciones en $638-656 por adulto, y el nivel sin Vail ni Beaver Creek es más barato. Niña: Kids Ski Free con el hospedaje reservado con Keystone; los vouchers se entregan en el check-in.",
+    "fuente": "https://www.saminfo.com/news/sam-headline-news/vail-resorts-adds-young-adult-and-teen-epic-pass-options-for-2026-27",
+    "confianza": "media"
+  },
+  "renta_equipo_total_usd": 700,
+  "traslados_total_usd": 700,
+  "comida_total_usd": {
+    "cocinando": 750,
+    "restaurantes": 1400
+  },
+  "alojamientos": [
+    {
+      "nombre": "The Timbers (River Run), 1 recámara, reservado con Keystone Resort",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Acceso directo a la pista junto a la góndola River Run y el telesilla Summit Express (The Breck Life; guía de Keystone: 'direct slope access').",
+      "distancia_escuela": "Misma base de River Run; aprox. 2-5 min a pie (estimación).",
+      "recamaras": "1-3 recámaras; para 3 personas basta 1 recámara con sofá cama",
+      "cocina": true,
+      "amenidades": [
+        "Alberca climatizada interior/exterior todo el año",
+        "Jacuzzi exterior compartido",
+        "Sauna y vapor",
+        "Gimnasio",
+        "Fogata y asador"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 355,
+          "total_6_noches_con_impuestos_usd": 2130,
+          "fuente": "https://www.expedia.com/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 345,
+          "total_6_noches_con_impuestos_usd": 2070,
+          "fuente": "https://www.expedia.com/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 390,
+          "total_6_noches_con_impuestos_usd": 2340,
+          "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
+          "confianza": "baja"
+        }
+      },
+      "link": "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
+      "galeria": "https://www.expedia.com/Keystone-Hotels-The-Timbers-Ski-In-Ski-Out-At-River-Run.h106526604.Hotel-Information",
+      "pros": [
+        "Ski-in/ski-out verdadero al menor precio de los dos edificios verdaderos",
+        "Alberca techada y abierta, ideal para una niña de 5",
+        "A pasos de la góndola, Kidtopia y la escuela de River Run"
+      ],
+      "contras": [
+        "Pocas unidades en el inventario de Keystone; algunas sólo se rentan con terceros, que no califican para niños gratis",
+        "La calidad varía por unidad"
+      ],
+      "ideal_si": "Quieren ski-in/ski-out verdadero con el mejor costo-beneficio y una alberca techada para la niña."
+    },
+    {
+      "nombre": "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Del lobby se sale a la góndola River Run y al Summit Express; las fuentes lo llaman el ski-in/ski-out más verdadero de Keystone. Al pueblo se cruza un puente sobre el río Snake.",
+      "distancia_escuela": "Base de River Run; aprox. 3-5 min (estimación).",
+      "recamaras": "2 recámaras y 2 baños (guía de Keystone); con terceros hay unidades de 1 y 3 recámaras",
+      "cocina": true,
+      "amenidades": [
+        "Alberca exterior climatizada",
+        "Jacuzzi compartido",
+        "Jacuzzi privado en muchas unidades",
+        "Vapor",
+        "Gimnasio",
+        "Entorno boscoso junto al río"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 500,
+          "total_6_noches_con_impuestos_usd": 3000,
+          "fuente": "https://skyrun.com/keystone/",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 483,
+          "total_6_noches_con_impuestos_usd": 2898,
+          "fuente": "https://skyrun.com/keystone/",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 540,
+          "total_6_noches_con_impuestos_usd": 3240,
+          "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
+          "confianza": "baja"
+        }
+      },
+      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
+      "galeria": "https://www.expedia.com/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+      "pros": [
+        "El ski-in/ski-out más puro de Keystone",
+        "Jacuzzi privado en muchas unidades",
+        "2 baños y entorno tranquilo de bosque y río"
+      ],
+      "contras": [
+        "Unos $800 más que The Timbers en 6 noches",
+        "Dos recámaras son más espacio del que necesitan 3 personas"
+      ],
+      "ideal_si": "Estiran el presupuesto o invitan a los abuelos u otra pareja a la segunda recámara."
+    },
+    {
+      "nombre": "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort",
+      "tipo": "condo",
+      "ski_in_out": "caminando",
+      "detalle_acceso": "No es ski-in/ski-out verdadero. Silver Mill está a menos de 400 m (unos 2 min) de la góndola River Run y el Summit Express, y Dakota Lodge 'a pasos' de la góndola.",
+      "distancia_escuela": "2-5 min a pie; los listados de Silver Mill mencionan que se camina a la escuela infantil y de adultos.",
+      "recamaras": "De estudio a 3 recámaras",
+      "cocina": true,
+      "amenidades": [
+        "Alberca exterior climatizada todo el año (Silver Mill)",
+        "Jacuzzis con vista a las pistas",
+        "Gimnasio",
+        "Lockers de esquí",
+        "Estacionamiento techado o subterráneo"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 275,
+          "total_6_noches_con_impuestos_usd": 1650,
+          "fuente": "https://skyrun.com/keystone/",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 265,
+          "total_6_noches_con_impuestos_usd": 1590,
+          "fuente": "https://skyrun.com/keystone/",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 300,
+          "total_6_noches_con_impuestos_usd": 1800,
+          "fuente": "https://es.hotels.com/nh10819028/hoteles-en-river-run-keystone-colorado/",
+          "confianza": "baja"
+        }
+      },
+      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=RIVER-RUN-CONDOMINIUMS",
+      "galeria": "https://www.redawning.com/rental-property/silver-mill-8260-2br-walk-slopes-kids-ski-free-keystone",
+      "pros": [
+        "Ahorra unos $500-1,300 frente a Timbers y Lone Eagle",
+        "Mismo pueblo, misma escuela y Kidtopia",
+        "Tiene alberca"
+      ],
+      "contras": [
+        "Hay que caminar con botas cargando los esquís de la niña",
+        "Calidad muy variable por unidad"
+      ],
+      "ideal_si": "Quieren acercarse lo más posible a $7,000 sin dejar River Run."
+    },
+    {
+      "nombre": "Keystone Lodge & Spa (Lakeside Village)",
+      "tipo": "hotel",
+      "ski_in_out": "shuttle",
+      "detalle_acceso": "River Run queda a 1.5 millas. Hay shuttle de cortesía gratuito con horario de invierno desde la entrada del hotel (FAQ oficial).",
+      "distancia_escuela": "1.5 millas en shuttle; aprox. 10-15 min de puerta a puerta con equipo (estimación).",
+      "recamaras": "Habitación de hotel o suite tipo loft (152 habitaciones, 14 lofts)",
+      "cocina": false,
+      "amenidades": [
+        "Alberca exterior climatizada",
+        "Jacuzzis interior y exterior",
+        "Sauna seca y vapor de eucalipto",
+        "Alpenglow Spa",
+        "Patinaje en Keystone Lake (vista al lago; verificar distancia)"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 260,
+          "total_6_noches_con_impuestos_usd": 1560,
+          "fuente": "https://expedia.com.sg/Keystone-East-Keystone.dx3000663164",
+          "confianza": "media"
+        },
+        "B": {
+          "noche_usd": 250,
+          "total_6_noches_con_impuestos_usd": 1500,
+          "fuente": "https://nz.hotels.com/ho1360856640",
+          "confianza": "media"
+        },
+        "C": {
+          "noche_usd": 275,
+          "total_6_noches_con_impuestos_usd": 1650,
+          "fuente": "https://www.hotels.com/ho3635789056",
+          "confianza": "baja"
+        }
+      },
+      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodge-and-spa.aspx",
+      "galeria": "https://www.hotels.com/ho3635789056",
+      "pros": [
+        "Servicio de hotel y spa",
+        "El patinaje en el lago queda junto al hotel",
+        "Reseñas de 8.6-8.8 sobre 10"
+      ],
+      "contras": [
+        "Shuttle todas las mañanas con la niña y su equipo",
+        "Sin cocina, así que se gastan unos $250 más en comida",
+        "Resort fee reportado de $35 por día, más estacionamiento",
+        "No es ski-in/ski-out"
+      ],
+      "ideal_si": "Prefieren servicio de hotel y spa a un condominio, y no les molesta el shuttle."
+    }
+  ],
+  "fotos": [
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Keystone Lake y el resort (foto de 2001)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Keystone_Lake_and_Resort.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Keystone_Lake_and_Resort.jpg",
+      "credito": "K.warterbeck / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0 / GFDL 1.2+"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Panorámica nocturna desde Loveland Pass con las luces de Keystone y A-Basin",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Loveland_Panorama_%285580489539%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Loveland_Panorama_(5580489539).jpg",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "lake_dillon",
+      "descripcion": "Lago Dillon, vecino de Keystone",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Dillon_reservoir.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Dillon_reservoir.JPG",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "lake_dillon",
+      "descripcion": "Lago Dillon en otoño (octubre de 2011)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Dillon,_in_Colorado,_in_October_2011.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Lake_Dillon,_in_Colorado,_in_October_2011.jpg",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "keystone_lake",
+      "descripcion": "Pista de hielo de Lakeside Village (Keystone Lake)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/visitcolorado/4119350537",
+      "credito": "Visit Colorado / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Árboles nevados en Keystone",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/21085902@N08/8442850093",
+      "credito": "Flickr 21085902@N08",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Vista de Keystone Resort",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/slack12/3682210351",
+      "credito": "slack12 / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "river_run",
+      "descripcion": "POR VERIFICAR: 'Village Night copy.jpg' (pueblo de noche). El nombre sale del listado de la categoría; no vimos su página de archivo",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Village_Night_copy.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Keystone_Resort",
+      "credito": "verificar en Commons",
+      "licencia": "verificar"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "galeria",
+      "descripcion": "GALERÍA: categoría de Commons 'Keystone, Colorado'",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Keystone,_Colorado",
+      "credito": "Wikimedia Commons",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "galeria",
+      "descripcion": "GALERÍA: etiqueta 'keystone' en Flickr",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/tags/keystone/",
+      "credito": "Flickr (varios)",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Familia en tubing en Keystone (enero de 2009)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/A_family_snow_tubing_at_Keystone_Resort_in_Colorado.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:A_family_snow_tubing_at_Keystone_Resort_in_Colorado.JPG",
+      "credito": "David Shankbone / Wikimedia Commons",
+      "licencia": "CC BY 3.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Alfombra mágica en Keystone Mountain",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+      "credito": "David Shankbone / Wikimedia Commons",
+      "licencia": "CC BY 3.0 (según datos estructurados; verificar)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Montañas nevadas en Keystone Ski Resort",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_covered_mountains_in_Keystone_Ski_Resort_%28Unsplash%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_covered_mountains_in_Keystone_Ski_Resort_(Unsplash).jpg",
+      "credito": "Unsplash vía Wikimedia Commons",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Vista de Breckenridge desde la cima oeste de Dercum Mountain (parte alta de la pista Ranger)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
+      "credito": "Ahodges7 / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0 / GFDL 1.2+"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Esquiadores en Keystone",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Airforce_skiing_at_keystone_colorado.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Airforce_skiing_at_keystone_colorado.jpg",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Outpost Mountain Lodge, restaurante de montaña (foto pequeña de 500 px, año 2000)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Outpost_Mountain_Lodge,_Keystone,_CO.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Outpost_Mountain_Lodge,_Keystone,_CO.jpg",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Castillo o fuerte de hielo en la cima de Dercum",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/newbirthcreativedesignagency/5446837816",
+      "credito": "newbirthcreativedesignagency / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Alfombra mágica en Keystone Resort",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/shankbone/3317236331/",
+      "credito": "David Shankbone / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "dercum",
+      "descripcion": "Familia en tubing ('McCormicks tubing on Keystone Resort')",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/shankbone/3325095944/",
+      "credito": "David Shankbone / Flickr",
+      "licencia": "CC BY 2.0 (según metadatos)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Esquiando en Keystone",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/sehar/3028454574/",
+      "credito": "sehar / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Nieve polvo en Keystone (febrero de 2012)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/snowdotcom/6876559399",
+      "credito": "snowdotcom / Flickr",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "river_run",
+      "descripcion": "Pista River Run iluminada para esquí nocturno (foto del artículo de Wikipedia)",
+      "url_imagen": "",
+      "url_pagina": "https://en.wikipedia.org/wiki/Night_skiing",
+      "credito": "Wikipedia (ver archivo)",
+      "licencia": "ver archivo"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "river_run",
+      "descripcion": "POR VERIFICAR: 'Night skiing.jpg' (1,525 × 840 px). El nombre sale del listado de la categoría; no vimos su página de archivo",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Night_skiing.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Keystone_Resort",
+      "credito": "verificar en Commons",
+      "licencia": "verificar"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "galeria",
+      "descripcion": "GALERÍA: categoría de Commons 'Keystone Resort'",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Keystone_Resort",
+      "credito": "Wikimedia Commons",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "galeria",
+      "descripcion": "GALERÍA: fotostream 'Keystone Resort' en Flickr (132 fotos)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/47684472@N04",
+      "credito": "Flickr",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "galeria",
+      "descripcion": "GALERÍA: etiqueta 'dercum' en Flickr",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/tags/dercum/",
+      "credito": "Flickr (varios)",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "timbers",
+      "descripcion": "The Timbers: galería del listado 'The Timbers Ski-In/Ski-Out at River Run'",
+      "url_imagen": "",
+      "url_pagina": "https://www.expedia.com/Keystone-Hotels-The-Timbers-Ski-In-Ski-Out-At-River-Run.h106526604.Hotel-Information",
+      "credito": "Expedia / anfitrión",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "timbers",
+      "descripcion": "The Timbers: ficha del complejo, con alberca y amenidades",
+      "url_imagen": "",
+      "url_pagina": "https://lodgingcompany.com/lodging/keystone/river-run/condo/timbers",
+      "credito": "Lodging Company",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "timbers",
+      "descripcion": "The Timbers: unidad 3058",
+      "url_imagen": "",
+      "url_pagina": "https://www.summitcove.com/rentals/timbers-3058-at-river-run-village-keystone/",
+      "credito": "SummitCove",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "timbers",
+      "descripcion": "The Timbers: unidad 3059",
+      "url_imagen": "",
+      "url_pagina": "https://skyrun.com/keystone/vrp/unit/3059-The-Timbers--KYST--345--15",
+      "credito": "SkyRun",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "lone_eagle",
+      "descripcion": "Lone Eagle: página oficial de Keystone",
+      "url_imagen": "",
+      "url_pagina": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
+      "credito": "Keystone Resort / Vail Resorts",
+      "licencia": "© Vail Resorts (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "lone_eagle",
+      "descripcion": "Lone Eagle: galería 'Timbers & Lone Eagle by Keystone Resort'",
+      "url_imagen": "",
+      "url_pagina": "https://www.expedia.com/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+      "credito": "Expedia / Vail Resorts",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "lone_eagle",
+      "descripcion": "Lone Eagle: complejo",
+      "url_imagen": "",
+      "url_pagina": "https://www.summitcove.com/complex/lone-eagle-ski-in-condos-at-river-run-village-keystone-resort-colorado",
+      "credito": "SummitCove",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "lone_eagle",
+      "descripcion": "Timbers & Lone Eagle: ficha de Undercover Tourist",
+      "url_imagen": "",
+      "url_pagina": "https://www.undercovertourist.com/keystone-colorado/timbers-lone-eagle-keystone-hotel/",
+      "credito": "Undercover Tourist",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "river_run_condos",
+      "descripcion": "Condominios de River Run: página oficial de Keystone",
+      "url_imagen": "",
+      "url_pagina": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=RIVER-RUN-CONDOMINIUMS",
+      "credito": "Keystone Resort / Vail Resorts",
+      "licencia": "© Vail Resorts (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "river_run_condos",
+      "descripcion": "Silver Mill 8260 (2 recámaras, se camina a las pistas)",
+      "url_imagen": "",
+      "url_pagina": "https://www.redawning.com/rental-property/silver-mill-8260-2br-walk-slopes-kids-ski-free-keystone",
+      "credito": "RedAwning",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "river_run_condos",
+      "descripcion": "Condominio de River Run con alberca y jacuzzi",
+      "url_imagen": "",
+      "url_pagina": "https://homes-and-villas.marriott.com/en/properties/40280024-keystone-river-run-condo-pool-hot-tub-walk-to-slopes",
+      "credito": "Marriott Homes & Villas",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "keystone_lodge",
+      "descripcion": "Keystone Lodge & Spa: página oficial",
+      "url_imagen": "",
+      "url_pagina": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodge-and-spa.aspx",
+      "credito": "Keystone Resort / Vail Resorts",
+      "licencia": "© Vail Resorts (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "keystone_lodge",
+      "descripcion": "Keystone Lodge & Spa: galería con fotos de Jack Affleck para Vail Resorts",
+      "url_imagen": "",
+      "url_pagina": "https://www.hotels.com/ho3635789056",
+      "credito": "Jack Affleck / Vail Resorts vía Hotels.com",
+      "licencia": "© Vail Resorts (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "keystone_lodge",
+      "descripcion": "Keystone Lodge & Spa: galería en Trip.com",
+      "url_imagen": "",
+      "url_pagina": "https://uk.trip.com/hotels/breckenridge-hotel-detail-1965806/the-keystone-lodge-and-spa-by-keystone-resort",
+      "credito": "Trip.com",
+      "licencia": "© titular (sólo referencia)"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "keystone_lodge",
+      "descripcion": "Túnel peatonal bajo la Hwy 6, del estacionamiento a Keystone Lodge",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/80651083@N00/500219094",
+      "credito": "Flickr 80651083@N00",
+      "licencia": "ver página"
+    }
+  ],
+  "verificar": [
+    "Visas B1/B2 vigentes de los tres, sobre todo la de la niña. La cita en Monterrey tardaba unos 4.5 meses en mayo de 2026.",
+    "Términos 2026-27 de Kids Ski Free: días por noche, si el Epic Day Pass cuenta como boleto de adulto y cómo funciona el voucher. Confirmarlo por escrito con Keystone Lodging (+1 877-317-9435).",
+    "Que la unidad de The Timbers o Lone Eagle esté en el inventario de keystoneresort.com y no sólo con SkyRun, SummitCove o VRBO. Revisar también cancelación, resort fee, impuestos y estacionamiento.",
+    "Tarifas reales de las tres ventanas en keystoneresort.com: los precios de esta ficha son estimaciones con confianza baja o media.",
+    "Horario de Viva MTY–DEN para enero-marzo de 2027 (jueves y domingo según 2024).",
+    "Precio y nivel del Epic Day Pass; comprarlo antes de principios de diciembre de 2026.",
+    "Escuela: precio 2026-27, en qué base se presenta una principiante de 5 años, que incluya comida y renta, y que sea el mismo instructor con 3 días o más.",
+    "Estatura de la niña para el tubing (42 pulgadas) y exención firmada para patinar.",
+    "Altitud (base a 2,829 m): consultar al pediatra, planear una noche en Denver, hidratación y un primer día tranquilo.",
+    "Calendario 2026-27 de Kidtopia y del esquí nocturno.",
+    "Camioneta AWD/4x4, Ley de Tracción de Colorado y seguro de viaje con CFAR."
+  ],
+  "fuentes": [
+    "https://www.keystoneresort.com/kidsskifree",
+    "https://www.keystoneresort.com/plan-your-trip/stay/play-for-free.aspx",
+    "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
+    "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
+    "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=RIVER-RUN-CONDOMINIUMS",
+    "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodge-and-spa.aspx",
+    "https://www.keystoneresort.com/plan-your-trip/stay/lodge-faq.aspx",
+    "https://www.keystoneresort.com/travel-guide/lodging-with-hot-tubs-keystone.aspx",
+    "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+    "https://www.keystoneresort.com/plan-your-trip/confirmation/child-ultimate4-lesson.aspx",
+    "https://www.keystoneresort.com/plan-your-trip/confirmation/Child-Camp-Keystone",
+    "https://www.snowthere.com/resorts/united-states/keystone",
+    "https://www.snowthere.com/guides/altitude-sickness-kids-colorado-ski-resorts",
+    "https://www.ski.com/blog/kids-guide-keystone/",
+    "https://www.undercovertourist.com/keystone-kids-ski-free/",
+    "https://thepointsguy.com/travel/kids-ski-free/",
+    "https://snowstash.com/usa/colorado/keystone/lift-tickets",
+    "https://www.saminfo.com/news/sam-headline-news/vail-resorts-adds-young-adult-and-teen-epic-pass-options-for-2026-27",
+    "https://www.undercovertourist.com/ski-resorts/heavenly/",
+    "https://news.vailresorts.com/2025-11-17-Epic-Passes-Go-Off-Sale-December-4-Lock-in-Your-Magical-Mountain-Holiday-Now?asPDF=1",
+    "https://www.theavantski.com/vail-for-the-family",
+    "https://www.snowthere.com/resorts/united-states/breckenridge/llms.txt",
+    "https://skyrun.com/keystone/",
+    "https://www.expedia.com/Keystone-Hotels-Timbers-And-Lone-Eagle-By-Keystone-Resort.h15525037.Hotel-Information",
+    "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
+    "https://es.hotels.com/nh10819028/hoteles-en-river-run-keystone-colorado/",
+    "https://expedia.com.sg/Keystone-East-Keystone.dx3000663164",
+    "https://nz.hotels.com/ho1360856640",
+    "https://www.hotels.com/ho3635789056",
+    "https://www.thebrecklife.com/blog/best-ski-in-ski-out-condos-keystone-co/",
+    "https://lodgingcompany.com/lodging/keystone/river-run/condo/timbers",
+    "https://www.redawning.com/rental-property/silver-mill-8260-2br-walk-slopes-kids-ski-free-keystone",
+    "https://www.summitdaily.com/news/keystone-bigger-and-better-snow-fort-fun/",
+    "https://www.thespringbreakfamily.com/kidtopia-keystone/",
+    "https://blog.itrip.net/family-fun-in-keystone-co/",
+    "https://playersoflife.com/monterrey/viva-aerobus-inaugura-vuelo-directo-monterrey-denver/",
+    "https://www.aeropuertosdelmundo.net/mx/aeropuerto-MTY/",
+    "https://www.denvergazette.com/2026/01/18/the-cost-of-a-week-long-family-ski-trip-to-colorado-in-2026/",
+    "https://childrenscolorado.org/just-ask-childrens/articles/altitude-sickness",
+    "https://en.wikipedia.org/wiki/Comparison_of_Colorado_ski_resorts",
+    "https://www.zrankings.com/best-time-to-ski/keystone"
+  ]
+}
