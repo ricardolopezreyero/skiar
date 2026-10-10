@@ -129,7 +129,7 @@
   function renderVentanas() {
     const box = $("#ventanas");
     box.replaceChildren(...VENTANAS.map((w) =>
-      el("button", { type: "button", class: "chip" + (state.v === w.id ? " on" : ""), role: "radio", "aria-checked": String(state.v === w.id), onclick: () => { state.v = w.id; state.l = null; render(); } },
+      el("button", { type: "button", class: "chip" + (state.v === w.id ? " on" : ""), role: "radio", "aria-checked": String(state.v === w.id), onclick: () => { state.v = w.id; render(); } },
         el("strong", {}, w.titulo + " 2027"), el("span", {}, w.nota))));
   }
 

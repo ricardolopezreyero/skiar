@@ -4,6 +4,8 @@
 Uso: python3 tools/build_site.py
 """
 import datetime
+import hashlib
+import re
 import json
 import pathlib
 import sys
@@ -43,6 +45,16 @@ def main():
     out = SITE / "data.js"
     out.write_text("window.SKIAR = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
     print(f"ok: {out.relative_to(ROOT)} · {len(resorts)} destinos")
+
+    # Cache-busting: cada archivo se pide con ?v=<huella de su contenido>,
+    # así el navegador nunca se queda con una versión vieja.
+    index = SITE / "index.html"
+    html = index.read_text(encoding="utf-8")
+    for name in ("data.js", "app.js", "styles.css"):
+        huella = hashlib.sha1((SITE / name).read_bytes()).hexdigest()[:10]
+        html = re.sub(rf'(["\']){re.escape(name)}(\?v=[0-9a-f]+)?(["\'])', rf"\g<1>{name}?v={huella}\g<3>", html)
+    index.write_text(html, encoding="utf-8")
+    print("ok: index.html con versiones")
 
 
 if __name__ == "__main__":
