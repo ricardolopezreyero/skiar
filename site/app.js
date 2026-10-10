@@ -342,6 +342,9 @@
     const esc = (M.horario_escuela || {})[mapaSlug] || {};
     $("#mapa-ruta").replaceChildren(
       v ? el("div", { class: "ruta-tot" }, el("div", {}, el("small", {}, "Ida, puerta a puerta"), el("strong", {}, fmtH(v.ida))), el("div", {}, el("small", {}, "Regreso"), el("strong", {}, fmtH(v.regreso)))) : el("p", { class: "muted" }, "Sin itinerario."),
+      v ? (() => { const l0 = defaultLodging(r, state.v); const b = balance(r, state.r === r.slug && state.l != null ? state.l : l0); return el("div", { class: "ruta-tot" },
+        el("div", {}, el("small", {}, "⛷️ Días esquiando"), el("strong", {}, DIAS_ESQUI + " días"), el("small", {}, fmtH(b.esqui) + " de pista")),
+        el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: 2"))); })() : null,
       v ? el("h4", {}, "🛫 Ida") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.ida)) : null,
       v ? el("h4", {}, "🛬 Regreso") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.regreso)) : null,
       el("h4", {}, "⛷️ En la montaña"),
@@ -357,7 +360,7 @@
     if (capa) capa.remove();
     capa = L.layerGroup().addTo(mapa);
     const color = { origen: "#e0703a", aeropuerto: "#1d5fa8", resort: "#2e8b57", escuela: "#b7791f", hospedaje: "#7a4fd0" };
-    const visibles = (M.puntos || []).filter((p) => !p.resort || p.resort === mapaSlug);
+    const visibles = (M.puntos || []).filter((p) => p.lat != null && p.lng != null && (!p.resort || p.resort === mapaSlug));
     const usados = new Set();
     if (v) [...v.it.ida, ...v.it.regreso].forEach((id) => { const x = tramo(id); if (x) { usados.add(x.de); usados.add(x.a); } });
     visibles.filter((p) => p.resort || usados.has(p.id)).forEach((p) => {
@@ -367,7 +370,7 @@
     });
     if (v) v.it.ida.forEach((id) => {
       const x = tramo(id); const a = x && punto(x.de), b = x && punto(x.a);
-      if (!a || !b || a.id === b.id) return;
+      if (!a || !b || a.id === b.id || a.lat == null || b.lat == null) return;
       L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: x.modo === "vuelo" ? "#1d5fa8" : "#e0703a", weight: 3, dashArray: x.modo === "vuelo" ? "6 8" : null })
         .bindTooltip(`${ICONO_MODO[x.modo] || ""} ${fmtH(x.horas)}`).addTo(capa);
     });

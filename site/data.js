@@ -3301,5 +3301,1180 @@ window.SKIAR = {
    "icono": "🧤"
   }
  ],
- "mapa": {}
+ "mapa": {
+  "generado": "2026-10-10",
+  "nota_general": "Las horas son tiempo transcurrido (no horas de reloj). Torreón y Monterrey están en UTC-6 todo el año; Denver, Hayden y Aspen en MST (UTC-7) hasta el 14-mar-2027; Dallas en CST (UTC-6). Las coordenadas con precision 'sin_dato' tienen lat/lng null: no se encontró fuente y no se inventaron. Tramos con confianza 'baja' = estimación sin fuente directa.",
+  "puntos": [
+   {
+    "id": "torreon",
+    "nombre": "Torreón (centro; punto de partida de la familia)",
+    "tipo": "origen",
+    "resort": null,
+    "lat": 25.5419,
+    "lng": -103.4083,
+    "precision": "exacta",
+    "fuente": "https://en.wikipedia.org/wiki/Torre%C3%B3n",
+    "nota": "Coordenada de referencia de la ciudad (Wikipedia 25°32′31″N 103°24′30″W). Geodatos da 25.54389, -103.41898. No es el domicilio de la familia."
+   },
+   {
+    "id": "trc",
+    "nombre": "Aeropuerto Internacional de Torreón (TRC)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 25.5681,
+    "lng": -103.4106,
+    "precision": "exacta",
+    "fuente": "https://en.wikipedia.org/wiki/Torre%C3%B3n_International_Airport",
+    "nota": "Wikipedia/ch-aviation 25°34′05″N 103°24′38″W. Otras fuentes: 25.5623, -103.4046."
+   },
+   {
+    "id": "mty",
+    "nombre": "Aeropuerto Internacional de Monterrey (MTY), Apodaca",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 25.7785,
+    "lng": -100.107,
+    "precision": "exacta",
+    "fuente": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+    "nota": "Wikipedia 25.77833, -100.10639; Sprinkle/airport-data 25.7785, -100.1070."
+   },
+   {
+    "id": "den",
+    "nombre": "Aeropuerto Internacional de Denver (DEN)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 39.8617,
+    "lng": -104.6731,
+    "precision": "exacta",
+    "fuente": "https://skyvector.com/airport/DEN/Denver-International-Airport",
+    "nota": "Punto de referencia del aeropuerto (39°51′42″N 104°40′23″W). Los hoteles de la primera noche están a ~10-20 min."
+   },
+   {
+    "id": "dfw",
+    "nombre": "Aeropuerto Internacional Dallas/Fort Worth (DFW)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 32.8968,
+    "lng": -97.038,
+    "precision": "exacta",
+    "fuente": "https://airport-data.com/airport/DFW/",
+    "nota": "Migración (CBP) en la Terminal D para vuelos internacionales."
+   },
+   {
+    "id": "hdn",
+    "nombre": "Yampa Valley Airport (HDN), Hayden",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 40.4812,
+    "lng": -107.2177,
+    "precision": "exacta",
+    "fuente": "https://en.wikipedia.org/wiki/Yampa_Valley_Airport",
+    "nota": "Wikipedia 40°28′52″N 107°13′04″W; airport-data 40.481167, -107.217667."
+   },
+   {
+    "id": "ase",
+    "nombre": "Aspen/Pitkin County Airport (ASE)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 39.2219,
+    "lng": -106.8682,
+    "precision": "exacta",
+    "fuente": "https://www.airnav.com/airport/KASE",
+    "nota": "Punto de referencia FAA (AirNav): 39°13'18.76\"N 106°52'05.64\"W."
+   },
+   {
+    "id": "keystone",
+    "nombre": "Keystone – base River Run (góndola River Run)",
+    "tipo": "resort",
+    "resort": "keystone",
+    "lat": 39.6056,
+    "lng": -105.9437,
+    "precision": "aproximada",
+    "fuente": "https://www.keystoneresort.com/travel-guide/navigating-keystone-resort.aspx",
+    "nota": "SIN COORDENADA VERIFICADA. Dirección: 195 River Run Rd, Keystone, CO. Según la FAQ oficial del Keystone Lodge, River Run queda a 1.5 millas del Lodge. Se descartó el GPS de Sembo (39.605, -105.976) porque corresponde a 21996 US Hwy 6, el centro de check-in de hospedaje, no a River Run.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "breckenridge",
+    "nombre": "Breckenridge – base de Peak 8",
+    "tipo": "resort",
+    "resort": "breckenridge",
+    "lat": 39.4825,
+    "lng": -106.0681,
+    "precision": "aproximada",
+    "fuente": "https://www.hotelplanner.com/Hotels/290041/Reservations-Grand-Colorado-on-Peak-8-Breckenridge-1627-Ski-Hill-Rd-80424",
+    "nota": "Se usa la coordenada del Grand Colorado on Peak 8 (1627 Ski Hill Rd), que está en la plaza de la base de Peak 8 (error < 150 m)."
+   },
+   {
+    "id": "steamboat",
+    "nombre": "Steamboat – Gondola Square (base)",
+    "tipo": "resort",
+    "resort": "steamboat",
+    "lat": 40.459,
+    "lng": -106.803,
+    "precision": "aproximada",
+    "fuente": "https://en.wikipedia.org/wiki/Steamboat_Ski_Resort",
+    "nota": "Coordenada de Wikipedia para el resort (40°27′32″N 106°48′11″W), con solo 3 decimales; se toma como la base. Dirección de Gondola Square: 2305 Mount Werner Cir. Error estimado: hasta ~200 m."
+   },
+   {
+    "id": "snowmass",
+    "nombre": "Snowmass – Base Village",
+    "tipo": "resort",
+    "resort": "snowmass",
+    "lat": 39.2097,
+    "lng": -106.9449,
+    "precision": "aproximada",
+    "fuente": "https://www.travelprofy.com/aspen-airport-ase/viceroy-snowmass-snowmass-village",
+    "nota": "Se usa la coordenada del Viceroy (130 Wood Rd, junto a Base Village). El Treehouse queda a unos 530 m del Viceroy (Trip.com), así que el error puede ser de hasta ~600 m."
+   },
+   {
+    "id": "keystone-escuela-riverrun",
+    "nombre": "Keystone – River Run Kids Ski School Office (entrada este de River Run Village, afuera de Silver Mill Building F3)",
+    "tipo": "escuela",
+    "resort": "keystone",
+    "lat": 39.6052,
+    "lng": -105.9428,
+    "precision": "aproximada",
+    "fuente": "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+    "nota": "SIN COORDENADA VERIFICADA. El check-in es en la entrada este de River Run Village, afuera de Silver Mill Building F3, y la recogida es en el 'backyard', enfrente de la góndola River Run.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "keystone-escuela-mountainhouse",
+    "nombre": "Keystone – Mountain House Kids Ski & Ride School (cerca del telesilla Discovery)",
+    "tipo": "escuela",
+    "resort": "keystone",
+    "lat": 39.6047,
+    "lng": -105.9545,
+    "precision": "aproximada",
+    "fuente": "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+    "nota": "SIN COORDENADA VERIFICADA. Dirección: 1202 County Rd 8 / E Keystone Rd. Aquí también está Camp Keystone. La base asignada aparece en el correo de confirmación.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "breck-escuela-peak8",
+    "nombre": "Breckenridge – Grand Colorado Children's Facility (plaza bajo la góndola de Peak 8)",
+    "tipo": "escuela",
+    "resort": "breckenridge",
+    "lat": 39.4825,
+    "lng": -106.0681,
+    "precision": "aproximada",
+    "fuente": "https://www.hotelplanner.com/Hotels/290041/Reservations-Grand-Colorado-on-Peak-8-Breckenridge-1627-Ski-Hill-Rd-80424",
+    "nota": "Está dentro del complejo Grand Colorado; se usa la coordenada del edificio."
+   },
+   {
+    "id": "breck-escuela-beaverrun",
+    "nombre": "Breckenridge – Beaver Run Children's Facility (3-6 años; un nivel abajo de Beaver Run Plaza, Peak 9)",
+    "tipo": "escuela",
+    "resort": "breckenridge",
+    "lat": 39.4738,
+    "lng": -106.0513,
+    "precision": "aproximada",
+    "fuente": "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
+    "nota": "Está dentro del Beaver Run Resort; se usa la coordenada del hotel (HotelPlanner 39.473824, -106.051270)."
+   },
+   {
+    "id": "steamboat-escuela",
+    "nombre": "Steamboat – Mountain Camp (Young Kids 3-6), junto al Gondola Transit Center",
+    "tipo": "escuela",
+    "resort": "steamboat",
+    "lat": 40.459,
+    "lng": -106.803,
+    "precision": "aproximada",
+    "fuente": "https://en.wikipedia.org/wiki/Steamboat_Ski_Resort",
+    "nota": "Igual que el punto de la base de Steamboat (3 decimales; error de hasta ~200 m)."
+   },
+   {
+    "id": "snowmass-escuela",
+    "nombre": "Snowmass – Treehouse Kids' Adventure Center (Base Village)",
+    "tipo": "escuela",
+    "resort": "snowmass",
+    "lat": 39.2097,
+    "lng": -106.9449,
+    "precision": "aproximada",
+    "fuente": "https://www.travelprofy.com/aspen-airport-ase/viceroy-snowmass-snowmass-village",
+    "nota": "No se encontró coordenada propia; se usa la del Viceroy (~530 m de distancia). Confianza baja."
+   },
+   {
+    "id": "h-keys-the-timbers-river-run-1-recamara-reserva",
+    "nombre": "The Timbers (River Run), 1 recámara, reservado con Keystone Resort",
+    "tipo": "hospedaje",
+    "resort": "keystone",
+    "lat": 39.6059,
+    "lng": -105.9446,
+    "precision": "aproximada",
+    "fuente": "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
+    "nota": "SIN COORDENADA. Está en la base de River Run, junto a la góndola (224 Trailhead Dr según listados).",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-keys-lone-eagle-river-run-2-recamaras-reserva",
+    "nombre": "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort",
+    "tipo": "hospedaje",
+    "resort": "keystone",
+    "lat": 39.6062,
+    "lng": -105.9434,
+    "precision": "aproximada",
+    "fuente": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
+    "nota": "SIN COORDENADA. Está en la base de River Run, junto a la góndola y el Summit Express.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-keys-condominio-de-river-run-silver-mill-expe",
+    "nombre": "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort",
+    "tipo": "hospedaje",
+    "resort": "keystone",
+    "lat": 39.605,
+    "lng": -105.9424,
+    "precision": "aproximada",
+    "fuente": "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr",
+    "nota": "SIN COORDENADA. Silver Mill está en 140 Ida Belle Dr, a ~200 yardas de la góndola; el check-in de la escuela está afuera de su Building F3.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-keys-keystone-lodge-spa-lakeside-village",
+    "nombre": "Keystone Lodge & Spa (Lakeside Village)",
+    "tipo": "hospedaje",
+    "resort": "keystone",
+    "lat": 39.6073,
+    "lng": -105.9703,
+    "precision": "exacta",
+    "fuente": "https://www.expedia.com/es/Keystone-Hoteles-Keystone-Lodge-Spa-By-Keystone-Resort.h16001.Informacion-Hotel",
+    "nota": "Marcador de mapa de Expedia: 39.60729, -105.97029 (Sembo da 39.607, -105.970). Es de un tercero, no oficial."
+   },
+   {
+    "id": "h-brec-grand-colorado-on-peak-8",
+    "nombre": "Grand Colorado on Peak 8",
+    "tipo": "hospedaje",
+    "resort": "breckenridge",
+    "lat": 39.4825,
+    "lng": -106.0681,
+    "precision": "exacta",
+    "fuente": "https://www.hotelplanner.com/Hotels/290041/Reservations-Grand-Colorado-on-Peak-8-Breckenridge-1627-Ski-Hill-Rd-80424",
+    "nota": "HotelPlanner 39.482464, -106.068070 (tercero). Dirección: 1627 Ski Hill Rd."
+   },
+   {
+    "id": "h-brec-grand-lodge-on-peak-7",
+    "nombre": "Grand Lodge on Peak 7",
+    "tipo": "hospedaje",
+    "resort": "breckenridge",
+    "lat": 39.489,
+    "lng": -106.075,
+    "precision": "aproximada",
+    "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7/map",
+    "nota": "SIN COORDENADA. Dirección: 1979 Ski Hill Rd, en la estación Peak 7 de la góndola BreckConnect.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-brec-beaver-run-resort",
+    "nombre": "Beaver Run Resort",
+    "tipo": "hospedaje",
+    "resort": "breckenridge",
+    "lat": 39.4738,
+    "lng": -106.0513,
+    "precision": "exacta",
+    "fuente": "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
+    "nota": "HotelPlanner 39.473824, -106.051270 (tercero). Dirección: 620 Village Rd."
+   },
+   {
+    "id": "h-brec-one-ski-hill-place-a-rockresort",
+    "nombre": "One Ski Hill Place, a RockResort",
+    "tipo": "hospedaje",
+    "resort": "breckenridge",
+    "lat": 39.4825,
+    "lng": -106.0681,
+    "precision": "aproximada",
+    "fuente": "https://www.travelweekly-asia.com/Hotels/Breckenridge-CO/One-Ski-Hill-Place-p8411101",
+    "nota": "Sin coordenada propia. Está en 1521 Ski Hill Rd, en la base de Peak 8, junto al Grand Colorado; se usa la coordenada de este (error < 150 m)."
+   },
+   {
+    "id": "h-stea-torian-plum-plaza-1-recamara-recomendado",
+    "nombre": "Torian Plum Plaza (1 recámara) — RECOMENDADO",
+    "tipo": "hospedaje",
+    "resort": "steamboat",
+    "lat": 40.459,
+    "lng": -106.803,
+    "precision": "aproximada",
+    "fuente": "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Torian-Plum-Plaza-Condos-p7922001",
+    "nota": "Sin coordenada propia. Está en 1855 Ski Time Square Dr, junto a la base; se usa el punto de Wikipedia del resort (error de hasta ~250 m)."
+   },
+   {
+    "id": "h-stea-the-steamboat-grand-habitacion-de-hotel",
+    "nombre": "The Steamboat Grand (habitación de hotel)",
+    "tipo": "hospedaje",
+    "resort": "steamboat",
+    "lat": 40.459,
+    "lng": -106.803,
+    "precision": "aproximada",
+    "fuente": "https://allstays.com/hotels/18013.htm",
+    "nota": "Sin coordenada propia. Está en 2300 Mount Werner Cir, enfrente de Gondola Square; se usa el punto del resort (error de hasta ~200 m)."
+   },
+   {
+    "id": "h-stea-kutuk-condominiums-2-recamaras",
+    "nombre": "Kutuk Condominiums (2 recámaras)",
+    "tipo": "hospedaje",
+    "resort": "steamboat",
+    "lat": 40.4566,
+    "lng": -106.8033,
+    "precision": "aproximada",
+    "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
+    "nota": "SIN COORDENADA. Está junto a Burgess Creek, debajo de la base de la góndola; la distancia a la base no está verificada.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-stea-one-steamboat-place-2-recamaras-premium",
+    "nombre": "One Steamboat Place (2 recámaras) — premium",
+    "tipo": "hospedaje",
+    "resort": "steamboat",
+    "lat": 40.459,
+    "lng": -106.803,
+    "precision": "aproximada",
+    "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+    "nota": "Sin coordenada propia. Está en Gondola Square; se usa el punto del resort (error de hasta ~200 m)."
+   },
+   {
+    "id": "h-snow-limelight-hotel-snowmass",
+    "nombre": "Limelight Hotel Snowmass",
+    "tipo": "hospedaje",
+    "resort": "snowmass",
+    "lat": 39.2097,
+    "lng": -106.9449,
+    "precision": "aproximada",
+    "fuente": "https://limelighthotels.com/snowmass/explore/getting-here",
+    "nota": "Sin coordenada propia. Está en 65 Wood Rd, Base Village, junto a la góndola Elk Camp y al Treehouse; se usa la coordenada del Viceroy (error de hasta ~500 m)."
+   },
+   {
+    "id": "h-snow-viceroy-snowmass",
+    "nombre": "Viceroy Snowmass",
+    "tipo": "hospedaje",
+    "resort": "snowmass",
+    "lat": 39.2097,
+    "lng": -106.9449,
+    "precision": "exacta",
+    "fuente": "https://www.travelprofy.com/aspen-airport-ase/viceroy-snowmass-snowmass-village",
+    "nota": "Travelprofy: 39.20966, -106.94493 (tercero). Dirección: 130 Wood Rd."
+   },
+   {
+    "id": "h-snow-viewline-resort-snowmass-autograph-colle",
+    "nombre": "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)",
+    "tipo": "hospedaje",
+    "resort": "snowmass",
+    "lat": 39.2114,
+    "lng": -106.9486,
+    "precision": "aproximada",
+    "fuente": "https://www.ski.com/property/SKI-STST-17",
+    "nota": "SIN COORDENADA. Dirección: 100 Elbert Lane, junto al Snowmass Mall.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "h-snow-woodrun-place-condo-fanny-hill",
+    "nombre": "Woodrun Place (condo, Fanny Hill)",
+    "tipo": "hospedaje",
+    "resort": "snowmass",
+    "lat": 39.2098,
+    "lng": -106.954,
+    "precision": "aproximada",
+    "fuente": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+    "nota": "SIN COORDENADA. Está sobre Fanny Hill, arriba del Snowmass Mall.",
+    "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   }
+  ],
+  "tramos": [
+   {
+    "id": "trc-mty-carro",
+    "de": "torreon",
+    "a": "mty",
+    "modo": "carro",
+    "horas": 4.0,
+    "rango": "3.5-4.5 h (310-340 km por la autopista 40D vía Saltillo; Torreón-Saltillo ~3 h + Saltillo-aeropuerto MTY ~1-1.25 h)",
+    "nota": "Con una niña de 5 años, contar una parada de ~15 min. Pueden aumentar el tiempo los bloqueos u obras entre Saltillo y Monterrey y la neblina invernal. El vuelo Viva sale ~10:10-11:00, así que hay que salir de Torreón ~2:30-3:30 am o dormir en Monterrey la víspera.",
+    "fuente": "https://www.telediario.mx/comunidad/torreon-a-monterrey-cuanto-tiempo-se-hace",
+    "confianza": "media"
+   },
+   {
+    "id": "mty-estacionamiento",
+    "de": "mty",
+    "a": "mty",
+    "modo": "shuttle",
+    "horas": 0.25,
+    "rango": "10-25 min",
+    "nota": "Dejar el auto en Superpark Terminal C (shuttle gratis a la terminal). Estimación, no verificada.",
+    "fuente": "https://www.aeropuertosdelmundo.net/mx/aeropuerto-MTY/",
+    "confianza": "baja"
+   },
+   {
+    "id": "mty-espera-int",
+    "de": "mty",
+    "a": "mty",
+    "modo": "espera",
+    "horas": 3.0,
+    "rango": "2-3 h antes del vuelo internacional",
+    "nota": "Las autoridades del aeropuerto de Monterrey recomiendan 2-3 h; para un vuelo a EE.UU. con maletas y una niña, 3 h. Viva ha advertido sobre tráfico por obras en la zona metropolitana.",
+    "fuente": "https://www.posta.com.mx/nuevo-leon/jornada-aerea-en-el-aeropuerto-monterrey-este-28-de-abril/vl2195856",
+    "confianza": "media"
+   },
+   {
+    "id": "mty-den-vuelo",
+    "de": "mty",
+    "a": "den",
+    "modo": "vuelo",
+    "horas": 2.75,
+    "rango": "2 h 40 - 2 h 50 sin escala (Viva VB720)",
+    "nota": "Tiempo de vuelo real. En invierno Denver (MST, UTC-7) va 1 h detrás de Monterrey/Torreón (UTC-6): sale 10:10 y llega ~12:00-12:10 hora de Denver. El horario de invierno 2026-27 no está confirmado y no vuela diario.",
+    "fuente": "https://www.flightsfrom.com/MTY-DEN",
+    "confianza": "media"
+   },
+   {
+    "id": "den-migracion",
+    "de": "den",
+    "a": "den",
+    "modo": "espera",
+    "horas": 0.75,
+    "rango": "0.5-1.25 h (desembarque + migración ~11-22 min promedio + maletas + aduana)",
+    "nota": "Promedio de pasaporte en DEN: ~11 min (datos CBP de 90 días; pico ~16 min hacia las 11 am). Para no ciudadanos se reportan 17-22 min. Se suman el desembarque, la espera de maletas y la aduana.",
+    "fuente": "https://www.takeofftimer.com/immigration-wait-times/DEN",
+    "confianza": "media"
+   },
+   {
+    "id": "den-renta-auto",
+    "de": "den",
+    "a": "den",
+    "modo": "shuttle",
+    "horas": 0.75,
+    "rango": "0.5-1.25 h",
+    "nota": "Shuttle gratis desde el Nivel 5, Isla 4 de la Terminal Jeppesen (~5 min de trayecto, según Enterprise), más espera del shuttle, mostrador e instalación de la silla infantil (estimación).",
+    "fuente": "https://www.flydenver.com/parking_transit/transit/alamo_rent_car",
+    "confianza": "media"
+   },
+   {
+    "id": "den-hotel-carro",
+    "de": "den",
+    "a": "den",
+    "modo": "carro",
+    "horas": 0.25,
+    "rango": "10-20 min",
+    "nota": "Del centro de rentas al hotel junto a DEN para la noche de aclimatación. Estimación, no verificada.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "den-keystone-carro",
+    "de": "den",
+    "a": "keystone",
+    "modo": "carro",
+    "horas": 2.0,
+    "rango": "1.75-2.5 h normal (90-105 mi por la I-70 y la US-6); 3-3.5+ h con tráfico de fin de semana o tormenta",
+    "nota": "Hacia la montaña, sábado de 8 a 10 am es lo más pesado (Keystone recomienda salir antes de las 6 am), domingo de 7 a 10:30 am y viernes de 15 a 19 h. Rige la Traction Law (llantas 3PMSF o AWD). Lo mismo aplica desde un hotel junto a DEN.",
+    "fuente": "https://www.keystoneresort.com/explore-the-resort/about-the-resort/getting-here?tc_1=4",
+    "confianza": "media"
+   },
+   {
+    "id": "den-breckenridge-carro",
+    "de": "den",
+    "a": "breckenridge",
+    "modo": "carro",
+    "horas": 2.25,
+    "rango": "1 h 45 - 2.5 h normal (~95-105 mi por la I-70 y la CO-9); 3-4 h con tráfico de fin de semana o tormenta",
+    "nota": "Hay posibles demoras en el túnel Eisenhower. La I-70 puede cerrarse horas por tormentas o accidentes. Mismos picos de fin de semana que Keystone.",
+    "fuente": "https://www.ridebooker.com/transfers/den-airport/breckenridge",
+    "confianza": "media"
+   },
+   {
+    "id": "den-steamboat-carro",
+    "de": "den",
+    "a": "steamboat",
+    "modo": "carro",
+    "horas": 3.5,
+    "rango": "3-3.5 h con buen clima; 3.5-4 h típico en invierno; 4.5+ h con tormenta (~178 mi)",
+    "nota": "Ruta: I-70 a Silverthorne, CO-9 a Kremmling, US-40 y Rabbit Ears Pass (nieve soplada, hielo, baja visibilidad). Rige la Traction Law.",
+    "fuente": "https://www.ridebooker.com/transfers/den-airport/steamboat-springs",
+    "confianza": "media"
+   },
+   {
+    "id": "den-snowmass-carro",
+    "de": "den",
+    "a": "snowmass",
+    "modo": "carro",
+    "horas": 3.75,
+    "rango": "3.5-4 h con buen clima (~190-200 mi); 4.5-5+ h con tormenta o tráfico en la I-70",
+    "nota": "Ruta de invierno obligatoria: I-70 a Glenwood Springs (salida 116), luego CO-82 y Brush Creek Rd. Independence Pass está cerrado toda la temporada. Cierres en Glenwood Canyon pueden obligar a desvíos largos.",
+    "fuente": "https://www.aspensnowmass.com/visit/getting-here/ground-transportation",
+    "confianza": "media"
+   },
+   {
+    "id": "keystone-den-carro",
+    "de": "keystone",
+    "a": "den",
+    "modo": "carro",
+    "horas": 2.25,
+    "rango": "1.75-2.5 h saliendo temprano; 3-4 h en el pico de bajada",
+    "nota": "Hacia Denver, el sábado se carga de 14 a 17 h; el domingo empieza a las 11:30 con pico de 15 a 18 h (Keystone recomienda bajar después de las 19 h). Con vuelo a las 13:55 hay que salir de Keystone ~7:30 am.",
+    "fuente": "https://www.keystoneresort.com/explore-the-resort/about-the-resort/getting-here?tc_1=4",
+    "confianza": "media"
+   },
+   {
+    "id": "breckenridge-den-carro",
+    "de": "breckenridge",
+    "a": "den",
+    "modo": "carro",
+    "horas": 2.5,
+    "rango": "2-2.5 h saliendo temprano; 3-4+ h en el pico de bajada de fin de semana",
+    "nota": "Mismos picos de bajada en la I-70 que Keystone (domingo 11:30-18 h).",
+    "fuente": "https://www.ridebooker.com/transfers/breckenridge/den-airport",
+    "confianza": "media"
+   },
+   {
+    "id": "steamboat-den-carro",
+    "de": "steamboat",
+    "a": "den",
+    "modo": "carro",
+    "horas": 3.75,
+    "rango": "3-3.5 h con buen clima; 3.5-4.5 h en invierno o con tráfico de domingo en la I-70",
+    "nota": "Rabbit Ears Pass y la I-70 hacia el este (domingo 11:30-18 h).",
+    "fuente": "https://ridebooker.com/transfers/steamboat-springs/den-airport",
+    "confianza": "media"
+   },
+   {
+    "id": "snowmass-den-carro",
+    "de": "snowmass",
+    "a": "den",
+    "modo": "carro",
+    "horas": 4.0,
+    "rango": "3.5-4 h con buen clima; 4.5-5+ h con tráfico de domingo o tormenta",
+    "nota": "Glenwood Canyon y la I-70 hacia el este. Para un vuelo al mediodía hay que salir ~5:30-6:00 am, o dormir en Denver la noche anterior (recomendado).",
+    "fuente": "https://www.aspensnowmass.com/visit/getting-here/ground-transportation",
+    "confianza": "media"
+   },
+   {
+    "id": "den-devolucion-auto",
+    "de": "den",
+    "a": "den",
+    "modo": "shuttle",
+    "horas": 0.5,
+    "rango": "0.5-0.75 h",
+    "nota": "Devolver el auto y tomar el shuttle a la terminal (~5 min de trayecto). Enterprise advierte que el camino al aeropuerto varía mucho, así que conviene dejar margen.",
+    "fuente": "https://ta.enterprise-int1-aem.enterprise.com/en/car-rental/locations/us/co/denver-international-airport-12e1.html",
+    "confianza": "media"
+   },
+   {
+    "id": "den-espera-int",
+    "de": "den",
+    "a": "den",
+    "modo": "espera",
+    "horas": 3.0,
+    "rango": "3-3.5 h antes del vuelo internacional",
+    "nota": "El consenso es 3 h antes de un vuelo internacional en DEN; 3.5 h en horas pico (5-8 am y 4-7 pm); +30 min si se documentan maletas. El mostrador cierra 60 min antes. No hay una cifra oficial de flydenver.com.",
+    "fuente": "https://flightqueue.com/how-early-to-arrive-at-denver-international-airport",
+    "confianza": "media"
+   },
+   {
+    "id": "den-mty-vuelo",
+    "de": "den",
+    "a": "mty",
+    "modo": "vuelo",
+    "horas": 2.67,
+    "rango": "2 h 40 sin escala (Viva VB721)",
+    "nota": "El horario de 2024 era DEN 13:55 → MTY 17:35, hora local (+1 h de cambio de horario). En verano de 2026 hubo salidas de DEN a las 21:20. El horario de invierno no está confirmado.",
+    "fuente": "https://www.flightradar24.com/data/flights/vb721",
+    "confianza": "media"
+   },
+   {
+    "id": "mty-llegada-migracion",
+    "de": "mty",
+    "a": "mty",
+    "modo": "espera",
+    "horas": 0.75,
+    "rango": "0.5-1.5 h",
+    "nota": "Llegada internacional a Monterrey: migración (INM), maletas y aduana con semáforo. Estimación sin fuente verificada.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "mty-trc-carro",
+    "de": "mty",
+    "a": "torreon",
+    "modo": "carro",
+    "horas": 4.0,
+    "rango": "3.5-4.5 h",
+    "nota": "Llegando a MTY ~17:35, se maneja de noche: ~22:30-23:00 en Torreón. Alternativa: dormir en Monterrey.",
+    "fuente": "https://www.telediario.mx/comunidad/torreon-a-monterrey-cuanto-tiempo-se-hace",
+    "confianza": "media"
+   },
+   {
+    "id": "torreon-trc-carro",
+    "de": "torreon",
+    "a": "trc",
+    "modo": "carro",
+    "horas": 0.33,
+    "rango": "15-25 min",
+    "nota": "El aeropuerto está ~3 km al norte del punto de referencia del centro. Depende del domicilio. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "trc-espera-int",
+    "de": "trc",
+    "a": "trc",
+    "modo": "espera",
+    "horas": 2.5,
+    "rango": "2-3 h",
+    "nota": "Para un vuelo internacional en un aeropuerto pequeño, 2-3 h (recomendación general en México: 2-3 h). OJO: el AA 4027 sale a las 5:45 am, así que hay que llegar ~3:15-3:45 am.",
+    "fuente": "https://www.posta.com.mx/nuevo-leon/jornada-aerea-en-el-aeropuerto-monterrey-este-28-de-abril/vl2195856",
+    "confianza": "media"
+   },
+   {
+    "id": "trc-dfw-vuelo",
+    "de": "trc",
+    "a": "dfw",
+    "modo": "vuelo",
+    "horas": 2.0,
+    "rango": "1 h 55 - 2 h 15 (AA, Embraer E175, sin escala)",
+    "nota": "AA 4027 diario con 2:00 de block desde el 9-sep-2026, saliendo ~5:45 am; 14 vuelos por semana. TRC y DFW están en la misma hora en invierno (UTC-6).",
+    "fuente": "https://info.flightmapper.net/flight/American_Airlines_AA_4027",
+    "confianza": "alta"
+   },
+   {
+    "id": "dfw-migracion-conexion",
+    "de": "dfw",
+    "a": "dfw",
+    "modo": "espera",
+    "horas": 2.5,
+    "rango": "2-3 h de conexión recomendada (internacional → doméstico)",
+    "nota": "En DFW se hace migración y aduana de EE.UU. (Terminal D): recoger maletas, redocumentarlas, pasar TSA otra vez y tomar el Skylink. El MCT de AA (40 min) no es realista aquí. La espera real depende del horario DFW-HDN, que no está publicado para enero-marzo de 2027.",
+    "fuente": "https://airssist.com/dfw-airport-why-connecting-flights-take-longer/",
+    "confianza": "media"
+   },
+   {
+    "id": "dfw-hdn-vuelo",
+    "de": "dfw",
+    "a": "hdn",
+    "modo": "vuelo",
+    "horas": 2.77,
+    "rango": "~2 h 46 (AA, temporada desde ~10/17-dic-2026)",
+    "nota": "Hayden está en MST (1 h menos que Dallas). La frecuencia está en conflicto: 2 diarios o 7 por semana.",
+    "fuente": "https://www.flightsfrom.com/DFW-HDN",
+    "confianza": "media"
+   },
+   {
+    "id": "hdn-llegada",
+    "de": "hdn",
+    "a": "hdn",
+    "modo": "espera",
+    "horas": 0.33,
+    "rango": "15-30 min",
+    "nota": "Desembarque y maletas en un aeropuerto pequeño. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "hdn-steamboat-shuttle",
+    "de": "hdn",
+    "a": "steamboat",
+    "modo": "shuttle",
+    "horas": 0.5,
+    "rango": "25-40 min (~25 mi por la US-40)",
+    "nota": "Traslado privado o compartido (Alpine Airport Transport, Storm Mountain Express).",
+    "fuente": "https://alpineairporttransport.com/pricing/",
+    "confianza": "media"
+   },
+   {
+    "id": "steamboat-hdn-shuttle",
+    "de": "steamboat",
+    "a": "hdn",
+    "modo": "shuttle",
+    "horas": 0.5,
+    "rango": "25-40 min",
+    "nota": "",
+    "fuente": "https://alpineairporttransport.com/pricing/",
+    "confianza": "media"
+   },
+   {
+    "id": "hdn-espera",
+    "de": "hdn",
+    "a": "hdn",
+    "modo": "espera",
+    "horas": 1.5,
+    "rango": "1.25-2 h",
+    "nota": "Vuelo doméstico en un aeropuerto pequeño, con maletas y TSA. Estimación (no buscada).",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "hdn-dfw-vuelo",
+    "de": "hdn",
+    "a": "dfw",
+    "modo": "vuelo",
+    "horas": 2.5,
+    "rango": "~2 h 15 - 2 h 45",
+    "nota": "No verificado. El tramo hacia el este suele ser más corto que las 2 h 46 de DFW→HDN.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "dfw-conexion-int",
+    "de": "dfw",
+    "a": "dfw",
+    "modo": "espera",
+    "horas": 1.5,
+    "rango": "1 h 15 - 2 h",
+    "nota": "Conexión de doméstico a internacional: mínimo recomendado de 75-90 min. Al salir de EE.UU. no hay migración, y con boleto único la maleta va documentada hasta Torreón.",
+    "fuente": "https://airssist.com/dfw-airport-why-connecting-flights-take-longer/",
+    "confianza": "media"
+   },
+   {
+    "id": "dfw-trc-vuelo",
+    "de": "dfw",
+    "a": "trc",
+    "modo": "vuelo",
+    "horas": 2.15,
+    "rango": "2 h 05 - 2 h 15",
+    "nota": "Trabber: 2 h 09 en sentido DFW→TRC.",
+    "fuente": "https://www.trabber.us/flights-torreon-dallas-trc-dfw/",
+    "confianza": "media"
+   },
+   {
+    "id": "trc-llegada-migracion",
+    "de": "trc",
+    "a": "trc",
+    "modo": "espera",
+    "horas": 0.5,
+    "rango": "0.33-1 h",
+    "nota": "Migración (INM), maletas y aduana en Torreón. Estimación (aeropuerto pequeño).",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "trc-torreon-carro",
+    "de": "trc",
+    "a": "torreon",
+    "modo": "carro",
+    "horas": 0.33,
+    "rango": "15-25 min",
+    "nota": "Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "mty-ase-vuelo-1escala",
+    "de": "mty",
+    "a": "ase",
+    "modo": "vuelo",
+    "horas": 6.5,
+    "rango": "5 h 53 (AA vía DFW, conexión justa, Rome2Rio) a ~7.5 h con conexión realista; United vía IAH ~6 h 34",
+    "nota": "Incluye el tiempo de conexión. En DFW o IAH se hace migración y aduana de EE.UU., y se redocumentan las maletas; conviene una conexión de 2-3 h. El horario de invierno a ASE no está confirmado. ASE tiene riesgo de desvíos o cancelaciones por clima (alternativa: EGE o DEN).",
+    "fuente": "https://www.rome2rio.com/s/Monterrey/Aspen",
+    "confianza": "media"
+   },
+   {
+    "id": "ase-llegada",
+    "de": "ase",
+    "a": "ase",
+    "modo": "espera",
+    "horas": 0.33,
+    "rango": "15-30 min",
+    "nota": "Maletas en un aeropuerto pequeño. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "ase-snowmass-shuttle",
+    "de": "ase",
+    "a": "snowmass",
+    "modo": "shuttle",
+    "horas": 0.33,
+    "rango": "15-20 min",
+    "nota": "Shuttle gratuito del hotel, taxi o bus RFTA. Confirmar con el hospedaje.",
+    "fuente": "https://www.snowmass.com/blog/how-to-get-to",
+    "confianza": "media"
+   },
+   {
+    "id": "snowmass-ase-shuttle",
+    "de": "snowmass",
+    "a": "ase",
+    "modo": "shuttle",
+    "horas": 0.33,
+    "rango": "15-20 min",
+    "nota": "",
+    "fuente": "https://www.snowmass.com/blog/how-to-get-to",
+    "confianza": "media"
+   },
+   {
+    "id": "ase-espera",
+    "de": "ase",
+    "a": "ase",
+    "modo": "espera",
+    "horas": 2.0,
+    "rango": "1.5-2 h",
+    "nota": "Vuelo doméstico de conexión a internacional, con maletas documentadas hasta MTY. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "ase-mty-vuelo-1escala",
+    "de": "ase",
+    "a": "mty",
+    "modo": "vuelo",
+    "horas": 6.0,
+    "rango": "~5 h 53 - 7 h",
+    "nota": "Al salir de EE.UU. no hay migración en la conexión (doméstico → internacional, mínimo 75-90 min). Duración inferida del sentido de ida (Rome2Rio); sin horario 2027.",
+    "fuente": "https://www.rome2rio.com/s/Monterrey/Aspen",
+    "confianza": "baja"
+   }
+  ],
+  "itinerarios": {
+   "keystone": {
+    "ruta": "mty-den-viva",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-den-vuelo",
+     "den-migracion",
+     "den-renta-auto",
+     "den-hotel-carro",
+     "den-keystone-carro"
+    ],
+    "regreso": [
+     "keystone-den-carro",
+     "den-devolucion-auto",
+     "den-espera-int",
+     "den-mty-vuelo",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": true,
+    "ida_horas_total": 13.75,
+    "regreso_horas_total": 13.42,
+    "nota": "Día 1: Torreón → hotel junto a DEN (noche de aclimatación). Día 2: hotel → Keystone. Los totales son horas en movimiento o en espera, sin contar la noche. Cuidado con el tráfico de la I-70 al regresar en domingo.",
+    "noche_denver_despues_de": "den-hotel-carro",
+    "ida_horas_dia1": 11.75,
+    "ida_horas_dia2": 2.0
+   },
+   "breckenridge": {
+    "ruta": "mty-den-viva",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-den-vuelo",
+     "den-migracion",
+     "den-renta-auto",
+     "den-hotel-carro",
+     "den-breckenridge-carro"
+    ],
+    "regreso": [
+     "breckenridge-den-carro",
+     "den-devolucion-auto",
+     "den-espera-int",
+     "den-mty-vuelo",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": true,
+    "ida_horas_total": 14.0,
+    "regreso_horas_total": 13.67,
+    "nota": "Igual que Keystone, con unos 15-30 min más de manejo.",
+    "noche_denver_despues_de": "den-hotel-carro",
+    "ida_horas_dia1": 11.75,
+    "ida_horas_dia2": 2.25
+   },
+   "steamboat": {
+    "ruta": "trc-hdn-aa",
+    "ida": [
+     "torreon-trc-carro",
+     "trc-espera-int",
+     "trc-dfw-vuelo",
+     "dfw-migracion-conexion",
+     "dfw-hdn-vuelo",
+     "hdn-llegada",
+     "hdn-steamboat-shuttle"
+    ],
+    "regreso": [
+     "steamboat-hdn-shuttle",
+     "hdn-espera",
+     "hdn-dfw-vuelo",
+     "dfw-conexion-int",
+     "dfw-trc-vuelo",
+     "trc-llegada-migracion",
+     "trc-torreon-carro"
+    ],
+    "noche_denver": false,
+    "ida_horas_total": 10.93,
+    "regreso_horas_total": 8.98,
+    "nota": "Sin manejar en México ni en la montaña. La conexión en DFW (2.5 h) es la mínima prudente: si el horario real de DFW-HDN obliga a esperar más, el total sube. El AA 4027 sale de TRC a las 5:45 am. Los tramos HDN→DFW y la espera en HDN son estimaciones."
+   },
+   "snowmass": {
+    "ruta": "mty-den-viva",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-den-vuelo",
+     "den-migracion",
+     "den-renta-auto",
+     "den-hotel-carro",
+     "den-snowmass-carro"
+    ],
+    "regreso": [
+     "snowmass-den-carro",
+     "den-devolucion-auto",
+     "den-espera-int",
+     "den-mty-vuelo",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": true,
+    "ida_horas_total": 15.5,
+    "regreso_horas_total": 15.17,
+    "nota": "Es la ruta recomendada por precio, pero es la más larga: 3.5-4 h de manejo de montaña de cada lado. Para el regreso conviene dormir en Denver la noche anterior si el vuelo es al mediodía.",
+    "noche_denver_despues_de": "den-hotel-carro",
+    "ida_horas_dia1": 11.75,
+    "ida_horas_dia2": 3.75
+   },
+   "steamboat_alt": {
+    "ruta": "mty-den-viva + auto",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-den-vuelo",
+     "den-migracion",
+     "den-renta-auto",
+     "den-hotel-carro",
+     "den-steamboat-carro"
+    ],
+    "regreso": [
+     "steamboat-den-carro",
+     "den-devolucion-auto",
+     "den-espera-int",
+     "den-mty-vuelo",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": true,
+    "ida_horas_total": 15.25,
+    "regreso_horas_total": 14.92,
+    "nota": "Alternativa económica: Rabbit Ears Pass en invierno.",
+    "noche_denver_despues_de": "den-hotel-carro",
+    "ida_horas_dia1": 11.75,
+    "ida_horas_dia2": 3.5
+   },
+   "snowmass_alt": {
+    "ruta": "mty-ase-1escala",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-ase-vuelo-1escala",
+     "ase-llegada",
+     "ase-snowmass-shuttle"
+    ],
+    "regreso": [
+     "snowmass-ase-shuttle",
+     "ase-espera",
+     "ase-mty-vuelo-1escala",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": false,
+    "ida_horas_total": 14.41,
+    "regreso_horas_total": 13.33,
+    "nota": "Todo en un día, sin manejo de montaña. La duración del vuelo con escala depende del horario de invierno a ASE, que aún no está publicado."
+   }
+  },
+  "horario_pistas": {
+   "keystone": {
+    "abre": "9:00",
+    "cierra": "16:00",
+    "horas": 7.0,
+    "fuente": "https://www.skiresort.info/ski-resort/keystone/",
+    "confianza": "media",
+    "nota": "skiresort.info (temporada 2026-10-30 a 2027-04-11): 09:00-16:00. La página oficial (instantánea 'Summer 2024') dice 9 am - 4 pm en bases; los lifts de montaña varían. No se confirmó apertura a las 8:30. Hay esquí nocturno algunos días (16-20 h)."
+   },
+   "breckenridge": {
+    "abre": "8:30",
+    "cierra": "16:00",
+    "horas": 7.5,
+    "fuente": "https://www.breckenridge.com/explore-the-resort/about-the-resort/hours-of-operation.aspx?tc_1=1",
+    "confianza": "media",
+    "nota": "Página oficial: 'Winter Hours 8:30 AM - 4 PM' (una versión anterior decía 9-4). La misma página lista 'Chairlift Hours 8 AM - 5 PM' y horario aparte para la góndola BreckConnect; no queda claro a qué corresponde cada uno. Última subida en la góndola: 16:30."
+   },
+   "steamboat": {
+    "abre": "8:30",
+    "cierra": "16:00",
+    "horas": 7.5,
+    "fuente": "https://www.skiresort.info/ski-resort/steamboat",
+    "confianza": "media",
+    "nota": "skiresort.info y Trip.com: 8:30-16:00; temporada 2026-27 del 26-nov-2026 al 4-abr-2027 (skiresort.com). No se encontró la página oficial; algunos lifts cierran a las 15:30 en primavera."
+   },
+   "snowmass": {
+    "abre": "9:00",
+    "cierra": "15:30",
+    "horas": 6.5,
+    "fuente": "https://www.gosnowmass.com/things-to-do-5/ski-area/stats-dates/",
+    "confianza": "media",
+    "nota": "Sitio oficial de Snowmass para 2025-26: todos los lifts de 9:00 a 15:30 diario. La góndola Sky Cab (Skittles, Mall ↔ Base Village) opera de 8:00 a 21:00. Las horas 2026-27 no están publicadas."
+   }
+  },
+  "horario_escuela": {
+   "keystone": {
+    "entrega": "8:30",
+    "recoge": "15:30",
+    "horas": 7.0,
+    "fuente": "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+    "confianza": "media",
+    "nota": "Check-in 30 min antes; las clases forman a las 9:00 y el lugar se guarda hasta las 9:30. Recogida a las 15:30 en el 'backyard' (enfrente de la góndola River Run o detrás de Mountain House); otra página oficial dice 15:00. Si rentan equipo, llegar 60 min antes. La base (River Run o Mountain House) aparece en la confirmación."
+   },
+   "breckenridge": {
+    "entrega": "8:30",
+    "recoge": "15:00",
+    "horas": 6.5,
+    "fuente": "https://www.snowthere.com/resorts/united-states/breckenridge/llms.txt",
+    "confianza": "media",
+    "nota": "Llegar a las 8:30 (8:00 si recogen renta); clase de 9:00 a 15:00. Sedes: Grand Colorado (Peak 8), Village (Peak 9) o Beaver Run (3-6 años). Dato de 2025-26 de un tercero; confirmar."
+   },
+   "steamboat": {
+    "entrega": "8:45",
+    "recoge": "14:30",
+    "horas": 5.75,
+    "fuente": "https://www.steamboat.com/explore/first-timers/snowboard-ski-lessons",
+    "confianza": "baja",
+    "nota": "Young Kids (3-6 años) de 9:00 a 14:30 en Mountain Camp, llegando 15 min antes (dato de opciones.json, 2025-26). Es el día de escuela más corto de los cuatro."
+   },
+   "snowmass": {
+    "entrega": "9:30",
+    "recoge": "15:00",
+    "horas": 5.5,
+    "fuente": "https://www.theavantski.com/aspensnowmass-family",
+    "confianza": "baja",
+    "nota": "Clase de esquí de 9:30 a 15:00 en el Treehouse (listado de terceros). La guardería del Treehouse abre a las 8:30, pero no se encontró la hora oficial de check-in; probablemente hay que llegar antes de las 9:30."
+   }
+  },
+  "hospedaje_a_escuela_min": {
+   "keystone": {
+    "The Timbers (River Run), 1 recámara, reservado con Keystone Resort": 5,
+    "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort": 5,
+    "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort": 3,
+    "Keystone Lodge & Spa (Lakeside Village)": 20
+   },
+   "breckenridge": {
+    "Grand Colorado on Peak 8": 2,
+    "Grand Lodge on Peak 7": 12,
+    "Beaver Run Resort": 3,
+    "One Ski Hill Place, a RockResort": 3
+   },
+   "steamboat": {
+    "Torian Plum Plaza (1 recámara) — RECOMENDADO": 5,
+    "The Steamboat Grand (habitación de hotel)": 5,
+    "Kutuk Condominiums (2 recámaras)": 10,
+    "One Steamboat Place (2 recámaras) — premium": 2
+   },
+   "snowmass": {
+    "Limelight Hotel Snowmass": 2,
+    "Viceroy Snowmass": 8,
+    "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": 15,
+    "Woodrun Place (condo, Fanny Hill)": 15
+   }
+  },
+  "hospedaje_a_escuela_nota": {
+   "keystone": {
+    "The Timbers (River Run), 1 recámara, reservado con Keystone Resort": "Caminando 2-5 min con equipo hasta la oficina de la escuela en la entrada este de River Run (afuera de Silver Mill F3). Estimación.",
+    "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort": "Caminando 3-5 min por la base de River Run (cruzando el río Snake hacia el pueblo). Estimación.",
+    "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort": "Caminando 2-5 min. El check-in de la escuela es literalmente afuera de Silver Mill Building F3; Expedition Station y Dakota Lodge quedan a pasos.",
+    "Keystone Lodge & Spa (Lakeside Village)": "Shuttle gratuito de 1.5 mi: 10-15 min puerta a puerta más la espera del shuttle con la niña y el equipo (rango 15-25). Estimación."
+   },
+   "breckenridge": {
+    "Grand Colorado on Peak 8": "La escuela está en el mismo complejo (Grand Colorado Children's Facility).",
+    "Grand Lodge on Peak 7": "Caminar a la góndola BreckConnect (2-3 min), una parada a Peak 8 y caminar 2-3 min (rango 10-15). Confirmar que la góndola abra antes de la entrega de las 8:30.",
+    "Beaver Run Resort": "Dentro del resort: Beaver Run Children's Facility, un nivel abajo de la plaza (3-6 años) (rango 2-5).",
+    "One Ski Hill Place, a RockResort": "Misma base de Peak 8, junto al Grand Colorado (rango 2-3)."
+   },
+   "steamboat": {
+    "Torian Plum Plaza (1 recámara) — RECOMENDADO": "Caminando de Ski Time Square a Mountain Camp, junto al Gondola Transit Center (rango 3-5). Estimación sin verificar en mapa.",
+    "The Steamboat Grand (habitación de hotel)": "Cruzando Mount Werner Circle (con escalera eléctrica) hasta Gondola Square (rango 3-5). Estimación.",
+    "Kutuk Condominiums (2 recámaras)": "Caminando 5-10 min o en shuttle gratuito; los listados se contradicen (1 o 13 min).",
+    "One Steamboat Place (2 recámaras) — premium": "En Gondola Square (rango 1-2)."
+   },
+   "snowmass": {
+    "Limelight Hotel Snowmass": "Al lado del Treehouse (rango 1-3).",
+    "Viceroy Snowmass": "~530 m, unos 7 min caminando según Trip.com; con la niña y el equipo, ~8 min.",
+    "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": "Caminar al Mall y tomar la góndola gratuita Skittles (8:00-21:00) a Base Village (rango 10-15). Estimación.",
+    "Woodrun Place (condo, Fanny Hill)": "Bajar esquiando o caminando al Mall y tomar la Skittles (rango 10-20). Estimación."
+   }
+  },
+  "fuentes": [
+   "https://airport-data.com/airport/DFW/",
+   "https://airssist.com/dfw-airport-why-connecting-flights-take-longer/",
+   "https://allstays.com/hotels/18013.htm",
+   "https://alpineairporttransport.com/pricing/",
+   "https://blueskylimovail.com/driving-to-snowmass-colorado/",
+   "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+   "https://en.wikipedia.org/wiki/Steamboat_Ski_Resort",
+   "https://en.wikipedia.org/wiki/Torre%C3%B3n",
+   "https://en.wikipedia.org/wiki/Torre%C3%B3n_International_Airport",
+   "https://en.wikipedia.org/wiki/Yampa_Valley_Airport",
+   "https://flightqueue.com/denver-international-airport-passport-control-wait-times",
+   "https://flightqueue.com/how-early-to-arrive-at-denver-international-airport",
+   "https://gosnowmass.com/about-us/maps-travel/",
+   "https://info.flightmapper.net/flight/American_Airlines_AA_4027",
+   "https://limelighthotels.com/snowmass/explore/getting-here",
+   "https://ridebooker.com/transfers/steamboat-springs/den-airport",
+   "https://skyvector.com/airport/DEN/Denver-International-Airport",
+   "https://ta.enterprise-int1-aem.enterprise.com/en/car-rental/locations/us/co/denver-international-airport-12e1.html",
+   "https://thegrouprealestatess.com/?p=2635",
+   "https://us.trip.com/guide/destination/steamboat-ski-resort.html",
+   "https://vacasa.com/usa/Kutuk-Condos-CO",
+   "https://www.aeropuertosdelmundo.net/mx/aeropuerto-MTY/",
+   "https://www.airnav.com/airport/KASE",
+   "https://www.aspensnowmass.com/visit/getting-here/ground-transportation",
+   "https://www.breckenridge.com/explore-the-resort/about-the-resort/hours-of-operation.aspx?tc_1=1",
+   "https://www.directflights.com/TRC-DFW",
+   "https://www.expedia.com/es/Keystone-Hoteles-Keystone-Lodge-Spa-By-Keystone-Resort.h16001.Informacion-Hotel",
+   "https://www.flightradar24.com/data/flights/vb721",
+   "https://www.flightsfrom.com/DFW-HDN",
+   "https://www.flightsfrom.com/MTY-DEN",
+   "https://www.flydenver.com/parking_transit/transit/alamo_rent_car",
+   "https://www.geodatos.net/en/coordinates/mexico/torreon",
+   "https://www.gosnowmass.com/things-to-do-5/ski-area/stats-dates/",
+   "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
+   "https://www.hotelplanner.com/Hotels/290041/Reservations-Grand-Colorado-on-Peak-8-Breckenridge-1627-Ski-Hill-Rd-80424",
+   "https://www.keystoneresort.com/explore-the-resort/about-the-resort/getting-here?tc_1=4",
+   "https://www.keystoneresort.com/explore-the-resort/about-the-resort/hours-of-operation.aspx",
+   "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+   "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
+   "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
+   "https://www.keystoneresort.com/travel-guide/navigating-keystone-resort.aspx",
+   "https://www.latlong.net/place/monterrey-international-airport-mexico-4070.html",
+   "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
+   "https://www.posta.com.mx/mexico/cuanta-gasolina-se-gasta-en-motocicleta-de-torreon-a-saltillo/vl1744063",
+   "https://www.posta.com.mx/nuevo-leon/jornada-aerea-en-el-aeropuerto-monterrey-este-28-de-abril/vl2195856",
+   "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7/map",
+   "https://www.ridebooker.com/transfers/breckenridge/den-airport",
+   "https://www.ridebooker.com/transfers/den-airport/breckenridge",
+   "https://www.ridebooker.com/transfers/den-airport/steamboat-springs",
+   "https://www.rome2rio.com/s/Monterrey/Aspen",
+   "https://www.ski.com/property/SKI-STST-17",
+   "https://www.skiresort.com/en/ski-resort/steamboat/",
+   "https://www.skiresort.info/ski-resort/keystone/",
+   "https://www.skiresort.info/ski-resort/steamboat",
+   "https://www.snowmass.com/blog/how-to-get-to",
+   "https://www.snowpak.com/colorado/keystone/getting-there",
+   "https://www.snowthere.com/resorts/united-states/breckenridge/llms.txt",
+   "https://www.steamboat.com/explore/first-timers/snowboard-ski-lessons",
+   "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Torian-Plum-Plaza-Condos-p7922001",
+   "https://www.takeofftimer.com/immigration-wait-times/DEN",
+   "https://www.telediario.mx/comunidad/torreon-a-monterrey-cuanto-tiempo-se-hace",
+   "https://www.theavantski.com/aspensnowmass-family",
+   "https://www.trabber.us/flights-torreon-dallas-trc-dfw/",
+   "https://www.travelprofy.com/aspen-airport-ase/viceroy-snowmass-snowmass-village",
+   "https://www.travelweekly-asia.com/Hotels/Breckenridge-CO/One-Ski-Hill-Place-p8411101",
+   "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+   "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr"
+  ]
+ }
 };
