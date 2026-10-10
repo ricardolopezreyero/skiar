@@ -96,7 +96,8 @@ def main():
                 except Exception as e:
                     print(f"{slug}: página falló: {e}")
             if not res:
-                ids = [m.group(1) for u in p.get("fuentes", []) for m in [re.search(r"skimap\.org/skiareas/view/(\d+)", u, re.I)] if m]
+                urls = list(p.get("fuentes", [])) + [p.get("skimap") or "", p.get("mapa_pagina") or ""]
+                ids = [m.group(1) for u in urls for m in [re.search(r"skimap\.org/skiareas/view/(\d+)", u or "", re.I)] if m]
                 for aid in ids[:1]:
                     try:
                         mejor = desde_skimap(aid)
