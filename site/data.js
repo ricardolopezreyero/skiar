@@ -5123,5 +5123,6 @@ window.SKIAR = {
    "https://www.usgs.gov/programs/climate-adaptation-science-centers/regional-super-el-nino-impacts-north-central-us",
    "https://opensnow.com/news/post/january-2026-snowpack-update"
   ]
- }
+ },
+ "espacio": {}
 };

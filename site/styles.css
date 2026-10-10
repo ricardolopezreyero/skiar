@@ -415,3 +415,8 @@ section { scroll-margin-top: 64px; }
   .combo-title { font-size: 1.1rem; }
   .lodging h4 { -webkit-line-clamp: 2; }
 }
+
+.badge.m2 { background: color-mix(in srgb, var(--brand) 14%, var(--surface)); color: var(--brand); border-color: transparent; }
+.badge.star { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+.pts { display: inline-block; min-width: 34px; text-align: center; font-weight: 800; padding: 2px 8px; border-radius: 8px; background: var(--warn-bg); color: var(--warn); }
+.lead-hosp { margin: 0; font-size: .86rem; font-weight: 600; }

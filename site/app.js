@@ -72,16 +72,47 @@
     return { vuelo, tras, desdeMty: ruta ? /^mty/i.test(ruta.id) : false };
   }
 
-  function defaultLodging(resort, v) {
-    const ls = resort.alojamientos || [];
-    let best = null, bestTotal = Infinity;
-    ls.forEach((l, i) => {
-      const t = lodgingPrice(l, v).total;
-      const ski = l.ski_in_out === "verdadero";
-      const score = (t == null ? 1e9 : t) + (ski ? 0 : 1e6);
-      if (score < bestTotal) { bestTotal = score; best = i; }
+  // ---------- espacio y puntaje familiar ----------
+  const E = (D.espacio || {}).resorts || {};
+  const espacio = (slug, l) => ((E[slug] || {})[l && l.nombre]) || null;
+  const PESOS = { precio: 35, espacio: 30, acceso: 15, nina: 10, viaje: 10 };
+  const ETQ = { precio: "💰 precio", espacio: "📐 espacio", acceso: "⛷️ acceso a pista", nina: "👧 niña gratis", viaje: "🕒 horas de viaje" };
+  let _pcache = null;
+  function puntajes() {
+    const key = state.v + "|" + state.f;
+    if (_pcache && _pcache.key === key) return _pcache.map;
+    const rows = [];
+    D.resorts.forEach((r) => (r.alojamientos || []).forEach((l, i) => {
+      const t = tripTotal(r, i, state.v, state.f);
+      const e = espacio(r.slug, l);
+      rows.push({
+        k: r.slug + "|" + i, total: t.sinHospedaje ? null : t.total, m2: e ? num(e.m2) : null,
+        ski: l.ski_in_out === "verdadero" ? 2 : l.ski_in_out === "caminando" ? 1 : 0,
+        gratis: l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0,
+        viaje: balance(r, i).viajando,
+      });
+    }));
+    const rng = (vals) => { const v = vals.filter((x) => x != null); return v.length ? [Math.min(...v), Math.max(...v)] : [0, 0]; };
+    const [tA, tB] = rng(rows.map((x) => x.total)), [mA, mB] = rng(rows.map((x) => x.m2)), [vA, vB] = rng(rows.map((x) => x.viaje));
+    const norm = (x, a, b, inv) => (x == null || b === a ? 0.5 : inv ? (b - x) / (b - a) : (x - a) / (b - a));
+    const map = new Map();
+    rows.forEach((x) => {
+      const parts = { precio: x.total == null ? 0 : norm(x.total, tA, tB, true), espacio: norm(x.m2, mA, mB, false), acceso: x.ski / 2, nina: x.gratis ? 1 : 0, viaje: norm(x.viaje, vA, vB, true) };
+      const score = Math.round(Object.entries(PESOS).reduce((s, [k, w]) => s + w * parts[k], 0));
+      map.set(x.k, { score, parts, sinM2: x.m2 == null });
     });
-    return best ?? 0;
+    _pcache = { key, map };
+    return map;
+  }
+  const puntaje = (r, i) => puntajes().get(r.slug + "|" + i) || { score: 0, parts: {} };
+  const detallePuntaje = (p) => Object.keys(PESOS).map((k) => `${ETQ[k]} ${Math.round((p.parts[k] || 0) * PESOS[k])}/${PESOS[k]}`).join(" · ");
+  const m2txt = (e) => (e && e.m2 ? `${e.m2} m²` : null);
+
+  function defaultLodging(resort) {
+    const ls = resort.alojamientos || [];
+    let best = 0, bestScore = -1;
+    ls.forEach((l, i) => { const s = puntaje(resort, i).score; if (s > bestScore) { bestScore = s; best = i; } });
+    return best;
   }
 
   function items(resort, li, v, food) {
@@ -136,7 +167,7 @@
   }
 
   function renderResorts() {
-    const list = [...D.resorts].sort((a, b) => (b.costo_beneficio || 0) - (a.costo_beneficio || 0));
+    const list = [...D.resorts].sort((a, b) => puntaje(b, defaultLodging(b)).score - puntaje(a, defaultLodging(a)).score);
     $("#resorts").replaceChildren(...list.map((r) => {
       const li = defaultLodging(r, state.v);
       const t = tripTotal(r, li, state.v, state.f);
@@ -149,9 +180,10 @@
       const nv = nieve(r.slug, state.v);
       if (nv) badges.push(el("span", { class: "badge " + (nv.prob_buena === "alta" ? "ok" : nv.prob_buena === "baja" ? "warn" : ""), title: nv.nota || "" }, `❄️ ${nv.cm} cm de nieve`));
       return el("button", { type: "button", class: "resort" + (state.r === r.slug ? " on" : ""), onclick: () => { state.r = r.slug; state.l = null; render(); $("#hospedaje").scrollIntoView(); } },
-        el("div", { class: "ph" }, ph ? el("div", { class: "ph-img photo-tone", style: `background-image:url("${ph}")` }) : null, el("span", { class: "score" }, "Costo-beneficio " + (r.costo_beneficio ?? "—") + "/10")),
+        el("div", { class: "ph" }, ph ? el("div", { class: "ph-img photo-tone", style: `background-image:url("${ph}")` }) : null, el("span", { class: "score", title: detallePuntaje(puntaje(r, li)) }, "⭐ " + puntaje(r, li).score + "/100")),
         el("div", { class: "body" },
           el("h3", {}, r.nombre),
+          el("p", { class: "lead-hosp" }, "🏔️ " + corto((r.alojamientos[li] || {}).nombre) + (m2txt(espacio(r.slug, r.alojamientos[li])) ? " · 📐 " + m2txt(espacio(r.slug, r.alojamientos[li])) : "")),
           el("p", { class: "lead" }, r.resumen || ""),
           el("div", { class: "badges" }, badges),
           el("ul", {}, (r.magia || []).slice(0, 3).map((m) => el("li", {}, m))),
@@ -183,6 +215,8 @@
         el("h4", {}, l.nombre),
         el("div", { class: "badges" },
           el("span", { class: "badge " + acceso[0] }, acceso[1]),
+          (() => { const e = espacio(r.slug, l); return e && e.m2 ? el("span", { class: "badge m2", title: [e.unidad, e.ft2 ? e.ft2 + " ft²" : null, e.rango_m2 ? "rango " + e.rango_m2 + " m²" : null, e.nota].filter(Boolean).join(" · ") }, `📐 ${e.m2} m²`) : null; })(),
+          el("span", { class: "badge star", title: detallePuntaje(puntaje(r, i)) }, `⭐ ${puntaje(r, i).score}/100`),
           l.nina_gratis ? el("span", { class: "badge ok" }, "Niña gratis") : null,
           l.cocina ? el("span", { class: "badge" }, "Cocina") : null,
           l.tipo ? el("span", { class: "badge" }, l.tipo) : null),
@@ -208,7 +242,8 @@
     if (!r) return;
     const w = VENTANAS.find((x) => x.id === state.v);
     const l = (r.alojamientos || [])[state.l] || {};
-    $("#combo-title").textContent = `${r.nombre} · ${corto(l.nombre) || "—"} · ${w.corto}`;
+    const e2 = espacio(r.slug, l);
+    $("#combo-title").textContent = `${r.nombre} · ${corto(l.nombre) || "—"} · ${w.corto}` + (e2 && e2.m2 ? ` · 📐 ${e2.m2} m²` : "");
     document.querySelectorAll("[data-food]").forEach((b) => b.classList.toggle("on", b.dataset.food === state.f));
     const its = items(r, state.l, state.v, state.f);
     const total = sum(its);
@@ -236,7 +271,7 @@
   }
 
   // ---------- cuadro comparativo ----------
-  const cmp = { sort: "total", dir: 1, soloSki: false, soloPres: false, soloGratis: false };
+  const cmp = { sort: "puntaje", dir: 1, soloSki: false, soloPres: false, soloGratis: false };
   const corto = (x) => (x || "").split(/[;(]| — /)[0].trim();
 
   function filasComparativo() {
@@ -254,6 +289,8 @@
         cb: r.costo_beneficio || 0,
         viaje: balance(r, i).viajando,
         nieve: (nieve(r.slug, state.v) || {}).cm ?? null,
+        m2: (espacio(r.slug, l) || {}).m2 ?? null,
+        pts: puntaje(r, i),
       });
     }));
     return rows;
@@ -267,7 +304,7 @@
     if (cmp.soloSki) rows = rows.filter((x) => x.ski === 2);
     if (cmp.soloGratis) rows = rows.filter((x) => x.gratis);
     if (cmp.soloPres) rows = rows.filter((x) => !x.t.sinHospedaje && x.t.total <= TOPE);
-    const key = { total: (x) => (x.t.sinHospedaje ? 1e9 : x.t.total), hosp: (x) => x.hosp ?? 1e9, ski: (x) => -x.ski, gratis: (x) => (x.gratis ? 0 : 1), alt: (x) => x.alt, cb: (x) => -x.cb, viaje: (x) => x.viaje ?? 1e9, nieve: (x) => -(x.nieve ?? -1), nombre: (x) => x.r.nombre + x.l.nombre }[cmp.sort];
+    const key = { total: (x) => (x.t.sinHospedaje ? 1e9 : x.t.total), hosp: (x) => x.hosp ?? 1e9, ski: (x) => -x.ski, gratis: (x) => (x.gratis ? 0 : 1), alt: (x) => x.alt, cb: (x) => -x.cb, viaje: (x) => x.viaje ?? 1e9, nieve: (x) => -(x.nieve ?? -1), m2: (x) => -(x.m2 ?? -1), puntaje: (x) => -x.pts.score, nombre: (x) => x.r.nombre + x.l.nombre }[cmp.sort];
     rows.sort((a, b) => { const ka = key(a), kb = key(b); return (ka > kb ? 1 : ka < kb ? -1 : 0) * cmp.dir; });
 
     const conPrecio = rows.filter((x) => !x.t.sinHospedaje);
@@ -277,36 +314,39 @@
     const maxCb = Math.max(...rows.map((x) => x.cb));
     const minViaje = Math.min(...rows.map((x) => x.viaje ?? Infinity));
     const maxNieve = Math.max(...rows.map((x) => x.nieve ?? -1));
+    const maxM2 = Math.max(...rows.map((x) => x.m2 ?? -1));
+    const maxPts = Math.max(...rows.map((x) => x.pts.score));
     const star = (c) => (c ? " ⭐" : "");
 
-    // podio: las 3 más baratas con ski-in/ski-out real
-    const podio = filasComparativo().filter((x) => x.ski === 2 && !x.t.sinHospedaje).sort((a, b) => a.t.total - b.t.total).slice(0, 3);
-    $("#cmp-podio").replaceChildren(...podio.map((x, n) => el("button", { type: "button", class: "podio-item", onclick: () => elegir(x) },
+    // podio: las 3 con mejor puntaje familiar (precio, espacio, acceso, niña gratis, viaje)
+    const podio = filasComparativo().filter((x) => !x.t.sinHospedaje).sort((a, b) => b.pts.score - a.pts.score).slice(0, 3);
+    $("#cmp-podio").replaceChildren(...podio.map((x, n) => el("button", { type: "button", class: "podio-item", title: detallePuntaje(x.pts), onclick: () => elegir(x) },
       el("span", { class: "medal" }, ["🥇", "🥈", "🥉"][n]),
-      el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre))),
+      el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre) + (x.m2 ? ` · 📐 ${x.m2} m²` : "") + ` · ⭐ ${x.pts.score}`)),
       el("span", { class: "podio-total " + level(x.t.total) }, money(x.t.total)))));
 
     const th = (k, txt) => el("th", { class: "sortable" + (cmp.sort === k ? " on" : ""), onclick: () => { cmp.dir = cmp.sort === k ? -cmp.dir : 1; cmp.sort = k; renderComparativo(); } }, txt, cmp.sort === k ? (cmp.dir > 0 ? " ▲" : " ▼") : "");
-    const head = el("tr", {}, th("nombre", "Opción"), th("total", "💰 Total del viaje"), th("hosp", "🏔️ Hospedaje"), th("ski", "⛷️ Acceso a pista"), th("gratis", "👧 Niña gratis"), el("th", {}, "🏫 Escuela infantil"), el("th", {}, "🛏️ Cuartos / cocina"), th("alt", "📏 Altitud"), th("cb", "✨ Costo-beneficio"), th("viaje", "🕒 Horas viajando"), th("nieve", "❄️ Nieve"), el("th", {}, ""));
+    const head = el("tr", {}, th("nombre", "Opción"), th("puntaje", "⭐ Puntaje"), th("total", "💰 Total del viaje"), th("hosp", "🏔️ Hospedaje"), th("m2", "📐 Espacio"), th("ski", "⛷️ Acceso a pista"), th("gratis", "👧 Niña gratis"), el("th", {}, "🏫 Escuela infantil"), el("th", {}, "🛏️ Cuartos / cocina"), th("alt", "📏 Altitud"), th("viaje", "🕒 Horas viajando"), th("nieve", "❄️ Nieve"), el("th", {}, ""));
     const sel = (x) => state.r === x.r.slug && state.l === x.i;
     const body = rows.map((x) => {
       const pct = x.t.sinHospedaje ? 0 : Math.min(100, (x.t.total / 12000) * 100);
       const color = { ok: "var(--ok)", warn: "var(--warn)", bad: "var(--bad)" }[level(x.t.total)];
       return el("tr", { class: sel(x) ? "sel" : "" },
         el("td", { class: "opt" }, el("strong", {}, x.r.nombre), el("span", {}, corto(x.l.nombre))),
+        el("td", { class: "n", title: detallePuntaje(x.pts) }, el("span", { class: "pts" }, `${x.pts.score}`), star(x.pts.score === maxPts)),
         el("td", { class: "tot" }, x.t.sinHospedaje ? el("span", { class: "missing" }, "sin precio") : [el("div", { class: "tot-n " + level(x.t.total) }, money(x.t.total) + star(x.t.total === minTotal)), el("div", { class: "mini-bar" }, el("i", { style: `width:${pct}%;background:${color}` }))]),
         el("td", { class: "n" }, money(x.hosp), " ", conf(x.conf), star(x.hosp === minHosp)),
+        el("td", { class: "n" }, x.m2 ? `${x.m2} m²` + star(x.m2 === maxM2) : "—"),
         el("td", {}, ["🔴 Shuttle", "🟡 Caminando", "🟢 Ski-in/ski-out"][x.ski]),
         el("td", {}, x.gratis ? "✅ Sí" : "— Paga"),
         el("td", { class: "txt" }, el("div", { class: "clamp" }, corto(x.l.distancia_escuela) || "—")),
         el("td", { class: "txt" }, el("div", { class: "clamp" }, [corto(x.l.recamaras), x.l.cocina ? "con cocina" : "sin cocina"].filter(Boolean).join(" · "))),
         el("td", { class: "n" }, x.alt ? x.alt.toLocaleString("es-MX") + " m" + star(x.alt === minAlt) : "—"),
-        el("td", { class: "n" }, x.cb + "/10" + star(x.cb === maxCb)),
         el("td", { class: "n" }, fmtH(x.viaje) + star(x.viaje != null && x.viaje === minViaje)),
         el("td", { class: "n" }, x.nieve == null ? "—" : `❄️ ${x.nieve} cm` + star(x.nieve === maxNieve)),
         el("td", {}, el("button", { type: "button", class: "btn sm", onclick: () => elegir(x) }, sel(x) ? "✓" : "Elegir")));
     });
-    $("#cmp").replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : [el("tr", {}, el("td", { colspan: 13, class: "muted" }, "Ninguna opción cumple esos filtros."))]));
+    $("#cmp").replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : [el("tr", {}, el("td", { colspan: 14, class: "muted" }, "Ninguna opción cumple esos filtros."))]));
   }
 
   function elegir(x) { state.r = x.r.slug; state.l = x.i; render(); $("#combo").scrollIntoView(); }
