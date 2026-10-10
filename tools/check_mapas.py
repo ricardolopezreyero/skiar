@@ -13,7 +13,7 @@ import pathlib
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-UA = "Mozilla/5.0 (skiar; revisión de mapas de pistas; https://github.com/ricardolopezreyero/skiar)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 
 
 def revisar(url):
@@ -30,7 +30,10 @@ def revisar(url):
                 ok = r.status < 400
             return {"ok": bool(ok), "tipo": tipo, "status": r.status}
     except Exception as e:  # 404, 403, DNS, timeout
-        return {"ok": False, "tipo": "", "status": getattr(e, "code", None), "error": str(e)[:120]}
+        code = getattr(e, "code", None)
+        # 403/429/5xx suelen ser bloqueo a robots: en el navegador de la familia sí abre
+        roto = code in (404, 410) or code is None and "Name or service" in str(e) or "No address" in str(e)
+        return {"ok": not roto, "dudoso": not roto, "tipo": "", "status": code, "error": str(e)[:120]}
 
 
 def main():

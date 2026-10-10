@@ -46,11 +46,11 @@ def main():
             if any(x.get("slug") == p.get("slug") for x in pistas):
                 continue
             a = auto.get(p.get("slug")) or {}
-            if not p.get("mapa_pdf") and not p.get("mapa_img") and a:
+            if a and (a.get("preferir") or (not p.get("mapa_pdf") and not p.get("mapa_img"))):
                 p["mapa_pdf"] = a.get("mapa_pdf")
                 p["mapa_img"] = a.get("mapa_img")
                 p["mapa_origen"] = a.get("origen")
-                if a.get("anio") and p.get("temporada_mapa") in (None, "?"):
+                if a.get("anio") and (a.get("preferir") or p.get("temporada_mapa") in (None, "?")):
                     p["temporada_mapa"] = str(a["anio"])
             pistas.append(p)
 
