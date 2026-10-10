@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d5fa8"/>
+      <stop offset="1" stop-color="#0f2a43"/>
+    </linearGradient>
+    <clipPath id="marco"><rect width="64" height="64" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#marco)">
+    <rect width="64" height="64" fill="url(#cielo)"/>
+    <circle cx="47" cy="17" r="7" fill="#f08a55"/>
+    <path d="M-2 56 L20 26 L32 40 L38 32 L66 60 L66 66 L-2 66 Z" fill="#6aa8ec"/>
+    <path d="M-2 66 L-2 58 L24 22 L50 66 Z" fill="#ffffff"/>
+    <path d="M24 22 L31.5 32.5 L27 30 L24 34 L20.5 30 L16.6 32.3 Z" fill="#cfe3f5"/>
+    <path d="M-2 66 L-2 60 L10 54 L22 58 L36 52 L50 58 L66 54 L66 66 Z" fill="#e9f2fb"/>
+  </g>
+</svg>
