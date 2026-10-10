@@ -75,6 +75,7 @@
   // ---------- espacio y puntaje familiar ----------
   const E = (D.espacio || {}).resorts || {};
   const espacio = (slug, l) => ((E[slug] || {})[l && l.nombre]) || null;
+  const M2_TOPE = 120; // arriba de ~120 m² ya no suma más espacio al puntaje
   const PESOS = { precio: 35, espacio: 30, acceso: 15, nina: 10, viaje: 10 };
   const ETQ = { precio: "💰 precio", espacio: "📐 espacio", acceso: "⛷️ acceso a pista", nina: "👧 niña gratis", viaje: "🕒 horas de viaje" };
   let _pcache = null;
@@ -86,7 +87,7 @@
       const t = tripTotal(r, i, state.v, state.f);
       const e = espacio(r.slug, l);
       rows.push({
-        k: r.slug + "|" + i, total: t.sinHospedaje ? null : t.total, m2: e ? num(e.m2) : null,
+        k: r.slug + "|" + i, total: t.sinHospedaje ? null : t.total, m2: e && num(e.m2) != null ? Math.min(e.m2, M2_TOPE) : null,
         ski: l.ski_in_out === "verdadero" ? 2 : l.ski_in_out === "caminando" ? 1 : 0,
         gratis: l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0,
         viaje: balance(r, i).viajando,
@@ -106,7 +107,7 @@
   }
   const puntaje = (r, i) => puntajes().get(r.slug + "|" + i) || { score: 0, parts: {} };
   const detallePuntaje = (p) => Object.keys(PESOS).map((k) => `${ETQ[k]} ${Math.round((p.parts[k] || 0) * PESOS[k])}/${PESOS[k]}`).join(" · ");
-  const m2txt = (e) => (e && e.m2 ? `${e.m2} m²` : null);
+  const m2txt = (e) => (e && e.m2 ? `${e.estimado ? "~" : ""}${e.m2} m²` : null);
 
   function defaultLodging(resort) {
     const ls = resort.alojamientos || [];
@@ -215,7 +216,7 @@
         el("h4", {}, l.nombre),
         el("div", { class: "badges" },
           el("span", { class: "badge " + acceso[0] }, acceso[1]),
-          (() => { const e = espacio(r.slug, l); return e && e.m2 ? el("span", { class: "badge m2", title: [e.unidad, e.ft2 ? e.ft2 + " ft²" : null, e.rango_m2 ? "rango " + e.rango_m2 + " m²" : null, e.nota].filter(Boolean).join(" · ") }, `📐 ${e.m2} m²`) : null; })(),
+          (() => { const e = espacio(r.slug, l); return e && e.m2 ? el("span", { class: "badge m2", title: [e.unidad, e.ft2 ? e.ft2 + " ft²" : null, e.rango_m2 ? "rango " + e.rango_m2 + " m²" : null, e.nota].filter(Boolean).join(" · ") }, `📐 ${m2txt(e)}`) : null; })(),
           el("span", { class: "badge star", title: detallePuntaje(puntaje(r, i)) }, `⭐ ${puntaje(r, i).score}/100`),
           l.nina_gratis ? el("span", { class: "badge ok" }, "Niña gratis") : null,
           l.cocina ? el("span", { class: "badge" }, "Cocina") : null,

@@ -1,0 +1,222 @@
+{
+  "actualizado": "2026-10-10",
+  "resorts": {
+    "keystone": {
+      "The Timbers (River Run), 1 recámara, reservado con Keystone Resort": {
+        "unidad": "Condo 1 recámara",
+        "ft2": 818,
+        "m2": 76,
+        "rango_m2": "76–93",
+        "recamaras": 1,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "Cama grande en la recámara + sofá cama; algunas unidades con cama Murphy (varía)",
+        "fuente": "https://www.luckymountainhome.com/summit-county-real-estate/S374223",
+        "confianza": "media",
+        "nota": "MLS: 1 rec./2 baños de 818 ft² (76 m²). Una renta en Expedia/Travelocity anuncia 920-1,000 ft² (85-93 m²) para un 1 rec./2 baños. Hay unidades de 1 rec./1 baño que pueden ser más chicas."
+      },
+      "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort": {
+        "unidad": "Condo 2 recámaras",
+        "ft2": 1175,
+        "m2": 109,
+        "rango_m2": "97–116",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "2 recámaras; la distribución de camas varía por unidad",
+        "fuente": "https://www.luckymountainhome.com/keystone-real-estate/S376434",
+        "confianza": "alta",
+        "nota": "Varias ventas MLS de 2 rec./2 baños: 1,046, 1,170, 1,175 y 1,205 ft²; rentas: 1,190-1,250 ft². Lo típico es 1,170-1,205 ft² (109-112 m²)."
+      },
+      "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort": {
+        "unidad": "Condo 1 recámara (Silver Mill / Expedition Station / Dakota Lodge)",
+        "ft2": 560,
+        "m2": 52,
+        "rango_m2": "47–75",
+        "recamaras": 1,
+        "banos": 1,
+        "cocina": "completa",
+        "camas": "Cama en la recámara + sofá cama (varía por unidad)",
+        "fuente": "https://www.thebrecklife.com/listing/1804329690-140-ida-belle-dr-keystone-co-80435/",
+        "confianza": "media",
+        "nota": "MLS 1 rec.: Silver Mill 512-562 ft², Expedition Station 565-700 ft², Dakota Lodge 508-810 ft². Lo típico ronda 560 ft² (52 m²). Algunas de Expedition Station tienen 2 baños."
+      },
+      "Keystone Lodge & Spa (Lakeside Village)": {
+        "unidad": "Habitación de hotel con 2 queens",
+        "ft2": 310,
+        "m2": 29,
+        "rango_m2": "≈25–32 (estimado por otros cuartos)",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "no",
+        "camas": "2 queens (duerme 4)",
+        "fuente": "https://www.priceline.com/hotel-deals/en-us/P3000091705/H49440/keystone-lodge-spa-a-vail-resorts-property.ssp",
+        "confianza": "baja",
+        "nota": "No se encontró el tamaño de la habitación de 2 queens. Como referencia, Priceline da 270 ft² (25 m²) para la de 1 king y 345 ft² (32 m²) para la Lodge Loft. Tiene mini-refri y cafetera, sin cocina. Tamaño estimado (~25–32 m²): el hotel no publica el de 2 queens; su cuarto king mide 25 m² y el loft 32 m².",
+        "estimado": true
+      }
+    },
+    "breckenridge": {
+      "Grand Colorado on Peak 8": {
+        "unidad": "Suite tipo estudio (RedWeek la lista como «1 rec.» para 4)",
+        "ft2": 400,
+        "m2": 37,
+        "rango_m2": "≈37",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "cocineta",
+        "camas": "King + sofá cama queen",
+        "fuente": "https://fidelityrealestate.com/resort/other/grand-colorado-on-peak-8",
+        "confianza": "media",
+        "nota": "La «suite» mide unos 400 ft² (37 m²), con cocineta (lavavajillas, mini-refri, microondas); RedWeek la anuncia como 1 rec. para 4 con cocina parcial. La residencia de 1 rec. verdadera mide ~900 ft² (84 m²), pero no es la que se cotizó."
+      },
+      "Grand Lodge on Peak 7": {
+        "unidad": "Condo 1 recámara",
+        "ft2": 800,
+        "m2": 74,
+        "rango_m2": "≈74",
+        "recamaras": 1,
+        "banos": 1,
+        "cocina": "completa",
+        "camas": "King en la recámara + sofá cama queen",
+        "fuente": "https://www.expedia.com/Breckenridge-Hotels-Grand-Lodge-Peak-7-Luxury-1BD-Ski-Inout.h102692174.Hotel-Information",
+        "confianza": "alta",
+        "nota": "Varios listados coinciden en ~800 ft² (74 m²) para la de 1 rec., con chimenea, balcón y lavadora/secadora. Baño completo de 5 piezas."
+      },
+      "Beaver Run Resort": {
+        "unidad": "Estudio (studio suite, edificio 4)",
+        "ft2": 462,
+        "m2": 43,
+        "rango_m2": "43–48",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "cocineta",
+        "camas": "Queen + sofá cama queen (un listado dice king)",
+        "fuente": "https://sa.trip.com/hotels/breckenridge-hotel-detail-129120797/ski-in-access-and-cozy-balcony-charming-studio-haven",
+        "confianza": "media",
+        "nota": "Rentas: 462 ft²; MLS de un estudio del edificio 4: 516 ft². Un listado da 617 ft² (atípico). Baño 3/4 dividido. La suite de 1 rec. (no cotizada) mide ~715 ft² (66 m²)."
+      },
+      "One Ski Hill Place, a RockResort": {
+        "unidad": "Residencia 1 recámara",
+        "ft2": 797,
+        "m2": 74,
+        "rango_m2": "64–85",
+        "recamaras": 1,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "Recámara + sofá cama (duerme 4)",
+        "fuente": "https://www.oxfordski.com/luxury-ski-chalets-hotels/united-states/breckenridge-colorado/one-ski-hill-place/",
+        "confianza": "media",
+        "nota": "Oxford Ski da 74 m² (797 ft²) para la de 1 rec. Unidades concretas: 688 ft² (Hotels.com, 8318), 752 ft² (Travelocity) y 919 ft² (MLS, 8510, de las más grandes)."
+      }
+    },
+    "steamboat": {
+      "Torian Plum Plaza (1 recámara) — RECOMENDADO": {
+        "unidad": "Condo 1 recámara (Plaza)",
+        "ft2": 715,
+        "m2": 66,
+        "rango_m2": "≈66",
+        "recamaras": 1,
+        "banos": 1,
+        "cocina": "completa",
+        "camas": "King + sofá cama",
+        "fuente": "https://dejongteamsteamboat.realgeeks.com/property/S1069402/",
+        "confianza": "alta",
+        "nota": "Dos ventas MLS de 1 rec./1 baño (unidades 206 y 506) miden 715 ft² (66 m²). Las de 2 rec. miden ~1,249 ft² (116 m²)."
+      },
+      "The Steamboat Grand (habitación de hotel)": {
+        "unidad": "Habitación de hotel con 2 queens",
+        "ft2": 400,
+        "m2": 37,
+        "rango_m2": "37–42",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "no",
+        "camas": "2 queens (duerme 4)",
+        "fuente": "https://www.expedia.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+        "confianza": "media",
+        "nota": "Expedia/Hotels.com: 400 ft² (37 m²). Destination Colorado dice ~450 ft² (42 m²). Mini-refri, sin cocina. Los condos del hotel (no cotizados) son más grandes."
+      },
+      "Kutuk Condominiums (2 recámaras)": {
+        "unidad": "Condo 2 recámaras",
+        "ft2": 1200,
+        "m2": 111,
+        "rango_m2": "92–136",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "2 recámaras, algunas con loft (duerme 6)",
+        "fuente": "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information",
+        "confianza": "media",
+        "nota": "Listados de 2 rec./2 baños: 991 (unidad 109), 1,159 (111), 1,200 (311) y 1,453-1,463 ft² (tipos de Resort Lodging Co.). Mediana ~1,200 ft² (111 m²). No se hallaron datos de MLS."
+      },
+      "One Steamboat Place (2 recámaras) — premium": {
+        "unidad": "Residencia 2 recámaras (lock-off de una de 3-4 rec.)",
+        "ft2": 2062,
+        "m2": 192,
+        "rango_m2": "192–239",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "2 recámaras (duerme 6-9 según unidad)",
+        "fuente": "https://www.travelocity.com/es/Steamboat-Springs-Hoteles-One-Steamboat-Place-Three-Forks-306-2BR-Ski-InSki-Out-Luxury.h69720783.Informacion-Hotel",
+        "confianza": "baja",
+        "nota": "Listados «2BR»: 2,062-2,577 ft². Pero suelen ser residencias de 3-4 rec. con recámaras bloqueadas, y el listado da el área total, así que el espacio usable real es menor. Aun así es la más amplia. La unidad cotizada (Crestone Peak 205) es de 3 rec. y 2,164 ft²."
+      }
+    },
+    "snowmass": {
+      "Limelight Hotel Snowmass": {
+        "unidad": "Habitación Deluxe con 2 queens",
+        "ft2": 450,
+        "m2": 42,
+        "rango_m2": "42–46",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "no",
+        "camas": "2 queens (duerme 5; cama extra $50/noche, cuna gratis)",
+        "fuente": "https://www.expedia.com/cn/Snowmass-Village-Hotels-Limelight-Hotel-Snowmass.h25062460.Hotel-Information",
+        "confianza": "media",
+        "nota": "Deluxe 2 queens: 450 ft²; con terraza: 463 ft²; Luxury 2 queens: 495 ft² (Inspirato, con chimenea y wet bar). No se sabe qué categoría salió en la tarifa observada."
+      },
+      "Viceroy Snowmass": {
+        "unidad": "Residencia 1 recámara (Pinnacle)",
+        "ft2": 550,
+        "m2": 51,
+        "rango_m2": "≈51",
+        "recamaras": 1,
+        "banos": null,
+        "cocina": "completa",
+        "camas": "King + sofá cama doble",
+        "fuente": "https://www.oxfordski.com/luxury-ski-chalets-hotels/united-states/snowmass-colorado/viceroy-snowmass/",
+        "confianza": "media",
+        "nota": "Expedia, Suiteness y Oxford Ski coinciden en ~550 ft² (51 m²). No se sabe qué unidad trae el promedio de Kayak; si fuera estudio, sería más chico. La «1 rec. + den» mide 900 ft² (84 m²). Confirmar si la cocina es completa o cocineta."
+      },
+      "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": {
+        "unidad": "Habitación Classic con 2 queens",
+        "ft2": 340,
+        "m2": 32,
+        "rango_m2": "31–32",
+        "recamaras": 0,
+        "banos": 1,
+        "cocina": "no",
+        "camas": "2 queens (duerme 4)",
+        "fuente": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
+        "confianza": "alta",
+        "nota": "Classic 2 queens: 340 ft² (32 m²); Valley View 2 queens: 334 ft². Es la habitación más chica de las 16. Las suites de 2 rec. miden 1,195-1,800 ft², pero no se cotizaron."
+      },
+      "Woodrun Place (condo, Fanny Hill)": {
+        "unidad": "Condo 2 recámaras",
+        "ft2": 1150,
+        "m2": 107,
+        "rango_m2": "105–112",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "2 recámaras, algunas con loft",
+        "fuente": "https://www.expedia.co.uk/Snowmass-Village-Hotels-Woodrun-Place-02-Two-Bedroom-Residence.h110439338.Hotel-Information",
+        "confianza": "media",
+        "nota": "Seis unidades de 2 rec.: 1,135-1,207 ft² (mediana ~1,150, 107 m²), con 2-3 baños. La unidad 19 dice 1,619 ft² (150 m², atípica)."
+      }
+    }
+  }
+}
