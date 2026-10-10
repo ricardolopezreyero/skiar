@@ -404,27 +404,23 @@
     if (capa) capa.remove();
     capa = L.layerGroup().addTo(mapa);
     const slugs = todos ? D.resorts.map((x) => x.slug) : [mapaSlug];
+    // Solo ubicaciones en Colorado: sin trayectos largos desde México ni escalas.
+    const enColorado = (p) => p && p.lat != null && p.lat > 36.9 && p.lat < 41.1 && p.lng < -102 && p.lng > -109.1;
     const usados = new Set();
-    slugs.forEach((s) => { const vv = viaje(s); if (vv) [...vv.it.ida, ...vv.it.regreso].forEach((id) => { const x = tramo(id); if (x) { usados.add(x.de); usados.add(x.a); } }); });
-    const visibles = (M.puntos || []).filter((p) => p.lat != null && p.lng != null && (p.resort ? slugs.includes(p.resort) : usados.has(p.id)));
-    slugs.forEach((s) => { const vv = viaje(s); if (vv) dibujarRuta(vv.it.ida, todos ? COLOR_RESORT[s] : "#e0703a", capa); });
+    if (!todos) slugs.forEach((s) => { const vv = viaje(s); if (vv) [...vv.it.ida, ...vv.it.regreso].forEach((id) => { const x = tramo(id); if (x) { usados.add(x.de); usados.add(x.a); } }); });
+    const visibles = (M.puntos || []).filter((p) => enColorado(p) && (p.resort ? slugs.includes(p.resort) : usados.has(p.id)));
+    if (!todos) slugs.forEach((s) => { const vv = viaje(s); if (vv) dibujarRuta(vv.it.ida.filter((id) => { const x = tramo(id); return x && enColorado(punto(x.de)) && enColorado(punto(x.a)); }), "#e0703a", capa); });
     visibles.forEach((p) => {
       const rad = p.tipo === "hospedaje" ? 6 : p.tipo === "escuela" ? 7 : 9;
       const fill = todos && p.resort ? COLOR_RESORT[p.resort] : COLOR_TIPO[p.tipo] || "#555";
       const rn = p.resort ? (D.resorts.find((x) => x.slug === p.resort) || {}).nombre : "";
       const m = L.circleMarker([p.lat, p.lng], { radius: rad, color: "#fff", weight: 2, fillColor: fill, fillOpacity: 1 })
         .bindPopup(`<strong>${p.nombre}</strong><br>${rn ? rn + " · " : ""}${p.tipo}${p.precision === "aproximada" ? " · ubicación aproximada" : ""}`).addTo(capa);
-      if (p.tipo === "resort" || (p.tipo !== "hospedaje" && p.tipo !== "escuela" && !p.resort)) m.bindTooltip((p.nombre || "").split(" (")[0].split(" – ")[0], { permanent: todos || p.tipo === "resort", direction: "right", className: "map-label" });
+      if (p.tipo === "resort" || (p.tipo !== "hospedaje" && p.tipo !== "escuela" && !p.resort)) m.bindTooltip(p.tipo === "resort" ? (D.resorts.find((x) => x.slug === p.resort) || {}).nombre || p.nombre : (p.nombre || "").split(" (")[0].split(" – ")[0], { permanent: p.tipo === "resort", direction: "right", className: "map-label" });
     });
     const pts = visibles.map((p) => [p.lat, p.lng]);
-    if (pts.length) mapa.fitBounds(pts, { padding: [30, 30] });
-    const co = visibles.filter((p) => p.lat > 36.5 && p.lng < -104).map((p) => [p.lat, p.lng]);
-    if (!mapa._zoomCO) {
-      mapa._zoomCO = L.control({ position: "topright" });
-      mapa._zoomCO.onAdd = () => { const d = L.DomUtil.create("div", "map-btns"); d.innerHTML = '<button type="button" data-z="co">🏔️ Colorado</button><button type="button" data-z="all">🌎 Todo el viaje</button>'; L.DomEvent.disableClickPropagation(d); d.addEventListener("click", (e) => { const z = e.target.dataset.z; if (z === "co" && mapa._co.length) mapa.fitBounds(mapa._co, { padding: [30, 30] }); if (z === "all" && mapa._all.length) mapa.fitBounds(mapa._all, { padding: [30, 30] }); }); return d; };
-      mapa._zoomCO.addTo(mapa);
-    }
-    mapa._co = co; mapa._all = pts;
+    if (pts.length) mapa.fitBounds(pts, { padding: [40, 40], maxZoom: todos ? 9 : 13 });
+
     setTimeout(() => mapa.invalidateSize(), 50);
   }
 
