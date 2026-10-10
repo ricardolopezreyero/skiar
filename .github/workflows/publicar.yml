@@ -27,6 +27,12 @@ jobs:
       - name: Instalar Pillow
         run: pip install pillow
 
+      - name: Buscar ligas directas de mapas de pistas
+        run: python tools/find_mapas.py
+
+      - name: Armar datos del sitio
+        run: python tools/build_site.py
+
       - name: Armar la imagen para compartir (og.jpg)
         run: python tools/build_og.py
 

@@ -40,10 +40,19 @@ def main():
         resorts.append(data)
 
     pistas = []
+    auto = load(BOOK / "pistas" / "_auto.json") or {}  # ligas encontradas por tools/find_mapas.py (GitHub Actions)
     for f in ("finalistas.json", "colorado.json", "otros_estados.json"):
         for p in load(BOOK / "pistas" / f) or []:
-            if not any(x.get("slug") == p.get("slug") for x in pistas):
-                pistas.append(p)
+            if any(x.get("slug") == p.get("slug") for x in pistas):
+                continue
+            a = auto.get(p.get("slug")) or {}
+            if not p.get("mapa_pdf") and not p.get("mapa_img") and a:
+                p["mapa_pdf"] = a.get("mapa_pdf")
+                p["mapa_img"] = a.get("mapa_img")
+                p["mapa_origen"] = a.get("origen")
+                if a.get("anio") and p.get("temporada_mapa") in (None, "?"):
+                    p["temporada_mapa"] = str(a["anio"])
+            pistas.append(p)
 
     payload = {
         "generado": datetime.date.today().isoformat(),

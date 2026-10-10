@@ -35,8 +35,15 @@ def revisar(url):
 
 def main():
     estado = {}
+    entradas = []
     for f in sorted((ROOT / "book" / "pistas").glob("*.json")):
-        for p in json.loads(f.read_text(encoding="utf-8")):
+        datos = json.loads(f.read_text(encoding="utf-8"))
+        if isinstance(datos, dict):  # _auto.json: {slug: {...}}
+            entradas += [dict(v, slug=k) for k, v in datos.items()]
+        else:
+            entradas += datos
+    if True:
+        for p in entradas:
             for campo in ("mapa_pdf", "mapa_img", "mapa_pagina"):
                 url = p.get(campo)
                 if url and url not in estado:
