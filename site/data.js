@@ -4477,5 +4477,177 @@ window.SKIAR = {
    "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr"
   ]
  },
- "nieve": {}
+ "nieve": {
+  "actualizado": "2026-10-10",
+  "metodo": "Estimado (no pronóstico): base o profundidad a media montaña que publica cada resort, interpolada al 13-ene, 27-ene y 3-mar con los promedios mensuales de OnTheSnow y anclas puntuales (p. ej. Steamboat 16-ene-2026 al 64% del promedio). El rango va de un año seco (2025-26, ~60-65% de lo normal) a uno grande (2018-19 o 2022-23, ~130-140%).",
+  "enso": "El Niño muy fuerte (CPC sep-2026: >90%; no encontré la actualización del 8-oct). Para el norte y centro de Colorado la señal es débil: ajuste 0% en Summit, -3% en Steamboat en enero y +3/+5% en Snowmass.",
+  "resorts": {
+   "keystone": {
+    "A": {
+     "cm": 89,
+     "bajo": 53,
+     "alto": 124,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Base delgada pero suficiente; Keystone depende mucho de nieve artificial y las pistas verdes casi siempre abren. Hace mucho frío.",
+     "acum_cm": 224,
+     "terreno_pct": 85
+    },
+    "B": {
+     "cm": 102,
+     "bajo": 63,
+     "alto": 137,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Lo normal es ~90% del terreno abierto; incluso en el año récord seco (27-ene-2026) tenía 71% y todas las telesillas.",
+     "acum_cm": 268,
+     "terreno_pct": 90
+    },
+    "C": {
+     "cm": 131,
+     "bajo": 83,
+     "alto": 165,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Base cerca de su máximo, todo abierto en un año normal y días más templados.",
+     "acum_cm": 393,
+     "terreno_pct": 97
+    },
+    "nevada_anual_cm": 546,
+    "fuentes": [
+     "https://www.onthesnow.com/colorado/keystone/historical-snowfall.html?y=0",
+     "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/",
+     "https://opensnow.com/news/post/2026-2027-colorado-winter-forecast"
+    ]
+   },
+   "breckenridge": {
+    "A": {
+     "cm": 107,
+     "bajo": 64,
+     "alto": 149,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Base aceptable; las zonas de principiantes tienen nieve artificial. En un año seco puede haber menos de la mitad del terreno.",
+     "acum_cm": 305,
+     "terreno_pct": 85
+    },
+    "B": {
+     "cm": 124,
+     "bajo": 77,
+     "alto": 168,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Lo normal es ~90% abierto a fines de enero; en 2026 solo 46%, pero con 30 de 35 telesillas.",
+     "acum_cm": 365,
+     "terreno_pct": 90
+    },
+    "C": {
+     "cm": 167,
+     "bajo": 106,
+     "alto": 211,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "La mejor ventana: base profunda (en 2019 llegó a 234 cm a fines de marzo) y casi todo abierto.",
+     "acum_cm": 536,
+     "terreno_pct": 97
+    },
+    "nevada_anual_cm": 744,
+    "fuentes": [
+     "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0",
+     "https://opensnow.com/dailysnow/breckenridge/post/14778",
+     "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/"
+    ]
+   },
+   "steamboat": {
+    "A": {
+     "cm": 106,
+     "bajo": 66,
+     "alto": 153,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "A media montaña lo normal es ~110 cm a mediados de enero; en el año seco 2026 tenía 71 cm (64%).",
+     "acum_cm": 333,
+     "terreno_pct": 85
+    },
+    "B": {
+     "cm": 128,
+     "bajo": 82,
+     "alto": 178,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Es la más nevada de las cuatro y la nieve suele ser seca. El Niño no la favorece; se espera algo cercano a lo normal.",
+     "acum_cm": 396,
+     "terreno_pct": 92
+    },
+    "C": {
+     "cm": 168,
+     "bajo": 109,
+     "alto": 218,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "La base más profunda del grupo a principios de marzo en un año normal.",
+     "acum_cm": 570,
+     "terreno_pct": 98
+    },
+    "nevada_anual_cm": 792,
+    "fuentes": [
+     "https://www.onthesnow.com/colorado/steamboat/historical-snowfall.html?y=0",
+     "https://www.onthesnow.com/colorado/steamboat/skireport",
+     "https://www.steamboatpilot.com/news/snowfall-at-steamboat-resort-this-winter-has-already-surpassed-all-of-last-season/",
+     "https://opensnow.com/news/post/2023-2024-steamboat-ski-resort-winter-forecast-preview",
+     "https://www.snow-forecast.com/resorts/Steamboat-Ski/snow-report"
+    ]
+   },
+   "snowmass": {
+    "A": {
+     "cm": 89,
+     "bajo": 52,
+     "alto": 121,
+     "confianza": "baja",
+     "prob_buena": "media",
+     "nota": "Base modesta a mediados de enero; el 5-ene-2026 solo tenía 42% de pistas. Hay pocos datos históricos a media montaña.",
+     "acum_cm": 312,
+     "terreno_pct": 80
+    },
+    "B": {
+     "cm": 102,
+     "bajo": 61,
+     "alto": 134,
+     "confianza": "baja",
+     "prob_buena": "alta",
+     "nota": "Mejora a fines de enero. Al estar más al centro-sur, El Niño le da una ligera ventaja.",
+     "acum_cm": 373,
+     "terreno_pct": 90
+    },
+    "C": {
+     "cm": 139,
+     "bajo": 86,
+     "alto": 172,
+     "confianza": "baja",
+     "prob_buena": "alta",
+     "nota": "Marzo es su mes más nevado y la mejor ventana. Las áreas de principiantes (Elk Camp, Assay Hill) están completas.",
+     "acum_cm": 549,
+     "terreno_pct": 97
+    },
+    "nevada_anual_cm": 762,
+    "fuentes": [
+     "https://www.onthesnow.com/colorado/aspen-snowmass/historical-snowfall.html?y=0",
+     "https://coyotegulch.blog/2023/04/22/snowmass-topped-400-inches-of-snowfall-before-closing-the-aspen-daily-news-snowpack/",
+     "https://www.freeride.com/snow-report/snowmass/",
+     "https://www.denvergazette.com/outtherecolorado/2026/01/05/less-than-10-of-trails-open-at-some-colorado-resorts-amid-snowpack-near-record-lows/"
+    ]
+   }
+  },
+  "fuentes": [
+   "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+   "https://www.newsweek.com/el-nino-forecast-reveals-winter-outlook-as-event-strengthens-cpc-12540301",
+   "https://www.axios.com/local/denver/2026/09/28/colorado-winter-outlook-el-nino-snow",
+   "https://opensnow.com/news/post/2026-2027-colorado-winter-forecast",
+   "https://www.cronista.com/en/weather/map-reveals-where-the-us-could-see-historic-snowfall-this-winter/",
+   "https://gazette.com/?p=1128973",
+   "https://opensnow.com/news/post/2023-2024-steamboat-ski-resort-winter-forecast-preview",
+   "https://www.usgs.gov/programs/climate-adaptation-science-centers/regional-super-el-nino-impacts-north-central-us",
+   "https://opensnow.com/news/post/january-2026-snowpack-update"
+  ]
+ }
 };
