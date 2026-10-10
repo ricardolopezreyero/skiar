@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="styles.css?v=8ab2517dbf">
 </head>
 <body>
@@ -23,6 +24,7 @@
         <li><a href="#hospedaje">Hospedaje</a></li>
         <li><a href="#combo">Presupuesto</a></li>
         <li><a href="#comparar">Comparar todo</a></li>
+        <li><a href="#mapa">Mapa y tiempos</a></li>
       </ol>
     </div>
   </header>
@@ -78,6 +80,19 @@
       <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
     </section>
 
+    <section id="mapa">
+      <h2><span class="num">6</span> Mapa y tiempos de viaje</h2>
+      <p class="hint">Cada tramo de puerta a puerta con el mejor camino, y cuántas horas se van en viajar contra cuántas se pasan en la nieve.</p>
+      <div class="seg small" id="mapa-tabs" role="tablist"></div>
+      <div class="mapa-grid">
+        <div id="map" class="map" role="region" aria-label="Mapa"></div>
+        <div id="mapa-ruta" class="ruta"></div>
+      </div>
+      <h3 class="sub-h">⚖️ Viajar contra esquiar, por opción</h3>
+      <div class="table-scroll"><table id="balance" class="cmp balance"></table></div>
+      <p class="hint small" id="balance-nota"></p>
+    </section>
+
     <section id="galeria">
       <h2>Fotos del lugar</h2>
       <div class="seg small" id="gal-tabs" role="tablist"></div>
@@ -120,6 +135,7 @@
 
   <a href="#comparar" class="fab" id="fab">📊 Comparar todo</a>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="data.js?v=7777135a62"></script>
   <script src="app.js?v=1ec5a42390"></script>
 </body>
