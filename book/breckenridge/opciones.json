@@ -1,0 +1,793 @@
+{
+  "slug": "breckenridge",
+  "nombre": "Breckenridge",
+  "resumen": "El destino con más magia para una niña de 5 años (pueblo victoriano, góndola gratis, castillo con dragones en la pista y esculturas de nieve a finales de enero) y con hoteles realmente ski-in/ski-out con la escuela abajo. Es el más alto (2,926 m) y de los más caros: el combo recomendado ronda US$8,600 (sin vuelos ni maletas ≈ US$7,600).",
+  "magia": [
+    "Pueblo minero victoriano de cuento (Main Street)",
+    "Dragon Trail: pista infantil que cruza el 'Ski-a-Lot Castle' con foso y dragones (Peak 8)",
+    "Ripperoo's Forest y Haunted Forest: senderos entre árboles para niños (Peak 9)",
+    "Esculturas de nieve gigantes 23 ene-2 feb 2027, iluminadas hasta las 22:00",
+    "Góndola BreckConnect gratis del pueblo a Peak 7 y Peak 8",
+    "Hotel con pista de hielo, albercas con tobogán y arcade (Grand Colorado)",
+    "Paseos en trineo con caballos y chocolate caliente"
+  ],
+  "costo_beneficio": 7,
+  "altitud_base_m": 2926,
+  "aeropuerto": "DEN",
+  "traslado": "~2 h (~105 mi) de DEN en camioneta AWD (recomendado, con noche previa en Denver por la altitud); Epic Mountain Express compartido $89 por persona por trayecto ($72 con pase Epic), 2-2.5 h.",
+  "ruta": "Torreón → Monterrey en carro (~3.5-4 h) → vuelo directo Viva Aerobus MTY–DEN (~2 h 40; en 2024 jueves y domingo, confirmar invierno 2026-27) → camioneta AWD → noche en Denver → ~2 h a Breckenridge.",
+  "ninos_gratis": "No aplica a 5 años: sólo esquían gratis los de 4 años o menos (fuentes en conflicto: 'menores de 4' vs '4 o menos'). La niña de 5 paga tarifa infantil 5-12. Breckenridge no tiene 'kids ski free' por hospedaje.",
+  "escuela": {
+    "programa": "Breckenridge Ski & Ride School – clase grupal infantil de día completo (desde 5 años; ~6 niños por instructor). Opción premium: Quad Squad (máx. 4 niños, 4-6 años).",
+    "punto_encuentro": "Grand Colorado Children's Facility (plaza bajo la góndola de Peak 8), Village Children's Facility (base de Peak 9) o Beaver Run Children's Facility (3-6 años, un nivel abajo de Beaver Run Plaza). Llegar 8:30 (8:00 si recogen renta); clase 9:00-15:00.",
+    "precio_dia_usd": 470,
+    "total_5_dias_usd": 2350,
+    "incluye": "Instructor y clase de 9:00 a 15:00; comida y snack probablemente incluidos (MomTrends, confirmar). Pase y renta aparte. Precio $470/día es 2025-26; 2026-27 no publicado (estimado $400-470/día; recomendamos 4 días ≈ $1,680).",
+    "fuente": "https://www.snowthere.com/resorts/united-states/breckenridge/llms.txt",
+    "confianza": "media"
+  },
+  "forfaits": {
+    "adultos_total_usd": 1300,
+    "nina_total_usd": 330,
+    "como_comprar": "Epic Day Pass de 5 días en epicpass.com antes del cierre de ventas de principios de diciembre de 2026 (en 2025 fue el 4-dic). Revendedor: ~$638-656 adulto y ~$325-334 niño 5-12 (todos los resorts). Taquilla 2025-26: $234-281 adulto/día.",
+    "fuente": "https://www.undercovertourist.com/ski-resorts/heavenly/",
+    "confianza": "media"
+  },
+  "renta_equipo_total_usd": 650,
+  "traslados_total_usd": 750,
+  "traslados_nota": "Incluye Torreón→MTY (gasolina, casetas, estacionamiento ~$200) y camioneta AWD 8 días + gasolina (~$550). Estacionamiento en hotel aparte (Beaver Run ~$237; One Ski Hill Place gratis).",
+  "comida_total_usd": {
+    "cocinando": 700,
+    "restaurantes": 1260
+  },
+  "alojamientos": [
+    {
+      "nombre": "Grand Colorado on Peak 8",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Base de Peak 8, junto a los telesillas y la góndola BreckConnect; la sede infantil de la escuela está en su plaza.",
+      "distancia_escuela": "En el mismo complejo (Grand Colorado Children's Facility, plaza bajo la góndola de Peak 8)",
+      "recamaras": "Suites (king + sofá cama) hasta residencias de 4 recámaras; precios para una suite de 4 personas",
+      "cocina": true,
+      "amenidades": [
+        "Albercas con tobogán",
+        "Jacuzzis junto a la pista",
+        "Pista de hielo exterior (13:00-20:00)",
+        "Arcade",
+        "5 cines privados",
+        "Lockers de esquí gratis",
+        "Restaurante",
+        "Shuttle gratis al pueblo"
+      ],
+      "nina_gratis": false,
+      "precios": {
+        "A": {
+          "noche_usd": 358,
+          "total_6_noches_con_impuestos_usd": 2818,
+          "fuente": "https://www.redweek.com/posting/R1510307",
+          "confianza": "media",
+          "nota": "Renta real RedWeek 9-16 ene 2027: $358/noche, $2,757 por 7 noches antes de impuestos; prorrateado a 6 noches + ~$147 por partir semana + 12.275%. Promo oficial 'desde $189' (con presentación de 90 min) daría ~$1,270-1,410 si hay cupo."
+        },
+        "B": {
+          "noche_usd": 500,
+          "total_6_noches_con_impuestos_usd": 3860,
+          "fuente": "https://www.redweek.com/posting/R1533680",
+          "confianza": "media",
+          "nota": "Renta real RedWeek 24-31 ene 2027: $500/noche, $3,840 por 7 noches antes de impuestos; prorrateado a 6 + split fee + impuesto. Con promo oficial 'desde $189' ~$1,270-1,410 si hay cupo (confianza baja)."
+        },
+        "C": {
+          "noche_usd": 525,
+          "total_6_noches_con_impuestos_usd": 4045,
+          "fuente": "https://www.redweek.com/posting/R1491908",
+          "confianza": "baja",
+          "nota": "Estimado: no hay renta para 28 feb-6 mar; rentas reales cercanas: 31 ene-7 feb a $500-571 y 28 mar-4 abr a $514. Promo oficial 'desde $189' posible (vigente hasta 31-may-2027)."
+        }
+      },
+      "link": "https://grandcolorado.com/",
+      "galeria": "https://grandcolorado.com/photo-gallery/",
+      "pros": [
+        "Escuela infantil abajo del hotel",
+        "Pista de hielo, tobogán y arcade",
+        "Promo oficial muy barata si aceptan la presentación",
+        "Cocina"
+      ],
+      "contras": [
+        "La promo exige presentación de tiempo compartido de 90 min y su cupo es incierto",
+        "Sin promo, caro en las ventanas B y C",
+        "Fee de $20/noche por confirmar",
+        "Base de Peak 8 más alta que el pueblo"
+      ],
+      "ideal_si": "Quieren 'el hotel al que llegas esquiando' con la escuela a pasos y aceptan la presentación a cambio de pagar ~$1,400 en vez de ~$3,900."
+    },
+    {
+      "nombre": "Grand Lodge on Peak 7",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Base de Peak 7, a pasos del Independence SuperChair; góndola BreckConnect gratis a Peak 8 y al pueblo.",
+      "distancia_escuela": "Una parada de góndola a la sede de Peak 8 (confirmar que la góndola abra antes de las 8:30)",
+      "recamaras": "Mayormente 1 recámara para 4 (king), también 2 y 3 recámaras",
+      "cocina": true,
+      "amenidades": [
+        "Alberca interior y exterior",
+        "Alberca infantil",
+        "Área de juegos (playground)",
+        "Jacuzzis"
+      ],
+      "nina_gratis": false,
+      "precios": {
+        "A": {
+          "noche_usd": 293,
+          "total_6_noches_con_impuestos_usd": 2340,
+          "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
+          "confianza": "media",
+          "nota": "Renta real RedWeek 9-16 ene 2027, 1 rec./4 personas: $293/noche, $2,260 por 7 noches antes de impuestos; prorrateado a 6 + ~$147 + 12.275%."
+        },
+        "B": {
+          "noche_usd": 214,
+          "total_6_noches_con_impuestos_usd": 1763,
+          "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
+          "confianza": "media",
+          "nota": "Renta real RedWeek 23-30 ene 2027, 1 rec./4 personas: $214/noche, $1,660 por 7 noches antes de impuestos. Si el dueño no parte la semana: semana completa ≈ $1,864 con impuestos."
+        },
+        "C": {
+          "noche_usd": 475,
+          "total_6_noches_con_impuestos_usd": 3677,
+          "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
+          "confianza": "media",
+          "nota": "Renta real RedWeek 27 feb-6 mar 2027, 1 rec./4 personas: $475/noche, $3,649 por 7 noches antes de impuestos (otra: 28 feb-7 mar a $500/noche)."
+        }
+      },
+      "link": "https://www.grandlodgeonpeak7.com/",
+      "galeria": "https://www.grandlodgeonpeak7.com/photo-gallery/",
+      "pros": [
+        "Precio real más bajo en la ventana B",
+        "Sin presentación de ventas (vía RedWeek)",
+        "Alberca infantil y playground",
+        "La niña sube a la escuela en góndola"
+      ],
+      "contras": [
+        "Escuela no está en el edificio",
+        "Depende del horario de la góndola",
+        "Lejos de Main Street",
+        "Renta a dueño vía RedWeek: el listado puede desaparecer"
+      ],
+      "ideal_si": "Viajan en la ventana B y quieren el mejor precio verificable sin presentación de tiempo compartido."
+    },
+    {
+      "nombre": "Beaver Run Resort",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Junto al Beaver Run SuperChair (Peak 9); Peak 9 tiene terreno más suave para principiantes.",
+      "distancia_escuela": "Dentro del resort (Beaver Run Children's Facility, un nivel abajo de Beaver Run Plaza para 3-6 años)",
+      "recamaras": "Habitación de hotel, estudio y suites de 1-2+ recámaras; precios para estudio (1 rec. ~30% más)",
+      "cocina": true,
+      "amenidades": [
+        "Alberca interior/exterior climatizada",
+        "8-9 jacuzzis",
+        "Arcade 24/7",
+        "Spa",
+        "Gimnasio",
+        "Restaurantes"
+      ],
+      "nina_gratis": false,
+      "precios": {
+        "A": {
+          "noche_usd": 179,
+          "total_6_noches_con_impuestos_usd": 1277,
+          "fuente": "https://www.hotels.com/ho211598",
+          "confianza": "baja",
+          "nota": "Estimado: estudio ~$267 (Hotels.com, 22-23 ene, año no indicado) con 33% off por 5-8 noches (beaverrun.com/winter-stay-longer-save) + 19.01% impuestos/resort fee. Sin descuento ≈ $1,907. Estacionamiento aparte ~$237."
+        },
+        "B": {
+          "noche_usd": 188,
+          "total_6_noches_con_impuestos_usd": 1340,
+          "fuente": "https://beaverrun.com/winter-stay-longer-save/",
+          "confianza": "baja",
+          "nota": "Estimado: estudio ~$280 con 33% off + 19.01%. Sin descuento ≈ $1,999. Estacionamiento aparte ~$237. Sin tarifas 2027 publicadas."
+        },
+        "C": {
+          "noche_usd": 201,
+          "total_6_noches_con_impuestos_usd": 1435,
+          "fuente": "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
+          "confianza": "baja",
+          "nota": "Estimado: ancla = estancia verificada mar-2026 a $240.68 promedio; estudio ~$300 con 33% off + 19.01%. Sin descuento ≈ $2,142. Estacionamiento aparte ~$237."
+        }
+      },
+      "link": "https://beaverrun.com/",
+      "galeria": "https://beaverrun.com/photo-gallery/",
+      "pros": [
+        "Escuela y guardería dentro del resort",
+        "Sin presentación de ventas",
+        "Duermen a la altura del pueblo (más bajo que Peak 7/8)",
+        "Muchos tamaños de unidad para futuras familias"
+      ],
+      "contras": [
+        "Complejo antiguo tipo convenciones",
+        "Estacionamiento $39-42/noche",
+        "Tarifa 2027 no verificada; posible resort fee"
+      ],
+      "ideal_si": "Quieren ski-in/ski-out con la escuela en casa sin presentación de tiempo compartido, o el pediatra prefiere dormir lo más bajo posible."
+    },
+    {
+      "nombre": "One Ski Hill Place, a RockResort",
+      "tipo": "hotel",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Base de Peak 8, ski concierge/valet; área de principiantes a unos pasos.",
+      "distancia_escuela": "Misma base de Peak 8, junto a la sede de Grand Colorado (~2-3 min a pie, estimado)",
+      "recamaras": "Estudio a 4 recámaras; precios para 1 recámara",
+      "cocina": true,
+      "amenidades": [
+        "Boliche de 2 carriles",
+        "Salas de cine",
+        "Salón de juegos",
+        "Albercas interior y exterior",
+        "Jacuzzis",
+        "Spa",
+        "3 restaurantes",
+        "Estacionamiento techado gratis con valet"
+      ],
+      "nina_gratis": false,
+      "precios": {
+        "A": {
+          "noche_usd": 650,
+          "total_6_noches_con_impuestos_usd": 5054,
+          "fuente": "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
+          "confianza": "baja",
+          "nota": "Estimado: 2 rec. invierno 2026 a $1,015-1,502/noche → 1 rec. ~$650 + resort fee 15.43% + 12.275%. Posible 20% Epic Mountain Rewards (por confirmar)."
+        },
+        "B": {
+          "noche_usd": 700,
+          "total_6_noches_con_impuestos_usd": 5443,
+          "fuente": "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
+          "confianza": "baja",
+          "nota": "Estimado igual que A, temporada 'value' de finales de enero."
+        },
+        "C": {
+          "noche_usd": 850,
+          "total_6_noches_con_impuestos_usd": 6610,
+          "fuente": "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
+          "confianza": "baja",
+          "nota": "Estimado: principios de marzo más caro; + resort fee 15.43% + 12.275%."
+        }
+      },
+      "link": "https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx",
+      "galeria": "https://www.oyster.com/breckenridge/hotels/one-ski-hill-place-a-rockresort/rooms/",
+      "pros": [
+        "Lo más lujoso y 'de moda' de Breck",
+        "Boliche y valet de esquís",
+        "Misma base que la escuela",
+        "Probablemente el hotel que oyó Ana"
+      ],
+      "contras": [
+        "Sólo el hospedaje cuesta ~$5,000-6,600",
+        "Resort fee 13.5-15.4% criticado",
+        "Sin tarifas 2027 encontradas"
+      ],
+      "ideal_si": "Es un viaje de lujo y el presupuesto sube a ~$12,000+."
+    }
+  ],
+  "fotos": [
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / Main Street",
+      "descripcion": "Main Street de Breckenridge (calle principal histórica), 2010",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Main_Street.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Main_Street.jpg",
+      "credito": "Av9 (obra propia, Wikimedia Commons)",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / Main Street",
+      "descripcion": "Edificio de Breckenridge Heritage Alliance en North Main Street",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / Main Street",
+      "descripcion": "North Main Street, Heritage Alliance (segunda toma)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / centro",
+      "descripcion": "Centro de Breckenridge",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Breckenridge_Wiki_%281_of_1%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Breckenridge_Wiki_%281_of_1%29.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / vista general",
+      "descripcion": "Vista del pueblo de Breckenridge",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Breckenridge,_Colorado.jpeg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_Breckenridge,_Colorado.jpeg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / vista general",
+      "descripcion": "Breckenridge (foto de Panoramio)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge,_CO_80424,_USA_-_panoramio.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_80424,_USA_-_panoramio.jpg",
+      "credito": "Panoramio vía Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / vista general",
+      "descripcion": "El pueblo visto desde el juzgado del condado de Summit",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / arquitectura histórica",
+      "descripcion": "Juzgado histórico del condado de Summit (en Breckenridge)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Summit_County_court_house_in_Colorado.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Summit_County_court_house_in_Colorado.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / historia",
+      "descripcion": "Foto histórica: túnel de nieve en Breckenridge, invierno 1898-99",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_tunnel_to_Breckenridge_CO_,_1898.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_tunnel_to_Breckenridge_CO_,_1898.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página (probable dominio público por antigüedad; verificar)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / Ski Hill Road",
+      "descripcion": "Ski Hill Road nevada (camino del pueblo a Peak 8), feb-2010",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/hannah8ball/4409085655/",
+      "credito": "hannah8ball (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / centro",
+      "descripcion": "Downtown Breckenridge Colorado (sep-2010, sin nieve)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/snowdotcom/4976754343",
+      "credito": "snowdotcom (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / arquitectura histórica",
+      "descripcion": "Historic Corner Building: edificio original del siglo XIX (jul-2004, verano)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/stevenm_61/2800805731",
+      "credito": "stevenm_61 (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / historia",
+      "descripcion": "Quitanieves rotatorio de tren histórico (Rotary Snowplow Park)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/stevenm_61/14732155903",
+      "credito": "stevenm_61 (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo / Ski Hill Road",
+      "descripcion": "Breckenridge - Ski Hill Road",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/dagmaramach/8731125223/",
+      "credito": "dagmaramach (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Montañas / paisaje",
+      "descripcion": "Montañas nevadas en Breckenridge",
+      "url_imagen": "",
+      "url_pagina": "https://unsplash.com/photos/high-rise-photo-of-mountain-6w2O01xs8j8",
+      "credito": "Devin H (Unsplash)",
+      "licencia": "Unsplash License"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Galería general (elegir fotos)",
+      "descripcion": "Categoría de Commons: Breckenridge, Colorado (más fotos del pueblo)",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Breckenridge,_Colorado",
+      "credito": "Wikimedia Commons (varios)",
+      "licencia": "varias (ver cada archivo)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Galería general (elegir fotos)",
+      "descripcion": "Búsqueda Unsplash: Breckenridge",
+      "url_imagen": "",
+      "url_pagina": "https://unsplash.com/s/photos/breckenridge",
+      "credito": "Unsplash (varios)",
+      "licencia": "Unsplash License"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Galería general (elegir fotos)",
+      "descripcion": "Etiqueta Flickr: breckenridge",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/tags/breckenridge",
+      "credito": "Flickr (varios)",
+      "licencia": "varias (ver cada foto)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 8",
+      "descripcion": "Lake Chutes vistos desde la cima de Peak 8 (terreno experto; panorama)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_peak_8.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_peak_8.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "CC BY 2.5"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 8",
+      "descripcion": "Panorama desde la cima de Peak 8 hacia el oeste",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 8 / Peak 9",
+      "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 9",
+      "descripcion": "Peak 9, zona más suave para principiantes (nombre visto en el listado de la categoría; verificar)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_9.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_9.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Montaña completa",
+      "descripcion": "La estación de Breckenridge vista desde Dercum Mountain (Keystone)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 9 / Beaver Run",
+      "descripcion": "Terminal del Beaver Run SuperChair (telesilla junto a Beaver Run Resort), 1-ene-2013",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 6",
+      "descripcion": "Kensho SuperChair (Leitner-Poma), dic-2013",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kensho_SuperChair.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Kensho_SuperChair.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 7",
+      "descripcion": "Vista desde la parte alta del Falcon SuperChair",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_top_of_Falcon_SuperChair.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Falcon_SuperChair.JPG",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Zonas infantiles",
+      "descripcion": "Ripperoo, la mascota infantil de Breckenridge",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/visitcolorado/5247504350",
+      "credito": "visitcolorado (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 8",
+      "descripcion": "Snowboarding Breck: Peak 8",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/williamafranklin/4461772163",
+      "credito": "williamafranklin (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Pistas",
+      "descripcion": "The ski hills at Breck",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/99183771@N00/376767912/",
+      "credito": "99183771@N00 (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Pistas",
+      "descripcion": "Nieve fresca en Breckenridge (abril)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/skisilverthorne/33366711763/",
+      "credito": "skisilverthorne (Flickr)",
+      "licencia": "ver página (licencia no verificada)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Galería general (elegir fotos)",
+      "descripcion": "Galería de fotos de la estación en OnTheSnow",
+      "url_imagen": "",
+      "url_pagina": "https://www.onthesnow.com/colorado/breckenridge/resort-photos-id538826.html",
+      "credito": "OnTheSnow (varios)",
+      "licencia": "derechos reservados; solo referencia"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Galería general (elegir fotos)",
+      "descripcion": "Categoría de Commons: Breckenridge Ski Resort",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Breckenridge_Ski_Resort",
+      "credito": "Wikimedia Commons (varios)",
+      "licencia": "varias (ver cada archivo)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Peak 8 / Rip's Ride",
+      "descripcion": "Página oficial de inversiones (Rip's Ride, zona de aprendizaje de Peak 8)",
+      "url_imagen": "",
+      "url_pagina": "https://www.breckenridge.com/the-mountain/about-the-mountain/capital-investments.aspx",
+      "credito": "Breckenridge Ski Resort (Vail Resorts)",
+      "licencia": "derechos reservados; solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Peak 7 / Peak 8 (general)",
+      "descripcion": "Vista aérea de Peak 7 y Peak 8 (zona de las bases con hoteles ski-in/ski-out), ene-2019",
+      "url_imagen": "",
+      "url_pagina": "https://unsplash.com/photos/village-covered-with-snow-during-daytime-Yb8iY_ErIH8",
+      "credito": "Unsplash (autor: ver página)",
+      "licencia": "Unsplash License"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Colorado on Peak 8",
+      "descripcion": "Galería oficial (vistas, exterior, interiores: cocinas, 1 recámara, suite) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://grandcolorado.com/photo-gallery/",
+      "credito": "Grand Colorado on Peak 8 / BGV",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Colorado on Peak 8",
+      "descripcion": "Amenidades oficiales (albercas, pista de hielo, arcade, cines) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://grandcolorado.com/resort-features/",
+      "credito": "Grand Colorado on Peak 8 / BGV",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Colorado on Peak 8",
+      "descripcion": "Página del resort en Breckenridge Grand Vacations (con imágenes) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://breckenridgegrandvacations.com/gc8/",
+      "credito": "Breckenridge Grand Vacations",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "One Ski Hill Place",
+      "descripcion": "Página oficial en breckenridge.com (fotos y amenidades) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx",
+      "credito": "Breckenridge Ski Resort / RockResorts",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "One Ski Hill Place",
+      "descripcion": "Fotos de habitaciones (Oyster) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.oyster.com/breckenridge/hotels/one-ski-hill-place-a-rockresort/rooms/",
+      "credito": "Oyster",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "One Ski Hill Place",
+      "descripcion": "Galería en Expedia (alberca techada, lobby, condos con chimenea) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.expedia.com/Summit-County-Hotels-One-Ski-Hill-Place.h3485510.Hotel-Information",
+      "credito": "Expedia",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Beaver Run Resort",
+      "descripcion": "Galería oficial (albercas edificios 3 y 4, arcade, spa, gimnasio) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://beaverrun.com/photo-gallery/",
+      "credito": "Beaver Run Resort",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Beaver Run Resort",
+      "descripcion": "Página oficial de albercas y jacuzzis (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://beaverrun.com/experiences/amenities/aquatics/",
+      "credito": "Beaver Run Resort",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Lodge on Peak 7",
+      "descripcion": "Galería oficial (vistas, webcams, interiores) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.grandlodgeonpeak7.com/photo-gallery/",
+      "credito": "Grand Lodge on Peak 7 / BGV",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Lodge on Peak 7",
+      "descripcion": "Residencias (suites, 1 y 2 recámaras) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.grandlodgeonpeak7.com/residences/",
+      "credito": "Grand Lodge on Peak 7 / BGV",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Grand Lodge on Peak 7",
+      "descripcion": "Amenidades (albercas, alberca infantil, área de juegos) (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.grandlodgeonpeak7.com/resort-amenities-grand-lodge-peak-7/",
+      "credito": "Grand Lodge on Peak 7 / BGV",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Crystal Peak Lodge (alternativa)",
+      "descripcion": "Ficha y fotos en Oxford Ski (página de galería: elegir foto)",
+      "url_imagen": "",
+      "url_pagina": "https://www.oxfordski.com/luxury-ski-chalets-hotels/united-states/breckenridge-colorado/crystal-peak-lodge/",
+      "credito": "Oxford Ski",
+      "licencia": "derechos reservados; uso personal / solo referencia"
+    }
+  ],
+  "verificar": [
+    "Visas B1/B2 y pasaportes vigentes de los 3 hasta la fecha de regreso. La de la niña es la que más suele vencer; la cita en Monterrey tardaba ~4.5 meses (mayo 2026).",
+    "Calendario de invierno de Viva Aerobus MTY–DEN (¿sólo jueves y domingo o diario?) antes de fijar fechas: las ventanas son domingo a sábado.",
+    "Grand Colorado, promo de $189: qué tipo de unidad entra (¿suite con cocineta?), si hay cupo en sus fechas, si cubre el Vacation Experience Fee de $20 por noche, requisitos de la presentación de 90 min y política de cancelación. Fecha límite para reservar: 14-dic-2026.",
+    "RedWeek (Grand Colorado / Grand Lodge on Peak 7): que el listado siga vivo, si el dueño acepta 6 noches (cargo por partir la semana ~$147) o hay que pagar la semana completa, impuestos, cargo de RedWeek y cancelación (moderada).",
+    "Horario de la góndola BreckConnect en invierno (las fuentes dicen 8:00 o 9:30). Si se hospedan en Peak 7, la niña tiene que entrar a la escuela a las 8:00-8:30.",
+    "Beaver Run: tarifa real con el 33% (5-8 noches) para sus fechas, blackouts, si existe resort fee y el estacionamiento ($39-42 por noche).",
+    "Escuela 2026-27: precio por día y por paquete de varios días, si incluye comida y snack, sede (Grand Colorado Children's Facility o Beaver Run), si la renta de la niña va incluida y el casco. Reservar en cuanto abra.",
+    "Epic Day Pass: precio oficial y fecha de cierre de ventas (en 2025 fue el 4 de dic); edad de corte (con 5 años la niña paga tarifa 5-12); si Epic Mountain Rewards da descuento en escuela y renta con Day Pass.",
+    "Altitud: consulta pediátrica antes del viaje; reservar la noche en Denver; considerar Beaver Run (más bajo que Peak 7/8) si el pediatra lo sugiere.",
+    "Fechas oficiales de las esculturas de nieve 2027 (gobreck aún decía 'schedule coming soon'). Operación invernal y estatura mínima del Gold Runner Coaster.",
+    "Seguro de viaje con gastos médicos en EE.UU. y cancelación. Sumar siempre el 12.275% de impuesto de hospedaje y los resort fees al comparar."
+  ],
+  "fuentes": [
+    "https://www.worldatlas.com/cities/7-rockies-towns-with-unforgettable-main-streets-55375.html",
+    "https://www.worldatlas.com/cities/8-picture-perfect-main-streets-in-the-rockies.html",
+    "https://www.ski.com/blog/kids-guide-breckenridge-resort",
+    "https://www.gobreck.com/events/international-snow-sculpture-championships",
+    "https://beaverrun.com/event/international-snow-sculpture-championships-3/",
+    "https://www.thebrecklife.com/blog/breckenridge-gondola/",
+    "https://gobreck.com/plan-your-visit/lodging-for-families-in-breckenridge/",
+    "https://www.grandtimber.com/winter-activities/",
+    "https://www.expedia.com.my/Breckenridge-Hotels-The-Grand-Colorado-On-Peak-8.h23942634.Hotel-Information",
+    "https://www.denvergazette.com/2026/01/23/12-fun-family-friendly-things-to-do-in-breckenridge-during-the-winter/",
+    "https://www.flickr.com/photos/visitcolorado/5247504350",
+    "https://en.wikipedia.org/wiki/Comparison_of_Colorado_ski_resorts",
+    "https://www.travelocity.com/Breckenridge-Hotels-Breckenridge-Peak-8-True-Ski-In-Ski-Out-At-Over-10.h33934867.Hotel-Information",
+    "https://epicmountainexpress.com/summit-county-rates",
+    "https://www.milenio.com/estados/aumento-casetas-carreteras-coahuila-durango-2026-costo",
+    "https://www.aeropuertosdelmundo.net/mx/aeropuerto-MTY/",
+    "https://aviacionline.com/viva-aerobus-inicio-sus-vuelos-a-denver",
+    "https://digital-release.kdvr.com/?p=2570032",
+    "https://www.flightsfrom.com/DEN-MTY",
+    "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0",
+    "https://www.luckymountainhome.com/neighborhoods/breckenridge/weather-report/",
+    "https://news.vailresorts.com/2026-08-18-Is-Winter-About-to-Show-Off-Vail-Resorts-Announces-2026-27-Opening-Dates-as-Super-El-Nino-Builds-Anticipation-for-Great-Powder",
+    "https://thepointsguy.com/news/epic-ski-pass",
+    "https://snowstash.com/usa/colorado/breckenridge/lift-tickets",
+    "https://news.vailresorts.com/2025-11-17-Epic-Passes-Go-Off-Sale-December-4-Lock-in-Your-Magical-Mountain-Holiday-Now?asPDF=1",
+    "https://www.undercovertourist.com/ski-resorts/heavenly/",
+    "https://www.onthesnow.com/colorado/breckenridge/lift-tickets.html",
+    "https://golocalvr.com/blog/breckenridge-short-term-rental-regulations-2026-guide",
+    "https://www.airbnb.com/help/article/2372",
+    "https://www.transit.wiki/Breckenridge_Free_Ride_routes",
+    "https://www.luckymountainhome.com/neighborhoods/breckenridge/transportation/local-buses/",
+    "https://thepointsguy.com/guide/the-best-us-ski-resorts-for-families",
+    "https://www.snowthere.com/guides/altitude-sickness-kids-colorado-ski-resorts",
+    "https://boec.org/pre-trip-wellness-tips/",
+    "https://childrenscolorado.org/just-ask-childrens/articles/altitude-sickness",
+    "https://www.snowthere.com/resorts/united-states/breckenridge/llms.txt",
+    "https://www.momtrends.com/ski/everything-you-need-to-know-about-breckenridge-ski-school/",
+    "https://www.acsu.buffalo.edu/~sarahake/503_Assignment%202.html",
+    "https://breckenridge.com/plan-your-trip/ski-and-ride-lessons/Know-Before-You-Go.aspx",
+    "https://blog.breckenridgegrandvacations.com/ski-lessons",
+    "https://www.skitalk.com/goto/post?id=1126750",
+    "https://www.breckenridge.com/plan-your-trip/epic-mountain-rewards",
+    "https://www.thebrecklife.com/blog/things-to-do-with-kids-breckenridge/",
+    "https://www.gobreck.com/event/ullr-fest/",
+    "https://www.flickr.com/photos/stevenm_61/14732155903",
+    "https://beaverrun.com/experiences/amenities/",
+    "https://beaverrun.com/experiences/amenities/aquatics/",
+    "https://www.breckenridge.com/travel-guide/espanol/los-mejores-resorts-de-breckenridge-para-familias.aspx",
+    "https://www.hotels.com/ho211598",
+    "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
+    "https://www.nrel.gov/pv/silicon-workshop/lodging-and-transportation.html",
+    "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
+    "https://www.orbitz.com/Breckenridge-Hotels-One-Ski-Hill-Place.h3485510.Hotel-Information",
+    "https://grandcolorado.com/photo-gallery/",
+    "https://www.redweek.com/resort/P6477-grand-colorado-on-peak-8/reviews?page=3",
+    "https://grandcolorado.com/",
+    "https://www.redweek.com/posting/R1510307",
+    "https://grandcolorado.com/resort-features/",
+    "https://grandcolorado.com/resort-policies/",
+    "https://grandcolorado.com/lodging-specials/",
+    "https://www.kayak.com/Breckenridge-Hotels-Grand-Colorado-on-Peak-8.5413444.ksp",
+    "https://www.airbnb.com.au/rooms/48938670",
+    "https://www.oyster.com/breckenridge/hotels/grand-lodge-on-peak-7/",
+    "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7/reviews?page=4",
+    "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
+    "https://www.grandlodgeonpeak7.com/lodging-specials/",
+    "https://www.grandlodgeonpeak7.com/",
+    "https://www.grandlodgeonpeak7.com/photo-gallery/",
+    "https://www.expedia.com/Breckenridge-Hotels-NEW-LISTING-One-Bedroom-Suite-At-Beaver-Run-Resort.h70307401.Hotel-Information",
+    "https://www.powderhounds.com/usa/colorado/breckenridge/beaver-run-resort.aspx",
+    "https://www.thebrecklife.com/blog/breckenridge-co-ski-in-ski-out-vacation-rentals/",
+    "https://www.breckenridge.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+    "https://beaverrun.com/winter-savings/",
+    "https://beaverrun.com/winter-stay-longer-save/",
+    "https://www.priceline.com/hotel-deals/en-us/P3000002533/H3003405/beaver-run-resort.ssp",
+    "https://beaverrun.com/",
+    "https://beaverrun.com/photo-gallery/",
+    "https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx",
+    "https://www.breckenridge.com/travel-guide/ski-in-ski-out-breckenridge.aspx",
+    "https://dk.trip.com/hotels/breckenridge-hotel-detail-126791635/one-ski-hill-luxury-condo-ski-in-ski-out-at-peak-8-base-family-friendly",
+    "https://www.tripadvisor.com/Hotel_Review-g33327-d1818743-Reviews-One_Ski_Hill_Place_A_RockResort-Breckenridge_Colorado.html",
+    "https://www.oyster.com/breckenridge/hotels/one-ski-hill-place-a-rockresort/rooms/",
+    "https://www.oxfordski.com/luxury-ski-chalets-hotels/united-states/breckenridge-colorado/crystal-peak-lodge/",
+    "https://www.redweek.com/posting/R1533680",
+    "https://www.redweek.com/posting/R1493556",
+    "https://www.redweek.com/posting/R1533689",
+    "https://www.redweek.com/posting/R1491908",
+    "https://www.redweek.com/resort/P6477-grand-colorado-on-peak-8",
+    "https://www.denvergazette.com/2026/01/18/the-cost-of-a-week-long-family-ski-trip-to-colorado-in-2026/",
+    "https://www.expedia.com/lp/flights/2448/8622/monterrey-to-leadville",
+    "https://ww1.aaa.com/tripcanvas/thing-to-do/breckenridge-ski-rental-packages-for-adult-and-youth-315406P6",
+    "https://tripoutside.com/browse/item:Christy_Sports_Dillon:i1w3hsqcmv8ym8q734xfknwwfjxuck27r2d9ekyvtewajrgucvd6kdr",
+    "https://www.breckenridge.com/the-mountain/about-the-mountain/capital-investments.aspx"
+  ]
+}

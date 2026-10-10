@@ -20,10 +20,11 @@
       if (v == null || v === false) continue;
       if (k === "class") n.className = v;
       else if (k === "html") n.innerHTML = v;
+      else if (k === "href") n.setAttribute("href", Array.isArray(v) ? v[0] : String(v).split(/[ ,;]+(?=https?:)/)[0]);
       else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
       else n.setAttribute(k, v === true ? "" : v);
     }
-    for (const kid of kids.flat()) if (kid != null && kid !== false) n.append(kid.nodeType ? kid : String(kid));
+    for (const kid of kids.flat(Infinity)) if (kid != null && kid !== false) n.append(kid.nodeType ? kid : String(kid));
     return n;
   };
   const money = (n) => (n == null || isNaN(n) ? "—" : "$" + Math.round(n).toLocaleString("en-US"));
@@ -38,9 +39,11 @@
     if (p.get("r")) state.r = p.get("r");
     if (p.get("l") != null) state.l = Number(p.get("l"));
     if (p.get("f")) state.f = p.get("f");
+    if (p.get("lista")) Nube.setId(p.get("lista"));
   }
   function writeHash() {
     const p = new URLSearchParams({ v: state.v, r: state.r || "", l: state.l ?? "", f: state.f });
+    if (Nube.id()) p.set("lista", Nube.id());
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -83,28 +86,28 @@
     const l = (resort.alojamientos || [])[li] || {};
     const out = [];
     const r = route(resort, v);
-    if (r.vuelo) out.push({ label: "Vuelos redondos (3 personas)", amount: r.vuelo.total, conf: r.vuelo.conf, src: r.vuelo.src, note: [r.vuelo.ruta.descripcion, r.vuelo.fechas].filter(Boolean).join(" · ") });
-    else out.push({ label: "Vuelos redondos (3 personas)", amount: null, note: "Falta dato" });
-    if (r.vuelo && num(r.vuelo.ruta.equipaje_total_usd) != null) out.push({ label: "Equipaje documentado", amount: r.vuelo.ruta.equipaje_total_usd, conf: r.vuelo.ruta.equipaje_confianza || "baja", note: r.vuelo.ruta.equipaje_total_nota });
-    if (r.vuelo && /den/i.test(r.vuelo.ruta.id) && num(V.hotel_denver_usd) != null) out.push({ label: "Primera noche en Denver (aclimatación)", amount: V.hotel_denver_usd, conf: "baja", note: V.hotel_denver_nota });
+    if (r.vuelo) out.push({ label: "✈️ Vuelos redondos (3 personas)", amount: r.vuelo.total, conf: r.vuelo.conf, src: r.vuelo.src, note: [r.vuelo.ruta.descripcion, r.vuelo.fechas].filter(Boolean).join(" · ") });
+    else out.push({ label: "✈️ Vuelos redondos (3 personas)", amount: null, note: "Falta dato" });
+    if (r.vuelo && num(r.vuelo.ruta.equipaje_total_usd) != null) out.push({ label: "🧳 Equipaje documentado", amount: r.vuelo.ruta.equipaje_total_usd, conf: r.vuelo.ruta.equipaje_confianza || "baja", note: r.vuelo.ruta.equipaje_total_nota });
+    if (r.vuelo && /den/i.test(r.vuelo.ruta.id) && num(V.hotel_denver_usd) != null) out.push({ label: "🏨 Primera noche en Denver (aclimatación)", amount: V.hotel_denver_usd, conf: "baja", note: V.hotel_denver_nota });
     if (r.desdeMty) {
       const g = num(V.gasolina_casetas_trc_mty_redondo_usd), e = num(V.estacionamiento_mty_usd);
-      out.push({ label: "Torreón ↔ Monterrey en carro + estacionamiento", amount: g == null && e == null ? null : (g || 0) + (e || 0), conf: "media", note: "Gasolina, casetas y estacionamiento en el aeropuerto" });
+      out.push({ label: "🚗 Torreón ↔ Monterrey en carro + estacionamiento", amount: g == null && e == null ? null : (g || 0) + (e || 0), conf: "media", note: "Gasolina, casetas y estacionamiento en el aeropuerto" });
     }
-    if (r.tras) out.push({ label: "Traslado aeropuerto ↔ montaña", amount: num(r.tras.total_usd), conf: r.tras.confianza, src: r.tras.fuente, note: r.tras.descripcion });
+    if (r.tras) out.push({ label: "🚙 Traslado aeropuerto ↔ montaña", amount: num(r.tras.total_usd), conf: r.tras.confianza, src: r.tras.fuente, note: r.tras.descripcion });
     const lp = lodgingPrice(l, v);
-    out.push({ label: "Hospedaje 6 noches · " + (l.nombre || ""), amount: lp.total, conf: lp.conf, src: lp.src, note: lp.nota });
+    out.push({ label: "🏔️ Hospedaje 6 noches · " + (l.nombre || ""), amount: lp.total, conf: lp.conf, src: lp.src, note: lp.nota });
     const f = resort.forfaits || {};
-    out.push({ label: "Forfaits adultos (5 días × 2)", amount: num(f.adultos_total_usd), conf: f.confianza, src: f.fuente, note: f.como_comprar });
+    out.push({ label: "🎟️ Forfaits adultos (5 días × 2)", amount: num(f.adultos_total_usd), conf: f.confianza, src: f.fuente, note: f.como_comprar });
     const ninaGratis = l.nina_gratis !== false;
     const nina = ninaGratis ? num(f.nina_total_usd) : num(f.nina_total_sin_programa_usd) ?? num(f.nina_total_usd);
-    out.push({ label: "Forfait de la niña", amount: nina, conf: f.confianza, note: nina === 0 ? "Gratis: " + (resort.ninos_gratis || "") : (ninaGratis ? "" : "Este hospedaje no califica para el programa de niños gratis") });
+    out.push({ label: "👧 Forfait de la niña", amount: nina, conf: f.confianza, note: nina === 0 ? "Gratis: " + (resort.ninos_gratis || "") : (ninaGratis ? "" : "Este hospedaje no califica para el programa de niños gratis") });
     const e = resort.escuela || {};
-    out.push({ label: "Escuela de esquí (5 días) · " + (e.programa || ""), amount: num(e.total_5_dias_usd), conf: e.confianza, src: e.fuente, note: e.incluye });
-    out.push({ label: "Renta de equipo (3 personas)", amount: num(resort.renta_equipo_total_usd), conf: "media" });
+    out.push({ label: "⛷️ Escuela de esquí (5 días) · " + (e.programa || ""), amount: num(e.total_5_dias_usd), conf: e.confianza, src: e.fuente, note: e.incluye });
+    out.push({ label: "🎿 Renta de equipo (3 personas)", amount: num(resort.renta_equipo_total_usd), conf: "media" });
     const c = resort.comida_total_usd || {};
     const modo = food === "restaurantes" || l.cocina === false ? "restaurantes" : "cocinando";
-    out.push({ label: "Comida 6 días (" + (modo === "cocinando" ? "cocinando + algunas salidas" : "restaurantes") + ")", amount: num(c[modo]), conf: "baja", note: l.cocina === false && food === "cocinando" ? "Este hospedaje no tiene cocina" : "" });
+    out.push({ label: "🍽️ Comida 6 días (" + (modo === "cocinando" ? "cocinando + algunas salidas" : "restaurantes") + ")", amount: num(c[modo]), conf: "baja", note: l.cocina === false && food === "cocinando" ? "Este hospedaje no tiene cocina" : "" });
     return out;
   }
 
@@ -266,20 +269,85 @@
     $("#gallery").replaceChildren(...(kids.length ? kids : [el("p", { class: "muted" }, "Sin fotos todavía.")]));
   }
 
-  function renderTodo() {
-    const KEY = "skiar-todo";
+  // ---------- lista compartida (sin usuario ni contraseña) ----------
+  // Se guarda en jsonblob.com con una liga secreta; también en este navegador como respaldo.
+  const Nube = (() => {
+    const API = "https://jsonblob.com/api/jsonBlob";
+    const KID = "skiar-lista-id", KLOCAL = "skiar-todo";
+    const ls = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* sin almacenamiento */ } } };
+    let id = D.lista_id || ls.get(KID) || null;
     let done = {};
-    try { done = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { done = {}; }
+    try { done = JSON.parse(ls.get(KLOCAL) || "{}"); } catch (e) { done = {}; }
+    let status = id ? "cargando" : "local";
+    const listeners = [];
+    const emit = () => listeners.forEach((f) => f());
+    const saveLocal = () => ls.set(KLOCAL, JSON.stringify(done));
+    async function pull() {
+      if (!id) return;
+      try {
+        const r = await fetch(API + "/" + id, { headers: { Accept: "application/json" }, cache: "no-store" });
+        if (!r.ok) throw new Error(r.status);
+        const remoto = await r.json();
+        done = Object.assign({}, remoto.done || {});
+        saveLocal(); status = "nube";
+      } catch (e) { status = "error"; }
+      emit();
+    }
+    async function push(key, val) {
+      done[key] = val; saveLocal(); emit();
+      try {
+        if (!id) {
+          const r = await fetch(API, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ done }) });
+          if (!r.ok) throw new Error(r.status);
+          const loc = r.headers.get("Location") || r.headers.get("x-jsonblob-id") || "";
+          const nuevo = loc.split("/").pop();
+          if (!nuevo) throw new Error("sin id");
+          id = nuevo; ls.set(KID, id); writeHash();
+        } else {
+          // traer lo último antes de escribir para no borrar lo que marcó la otra persona
+          const r0 = await fetch(API + "/" + id, { headers: { Accept: "application/json" }, cache: "no-store" });
+          const remoto = r0.ok ? await r0.json() : { done: {} };
+          done = Object.assign({}, remoto.done || {}, { [key]: val });
+          saveLocal();
+          const r = await fetch(API + "/" + id, { method: "PUT", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ done }) });
+          if (!r.ok) throw new Error(r.status);
+        }
+        status = "nube";
+      } catch (e) { status = "error"; }
+      emit();
+    }
+    return {
+      id: () => id,
+      setId: (x) => { if (x && x !== id) { id = x; ls.set(KID, x); status = "cargando"; } },
+      done: () => done, status: () => status, pull, push,
+      onChange: (f) => listeners.push(f),
+    };
+  })();
+
+  function renderTodo() {
+    const done = Nube.done();
     const general = D.pendientes || [];
     const r = currentResort();
-    const list = [...general, ...((r && r.verificar) || []).map((t) => ({ texto: t, de: r.nombre }))];
-    $("#todo").replaceChildren(...list.map((t, i) => {
-      const id = (t.de || "g") + ":" + (t.texto || t).slice(0, 60);
-      const cb = el("input", { type: "checkbox" });
-      cb.checked = !!done[id];
-      cb.addEventListener("change", () => { done[id] = cb.checked; try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) { /* sin almacenamiento */ } });
-      return el("label", {}, cb, el("span", {}, t.texto || t, t.de ? el("span", { class: "src" }, " · " + t.de) : null, t.fecha ? el("strong", {}, " · " + t.fecha) : null));
-    }));
+    const list = [...general, ...((r && r.verificar) || []).map((t) => ({ texto: t, de: r.nombre, icono: "🔎" }))];
+    const st = Nube.status();
+    const liga = location.href;
+    const aviso = {
+      nube: ["ok", "☁️ Guardado y compartido. Ana y tú ven lo mismo en esta liga."],
+      cargando: ["", "⏳ Cargando la lista compartida…"],
+      local: ["", "💾 Marca algo y se crea su lista compartida automáticamente."],
+      error: ["warn", "⚠️ No se pudo conectar; se guardó en este dispositivo y se reintentará."],
+    }[st];
+    const hechos = list.filter((t) => done[(t.de || "g") + ":" + (t.texto || t).slice(0, 60)]).length;
+    $("#todo").replaceChildren(
+      el("div", { class: "sync " + aviso[0] }, el("span", {}, aviso[1], " ", el("strong", {}, `${hechos}/${list.length} listos`)),
+        Nube.id() ? el("button", { type: "button", onclick: async () => { try { await navigator.clipboard.writeText(liga); alert("Liga copiada. Mándasela a Ana y guárdenla en favoritos."); } catch (e) { prompt("Copia esta liga para Ana:", liga); } } }, "📲 Copiar liga para Ana") : null),
+      ...list.map((t) => {
+        const id = (t.de || "g") + ":" + (t.texto || t).slice(0, 60);
+        const cb = el("input", { type: "checkbox" });
+        cb.checked = !!done[id];
+        cb.addEventListener("change", () => Nube.push(id, cb.checked));
+        return el("label", { class: cb.checked ? "hecho" : "" }, cb, el("span", { class: "ico" }, t.icono || "📌"), el("span", {}, t.texto || t, t.de ? el("span", { class: "src" }, " · " + t.de) : null, t.fecha ? el("strong", {}, " · " + t.fecha) : null));
+      }));
   }
 
   function renderLinks() {
@@ -308,6 +376,10 @@
   });
 
   readHash();
+  Nube.onChange(() => { renderTodo(); writeHash(); });
+  Nube.pull();
+  window.addEventListener("focus", () => Nube.pull());
+  setInterval(() => { if (document.visibilityState === "visible") Nube.pull(); }, 30000);
   if (!D.resorts.length) {
     $("#destinos .hint").textContent = "Estamos terminando de juntar los precios por fecha. Vuelve en un rato.";
   }

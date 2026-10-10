@@ -1,0 +1,631 @@
+{
+  "slug": "steamboat",
+  "nombre": "Steamboat",
+  "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes del 19 de noviembre de 2026. Es el más mágico, pero no el más barato: ~US$10,850 con ski-in/ski-out real o ~US$8,750 en versión ajustada (estimados).",
+  "magia": [
+    "Pueblo del Viejo Oeste: Lincoln Ave y la tienda western F.M. Light & Sons (desde 1905), para comprarle sombrero y botas",
+    "Albercas termales en la nieve: Old Town Hot Springs en el centro (toboganes, alberca infantil) y Strawberry Park (pozas naturales; niños sólo de día)",
+    "Wild Blue Gondola: 3.16 millas, la más larga de Norteamérica según el resort",
+    "Greenhorn Ranch: zona de aprendizaje con 4 bandas mágicas y pendiente máxima de 15°",
+    "Base más baja de los grandes resorts de Colorado (2,103 m): menos mal de altura para una niña de 5",
+    "Howelsen Hill en el pueblo: esquí nocturno, pistas de hielo gratis iluminadas y cerro de trineos",
+    "Paseo en trineo jalado por caballos con cena (confirmar operador 2026-27)",
+    "Winter Carnival (~2-7 feb 2027, estimado): niños esquiando jalados por caballos por la calle principal"
+  ],
+  "costo_beneficio": 7,
+  "altitud_base_m": 2103,
+  "aeropuerto": "HDN",
+  "traslado": "Recomendado: volar a HDN (Hayden/Yampa Valley); de ahí son ~25-30 min en shuttle (~US$300 los 3, ida y vuelta, estimado). Alternativa: DEN, a ~156 millas y unas 2 h 45 min-3.5 h por carretera de montaña; shuttle compartido de ~US$110-120 por persona y sentido (estimado Rome2Rio), o camioneta AWD.",
+  "ruta": "Recomendada: American Torreón→Dallas (DFW, directo, ~2 h) y luego DFW→Hayden (HDN, ~2 h 46 min; temporada invernal desde ~17-dic-2026, frecuencia por confirmar), todo en un solo boleto; migración en Dallas. Alternativa de ahorro (~US$300-400 menos, pero casi un día más de viaje por sentido): manejar a Monterrey, volar Viva MTY→DEN (2 h 40 min) y seguir ~3-3.5 h por carretera, durmiendo una noche en Denver.",
+  "ninos_gratis": "Sí aplica a 5 años (programa para 12 o menos). Un niño gratis por cada adulto que compre un boleto de 5 días o más, por el mismo número de días. Hay que comprarlo ANTES de que empiece la temporada; la fecha límite publicada es el 19 de noviembre de 2026 (la temporada abre el 20-21 de noviembre). No aplica con Ikon, Ikon Base ni pase de temporada.",
+  "escuela": {
+    "programa": "Steamboat Ski & Ride School, clases grupales 'Young Kids' para 3-6 años (antes Sundance Kids / Bandits, en el Kids Vacation Center). Requisito: que ya no use pañal.",
+    "punto_encuentro": "'Mountain Camp', junto al Gondola Transit Center, en la base (pasando el letrero S-N-O-W, la entrada queda a la izquierda). Las demás edades se reúnen en Greenhorn Ranch.",
+    "precio_dia_usd": 280,
+    "total_5_dias_usd": 1400,
+    "incluye": "Horario 9:00-14:30 (llegar 15 min antes). Comida incluida. La renta de equipo es aparte. Si incluye boleto es dato en conflicto (con Kids Ski Free la niña ya lo tiene). Precio 2026-27 no publicado: estimamos US$250-320/día. En 2025-26 hubo 50% de descuento reservando con 8+ días; si lo repiten, 5 días saldrían en ~US$700.",
+    "fuente": "https://www.steamboat.com/explore/first-timers/snowboard-ski-lessons",
+    "confianza": "baja"
+  },
+  "forfaits": {
+    "adultos_total_usd": 1600,
+    "nina_total_usd": 0,
+    "como_comprar": "En línea en steamboat.com, ANTES del 19-nov-2026: 2 boletos de adulto de 5 días (precio 2026-27 no publicado; estimamos ~US$160/día; la taquilla 2025-26 costaba US$279) y canjear el boleto gratis de la niña. El Ikon Base (US$949-1,019, sólo 5 días en Steamboat) no conviene porque no califica para Kids Ski Free.",
+    "fuente": "https://www.steamboat.com/plan-your-trip/deals-and-packages/kids-ski-and-ride-free",
+    "confianza": "baja"
+  },
+  "renta_equipo_total_usd": 750,
+  "traslados_total_usd": 300,
+  "comida_total_usd": {
+    "cocinando": 850,
+    "restaurantes": 1400
+  },
+  "alojamientos": [
+    {
+      "nombre": "Torian Plum Plaza (1 recámara) — RECOMENDADO",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Ski-in/ski-out verdadero en Ski Time Square, junto a los puntos de abordaje de la góndola y de Christie Peak.",
+      "distancia_escuela": "~3-5 min a pie a 'Mountain Camp' junto al Gondola Transit Center (estimado, sin verificar en mapa)",
+      "recamaras": "1 rec. (king + sofá cama); también hay de 2 rec. (king + 2 individuales) por ~US$450-600/noche y de 3 rec.",
+      "cocina": true,
+      "amenidades": [
+        "alberca exterior climatizada",
+        "3 jacuzzis exteriores (las fuentes dicen entre 3 y 5)",
+        "gimnasio",
+        "lockers de esquí",
+        "estacionamiento subterráneo",
+        "shuttle y concierge"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 350,
+          "total_6_noches_con_impuestos_usd": 2914,
+          "fuente": "https://www.vacasa.com/usa/Torian-Plum-CO/",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 340,
+          "total_6_noches_con_impuestos_usd": 2841,
+          "fuente": "https://www.vacasa.com/usa/Torian-Plum-CO/",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 410,
+          "total_6_noches_con_impuestos_usd": 3347,
+          "fuente": "https://www.vacasa.com/usa/Torian-Plum-CO/",
+          "confianza": "baja"
+        }
+      },
+      "nota_precios": "Estimados. Dato real más cercano: promedios por unidad en Vacasa, sin fecha y sin impuestos (US$231-814; Plaza 403 US$338; Plaza 702 US$486) y un listado de 1 rec. con ~US$303 de promedio. Total = (6 × tarifa + limpieza 200 + damage waiver 120) × 1.204.",
+      "link": "https://www.torianplum.com/",
+      "galeria": "https://www.wotif.com/Steamboat-Springs-Hotels-Torian-Plum-Condominiums.h913875.Hotel-Information",
+      "pros": [
+        "Ski-in/ski-out real",
+        "Cocina completa (ahorra comidas)",
+        "Alberca y jacuzzis",
+        "En el corazón de la base, cerca de la escuela infantil"
+      ],
+      "contras": [
+        "Impuesto de renta de corto plazo de ~20.4%",
+        "La calidad varía por dueño",
+        "Algún listado de 1 rec. cobra US$75 por persona por el 3er y 4º huésped",
+        "Es el que más empuja el presupuesto"
+      ],
+      "ideal_si": "quieren salir esquiando por la puerta y cocinar, y aceptan un total de ~US$10,000-11,000."
+    },
+    {
+      "nombre": "The Steamboat Grand (habitación de hotel)",
+      "tipo": "hotel",
+      "ski_in_out": "caminando",
+      "detalle_acceso": "NO es ski-in/ski-out: está cruzando Mount Werner Circle desde Gondola Square, con escalera eléctrica.",
+      "distancia_escuela": "~3-5 min a pie; el Gondola Transit Center queda enfrente (estimado)",
+      "recamaras": "Habitaciones de hotel (2 queens o king). También tiene condos de 1-3 rec. con cocina y chimenea (~US$350-475/noche).",
+      "cocina": false,
+      "amenidades": [
+        "alberca exterior climatizada todo el año",
+        "2 jacuzzis",
+        "sauna y vapor",
+        "gimnasio",
+        "bar junto a la alberca",
+        "restaurantes y tiendas"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 280,
+          "total_6_noches_con_impuestos_usd": 1872,
+          "fuente": "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 270,
+          "total_6_noches_con_impuestos_usd": 1805,
+          "fuente": "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 330,
+          "total_6_noches_con_impuestos_usd": 2206,
+          "fuente": "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
+          "confianza": "baja"
+        }
+      },
+      "nota_precios": "Estimados. Dato real más cercano: Expedia, noviembre, US$164-171/noche (US$198-205 con impuestos); Kayak 'desde US$259'; hoteles con jacuzzi en Steamboat, febrero: US$201 entre semana y US$300 en fin de semana. Total = 6 × tarifa × 1.114 (hotel, sin el impuesto STR de 9%). Confirmar si cobran 'resort lodging fee'.",
+      "link": "https://www.travelocity.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+      "galeria": "https://ie.hotels.com/ho217282/the-steamboat-grand-steamboat-springs-united-states-of-america",
+      "pros": [
+        "Mejor costo-beneficio",
+        "Menores de 17 gratis con las camas existentes",
+        "Impuesto de hotel (~11.4%) en lugar de ~20.4%",
+        "Alberca y jacuzzis",
+        "Enfrente de la escuela infantil"
+      ],
+      "contras": [
+        "No es ski-in/ski-out: hay que cruzar la calle con el equipo",
+        "La habitación estándar no tiene cocina",
+        "Estacionamiento US$25/noche si llevan carro"
+      ],
+      "ideal_si": "lo que más importa es el precio y la escuela de la niña, más que salir esquiando por la puerta."
+    },
+    {
+      "nombre": "Kutuk Condominiums (2 recámaras)",
+      "tipo": "condo",
+      "ski_in_out": "caminando",
+      "detalle_acceso": "Ski-in / walk-out junto a Burgess Creek, justo debajo de la base de la góndola; para salir hay que caminar un poco. Hay shuttle gratis.",
+      "distancia_escuela": "~5-10 min a pie o en shuttle gratis (estimado; los listados se contradicen: 1 min o 13 min)",
+      "recamaras": "Sólo 2 a 4 recámaras (no hay de 1 rec.)",
+      "cocina": true,
+      "amenidades": [
+        "jacuzzis exteriores con vista al arroyo",
+        "fogata comunal",
+        "terraza y asadores",
+        "lavandería",
+        "guardaesquís",
+        "shuttle gratis",
+        "no se encontró alberca"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 400,
+          "total_6_noches_con_impuestos_usd": 3305,
+          "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 390,
+          "total_6_noches_con_impuestos_usd": 3233,
+          "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 450,
+          "total_6_noches_con_impuestos_usd": 3666,
+          "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
+          "confianza": "baja"
+        }
+      },
+      "nota_precios": "Estimados. Dato real más cercano: promedios de Vacasa, sin fecha, 2 rec. US$378-392/noche. Total = (6 × tarifa + limpieza 225 + damage waiver 120) × 1.204.",
+      "link": "https://vacasa.com/usa/Kutuk-Condos-CO",
+      "galeria": "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information",
+      "pros": [
+        "Las 2 recámaras más baratas con acceso esquiando",
+        "Tranquilo",
+        "Cocina y jacuzzi junto al arroyo"
+      ],
+      "contras": [
+        "No es ski-out real",
+        "No tiene alberca",
+        "Más caro que Torian Plum de 1 rec.",
+        "No todas las unidades están remodeladas; estacionamiento apretado"
+      ],
+      "ideal_si": "quieren que la niña tenga su propia recámara, van a cocinar y no les molesta caminar 5-10 min."
+    },
+    {
+      "nombre": "One Steamboat Place (2 recámaras) — premium",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Ski-in/ski-out en Gondola Square, a pasos de la góndola.",
+      "distancia_escuela": "~1-2 min a pie (estimado); es lo más cerca posible",
+      "recamaras": "Residencias de 2 a 4+ recámaras",
+      "cocina": true,
+      "amenidades": [
+        "alberca climatizada compartida",
+        "cuarto de juegos familiar",
+        "Little Tykes playroom",
+        "servicios tipo club"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 1100,
+          "total_6_noches_con_impuestos_usd": 10217,
+          "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+          "confianza": "baja"
+        },
+        "B": {
+          "noche_usd": 1050,
+          "total_6_noches_con_impuestos_usd": 9798,
+          "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+          "confianza": "baja"
+        },
+        "C": {
+          "noche_usd": 1300,
+          "total_6_noches_con_impuestos_usd": 11893,
+          "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+          "confianza": "baja"
+        }
+      },
+      "nota_precios": "Estimados. Sólo hay tarifas de verano 2024 (US$641-727/noche). Cargos: resort fee de 16% + impuestos, club fee de US$80/noche y limpieza. Total = (6 × tarifa × 1.16 + 480 + ~350) × 1.204. Hay service fee para huéspedes mayores de 10 años; no aplica a la niña.",
+      "link": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+      "galeria": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+      "pros": [
+        "Lo mejor de Steamboat",
+        "Sala de juegos infantil",
+        "Góndola en la puerta"
+      ],
+      "contras": [
+        "Cuesta 3-4 veces más",
+        "Cargos ocultos altos (16% + US$80/noche)",
+        "Sólo el hospedaje rebasa el presupuesto completo"
+      ],
+      "ideal_si": "el viaje se vuelve multifamiliar o el presupuesto sube a US$15,000+."
+    }
+  ],
+  "ventanas": {
+    "A": "dom 10 → sáb 16 ene 2027 (valle; termina al iniciar el fin de semana de MLK)",
+    "B": "dom 24 → sáb 30 ene 2027 (valle de precios después de MLK; recomendada por precio)",
+    "C": "dom 28 feb → sáb 6 mar 2027 (mejor nieve y menos frío; ~15-20% más caro)"
+  },
+  "fotos": [
+    {
+      "categoria": "ubicacion",
+      "opcion": "Centro / Lincoln Ave",
+      "descripcion": "Lincoln Avenue, distrito histórico del centro (vista NO desde 5th St., 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Downtown_Historic_District.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Downtown_Historic_District.JPG",
+      "credito": "Jeffrey Beall (Wikimedia Commons)",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Centro",
+      "descripcion": "Centro de Steamboat Springs (2006)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_downtown.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_downtown.jpg",
+      "credito": "Flickr vía Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Winter Carnival",
+      "descripcion": "Winter Carnival: carreras y esquí jalado por caballos en el centro",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter_Carnival_in_Steamboat_Springs.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Winter_Carnival_in_Steamboat_Springs.jpg",
+      "credito": "Wikimedia Commons (autor: ver página)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Howelsen Hill",
+      "descripcion": "Howelsen Hill, colina de esquí del pueblo (2011)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Howelsen_Hill_Ski_Area.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Howelsen_Hill_Ski_Area.JPG",
+      "credito": "Jeffrey Beall (Wikimedia Commons)",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Trineo de perros",
+      "descripcion": "Paseo en trineo de perros en Steamboat",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Dog_Sledding_%285258733493%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Springs,_Colorado",
+      "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo nevado",
+      "descripcion": "Pueblo nevado de Steamboat visto desde una ventana",
+      "url_imagen": "",
+      "url_pagina": "https://unsplash.com/photos/uACJt32MAZQ",
+      "credito": "Courtney Pickens (Unsplash)",
+      "licencia": "Unsplash License"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Pueblo",
+      "descripcion": "Steamboat Springs, Colorado",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/kenlund/68121499",
+      "credito": "Ken Lund (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Granero icónico",
+      "descripcion": "El granero icónico de Steamboat con la primera nevada",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/resortqueststeamboat/1554246620",
+      "credito": "ResortQuest Steamboat (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Strawberry Park Hot Springs",
+      "descripcion": "Strawberry Park Hot Springs con vapor y nieve (dic 2019)",
+      "url_imagen": "",
+      "url_pagina": "https://gazette.com/2019/12/23/rustic-colorado-hot-spring-a-cant-miss-winter-destination/",
+      "credito": "Denver Gazette",
+      "licencia": "© (sólo consulta)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Old Town Hot Springs",
+      "descripcion": "Old Town Hot Springs: toboganes (página oficial)",
+      "url_imagen": "",
+      "url_pagina": "https://oldtownhotsprings.org/water-slides/",
+      "credito": "Old Town Hot Springs",
+      "licencia": "© (oficial)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Galería general",
+      "descripcion": "Galería de imágenes de Steamboat",
+      "url_imagen": "",
+      "url_pagina": "https://www.worldtravelguide.net/guides/north-america/united-states-of-america/colorado/steamboat/pictures",
+      "credito": "World Travel Guide",
+      "licencia": "©"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "Fish Creek Falls",
+      "descripcion": "Fish Creek Falls (categoría con varias fotos)",
+      "url_imagen": "",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Fish_Creek_Falls",
+      "credito": "Wikimedia Commons",
+      "licencia": "varias"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Montaña",
+      "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+      "credito": "CarTick (Wikimedia Commons)",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Mount Werner",
+      "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+      "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Pista",
+      "descripcion": "Steamboat DOWN THE HILL: bajando la pista",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_DOWN_THE_HILL_%285259349458%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+      "credito": "Flickr vía Wikimedia Commons (URL de imagen derivada del nombre exacto listado en la categoría; verificar)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Familias",
+      "descripcion": "Familia esquiando en Steamboat",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/resortqueststeamboat/2111141111/",
+      "credito": "ResortQuest Steamboat (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Góndola",
+      "descripcion": "Vista desde la góndola (ene 2009)",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/leeco/3213473197",
+      "credito": "leeco (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Esquí nocturno",
+      "descripcion": "Steamboat al anochecer con pistas iluminadas",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/native5280/24601525145/",
+      "credito": "native5280 (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Nieve nueva",
+      "descripcion": "Steamboat con 5 pulgadas de nieve nueva",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/resortqueststeamboat/2092853873/",
+      "credito": "ResortQuest Steamboat (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Greenhorn Ranch",
+      "descripcion": "Greenhorn Ranch: zona de aprendizaje con bandas mágicas (página oficial)",
+      "url_imagen": "",
+      "url_pagina": "https://www.steamboat.com/the-mountain/greenhorn-ranch",
+      "credito": "Steamboat Resort",
+      "licencia": "© (oficial)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Greenhorn Ranch",
+      "descripcion": "World Class Learning at Greenhorn Ranch (fotos y video)",
+      "url_imagen": "",
+      "url_pagina": "https://fullsteamahead.steamboat.com/world-class-learning-experience-at-greenhorn-ranch/",
+      "credito": "Steamboat Resort",
+      "licencia": "©"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Greenhorn Ranch",
+      "descripcion": "Video: aprender a esquiar en Greenhorn Ranch",
+      "url_imagen": "",
+      "url_pagina": "https://fullsteamahead.steamboat.com/video-learn-to-ski-or-ride-at-greenhorn-ranch/",
+      "credito": "Steamboat Resort",
+      "licencia": "©"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Wild Blue Gondola",
+      "descripcion": "Cabinas nuevas de la Wild Blue Gondola",
+      "url_imagen": "",
+      "url_pagina": "https://www.steamboatpilot.com/news/steamboat-resort-unveils-wild-blue-gondola-cabins/",
+      "credito": "Steamboat Pilot",
+      "licencia": "©"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "Montaña",
+      "descripcion": "Blue skies in Steamboat Springs",
+      "url_imagen": "",
+      "url_pagina": "https://www.onthesnow.com/colorado/steamboat/resort-photos-id150183--blue-skies-in-steamboat-springs.html",
+      "credito": "OnTheSnow",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Torian Plum",
+      "descripcion": "Torian Plum: sitio oficial con fotos",
+      "url_imagen": "",
+      "url_pagina": "https://www.torianplum.com/",
+      "credito": "Torian Plum",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Torian Plum",
+      "descripcion": "Torian Plum: galería (exterior, cocina, sala)",
+      "url_imagen": "",
+      "url_pagina": "https://www.wotif.com/Steamboat-Springs-Hotels-Torian-Plum-Condominiums.h913875.Hotel-Information",
+      "credito": "Wotif",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Torian Plum",
+      "descripcion": "Torian Plum: reseña con fotos",
+      "url_imagen": "",
+      "url_pagina": "https://scoutski.com/torian-plum-plaza",
+      "credito": "Scout",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Torian Plum",
+      "descripcion": "Torian Plum: unidad Plaza 203",
+      "url_imagen": "",
+      "url_pagina": "https://vacasa.com/unit/38230",
+      "credito": "Vacasa",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Steamboat Grand",
+      "descripcion": "Steamboat Grand: habitaciones y alberca",
+      "url_imagen": "",
+      "url_pagina": "https://ie.hotels.com/ho217282/the-steamboat-grand-steamboat-springs-united-states-of-america",
+      "credito": "Hotels.com",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Steamboat Grand",
+      "descripcion": "Steamboat Grand: galería",
+      "url_imagen": "",
+      "url_pagina": "https://www.travelocity.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+      "credito": "Travelocity",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Kutuk",
+      "descripcion": "Kutuk: jacuzzis junto al arroyo y unidades",
+      "url_imagen": "",
+      "url_pagina": "https://scoutski.com/kutuk-condos",
+      "credito": "Scout",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Kutuk",
+      "descripcion": "Kutuk: galería",
+      "url_imagen": "",
+      "url_pagina": "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information",
+      "credito": "Expedia",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "One Steamboat Place",
+      "descripcion": "One Steamboat Place: residencia Crestone Peak #205",
+      "url_imagen": "",
+      "url_pagina": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
+      "credito": "Villas of Distinction",
+      "licencia": "©"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Edgemont (alternativa premium)",
+      "descripcion": "Edgemont Steamboat",
+      "url_imagen": "",
+      "url_pagina": "https://www.flickr.com/photos/resortqueststeamboat/4345085756/",
+      "credito": "ResortQuest Steamboat (Flickr)",
+      "licencia": "ver página"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "Bear Claw (plan B)",
+      "descripcion": "Bear Claw Condos",
+      "url_imagen": "",
+      "url_pagina": "https://snowscene.com.au/accommodation/bear-claw-condos/",
+      "credito": "Snowscene",
+      "licencia": "©"
+    }
+  ],
+  "verificar": [
+    "URGENTE: comprar los boletos de adulto de 5 días y canjear el Kids Ski Free de la niña antes del 19-nov-2026. Confirmar que la fecha aplica a compras sueltas (no sólo sVIP), la política de cambios y reembolsos, y llevar comprobante de edad.",
+    "Precio real 2026-27 de los boletos de adulto de 5 días (no publicado).",
+    "Escuela: programa y precio 2026-27 para 5 años, punto de encuentro (Mountain Camp o Greenhorn Ranch), si incluye boleto, renta y comida, y si repiten el 50% de descuento reservando con 8+ días.",
+    "Vuelos: frecuencia de American DFW–HDN en las fechas y tarifa TRC–HDN en un solo boleto.",
+    "Hospedaje: cotizar con las fechas exactas; impuesto aplicable (~20.4% renta o ~11.4% hotel), limpieza, damage waiver, resort fee y política de cancelación; que la unidad sea ski-in/ski-out real.",
+    "Visas y pasaportes vigentes, sobre todo los de la niña.",
+    "Toboganes de Old Town Hot Springs: estatura mínima 44 pulgadas (112 cm).",
+    "Strawberry Park: niños sólo de día; reservar horario y shuttle (de noviembre a mayo exigen 4x4).",
+    "Cena con trineo: Haymaker aparece 'permanently closed'; confirmar operador (Bar Lazy L, Yee Haw).",
+    "Fechas del Winter Carnival 2027 (estimadas 2-7 feb).",
+    "Seguro de viaje con Cancel For Any Reason."
+  ],
+  "fuentes": [
+    "https://www.steamboat.com/plan-your-trip/deals-and-packages/kids-ski-and-ride-free",
+    "https://steamboat.com/plan-your-trip/deals-and-packages/svip/experiences",
+    "https://www.steamboat.com/plan-your-trip/pre-arrival-guide",
+    "https://www.steamboat.com/explore/first-timers/snowboard-ski-lessons",
+    "https://www.steamboat.com/plan-your-trip/snowboarding-ski-lessons",
+    "https://www.steamboat.com/the-mountain/greenhorn-ranch",
+    "https://en.wikipedia.org/wiki/Steamboat_Ski_Resort",
+    "https://www.steamboatpilot.com/news/ikon-pass-2026-27-on-sale-higher-price/",
+    "https://peterglenn.com/ikon-base-pass-2026-27/",
+    "https://www.coloradotopia.com/ski-resorts/steamboat/lift-tickets/",
+    "https://snowstash.com/usa/colorado/steamboat/lift-tickets",
+    "https://www.snowthere.com/resorts/united-states/steamboat",
+    "https://theavantski.com/steamboat-family",
+    "https://www.powderhounds.com/USA/Colorado/Steamboat/Facilities-Services.aspx",
+    "https://zrankings.com/best-time-to-ski/steamboat",
+    "https://www.onthesnow.com/colorado/steamboat/historical-snowfall.html?y=0",
+    "https://www.flightsfrom.com/DFW-HDN",
+    "https://www.aa.com/es-us/vuelos-de-dallas-a-hayden-(colorado)",
+    "https://www.aa.com/es-us/vuelos-de-dallas-a-torreón",
+    "https://5280.com/first-timers-guide-steamboat-springs/",
+    "https://www.rome2rio.com/s/Red-Rocks-Amphitheatre/Steamboat-Springs",
+    "https://oldtownhotsprings.org/water-slides/",
+    "https://strawberryhotsprings.com/?p=4371",
+    "https://www.steamboatchamber.com/blog/post/top-7-winter-activities-at-howelsen-hill/",
+    "https://www.carnifest.com/steamboat-springs-colorado-winter-carnival-2027/",
+    "https://www.opentable.com/haymaker?lang=es",
+    "https://www.simplysteamboat.com/New-Short-Term-Rental-Tax-Affordable-Housing.php",
+    "https://theagencysteamboat.com/blog/str-rules-and-taxes-that-shape-mountain-area-returns",
+    "https://www.torianplum.com/",
+    "https://www.vacasa.com/usa/Torian-Plum-CO/",
+    "https://vacasa.com/usa/Kutuk-Condos-CO",
+    "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
+    "https://www.kayak.com/Steamboat-Springs-Hotels_Hot-Tub.Hht.34792.hotel.ksp",
+    "https://www.travelocity.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.h687627.Hotel-Information",
+    "https://www.ski.com/blog/5-days-in-steamboat-a-family-ski-vacation-guide",
+    "https://scoutski.com/kutuk-condos",
+    "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205"
+  ]
+}
