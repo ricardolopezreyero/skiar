@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="styles.css?v=f96a1f166f">
+  <link rel="stylesheet" href="styles.css?v=d23476474d">
 </head>
 <body>
   <header class="hero">
@@ -50,7 +50,7 @@
       <p class="hint">Tres semanas sin temporada alta. Todas evitan Navidad, MLK, Presidents' Day y los spring breaks de Texas.</p>
       <div id="ventanas" class="chips" role="radiogroup" aria-label="Fechas"></div>
       <div id="nieve" class="nieve" hidden>
-        <h3 class="sub-h">❄️ ¿Cuánta nieve habrá? Estimado de base por destino y fecha</h3>
+        <h3 class="sub-h" id="nieve-titulo">❄️ Nieve esperada</h3>
         <div id="nieve-chart" class="nieve-chart"></div>
         <p class="hint small" id="nieve-nota"></p>
       </div>
@@ -92,11 +92,13 @@
       <h2><span class="num">5</span> Cuadro comparativo: todas contra todas</h2>
       <p class="hint">Las 16 combinaciones (destino + hospedaje) en una sola tabla. Toca un encabezado para ordenar, filtra con los botones y toca <strong>Elegir</strong> para ver su presupuesto completo.</p>
       <div class="cmp-tools">
-        <div class="seg" id="cmp-ventana" role="radiogroup" aria-label="Fechas"></div>
         <div class="filters" id="cmp-filtros"></div>
       </div>
       <div id="cmp-podio" class="podio"></div>
-      <div class="table-scroll"><table id="cmp" class="cmp"></table></div>
+      <details class="tbl" data-auto>
+        <summary>📊 Ver tabla completa (16 opciones)</summary>
+        <div class="table-scroll"><table id="cmp" class="cmp"></table></div>
+      </details>
       <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
     </section>
 
@@ -109,7 +111,11 @@
         <div id="mapa-ruta" class="ruta"></div>
       </div>
       <h3 class="sub-h">⚖️ Viajar contra esquiar, por opción</h3>
-      <div class="table-scroll"><table id="balance" class="cmp balance"></table></div>
+      <div id="balance-top" class="podio"></div>
+      <details class="tbl" data-auto>
+        <summary>⚖️ Ver tabla completa (16 opciones)</summary>
+        <div class="table-scroll"><table id="balance" class="cmp balance"></table></div>
+      </details>
       <p class="hint small" id="balance-nota"></p>
     </section>
 
@@ -153,6 +159,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="data.js?v=02a7cea4b8"></script>
-  <script src="app.js?v=1aaf4e5992"></script>
+  <script src="app.js?v=dd3206792e"></script>
 </body>
 </html>

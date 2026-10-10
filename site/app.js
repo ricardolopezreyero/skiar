@@ -98,14 +98,14 @@
     }
     if (r.tras) out.push({ label: "🚙 Traslado aeropuerto ↔ montaña", amount: num(r.tras.total_usd), conf: r.tras.confianza, src: r.tras.fuente, note: r.tras.descripcion });
     const lp = lodgingPrice(l, v);
-    out.push({ label: "🏔️ Hospedaje 6 noches · " + (l.nombre || ""), amount: lp.total, conf: lp.conf, src: lp.src, note: lp.nota });
+    out.push({ label: "🏔️ Hospedaje 6 noches · " + corto(l.nombre), amount: lp.total, conf: lp.conf, src: lp.src, note: lp.nota });
     const f = resort.forfaits || {};
     out.push({ label: "🎟️ Forfaits adultos (5 días × 2)", amount: num(f.adultos_total_usd), conf: f.confianza, src: f.fuente, note: f.como_comprar });
     const ninaGratis = l.nina_gratis !== false;
     const nina = ninaGratis ? num(f.nina_total_usd) : num(f.nina_total_sin_programa_usd) ?? num(f.nina_total_usd);
     out.push({ label: "👧 Forfait de la niña", amount: nina, conf: f.confianza, note: nina === 0 ? "Gratis: " + (resort.ninos_gratis || "") : (ninaGratis ? "" : "Este hospedaje no califica para el programa de niños gratis") });
     const e = resort.escuela || {};
-    out.push({ label: "⛷️ Escuela de esquí (5 días) · " + (e.programa || ""), amount: num(e.total_5_dias_usd), conf: e.confianza, src: e.fuente, note: e.incluye });
+    out.push({ label: "⛷️ Escuela de esquí de la niña", amount: num(e.total_5_dias_usd), conf: e.confianza, src: e.fuente, note: e.incluye });
     out.push({ label: "🎿 Renta de equipo (3 personas)", amount: num(resort.renta_equipo_total_usd), conf: "media" });
     const c = resort.comida_total_usd || {};
     const modo = food === "restaurantes" || l.cocina === false ? "restaurantes" : "cocinando";
@@ -132,7 +132,7 @@
     const box = $("#ventanas");
     box.replaceChildren(...VENTANAS.map((w) =>
       el("button", { type: "button", class: "chip" + (state.v === w.id ? " on" : ""), role: "radio", "aria-checked": String(state.v === w.id), onclick: () => { state.v = w.id; render(); } },
-        el("strong", {}, w.titulo + " 2027"), el("span", {}, w.nota))));
+        el("strong", { class: "largo" }, w.titulo + " 2027"), el("strong", { class: "corto" }, w.corto), el("span", {}, w.nota))));
   }
 
   function renderResorts() {
@@ -147,7 +147,7 @@
       if (r.altitud_base_m) badges.push(el("span", { class: "badge" + (r.altitud_base_m > 2800 ? " warn" : "") }, "Base " + r.altitud_base_m.toLocaleString("es-MX") + " m"));
       if (r.aeropuerto) badges.push(el("span", { class: "badge" }, "✈ " + r.aeropuerto));
       const nv = nieve(r.slug, state.v);
-      if (nv) badges.push(el("span", { class: "badge " + (nv.prob_buena === "alta" ? "ok" : nv.prob_buena === "baja" ? "warn" : ""), title: nv.nota || "" }, `❄️ ~${nv.cm} cm de base`));
+      if (nv) badges.push(el("span", { class: "badge " + (nv.prob_buena === "alta" ? "ok" : nv.prob_buena === "baja" ? "warn" : ""), title: nv.nota || "" }, `❄️ ${nv.cm} cm de nieve`));
       return el("button", { type: "button", class: "resort" + (state.r === r.slug ? " on" : ""), onclick: () => { state.r = r.slug; state.l = null; render(); $("#hospedaje").scrollIntoView(); } },
         el("div", { class: "ph" }, ph ? el("div", { class: "ph-img photo-tone", style: `background-image:url("${ph}")` }) : null, el("span", { class: "score" }, "Costo-beneficio " + (r.costo_beneficio ?? "—") + "/10")),
         el("div", { class: "body" },
@@ -208,7 +208,7 @@
     if (!r) return;
     const w = VENTANAS.find((x) => x.id === state.v);
     const l = (r.alojamientos || [])[state.l] || {};
-    $("#combo-title").textContent = `${r.nombre} · ${l.nombre || "—"} · ${w.titulo} 2027`;
+    $("#combo-title").textContent = `${r.nombre} · ${corto(l.nombre) || "—"} · ${w.corto}`;
     document.querySelectorAll("[data-food]").forEach((b) => b.classList.toggle("on", b.dataset.food === state.f));
     const its = items(r, state.l, state.v, state.f);
     const total = sum(its);
@@ -260,7 +260,6 @@
   }
 
   function renderComparativo() {
-    $("#cmp-ventana").replaceChildren(...VENTANAS.map((w) => el("button", { type: "button", class: state.v === w.id ? "on" : "", onclick: () => { state.v = w.id; render(); } }, "📅 " + w.corto)));
     const f = [["soloSki", "⛷️ Solo ski-in/ski-out"], ["soloGratis", "👧 Niña esquía gratis"], ["soloPres", "💰 Hasta $8,000"]];
     $("#cmp-filtros").replaceChildren(...f.map(([k, txt]) => el("button", { type: "button", class: "filter" + (cmp[k] ? " on" : ""), "aria-pressed": String(cmp[k]), onclick: () => { cmp[k] = !cmp[k]; renderComparativo(); } }, txt)));
 
@@ -288,7 +287,7 @@
       el("span", { class: "podio-total " + level(x.t.total) }, money(x.t.total)))));
 
     const th = (k, txt) => el("th", { class: "sortable" + (cmp.sort === k ? " on" : ""), onclick: () => { cmp.dir = cmp.sort === k ? -cmp.dir : 1; cmp.sort = k; renderComparativo(); } }, txt, cmp.sort === k ? (cmp.dir > 0 ? " ▲" : " ▼") : "");
-    const head = el("tr", {}, th("nombre", "Opción"), th("total", "💰 Total del viaje"), el("th", {}, "📅 Las 3 fechas"), th("hosp", "🏔️ Hospedaje"), th("ski", "⛷️ Acceso a pista"), th("gratis", "👧 Niña gratis"), el("th", {}, "🏫 Escuela infantil"), el("th", {}, "🛏️ Cuartos / cocina"), th("alt", "📏 Altitud"), th("cb", "✨ Costo-beneficio"), th("viaje", "🕒 Horas viajando"), th("nieve", "❄️ Nieve"), el("th", {}, ""));
+    const head = el("tr", {}, th("nombre", "Opción"), th("total", "💰 Total del viaje"), th("hosp", "🏔️ Hospedaje"), th("ski", "⛷️ Acceso a pista"), th("gratis", "👧 Niña gratis"), el("th", {}, "🏫 Escuela infantil"), el("th", {}, "🛏️ Cuartos / cocina"), th("alt", "📏 Altitud"), th("cb", "✨ Costo-beneficio"), th("viaje", "🕒 Horas viajando"), th("nieve", "❄️ Nieve"), el("th", {}, ""));
     const sel = (x) => state.r === x.r.slug && state.l === x.i;
     const body = rows.map((x) => {
       const pct = x.t.sinHospedaje ? 0 : Math.min(100, (x.t.total / 12000) * 100);
@@ -296,7 +295,6 @@
       return el("tr", { class: sel(x) ? "sel" : "" },
         el("td", { class: "opt" }, el("strong", {}, x.r.nombre), el("span", {}, corto(x.l.nombre))),
         el("td", { class: "tot" }, x.t.sinHospedaje ? el("span", { class: "missing" }, "sin precio") : [el("div", { class: "tot-n " + level(x.t.total) }, money(x.t.total) + star(x.t.total === minTotal)), el("div", { class: "mini-bar" }, el("i", { style: `width:${pct}%;background:${color}` }))]),
-        el("td", { class: "fechas" }, VENTANAS.map((w, n) => el("span", { class: "f " + (x.porFecha[n].sinHospedaje ? "" : level(x.porFecha[n].total)) + (w.id === state.v ? " cur" : ""), title: w.titulo }, x.porFecha[n].sinHospedaje ? "—" : "$" + (x.porFecha[n].total / 1000).toFixed(1) + "k"))),
         el("td", { class: "n" }, money(x.hosp), " ", conf(x.conf), star(x.hosp === minHosp)),
         el("td", {}, ["🔴 Shuttle", "🟡 Caminando", "🟢 Ski-in/ski-out"][x.ski]),
         el("td", {}, x.gratis ? "✅ Sí" : "— Paga"),
@@ -429,6 +427,10 @@
     const rows = [];
     D.resorts.forEach((r) => (r.alojamientos || []).forEach((l, i) => rows.push({ r, l, i, b: balance(r, i) })));
     rows.sort((a, b) => ((b.b.esqui || 0) / (b.b.viajando || 1e9)) - ((a.b.esqui || 0) / (a.b.viajando || 1e9)));
+    $("#balance-top").replaceChildren(...rows.slice(0, 3).map((x, n) => el("button", { type: "button", class: "podio-item", onclick: () => { mapaSlug = x.r.slug; elegir(x); } },
+      el("span", { class: "medal" }, ["🥇", "🥈", "🥉"][n]),
+      el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre) + " · " + fmtH(x.b.viajando) + " viajando")),
+      el("span", { class: "podio-total ok" }, "⛷️ " + fmtH(x.b.esqui)))));
     const head = el("tr", {}, el("th", {}, "Opción"), el("th", {}, "🛫 Ida"), el("th", {}, "🛬 Regreso"), el("th", {}, "🚶 Hotel ↔ escuela (5 días)"), el("th", {}, "🕒 Total viajando"), el("th", {}, "⛷️ Horas de pista (5 días)"), el("th", {}, "📊 Nieve por hora de viaje"), el("th", {}, ""));
     $("#balance").replaceChildren(el("thead", {}, head), el("tbody", {}, rows.map((x) => {
       const ratio = x.b.esqui && x.b.viajando ? x.b.esqui / x.b.viajando : null;
@@ -442,7 +444,7 @@
         el("td", { class: "n" }, ratio ? el("span", { class: "tot-n " + (ratio >= 1.4 ? "ok" : ratio >= 1.1 ? "warn" : "bad") }, ratio.toFixed(1) + " h") : "—"),
         el("td", {}, el("button", { type: "button", class: "btn sm", onclick: () => { mapaSlug = x.r.slug; elegir(x); } }, "Elegir")));
     })));
-    $("#balance-nota").textContent = `Cuenta: ${DIAS_ESQUI} días de esquí con las telesillas abiertas todo el día; "viajando" suma la ida, el regreso y las vueltas diarias del hospedaje a la escuela de la niña. Ordenado de más a menos nieve por cada hora de viaje.`;
+    $("#balance-nota").textContent = `${DIAS_ESQUI} días de esquí. "Viajando" = ida + regreso + vueltas diarias a la escuela.`;
   }
 
   // ---------- nieve estimada ----------
@@ -453,22 +455,22 @@
   function renderNieve() {
     if (!N.resorts) return;
     $("#nieve").hidden = false;
-    let max = 0;
-    D.resorts.forEach((r) => VENTANAS.forEach((w) => { const n = nieve(r.slug, w.id); if (n) max = Math.max(max, n.alto || n.cm || 0); }));
-    max = Math.max(max, 50);
-    $("#nieve-chart").replaceChildren(...D.resorts.map((r) => el("div", { class: "nv-row" },
-      el("div", { class: "nv-name" }, r.nombre),
-      el("div", { class: "nv-bars" }, VENTANAS.map((w) => {
-        const n = nieve(r.slug, w.id);
-        if (!n) return el("div", { class: "nv-bar" }, "—");
-        const h = (n.cm / max) * 100, lo = ((n.bajo ?? n.cm) / max) * 100, hi = ((n.alto ?? n.cm) / max) * 100;
-        return el("div", { class: "nv-bar" + (w.id === state.v ? " cur" : ""), title: `${w.titulo}: ${n.cm} cm (rango ${n.bajo}–${n.alto} cm). ${n.nota || ""}` },
-          el("div", { class: "nv-track" },
-            el("div", { class: "nv-range", style: `left:${lo}%;width:${Math.max(1, hi - lo)}%` }),
-            el("div", { class: "nv-fill " + (n.prob_buena || "media"), style: `width:${h}%` })),
-          el("div", { class: "nv-lbl" }, el("strong", {}, `❄️ ${n.cm} cm`), el("span", {}, ` ${w.corto} · ${n.bajo}–${n.alto} cm`)));
-      })))));
-    $("#nieve-nota").textContent = (N.metodo || "") + (N.enso ? " " + N.enso : "") + " La barra es el estimado central; la franja clara, el rango entre un año seco y uno bueno.";
+    const w = VENTANAS.find((x) => x.id === state.v);
+    $("#nieve-titulo").textContent = `❄️ Nieve esperada · ${w.corto}`;
+    let max = 50;
+    D.resorts.forEach((r) => { const n = nieve(r.slug, state.v); if (n) max = Math.max(max, n.alto || n.cm || 0); });
+    $("#nieve-chart").replaceChildren(...D.resorts.map((r) => {
+      const n = nieve(r.slug, state.v);
+      if (!n) return el("div", { class: "nv-row" }, el("div", { class: "nv-name" }, r.nombre), el("div", {}, "—"));
+      const h = (n.cm / max) * 100, lo = ((n.bajo ?? n.cm) / max) * 100, hi = ((n.alto ?? n.cm) / max) * 100;
+      return el("div", { class: "nv-row", title: n.nota || "" },
+        el("div", { class: "nv-name" }, r.nombre),
+        el("div", { class: "nv-track" },
+          el("div", { class: "nv-range", style: `left:${lo}%;width:${Math.max(1, hi - lo)}%` }),
+          el("div", { class: "nv-fill " + (n.prob_buena || "media"), style: `width:${h}%` })),
+        el("div", { class: "nv-lbl" }, el("strong", {}, `${n.cm} cm`), el("span", {}, ` ${n.bajo}–${n.alto}`)));
+    }));
+    $("#nieve-nota").textContent = "Franja clara: de un año seco a uno bueno.";
   }
 
   let galSlug = null;
@@ -632,6 +634,12 @@
   $("#share-btn").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(location.href); $("#share-ok").hidden = false; setTimeout(() => ($("#share-ok").hidden = true), 2500); } catch (e) { prompt("Copia esta liga:", location.href); }
   });
+
+  // Tablas: abiertas en computadora, plegadas en celular
+  const esCel = window.matchMedia("(max-width: 700px)");
+  const ajustarTablas = () => document.querySelectorAll("details.tbl[data-auto]").forEach((d) => { d.open = !esCel.matches; });
+  ajustarTablas();
+  (esCel.addEventListener ? esCel.addEventListener("change", ajustarTablas) : esCel.addListener(ajustarTablas));
 
   readHash();
   Nube.onChange(() => { renderTodo(); writeHash(); });

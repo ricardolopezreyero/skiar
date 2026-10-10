@@ -332,3 +332,86 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .tab:not(.on) .tab-count { background: var(--bg); color: var(--muted); }
 [hidden] { display: none !important; }
 .todo input { flex: none; }
+
+/* ---------- nieve (solo fechas elegidas) ---------- */
+.nieve-chart { gap: 10px; }
+.nv-row { grid-template-columns: 120px 1fr 110px; }
+.nv-lbl { text-align: right; }
+.nv-lbl strong { font-size: 1rem; }
+
+/* ---------- tablas plegables ---------- */
+details.tbl { margin-top: 10px; }
+details.tbl > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-weight: 600; font-size: .9rem; margin-bottom: 10px; }
+details.tbl > summary::-webkit-details-marker { display: none; }
+details.tbl > summary::after { content: "▾"; }
+details.tbl[open] > summary::after { content: "▴"; }
+
+/* ---------- celular: menos ruido ---------- */
+@media (max-width: 700px) {
+  body { font-size: 15px; }
+  .hero { padding: 28px 0 18px; }
+  .hero h1 { font-size: 2rem; }
+  .hero .sub { font-size: .85rem; margin-bottom: 0; }
+  .hero .steps { display: none; }
+  section { padding-top: 26px; }
+  h2 { font-size: 1.3rem; }
+  .num { width: 26px; height: 26px; font-size: .85rem; }
+  .hint, .hint.small, #hospedaje-hint, .nieve .hint { display: none; }
+
+  /* fechas: tres botones compactos */
+  .chips { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .chip { padding: 9px 8px; border-radius: 12px; text-align: center; }
+  .chip strong { font-size: .8rem; }
+  .chip span { display: none; }
+
+  .nieve { padding: 12px; }
+  .nv-row { grid-template-columns: 92px 1fr 70px; gap: 8px; font-size: .85rem; }
+  .nv-lbl span { display: none; }
+
+  /* destinos */
+  .grid-resorts { gap: 12px; }
+  .resort .ph { height: 110px; }
+  .resort .lead, .resort ul { display: none; }
+  .resort .body { gap: 6px; padding: 12px 14px 14px; }
+  .total { font-size: 1.35rem; }
+
+  /* hospedajes */
+  .lodging-ph { height: 120px; }
+  .lodging .meta, .lodging details { display: none; }
+  .lodging h4 { font-size: 1rem; }
+
+  /* presupuesto */
+  .combo-card { padding: 14px; }
+  .breakdown .note, .breakdown td a[title="Fuente"] { display: none; }
+  .breakdown { font-size: .88rem; }
+
+  /* comparativo y balance: solo el podio; la tabla se abre si la piden */
+  .filters .filter { font-size: .78rem; padding: 6px 10px; }
+  .podio { gap: 8px; }
+
+  /* mapa */
+  .map { height: 300px; }
+  .ruta { max-height: none; padding: 12px; }
+  .ruta h4, .ruta .pasos, .ruta > .meta { display: none; }
+  .dest-row { padding: 8px 10px; }
+  .dest-name small { display: none; }
+
+  /* fotos */
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .gallery img { height: 120px; }
+  .gallery figcaption { display: none; }
+
+  .fab { padding: 9px 14px; font-size: .85rem; right: 12px; bottom: 12px; }
+  .foot { padding-top: 28px; }
+  .about { padding: 16px; }
+}
+
+section { scroll-margin-top: 64px; }
+.chip .corto { display: none; }
+.lodging h4 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 700px) {
+  .chip .largo { display: none; }
+  .chip .corto { display: block; font-size: .9rem; }
+  .combo-title { font-size: 1.1rem; }
+  .lodging h4 { -webkit-line-clamp: 2; }
+}
