@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="styles.css?v=b1893b67a1">
+  <link rel="stylesheet" href="styles.css?v=8d6f528850">
 </head>
 <body>
   <header class="hero">
@@ -34,6 +34,11 @@
       <h2><span class="num">1</span> ¿Cuándo vamos?</h2>
       <p class="hint">Tres semanas sin temporada alta. Todas evitan Navidad, MLK, Presidents' Day y los spring breaks de Texas.</p>
       <div id="ventanas" class="chips" role="radiogroup" aria-label="Fechas"></div>
+      <div id="nieve" class="nieve" hidden>
+        <h3 class="sub-h">❄️ ¿Cuánta nieve habrá? Estimado de base por destino y fecha</h3>
+        <div id="nieve-chart" class="nieve-chart"></div>
+        <p class="hint small" id="nieve-nota"></p>
+      </div>
     </section>
 
     <section id="destinos">
@@ -136,7 +141,7 @@
   <a href="#comparar" class="fab" id="fab">📊 Comparar todo</a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="data.js?v=e80f9d94a6"></script>
-  <script src="app.js?v=4e75a4aa56"></script>
+  <script src="data.js?v=8a52a21737"></script>
+  <script src="app.js?v=52c20e3110"></script>
 </body>
 </html>

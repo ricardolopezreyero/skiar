@@ -42,6 +42,7 @@ def main():
         "vuelos": load(BOOK / "vuelos.json") or {},
         "pendientes": load(BOOK / "pendientes.json") or [],
         "mapa": load(BOOK / "mapa.json") or {},
+        "nieve": load(BOOK / "nieve.json") or {},
     }
     out = SITE / "data.js"
     out.write_text("window.SKIAR = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")

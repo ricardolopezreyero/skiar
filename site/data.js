@@ -4476,5 +4476,6 @@ window.SKIAR = {
    "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
    "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr"
   ]
- }
+ },
+ "nieve": {}
 };
