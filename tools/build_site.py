@@ -25,6 +25,19 @@ def load(path):
         sys.exit(f"JSON inválido en {path}: {e}")
 
 
+def temporada_de(url):
+    """Deduce la temporada del mapa por el nombre del archivo (p. ej. winter-2025-2026, 25-26, 2526)."""
+    import re as _re
+    u = url.lower()
+    for a in range(2030, 2018, -1):
+        b = a + 1
+        pares = (f"{a}-{b}", f"{a}-{str(b)[2:]}", f"{str(a)[2:]}-{str(b)[2:]}", f"{str(a)[2:]}{str(b)[2:]}", f"winter{str(a)[2:]}-{str(b)[2:]}")
+        if any(x in u for x in pares):
+            return f"{a}-{str(b)[2:]}"
+    m = _re.search(r"(20[2-3]\d)", u)
+    return m.group(1) if m else "?"
+
+
 def main():
     resorts = []
     for slug in ORDEN:
@@ -52,6 +65,8 @@ def main():
                 p["mapa_origen"] = a.get("origen")
                 if a.get("anio") and (a.get("preferir") or p.get("temporada_mapa") in (None, "?")):
                     p["temporada_mapa"] = str(a["anio"])
+            if p.get("temporada_mapa") in (None, "?"):
+                p["temporada_mapa"] = temporada_de(p.get("mapa_pdf") or p.get("mapa_img") or "")
             pistas.append(p)
 
     payload = {
