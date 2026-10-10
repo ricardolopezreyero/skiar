@@ -306,5 +306,8 @@
   });
 
   readHash();
+  if (!D.resorts.length) {
+    $("#destinos .hint").textContent = "Estamos terminando de juntar los precios por fecha. Vuelve en un rato.";
+  }
   render();
 })();
