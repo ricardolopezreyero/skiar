@@ -170,7 +170,14 @@
     $("#lodgings").replaceChildren(...(r.alojamientos || []).map((l, i) => {
       const p = lodgingPrice(l, state.v);
       const acceso = { verdadero: ["ok", "Ski-in/ski-out real"], caminando: ["warn", "Caminando a la pista"], shuttle: ["warn", "Necesita shuttle"] }[l.ski_in_out] || ["", l.ski_in_out || "Acceso por confirmar"];
+      const foto = l.foto ? { url: l.foto, real: true } : l.foto_zona ? { url: l.foto_zona.url, real: false } : null;
+      const cab = el("div", { class: "lodging-ph" },
+        foto ? el("div", { class: "lodging-img photo-tone", style: `background-image:url("${foto.url}")` }) : null,
+        el("span", { class: "lodging-ph-ico" }, "🏔️"),
+        foto ? el("span", { class: "lodging-ph-tag" }, foto.real ? "📷 Foto del hospedaje" : "📍 Foto de la zona") : null);
+      if (foto) { const pre = new Image(); pre.onload = () => cab.classList.add("ok"); pre.onerror = () => cab.classList.add("sin-foto"); pre.referrerPolicy = "no-referrer"; pre.src = foto.url; }
       return el("article", { class: "lodging" + (state.l === i ? " on" : "") },
+        cab,
         el("h4", {}, l.nombre),
         el("div", { class: "badges" },
           el("span", { class: "badge " + acceso[0] }, acceso[1]),

@@ -93,7 +93,13 @@
         "Algún listado de 1 rec. cobra US$75 por persona por el 3er y 4º huésped",
         "Es el que más empuja el presupuesto"
       ],
-      "ideal_si": "quieren salir esquiando por la puerta y cocinar, y aceptan un total de ~US$10,000-11,000."
+      "ideal_si": "quieren salir esquiando por la puerta y cocinar, y aceptan un total de ~US$10,000-11,000.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+        "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
+        "credito": "CarTick (Wikimedia Commons)"
+      }
     },
     {
       "nombre": "The Steamboat Grand (habitación de hotel)",
@@ -147,7 +153,13 @@
         "La habitación estándar no tiene cocina",
         "Estacionamiento US$25/noche si llevan carro"
       ],
-      "ideal_si": "lo que más importa es el precio y la escuela de la niña, más que salir esquiando por la puerta."
+      "ideal_si": "lo que más importa es el precio y la escuela de la niña, más que salir esquiando por la puerta.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+        "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
+        "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+      }
     },
     {
       "nombre": "Kutuk Condominiums (2 recámaras)",
@@ -201,7 +213,13 @@
         "Más caro que Torian Plum de 1 rec.",
         "No todas las unidades están remodeladas; estacionamiento apretado"
       ],
-      "ideal_si": "quieren que la niña tenga su propia recámara, van a cocinar y no les molesta caminar 5-10 min."
+      "ideal_si": "quieren que la niña tenga su propia recámara, van a cocinar y no les molesta caminar 5-10 min.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+        "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
+        "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+      }
     },
     {
       "nombre": "One Steamboat Place (2 recámaras) — premium",
@@ -251,7 +269,13 @@
         "Cargos ocultos altos (16% + US$80/noche)",
         "Sólo el hospedaje rebasa el presupuesto completo"
       ],
-      "ideal_si": "el viaje se vuelve multifamiliar o el presupuesto sube a US$15,000+."
+      "ideal_si": "el viaje se vuelve multifamiliar o el presupuesto sube a US$15,000+.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+        "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
+        "credito": "CarTick (Wikimedia Commons)"
+      }
     }
   ],
   "ventanas": {

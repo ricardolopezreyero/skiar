@@ -97,7 +97,13 @@
         "Fee de $20/noche por confirmar",
         "Base de Peak 8 más alta que el pueblo"
       ],
-      "ideal_si": "Quieren 'el hotel al que llegas esquiando' con la escuela a pasos y aceptan la presentación a cambio de pagar ~$1,400 en vez de ~$3,900."
+      "ideal_si": "Quieren 'el hotel al que llegas esquiando' con la escuela a pasos y aceptan la presentación a cambio de pagar ~$1,400 en vez de ~$3,900.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+        "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
+        "credito": "Wikimedia Commons (autor: ver página)"
+      }
     },
     {
       "nombre": "Grand Lodge on Peak 7",
@@ -151,7 +157,13 @@
         "Lejos de Main Street",
         "Renta a dueño vía RedWeek: el listado puede desaparecer"
       ],
-      "ideal_si": "Viajan en la ventana B y quieren el mejor precio verificable sin presentación de tiempo compartido."
+      "ideal_si": "Viajan en la ventana B y quieren el mejor precio verificable sin presentación de tiempo compartido.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
+        "descripcion": "Panorama desde la cima de Peak 8 hacia el oeste",
+        "credito": "Wikimedia Commons (autor: ver página)"
+      }
     },
     {
       "nombre": "Beaver Run Resort",
@@ -206,7 +218,13 @@
         "Estacionamiento $39-42/noche",
         "Tarifa 2027 no verificada; posible resort fee"
       ],
-      "ideal_si": "Quieren ski-in/ski-out con la escuela en casa sin presentación de tiempo compartido, o el pediatra prefiere dormir lo más bajo posible."
+      "ideal_si": "Quieren ski-in/ski-out con la escuela en casa sin presentación de tiempo compartido, o el pediatra prefiere dormir lo más bajo posible.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
+        "descripcion": "Terminal del Beaver Run SuperChair (telesilla junto a Beaver Run Resort), 1-ene-2013",
+        "credito": "Wikimedia Commons (autor: ver página)"
+      }
     },
     {
       "nombre": "One Ski Hill Place, a RockResort",
@@ -263,7 +281,13 @@
         "Resort fee 13.5-15.4% criticado",
         "Sin tarifas 2027 encontradas"
       ],
-      "ideal_si": "Es un viaje de lujo y el presupuesto sube a ~$12,000+."
+      "ideal_si": "Es un viaje de lujo y el presupuesto sube a ~$12,000+.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+        "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
+        "credito": "Wikimedia Commons (autor: ver página)"
+      }
     }
   ],
   "fotos": [

@@ -310,3 +310,15 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .nv-lbl strong { font-size: .9rem; }
 .nv-lbl span { color: var(--muted); }
 .nv-lbl { white-space: nowrap; }
+
+/* ---------- foto en fichas de hospedaje ---------- */
+.lodging { padding-top: 0; overflow: hidden; }
+.lodging-ph { position: relative; height: 150px; margin: 0 -16px 4px; background: linear-gradient(160deg, #cfe3f5, #e9f2fb 55%, #f6efe6); overflow: hidden; }
+.lodging-img { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity .4s ease, transform .6s ease; }
+.lodging-ph.ok .lodging-img { opacity: 1; }
+.lodging-ph.sin-foto .lodging-ph-tag { display: none; }
+.lodging:hover .lodging-img { transform: scale(1.05); }
+.lodging-ph::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(120,170,220,.18), rgba(255,255,255,0) 45%, rgba(224,112,58,.14)); mix-blend-mode: soft-light; }
+.lodging-ph-ico { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2.6rem; opacity: .5; }
+.lodging-ph.ok .lodging-ph-ico { display: none; }
+.lodging-ph-tag { position: absolute; left: 10px; bottom: 8px; z-index: 1; background: rgba(15,42,67,.78); color: #fff; font-size: .72rem; font-weight: 600; padding: 3px 8px; border-radius: 999px; }

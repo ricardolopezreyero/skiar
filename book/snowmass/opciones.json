@@ -95,7 +95,13 @@
         "Las habitaciones estándar no tienen cocina",
         "Para 2026-27 todavía no se publican el Stay & Ski ni el descuento de 20% para passholders"
       ],
-      "ideal_si": "Estiran el presupuesto a ~$12-13k o regresa el paquete Stay & Ski con forfaits incluidos: es la experiencia más 'mágica y sin estrés'."
+      "ideal_si": "Estiran el presupuesto a ~$12-13k o regresa el paquete Stay & Ski con forfaits incluidos: es la experiencia más 'mágica y sin estrés'.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+        "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+        "credito": "Werdna (Wikimedia Commons, obra propia)"
+      }
     },
     {
       "nombre": "Viceroy Snowmass",
@@ -151,7 +157,13 @@
         "Los precios de invierno son de baja confianza; no se encontró la tarifa por fecha",
         "No apareció el sitio oficial en las búsquedas"
       ],
-      "ideal_si": "Quieren lujo con cocina y una recámara aparte para la niña, y les da igual caminar 7 min a la escuela."
+      "ideal_si": "Quieren lujo con cocina y una recámara aparte para la niña, y les da igual caminar 7 min a la escuela.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+        "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+        "credito": "Werdna (Wikimedia Commons, obra propia)"
+      }
     },
     {
       "nombre": "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)",
@@ -207,7 +219,13 @@
         "Las reseñas son mixtas (ski.com habla de cuartos desgastados)",
         "Cambió de dueño en 2025 y el resort fee no está claro ($30-50)"
       ],
-      "ideal_si": "Quieren hotel con alberca al menor precio posible en Snowmass y no les molesta un traslado corto en góndola a la escuela."
+      "ideal_si": "Quieren hotel con alberca al menor precio posible en Snowmass y no les molesta un traslado corto en góndola a la escuela.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+        "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+        "credito": "Werdna (Wikimedia Commons, obra propia)"
+      }
     },
     {
       "nombre": "Woodrun Place (condo, Fanny Hill)",
@@ -262,7 +280,13 @@
         "Se paga limpieza, no hay servicio diario y el check-in es con el administrador",
         "Las tarifas para las fechas exactas son de baja confianza"
       ],
-      "ideal_si": "Buscan el mejor costo-beneficio ski-in/ski-out en Snowmass y les gusta tener cocina y una recámara aparte. Alternativas parecidas: Top of the Village (2 recámaras, alberca, shuttle) o Timberline (recién renovado)."
+      "ideal_si": "Buscan el mejor costo-beneficio ski-in/ski-out en Snowmass y les gusta tener cocina y una recámara aparte. Alternativas parecidas: Top of the Village (2 recámaras, alberca, shuttle) o Timberline (recién renovado).",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
+        "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
+        "credito": "Wolfgang Moroder"
+      }
     }
   ],
   "fotos": [

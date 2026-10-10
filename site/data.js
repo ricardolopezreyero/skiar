@@ -92,7 +92,13 @@ window.SKIAR = {
       "Pocas unidades en el inventario de Keystone; algunas sólo se rentan con terceros, que no califican para niños gratis",
       "La calidad varía por unidad"
      ],
-     "ideal_si": "Quieren ski-in/ski-out verdadero con el mejor costo-beneficio y una alberca techada para la niña."
+     "ideal_si": "Quieren ski-in/ski-out verdadero con el mejor costo-beneficio y una alberca techada para la niña.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+      "descripcion": "Alfombra mágica en Keystone Mountain",
+      "credito": "David Shankbone / Wikimedia Commons"
+     }
     },
     {
      "nombre": "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort",
@@ -142,7 +148,13 @@ window.SKIAR = {
       "Unos $800 más que The Timbers en 6 noches",
       "Dos recámaras son más espacio del que necesitan 3 personas"
      ],
-     "ideal_si": "Estiran el presupuesto o invitan a los abuelos u otra pareja a la segunda recámara."
+     "ideal_si": "Estiran el presupuesto o invitan a los abuelos u otra pareja a la segunda recámara.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+      "descripcion": "Alfombra mágica en Keystone Mountain",
+      "credito": "David Shankbone / Wikimedia Commons"
+     }
     },
     {
      "nombre": "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort",
@@ -191,7 +203,13 @@ window.SKIAR = {
       "Hay que caminar con botas cargando los esquís de la niña",
       "Calidad muy variable por unidad"
      ],
-     "ideal_si": "Quieren acercarse lo más posible a $7,000 sin dejar River Run."
+     "ideal_si": "Quieren acercarse lo más posible a $7,000 sin dejar River Run.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+      "descripcion": "Alfombra mágica en Keystone Mountain",
+      "credito": "David Shankbone / Wikimedia Commons"
+     }
     },
     {
      "nombre": "Keystone Lodge & Spa (Lakeside Village)",
@@ -242,7 +260,13 @@ window.SKIAR = {
       "Resort fee reportado de $35 por día, más estacionamiento",
       "No es ski-in/ski-out"
      ],
-     "ideal_si": "Prefieren servicio de hotel y spa a un condominio, y no les molesta el shuttle."
+     "ideal_si": "Prefieren servicio de hotel y spa a un condominio, y no les molesta el shuttle.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Keystone_Lake_and_Resort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Keystone_Lake_and_Resort.jpg",
+      "descripcion": "Keystone Lake y el resort (foto de 2001)",
+      "credito": "K.warterbeck / Wikimedia Commons"
+     }
     }
    ],
    "fotos": [
@@ -772,7 +796,13 @@ window.SKIAR = {
       "Fee de $20/noche por confirmar",
       "Base de Peak 8 más alta que el pueblo"
      ],
-     "ideal_si": "Quieren 'el hotel al que llegas esquiando' con la escuela a pasos y aceptan la presentación a cambio de pagar ~$1,400 en vez de ~$3,900."
+     "ideal_si": "Quieren 'el hotel al que llegas esquiando' con la escuela a pasos y aceptan la presentación a cambio de pagar ~$1,400 en vez de ~$3,900.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+      "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
+      "credito": "Wikimedia Commons (autor: ver página)"
+     }
     },
     {
      "nombre": "Grand Lodge on Peak 7",
@@ -826,7 +856,13 @@ window.SKIAR = {
       "Lejos de Main Street",
       "Renta a dueño vía RedWeek: el listado puede desaparecer"
      ],
-     "ideal_si": "Viajan en la ventana B y quieren el mejor precio verificable sin presentación de tiempo compartido."
+     "ideal_si": "Viajan en la ventana B y quieren el mejor precio verificable sin presentación de tiempo compartido.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
+      "descripcion": "Panorama desde la cima de Peak 8 hacia el oeste",
+      "credito": "Wikimedia Commons (autor: ver página)"
+     }
     },
     {
      "nombre": "Beaver Run Resort",
@@ -881,7 +917,13 @@ window.SKIAR = {
       "Estacionamiento $39-42/noche",
       "Tarifa 2027 no verificada; posible resort fee"
      ],
-     "ideal_si": "Quieren ski-in/ski-out con la escuela en casa sin presentación de tiempo compartido, o el pediatra prefiere dormir lo más bajo posible."
+     "ideal_si": "Quieren ski-in/ski-out con la escuela en casa sin presentación de tiempo compartido, o el pediatra prefiere dormir lo más bajo posible.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
+      "descripcion": "Terminal del Beaver Run SuperChair (telesilla junto a Beaver Run Resort), 1-ene-2013",
+      "credito": "Wikimedia Commons (autor: ver página)"
+     }
     },
     {
      "nombre": "One Ski Hill Place, a RockResort",
@@ -938,7 +980,13 @@ window.SKIAR = {
       "Resort fee 13.5-15.4% criticado",
       "Sin tarifas 2027 encontradas"
      ],
-     "ideal_si": "Es un viaje de lujo y el presupuesto sube a ~$12,000+."
+     "ideal_si": "Es un viaje de lujo y el presupuesto sube a ~$12,000+.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Peak_8_from_Peak_9.JPG",
+      "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
+      "credito": "Wikimedia Commons (autor: ver página)"
+     }
     }
    ],
    "fotos": [
@@ -1561,7 +1609,13 @@ window.SKIAR = {
       "Algún listado de 1 rec. cobra US$75 por persona por el 3er y 4º huésped",
       "Es el que más empuja el presupuesto"
      ],
-     "ideal_si": "quieren salir esquiando por la puerta y cocinar, y aceptan un total de ~US$10,000-11,000."
+     "ideal_si": "quieren salir esquiando por la puerta y cocinar, y aceptan un total de ~US$10,000-11,000.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+      "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
+      "credito": "CarTick (Wikimedia Commons)"
+     }
     },
     {
      "nombre": "The Steamboat Grand (habitación de hotel)",
@@ -1615,7 +1669,13 @@ window.SKIAR = {
       "La habitación estándar no tiene cocina",
       "Estacionamiento US$25/noche si llevan carro"
      ],
-     "ideal_si": "lo que más importa es el precio y la escuela de la niña, más que salir esquiando por la puerta."
+     "ideal_si": "lo que más importa es el precio y la escuela de la niña, más que salir esquiando por la puerta.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+      "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
+      "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+     }
     },
     {
      "nombre": "Kutuk Condominiums (2 recámaras)",
@@ -1669,7 +1729,13 @@ window.SKIAR = {
       "Más caro que Torian Plum de 1 rec.",
       "No todas las unidades están remodeladas; estacionamiento apretado"
      ],
-     "ideal_si": "quieren que la niña tenga su propia recámara, van a cocinar y no les molesta caminar 5-10 min."
+     "ideal_si": "quieren que la niña tenga su propia recámara, van a cocinar y no les molesta caminar 5-10 min.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
+      "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
+      "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
+     }
     },
     {
      "nombre": "One Steamboat Place (2 recámaras) — premium",
@@ -1719,7 +1785,13 @@ window.SKIAR = {
       "Cargos ocultos altos (16% + US$80/noche)",
       "Sólo el hospedaje rebasa el presupuesto completo"
      ],
-     "ideal_si": "el viaje se vuelve multifamiliar o el presupuesto sube a US$15,000+."
+     "ideal_si": "el viaje se vuelve multifamiliar o el presupuesto sube a US$15,000+.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+      "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
+      "credito": "CarTick (Wikimedia Commons)"
+     }
     }
    ],
    "ventanas": {
@@ -2194,7 +2266,13 @@ window.SKIAR = {
       "Las habitaciones estándar no tienen cocina",
       "Para 2026-27 todavía no se publican el Stay & Ski ni el descuento de 20% para passholders"
      ],
-     "ideal_si": "Estiran el presupuesto a ~$12-13k o regresa el paquete Stay & Ski con forfaits incluidos: es la experiencia más 'mágica y sin estrés'."
+     "ideal_si": "Estiran el presupuesto a ~$12-13k o regresa el paquete Stay & Ski con forfaits incluidos: es la experiencia más 'mágica y sin estrés'.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+      "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+      "credito": "Werdna (Wikimedia Commons, obra propia)"
+     }
     },
     {
      "nombre": "Viceroy Snowmass",
@@ -2250,7 +2328,13 @@ window.SKIAR = {
       "Los precios de invierno son de baja confianza; no se encontró la tarifa por fecha",
       "No apareció el sitio oficial en las búsquedas"
      ],
-     "ideal_si": "Quieren lujo con cocina y una recámara aparte para la niña, y les da igual caminar 7 min a la escuela."
+     "ideal_si": "Quieren lujo con cocina y una recámara aparte para la niña, y les da igual caminar 7 min a la escuela.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+      "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+      "credito": "Werdna (Wikimedia Commons, obra propia)"
+     }
     },
     {
      "nombre": "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)",
@@ -2306,7 +2390,13 @@ window.SKIAR = {
       "Las reseñas son mixtas (ski.com habla de cuartos desgastados)",
       "Cambió de dueño en 2025 y el resort fee no está claro ($30-50)"
      ],
-     "ideal_si": "Quieren hotel con alberca al menor precio posible en Snowmass y no les molesta un traslado corto en góndola a la escuela."
+     "ideal_si": "Quieren hotel con alberca al menor precio posible en Snowmass y no les molesta un traslado corto en góndola a la escuela.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
+      "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+      "credito": "Werdna (Wikimedia Commons, obra propia)"
+     }
     },
     {
      "nombre": "Woodrun Place (condo, Fanny Hill)",
@@ -2361,7 +2451,13 @@ window.SKIAR = {
       "Se paga limpieza, no hay servicio diario y el check-in es con el administrador",
       "Las tarifas para las fechas exactas son de baja confianza"
      ],
-     "ideal_si": "Buscan el mejor costo-beneficio ski-in/ski-out en Snowmass y les gusta tener cocina y una recámara aparte. Alternativas parecidas: Top of the Village (2 recámaras, alberca, shuttle) o Timberline (recién renovado)."
+     "ideal_si": "Buscan el mejor costo-beneficio ski-in/ski-out en Snowmass y les gusta tener cocina y una recámara aparte. Alternativas parecidas: Top of the Village (2 recámaras, alberca, shuttle) o Timberline (recién renovado).",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
+      "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
+      "credito": "Wolfgang Moroder"
+     }
     }
    ],
    "fotos": [

@@ -88,7 +88,13 @@
         "Pocas unidades en el inventario de Keystone; algunas sólo se rentan con terceros, que no califican para niños gratis",
         "La calidad varía por unidad"
       ],
-      "ideal_si": "Quieren ski-in/ski-out verdadero con el mejor costo-beneficio y una alberca techada para la niña."
+      "ideal_si": "Quieren ski-in/ski-out verdadero con el mejor costo-beneficio y una alberca techada para la niña.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+        "descripcion": "Alfombra mágica en Keystone Mountain",
+        "credito": "David Shankbone / Wikimedia Commons"
+      }
     },
     {
       "nombre": "Lone Eagle (River Run), 2 recámaras, reservado con Keystone Resort",
@@ -138,7 +144,13 @@
         "Unos $800 más que The Timbers en 6 noches",
         "Dos recámaras son más espacio del que necesitan 3 personas"
       ],
-      "ideal_si": "Estiran el presupuesto o invitan a los abuelos u otra pareja a la segunda recámara."
+      "ideal_si": "Estiran el presupuesto o invitan a los abuelos u otra pareja a la segunda recámara.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+        "descripcion": "Alfombra mágica en Keystone Mountain",
+        "credito": "David Shankbone / Wikimedia Commons"
+      }
     },
     {
       "nombre": "Condominio de River Run (Silver Mill / Expedition Station / Dakota Lodge), 1 recámara, reservado con Keystone Resort",
@@ -187,7 +199,13 @@
         "Hay que caminar con botas cargando los esquís de la niña",
         "Calidad muy variable por unidad"
       ],
-      "ideal_si": "Quieren acercarse lo más posible a $7,000 sin dejar River Run."
+      "ideal_si": "Quieren acercarse lo más posible a $7,000 sin dejar River Run.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Magic_carpet_at_Keystone_Mountain_in_Colorado.JPG",
+        "descripcion": "Alfombra mágica en Keystone Mountain",
+        "credito": "David Shankbone / Wikimedia Commons"
+      }
     },
     {
       "nombre": "Keystone Lodge & Spa (Lakeside Village)",
@@ -238,7 +256,13 @@
         "Resort fee reportado de $35 por día, más estacionamiento",
         "No es ski-in/ski-out"
       ],
-      "ideal_si": "Prefieren servicio de hotel y spa a un condominio, y no les molesta el shuttle."
+      "ideal_si": "Prefieren servicio de hotel y spa a un condominio, y no les molesta el shuttle.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Keystone_Lake_and_Resort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Keystone_Lake_and_Resort.jpg",
+        "descripcion": "Keystone Lake y el resort (foto de 2001)",
+        "credito": "K.warterbeck / Wikimedia Commons"
+      }
     }
   ],
   "fotos": [
