@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esquí en familia 2027</title>
+  <meta name="description" content="Comparador para decidir el viaje de esquí en familia: fechas, destino, hospedaje y presupuesto total.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Temporada 2026-27 · Colorado</p>
+      <h1>Esquí en familia 2027</h1>
+      <p class="sub">2 adultos + niña de 5 años · 6 noches · 5 días de esquí · meta $6,000–8,000 USD todo incluido</p>
+      <ol class="steps">
+        <li><a href="#fechas">Fechas</a></li>
+        <li><a href="#destinos">Destino</a></li>
+        <li><a href="#hospedaje">Hospedaje</a></li>
+        <li><a href="#combo">Presupuesto</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="fechas">
+      <h2><span class="num">1</span> ¿Cuándo vamos?</h2>
+      <p class="hint">Tres semanas sin temporada alta. Todas evitan Navidad, MLK, Presidents' Day y los spring breaks de Texas.</p>
+      <div id="ventanas" class="chips" role="radiogroup" aria-label="Fechas"></div>
+    </section>
+
+    <section id="destinos">
+      <h2><span class="num">2</span> ¿A dónde?</h2>
+      <p class="hint">Total estimado del viaje para las fechas elegidas, con el hospedaje ski-in/ski-out más económico de cada lugar. Toca una tarjeta para ver sus hospedajes.</p>
+      <div id="resorts" class="grid-resorts"></div>
+    </section>
+
+    <section id="hospedaje">
+      <h2><span class="num">3</span> ¿Dónde dormimos?</h2>
+      <p class="hint" id="hospedaje-hint"></p>
+      <div id="lodgings" class="grid-lodgings"></div>
+    </section>
+
+    <section id="combo">
+      <h2><span class="num">4</span> Nuestra combinación</h2>
+      <div class="combo-card">
+        <div id="combo-title" class="combo-title"></div>
+        <div class="toggle-row">
+          <span>Comidas:</span>
+          <div class="seg" role="radiogroup" aria-label="Comidas">
+            <button type="button" data-food="cocinando" class="on">Cocinando casi siempre</button>
+            <button type="button" data-food="restaurantes">Restaurantes</button>
+          </div>
+        </div>
+        <table id="combo-table" class="breakdown"></table>
+        <div id="combo-meter" class="meter"></div>
+        <div class="share">
+          <button type="button" id="share-btn">Copiar liga de esta combinación</button>
+          <span id="share-ok" class="muted" hidden>¡Copiada! Mándasela a Ana.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="matriz">
+      <h2>Todas las opciones de un vistazo</h2>
+      <p class="hint">Total del viaje por hospedaje y por fechas. En verde, lo que cabe en $6,000; en amarillo, hasta $8,000.</p>
+      <div class="table-scroll"><table id="matrix" class="matrix"></table></div>
+    </section>
+
+    <section id="galeria">
+      <h2>Fotos del lugar</h2>
+      <div class="seg small" id="gal-tabs" role="tablist"></div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section id="pendientes">
+      <h2>Antes de reservar</h2>
+      <div id="todo" class="todo"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Precios en USD con impuestos cuando se conocen. Cada precio trae su fuente y su nivel de confianza: <span class="dot alta"></span> alta, <span class="dot media"></span> media, <span class="dot baja"></span> baja o estimado. Verifícalos antes de pagar.</p>
+    <p id="links"></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
