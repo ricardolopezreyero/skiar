@@ -196,5 +196,75 @@
     "credito": "Wikimedia Commons",
     "licencia": "",
     "invierno": false
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Breck2011_(5389349259).jpg",
+    "descripcion": "Breckenridge en 2011",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Breck2011_(5389349259).jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Peaks_7_and_8.JPG",
+    "descripcion": "Peaks 7 y 8",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Peaks_7_and_8.JPG",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Breckenridge,CO-Panorama.jpg",
+    "descripcion": "Panorama de Breckenridge",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,CO-Panorama.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Imperial_peak.jpg",
+    "descripcion": "Imperial Peak",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Imperial_peak.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Snowboarding_Imperial_Peak_Breckenridge_Colorado.jpg",
+    "descripcion": "Snowboard en Imperial Peak",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowboarding_Imperial_Peak_Breckenridge_Colorado.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "View_of_town_from_the_top_of_Peak_6.JPG",
+    "descripcion": "El pueblo visto desde Peak 6",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_town_from_the_top_of_Peak_6.JPG",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Breckenridge,_CO_(5658392788).jpg",
+    "descripcion": "Breckenridge",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_(5658392788).jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
   }
 ]

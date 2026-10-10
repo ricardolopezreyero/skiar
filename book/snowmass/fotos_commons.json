@@ -214,5 +214,95 @@
     "credito": "Hunter Bryant (Unsplash) / Wikimedia Commons",
     "licencia": "CC0 1.0",
     "invierno": false
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Snowmass_Village_-_panoramio.jpg",
+    "descripcion": "Snowmass Village",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village_-_panoramio.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Snowmass_Village,_United_States_(Unsplash).jpg",
+    "descripcion": "Snowmass Village",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village,_United_States_(Unsplash).jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Elk_Camp_lift_-_panoramio.jpg",
+    "descripcion": "Telesilla de Elk Camp",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Elk_Camp_lift_-_panoramio.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Aspen_Snowmass_panorama_on_Pitkin_county_from_Elk_camp.jpg",
+    "descripcion": "Panorama desde Elk Camp",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Snowmass_panorama_on_Pitkin_county_from_Elk_camp.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Aspen_Snowmass_panorama_on_Pitkin_county_from_Big_Burn.jpg",
+    "descripcion": "Panorama desde Big Burn",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Snowmass_panorama_on_Pitkin_county_from_Big_Burn.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "pista",
+    "archivo": "Fresh_snow_on_Buttermilk_Mountain_-_panoramio.jpg",
+    "descripcion": "Nieve fresca en Buttermilk",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Fresh_snow_on_Buttermilk_Mountain_-_panoramio.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Hotel_Jerome_front_facade.jpg",
+    "descripcion": "Fachada del Hotel Jerome en Aspen",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Hotel_Jerome_front_facade.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Aspen_Night_Life_(6218495145).jpg",
+    "descripcion": "Aspen de noche",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Night_Life_(6218495145).jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
+  },
+  {
+    "categoria": "ubicacion",
+    "archivo": "Maroon_Bells_at_sunrise,_Aspen_Colorado.jpg",
+    "descripcion": "Maroon Bells al amanecer",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells_at_sunrise,_Aspen_Colorado.jpg",
+    "credito": "Wikimedia Commons",
+    "licencia": "por verificar",
+    "invierno": false,
+    "por_verificar": true
   }
 ]

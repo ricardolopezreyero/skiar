@@ -22,7 +22,7 @@ def main():
         opciones = extra.parent / "opciones.json"
         data = json.loads(opciones.read_text(encoding="utf-8"))
         nuevas = json.loads(extra.read_text(encoding="utf-8"))
-        nuevas.sort(key=lambda f: not f.get("invierno"))
+        nuevas.sort(key=lambda f: (bool(f.get("por_verificar")), not f.get("invierno")))
         vistos = set()
         fotos = []
         for f in nuevas:

@@ -323,74 +323,11 @@
     {
       "categoria": "ubicacion",
       "opcion": "",
-      "descripcion": "Ayuntamiento de Steamboat Springs (137 10th Street)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/City_of_Steamboat_Springs_City_Hall.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:City_of_Steamboat_Springs_City_Hall.JPG",
-      "credito": "Wikimedia Commons",
-      "licencia": "no verificada"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
       "descripcion": "Steamboat Lake State Park, lago y montañas al norte del pueblo",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Lake_State_Park.JPG?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Lake_State_Park.JPG",
       "credito": "Wikimedia Commons",
       "licencia": "no verificada"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Escuela rural histórica Mesa Schoolhouse sobre la US 40, paisaje de rancho del valle",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG",
-      "credito": "Wikimedia Commons",
-      "licencia": "no verificada"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Casa Crawford hacia 1896, la de los fundadores del pueblo (foto histórica)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Crawford_House_in_Steamboat_Springs%2C_Colorado%2C_about_1896.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Crawford_House_in_Steamboat_Springs,_Colorado,_about_1896.jpg",
-      "credito": "Wikimedia Commons",
-      "licencia": "no verificada (probable dominio público por antigüedad)"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Edificio histórico Steamboat Laundry en el pueblo",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Laundry_Building.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Laundry_Building.JPG",
-      "credito": "Wikimedia Commons",
-      "licencia": "no verificada"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Aeropuerto de Steamboat Springs (Bob Adams Field)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Airport.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Airport.JPG",
-      "credito": "Wikimedia Commons",
-      "licencia": "no verificada"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Steamboat Mountain School en otoño, en el valle cerca del pueblo",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School_in_the_fall.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School_in_the_fall.jpg",
-      "credito": "Wikimedia Commons",
-      "licencia": "Dominio público (liberada por el titular)"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "",
-      "descripcion": "Campus de Steamboat Mountain School, escuela fundada en 1957",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School.JPG",
-      "credito": "Wikimedia Commons",
-      "licencia": "Dominio público (liberada por el titular)"
     },
     {
       "categoria": "pista",
@@ -409,6 +346,51 @@
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Mount_Werner.JPG",
       "credito": "Jeffrey Beall / Wikimedia Commons",
       "licencia": "CC BY 4.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Telesilla en Steamboat (2010)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Ski_Resort_ski_lift_2010.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Ski_Resort_ski_lift_2010.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "por verificar"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Steamboat visto desde el telesilla",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_from_the_lift_%285259349988%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_from_the_lift_(5259349988).jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "por verificar"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Cumbres de Steamboat",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Peaks_%285258720825%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Peaks_(5258720825).jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "por verificar"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Steamboat Springs",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs%2C_CO.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs,_CO.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "por verificar"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Antigua estación de tren de Steamboat Springs",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Depot.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Depot.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "por verificar"
     },
     {
       "categoria": "ubicacion",
