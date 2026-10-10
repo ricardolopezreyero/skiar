@@ -38,8 +38,15 @@
       "https://www.americanexpress.com/en-us/travel/the-hotel-collection/property/Colorado-US/Snowmass-Village/Limelight-Snowmass",
       "https://ratepunk.com/hotel/us/snowmass-village/limelight-hotel-snowmass",
       "https://wanderlog.com/place/details/1008892/limelight-hotel",
-      "https://www.hotel-online.com/press_releases/release/aspen-skiing-company-opens-the-99-room-limelight-hotel-snowmass"
-    ]
+      "https://www.hotel-online.com/press_releases/release/aspen-skiing-company-opens-the-99-room-limelight-hotel-snowmass",
+      "https://limelighthotels.com/snowmass/explore/getting-here",
+      "https://www.ski.com/property/SYNX-3063"
+    ],
+    "telefono": "+19709245100",
+    "telefono_texto": "+1 970-924-5100",
+    "direccion": "65 Wood Road, Snowmass Village, CO 81615",
+    "lat": null,
+    "lng": null
   },
   "Viceroy Snowmass": {
     "caracteristicas": [
@@ -88,8 +95,16 @@
       "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
       "https://www.homes.com/snowmass-village-co/under-2m/",
       "https://aspenglenwoodmls.com/listings/CO/Snowmass-Village/81615/10189/130-wood-road-631-snowmass-village-co-81615/460826679",
-      "https://www.elliman.com/listing/130-wood-rd-514-snowmass-village-co-81615/13790694"
-    ]
+      "https://www.elliman.com/listing/130-wood-rd-514-snowmass-village-co-81615/13790694",
+      "https://www.ski.com/property/SKI-SNVICE-1893",
+      "https://www.northstarmeetingsgroup.com/Meeting-Event-Venues/Snowmass-Village-CO/Convention-Hotel/Viceroy-Snowmass-p52652162",
+      "https://www.travelprofy.com/eagle-airport-ege/viceroy-snowmass-snowmass-village"
+    ],
+    "telefono": "+19709238000",
+    "telefono_texto": "+1 970-923-8000",
+    "direccion": "130 Wood Road, Snowmass Village, CO 81615",
+    "lat": 39.209656,
+    "lng": -106.944934
   },
   "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": {
     "caracteristicas": [
@@ -137,8 +152,15 @@
       "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
       "https://www.hotelmanagement.net/own/iconic-snowmass-resort-reopens-following-40-million-transformation",
       "https://sunset.com/travel/travel-directory/viewline-resort-snowmass-2",
-      "https://gettys.com/a-retro-motor-lodge-a-frame-colony-and-5-more-ski-hotels-opening-this-winter"
-    ]
+      "https://gettys.com/a-retro-motor-lodge-a-frame-colony-and-5-more-ski-hotels-opening-this-winter",
+      "https://gosnowmass.com/lodging/viewline-snowmass",
+      "https://www.marriott.com/en-us/hotels/aseak-viewline-resort-snowmass-autograph-collection/overview"
+    ],
+    "telefono": "+19709238200",
+    "telefono_texto": "+1 970-923-8200",
+    "direccion": "100 Elbert Lane, Snowmass Village, CO 81615",
+    "lat": null,
+    "lng": null
   },
   "Woodrun Place (condo, Fanny Hill)": {
     "caracteristicas": [
@@ -192,7 +214,14 @@
       "https://www.travelocity.com/Snowmass-Village-Hotels-Woodrun-Place-38-One-Bedroom-Residence.h110439405.Hotel-Reviews",
       "https://aspensnowmass.com/visit/lodging/properties/woodrun-place",
       "https://www.successfulmeetings.com/Meeting-Event-Venues/Snowmass-Village-CO/Convention-Hotel/Woodrun-Place-Condominium-Hotel-p5530602",
-      "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/town-home/woodrun-v?t=1&u=5528"
-    ]
+      "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/town-home/woodrun-v?t=1&u=5528",
+      "https://www.ski.com/property/SKI-EWWOOD-1120",
+      "https://www.snowpak.com/property/INT-1120-25690684"
+    ],
+    "telefono": "+19709223434",
+    "telefono_texto": "+1 970-922-3434",
+    "direccion": "425 Wood Road, Snowmass Village, CO 81615",
+    "lat": null,
+    "lng": null
   }
 }

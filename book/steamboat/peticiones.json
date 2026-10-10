@@ -1,5 +1,10 @@
 {
   "Torian Plum Plaza (1 recámara) — RECOMENDADO": {
+    "telefono": "+19708798811",
+    "telefono_texto": "+1 970-879-8811",
+    "direccion": "1855 Ski Time Square Drive, Steamboat Springs, CO 80487",
+    "lat": null,
+    "lng": null,
     "caracteristicas": [
       "Condo de 1 recámara en la torre Plaza: ~715 ft² (66 m²) y 1 baño (ventas MLS de las unidades 206 y 506).",
       "Camas: king en la recámara + sofá cama en la sala para la niña; algunas unidades tienen cuna y periquera (varía por dueño).",
@@ -10,7 +15,7 @@
       "Alberca exterior climatizada, 3-4 jacuzzis exteriores y 2 interiores, sauna y gimnasio. Un huésped reportó los jacuzzis interiores fuera de servicio toda una semana.",
       "Tiene elevador y clóset/locker de esquí gratis junto a cada unidad: la caminata con el equipo es muy corta.",
       "Estacionamiento subterráneo: varios listados dicen gratis para 1 vehículo, por orden de llegada, con pase que se recoge en el lobby. No admite campers; la altura del garaje no está publicada.",
-      "Check-in: las llaves se entregan en la recepción de Torian Plum, que tiene horario limitado según Ski.com. Avisen su hora de llegada.",
+      "Check-in: las llaves se entregan en la recepción de Torian Plum (Suite E-1C). Según ski.com abre de 8:00 a 22:00 en invierno; otros listados dicen horario limitado. Avisen su hora de llegada.",
       "Shuttle de invierno gratis a pedido (on-demand) hacia el pueblo.",
       "Ruido: la obra del hotel The Stockman (Auberge, 9 pisos, apertura en 2030) arrancó en 2026 junto a Torian Plum, cuesta arriba del edificio Creekside. En ene/mar 2027 habrá obra, normalmente de día.",
       "Vistas: las unidades de pisos altos de la Plaza con balcón hacia la base miran a las pistas, a Gondola Square y al valle del Yampa (listados de 506, 606, 607, 702, 802 y 805).",
@@ -54,10 +59,18 @@
       "https://www.tripadvisor.com/Hotel_Review-d207673",
       "https://www.steamboatpilot.com/news/steamboat-council-signals-approval-for-ski-time-square-condo-hotel-development",
       "https://milehighcre.com/?p=61959",
-      "https://dejongteamsteamboat.realgeeks.com/property/S1069402/"
+      "https://dejongteamsteamboat.realgeeks.com/property/S1069402/",
+      "https://www.ski.com/property/SKI-FIRSTCH-931",
+      "https://www.snowpak.com/property/SKI-FIRSTCH-931",
+      "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Torian-Plum-Plaza-Condos-p7922001"
     ]
   },
   "The Steamboat Grand (habitación de hotel)": {
+    "telefono": "+19708715500",
+    "telefono_texto": "+1 970-871-5500",
+    "direccion": "2300 Mount Werner Circle, Steamboat Springs, CO 80487",
+    "lat": null,
+    "lng": null,
     "caracteristicas": [
       "Habitación de hotel Double Queen: 2 camas queen y 1 baño completo, ~400-450 ft² (37-42 m²), máximo 4 personas. Menores de 17 gratis con las camas existentes.",
       "Sin cocina: sólo mini-refri. La Deluxe King (350 ft², chimenea, balcón y tina de hidromasaje) es para 2 personas máximo, así que no les sirve.",
@@ -115,10 +128,17 @@
       "https://dejongteamsteamboat.realgeeks.com/property/S1057032/",
       "https://dejongteamsteamboat.realgeeks.com/property/SS9741334/",
       "https://dejongteamsteamboat.realgeeks.com/property/S1056551/",
-      "https://dejongteamsteamboat.realgeeks.com/property/S1064454/"
+      "https://dejongteamsteamboat.realgeeks.com/property/S1064454/",
+      "https://www.ski.com/property/INT-266-2882874",
+      "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Steamboat-Grand-Resort-Hotel-p5141680"
     ]
   },
   "Kutuk Condominiums (2 recámaras)": {
+    "telefono": null,
+    "telefono_texto": null,
+    "direccion": "2000 Ski Time Square Drive, Steamboat Springs, CO 80487",
+    "lat": null,
+    "lng": null,
     "caracteristicas": [
       "Condo de 2 rec./2 baños: ~990-1,460 ft² (92-136 m²), típico ~1,200 ft² (111 m²). Algunas unidades tienen loft y varios niveles.",
       "Camas típicas: queen + 2 individuales + sofá cama queen (varía por unidad). La niña tiene su propia recámara.",
@@ -130,7 +150,7 @@
       "No tiene alberca: hay 2 jacuzzis exteriores comunes junto a la fogata y al sundeck, con vista al arroyo, al valle y a la base.",
       "Lockers de esquí gratis para los huéspedes.",
       "Estacionamiento subterráneo, apretado en semanas pico. Algunos listados lo cobran (por vehículo); confirmen.",
-      "Check-in a las 16:00 (Vacasa). Hay varios administradores (Vacasa, Steamboat Resorts, Resort Lodging Co.), y el check-in es en la oficina del que opere su unidad.",
+      "Check-in: hay varios administradores (Vacasa, Steamboat Resorts, Resort Lodging Co.). Con Steamboat Resorts, el check-in es en otra dirección: 1855 Ski Time Square Dr, Suite E-1C (en Torian Plum), de 16:00 a 20:00. Si llegan después de las 17:00, avisen antes. Check-out a las 10:00. Pidan las instrucciones con 72 h de anticipación.",
       "Tranquilo: no hay restaurante ni bar; de noche se oye el arroyo.",
       "No todas las unidades están remodeladas."
     ],
@@ -168,10 +188,17 @@
       "https://www.ski.com/h/18315161",
       "https://dejongteamsteamboat.realgeeks.com/property/S1064511/",
       "https://dejongteamsteamboat.realgeeks.com/kutuk/",
-      "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information"
+      "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information",
+      "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information",
+      "https://nz.hotels.com/ho217280/kutuk-condominiums-by-steamboat-resorts-steamboat-springs-united-states-of-america"
     ]
   },
   "One Steamboat Place (2 recámaras) — premium": {
+    "telefono": "+19708709359",
+    "telefono_texto": "+1 970-870-9359",
+    "direccion": "2250 Apres Ski Way, Steamboat Springs, CO 80487",
+    "lat": null,
+    "lng": null,
     "caracteristicas": [
       "Residencia de 2 rec., normalmente una de 3-4 rec. con recámaras bloqueadas (lock-off). Los listados '2BR' anuncian 2,062-2,577 ft², pero es el área total; el espacio que se usa es menor.",
       "Cada recámara tiene su baño. Cocina gourmet (Viking en algunas), chimenea y terraza con asador de gas en varias residencias.",
@@ -185,7 +212,7 @@
       "Vistas: del lado de las pistas se ven Mt. Werner, Gondola Square y la escuela infantil. Del otro lado se ven la alberca, Emerald Mountain y el valle del Yampa.",
       "Burgess Creek corre junto a algunas residencias (Crestone Peak); se oye sobre todo en verano.",
       "Hay accesos sin escaleras a los lockers, a la cava y a Steamboat Square desde algunas residencias (p. ej. Zen Mountain).",
-      "Estacionamiento y check-in: no se encontró el costo ni el procedimiento; confírmenlos con el administrador."
+      "Check-in en la oficina (tel. 970-870-9359): según ski.com la recepción abre de 8:00 a 18:00 en invierno (otro listado dice 24 h); si llegan tarde, llamen para pedir instrucciones. No se encontró el costo del estacionamiento."
     ],
     "recomendacion": {
       "pedir": "Una residencia del lado de las pistas (vista a Mt. Werner, Gondola Square y la escuela infantil), en planta baja o piso bajo, cerca del ski valet y del elevador; ideal Sage Creek #105 configurada como 2 rec.",
@@ -222,7 +249,9 @@
       "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Three-Forks-306-2BR-Ski-InSki-Out-Luxury.h69720783.Informacion-Hotel",
       "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Slopeside-Residence-Wild-Card-Peak-616-2BR.h88243157.Hotel-Information",
       "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Zen-Mountain-1BR-Slopeside-Deluxe.h69720793.Hotel-Information",
-      "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Diamond-Peak-616-2BR-Penthouse.h69720848.Informacion-Hotel"
+      "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Diamond-Peak-616-2BR-Penthouse.h69720848.Informacion-Hotel",
+      "https://www.ski.com/property/BPAL-3528",
+      "https://www.snowpak.com/property/BPAL-3528"
     ]
   }
 }

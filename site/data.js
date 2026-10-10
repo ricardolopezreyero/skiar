@@ -129,6 +129,11 @@ window.SKIAR = {
       },
       "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad de 1 recámara en el 2º o 3º piso, del lado de la pista (sur) con balcón, cerca del elevador y del puente de esquiadores. Así caminaríamos poco con su equipo y descansaríamos tranquilos. Si no se puede, cualquier opción que nos recomienden estará perfecta. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
       "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 1-bedroom on the 2nd or 3rd floor, on the slope-facing (south) side with a balcony, close to the elevator and the skier bridge. That would keep the walk with her gear short and our nights quiet. If that's not possible, we're happy with whatever you recommend. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+18665847204",
+      "telefono_texto": "+1 866-584-7204",
+      "direccion": "224 Trailhead Dr, Keystone, CO 80435",
+      "lat": null,
+      "lng": null,
       "fuentes": [
        "https://www.tripadvisor.com/Hotel_Review-g33501-d1146524-Reviews-Timbers_Lone_Eagle_by_Vail_Resorts-Keystone_Colorado.html",
        "https://www.tripadvisor.com/ShowUserReviews-g33501-d1146524-r470970504-Timbers_at_Lone_Eagle_Condos-Keystone_Colorado.html",
@@ -145,7 +150,8 @@ window.SKIAR = {
        "https://www.undercovertourist.com/keystone-colorado/timbers-lone-eagle-keystone-hotel/",
        "https://www.stayz.com.au/pdp/lo/15525037",
        "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
-       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+       "https://au.trip.com/hotels/dillon-hotel-detail-9178446/timbers-and-lone-eagle-by-keystone-resort"
       ]
      }
     },
@@ -238,6 +244,11 @@ window.SKIAR = {
       },
       "solicitud_es": "¡Hola! Somos Ricardo y Ana, una familia que viaja desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría un condo de 2 recámaras del lado de la pista, con vista al trail River Run, en piso 2 a 4 y cerca del elevador. Así caminaríamos poco con su equipo y tendríamos noches tranquilas. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Mil gracias!",
       "solicitud_en": "Hi! We're Ricardo and Ana, a family traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a 2-bedroom on the slope side, overlooking the River Run trail, on floors 2-4 and close to the elevator. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Many thanks!",
+      "telefono": "+18665847204",
+      "telefono_texto": "+1 866-584-7204",
+      "direccion": "280 Trailhead Dr, Keystone, CO 80435",
+      "lat": null,
+      "lng": null,
       "fuentes": [
        "https://www.tripadvisor.com/Hotel_Review-g33501-d572133-Reviews-Lone_Eagle_Condos_at_River_Run_Village-Keystone_Colorado.html",
        "https://www.tripadvisor.com/Hotel_Feature-g33501-d572133-zft1-Lone_Eagle_Condos_at_River_Run_Village.html",
@@ -254,7 +265,8 @@ window.SKIAR = {
        "https://www.redawning.com/rental-property/1br-ski-inski-outon-mountainlone-eagle-3031kids-ski-free-keystone",
        "https://www.hotels.com/ho497801184/timbers-and-lone-eagle-by-keystone-resort-keystone-united-states-of-america",
        "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
-       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx"
+       "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
+       "https://au.trip.com/hotels/dillon-hotel-detail-9178446/timbers-and-lone-eagle-by-keystone-resort"
       ]
      }
     },
@@ -346,6 +358,11 @@ window.SKIAR = {
       },
       "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil de River Run. Si fuera posible, nos encantaría una unidad en Silver Mill (o Dakota Lodge), en piso alto, con vista a la montaña o a las pistas, cerca del elevador y lejos de la plaza y de los jacuzzis del patio. Así caminaríamos poco con su equipo y dormiríamos tranquilos. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Muchas gracias!",
       "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip; she'll be in the kids' ski school at River Run. If at all possible, we'd love a unit in Silver Mill (or Dakota Lodge), on an upper floor with a mountain or slope view, close to the elevator and away from the plaza and the courtyard hot tubs. That would keep the walk with her gear short and our nights quiet. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19704962316",
+      "telefono_texto": "+1 970-496-2316",
+      "direccion": "140 Ida Belle Dr, Keystone, CO 80435",
+      "lat": null,
+      "lng": null,
       "fuentes": [
        "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
        "https://www.keystoneresort.com/plan-your-trip/confirmation/child-group-lesson.aspx",
@@ -366,7 +383,8 @@ window.SKIAR = {
        "https://lodgingcompany.com/lodging/keystone/river-run/condo/expedition-station?adults=8",
        "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h22210570.Hotel-Information",
        "https://www.expedia.com/Keystone-Hotels-River-Run-Condo.h21692236.Hotel-Information",
-       "https://www.ski.com/property/SYNX-40066"
+       "https://www.ski.com/property/SYNX-40066",
+       "https://www.travelagewest.com/Hotels/Keystone-CO/Keystone-Resort-River-Run-Village-p6377438"
       ]
      }
     },
@@ -458,6 +476,11 @@ window.SKIAR = {
       },
       "solicitud_es": "¡Hola! Somos Ricardo y Ana y viajamos desde México con nuestra hija de 5 años, que hará su primer viaje de esquí. Si fuera posible, nos encantaría una habitación con 2 camas queen en el 5º o 6º piso, con balcón y vista al lago o a la montaña, a media distancia del elevador y lejos de cuartos de máquinas, para descansar tranquilos y llevar su equipo al shuttle sin complicarnos. Preferimos habitación estándar en vez de loft por las escaleras. Somos flexibles y agradecemos cualquier opción. Llegaremos aprox. a las [hora de llegada]. ¡Gracias!",
       "solicitud_en": "Hi! We're Ricardo and Ana, traveling from Mexico with our 5-year-old daughter on her very first ski trip. If at all possible, we'd love a room with 2 queen beds on the 5th or 6th floor, with a balcony and a lake or mountain view, a short walk from the elevator but away from machine rooms, so we can rest well and get her gear to the ski shuttle easily. We'd prefer a standard room over a loft because of the stairs. We're flexible and grateful for whatever you can do. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19703687069",
+      "telefono_texto": "+1 970-368-7069",
+      "direccion": "22101 US Highway 6, Keystone, CO 80435",
+      "lat": null,
+      "lng": null,
       "fuentes": [
        "https://www.tripadvisor.com/Hotel_Feature-g33501-d484128-zft1-Keystone_Lodge_Spa.html",
        "https://www.tripadvisor.com/ShowUserReviews-g33501-d484128-r116821022-Keystone_Lodge_And_Spa-Keystone_Colorado.html",
@@ -472,7 +495,10 @@ window.SKIAR = {
        "https://www.undercovertourist.com/keystone-colorado/keystone-lodge-hotel/",
        "https://www.expedia.co.uk/Keystone-Hotels-Keystone-Lodge-Spa-By-Keystone-Resort.h16001.Hotel-Information",
        "https://www.hotelplanner.com/Hotels/53496/Reservations-Keystone-Lodge-Spa-by-Keystone-Resort-Keystone-22101-Us-Highway-6-80435",
-       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx"
+       "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/know-before-you-go.aspx",
+       "https://www.meetings-conventions.com/Meeting-Event-Venues/Keystone-CO/Convention-Hotel/Keystone-Lodge-Spa-p2033446",
+       "https://www.northstarmeetingsgroup.com/Meeting-Event-Venues/Keystone-CO/Convention-Hotel/Keystone-Lodge-Spa-p52700300",
+       "https://www.travelweekly-asia.com/Hotels/Keystone-CO/Keystone-Lodge-Spa-p8488594"
       ]
      }
     }
@@ -1960,6 +1986,11 @@ window.SKIAR = {
       "credito": "CarTick (Wikimedia Commons)"
      },
      "peticion": {
+      "telefono": "+19708798811",
+      "telefono_texto": "+1 970-879-8811",
+      "direccion": "1855 Ski Time Square Drive, Steamboat Springs, CO 80487",
+      "lat": null,
+      "lng": null,
       "caracteristicas": [
        "Condo de 1 recámara en la torre Plaza: ~715 ft² (66 m²) y 1 baño (ventas MLS de las unidades 206 y 506).",
        "Camas: king en la recámara + sofá cama en la sala para la niña; algunas unidades tienen cuna y periquera (varía por dueño).",
@@ -1970,7 +2001,7 @@ window.SKIAR = {
        "Alberca exterior climatizada, 3-4 jacuzzis exteriores y 2 interiores, sauna y gimnasio. Un huésped reportó los jacuzzis interiores fuera de servicio toda una semana.",
        "Tiene elevador y clóset/locker de esquí gratis junto a cada unidad: la caminata con el equipo es muy corta.",
        "Estacionamiento subterráneo: varios listados dicen gratis para 1 vehículo, por orden de llegada, con pase que se recoge en el lobby. No admite campers; la altura del garaje no está publicada.",
-       "Check-in: las llaves se entregan en la recepción de Torian Plum, que tiene horario limitado según Ski.com. Avisen su hora de llegada.",
+       "Check-in: las llaves se entregan en la recepción de Torian Plum (Suite E-1C). Según ski.com abre de 8:00 a 22:00 en invierno; otros listados dicen horario limitado. Avisen su hora de llegada.",
        "Shuttle de invierno gratis a pedido (on-demand) hacia el pueblo.",
        "Ruido: la obra del hotel The Stockman (Auberge, 9 pisos, apertura en 2030) arrancó en 2026 junto a Torian Plum, cuesta arriba del edificio Creekside. En ene/mar 2027 habrá obra, normalmente de día.",
        "Vistas: las unidades de pisos altos de la Plaza con balcón hacia la base miran a las pistas, a Gondola Square y al valle del Yampa (listados de 506, 606, 607, 702, 802 y 805).",
@@ -2014,7 +2045,10 @@ window.SKIAR = {
        "https://www.tripadvisor.com/Hotel_Review-d207673",
        "https://www.steamboatpilot.com/news/steamboat-council-signals-approval-for-ski-time-square-condo-hotel-development",
        "https://milehighcre.com/?p=61959",
-       "https://dejongteamsteamboat.realgeeks.com/property/S1069402/"
+       "https://dejongteamsteamboat.realgeeks.com/property/S1069402/",
+       "https://www.ski.com/property/SKI-FIRSTCH-931",
+       "https://www.snowpak.com/property/SKI-FIRSTCH-931",
+       "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Torian-Plum-Plaza-Condos-p7922001"
       ]
      }
     },
@@ -2078,6 +2112,11 @@ window.SKIAR = {
       "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
      },
      "peticion": {
+      "telefono": "+19708715500",
+      "telefono_texto": "+1 970-871-5500",
+      "direccion": "2300 Mount Werner Circle, Steamboat Springs, CO 80487",
+      "lat": null,
+      "lng": null,
       "caracteristicas": [
        "Habitación de hotel Double Queen: 2 camas queen y 1 baño completo, ~400-450 ft² (37-42 m²), máximo 4 personas. Menores de 17 gratis con las camas existentes.",
        "Sin cocina: sólo mini-refri. La Deluxe King (350 ft², chimenea, balcón y tina de hidromasaje) es para 2 personas máximo, así que no les sirve.",
@@ -2135,7 +2174,9 @@ window.SKIAR = {
        "https://dejongteamsteamboat.realgeeks.com/property/S1057032/",
        "https://dejongteamsteamboat.realgeeks.com/property/SS9741334/",
        "https://dejongteamsteamboat.realgeeks.com/property/S1056551/",
-       "https://dejongteamsteamboat.realgeeks.com/property/S1064454/"
+       "https://dejongteamsteamboat.realgeeks.com/property/S1064454/",
+       "https://www.ski.com/property/INT-266-2882874",
+       "https://www.successfulmeetings.com/Meeting-Event-Venues/Steamboat-Springs-CO/Convention-Hotel/Steamboat-Grand-Resort-Hotel-p5141680"
       ]
      }
     },
@@ -2199,6 +2240,11 @@ window.SKIAR = {
       "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)"
      },
      "peticion": {
+      "telefono": null,
+      "telefono_texto": null,
+      "direccion": "2000 Ski Time Square Drive, Steamboat Springs, CO 80487",
+      "lat": null,
+      "lng": null,
       "caracteristicas": [
        "Condo de 2 rec./2 baños: ~990-1,460 ft² (92-136 m²), típico ~1,200 ft² (111 m²). Algunas unidades tienen loft y varios niveles.",
        "Camas típicas: queen + 2 individuales + sofá cama queen (varía por unidad). La niña tiene su propia recámara.",
@@ -2210,7 +2256,7 @@ window.SKIAR = {
        "No tiene alberca: hay 2 jacuzzis exteriores comunes junto a la fogata y al sundeck, con vista al arroyo, al valle y a la base.",
        "Lockers de esquí gratis para los huéspedes.",
        "Estacionamiento subterráneo, apretado en semanas pico. Algunos listados lo cobran (por vehículo); confirmen.",
-       "Check-in a las 16:00 (Vacasa). Hay varios administradores (Vacasa, Steamboat Resorts, Resort Lodging Co.), y el check-in es en la oficina del que opere su unidad.",
+       "Check-in: hay varios administradores (Vacasa, Steamboat Resorts, Resort Lodging Co.). Con Steamboat Resorts, el check-in es en otra dirección: 1855 Ski Time Square Dr, Suite E-1C (en Torian Plum), de 16:00 a 20:00. Si llegan después de las 17:00, avisen antes. Check-out a las 10:00. Pidan las instrucciones con 72 h de anticipación.",
        "Tranquilo: no hay restaurante ni bar; de noche se oye el arroyo.",
        "No todas las unidades están remodeladas."
       ],
@@ -2248,7 +2294,9 @@ window.SKIAR = {
        "https://www.ski.com/h/18315161",
        "https://dejongteamsteamboat.realgeeks.com/property/S1064511/",
        "https://dejongteamsteamboat.realgeeks.com/kutuk/",
-       "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information"
+       "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums-By-Resort-Lodging-Company.h18315161.Hotel-Information",
+       "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information",
+       "https://nz.hotels.com/ho217280/kutuk-condominiums-by-steamboat-resorts-steamboat-springs-united-states-of-america"
       ]
      }
     },
@@ -2308,6 +2356,11 @@ window.SKIAR = {
       "credito": "CarTick (Wikimedia Commons)"
      },
      "peticion": {
+      "telefono": "+19708709359",
+      "telefono_texto": "+1 970-870-9359",
+      "direccion": "2250 Apres Ski Way, Steamboat Springs, CO 80487",
+      "lat": null,
+      "lng": null,
       "caracteristicas": [
        "Residencia de 2 rec., normalmente una de 3-4 rec. con recámaras bloqueadas (lock-off). Los listados '2BR' anuncian 2,062-2,577 ft², pero es el área total; el espacio que se usa es menor.",
        "Cada recámara tiene su baño. Cocina gourmet (Viking en algunas), chimenea y terraza con asador de gas en varias residencias.",
@@ -2321,7 +2374,7 @@ window.SKIAR = {
        "Vistas: del lado de las pistas se ven Mt. Werner, Gondola Square y la escuela infantil. Del otro lado se ven la alberca, Emerald Mountain y el valle del Yampa.",
        "Burgess Creek corre junto a algunas residencias (Crestone Peak); se oye sobre todo en verano.",
        "Hay accesos sin escaleras a los lockers, a la cava y a Steamboat Square desde algunas residencias (p. ej. Zen Mountain).",
-       "Estacionamiento y check-in: no se encontró el costo ni el procedimiento; confírmenlos con el administrador."
+       "Check-in en la oficina (tel. 970-870-9359): según ski.com la recepción abre de 8:00 a 18:00 en invierno (otro listado dice 24 h); si llegan tarde, llamen para pedir instrucciones. No se encontró el costo del estacionamiento."
       ],
       "recomendacion": {
        "pedir": "Una residencia del lado de las pistas (vista a Mt. Werner, Gondola Square y la escuela infantil), en planta baja o piso bajo, cerca del ski valet y del elevador; ideal Sage Creek #105 configurada como 2 rec.",
@@ -2358,7 +2411,9 @@ window.SKIAR = {
        "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Three-Forks-306-2BR-Ski-InSki-Out-Luxury.h69720783.Informacion-Hotel",
        "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Slopeside-Residence-Wild-Card-Peak-616-2BR.h88243157.Hotel-Information",
        "https://www.travelocity.com/Steamboat-Springs-Hotels-One-Steamboat-Place-Zen-Mountain-1BR-Slopeside-Deluxe.h69720793.Hotel-Information",
-       "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Diamond-Peak-616-2BR-Penthouse.h69720848.Informacion-Hotel"
+       "https://www.expedia.mx/Steamboat-Springs-Hoteles-One-Steamboat-Place-Diamond-Peak-616-2BR-Penthouse.h69720848.Informacion-Hotel",
+       "https://www.ski.com/property/BPAL-3528",
+       "https://www.snowpak.com/property/BPAL-3528"
       ]
      }
     }
@@ -2935,8 +2990,15 @@ window.SKIAR = {
        "https://www.americanexpress.com/en-us/travel/the-hotel-collection/property/Colorado-US/Snowmass-Village/Limelight-Snowmass",
        "https://ratepunk.com/hotel/us/snowmass-village/limelight-hotel-snowmass",
        "https://wanderlog.com/place/details/1008892/limelight-hotel",
-       "https://www.hotel-online.com/press_releases/release/aspen-skiing-company-opens-the-99-room-limelight-hotel-snowmass"
-      ]
+       "https://www.hotel-online.com/press_releases/release/aspen-skiing-company-opens-the-99-room-limelight-hotel-snowmass",
+       "https://limelighthotels.com/snowmass/explore/getting-here",
+       "https://www.ski.com/property/SYNX-3063"
+      ],
+      "telefono": "+19709245100",
+      "telefono_texto": "+1 970-924-5100",
+      "direccion": "65 Wood Road, Snowmass Village, CO 81615",
+      "lat": null,
+      "lng": null
      }
     },
     {
@@ -3047,8 +3109,16 @@ window.SKIAR = {
        "https://hotels.com/ho324391/viceroy-snowmass-snowmass-village-united-states-of-america",
        "https://www.homes.com/snowmass-village-co/under-2m/",
        "https://aspenglenwoodmls.com/listings/CO/Snowmass-Village/81615/10189/130-wood-road-631-snowmass-village-co-81615/460826679",
-       "https://www.elliman.com/listing/130-wood-rd-514-snowmass-village-co-81615/13790694"
-      ]
+       "https://www.elliman.com/listing/130-wood-rd-514-snowmass-village-co-81615/13790694",
+       "https://www.ski.com/property/SKI-SNVICE-1893",
+       "https://www.northstarmeetingsgroup.com/Meeting-Event-Venues/Snowmass-Village-CO/Convention-Hotel/Viceroy-Snowmass-p52652162",
+       "https://www.travelprofy.com/eagle-airport-ege/viceroy-snowmass-snowmass-village"
+      ],
+      "telefono": "+19709238000",
+      "telefono_texto": "+1 970-923-8000",
+      "direccion": "130 Wood Road, Snowmass Village, CO 81615",
+      "lat": 39.209656,
+      "lng": -106.944934
      }
     },
     {
@@ -3158,8 +3228,15 @@ window.SKIAR = {
        "https://www.kayak.com/Snowmass-Village-Hotels-Viewline-Resort-Snowmass.7997793.ksp",
        "https://www.hotelmanagement.net/own/iconic-snowmass-resort-reopens-following-40-million-transformation",
        "https://sunset.com/travel/travel-directory/viewline-resort-snowmass-2",
-       "https://gettys.com/a-retro-motor-lodge-a-frame-colony-and-5-more-ski-hotels-opening-this-winter"
-      ]
+       "https://gettys.com/a-retro-motor-lodge-a-frame-colony-and-5-more-ski-hotels-opening-this-winter",
+       "https://gosnowmass.com/lodging/viewline-snowmass",
+       "https://www.marriott.com/en-us/hotels/aseak-viewline-resort-snowmass-autograph-collection/overview"
+      ],
+      "telefono": "+19709238200",
+      "telefono_texto": "+1 970-923-8200",
+      "direccion": "100 Elbert Lane, Snowmass Village, CO 81615",
+      "lat": null,
+      "lng": null
      }
     },
     {
@@ -3274,8 +3351,15 @@ window.SKIAR = {
        "https://www.travelocity.com/Snowmass-Village-Hotels-Woodrun-Place-38-One-Bedroom-Residence.h110439405.Hotel-Reviews",
        "https://aspensnowmass.com/visit/lodging/properties/woodrun-place",
        "https://www.successfulmeetings.com/Meeting-Event-Venues/Snowmass-Village-CO/Convention-Hotel/Woodrun-Place-Condominium-Hotel-p5530602",
-       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/town-home/woodrun-v?t=1&u=5528"
-      ]
+       "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/town-home/woodrun-v?t=1&u=5528",
+       "https://www.ski.com/property/SKI-EWWOOD-1120",
+       "https://www.snowpak.com/property/INT-1120-25690684"
+      ],
+      "telefono": "+19709223434",
+      "telefono_texto": "+1 970-922-3434",
+      "direccion": "425 Wood Road, Snowmass Village, CO 81615",
+      "lat": null,
+      "lng": null
      }
     }
    ],
