@@ -351,9 +351,10 @@
   }
 
   function renderLinks() {
-    const ls = [el("a", { href: REPO + "/reports/" + encodeURIComponent("Esquí familiar Colorado y alternativas.md") }, "Reporte completo de la investigación")];
-    D.resorts.forEach((r) => ls.push(" · ", el("a", { href: REPO + "/book/" + r.slug + "/ficha.md" }, "Ficha " + r.nombre)));
-    if (D.generado) ls.push(el("br"), "Datos actualizados: " + D.generado);
+    const ls = [el("a", { class: "btn ghost", href: REPO + "/reports/" + encodeURIComponent("Esquí familiar Colorado y alternativas.md"), target: "_blank", rel: "noopener" }, "📖 Reporte completo de la investigación")];
+    D.resorts.forEach((r) => ls.push(el("a", { class: "btn ghost", href: REPO + "/book/" + r.slug + "/ficha.md", target: "_blank", rel: "noopener" }, "🏔️ Ficha de " + r.nombre)));
+    ls.push(el("a", { class: "btn ghost", href: REPO + "/book/vuelos.md", target: "_blank", rel: "noopener" }, "✈️ Vuelos y traslados"));
+    if (D.generado) ls.push(el("p", { class: "muted" }, "🕒 Precios actualizados el " + new Date(D.generado + "T12:00:00").toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" })));
     $("#links").replaceChildren(...ls);
   }
 
