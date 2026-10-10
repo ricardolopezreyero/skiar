@@ -1,0 +1,449 @@
+{
+  "generado": "2026-10-10",
+  "tipo_cambio_mxn_usd": 17.0,
+  "nota_precios": "Ninguna tarifa para fechas de ene-mar 2027 apareció publicada. Todos los precios por ventana son ESTIMADOS a partir de las tarifas observadas más cercanas (ida y vuelta, económica, por persona, tarifa niño = adulto, sin maletas salvo que se indique). Ver 'base' en notas de cada ruta.",
+  "ventanas": {
+    "A": {
+      "ida": "2027-01-10",
+      "regreso": "2027-01-16"
+    },
+    "B": {
+      "ida": "2027-01-24",
+      "regreso": "2027-01-30"
+    },
+    "C": {
+      "ida": "2027-02-28",
+      "regreso": "2027-03-06"
+    }
+  },
+  "rutas": [
+    {
+      "id": "mty-den-viva",
+      "descripcion": "Manejar Torreón→Monterrey (3.5-4 h) y vuelo directo Viva Aerobús MTY→DEN (VB720/VB721)",
+      "aerolinea": "Viva Aerobús",
+      "escalas": 0,
+      "dias_operacion": "NO es diario. 3-4 vuelos/semana. 2026: Google Flights lista MTY→DEN mar/jue/sáb y DEN→MTY mar/jue/sáb/dom; Trip.com muestra VB720 jul-ago 2026 mar/jue/sáb/dom. Lanzamiento 2024: jue/dom; abril 2025: subió a 4/sem; mayo 2025: '3 frecuencias'. Horario invierno 2026-27 NO confirmado. Sábado (regreso) aparece en todas las fuentes 2026; domingo (ida) es incierto.",
+      "duracion": "2 h 40 - 2 h 50 sin escala (horarios cambian: 2024 MTY 10:10-DEN 12:10; verano 2026 MTY 11:00-DEN 13:50; regreso DEN 13:55 o 21:20 según temporada)",
+      "aplica_a": [
+        "keystone",
+        "breckenridge",
+        "steamboat",
+        "snowmass"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 250,
+          "total_3_usd": 750,
+          "fechas_reales": "2027-01-10→2027-01-16 si Viva opera en domingo; si no: Sáb 2027-01-09→Sáb 2027-01-16 (7 noches, 1a noche en Denver); si el invierno vuelve a jue/dom: Dom 2027-01-10→Dom 2027-01-17",
+          "fuente": "https://www.kayak.com/flight-routes/Monterrey-Gen-Mariano-Escobedo-MTY/Denver-Intl-DEN",
+          "confianza": "media"
+        },
+        "B": {
+          "por_persona_usd": 250,
+          "total_3_usd": 750,
+          "fechas_reales": "2027-01-24→2027-01-30 si opera en domingo; si no: Sáb 2027-01-23→Sáb 2027-01-30; si jue/dom: Dom 2027-01-24→Dom 2027-01-31",
+          "fuente": "https://www.google.com/travel/flights/flights-from-monterrey-to-denver.html",
+          "confianza": "media"
+        },
+        "C": {
+          "por_persona_usd": 250,
+          "total_3_usd": 750,
+          "fechas_reales": "2027-02-28→2027-03-06 si opera en domingo; si no: Sáb 2027-02-27→Sáb 2027-03-06; si jue/dom: Dom 2027-02-28→Dom 2027-03-07",
+          "fuente": "https://www.expedia.com/lp/flights/mty/den/monterrey-to-denver",
+          "confianza": "media"
+        }
+      },
+      "equipaje": "Tarifa base: sólo artículo personal. Maleta documentada se paga aparte: lista Viva (fecha no clara) MXN 371 hasta 20 kg, +MXN 604 para 25 kg, maleta extra 25 kg MXN 1,010; nota 2026: primera maleta MXN 500-900 (nacional); rutas a EE.UU. (dato antiguo) US$38-65 por maleta 25 kg por trayecto. Esquís = equipaje especial, ~US$60-100 por trayecto (estimación de terceros). Estimado familia: 2 maletas de 25 kg ida y vuelta ≈ US$150-260.",
+      "notas": "Estimado = tarifas mínimas observadas recientemente (no son de ene-mar 2027): Kayak US$229 (rango típico 189-371), Skyscanner US$232, Google Flights US$243, Expedia US$245-246, FareCompare típico 217-403; Viva desde MXN 1,458 sencillo (ago 2026). Rango probable por persona 230-370. Única ruta sin escala. Viva vende tramos sencillos: se puede volar ida en otra aerolínea y regreso en Viva. Salida ~10-11 am: salir de Torreón 4-5 am o dormir en Monterrey la víspera. Volaris dejó la ruta el 30-may-2025."
+    },
+    {
+      "id": "mty-den-conexion",
+      "descripcion": "MTY→DEN con una escala: United vía Houston (IAH) o American vía Dallas (DFW); posible Aeroméxico sin escala desde 19-dic-2026 (sin confirmar)",
+      "aerolinea": "United / American (Aeroméxico posible)",
+      "escalas": 1,
+      "dias_operacion": "Diario (vía IAH/DFW). Aeroméxico DEN-MTY aparece en FlightsFrom 'a partir de 2026-12-19' sin días ni fecha final: verificar.",
+      "duracion": "~5-7 h con conexión (estimado)",
+      "aplica_a": [
+        "keystone",
+        "breckenridge",
+        "steamboat",
+        "snowmass"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 450,
+          "total_3_usd": 1350,
+          "fechas_reales": "2027-01-10→2027-01-16 (fechas exactas posibles)",
+          "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": 450,
+          "total_3_usd": 1350,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": 450,
+          "total_3_usd": 1350,
+          "fechas_reales": "2027-02-28→2027-03-06",
+          "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado para 2027. Tarifas básicas de United/American normalmente no incluyen maleta documentada; revisar al cotizar.",
+      "notas": "No se encontró tarifa observada de United/AA MTY-DEN. Estimado entre el tope del rango típico de Viva (US$371-403) y las conexiones TRC-DEN observadas (US$503-578). Sirve como respaldo si Viva no vuela el domingo, o para combinar ida en United/AA (domingo) + regreso Viva (sábado)."
+    },
+    {
+      "id": "trc-den-aa",
+      "descripcion": "Vuelo desde Torreón: American TRC→DFW (sin escala) + DFW→DEN",
+      "aerolinea": "American Airlines",
+      "escalas": 1,
+      "dias_operacion": "TRC-DFW operando en 2026 (tarifas publicadas en aa.com para julio 2026); DFW-DEN múltiples diarios",
+      "duracion": "TRC-DFW ~2 h 05 + conexión + DFW-DEN ~2 h (aprox.)",
+      "aplica_a": [
+        "keystone",
+        "breckenridge",
+        "steamboat",
+        "snowmass"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 540,
+          "total_3_usd": 1620,
+          "fechas_reales": "2027-01-10→2027-01-16",
+          "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": 540,
+          "total_3_usd": 1620,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": "https://www.kiwi.com/us/cheap-flights/torreon-mexico/denver-colorado-united-states/",
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": 540,
+          "total_3_usd": 1620,
+          "fechas_reales": "2027-02-28→2027-03-06",
+          "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
+      "notas": "Observado TRC-DEN ida y vuelta: Expedia desde US$538 (Aeroméxico/Delta), Kiwi mínimo US$503 / promedio US$559. No se observó tarifa específica de AA vía DFW. Evita manejar a MTY; inmigración en DFW."
+    },
+    {
+      "id": "trc-hdn-aa",
+      "descripcion": "Vuelo desde Torreón a Steamboat: American TRC→DFW + DFW→HDN (Hayden, ~25-30 min de Steamboat)",
+      "aerolinea": "American Airlines",
+      "escalas": 1,
+      "dias_operacion": "TRC-DFW operando 2026. DFW-HDN temporada de invierno 10-dic-2026 a abril 2027 (programa oficial Steamboat, 18 aeropuertos); frecuencia AA en conflicto: 2 diarios (FlightsFrom) vs 7 semanales (Directflights); termina ~5-abr-2027.",
+      "duracion": "TRC-DFW ~2 h 05 + conexión + DFW-HDN ~2 h 46",
+      "aplica_a": [
+        "steamboat"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-01-10→2027-01-16",
+          "fuente": "https://www.aa.com/es-mx/vuelos-de-torre%C3%B3n-a-dallas",
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": "https://www.kayak.com/flight-routes/Dallas-Ft-Worth-other-airports-DFW/Hayden-Yampa-Valley-HDN",
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-02-28→2027-03-06 (puede subir: inicio de spring break en EE.UU.)",
+          "fuente": "https://www.kayak.com/flight-routes/Dallas-Ft-Worth-other-airports-DFW/Hayden-Yampa-Valley-HDN",
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
+      "notas": "Estimado: TRC-DFW enero 2026 'desde' MXN 7,555 r/t en aa.com (~US$445) + DFW-HDN r/t observado US$323 (Skyscanner) a US$381 (Kayak, AA, fechas de marzo); un boleto único suele costar menos que la suma (~US$770-825). Referencia verano 2026 (Mundial) TRC-DFW: MXN 10,320-13,104 r/t. Ruta más cómoda: sin manejo en México ni en la montaña."
+    },
+    {
+      "id": "mty-ase-1escala",
+      "descripcion": "MTY→Aspen (ASE) con una escala (United vía IAH/DEN o American vía DFW); ASE→Snowmass ~15 min",
+      "aerolinea": "United / American",
+      "escalas": 1,
+      "dias_operacion": "Horario de invierno 2026-27 a ASE no confirmado (Aspen Chamber sólo publica AA DFW-ASE diario hasta noviembre 2026 y United IAH-ASE hasta 24-oct-2026)",
+      "duracion": "~6-8 h con conexión (estimado)",
+      "aplica_a": [
+        "snowmass"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-01-10→2027-01-16",
+          "fuente": "https://www.google.com/travel/flights/flights-from-monterrey-to-aspen.html",
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": "https://www.aa.com/en-us/flights-from-aspen-to-monterrey",
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": 700,
+          "total_3_usd": 2100,
+          "fechas_reales": "2027-02-28→2027-03-06",
+          "fuente": "https://www.expedia.com/lp/flights/ase/mty/aspen-to-monterrey",
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado; tarifas básicas United/AA sin maleta documentada.",
+      "notas": "Observado (fechas fuera de temporada de esquí): Google Flights US$546 r/t United 1 escala; Expedia US$562; AA desde US$697 (otoño 2026); Skyscanner £455. Invierno en ASE suele ser más caro. ASE tiene riesgo de desvíos/cancelaciones por clima."
+    },
+    {
+      "id": "mty-ege-1escala",
+      "descripcion": "MTY→Eagle/Vail (EGE) con una escala (AA vía DFW o United vía IAH/DEN); alternativa para Snowmass (~1.5 h) o Summit County",
+      "aerolinea": "American / United",
+      "escalas": 1,
+      "dias_operacion": "Invierno 2026-27 (fuente de terceros): AA DFW-EGE 4 diarios 17-dic a 31-mar; United IAH-EGE con frecuencia variable",
+      "duracion": "~6-8 h con conexión (estimado)",
+      "aplica_a": [
+        "snowmass",
+        "keystone",
+        "breckenridge"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 600,
+          "total_3_usd": 1800,
+          "fechas_reales": "2027-01-10→2027-01-16",
+          "fuente": "https://www.google.com/travel/flights/flights-from-vail-to-monterrey.html?gl=US&hl=en-US",
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": 600,
+          "total_3_usd": 1800,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": "https://www.google.com/travel/flights/flights-from-vail-to-monterrey.html?gl=US&hl=en-US",
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": 600,
+          "total_3_usd": 1800,
+          "fechas_reales": "2027-02-28→2027-03-06",
+          "fuente": "https://www.google.com/travel/flights/flights-from-vail-to-monterrey.html?gl=US&hl=en-US",
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado.",
+      "notas": "Único dato: EGE→MTY sencillo desde US$280 en United (Google Flights) → ~US$560 r/t + prima de invierno. Traslado EGE→Snowmass o EGE→Keystone no cotizado."
+    },
+    {
+      "id": "trc-ase-ege-aa",
+      "descripcion": "Desde Torreón: American TRC→DFW + DFW→ASE o DFW→EGE",
+      "aerolinea": "American Airlines",
+      "escalas": 1,
+      "dias_operacion": "TRC-DFW operando 2026; DFW-EGE 4 diarios 17-dic a 31-mar (terceros); DFW-ASE invierno no confirmado",
+      "duracion": "~5-6 h con conexión (estimado)",
+      "aplica_a": [
+        "snowmass"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": null,
+          "total_3_usd": null,
+          "fechas_reales": "2027-01-10→2027-01-16",
+          "fuente": null,
+          "confianza": "baja"
+        },
+        "B": {
+          "por_persona_usd": null,
+          "total_3_usd": null,
+          "fechas_reales": "2027-01-24→2027-01-30",
+          "fuente": null,
+          "confianza": "baja"
+        },
+        "C": {
+          "por_persona_usd": null,
+          "total_3_usd": null,
+          "fechas_reales": "2027-02-28→2027-03-06",
+          "fuente": null,
+          "confianza": "baja"
+        }
+      },
+      "equipaje": "No verificado.",
+      "notas": "Sin tarifa observada. Probablemente igual o más caro que MTY-ASE/EGE (US$600-700+), pero evita el manejo Torreón-Monterrey."
+    }
+  ],
+  "traslados": [
+    {
+      "id": "den-renta-suv-awd",
+      "descripcion": "Renta SUV AWD en aeropuerto de Denver, 6 días (DEN→Keystone ~1.5-2 h; Breckenridge ~2-2.5 h; Steamboat ~3-3.5 h; Snowmass ~3.5-4 h)",
+      "aplica_a": [
+        "keystone",
+        "breckenridge",
+        "steamboat",
+        "snowmass"
+      ],
+      "total_usd": 470,
+      "fuente": "https://www.discovercars.com/suv/denver-airport-den_5044",
+      "confianza": "media",
+      "notas": "Discovercars (ene 2026): SUV enero desde US$50.26/día, promedio US$77.96/día; RAV4 AWD ~US$67/día → 6 días US$300-470. Kayak: SUV promedio ~US$63/día. Pedir AWD/4WD explícito (llantas all-season, no de nieve). No incluye gasolina ni estacionamiento en el hotel."
+    },
+    {
+      "id": "den-eme-compartido",
+      "descripcion": "Epic Mountain Express shuttle compartido DEN→Keystone/Breckenridge puerta a puerta, ida y vuelta, 3 personas",
+      "aplica_a": [
+        "keystone",
+        "breckenridge"
+      ],
+      "total_usd": 534,
+      "fuente": "https://www.epicmountainexpress.com/keystone-shuttles",
+      "confianza": "media",
+      "notas": "Tarifa vigente hasta 30-abr-2027: US$59-129 por persona por trayecto (US$48-103 con Epic Pass, -20%); a centro de transferencia US$49-119. Total calculado con US$89 (tarifa puerta a puerta publicada previamente) × 3 × 2. Rango total 3 personas r/t: US$354-774; con Epic Pass ~US$427."
+    },
+    {
+      "id": "hdn-steamboat-privado",
+      "descripcion": "Traslado privado Hayden (HDN)→Steamboat, 1-3 personas, ida y vuelta",
+      "aplica_a": [
+        "steamboat"
+      ],
+      "total_usd": 300,
+      "fuente": "https://alpineairporttransport.com/pricing/",
+      "confianza": "media",
+      "notas": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas. Más barato que compartido para 3."
+    },
+    {
+      "id": "hdn-steamboat-compartido",
+      "descripcion": "Shuttle compartido HDN→Steamboat, ida y vuelta, 3 personas",
+      "aplica_a": [
+        "steamboat"
+      ],
+      "total_usd": 506,
+      "fuente": "https://stormmountainexpress.com/shared",
+      "confianza": "media",
+      "notas": "Storm Mountain Express US$84.36 por adulto por trayecto (tarifa de niño no vista; total asume tarifa adulto). GO Airport Shuttle desde US$98 p/p. Go Alpine (único autorizado para viaje compartido en Steamboat según directorio) no publicó precio."
+    },
+    {
+      "id": "ase-snowmass-hotel",
+      "descripcion": "Aspen (ASE)→Snowmass: shuttle gratuito del hotel/condo (muchos lo ofrecen) + bus RFTA gratuito Aspen-Snowmass",
+      "aplica_a": [
+        "snowmass"
+      ],
+      "total_usd": 0,
+      "fuente": "https://www.snowmass.com/blog/how-to-get-to",
+      "confianza": "media",
+      "notas": "Confirmar con el alojamiento específico que incluye shuttle desde el aeropuerto."
+    },
+    {
+      "id": "den-snowmass-privado",
+      "descripcion": "Traslado privado DEN→Snowmass, ida y vuelta (~3.5 h)",
+      "aplica_a": [
+        "snowmass"
+      ],
+      "total_usd": 2000,
+      "fuente": "https://coloradoskiexpress.com/shuttle/denver-to-snowmass/",
+      "confianza": "media",
+      "notas": "Colorado Ski Express US$1,000 por trayecto (hasta 12 pax); Silver Mountain Express US$1,250 por trayecto."
+    },
+    {
+      "id": "den-snowmass-compartido",
+      "descripcion": "Shuttle compartido DEN→Aspen/Snowmass, ida y vuelta, 3 personas",
+      "aplica_a": [
+        "snowmass"
+      ],
+      "total_usd": 780,
+      "fuente": null,
+      "confianza": "baja",
+      "notas": "Roaring Fork Express aparece con US$130 p/p por trayecto en un listado posiblemente desactualizado; Colorado Mountain Express no publicó tarifa en los resultados."
+    }
+  ],
+  "estacionamiento_mty_usd": 82,
+  "estacionamiento_mty_nota": "Superpark Terminal C (techado, shuttle gratis): MXN 1,400 por 7 días (~US$82). Estacionamiento OMA larga estancia: tope MXN 290-350/día → MXN 2,030-2,450 por 7 días (US$120-144). Fuente: aeropuertosdelmundo.net (terceros, 2025).",
+  "gasolina_casetas_trc_mty_redondo_usd": 145,
+  "gasolina_casetas_nota": "Casetas 2026: Torreón-Saltillo MXN 276 + Saltillo-Monterrey MXN 150 = MXN 426 por sentido, MXN 852 redondo (~US$50). Gasolina estimada (no de fuente): ~740 km redondo, ~11 km/L, ~MXN 24/L ≈ MXN 1,600 (~US$95). Total estimado ~US$145.",
+  "recomendado": {
+    "keystone": {
+      "ruta": "mty-den-viva",
+      "traslado": "den-renta-suv-awd",
+      "alternativa": "Traslado den-eme-compartido si no quieren manejar; ruta mty-den-conexion si Viva no opera domingo y no quieren Sáb→Sáb"
+    },
+    "breckenridge": {
+      "ruta": "mty-den-viva",
+      "traslado": "den-renta-suv-awd",
+      "alternativa": "den-eme-compartido (Breckenridge tiene transporte gratuito en el pueblo)"
+    },
+    "steamboat": {
+      "ruta": "trc-hdn-aa",
+      "traslado": "hdn-steamboat-privado",
+      "alternativa": "mty-den-viva + den-renta-suv-awd (~US$750-900 más barato para 3 contando maletas, estacionamiento y casetas, pero +3.5-4 h de manejo a MTY y 3-3.5 h DEN→Steamboat por puerto de montaña)"
+    },
+    "snowmass": {
+      "ruta": "mty-den-viva",
+      "traslado": "den-renta-suv-awd",
+      "alternativa": "mty-ase-1escala + ase-snowmass-hotel (más cómodo; ~US$880 más para 3: vuelos +1,350 pero sin renta -470; horario invierno ASE sin confirmar) o trc-ase-ege-aa vía DFW-EGE (sin tarifa observada)"
+    }
+  },
+  "fuentes": [
+    "https://aviacionline.com/denver-recibe-una-nueva-aerolinea-mexicana-viva-aerobus",
+    "https://aviacionline.com/viva-aerobus-inicio-sus-vuelos-a-denver",
+    "https://mexicobusiness.news/aerospace/news/viva-aerobus-add-37-weekly-flights-2025-season",
+    "https://www.luznoticias.mx/2025-05-01/internacional/volaris-eliminara-esta-ruta-entre-mexico-y-estados-unidos-a-partir-del-30-de-mayo/242985",
+    "https://es.trip.com/flights/status-vb720/",
+    "https://www.flightradar24.com/data/flights/vb721",
+    "https://www.google.com/travel/flights/flights-from-monterrey-to-denver.html",
+    "https://www.google.com/travel/flights/flights-from-denver-to-monterrey.html",
+    "https://www.flightsfrom.com/MTY-DEN",
+    "https://www.directflights.com/MTY-DEN",
+    "https://www.kayak.com/flight-routes/Monterrey-Gen-Mariano-Escobedo-MTY/Denver-Intl-DEN",
+    "https://www.expedia.com/lp/flights/mty/den/monterrey-to-denver",
+    "https://skyscanner.com/routes/mtya/dena/monterrey-to-denver.html",
+    "https://www.farecompare.com/flights/Monterrey-MTY/Denver-DEN/market.html",
+    "https://www.vivaaerobus.com/en-mx/flights-from-monterrey-to-denver",
+    "https://www.viveusa.mx/destinos/cuanto-cobra-viva-aerobus-por-maletas-documentadas-esta-es-su-lista-de-precios/",
+    "https://www.viveusa.mx/destinos/viajar-a-estados-unidos-cuanto-cuesta-documentar-el-equipaje-que-objetos-debes-documentar/",
+    "https://www.viveusa.mx/destinos/no-pagues-de-mas-equipaje-de-avion-2026-que-maletas-pasan-gratis-y-cuales-no/",
+    "https://qeepl.com/en/blog/complete-guide-to-viva-baggage-policy-and-other-rules",
+    "https://www.aa.com/es-mx/vuelos-de-torre%C3%B3n-a-dallas",
+    "https://playersoflife.com/torreon/cuanto-cuesta-viajar-de-torreon-a-dallas-precios-american-airlines-mundial-2026/",
+    "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
+    "https://www.kiwi.com/us/cheap-flights/torreon-mexico/denver-colorado-united-states/",
+    "https://www.steamboatradio.com/2026/08/17/winter-air-service-from-hayden-to-fly-to-18-airports-nonstop/",
+    "https://www.flightsfrom.com/DFW-HDN",
+    "https://www.directflights.com/DFW-HDN",
+    "https://www.flightsfrom.com/DAL-HDN",
+    "https://www.kayak.com/flight-routes/Dallas-Ft-Worth-other-airports-DFW/Hayden-Yampa-Valley-HDN",
+    "https://www.skyscanner.net/routes/dfwa/hdn/dallas-to-hayden.html",
+    "https://www.google.com/travel/flights/flights-from-monterrey-to-aspen.html",
+    "https://www.aa.com/en-us/flights-from-aspen-to-monterrey",
+    "https://www.expedia.com/lp/flights/ase/mty/aspen-to-monterrey",
+    "https://aspenchamber.org/plan-trip/get-to-aspen/by-air/aspen-flight-info/",
+    "https://blueskylimovail.com/ege-winter-flight-schedule/",
+    "https://www.google.com/travel/flights/flights-from-vail-to-monterrey.html?gl=US&hl=en-US",
+    "https://www.flightconnections.com/flights-from-mty-to-ege",
+    "https://www.epicmountainexpress.com/keystone-shuttles",
+    "https://www.epicmountainexpress.com/shuttle-rates",
+    "https://www.epicmountainexpress.com/summit-county-rates",
+    "https://www.discovercars.com/suv/denver-airport-den_5044",
+    "https://www.kayak.com/Denver-Intl-Airport-SUV-Rentals.DEN.acsv.ksp",
+    "https://alpineairporttransport.com/pricing/",
+    "https://stormmountainexpress.com/shared",
+    "https://gowithus.com/airports/steamboat-springs-yampa-valley-airport-hdn/",
+    "https://www.airportshuttles.com/yampavalley.php",
+    "https://www.snowmass.com/blog/how-to-get-to",
+    "https://www.snowmass.com/resort-guide/transportation",
+    "https://coloradoskiexpress.com/shuttle/denver-to-snowmass/",
+    "https://silvermountainexpress.com/locations/aspen-snowmass-car-service/",
+    "https://www.aeropuertosdelmundo.net/mx/aeropuerto-MTY/",
+    "https://www.posta.com.mx/nuevo-leon/aeropuerto-de-monterrey-este-es-el-costo-del-estacionamiento-publico/vl2083592",
+    "https://www.milenio.com/estados/aumento-casetas-carreteras-coahuila-durango-2026-costo",
+    "https://www.posta.com.mx/coahuila/congreso-de-coahuila-exige-frenar-aumentos-en-tarifa-de-la-autopista-saltillo-monterrey/vl2194050",
+    "https://www.liderempresarial.com/superpeso-peso-mexicano-dolar-16-94-cuanto-durara/"
+  ]
+}
