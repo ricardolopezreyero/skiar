@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="styles.css?v=e979bef4ea">
+  <link rel="stylesheet" href="styles.css?v=6c767154a3">
 </head>
 <body>
   <header class="hero">
@@ -56,9 +56,19 @@
   <nav class="tabs" aria-label="Vistas">
     <div class="wrap tabs-in">
       <button type="button" class="tab on" data-tab="decidir">🧭 Decidir</button>
+      <button type="button" class="tab" data-tab="pistas">⛷️ Pistas</button>
       <button type="button" class="tab" data-tab="checklist">✅ Checklist <span class="tab-count" id="tab-count"></span></button>
     </div>
   </nav>
+
+  <main class="wrap" id="vista-pistas" hidden>
+    <section id="pistas">
+      <h2>⛷️ Mapas y datos de las pistas</h2>
+      <p class="hint">Toca una pista para ver su mapa oficial. Sirve para elegir este año y los siguientes.</p>
+      <div class="filters" id="pistas-filtros"></div>
+      <div id="pistas-lista" class="grid-pistas"></div>
+    </section>
+  </main>
 
   <main class="wrap" id="vista-checklist" hidden>
     <section id="pendientes">
@@ -182,12 +192,17 @@
 
   <a href="#comparar" class="fab" id="fab">📊 Comparar todo</a>
 
+  <dialog id="mapa-dlg" class="ficha mapa-dlg" aria-label="Mapa de pistas">
+    <div id="mapa-dlg-body"></div>
+  </dialog>
+
   <dialog id="ficha" class="ficha" aria-label="Ficha del hospedaje">
     <div id="ficha-body"></div>
   </dialog>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="data.js?v=fab9822a71"></script>
-  <script src="app.js?v=2e7e4d5e34"></script>
+  <script src="mapas_estado.js"></script>
+  <script src="data.js?v=bbc94629d2"></script>
+  <script src="app.js?v=70ce6a31fb"></script>
 </body>
 </html>

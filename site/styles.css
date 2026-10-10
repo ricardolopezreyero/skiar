@@ -451,3 +451,33 @@ dialog.ficha::backdrop { background: rgba(10, 20, 32, .55); backdrop-filter: blu
   .ficha-in { padding: 14px 16px 28px; }
   .lodging .ficha-btn { display: block; }
 }
+
+/* ---------- catálogo de pistas ---------- */
+.grid-pistas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin-top: 14px; }
+.pista { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 10px; }
+.pista.fin { border: 2px solid var(--brand); }
+.pista-h { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.pista h3 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 1.3rem; }
+.pista .meta { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.pista-res, .pista-ninos { margin: 0; font-size: .9rem; }
+.pista-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pista-stats div { background: var(--bg); border-radius: 10px; padding: 6px 8px; }
+.pista-stats small { display: block; color: var(--muted); font-size: .7rem; }
+.pista-stats strong { font-size: .95rem; font-variant-numeric: tabular-nums; }
+.niveles { display: flex; height: 22px; border-radius: 99px; overflow: hidden; font-size: .72rem; font-weight: 700; color: #fff; }
+.niveles span { display: grid; place-items: center; min-width: 28px; }
+.nv-ini { background: #2e8b57; } .nv-int { background: #1d5fa8; } .nv-ava { background: #12263a; }
+.pista .row { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+.mapa-dlg { width: min(1100px, 100vw); }
+.mapa-dlg-h { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; }
+.mapa-dlg-h h3 { margin: 0; font-family: Fraunces, Georgia, serif; }
+.ficha-close.static { position: static; flex: none; }
+.mapa-pdf { width: 100%; height: 70vh; border: 0; background: var(--bg); display: block; }
+.mapa-img { display: block; background: var(--bg); }
+.mapa-img img { width: 100%; height: auto; display: block; }
+.mapa-dlg-acc { padding: 12px 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 700px) {
+  .grid-pistas { grid-template-columns: 1fr; }
+  .pista-res { display: none; }
+  .mapa-pdf { height: calc(100dvh - 190px); }
+}

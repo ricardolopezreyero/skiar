@@ -39,6 +39,12 @@ def main():
                 l["peticion"] = peticiones[l["nombre"]]
         resorts.append(data)
 
+    pistas = []
+    for f in ("finalistas.json", "colorado.json", "otros_estados.json"):
+        for p in load(BOOK / "pistas" / f) or []:
+            if not any(x.get("slug") == p.get("slug") for x in pistas):
+                pistas.append(p)
+
     payload = {
         "generado": datetime.date.today().isoformat(),
         "rama": "claude/dreamy-cori-anrnp2",
@@ -48,6 +54,7 @@ def main():
         "mapa": load(BOOK / "mapa.json") or {},
         "nieve": load(BOOK / "nieve.json") or {},
         "espacio": load(BOOK / "espacio.json") or {},
+        "pistas": pistas,
     }
     out = SITE / "data.js"
     out.write_text("window.SKIAR = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")

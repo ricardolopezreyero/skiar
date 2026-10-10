@@ -30,6 +30,9 @@ jobs:
       - name: Armar la imagen para compartir (og.jpg)
         run: python tools/build_og.py
 
+      - name: Revisar ligas de mapas de pistas
+        run: python tools/check_mapas.py
+
       - name: Publicar en gh-pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

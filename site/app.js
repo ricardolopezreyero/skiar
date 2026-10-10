@@ -326,6 +326,68 @@
   }
   $("#ficha").addEventListener("click", (ev) => { if (ev.target.id === "ficha") $("#ficha").close(); });
 
+  // ---------- catálogo de pistas con mapa oficial ----------
+  const P = D.pistas || [];
+  const ESTADO_MAPA = window.SKIAR_MAPAS || {};
+  const esCelular = () => window.matchMedia("(max-width: 700px)").matches;
+  const urlOk = (u) => !!u && (ESTADO_MAPA[u] ? ESTADO_MAPA[u].ok !== false : true);
+  const fmtN = (n, suf) => (n == null ? "—" : Math.round(n).toLocaleString("es-MX") + (suf || ""));
+  let filtroPistas = "Todas";
+
+  function renderPistas() {
+    if (!P.length) { $("#pistas-lista").replaceChildren(el("p", { class: "muted" }, "Cargando el catálogo de pistas…")); return; }
+    const estados = ["Todas", "Finalistas", ...[...new Set(P.map((p) => p.estado).filter(Boolean))]];
+    $("#pistas-filtros").replaceChildren(...estados.map((e) => el("button", { type: "button", class: "filter" + (filtroPistas === e ? " on" : ""), onclick: () => { filtroPistas = e; renderPistas(); } }, e)));
+    const lista = P.filter((p) => filtroPistas === "Todas" || (filtroPistas === "Finalistas" ? p.finalista : p.estado === filtroPistas))
+      .sort((a, b) => (b.finalista ? 1 : 0) - (a.finalista ? 1 : 0));
+    $("#pistas-lista").replaceChildren(...lista.map((p) => {
+      const s = p.stats || {};
+      const tieneMapa = urlOk(p.mapa_img) || urlOk(p.mapa_pdf);
+      const niv = [["ini", s.principiante_pct], ["int", s.intermedio_pct], ["ava", s.avanzado_pct]];
+      return el("article", { class: "pista" + (p.finalista ? " fin" : "") },
+        el("div", { class: "pista-h" },
+          el("div", {}, el("h3", {}, p.nombre), el("p", { class: "meta" }, [p.estado, p.pase].filter(Boolean).join(" · "))),
+          p.finalista ? el("span", { class: "badge star" }, "⭐ Finalista") : null),
+        p.resumen ? el("p", { class: "pista-res" }, p.resumen) : null,
+        el("div", { class: "pista-stats" },
+          el("div", {}, el("small", {}, "Pistas"), el("strong", {}, fmtN(s.pistas))),
+          el("div", {}, el("small", {}, "Hectáreas"), el("strong", {}, fmtN(s.hectareas))),
+          el("div", {}, el("small", {}, "Telesillas"), el("strong", {}, fmtN(s.telesillas))),
+          el("div", {}, el("small", {}, "Desnivel"), el("strong", {}, fmtN(s.desnivel_m, " m"))),
+          el("div", {}, el("small", {}, "Base → cima"), el("strong", {}, s.base_m ? `${fmtN(s.base_m)}–${fmtN(s.cima_m)} m` : "—")),
+          el("div", {}, el("small", {}, "Nieve al año"), el("strong", {}, fmtN(s.nevada_cm, " cm")))),
+        niv.some(([, v]) => v) ? el("div", { class: "niveles", title: "Principiante · Intermedio · Avanzado" },
+          niv.map(([k, v]) => v ? el("span", { class: "nv-" + k, style: `flex:${v}` }, `${Math.round(v)}%`) : null)) : null,
+        p.ninos ? el("p", { class: "pista-ninos" }, "👧 ", p.ninos) : null,
+        el("div", { class: "row" },
+          tieneMapa ? el("button", { type: "button", class: "btn", onclick: () => abrirMapa(p) }, "🗺️ Ver mapa") : null,
+          urlOk(p.mapa_pdf) ? el("a", { class: "btn ghost", href: p.mapa_pdf, target: "_blank", rel: "noopener", download: "" }, "⬇️ PDF") : null,
+          p.mapa_pagina ? el("a", { class: "btn ghost", href: p.mapa_pagina, target: "_blank", rel: "noopener" }, tieneMapa ? "Página oficial" : "🗺️ Mapa oficial") : null));
+    }));
+  }
+
+  function abrirMapa(p) {
+    const img = urlOk(p.mapa_img) ? p.mapa_img : null;
+    const pdf = urlOk(p.mapa_pdf) ? p.mapa_pdf : null;
+    let visor;
+    if (img) visor = el("a", { href: img, target: "_blank", rel: "noopener", class: "mapa-img" }, el("img", { src: img, alt: "Mapa de pistas de " + p.nombre, referrerpolicy: "no-referrer" }));
+    else if (pdf) visor = el("iframe", { class: "mapa-pdf", title: "Mapa de pistas de " + p.nombre, src: esCelular() ? "https://docs.google.com/viewer?embedded=true&url=" + encodeURIComponent(pdf) : pdf + "#view=FitH" });
+    $("#mapa-dlg-body").replaceChildren(
+      el("div", { class: "mapa-dlg-h" },
+        el("div", {}, el("p", { class: "eyebrow-d" }, [p.estado, p.temporada_mapa ? "Mapa " + p.temporada_mapa : null].filter(Boolean).join(" · ")), el("h3", {}, p.nombre)),
+        el("button", { type: "button", class: "ficha-close static", "aria-label": "Cerrar", onclick: () => $("#mapa-dlg").close() }, "✕")),
+      visor || el("p", { class: "muted", style: "padding:16px" }, "No hay mapa descargable; usa la página oficial."),
+      el("div", { class: "row mapa-dlg-acc" },
+        pdf ? el("a", { class: "btn", href: pdf, target: "_blank", rel: "noopener", download: "" }, "⬇️ Descargar PDF") : null,
+        img ? el("a", { class: "btn ghost", href: img, target: "_blank", rel: "noopener" }, "🔍 Abrir en grande") : null,
+        pdf ? el("a", { class: "btn ghost", href: pdf, target: "_blank", rel: "noopener" }, "Abrir PDF") : null,
+        p.mapa_pagina ? el("a", { class: "btn ghost", href: p.mapa_pagina, target: "_blank", rel: "noopener" }, "Página oficial") : null),
+      el("p", { class: "meta", style: "padding:0 18px 16px" }, "Mapa oficial del resort. Si no se ve aquí, usa «Abrir PDF»."));
+    const dlg = $("#mapa-dlg");
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  }
+  $("#mapa-dlg").addEventListener("click", (ev) => { if (ev.target.id === "mapa-dlg") $("#mapa-dlg").close(); });
+
   // ---------- cuadro comparativo ----------
   const cmp = { sort: "puntaje", dir: 1, soloSki: false, soloPres: false, soloGratis: false };
   const corto = (x) => (x || "").split(/[;(]| — /)[0].trim();
@@ -696,11 +758,12 @@
   }
 
   function renderTabs() {
-    const check = state.tab === "checklist";
-    $("#vista-decidir").hidden = check;
-    $("#vista-checklist").hidden = !check;
-    $("#fab").hidden = check;
-    document.querySelector(".hero .steps").hidden = check;
+    const otra = state.tab !== "decidir";
+    $("#vista-decidir").hidden = otra;
+    $("#vista-checklist").hidden = state.tab !== "checklist";
+    $("#vista-pistas").hidden = state.tab !== "pistas";
+    $("#fab").hidden = otra;
+    document.querySelector(".hero .steps").hidden = otra;
     document.querySelectorAll(".tab").forEach((b) => { b.classList.toggle("on", b.dataset.tab === state.tab); b.setAttribute("aria-selected", String(b.dataset.tab === state.tab)); });
   }
   document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
@@ -712,6 +775,7 @@
   function render() {
     if (state.r && !D.resorts.some((r) => r.slug === state.r)) state.r = null;
     renderTabs();
+    renderPistas();
     renderVentanas();
     renderNieve();
     renderResorts();
