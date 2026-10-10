@@ -326,56 +326,91 @@
   }
 
   let mapa = null, capa = null, mapaSlug = null;
+  const COLOR_RESORT = { keystone: "#e0703a", breckenridge: "#7a4fd0", steamboat: "#2e8b57", snowmass: "#1d5fa8" };
+  const COLOR_TIPO = { origen: "#c0392b", aeropuerto: "#12263a", resort: "#2e8b57", escuela: "#b7791f", hospedaje: "#7a4fd0" };
+
+  function dibujarRuta(ids, colorTierra, grupo) {
+    (ids || []).forEach((id) => {
+      const x = tramo(id); const a = x && punto(x.de), b = x && punto(x.a);
+      if (!a || !b || a.id === b.id || a.lat == null || b.lat == null) return;
+      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: x.modo === "vuelo" ? "#1d5fa8" : colorTierra, weight: 3, opacity: .9, dashArray: x.modo === "vuelo" ? "6 8" : null })
+        .bindTooltip(`${ICONO_MODO[x.modo] || ""} ${(a.nombre || "").split(" (")[0]} → ${(b.nombre || "").split(" (")[0]}: ${fmtH(x.horas)}`).addTo(grupo);
+    });
+  }
+
   function renderMapa() {
     if (!M.puntos || !M.puntos.length) { $("#mapa").hidden = true; return; }
-    mapaSlug = mapaSlug || state.r || D.resorts[0].slug;
-    $("#mapa-tabs").replaceChildren(...D.resorts.map((r) => el("button", { type: "button", class: mapaSlug === r.slug ? "on" : "", onclick: () => { mapaSlug = r.slug; renderMapa(); } }, r.nombre)));
-    const v = viaje(mapaSlug);
+    mapaSlug = mapaSlug || "todos";
+    const todos = mapaSlug === "todos";
+    $("#mapa-tabs").replaceChildren(
+      el("button", { type: "button", class: todos ? "on" : "", onclick: () => { mapaSlug = "todos"; renderMapa(); } }, "🌎 Todos"),
+      ...D.resorts.map((r) => el("button", { type: "button", class: mapaSlug === r.slug ? "on" : "", onclick: () => { mapaSlug = r.slug; renderMapa(); } }, el("span", { class: "sw", style: `background:${COLOR_RESORT[r.slug]}` }), r.nombre)));
+    const v = todos ? null : viaje(mapaSlug);
     const r = D.resorts.find((x) => x.slug === mapaSlug);
 
-    // ruta paso a paso
     const pasos = (ids) => (ids || []).map((id) => tramo(id)).filter(Boolean).map((x) =>
       el("li", {}, el("span", { class: "modo" }, ICONO_MODO[x.modo] || "•"),
         el("span", { class: "desc" }, x.de === x.a || x.modo === "espera" ? "Espera en " + ((punto(x.de) || {}).nombre || x.de) : ((punto(x.de) || {}).nombre || x.de) + " → " + ((punto(x.a) || {}).nombre || x.a), x.nota ? el("small", {}, x.nota) : null),
         el("span", { class: "h" }, fmtH(x.horas), " ", conf(x.confianza))));
-    const pist = (M.horario_pistas || {})[mapaSlug] || {};
-    const esc = (M.horario_escuela || {})[mapaSlug] || {};
-    $("#mapa-ruta").replaceChildren(
-      v ? el("div", { class: "ruta-tot" }, el("div", {}, el("small", {}, "Ida, puerta a puerta"), el("strong", {}, fmtH(v.ida))), el("div", {}, el("small", {}, "Regreso"), el("strong", {}, fmtH(v.regreso)))) : el("p", { class: "muted" }, "Sin itinerario."),
-      v ? (() => { const l0 = defaultLodging(r, state.v); const b = balance(r, state.r === r.slug && state.l != null ? state.l : l0); return el("div", { class: "ruta-tot" },
-        el("div", {}, el("small", {}, "⛷️ Días esquiando"), el("strong", {}, DIAS_ESQUI + " días"), el("small", {}, fmtH(b.esqui) + " de pista")),
-        el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: 2"))); })() : null,
-      v ? el("h4", {}, "🛫 Ida") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.ida)) : null,
-      v ? el("h4", {}, "🛬 Regreso") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.regreso)) : null,
-      el("h4", {}, "⛷️ En la montaña"),
-      el("p", { class: "meta" }, pist.abre ? `Telesillas ${pist.abre}–${pist.cierra} (${fmtH(pist.horas)} al día)` : "Horario de pistas por confirmar",
-        esc.entrega ? el("br") : null, esc.entrega ? `Escuela de la niña: entrega ${esc.entrega}, recoge ${esc.recoge}` : null));
 
-    // mapa
+    if (todos) {
+      $("#mapa-ruta").replaceChildren(
+        el("h4", { style: "margin-top:0" }, "🌎 Los 4 destinos de un vistazo"),
+        el("p", { class: "meta" }, "Toca un destino para ver su ruta paso a paso."),
+        ...D.resorts.map((rr) => {
+          const vv = viaje(rr.slug); const b = balance(rr, defaultLodging(rr, state.v));
+          return el("button", { type: "button", class: "dest-row", onclick: () => { mapaSlug = rr.slug; renderMapa(); } },
+            el("span", { class: "sw big", style: `background:${COLOR_RESORT[rr.slug]}` }),
+            el("span", { class: "dest-name" }, el("strong", {}, rr.nombre), el("small", {}, (() => { const id = (M.itinerarios[rr.slug] || {}).ruta; const ru = (V.rutas || []).find((q) => q.id === id); return ru ? (ru.aerolinea || "") + " · " + (ru.descripcion || id).split("(")[0].trim() : id || ""; })())),
+            el("span", { class: "dest-n" }, el("small", {}, "🛫 ida"), fmtH(vv && vv.ida)),
+            el("span", { class: "dest-n" }, el("small", {}, "🛬 regreso"), fmtH(vv && vv.regreso)),
+            el("span", { class: "dest-n" }, el("small", {}, "⛷️ pista"), fmtH(b.esqui)));
+        }));
+    } else {
+      const pist = (M.horario_pistas || {})[mapaSlug] || {};
+      const esc = (M.horario_escuela || {})[mapaSlug] || {};
+      $("#mapa-ruta").replaceChildren(
+        v ? el("div", { class: "ruta-tot" }, el("div", {}, el("small", {}, "Ida, puerta a puerta"), el("strong", {}, fmtH(v.ida))), el("div", {}, el("small", {}, "Regreso"), el("strong", {}, fmtH(v.regreso)))) : el("p", { class: "muted" }, "Sin itinerario."),
+        v ? (() => { const b = balance(r, state.r === r.slug && state.l != null ? state.l : defaultLodging(r, state.v)); return el("div", { class: "ruta-tot" },
+          el("div", {}, el("small", {}, "⛷️ Días esquiando"), el("strong", {}, DIAS_ESQUI + " días"), el("small", {}, fmtH(b.esqui) + " de pista")),
+          el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: 2"))); })() : null,
+        v ? el("h4", {}, "🛫 Ida") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.ida)) : null,
+        v ? el("h4", {}, "🛬 Regreso") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.regreso)) : null,
+        el("h4", {}, "⛷️ En la montaña"),
+        el("p", { class: "meta" }, pist.abre ? `Telesillas ${pist.abre}–${pist.cierra} (${fmtH(pist.horas)} al día)` : "Horario de pistas por confirmar",
+          esc.entrega ? el("br") : null, esc.entrega ? `Escuela de la niña: entrega ${esc.entrega}, recoge ${esc.recoge}` : null));
+    }
+
+    // mapa (OpenStreetMap)
     if (!window.L) { $("#map").replaceChildren(el("p", { class: "muted", style: "padding:16px" }, "No se pudo cargar el mapa.")); return; }
     if (!mapa) {
       mapa = L.map("map", { scrollWheelZoom: false });
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", { attribution: "&copy; OpenStreetMap &copy; CARTO", maxZoom: 18 }).addTo(mapa);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', maxZoom: 19 }).addTo(mapa);
     }
     if (capa) capa.remove();
     capa = L.layerGroup().addTo(mapa);
-    const color = { origen: "#e0703a", aeropuerto: "#1d5fa8", resort: "#2e8b57", escuela: "#b7791f", hospedaje: "#7a4fd0" };
-    const visibles = (M.puntos || []).filter((p) => p.lat != null && p.lng != null && (!p.resort || p.resort === mapaSlug));
+    const slugs = todos ? D.resorts.map((x) => x.slug) : [mapaSlug];
     const usados = new Set();
-    if (v) [...v.it.ida, ...v.it.regreso].forEach((id) => { const x = tramo(id); if (x) { usados.add(x.de); usados.add(x.a); } });
-    visibles.filter((p) => p.resort || usados.has(p.id)).forEach((p) => {
+    slugs.forEach((s) => { const vv = viaje(s); if (vv) [...vv.it.ida, ...vv.it.regreso].forEach((id) => { const x = tramo(id); if (x) { usados.add(x.de); usados.add(x.a); } }); });
+    const visibles = (M.puntos || []).filter((p) => p.lat != null && p.lng != null && (p.resort ? slugs.includes(p.resort) : usados.has(p.id)));
+    slugs.forEach((s) => { const vv = viaje(s); if (vv) dibujarRuta(vv.it.ida, todos ? COLOR_RESORT[s] : "#e0703a", capa); });
+    visibles.forEach((p) => {
       const rad = p.tipo === "hospedaje" ? 6 : p.tipo === "escuela" ? 7 : 9;
-      L.circleMarker([p.lat, p.lng], { radius: rad, color: "#fff", weight: 2, fillColor: color[p.tipo] || "#555", fillOpacity: 1 })
-        .bindPopup(`<strong>${p.nombre}</strong><br>${p.tipo}${p.precision === "aproximada" ? " · ubicación aproximada" : ""}`).addTo(capa);
+      const fill = todos && p.resort ? COLOR_RESORT[p.resort] : COLOR_TIPO[p.tipo] || "#555";
+      const rn = p.resort ? (D.resorts.find((x) => x.slug === p.resort) || {}).nombre : "";
+      const m = L.circleMarker([p.lat, p.lng], { radius: rad, color: "#fff", weight: 2, fillColor: fill, fillOpacity: 1 })
+        .bindPopup(`<strong>${p.nombre}</strong><br>${rn ? rn + " · " : ""}${p.tipo}${p.precision === "aproximada" ? " · ubicación aproximada" : ""}`).addTo(capa);
+      if (p.tipo === "resort" || (p.tipo !== "hospedaje" && p.tipo !== "escuela" && !p.resort)) m.bindTooltip((p.nombre || "").split(" (")[0].split(" – ")[0], { permanent: todos || p.tipo === "resort", direction: "right", className: "map-label" });
     });
-    if (v) v.it.ida.forEach((id) => {
-      const x = tramo(id); const a = x && punto(x.de), b = x && punto(x.a);
-      if (!a || !b || a.id === b.id || a.lat == null || b.lat == null) return;
-      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: x.modo === "vuelo" ? "#1d5fa8" : "#e0703a", weight: 3, dashArray: x.modo === "vuelo" ? "6 8" : null })
-        .bindTooltip(`${ICONO_MODO[x.modo] || ""} ${fmtH(x.horas)}`).addTo(capa);
-    });
-    const pts = visibles.filter((p) => p.resort || usados.has(p.id)).map((p) => [p.lat, p.lng]);
+    const pts = visibles.map((p) => [p.lat, p.lng]);
     if (pts.length) mapa.fitBounds(pts, { padding: [30, 30] });
+    const co = visibles.filter((p) => p.lat > 36.5 && p.lng < -104).map((p) => [p.lat, p.lng]);
+    if (!mapa._zoomCO) {
+      mapa._zoomCO = L.control({ position: "topright" });
+      mapa._zoomCO.onAdd = () => { const d = L.DomUtil.create("div", "map-btns"); d.innerHTML = '<button type="button" data-z="co">🏔️ Colorado</button><button type="button" data-z="all">🌎 Todo el viaje</button>'; L.DomEvent.disableClickPropagation(d); d.addEventListener("click", (e) => { const z = e.target.dataset.z; if (z === "co" && mapa._co.length) mapa.fitBounds(mapa._co, { padding: [30, 30] }); if (z === "all" && mapa._all.length) mapa.fitBounds(mapa._all, { padding: [30, 30] }); }); return d; };
+      mapa._zoomCO.addTo(mapa);
+    }
+    mapa._co = co; mapa._all = pts;
     setTimeout(() => mapa.invalidateSize(), 50);
   }
 

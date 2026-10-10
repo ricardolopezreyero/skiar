@@ -280,3 +280,14 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .gallery figure { box-shadow: var(--shadow); }
 .gallery img { height: 170px; }
 .ruta-tot + .ruta-tot { margin-top: 10px; }
+
+.sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.sw.big { width: 14px; height: 14px; margin: 0; }
+.dest-row { width: 100%; display: grid; grid-template-columns: 18px 1fr auto auto auto; gap: 10px; align-items: center; text-align: left; background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; font: inherit; }
+.dest-row:hover { border-color: var(--brand); }
+.dest-name small, .dest-n small { display: block; color: var(--muted); font-size: .72rem; }
+.dest-n { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; font-size: .92rem; }
+@media (max-width: 480px) { .dest-row { grid-template-columns: 16px 1fr auto auto; } .dest-row .dest-n:last-child { display: none; } }
+.leaflet-tooltip.map-label { background: rgba(255,255,255,.92); border: 0; box-shadow: 0 1px 4px rgba(0,0,0,.25); font: 600 11px Inter, sans-serif; color: #12263a; padding: 2px 6px; }
+.map-btns { display: flex; flex-direction: column; gap: 4px; }
+.map-btns button { background: #fff; color: #12263a; border: 1px solid rgba(0,0,0,.2); border-radius: 8px; padding: 6px 10px; font: 600 12px Inter, sans-serif; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
