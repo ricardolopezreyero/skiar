@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viaje familiar a esquiar 2027</title>
+  <meta name="description" content="Keystone, Breckenridge, Steamboat o Snowmass: fechas, hospedaje, precios y nieve para elegir juntos el viaje de esquí 2027.">
+  <meta name="theme-color" content="#0f2a43">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Vista previa al compartir la liga (WhatsApp, iMessage, Facebook, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Viaje esquiar 2027">
+  <meta property="og:title" content="Viaje familiar a esquiar 2027 ⛷️">
+  <meta property="og:description" content="Keystone, Breckenridge, Steamboat o Snowmass: fechas, hospedaje, precios y nieve para elegir juntos.">
+  <meta property="og:url" content="https://ricardolopezreyero.github.io/skiar/">
+  <meta property="og:image" content="https://ricardolopezreyero.github.io/skiar/og.jpg?v=beb03f4d40">
+  <meta property="og:image:secure_url" content="https://ricardolopezreyero.github.io/skiar/og.jpg?v=beb03f4d40">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mapa de la zona de esquí de Colorado con Keystone, Breckenridge, Steamboat y Snowmass, y fotos de las pistas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Viaje familiar a esquiar 2027 ⛷️">
+  <meta name="twitter:description" content="Keystone, Breckenridge, Steamboat o Snowmass: fechas, hospedaje, precios y nieve para elegir juntos.">
+  <meta name="twitter:image" content="https://ricardolopezreyero.github.io/skiar/og.jpg?v=beb03f4d40">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="styles.css?v=c111297fc1">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Temporada 2026-27 · Colorado</p>
+      <h1>Viaje familiar a esquiar 2027</h1>
+      <p class="sub">2 adultos + niña de 5 años · 6 noches · 5 días de esquí · meta $6,000–8,000 USD todo incluido</p>
+      <ol class="steps">
+        <li><a href="#fechas">Fechas</a></li>
+        <li><a href="#destinos">Destino</a></li>
+        <li><a href="#hospedaje">Hospedaje</a></li>
+        <li><a href="#combo">Presupuesto</a></li>
+        <li><a href="#comparar">Comparar todo</a></li>
+        <li><a href="#mapa">Mapa y tiempos</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Vistas">
+    <div class="wrap tabs-in">
+      <button type="button" class="tab on" data-tab="decidir">🧭 Decidir</button>
+      <button type="button" class="tab" data-tab="pistas">⛷️ Pistas</button>
+      <button type="button" class="tab" data-tab="checklist">✅ Checklist <span class="tab-count" id="tab-count"></span></button>
+    </div>
+  </nav>
+
+  <main class="wrap" id="vista-pistas" hidden>
+    <section id="pistas">
+      <h2>⛷️ Mapas y datos de las pistas</h2>
+      <p class="hint">Toca una pista para ver su mapa oficial. Sirve para elegir este año y los siguientes.</p>
+      <div class="filters" id="pistas-filtros"></div>
+      <div id="pistas-lista" class="grid-pistas"></div>
+    </section>
+  </main>
+
+  <main class="wrap" id="vista-checklist" hidden>
+    <section id="pendientes">
+      <h2>✅ Antes de reservar</h2>
+      <p class="hint">Lo que hay que hacer y para cuándo. Lo que marque uno lo ve el otro.</p>
+      <div id="todo" class="todo"></div>
+    </section>
+  </main>
+
+  <main class="wrap" id="vista-decidir">
+    <section id="fechas">
+      <h2><span class="num">1</span> ¿Cuándo vamos?</h2>
+      <p class="hint">Tres semanas sin temporada alta. Todas evitan Navidad, MLK, Presidents' Day y los spring breaks de Texas.</p>
+      <div id="ventanas" class="chips" role="radiogroup" aria-label="Fechas"></div>
+      <div id="nieve" class="nieve" hidden>
+        <h3 class="sub-h" id="nieve-titulo">❄️ Nieve esperada</h3>
+        <div id="nieve-chart" class="nieve-chart"></div>
+        <p class="hint small" id="nieve-nota"></p>
+      </div>
+    </section>
+
+    <section id="destinos">
+      <h2><span class="num">2</span> ¿A dónde?</h2>
+      <p class="hint">Total del viaje con el hospedaje mejor calificado de cada lugar. Toca una tarjeta para ver sus hospedajes.</p>
+      <div id="resorts" class="grid-resorts"></div>
+    </section>
+
+    <section id="hospedaje">
+      <h2><span class="num">3</span> ¿Dónde dormimos?</h2>
+      <p class="hint" id="hospedaje-hint"></p>
+      <div id="lodgings" class="grid-lodgings"></div>
+    </section>
+
+    <section id="combo">
+      <h2><span class="num">4</span> Nuestra combinación</h2>
+      <div class="combo-card">
+        <div id="combo-title" class="combo-title"></div>
+        <div class="toggle-row">
+          <span>Comidas:</span>
+          <div class="seg" role="radiogroup" aria-label="Comidas">
+            <button type="button" data-food="cocinando" class="on">Cocinando casi siempre</button>
+            <button type="button" data-food="restaurantes">Restaurantes</button>
+          </div>
+        </div>
+        <table id="combo-table" class="breakdown"></table>
+        <div id="combo-meter" class="meter"></div>
+        <div class="share">
+          <button type="button" id="share-btn">Copiar liga de esta combinación</button>
+          <span id="share-ok" class="muted" hidden>¡Copiada! Mándasela a Ana.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparar">
+      <h2><span class="num">5</span> Cuadro comparativo: todas contra todas</h2>
+      <p class="hint">Las 16 combinaciones (destino + hospedaje) en una sola tabla. Toca un encabezado para ordenar, filtra con los botones y toca <strong>Elegir</strong> para ver su presupuesto completo.</p>
+      <div class="cmp-tools">
+        <div class="filters" id="cmp-filtros"></div>
+      </div>
+      <p class="hint small">⭐ Puntaje familiar (0–100): precio 35 · espacio 30 · acceso a pista 15 · niña gratis 10 · horas de viaje 10.</p>
+      <div id="cmp-podio" class="podio"></div>
+      <details class="tbl" data-auto>
+        <summary>📊 Ver tabla completa (16 opciones)</summary>
+        <div class="table-scroll"><table id="cmp" class="cmp"></table></div>
+      </details>
+      <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
+    </section>
+
+    <section id="mapa">
+      <h2><span class="num">6</span> Mapa y tiempos de viaje</h2>
+      <p class="hint">Cada tramo de puerta a puerta con el mejor camino, y cuántas horas se van en viajar contra cuántas se pasan en la nieve.</p>
+      <div class="seg small" id="mapa-tabs" role="tablist"></div>
+      <div class="mapa-grid">
+        <div id="map" class="map" role="region" aria-label="Mapa"></div>
+        <div id="mapa-ruta" class="ruta"></div>
+      </div>
+      <h3 class="sub-h">⚖️ Viajar contra esquiar, por opción</h3>
+      <div id="balance-top" class="podio"></div>
+      <details class="tbl" data-auto>
+        <summary>⚖️ Ver tabla completa (16 opciones)</summary>
+        <div class="table-scroll"><table id="balance" class="cmp balance"></table></div>
+      </details>
+      <p class="hint small" id="balance-nota"></p>
+    </section>
+
+    <section id="galeria">
+      <h2>Fotos del lugar</h2>
+      <div class="seg small" id="gal-tabs" role="tablist"></div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+  </main>
+
+  <footer class="wrap foot">
+    <div class="about">
+      <div class="about-head">
+        <span class="about-ico">🗂️</span>
+        <div>
+          <h2>Sobre esta investigación</h2>
+          <p class="muted">Pedido por <strong>Ricardo López Reyero</strong> · sábado 10 de octubre de 2026, 8:28 a.m. · Torreón, Coahuila</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>💵 Cómo leer los precios</h3>
+          <p>Todo en dólares (USD), con impuestos y cargos cuando se conocen. Cada precio trae su fuente y qué tan confiable es:</p>
+          <ul class="legend">
+            <li><span class="dot alta"></span> <strong>Alta</strong> · tarifa publicada para esas fechas</li>
+            <li><span class="dot media"></span> <strong>Media</strong> · tarifa real de fechas cercanas</li>
+            <li><span class="dot baja"></span> <strong>Baja</strong> · estimado; hay que cotizar</li>
+          </ul>
+          <p class="muted">Verifiquen siempre el precio final antes de pagar.</p>
+        </div>
+        <div>
+          <h3>📚 Para leer más</h3>
+          <div id="links" class="link-list"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#comparar" class="fab" id="fab">📊 Comparar todo</a>
+
+  <dialog id="mapa-dlg" class="ficha mapa-dlg" aria-label="Mapa de pistas">
+    <div id="mapa-dlg-body"></div>
+  </dialog>
+
+  <dialog id="ficha" class="ficha" aria-label="Ficha del hospedaje">
+    <div id="ficha-body"></div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="mapas_estado.js?v=10c6a0462a"></script>
+  <script src="data.js?v=1268071128"></script>
+  <script src="app.js?v=f81b3c132c"></script>
+</body>
+</html>
