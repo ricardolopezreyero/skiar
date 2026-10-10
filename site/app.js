@@ -436,30 +436,39 @@
   }
 
   let galSlug = null;
+  const MAX_FOTOS = 10;
   function renderGallery() {
     galSlug = galSlug || state.r || (D.resorts[0] && D.resorts[0].slug);
     $("#gal-tabs").replaceChildren(...D.resorts.map((r) => el("button", { type: "button", class: galSlug === r.slug ? "on" : "", onclick: () => { galSlug = r.slug; renderGallery(); } }, r.nombre)));
     const r = D.resorts.find((x) => x.slug === galSlug);
     if (!r) return;
-    const cats = [["ubicacion", "El lugar"], ["pista", "La pista"], ["alojamiento", "Hospedaje"]];
-    const kids = [];
-    cats.forEach(([c, t]) => {
-      const fs = (r.fotos || []).filter((f) => f.categoria === c);
+    const cats = [["ubicacion", "📍 El lugar"], ["pista", "⛷️ La pista"], ["alojamiento", "🏔️ Hospedaje"]];
+    const box = $("#gallery");
+    box.replaceChildren();
+    let total = 0;
+    const vacio = el("p", { class: "muted" }, "Cargando fotos…");
+    box.append(vacio);
+    cats.forEach(([c, titulo]) => {
+      // solo fotos con imagen real; se muestran las primeras 10 que sí cargan
+      const fs = (r.fotos || []).filter((f) => f.categoria === c && f.url_imagen);
       if (!fs.length) return;
-      kids.push(el("div", { class: "gal-cat" }, t));
+      const head = el("div", { class: "gal-cat", hidden: true }, titulo);
+      box.append(head);
+      let visibles = 0;
       fs.forEach((f) => {
-        const cap = el("figcaption", {}, [f.opcion, f.descripcion].filter(Boolean).join(" — "), f.credito || f.licencia ? el("span", { class: "note" }, " · " + [f.credito, f.licencia].filter(Boolean).join(", ")) : null);
         const link = f.url_pagina || f.url_imagen;
-        if (f.url_imagen) {
-          const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", loading: "lazy", referrerpolicy: "no-referrer" });
-          img.addEventListener("error", () => img.replaceWith(el("div", { class: "linkonly" }, el("a", { href: link, target: "_blank", rel: "noopener" }, "Ver foto ↗"))));
-          kids.push(el("figure", {}, el("a", { class: "photo", href: link, target: "_blank", rel: "noopener" }, img), cap));
-        } else if (link) {
-          kids.push(el("figure", {}, el("div", { class: "linkonly" }, el("a", { href: link, target: "_blank", rel: "noopener" }, "Ver galería ↗")), cap));
-        }
+        const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", loading: "lazy", referrerpolicy: "no-referrer" });
+        const fig = el("figure", { hidden: true }, el("a", { class: "photo", href: link, target: "_blank", rel: "noopener" }, img),
+          el("figcaption", {}, f.descripcion || "", f.credito ? el("span", { class: "note" }, " · " + f.credito) : null));
+        box.append(fig);
+        img.addEventListener("load", () => {
+          if (visibles >= MAX_FOTOS || img.naturalWidth < 50) { fig.remove(); return; }
+          visibles++; total++; fig.hidden = false; head.hidden = false; vacio.remove();
+        });
+        img.addEventListener("error", () => fig.remove());
       });
     });
-    $("#gallery").replaceChildren(...(kids.length ? kids : [el("p", { class: "muted" }, "Sin fotos todavía.")]));
+    setTimeout(() => { if (!total) vacio.textContent = "Todavía no hay fotos disponibles para este lugar."; }, 8000);
   }
 
   // ---------- lista compartida (sin usuario ni contraseña) ----------
