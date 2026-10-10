@@ -261,3 +261,21 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .pasos small { display: block; color: var(--muted); font-size: .76rem; }
 .pasos .h { white-space: nowrap; font-weight: 600; font-variant-numeric: tabular-nums; }
 .balance { min-width: 900px; }
+
+/* ---------- tono uniforme para todas las fotos ---------- */
+:root { --tone-filter: saturate(.9) contrast(1.06) brightness(1.04) sepia(.14) hue-rotate(-6deg); }
+.photo-tone, .photo img, .gallery img { filter: var(--tone-filter); }
+.resort .ph { overflow: hidden; }
+.resort .ph-img { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .6s ease; }
+.resort:hover .ph-img { transform: scale(1.05); }
+.resort .ph::after, .photo::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(120, 170, 220, .18) 0%, rgba(255, 255, 255, 0) 45%, rgba(224, 112, 58, .14) 100%);
+  mix-blend-mode: soft-light;
+}
+.resort .score { z-index: 1; }
+.photo { position: relative; display: block; overflow: hidden; }
+.photo img { transition: transform .6s ease; }
+.photo:hover img { transform: scale(1.05); }
+.gallery figure { box-shadow: var(--shadow); }
+.gallery img { height: 170px; }

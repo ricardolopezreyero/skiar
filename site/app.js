@@ -145,7 +145,7 @@
       if (r.altitud_base_m) badges.push(el("span", { class: "badge" + (r.altitud_base_m > 2800 ? " warn" : "") }, "Base " + r.altitud_base_m.toLocaleString("es-MX") + " m"));
       if (r.aeropuerto) badges.push(el("span", { class: "badge" }, "✈ " + r.aeropuerto));
       return el("button", { type: "button", class: "resort" + (state.r === r.slug ? " on" : ""), onclick: () => { state.r = r.slug; state.l = null; render(); $("#hospedaje").scrollIntoView(); } },
-        el("div", { class: "ph", style: ph ? `background-image:url("${ph}")` : null }, el("span", { class: "score" }, "Costo-beneficio " + (r.costo_beneficio ?? "—") + "/10")),
+        el("div", { class: "ph" }, ph ? el("div", { class: "ph-img photo-tone", style: `background-image:url("${ph}")` }) : null, el("span", { class: "score" }, "Costo-beneficio " + (r.costo_beneficio ?? "—") + "/10")),
         el("div", { class: "body" },
           el("h3", {}, r.nombre),
           el("p", { class: "lead" }, r.resumen || ""),
@@ -415,7 +415,7 @@
         if (f.url_imagen) {
           const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", loading: "lazy", referrerpolicy: "no-referrer" });
           img.addEventListener("error", () => img.replaceWith(el("div", { class: "linkonly" }, el("a", { href: link, target: "_blank", rel: "noopener" }, "Ver foto ↗"))));
-          kids.push(el("figure", {}, el("a", { href: link, target: "_blank", rel: "noopener" }, img), cap));
+          kids.push(el("figure", {}, el("a", { class: "photo", href: link, target: "_blank", rel: "noopener" }, img), cap));
         } else if (link) {
           kids.push(el("figure", {}, el("div", { class: "linkonly" }, el("a", { href: link, target: "_blank", rel: "noopener" }, "Ver galería ↗")), cap));
         }

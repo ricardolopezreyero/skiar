@@ -3300,5 +3300,6 @@ window.SKIAR = {
    "fecha": "Diciembre–enero",
    "icono": "🧤"
   }
- ]
+ ],
+ "mapa": {}
 };
