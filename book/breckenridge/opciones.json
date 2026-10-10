@@ -293,66 +293,201 @@
   "fotos": [
     {
       "categoria": "ubicacion",
-      "opcion": "Pueblo / Main Street",
-      "descripcion": "Main Street de Breckenridge (calle principal histórica), 2010",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Main_Street.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Main_Street.jpg",
-      "credito": "Av9 (obra propia, Wikimedia Commons)",
-      "licencia": "CC BY-SA 3.0"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / Main Street",
-      "descripcion": "Edificio de Breckenridge Heritage Alliance en North Main Street",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / Main Street",
-      "descripcion": "North Main Street, Heritage Alliance (segunda toma)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / centro",
-      "descripcion": "Centro de Breckenridge",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Breckenridge_Wiki_%281_of_1%29.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Breckenridge_Wiki_%281_of_1%29.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / vista general",
-      "descripcion": "Vista del pueblo de Breckenridge",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Breckenridge,_Colorado.jpeg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_Breckenridge,_Colorado.jpeg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / vista general",
-      "descripcion": "Breckenridge (foto de Panoramio)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge,_CO_80424,_USA_-_panoramio.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_80424,_USA_-_panoramio.jpg",
-      "credito": "Panoramio vía Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / vista general",
-      "descripcion": "El pueblo visto desde el juzgado del condado de Summit",
+      "opcion": "",
+      "descripcion": "Vista del pueblo de Breckenridge desde el juzgado del condado de Summit, en enero",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
+      "credito": "David Shankbone + Wikimedia Commons",
+      "licencia": "CC BY 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Edificio histórico de la Breckenridge Heritage Alliance en North Main Street (diciembre 2012)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Vista de Breckenridge tomada el 1 de enero de 2008 (imagen pequeña, 472x286)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge%2C_CO_80424%2C_USA_-_panoramio.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_80424,_USA_-_panoramio.jpg",
+      "credito": "Juan Ortega (Panoramio) + Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Exterior de un hotel/lodge de Breckenridge nevado en invierno",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Wedgewood_Lodge_Breckenridge_Exterior_Winter.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Wedgewood_Lodge_Breckenridge_Exterior_Winter.jpg",
+      "credito": "Wedgewood Lodge + Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Foto histórica: túnel cavado en la nieve en Breckenridge durante el gran invierno de 1898-99",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_tunnel_to_Breckenridge_CO_%2C_1898.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_tunnel_to_Breckenridge_CO_,_1898.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "Dominio público"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Vista completa de la estación de esquí de Breckenridge con pistas nevadas, desde Keystone (enero 2013)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain%2C_Keystone_Ski_Area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Vista desde la cima del telesilla Falcon SuperChair en una mañana soleada (26 dic 2013)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_top_of_Falcon_SuperChair.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Falcon_SuperChair.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Telesilla Kensho SuperChair (Leitner-Poma) en Peak 6, en invierno",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kensho_SuperChair.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Kensho_SuperChair.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Estación del telesilla Beaver Run SuperChair en Peak 9 (1 ene 2013)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "CC0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Restaurante de montaña Vista Haus en la cima de Peak 8 (marzo 2017)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_Vista_Haus.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_Vista_Haus.jpg",
+      "credito": "Skivacations + Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Otra vista del edificio histórico de la Heritage Alliance en North Main Street",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street_(1).jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Main Street, la calle principal del centro histórico de Breckenridge",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Main_Street.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Main_Street.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Centro (downtown) de Breckenridge con sus fachadas victorianas",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Breckenridge_Wiki_%281_of_1%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Breckenridge_Wiki_(1_of_1).jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Casa victoriana de Barney Ford (1882), hoy museo en el centro histórico",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Barney_Ford_House_Museum.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Barney_Ford_House_Museum.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Antiguo National Theater en el centro de Breckenridge",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Theater_downtown_Breckenridge_Wiki-1.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:National_Theater_downtown_Breckenridge_Wiki-1.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Tienda de galletas Mountain Top Cookie Shop en Main Street",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Top_Cookie_Shop_on_Breckenridge_Main_Street.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Mountain_Top_Cookie_Shop_on_Breckenridge_Main_Street.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Panorámica del pueblo de Breckenridge (abril 2014)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Breckenridge%2C_Colorado.jpeg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_Breckenridge,_Colorado.jpeg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Banner panorámico de las Montañas Rocosas vistas desde Breckenridge (Wikivoyage)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/WV_banner_NW_Colorado_Rockies_seen_from_Breckenridge.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:WV_banner_NW_Colorado_Rockies_seen_from_Breckenridge.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Lake Chutes vistos desde la cima de Peak 8",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_peak_8.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_peak_8.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Vista desde la cumbre de Peak 8 hacia el oeste: telesilla Resolution, pistas y bowls",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Curva de 45 grados del telesilla Snowflake, que conecta el pueblo con las pistas",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/45-degree_bend_in_the_Snowflake_lift_at_Breckenridge.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:45-degree_bend_in_the_Snowflake_lift_at_Breckenridge.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Peak 10 de la cordillera Tenmile, parte del área esquiable (verano 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_10_%28Tenmile_Range%29_July_2016.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_10_(Tenmile_Range)_July_2016.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": ""
     },
     {
       "categoria": "ubicacion",
@@ -362,15 +497,6 @@
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Summit_County_court_house_in_Colorado.jpg",
       "credito": "Wikimedia Commons (autor: ver página)",
       "licencia": "ver página"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Pueblo / historia",
-      "descripcion": "Foto histórica: túnel de nieve en Breckenridge, invierno 1898-99",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_tunnel_to_Breckenridge_CO_,_1898.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_tunnel_to_Breckenridge_CO_,_1898.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página (probable dominio público por antigüedad; verificar)"
     },
     {
       "categoria": "ubicacion",
@@ -455,24 +581,6 @@
     },
     {
       "categoria": "pista",
-      "opcion": "Peak 8",
-      "descripcion": "Lake Chutes vistos desde la cima de Peak 8 (terreno experto; panorama)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_peak_8.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_peak_8.JPG",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "CC BY 2.5"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Peak 8",
-      "descripcion": "Panorama desde la cima de Peak 8 hacia el oeste",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "pista",
       "opcion": "Peak 8 / Peak 9",
       "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
@@ -486,42 +594,6 @@
       "descripcion": "Peak 9, zona más suave para principiantes (nombre visto en el listado de la categoría; verificar)",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_9.JPG?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_9.JPG",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Montaña completa",
-      "descripcion": "La estación de Breckenridge vista desde Dercum Mountain (Keystone)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Peak 9 / Beaver Run",
-      "descripcion": "Terminal del Beaver Run SuperChair (telesilla junto a Beaver Run Resort), 1-ene-2013",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Peak 6",
-      "descripcion": "Kensho SuperChair (Leitner-Poma), dic-2013",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kensho_SuperChair.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Kensho_SuperChair.JPG",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Peak 7",
-      "descripcion": "Vista desde la parte alta del Falcon SuperChair",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_top_of_Falcon_SuperChair.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Falcon_SuperChair.JPG",
       "credito": "Wikimedia Commons (autor: ver página)",
       "licencia": "ver página"
     },

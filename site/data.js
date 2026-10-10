@@ -992,66 +992,201 @@ window.SKIAR = {
    "fotos": [
     {
      "categoria": "ubicacion",
-     "opcion": "Pueblo / Main Street",
-     "descripcion": "Main Street de Breckenridge (calle principal histórica), 2010",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Main_Street.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Main_Street.jpg",
-     "credito": "Av9 (obra propia, Wikimedia Commons)",
-     "licencia": "CC BY-SA 3.0"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / Main Street",
-     "descripcion": "Edificio de Breckenridge Heritage Alliance en North Main Street",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / Main Street",
-     "descripcion": "North Main Street, Heritage Alliance (segunda toma)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / centro",
-     "descripcion": "Centro de Breckenridge",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Breckenridge_Wiki_%281_of_1%29.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Breckenridge_Wiki_%281_of_1%29.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / vista general",
-     "descripcion": "Vista del pueblo de Breckenridge",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Breckenridge,_Colorado.jpeg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_Breckenridge,_Colorado.jpeg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / vista general",
-     "descripcion": "Breckenridge (foto de Panoramio)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge,_CO_80424,_USA_-_panoramio.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_80424,_USA_-_panoramio.jpg",
-     "credito": "Panoramio vía Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / vista general",
-     "descripcion": "El pueblo visto desde el juzgado del condado de Summit",
+     "opcion": "",
+     "descripcion": "Vista del pueblo de Breckenridge desde el juzgado del condado de Summit, en enero",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Colorado_from_the_Summit_County_Courthouse.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
+     "credito": "David Shankbone + Wikimedia Commons",
+     "licencia": "CC BY 3.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Edificio histórico de la Breckenridge Heritage Alliance en North Main Street (diciembre 2012)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Vista de Breckenridge tomada el 1 de enero de 2008 (imagen pequeña, 472x286)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge%2C_CO_80424%2C_USA_-_panoramio.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge,_CO_80424,_USA_-_panoramio.jpg",
+     "credito": "Juan Ortega (Panoramio) + Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Exterior de un hotel/lodge de Breckenridge nevado en invierno",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Wedgewood_Lodge_Breckenridge_Exterior_Winter.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Wedgewood_Lodge_Breckenridge_Exterior_Winter.jpg",
+     "credito": "Wedgewood Lodge + Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Foto histórica: túnel cavado en la nieve en Breckenridge durante el gran invierno de 1898-99",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_tunnel_to_Breckenridge_CO_%2C_1898.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_tunnel_to_Breckenridge_CO_,_1898.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "Dominio público"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Vista completa de la estación de esquí de Breckenridge con pistas nevadas, desde Keystone (enero 2013)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain%2C_Keystone_Ski_Area.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Vista desde la cima del telesilla Falcon SuperChair en una mañana soleada (26 dic 2013)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_top_of_Falcon_SuperChair.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Falcon_SuperChair.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Telesilla Kensho SuperChair (Leitner-Poma) en Peak 6, en invierno",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kensho_SuperChair.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Kensho_SuperChair.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Estación del telesilla Beaver Run SuperChair en Peak 9 (1 ene 2013)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "CC0"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Restaurante de montaña Vista Haus en la cima de Peak 8 (marzo 2017)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_Vista_Haus.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_Vista_Haus.jpg",
+     "credito": "Skivacations + Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Otra vista del edificio histórico de la Heritage Alliance en North Main Street",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Heritage_Alliance_on_North_Main_Street_%281%29.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Heritage_Alliance_on_North_Main_Street_(1).jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Main Street, la calle principal del centro histórico de Breckenridge",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Main_Street.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Main_Street.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Centro (downtown) de Breckenridge con sus fachadas victorianas",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Breckenridge_Wiki_%281_of_1%29.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Breckenridge_Wiki_(1_of_1).jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Casa victoriana de Barney Ford (1882), hoy museo en el centro histórico",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Barney_Ford_House_Museum.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Barney_Ford_House_Museum.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Antiguo National Theater en el centro de Breckenridge",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Theater_downtown_Breckenridge_Wiki-1.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:National_Theater_downtown_Breckenridge_Wiki-1.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Tienda de galletas Mountain Top Cookie Shop en Main Street",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Top_Cookie_Shop_on_Breckenridge_Main_Street.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Mountain_Top_Cookie_Shop_on_Breckenridge_Main_Street.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Panorámica del pueblo de Breckenridge (abril 2014)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Breckenridge%2C_Colorado.jpeg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_of_Breckenridge,_Colorado.jpeg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Banner panorámico de las Montañas Rocosas vistas desde Breckenridge (Wikivoyage)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/WV_banner_NW_Colorado_Rockies_seen_from_Breckenridge.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:WV_banner_NW_Colorado_Rockies_seen_from_Breckenridge.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Lake Chutes vistos desde la cima de Peak 8",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_peak_8.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_peak_8.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Vista desde la cumbre de Peak 8 hacia el oeste: telesilla Resolution, pistas y bowls",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Curva de 45 grados del telesilla Snowflake, que conecta el pueblo con las pistas",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/45-degree_bend_in_the_Snowflake_lift_at_Breckenridge.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:45-degree_bend_in_the_Snowflake_lift_at_Breckenridge.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Peak 10 de la cordillera Tenmile, parte del área esquiable (verano 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_10_%28Tenmile_Range%29_July_2016.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_10_(Tenmile_Range)_July_2016.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": ""
     },
     {
      "categoria": "ubicacion",
@@ -1061,15 +1196,6 @@ window.SKIAR = {
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Summit_County_court_house_in_Colorado.jpg",
      "credito": "Wikimedia Commons (autor: ver página)",
      "licencia": "ver página"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Pueblo / historia",
-     "descripcion": "Foto histórica: túnel de nieve en Breckenridge, invierno 1898-99",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow_tunnel_to_Breckenridge_CO_,_1898.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Snow_tunnel_to_Breckenridge_CO_,_1898.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página (probable dominio público por antigüedad; verificar)"
     },
     {
      "categoria": "ubicacion",
@@ -1154,24 +1280,6 @@ window.SKIAR = {
     },
     {
      "categoria": "pista",
-     "opcion": "Peak 8",
-     "descripcion": "Lake Chutes vistos desde la cima de Peak 8 (terreno experto; panorama)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_peak_8.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_peak_8.JPG",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "CC BY 2.5"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Peak 8",
-     "descripcion": "Panorama desde la cima de Peak 8 hacia el oeste",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Peak_8_summit_facing_West.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Peak_8_summit_facing_West.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "pista",
      "opcion": "Peak 8 / Peak 9",
      "descripcion": "Peak 8 visto desde Peak 9 (nombre visto en el listado de la categoría; verificar)",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_8_from_Peak_9.JPG?width=1600",
@@ -1185,42 +1293,6 @@ window.SKIAR = {
      "descripcion": "Peak 9, zona más suave para principiantes (nombre visto en el listado de la categoría; verificar)",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Peak_9.JPG?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Peak_9.JPG",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Montaña completa",
-     "descripcion": "La estación de Breckenridge vista desde Dercum Mountain (Keystone)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Breckenridge_Ski_Area_from_Dercum_Mountain,_Keystone_Ski_Area.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Peak 9 / Beaver Run",
-     "descripcion": "Terminal del Beaver Run SuperChair (telesilla junto a Beaver Run Resort), 1-ene-2013",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beaver_Run_SuperChair_competition_terminal.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Beaver_Run_SuperChair_competition_terminal.JPG",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Peak 6",
-     "descripcion": "Kensho SuperChair (Leitner-Poma), dic-2013",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kensho_SuperChair.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Kensho_SuperChair.JPG",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Peak 7",
-     "descripcion": "Vista desde la parte alta del Falcon SuperChair",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_top_of_Falcon_SuperChair.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_top_of_Falcon_SuperChair.JPG",
      "credito": "Wikimedia Commons (autor: ver página)",
      "licencia": "ver página"
     },
@@ -1802,39 +1874,129 @@ window.SKIAR = {
    "fotos": [
     {
      "categoria": "ubicacion",
-     "opcion": "Centro / Lincoln Ave",
-     "descripcion": "Lincoln Avenue, distrito histórico del centro (vista NO desde 5th St., 2016)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Downtown_Historic_District.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Downtown_Historic_District.JPG",
-     "credito": "Jeffrey Beall (Wikimedia Commons)",
-     "licencia": "CC BY 4.0"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Centro",
-     "descripcion": "Centro de Steamboat Springs (2006)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_downtown.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_downtown.jpg",
-     "credito": "Flickr vía Wikimedia Commons",
-     "licencia": "CC BY 2.0"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Winter Carnival",
-     "descripcion": "Winter Carnival: carreras y esquí jalado por caballos en el centro",
+     "opcion": "",
+     "descripcion": "Winter Carnival de Steamboat Springs: carreras y saltos de esquí remolcados por caballos en el centro",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter_Carnival_in_Steamboat_Springs.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Winter_Carnival_in_Steamboat_Springs.jpg",
-     "credito": "Wikimedia Commons (autor: ver página)",
-     "licencia": "ver página"
+     "credito": "Rory Clow / Wikimedia Commons",
+     "licencia": "CC BY-SA 4.0"
     },
     {
      "categoria": "ubicacion",
-     "opcion": "Howelsen Hill",
-     "descripcion": "Howelsen Hill, colina de esquí del pueblo (2011)",
+     "opcion": "",
+     "descripcion": "Centro de Steamboat Springs a finales de mayo, con nieve aún en la montaña",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_downtown.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_downtown.jpg",
+     "credito": "Foto de Flickr (2006) / Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Lincoln Avenue (US 40) vista desde la calle 5, distrito histórico del centro",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Downtown_Historic_District.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Downtown_Historic_District.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Howelsen Hill, la histórica pista y trampolines de salto en pleno pueblo (temporada no confirmada)",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Howelsen_Hill_Ski_Area.JPG?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Howelsen_Hill_Ski_Area.JPG",
-     "credito": "Jeffrey Beall (Wikimedia Commons)",
+     "credito": "Jeffrey Beall / Wikimedia Commons",
      "licencia": "CC BY-SA 3.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Ayuntamiento de Steamboat Springs (137 10th Street)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/City_of_Steamboat_Springs_City_Hall.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:City_of_Steamboat_Springs_City_Hall.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Steamboat Lake State Park, lago y montañas al norte del pueblo",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Lake_State_Park.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Lake_State_Park.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Escuela rural histórica Mesa Schoolhouse sobre la US 40, paisaje de rancho del valle",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Casa Crawford hacia 1896, la de los fundadores del pueblo (foto histórica)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Crawford_House_in_Steamboat_Springs%2C_Colorado%2C_about_1896.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Crawford_House_in_Steamboat_Springs,_Colorado,_about_1896.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada (probable dominio público por antigüedad)"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Edificio histórico Steamboat Laundry en el pueblo",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Laundry_Building.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Laundry_Building.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Aeropuerto de Steamboat Springs (Bob Adams Field)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Airport.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Airport.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "no verificada"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Steamboat Mountain School en otoño, en el valle cerca del pueblo",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School_in_the_fall.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School_in_the_fall.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "Dominio público (liberada por el titular)"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Campus de Steamboat Mountain School, escuela fundada en 1957",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School.JPG",
+     "credito": "Wikimedia Commons",
+     "licencia": "Dominio público (liberada por el titular)"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Estación de esquí de Steamboat (temporada no confirmada)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+     "credito": "CarTick / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0 / GFDL"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Mount Werner, la montaña de Steamboat Ski Resort, vista desde Lincoln Avenue (septiembre de 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Mount_Werner.JPG",
+     "credito": "Jeffrey Beall / Wikimedia Commons",
+     "licencia": "CC BY 4.0"
     },
     {
      "categoria": "ubicacion",
@@ -1907,24 +2069,6 @@ window.SKIAR = {
      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Fish_Creek_Falls",
      "credito": "Wikimedia Commons",
      "licencia": "varias"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Montaña",
-     "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
-     "credito": "CarTick (Wikimedia Commons)",
-     "licencia": "CC BY-SA 3.0"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Mount Werner",
-     "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
-     "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)",
-     "licencia": "ver página"
     },
     {
      "categoria": "pista",
@@ -2463,39 +2607,219 @@ window.SKIAR = {
    "fotos": [
     {
      "categoria": "ubicacion",
-     "opcion": "Snowmass Village",
-     "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+     "opcion": "",
+     "descripcion": "Base de Snowmass Mountain con vista de Snowmass Village (enero 2008)",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
-     "credito": "Werdna (Wikimedia Commons, obra propia)",
-     "licencia": "CC BY-SA 4.0 (multilicencia)"
+     "credito": "Usuario de Wikimedia Commons (obra propia) / Wikimedia Commons",
+     "licencia": "GFDL / Creative Commons (multilicencia)"
     },
     {
      "categoria": "ubicacion",
-     "opcion": "Aspen",
-     "descripcion": "Centro de Aspen (calle Galena) con vista a las pistas de Aspen Mountain (verano de 2010)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg?width=1600",
+     "opcion": "",
+     "descripcion": "Vista del pueblo de Aspen desde Aspen Mountain, pista Ruthie's (marzo 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_Ruthies_run.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_Ruthies_run.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Góndola de Elk Camp y base del área de esquí de Snowmass (marzo 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "GFDL + CC BY 2.5 (multilicencia)"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Esquiadores afuera del restaurante Timber Line en la montaña de Snowmass (foto histórica, años 70)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/TIMBER_LINE_BAR_%26_RESTAURANT_ON_SNOWMASS_MOUNTAIN_-_NARA_-_554237.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:TIMBER_LINE_BAR_&_RESTAURANT_ON_SNOWMASS_MOUNTAIN_-_NARA_-_554237.jpg",
+     "credito": "EPA DOCUMERICA / National Archives (NARA) / Wikimedia Commons",
+     "licencia": "Dominio público (gobierno de EE.UU.)"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Vista desde Buttermilk en invierno (enero 2008), la montaña ideal para niños y principiantes",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk_in_Winter.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg",
+     "credito": "Werdna / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Esquí primaveral en la pista Ruthie's de Aspen Mountain (abril 2015)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_spring_skiing.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_spring_skiing.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Góndola Silver Queen y telesilla sobre Copper Gulch, Aspen Mountain (abril 2015)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_Silver_Queen_Gondola.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_Silver_Queen_Gondola.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Base de Aspen Highlands (marzo 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_base_area.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_base_area.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Bistró Cloud Nine en las pistas de Aspen Highlands (marzo 2016)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_cloud_9.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_cloud_9.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Highland Peak y Highland Bowl nevados, Aspen Highlands",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_Highland_Peak.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_Highland_Peak.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Highland Bowl visto desde Loge Peak, Aspen Highlands, con nieve",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_bowl_from_Loge_Peak_.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_bowl_from_Loge_Peak_.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Atardecer en Snowmass, Colorado (abril 2017, fin de temporada)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_Seeker_%28Unsplash%29.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Sunset_Seeker_(Unsplash).jpg",
+     "credito": "jamie_fenn (Unsplash) / Wikimedia Commons",
+     "licencia": "CC0 1.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Centro de Aspen con vista a las pistas de esquí",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Aspen%2C_CO%2C_with_view_to_ski_slopes.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg",
-     "credito": "Daniel Case",
-     "licencia": "CC BY-SA 3.0"
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
     },
     {
      "categoria": "ubicacion",
-     "opcion": "Aspen",
-     "descripcion": "Centro de Aspen con Aspen Mountain al fondo (27-abr-2005)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_of_Aspen,_Colorado.jpg?width=1600",
+     "opcion": "",
+     "descripcion": "Centro de Aspen por Galena Street con Aspen Mountain al fondo (abril 2005)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_of_Aspen%2C_Colorado.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_of_Aspen,_Colorado.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
     },
     {
      "categoria": "ubicacion",
-     "opcion": "Aspen",
-     "descripcion": "Main Street de Aspen junto al Hotel Jerome",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_Street,_Aspen,_CO.jpg?width=1600",
+     "opcion": "",
+     "descripcion": "Main Street de Aspen",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_Street%2C_Aspen%2C_CO.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Main_Street,_Aspen,_CO.jpg",
-     "credito": "Daniel Case (según el resumen de búsqueda; verificar)",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Wheeler Opera House en Aspen (abril 2015)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Wheeler_Opera_House.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Wheeler_Opera_House.jpg",
+     "credito": "Wolfgang Moroder / Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Gran salón de baile del histórico Hotel Jerome (1889), Aspen",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Ballroom%2C_Hotel_Jerome%2C_Aspen%2C_CO.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Grand_Ballroom,_Hotel_Jerome,_Aspen,_CO.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Red Onion, bar histórico del centro de Aspen",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Onion%2C_Aspen%2C_CO.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Red_Onion,_Aspen,_CO.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Aspen Art Museum (Shigeru Ban) al anochecer",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Art_Museum_by_Shigeru_Ban.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Art_Museum_by_Shigeru_Ban.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Los Maroon Bells, picos icónicos cerca de Aspen",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "",
+     "descripcion": "Maroon Bells reflejados en Maroon Lake (otoño)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells%2C_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart%2C_are_reflected_on_Maroon_Lake.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
+     "credito": "U.S. Forest Service / Wikimedia Commons",
+     "licencia": "Dominio público (USFS, gobierno de EE.UU.)"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Góndola Silver Queen de Aspen Mountain",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Silver_Queen_Gondola_%2891052%29.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Silver_Queen_Gondola_(91052).jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Telesilla 1A en Aspen Mountain",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lift_1A_on_Aspen_Mountain.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
+     "credito": "Wikimedia Commons",
+     "licencia": "no vista en resultados"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "",
+     "descripcion": "Aspen Mountain (foto de Unsplash)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain%2C_United_States_%28Unsplash%29.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain,_United_States_(Unsplash).jpg",
+     "credito": "Hunter Bryant (Unsplash) / Wikimedia Commons",
+     "licencia": "CC0 1.0"
     },
     {
      "categoria": "ubicacion",
@@ -2503,24 +2827,6 @@ window.SKIAR = {
      "descripcion": "Maroon Bells (temporada no confirmada)",
      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells_%2811553%29a.jpg?width=1600",
      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells_(11553)a.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Maroon Bells",
-     "descripcion": "Maroon Bells (temporada no confirmada)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "ubicacion",
-     "opcion": "Maroon Bells",
-     "descripcion": "Maroon Bells reflejadas en Maroon Lake (probablemente no invernal)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
      "credito": "No se mostró en los resultados; verificar en la página del archivo",
      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
     },
@@ -2568,60 +2874,6 @@ window.SKIAR = {
      "url_pagina": "https://www.gosnowmass.com/top-kids-winter-activities/",
      "credito": "Snowmass Tourism (oficial del destino)",
      "licencia": "Uso editorial; pedir permiso"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Elk Camp",
-     "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
-     "credito": "Wolfgang Moroder",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Buttermilk",
-     "descripcion": "Vista desde Buttermilk en invierno (ene-2008)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk_in_Winter.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg",
-     "credito": "Werdna (Wikimedia Commons, obra propia)",
-     "licencia": "CC BY-SA 4.0"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Aspen Mountain",
-     "descripcion": "Esquí de primavera en Aspen Mountain (2015)",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_spring_skiing.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_spring_skiing.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Aspen Mountain",
-     "descripcion": "Telesilla Lift 1A en Aspen Mountain",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lift_1A_on_Aspen_Mountain.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Aspen Highlands",
-     "descripcion": "Base de Aspen Highlands",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_base_area.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_base_area.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-     "categoria": "pista",
-     "opcion": "Aspen Highlands",
-     "descripcion": "Cloud 9, Aspen Highlands",
-     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_cloud_9.jpg?width=1600",
-     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_cloud_9.jpg",
-     "credito": "No se mostró en los resultados; verificar en la página del archivo",
-     "licencia": "No se mostró en los resultados; verificar en la página del archivo"
     },
     {
      "categoria": "pista",

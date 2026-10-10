@@ -286,39 +286,129 @@
   "fotos": [
     {
       "categoria": "ubicacion",
-      "opcion": "Centro / Lincoln Ave",
-      "descripcion": "Lincoln Avenue, distrito histórico del centro (vista NO desde 5th St., 2016)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Downtown_Historic_District.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Downtown_Historic_District.JPG",
-      "credito": "Jeffrey Beall (Wikimedia Commons)",
-      "licencia": "CC BY 4.0"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Centro",
-      "descripcion": "Centro de Steamboat Springs (2006)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_downtown.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_downtown.jpg",
-      "credito": "Flickr vía Wikimedia Commons",
-      "licencia": "CC BY 2.0"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Winter Carnival",
-      "descripcion": "Winter Carnival: carreras y esquí jalado por caballos en el centro",
+      "opcion": "",
+      "descripcion": "Winter Carnival de Steamboat Springs: carreras y saltos de esquí remolcados por caballos en el centro",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter_Carnival_in_Steamboat_Springs.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Winter_Carnival_in_Steamboat_Springs.jpg",
-      "credito": "Wikimedia Commons (autor: ver página)",
-      "licencia": "ver página"
+      "credito": "Rory Clow / Wikimedia Commons",
+      "licencia": "CC BY-SA 4.0"
     },
     {
       "categoria": "ubicacion",
-      "opcion": "Howelsen Hill",
-      "descripcion": "Howelsen Hill, colina de esquí del pueblo (2011)",
+      "opcion": "",
+      "descripcion": "Centro de Steamboat Springs a finales de mayo, con nieve aún en la montaña",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_downtown.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_downtown.jpg",
+      "credito": "Foto de Flickr (2006) / Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Lincoln Avenue (US 40) vista desde la calle 5, distrito histórico del centro",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Downtown_Historic_District.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Downtown_Historic_District.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Howelsen Hill, la histórica pista y trampolines de salto en pleno pueblo (temporada no confirmada)",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Howelsen_Hill_Ski_Area.JPG?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Howelsen_Hill_Ski_Area.JPG",
-      "credito": "Jeffrey Beall (Wikimedia Commons)",
+      "credito": "Jeffrey Beall / Wikimedia Commons",
       "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Ayuntamiento de Steamboat Springs (137 10th Street)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/City_of_Steamboat_Springs_City_Hall.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:City_of_Steamboat_Springs_City_Hall.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Steamboat Lake State Park, lago y montañas al norte del pueblo",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Lake_State_Park.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Lake_State_Park.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Escuela rural histórica Mesa Schoolhouse sobre la US 40, paisaje de rancho del valle",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Mesa_Schoolhouse_in_Steamboat_Springs_Colorado.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Casa Crawford hacia 1896, la de los fundadores del pueblo (foto histórica)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Crawford_House_in_Steamboat_Springs%2C_Colorado%2C_about_1896.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Crawford_House_in_Steamboat_Springs,_Colorado,_about_1896.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada (probable dominio público por antigüedad)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Edificio histórico Steamboat Laundry en el pueblo",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Laundry_Building.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Laundry_Building.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Aeropuerto de Steamboat Springs (Bob Adams Field)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Springs_Airport.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Springs_Airport.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "no verificada"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Steamboat Mountain School en otoño, en el valle cerca del pueblo",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School_in_the_fall.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School_in_the_fall.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "Dominio público (liberada por el titular)"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Campus de Steamboat Mountain School, escuela fundada en 1957",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_Mountain_School.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_Mountain_School.JPG",
+      "credito": "Wikimedia Commons",
+      "licencia": "Dominio público (liberada por el titular)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Estación de esquí de Steamboat (temporada no confirmada)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
+      "credito": "CarTick / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0 / GFDL"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Mount Werner, la montaña de Steamboat Ski Resort, vista desde Lincoln Avenue (septiembre de 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Mount_Werner.JPG",
+      "credito": "Jeffrey Beall / Wikimedia Commons",
+      "licencia": "CC BY 4.0"
     },
     {
       "categoria": "ubicacion",
@@ -391,24 +481,6 @@
       "url_pagina": "https://commons.wikimedia.org/wiki/Category:Fish_Creek_Falls",
       "credito": "Wikimedia Commons",
       "licencia": "varias"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Montaña",
-      "descripcion": "Steamboat Ski Resort, vista general de la montaña (2008)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamboat_springs_ski_resort.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Steamboat_springs_ski_resort.jpg",
-      "credito": "CarTick (Wikimedia Commons)",
-      "licencia": "CC BY-SA 3.0"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Mount Werner",
-      "descripcion": "Mount Werner, la montaña del resort (5,325 × 3,493 px)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Werner.JPG?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/Category:Steamboat_Ski_Resort",
-      "credito": "Wikimedia Commons (autor: ver página) (URL de imagen derivada del nombre exacto listado en la categoría; verificar)",
-      "licencia": "ver página"
     },
     {
       "categoria": "pista",

@@ -292,39 +292,219 @@
   "fotos": [
     {
       "categoria": "ubicacion",
-      "opcion": "Snowmass Village",
-      "descripcion": "Base de Snowmass Mountain con Snowmass Village (12-ene-2008, invierno)",
+      "opcion": "",
+      "descripcion": "Base de Snowmass Mountain con vista de Snowmass Village (enero 2008)",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_Village.JPG?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_Village.JPG",
-      "credito": "Werdna (Wikimedia Commons, obra propia)",
-      "licencia": "CC BY-SA 4.0 (multilicencia)"
+      "credito": "Usuario de Wikimedia Commons (obra propia) / Wikimedia Commons",
+      "licencia": "GFDL / Creative Commons (multilicencia)"
     },
     {
       "categoria": "ubicacion",
-      "opcion": "Aspen",
-      "descripcion": "Centro de Aspen (calle Galena) con vista a las pistas de Aspen Mountain (verano de 2010)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg?width=1600",
+      "opcion": "",
+      "descripcion": "Vista del pueblo de Aspen desde Aspen Mountain, pista Ruthie's (marzo 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_Ruthies_run.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_Ruthies_run.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Góndola de Elk Camp y base del área de esquí de Snowmass (marzo 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "GFDL + CC BY 2.5 (multilicencia)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Esquiadores afuera del restaurante Timber Line en la montaña de Snowmass (foto histórica, años 70)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/TIMBER_LINE_BAR_%26_RESTAURANT_ON_SNOWMASS_MOUNTAIN_-_NARA_-_554237.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:TIMBER_LINE_BAR_&_RESTAURANT_ON_SNOWMASS_MOUNTAIN_-_NARA_-_554237.jpg",
+      "credito": "EPA DOCUMERICA / National Archives (NARA) / Wikimedia Commons",
+      "licencia": "Dominio público (gobierno de EE.UU.)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Vista desde Buttermilk en invierno (enero 2008), la montaña ideal para niños y principiantes",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk_in_Winter.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg",
+      "credito": "Werdna / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Esquí primaveral en la pista Ruthie's de Aspen Mountain (abril 2015)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_spring_skiing.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_spring_skiing.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Góndola Silver Queen y telesilla sobre Copper Gulch, Aspen Mountain (abril 2015)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_Silver_Queen_Gondola.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_Silver_Queen_Gondola.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Base de Aspen Highlands (marzo 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_base_area.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_base_area.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Bistró Cloud Nine en las pistas de Aspen Highlands (marzo 2016)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_cloud_9.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_cloud_9.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Highland Peak y Highland Bowl nevados, Aspen Highlands",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_Highland_Peak.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_Highland_Peak.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Highland Bowl visto desde Loge Peak, Aspen Highlands, con nieve",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_bowl_from_Loge_Peak_.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_bowl_from_Loge_Peak_.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Atardecer en Snowmass, Colorado (abril 2017, fin de temporada)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_Seeker_%28Unsplash%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Sunset_Seeker_(Unsplash).jpg",
+      "credito": "jamie_fenn (Unsplash) / Wikimedia Commons",
+      "licencia": "CC0 1.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Centro de Aspen con vista a las pistas de esquí",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Aspen%2C_CO%2C_with_view_to_ski_slopes.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_Aspen,_CO,_with_view_to_ski_slopes.jpg",
-      "credito": "Daniel Case",
-      "licencia": "CC BY-SA 3.0"
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
     },
     {
       "categoria": "ubicacion",
-      "opcion": "Aspen",
-      "descripcion": "Centro de Aspen con Aspen Mountain al fondo (27-abr-2005)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_of_Aspen,_Colorado.jpg?width=1600",
+      "opcion": "",
+      "descripcion": "Centro de Aspen por Galena Street con Aspen Mountain al fondo (abril 2005)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_of_Aspen%2C_Colorado.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Downtown_of_Aspen,_Colorado.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
     },
     {
       "categoria": "ubicacion",
-      "opcion": "Aspen",
-      "descripcion": "Main Street de Aspen junto al Hotel Jerome",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_Street,_Aspen,_CO.jpg?width=1600",
+      "opcion": "",
+      "descripcion": "Main Street de Aspen",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_Street%2C_Aspen%2C_CO.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Main_Street,_Aspen,_CO.jpg",
-      "credito": "Daniel Case (según el resumen de búsqueda; verificar)",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Wheeler Opera House en Aspen (abril 2015)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Wheeler_Opera_House.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Wheeler_Opera_House.jpg",
+      "credito": "Wolfgang Moroder / Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Gran salón de baile del histórico Hotel Jerome (1889), Aspen",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Ballroom%2C_Hotel_Jerome%2C_Aspen%2C_CO.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Grand_Ballroom,_Hotel_Jerome,_Aspen,_CO.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Red Onion, bar histórico del centro de Aspen",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Onion%2C_Aspen%2C_CO.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Red_Onion,_Aspen,_CO.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Aspen Art Museum (Shigeru Ban) al anochecer",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Art_Museum_by_Shigeru_Ban.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Art_Museum_by_Shigeru_Ban.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Los Maroon Bells, picos icónicos cerca de Aspen",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "",
+      "descripcion": "Maroon Bells reflejados en Maroon Lake (otoño)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells%2C_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart%2C_are_reflected_on_Maroon_Lake.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
+      "credito": "U.S. Forest Service / Wikimedia Commons",
+      "licencia": "Dominio público (USFS, gobierno de EE.UU.)"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Góndola Silver Queen de Aspen Mountain",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Silver_Queen_Gondola_%2891052%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Silver_Queen_Gondola_(91052).jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Telesilla 1A en Aspen Mountain",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lift_1A_on_Aspen_Mountain.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
+      "credito": "Wikimedia Commons",
+      "licencia": "no vista en resultados"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "",
+      "descripcion": "Aspen Mountain (foto de Unsplash)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain%2C_United_States_%28Unsplash%29.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain,_United_States_(Unsplash).jpg",
+      "credito": "Hunter Bryant (Unsplash) / Wikimedia Commons",
+      "licencia": "CC0 1.0"
     },
     {
       "categoria": "ubicacion",
@@ -332,24 +512,6 @@
       "descripcion": "Maroon Bells (temporada no confirmada)",
       "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells_%2811553%29a.jpg?width=1600",
       "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells_(11553)a.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Maroon Bells",
-      "descripcion": "Maroon Bells (temporada no confirmada)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "ubicacion",
-      "opcion": "Maroon Bells",
-      "descripcion": "Maroon Bells reflejadas en Maroon Lake (probablemente no invernal)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
       "credito": "No se mostró en los resultados; verificar en la página del archivo",
       "licencia": "No se mostró en los resultados; verificar en la página del archivo"
     },
@@ -397,60 +559,6 @@
       "url_pagina": "https://www.gosnowmass.com/top-kids-winter-activities/",
       "credito": "Snowmass Tourism (oficial del destino)",
       "licencia": "Uso editorial; pedir permiso"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Elk Camp",
-      "descripcion": "Góndola Elk Camp y base de Snowmass (2016)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Snowmass_gondola_and_Ski_area.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg",
-      "credito": "Wolfgang Moroder",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Buttermilk",
-      "descripcion": "Vista desde Buttermilk en invierno (ene-2008)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk_in_Winter.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg",
-      "credito": "Werdna (Wikimedia Commons, obra propia)",
-      "licencia": "CC BY-SA 4.0"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Aspen Mountain",
-      "descripcion": "Esquí de primavera en Aspen Mountain (2015)",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Mountain_spring_skiing.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_spring_skiing.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Aspen Mountain",
-      "descripcion": "Telesilla Lift 1A en Aspen Mountain",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Lift_1A_on_Aspen_Mountain.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Lift_1A_on_Aspen_Mountain.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Aspen Highlands",
-      "descripcion": "Base de Aspen Highlands",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_base_area.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_base_area.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
-    },
-    {
-      "categoria": "pista",
-      "opcion": "Aspen Highlands",
-      "descripcion": "Cloud 9, Aspen Highlands",
-      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspen_Highlands_cloud_9.jpg?width=1600",
-      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_cloud_9.jpg",
-      "credito": "No se mostró en los resultados; verificar en la página del archivo",
-      "licencia": "No se mostró en los resultados; verificar en la página del archivo"
     },
     {
       "categoria": "pista",

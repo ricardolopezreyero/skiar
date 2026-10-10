@@ -493,7 +493,7 @@
       let visibles = 0;
       fs.forEach((f) => {
         const link = f.url_pagina || f.url_imagen;
-        const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", loading: "lazy", referrerpolicy: "no-referrer" });
+        const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", referrerpolicy: "no-referrer" });
         const fig = el("figure", { hidden: true }, el("a", { class: "photo", href: link, target: "_blank", rel: "noopener" }, img),
           el("figcaption", {}, f.descripcion || "", f.credito ? el("span", { class: "note" }, " · " + f.credito) : null));
         box.append(fig);
