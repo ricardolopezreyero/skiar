@@ -33,6 +33,10 @@ def main():
             print(f"aviso: falta book/{slug}/opciones.json")
             continue
         data["slug"] = slug
+        peticiones = load(BOOK / slug / "peticiones.json") or {}
+        for l in data.get("alojamientos", []):
+            if l.get("nombre") in peticiones:
+                l["peticion"] = peticiones[l["nombre"]]
         resorts.append(data)
 
     payload = {

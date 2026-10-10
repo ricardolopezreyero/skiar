@@ -234,7 +234,8 @@
         el("div", { class: "row" },
           el("button", { type: "button", class: "btn", onclick: () => { state.l = i; render(); $("#combo").scrollIntoView(); } }, state.l === i ? "Elegido ✓" : "Elegir"),
           l.link ? el("a", { class: "btn ghost", href: l.link, target: "_blank", rel: "noopener" }, "Sitio oficial") : null,
-          l.galeria ? el("a", { class: "btn ghost", href: l.galeria, target: "_blank", rel: "noopener" }, "Fotos") : null));
+          l.galeria ? el("a", { class: "btn ghost", href: l.galeria, target: "_blank", rel: "noopener" }, "Fotos") : null),
+        l.peticion ? el("button", { type: "button", class: "btn ficha-btn", onclick: () => abrirFicha(r, i) }, "📋 Ficha y qué pedir") : null);
     }));
   }
 
@@ -270,6 +271,60 @@
         `Se pasa del tope de $8,000 por ${money(total - TOPE)}.`,
         faltan ? ` Ojo: ${faltan} concepto(s) sin dato.` : ""));
   }
+
+  // ---------- ficha del hospedaje: características, qué pedir y textos para Booking ----------
+  async function copiar(texto, btn) {
+    try { await navigator.clipboard.writeText(texto); } catch (e) {
+      const ta = el("textarea", {}, texto); document.body.append(ta); ta.select();
+      try { document.execCommand("copy"); } catch (e2) { /* nada */ } ta.remove();
+    }
+    const antes = btn.textContent; btn.textContent = "✓ Copiado"; btn.classList.add("ok");
+    setTimeout(() => { btn.textContent = antes; btn.classList.remove("ok"); }, 1800);
+  }
+
+  function abrirFicha(r, i) {
+    const l = r.alojamientos[i], p = l.peticion || {}, rec = p.recomendacion || {};
+    const e = espacio(r.slug, l), lp = lodgingPrice(l, state.v), pt = puntaje(r, i);
+    const foto = l.foto ? l.foto : l.foto_zona ? l.foto_zona.url : null;
+    const caja = (idioma, bandera, texto) => {
+      const btn = el("button", { type: "button", class: "btn sm" }, "📋 Copiar");
+      btn.addEventListener("click", () => copiar(texto, btn));
+      return el("div", { class: "pedido" }, el("div", { class: "pedido-h" }, el("strong", {}, `${bandera} ${idioma}`), btn), el("p", {}, texto));
+    };
+    $("#ficha-body").replaceChildren(
+      el("div", { class: "ficha-top" },
+        foto ? el("div", { class: "ficha-img photo-tone", style: `background-image:url("${foto}")` }) : null,
+        el("button", { type: "button", class: "ficha-close", "aria-label": "Cerrar", onclick: () => $("#ficha").close() }, "✕")),
+      el("div", { class: "ficha-in" },
+        el("p", { class: "eyebrow-d" }, r.nombre),
+        el("h3", {}, l.nombre),
+        el("div", { class: "badges" },
+          m2txt(e) ? el("span", { class: "badge m2" }, "📐 " + m2txt(e)) : null,
+          el("span", { class: "badge star" }, `⭐ ${pt.score}/100`),
+          lp.total ? el("span", { class: "badge" }, `💰 ${money(lp.total)} · 6 noches`) : null,
+          l.ski_in_out === "verdadero" ? el("span", { class: "badge ok" }, "Ski-in/ski-out real") : null),
+        el("div", { class: "reco" },
+          el("div", { class: "reco-h" }, "🎯 Qué pedir"),
+          el("p", { class: "reco-pedir" }, rec.pedir || "—"),
+          rec.por_que ? el("p", { class: "reco-por" }, el("strong", {}, "Por qué: "), rec.por_que) : null,
+          (rec.unidades || []).length ? el("div", { class: "reco-uds" }, el("span", {}, "Unidades recomendadas: "), rec.unidades.map((u) => el("span", { class: "ud" }, u))) : null,
+          (rec.evitar || []).length ? el("div", { class: "reco-evitar" }, el("strong", {}, "Evitar: "), rec.evitar.join(" · ")) : null,
+          rec.confianza ? el("p", { class: "reco-conf" }, conf(rec.confianza), " Confianza ", rec.confianza) : null),
+        el("h4", {}, "📝 Para pegar en Booking"),
+        el("p", { class: "meta" }, "Al reservar, en «Peticiones especiales». Si ya reservaste: Administrar reserva → Peticiones especiales, o mándalo por el chat del alojamiento unos 7 días antes de llegar."),
+        p.solicitud_es ? caja("Español", "🇲🇽", p.solicitud_es) : null,
+        p.solicitud_en ? caja("English", "🇺🇸", p.solicitud_en) : null,
+        (p.caracteristicas || []).length ? el("h4", {}, "✨ Características") : null,
+        (p.caracteristicas || []).length ? el("ul", { class: "carac" }, p.caracteristicas.map((c) => el("li", {}, c))) : null,
+        el("div", { class: "row" },
+          l.link ? el("a", { class: "btn ghost", href: l.link, target: "_blank", rel: "noopener" }, "Sitio oficial") : null,
+          el("button", { type: "button", class: "btn", onclick: () => { $("#ficha").close(); state.r = r.slug; state.l = i; render(); $("#combo").scrollIntoView(); } }, "Elegir este hospedaje")),
+        (p.fuentes || []).length ? el("details", { class: "fuentes" }, el("summary", {}, "Fuentes"), el("ul", {}, p.fuentes.slice(0, 12).map((u) => el("li", {}, el("a", { href: u, target: "_blank", rel: "noopener" }, u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 70)))))) : null));
+    const dlg = $("#ficha");
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+    dlg.scrollTop = 0;
+  }
+  $("#ficha").addEventListener("click", (ev) => { if (ev.target.id === "ficha") $("#ficha").close(); });
 
   // ---------- cuadro comparativo ----------
   const cmp = { sort: "puntaje", dir: 1, soloSki: false, soloPres: false, soloGratis: false };

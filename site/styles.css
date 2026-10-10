@@ -420,3 +420,34 @@ section { scroll-margin-top: 64px; }
 .badge.star { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
 .pts { display: inline-block; min-width: 34px; text-align: center; font-weight: 800; padding: 2px 8px; border-radius: 8px; background: var(--warn-bg); color: var(--warn); }
 .lead-hosp { margin: 0; font-size: .86rem; font-weight: 600; }
+
+/* ---------- ficha del hospedaje ---------- */
+.ficha-btn { background: var(--brand); width: 100%; margin-top: 6px; }
+dialog.ficha { width: min(720px, 100vw); max-height: 92vh; padding: 0; border: 0; border-radius: 20px; background: var(--surface); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.35); overflow: auto; }
+dialog.ficha::backdrop { background: rgba(10, 20, 32, .55); backdrop-filter: blur(3px); }
+.ficha-top { position: relative; height: 190px; background: linear-gradient(160deg, #cfe3f5, #e9f2fb 55%, #f6efe6); }
+.ficha-img { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.ficha-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(15,42,67,.8); color: #fff; font-size: 1rem; cursor: pointer; }
+.ficha-in { padding: 18px 22px 24px; display: grid; gap: 12px; }
+.ficha-in h3 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 1.45rem; }
+.ficha-in h4 { margin: 8px 0 0; }
+.eyebrow-d { margin: 0; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; color: var(--muted); }
+.reco { border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--surface)); border-radius: 16px; padding: 14px 16px; display: grid; gap: 8px; }
+.reco-h { font-weight: 800; color: var(--accent); }
+.reco-pedir { margin: 0; font-size: 1.05rem; font-weight: 600; }
+.reco-por, .reco-evitar, .reco-conf { margin: 0; font-size: .9rem; }
+.reco-uds { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .88rem; }
+.ud { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 2px 8px; font-weight: 700; }
+.pedido { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: var(--bg); }
+.pedido-h { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.pedido p { margin: 0; font-size: .92rem; white-space: pre-wrap; }
+.btn.ok { background: var(--ok); }
+.carac { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .92rem; }
+.fuentes { font-size: .8rem; color: var(--muted); }
+.fuentes ul { padding-left: 16px; }
+@media (max-width: 700px) {
+  dialog.ficha { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border-radius: 0; margin: 0; }
+  .ficha-top { height: 150px; }
+  .ficha-in { padding: 14px 16px 28px; }
+  .lodging .ficha-btn { display: block; }
+}
