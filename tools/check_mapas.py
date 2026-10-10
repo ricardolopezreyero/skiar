@@ -13,27 +13,41 @@ import pathlib
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+UAS = ["Mozilla/5.0 (skiar; revisión de mapas de pistas; https://github.com/ricardolopezreyero/skiar)",
+       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"]
+
+
+def revisar_con(url, ua):
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Range": "bytes=0-2047"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        tipo = r.headers.get("Content-Type", "")
+        cabeza = r.read(2048)
+        if url.lower().split("?")[0].endswith(".pdf") or "pdf" in tipo:
+            ok = cabeza.startswith(b"%PDF") or "pdf" in tipo
+        elif "image" in tipo:
+            ok = True
+        else:
+            ok = r.status < 400
+        return {"ok": bool(ok), "tipo": tipo, "status": r.status}
 
 
 def revisar(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-2047"})
-    try:
-        with urllib.request.urlopen(req, timeout=40) as r:
-            tipo = r.headers.get("Content-Type", "")
-            cabeza = r.read(2048)
-            if url.lower().split("?")[0].endswith(".pdf") or "pdf" in tipo:
-                ok = cabeza.startswith(b"%PDF") or "pdf" in tipo
-            elif "image" in tipo:
-                ok = True
-            else:
-                ok = r.status < 400
-            return {"ok": bool(ok), "tipo": tipo, "status": r.status}
-    except Exception as e:  # 404, 403, DNS, timeout
-        code = getattr(e, "code", None)
-        # 403/429/5xx suelen ser bloqueo a robots: en el navegador de la familia sí abre
-        roto = code in (404, 410) or code is None and "Name or service" in str(e) or "No address" in str(e)
-        return {"ok": not roto, "dudoso": not roto, "tipo": "", "status": code, "error": str(e)[:120]}
+    # Algunos sitios bloquean navegadores "falsos" y otros a herramientas simples: se prueban ambas.
+    error = None
+    for ua in UAS:
+        try:
+            res = revisar_con(url, ua)
+            if res["ok"]:
+                return res
+            error = error or res
+        except Exception as e:  # 404, 403, DNS, timeout
+            error = e
+    if isinstance(error, dict):
+        return error
+    code = getattr(error, "code", None)
+    # 403/429/5xx suelen ser bloqueo a robots: en el navegador de la familia sí abre
+    roto = code in (404, 410) or "Name or service" in str(error) or "No address" in str(error)
+    return {"ok": not roto, "dudoso": not roto, "tipo": "", "status": code, "error": str(error)[:120]}
 
 
 def main():

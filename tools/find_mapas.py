@@ -18,13 +18,28 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PISTAS = ROOT / "book" / "pistas"
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+# Algunos sitios (p. ej. Vail Resorts) bloquean navegadores "falsos" pero dejan pasar herramientas simples,
+# y otros al revés: se prueban las dos identidades.
+UAS = ["skiar-mapas/1.0 (+https://github.com/ricardolopezreyero/skiar)",
+       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"]
+UA = UAS[0]
 
 
 def get(url, n=3_000_000):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return r.read(n).decode("utf-8", "replace"), r.geturl()
+    ultimo = None
+    for ua in UAS:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "*/*"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                texto = r.read(n).decode("utf-8", "replace")
+                if len(texto) > 5000:
+                    return texto, r.geturl()
+                ultimo = (texto, r.geturl())
+        except Exception as e:
+            ultimo = ultimo or e
+    if isinstance(ultimo, Exception):
+        raise ultimo
+    return ultimo
 
 
 def puntaje(url):
@@ -57,18 +72,23 @@ def desde_pagina(url):
         candidatos.add(m.group(0))
     mejores = sorted(candidatos, key=puntaje, reverse=True)
     es_img = lambda c: c.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp"))
-    pdfs = [c for c in mejores if puntaje(c) >= 4 and not es_img(c)]
-    imgs = [c for c in mejores if puntaje(c) >= 4 and es_img(c)]
+    # el nombre del archivo (o su carpeta) debe decir que es un mapa
+    es_mapa = lambda c: any(k in "/".join(urllib.parse.unquote(c).lower().split("?")[0].split("/")[-2:]) for k in ("map", "trail"))
+    pdfs = [c for c in mejores if puntaje(c) >= 4 and not es_img(c) and es_mapa(c)]
+    imgs = [c for c in mejores if puntaje(c) >= 4 and es_img(c) and es_mapa(c)]
     return (pdfs[0] if pdfs else None), (imgs[0] if imgs else None), mejores[:6]
 
 
 def existe_pdf(url):
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-7"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.read(8).startswith(b"%PDF")
-    except Exception:
-        return False
+    for ua in UAS:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Range": "bytes=0-7"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                if r.read(8).startswith(b"%PDF"):
+                    return True
+        except Exception:
+            pass
+    return False
 
 
 # Aspen Snowmass publica sus mapas con un patrón fijo; se prueban las temporadas más recientes.
@@ -87,9 +107,15 @@ def desde_patron(slug):
 
 
 def get_tipo(url, accept):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return r.read(2_000_000).decode("utf-8", "replace")
+    ultimo = None
+    for ua in UAS:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": accept})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                return r.read(2_000_000).decode("utf-8", "replace")
+        except Exception as e:
+            ultimo = e
+    raise ultimo
 
 
 def desde_skimap(area_id):
