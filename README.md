@@ -10,7 +10,7 @@ Una página para decidir juntos a dónde ir a esquiar, cuándo y dónde dormir. 
 
 | Pestaña | Para qué sirve |
 |---|---|
-| 🧭 **Decidir** | Elegir la semana, el destino y uno de los 20 hospedajes. El total del viaje se recalcula con cada elección. |
+| 🧭 **Decidir** | Elegir la semana, vuelo o carro desde Torreón, el destino y uno de los 20 hospedajes. El total del viaje se recalcula con cada elección. |
 | ⛷️ **Pistas** | Ver mapas y datos de 40 opciones en Colorado y otros estados. |
 | ✅ **Checklist** | Marcar lo que falta antes de reservar, con su fecha límite. |
 

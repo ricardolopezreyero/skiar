@@ -750,5 +750,63 @@
         "nota": "Best Western PREMIER Monterrey Aeropuerto (habitación con 2 queens y desayuno): sábado 20 antes del vuelo y domingo 28 al aterrizar de noche, para no manejar de madrugada con la niña. Tarifa exacta del 20; la del 28 se estima igual."
       }
     }
+  },
+  "carretera": {
+    "consultado": "2026-11-22",
+    "casetas_puentes_usd": 115,
+    "casetas_nota": "Unos MXN 1,000 de casetas por sentido, más los puentes de Juárez.",
+    "i94_usd": 90,
+    "i94_nota": "US$30 por persona al entrar por tierra.",
+    "seguro_usd": 120,
+    "seguro_nota": "Extensión de responsabilidad civil para EE.UU.; cotizar con su aseguradora.",
+    "aviso": "⚠️ La ruta cruza Chihuahua, con alerta nivel 3 de EE.UU.: manejar solo de día y por autopista. En Colorado se necesita AWD/4x4 o cadenas. No incluye desgaste del carro.",
+    "supuestos": "SUV a 11 km/L; Magna MXN 23.5/L; regular US$3.60/galón; 19.1 MXN/USD; horas de OSRM más 2 h de frontera.",
+    "destinos": {
+      "keystone": {
+        "km_redondo": 3886,
+        "gasolina_usd": 378,
+        "noches_ruta": 4,
+        "hoteles_usd": 790,
+        "hoteles_confianza": "alta",
+        "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+        "comida_extra_usd": 75
+      },
+      "breckenridge": {
+        "km_redondo": 3844,
+        "gasolina_usd": 374,
+        "noches_ruta": 4,
+        "hoteles_usd": 790,
+        "hoteles_confianza": "alta",
+        "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+        "comida_extra_usd": 75
+      },
+      "steamboat": {
+        "km_redondo": 4166,
+        "gasolina_usd": 402,
+        "noches_ruta": 4,
+        "hoteles_usd": 790,
+        "hoteles_confianza": "alta",
+        "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+        "comida_extra_usd": 75
+      },
+      "snowmass": {
+        "km_redondo": 3906,
+        "gasolina_usd": 379,
+        "noches_ruta": 4,
+        "hoteles_usd": 790,
+        "hoteles_confianza": "alta",
+        "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+        "comida_extra_usd": 75
+      },
+      "purgatory": {
+        "km_redondo": 3418,
+        "gasolina_usd": 337,
+        "noches_ruta": 2,
+        "hoteles_usd": 400,
+        "hoteles_confianza": "alta",
+        "hoteles_nota": "El Paso, sáb 20 y dom 28.",
+        "comida_extra_usd": 0
+      }
+    }
   }
 }

@@ -5913,6 +5913,64 @@ window.SKIAR = {
      "nota": "Best Western PREMIER Monterrey Aeropuerto (habitación con 2 queens y desayuno): sábado 20 antes del vuelo y domingo 28 al aterrizar de noche, para no manejar de madrugada con la niña. Tarifa exacta del 20; la del 28 se estima igual."
     }
    }
+  },
+  "carretera": {
+   "consultado": "2026-11-22",
+   "casetas_puentes_usd": 115,
+   "casetas_nota": "Unos MXN 1,000 de casetas por sentido, más los puentes de Juárez.",
+   "i94_usd": 90,
+   "i94_nota": "US$30 por persona al entrar por tierra.",
+   "seguro_usd": 120,
+   "seguro_nota": "Extensión de responsabilidad civil para EE.UU.; cotizar con su aseguradora.",
+   "aviso": "⚠️ La ruta cruza Chihuahua, con alerta nivel 3 de EE.UU.: manejar solo de día y por autopista. En Colorado se necesita AWD/4x4 o cadenas. No incluye desgaste del carro.",
+   "supuestos": "SUV a 11 km/L; Magna MXN 23.5/L; regular US$3.60/galón; 19.1 MXN/USD; horas de OSRM más 2 h de frontera.",
+   "destinos": {
+    "keystone": {
+     "km_redondo": 3886,
+     "gasolina_usd": 378,
+     "noches_ruta": 4,
+     "hoteles_usd": 790,
+     "hoteles_confianza": "alta",
+     "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+     "comida_extra_usd": 75
+    },
+    "breckenridge": {
+     "km_redondo": 3844,
+     "gasolina_usd": 374,
+     "noches_ruta": 4,
+     "hoteles_usd": 790,
+     "hoteles_confianza": "alta",
+     "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+     "comida_extra_usd": 75
+    },
+    "steamboat": {
+     "km_redondo": 4166,
+     "gasolina_usd": 402,
+     "noches_ruta": 4,
+     "hoteles_usd": 790,
+     "hoteles_confianza": "alta",
+     "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+     "comida_extra_usd": 75
+    },
+    "snowmass": {
+     "km_redondo": 3906,
+     "gasolina_usd": 379,
+     "noches_ruta": 4,
+     "hoteles_usd": 790,
+     "hoteles_confianza": "alta",
+     "hoteles_nota": "El Paso, sáb 20 y lun 29; Santa Fe, dom 21 y dom 28.",
+     "comida_extra_usd": 75
+    },
+    "purgatory": {
+     "km_redondo": 3418,
+     "gasolina_usd": 337,
+     "noches_ruta": 2,
+     "hoteles_usd": 400,
+     "hoteles_confianza": "alta",
+     "hoteles_nota": "El Paso, sáb 20 y dom 28.",
+     "comida_extra_usd": 0
+    }
+   }
   }
  },
  "pendientes": [
@@ -6436,6 +6494,28 @@ window.SKIAR = {
     "precision": "exacta",
     "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
     "nota": "Coordenada del mapa de la ficha oficial."
+   },
+   {
+    "id": "elp",
+    "nombre": "El Paso, Texas (noche)",
+    "tipo": "ciudad",
+    "resort": null,
+    "lat": 31.7619,
+    "lng": -106.485,
+    "precision": "aproximada",
+    "fuente": "https://project-osrm.org/",
+    "nota": "Parada de carretera."
+   },
+   {
+    "id": "santafe",
+    "nombre": "Santa Fe, Nuevo México (noche)",
+    "tipo": "ciudad",
+    "resort": null,
+    "lat": 35.687,
+    "lng": -105.9378,
+    "precision": "aproximada",
+    "fuente": "https://project-osrm.org/",
+    "nota": "Parada de carretera."
    }
   ],
   "tramos": [
@@ -7043,6 +7123,182 @@ window.SKIAR = {
     "nota": "United ABQ 12:00 → MTY 17:18 en D.",
     "fuente": "https://www.google.com/travel/flights",
     "confianza": "alta"
+   },
+   {
+    "id": "car-trc-elp",
+    "de": "torreon",
+    "a": "elp",
+    "modo": "carro",
+    "horas": 11.2,
+    "rango": "",
+    "nota": "843 km por Chihuahua y Ciudad Juárez. Salir a las 6:00 y manejar solo de día.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-frontera-norte",
+    "de": "elp",
+    "a": "elp",
+    "modo": "espera",
+    "horas": 1.5,
+    "rango": "",
+    "nota": "Cruce a El Paso e I-94; en Semana Santa puede tardar más.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-frontera-sur",
+    "de": "elp",
+    "a": "elp",
+    "modo": "espera",
+    "horas": 0.5,
+    "rango": "",
+    "nota": "Cruce de regreso a Ciudad Juárez.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-elp-trc",
+    "de": "elp",
+    "a": "torreon",
+    "modo": "carro",
+    "horas": 11.2,
+    "rango": "",
+    "nota": "Salir temprano para llegar de día.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-elp-santafe",
+    "de": "elp",
+    "a": "santafe",
+    "modo": "carro",
+    "horas": 5.74,
+    "rango": "",
+    "nota": "527 km por la I-25. Noche en Santa Fe.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-santafe-elp",
+    "de": "santafe",
+    "a": "elp",
+    "modo": "carro",
+    "horas": 5.74,
+    "rango": "",
+    "nota": "Noche en El Paso.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-santafe-keystone",
+    "de": "santafe",
+    "a": "keystone",
+    "modo": "carro",
+    "horas": 7.08,
+    "rango": "",
+    "nota": "498 km por puertos de montaña; revisar el clima.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-keystone-santafe",
+    "de": "keystone",
+    "a": "santafe",
+    "modo": "carro",
+    "horas": 7.08,
+    "rango": "",
+    "nota": "Noche en Santa Fe.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-santafe-breckenridge",
+    "de": "santafe",
+    "a": "breckenridge",
+    "modo": "carro",
+    "horas": 6.66,
+    "rango": "",
+    "nota": "477 km por puertos de montaña; revisar el clima.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-breckenridge-santafe",
+    "de": "breckenridge",
+    "a": "santafe",
+    "modo": "carro",
+    "horas": 6.66,
+    "rango": "",
+    "nota": "Noche en Santa Fe.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-santafe-steamboat",
+    "de": "santafe",
+    "a": "steamboat",
+    "modo": "carro",
+    "horas": 8.86,
+    "rango": "",
+    "nota": "638 km por puertos de montaña; revisar el clima.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-steamboat-santafe",
+    "de": "steamboat",
+    "a": "santafe",
+    "modo": "carro",
+    "horas": 8.86,
+    "rango": "",
+    "nota": "Noche en Santa Fe.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-santafe-snowmass",
+    "de": "santafe",
+    "a": "snowmass",
+    "modo": "carro",
+    "horas": 8.0,
+    "rango": "",
+    "nota": "508 km por puertos de montaña; revisar el clima.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-snowmass-santafe",
+    "de": "snowmass",
+    "a": "santafe",
+    "modo": "carro",
+    "horas": 8.0,
+    "rango": "",
+    "nota": "Noche en Santa Fe.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-elp-purgatory",
+    "de": "elp",
+    "a": "purgatory",
+    "modo": "carro",
+    "horas": 9.39,
+    "rango": "",
+    "nota": "816 km por Albuquerque y la US-550.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
+   },
+   {
+    "id": "car-purgatory-elp",
+    "de": "purgatory",
+    "a": "elp",
+    "modo": "carro",
+    "horas": 9.39,
+    "rango": "",
+    "nota": "Noche en El Paso.",
+    "fuente": "https://project-osrm.org/",
+    "confianza": "media"
    }
   ],
   "itinerarios": {
@@ -7475,6 +7731,101 @@ window.SKIAR = {
      "noche_denver": true,
      "nota": "En Semana Santa no hay conexión a Hayden el mismo día, así que se vuela a Denver."
     }
+   }
+  },
+  "itinerarios_carro": {
+   "keystone": {
+    "ruta": "carretera",
+    "etiqueta": "Carro por El Paso · 3 días por sentido",
+    "ida": [
+     "car-trc-elp",
+     "car-frontera-norte",
+     "car-elp-santafe",
+     "car-santafe-keystone"
+    ],
+    "regreso": [
+     "car-keystone-santafe",
+     "car-santafe-elp",
+     "car-frontera-sur",
+     "car-elp-trc"
+    ],
+    "noche_denver": false,
+    "dias_viaje": 6,
+    "dias_sentido": 3
+   },
+   "breckenridge": {
+    "ruta": "carretera",
+    "etiqueta": "Carro por El Paso · 3 días por sentido",
+    "ida": [
+     "car-trc-elp",
+     "car-frontera-norte",
+     "car-elp-santafe",
+     "car-santafe-breckenridge"
+    ],
+    "regreso": [
+     "car-breckenridge-santafe",
+     "car-santafe-elp",
+     "car-frontera-sur",
+     "car-elp-trc"
+    ],
+    "noche_denver": false,
+    "dias_viaje": 6,
+    "dias_sentido": 3
+   },
+   "steamboat": {
+    "ruta": "carretera",
+    "etiqueta": "Carro por El Paso · 3 días por sentido",
+    "ida": [
+     "car-trc-elp",
+     "car-frontera-norte",
+     "car-elp-santafe",
+     "car-santafe-steamboat"
+    ],
+    "regreso": [
+     "car-steamboat-santafe",
+     "car-santafe-elp",
+     "car-frontera-sur",
+     "car-elp-trc"
+    ],
+    "noche_denver": false,
+    "dias_viaje": 6,
+    "dias_sentido": 3
+   },
+   "snowmass": {
+    "ruta": "carretera",
+    "etiqueta": "Carro por El Paso · 3 días por sentido",
+    "ida": [
+     "car-trc-elp",
+     "car-frontera-norte",
+     "car-elp-santafe",
+     "car-santafe-snowmass"
+    ],
+    "regreso": [
+     "car-snowmass-santafe",
+     "car-santafe-elp",
+     "car-frontera-sur",
+     "car-elp-trc"
+    ],
+    "noche_denver": false,
+    "dias_viaje": 6,
+    "dias_sentido": 3
+   },
+   "purgatory": {
+    "ruta": "carretera",
+    "etiqueta": "Carro por El Paso · 2 días por sentido",
+    "ida": [
+     "car-trc-elp",
+     "car-frontera-norte",
+     "car-elp-purgatory"
+    ],
+    "regreso": [
+     "car-purgatory-elp",
+     "car-frontera-sur",
+     "car-elp-trc"
+    ],
+    "noche_denver": false,
+    "dias_viaje": 4,
+    "dias_sentido": 2
    }
   }
  },

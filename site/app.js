@@ -35,7 +35,7 @@
   const num = (x) => (typeof x === "number" && isFinite(x) ? x : null);
 
   // ---------- estado (se guarda en la URL para compartir) ----------
-  const state = { v: "D", r: null, l: null, f: "cocinando", tab: "decidir" };
+  const state = { v: "D", r: null, l: null, f: "cocinando", tab: "decidir", m: "vuelo" };
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
     if (p.get("v")) state.v = p.get("v");
@@ -43,12 +43,14 @@
     if (p.get("l") != null) state.l = Number(p.get("l"));
     if (p.get("f")) state.f = p.get("f");
     if (p.get("tab")) state.tab = p.get("tab");
+    if (p.get("m") === "carro") state.m = "carro";
     if (p.get("lista")) Nube.setId(p.get("lista"));
   }
   function writeHash() {
     const p = new URLSearchParams({ v: state.v, r: state.r || "", l: state.l ?? "", f: state.f });
     if (Nube.id()) p.set("lista", Nube.id());
     if (state.tab !== "decidir") p.set("tab", state.tab);
+    if (state.m === "carro") p.set("m", "carro");
     history.replaceState(null, "", "#" + p.toString());
   }
 
@@ -92,7 +94,7 @@
   const esGratis = (r, l) => l.nina_gratis !== false && (deVentana(r, state.v, "forfaits") || {}).nina_total_usd === 0;
   let _pcache = null;
   function puntajes() {
-    const key = state.v + "|" + state.f;
+    const key = state.v + "|" + state.f + "|" + state.m;
     if (_pcache && _pcache.key === key) return _pcache.map;
     const rows = [];
     D.resorts.forEach((r) => (r.alojamientos || []).forEach((l, i) => {
@@ -128,10 +130,24 @@
     return best;
   }
 
-  function items(resort, li, v, food) {
+  function itemsCarro(resort) {
+    const c = V.carretera || {}, d = (c.destinos || {})[resort.slug] || {};
+    return [
+      { label: "⛽ Gasolina Torreón ↔ montaña", amount: num(d.gasolina_usd), conf: "media", note: `${(d.km_redondo || 0).toLocaleString("es-MX")} km ida y vuelta` },
+      { label: "🛣️ Casetas y puentes", amount: num(c.casetas_puentes_usd), conf: "media", note: c.casetas_nota },
+      { label: "🛂 Permisos I-94 (3 personas)", amount: num(c.i94_usd), conf: "alta", note: c.i94_nota },
+      { label: "🛡️ Seguro del carro en EE.UU.", amount: num(c.seguro_usd), conf: "baja", note: c.seguro_nota },
+      { label: `🏨 Hoteles en carretera (${d.noches_ruta} noches)`, amount: num(d.hoteles_usd), conf: d.hoteles_confianza, note: d.hoteles_nota },
+      d.comida_extra_usd ? { label: "🍽️ Comida del día extra de carretera", amount: d.comida_extra_usd, conf: "baja" } : null,
+    ].filter(Boolean);
+  }
+
+  function items(resort, li, v, food, medio = state.m) {
     const l = (resort.alojamientos || [])[li] || {};
     const out = [];
     const r = route(resort, v);
+    if (medio === "carro") out.push(...itemsCarro(resort));
+    else {
     if (r.vuelo) out.push({ label: "✈️ Vuelos redondos (3 personas)", amount: r.vuelo.total, conf: r.vuelo.conf, src: r.vuelo.src, note: [r.vuelo.ruta.descripcion, r.vuelo.fechas].filter(Boolean).join(" · ") });
     else out.push({ label: "✈️ Vuelos redondos (3 personas)", amount: null, note: "Falta dato" });
     if (r.vuelo && r.vuelo.equipaje != null) out.push({ label: "🧳 Equipaje documentado", amount: r.vuelo.equipaje, conf: r.vuelo.equipajeConf, note: r.vuelo.equipajeNota });
@@ -143,6 +159,7 @@
       out.push({ label: "🚗 Torreón ↔ Monterrey en carro + estacionamiento", amount: g == null && e == null ? null : (g || 0) + (e || 0), conf: "media", note: "Gasolina, casetas y estacionamiento en el aeropuerto" });
     }
     if (r.tras) out.push({ label: "🚙 Traslado aeropuerto ↔ montaña", amount: num(r.tras.total_usd), conf: r.tras.confianza, src: r.tras.fuente, note: r.tras.descripcion });
+    }
     const lp = lodgingPrice(l, v);
     out.push({ label: `🏔️ Hospedaje ${lp.noches} noches · ` + corto(l.nombre), amount: lp.total, conf: lp.conf, src: lp.src, note: lp.nota });
     const f = deVentana(resort, v, "forfaits") || {};
@@ -162,8 +179,8 @@
 
   const sum = (its) => its.reduce((a, i) => a + (i.amount || 0), 0);
   const missing = (its) => its.filter((i) => i.amount == null).length;
-  const tripTotal = (resort, li, v, food) => {
-    const its = items(resort, li, v, food);
+  const tripTotal = (resort, li, v, food, medio = state.m) => {
+    const its = items(resort, li, v, food, medio);
     const sinHospedaje = lodgingPrice((resort.alojamientos || [])[li] || {}, v).total == null;
     return { total: sum(its), faltan: missing(its), sinHospedaje };
   };
@@ -261,7 +278,7 @@
     const w = VENTANAS.find((x) => x.id === state.v);
     const l = (r.alojamientos || [])[state.l] || {};
     const e2 = espacio(r.slug, l);
-    $("#combo-title").textContent = `${r.nombre} · ${corto(l.nombre) || "—"} · ${w.corto}` + (e2 && e2.m2 ? ` · 📐 ${e2.m2} m²` : "");
+    $("#combo-title").textContent = `${r.nombre} · ${corto(l.nombre) || "—"} · ${w.corto}` + (e2 && e2.m2 ? ` · 📐 ${e2.m2} m²` : "") + (state.m === "carro" ? " · 🚗 En carro" : "");
     document.querySelectorAll("[data-food]").forEach((b) => b.classList.toggle("on", b.dataset.food === state.f));
     const its = items(r, state.l, state.v, state.f);
     const total = sum(its);
@@ -286,6 +303,47 @@
         lv === "warn" ? `Pasa la meta por ${money(total - PRESUPUESTO)}, pero cabe en el tope de $8,000.` :
         `Se pasa del tope de $8,000 por ${money(total - TOPE)}.`,
         faltan ? ` Ojo: ${faltan} concepto(s) sin dato.` : ""));
+  }
+
+  // ---------- vuelo contra carro, saliendo de Torreón ----------
+  function comparaMedio(r, li) {
+    const tv = tripTotal(r, li, state.v, state.f, "vuelo"), tc = tripTotal(r, li, state.v, state.f, "carro");
+    const hv = viaje(r.slug, "vuelo"), hc = viaje(r.slug, "carro");
+    const horas = (x) => (x ? x.ida + x.regreso : null);
+    const sinPrecio = tv.sinHospedaje;
+    return {
+      pv: sinPrecio ? null : tv.total, pc: sinPrecio ? null : tc.total,
+      hv: horas(hv), hc: horas(hc), dias: hc && hc.it.dias_sentido,
+    };
+  }
+
+  function renderTransporte() {
+    document.querySelectorAll("[data-modo]").forEach((b) => {
+      const on = b.dataset.modo === state.m;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-checked", String(on));
+    });
+    const r = currentResort();
+    if (!r) return;
+    const x = comparaMedio(r, state.l);
+    const ahorro = x.pv != null ? x.pv - x.pc : null;
+    const extra = x.hc != null && x.hv != null ? x.hc - x.hv : null;
+    $("#modo-dif").replaceChildren(
+      el("div", { class: "modo-card" + (state.m === "vuelo" ? " on" : "") }, el("small", {}, "✈️ Vuelo"), el("strong", {}, money(x.pv)), el("span", {}, fmtH(x.hv) + " puerta a puerta")),
+      el("div", { class: "modo-card" + (state.m === "carro" ? " on" : "") }, el("small", {}, "🚗 Carro"), el("strong", {}, money(x.pc)), el("span", {}, fmtH(x.hc) + ` · ${x.dias || "—"} días por sentido`)),
+      ahorro == null ? el("p", { class: "modo-res" }, `${r.nombre}: este hospedaje no tiene disponibilidad en estas fechas.`) :
+        el("p", { class: "modo-res" }, `${r.nombre} en carro: ${ahorro >= 0 ? "ahorra" : "cuesta"} ${money(Math.abs(ahorro))} ${ahorro >= 0 ? "" : "más "}y toma ${fmtH(extra)} más de viaje.`),
+      el("p", { class: "modo-aviso" }, (V.carretera || {}).aviso || ""));
+    const head = el("tr", {}, ["Destino", "✈️ Horas", "✈️ Total", "🚗 Horas", "🚗 Total", "Horas de más", "Ahorro en carro"].map((t) => el("th", {}, t)));
+    $("#modo-tabla").replaceChildren(el("thead", {}, head), el("tbody", {}, D.resorts.map((rr) => {
+      const li = defaultLodging(rr), y = comparaMedio(rr, li);
+      return el("tr", { class: rr.slug === r.slug ? "sel" : "" },
+        el("td", { class: "opt" }, el("strong", {}, rr.nombre), el("span", {}, corto((rr.alojamientos[li] || {}).nombre))),
+        el("td", { class: "n" }, fmtH(y.hv)), el("td", { class: "n" }, money(y.pv)),
+        el("td", { class: "n" }, fmtH(y.hc)), el("td", { class: "n" }, money(y.pc)),
+        el("td", { class: "n" }, y.hc != null && y.hv != null ? "+" + fmtH(y.hc - y.hv) : "—"),
+        el("td", { class: "n" }, y.pv != null ? el("strong", {}, money(y.pv - y.pc)) : "—"));
+    })));
   }
 
   // ---------- contacto en un clic: llamar, copiar dirección, Google Maps, Waze ----------
@@ -506,8 +564,8 @@
   const punto = (id) => (M.puntos || []).find((x) => x.id === id);
   const fmtH = (h) => (h == null ? "—" : h < 1 ? Math.round(h * 60) + " min" : (Math.round(h * 10) / 10).toLocaleString("es-MX") + " h");
 
-  function viaje(slug) {
-    const it = ((M.itinerarios_por_ventana || {})[state.v] || {})[slug] || (M.itinerarios || {})[slug];
+  function viaje(slug, medio = state.m) {
+    const it = (medio === "carro" && (M.itinerarios_carro || {})[slug]) || ((M.itinerarios_por_ventana || {})[state.v] || {})[slug] || (M.itinerarios || {})[slug];
     if (!it) return null;
     const suma = (ids) => (ids || []).reduce((s, id) => s + ((tramo(id) || {}).horas || 0), 0);
     return { it, ida: suma(it.ida), regreso: suma(it.regreso) };
@@ -559,7 +617,7 @@
           const vv = viaje(rr.slug); const b = balance(rr, defaultLodging(rr));
           return boton({ class: "dest-row", onclick: () => { mapaSlug = rr.slug; renderMapa(); } },
             el("span", { class: "sw big", style: `background:${COLOR_RESORT[rr.slug]}` }),
-            el("span", { class: "dest-name" }, el("strong", {}, rr.nombre), el("small", {}, (() => { const id = vv && vv.it.ruta; const ru = (V.rutas || []).find((q) => q.id === id); return ru ? (ru.aerolinea || "") + " · " + (ru.descripcion || id).split("(")[0].trim() : id || ""; })())),
+            el("span", { class: "dest-name" }, el("strong", {}, rr.nombre), el("small", {}, (() => { const id = vv && vv.it.ruta; const ru = (V.rutas || []).find((q) => q.id === id); return ru ? (ru.aerolinea || "") + " · " + (ru.descripcion || id).split("(")[0].trim() : (vv && vv.it.etiqueta) || id || ""; })())),
             el("span", { class: "dest-n" }, el("small", {}, "🛫 ida"), fmtH(vv && vv.ida)),
             el("span", { class: "dest-n" }, el("small", {}, "🛬 regreso"), fmtH(vv && vv.regreso)),
             el("span", { class: "dest-n" }, el("small", {}, "⛷️ pista"), fmtH(b.esqui)));
@@ -571,7 +629,7 @@
         v ? el("div", { class: "ruta-tot" }, el("div", {}, el("small", {}, "Ida, puerta a puerta"), el("strong", {}, fmtH(v.ida))), el("div", {}, el("small", {}, "Regreso"), el("strong", {}, fmtH(v.regreso)))) : el("p", { class: "muted" }, "Sin itinerario."),
         v ? (() => { const b = balance(r, state.r === r.slug && state.l != null ? state.l : defaultLodging(r)); return el("div", { class: "ruta-tot" },
           el("div", {}, el("small", {}, "⛷️ Días esquiando"), el("strong", {}, DIAS_ESQUI + " días"), el("small", {}, fmtH(b.esqui) + " de pista")),
-          el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: 2"))); })() : null,
+          el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: " + (v.it.dias_viaje || 2)))); })() : null,
         v ? el("h4", {}, "🛫 Ida") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.ida)) : null,
         v ? el("h4", {}, "🛬 Regreso") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.regreso)) : null,
         el("h4", {}, "⛷️ En la montaña"),
@@ -810,6 +868,7 @@
     renderResorts();
     renderLodgings();
     renderCombo();
+    renderTransporte();
     renderComparativo();
     renderMapa();
     renderBalance();
@@ -820,6 +879,7 @@
   }
 
   document.querySelectorAll("[data-food]").forEach((b) => b.addEventListener("click", () => { state.f = b.dataset.food; render(); }));
+  document.querySelectorAll("[data-modo]").forEach((b) => b.addEventListener("click", () => { state.m = b.dataset.modo; state.l = null; render(); }));
   $("#share-btn").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(location.href); $("#share-ok").hidden = false; setTimeout(() => ($("#share-ok").hidden = true), 2500); } catch (e) { prompt("Copia esta liga:", location.href); }
   });
