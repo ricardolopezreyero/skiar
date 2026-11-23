@@ -811,10 +811,6 @@
     try { await navigator.clipboard.writeText(location.href); $("#share-ok").hidden = false; setTimeout(() => ($("#share-ok").hidden = true), 2500); } catch (e) { prompt("Copia esta liga:", location.href); }
   });
 
-  // Tablas: abiertas en computadora, plegadas en celular
-  const ajustarTablas = () => document.querySelectorAll("details.tbl[data-auto]").forEach((d) => { d.open = !CEL.matches; });
-  ajustarTablas();
-  CEL.addEventListener("change", ajustarTablas);
 
   readHash();
   Nube.onChange(() => { renderTodo(); writeHash(); });

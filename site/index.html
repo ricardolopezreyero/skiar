@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="styles.css?v=3882a055ca">
+  <link rel="stylesheet" href="styles.css?v=748807dc11">
 </head>
 <body>
   <header class="hero">
@@ -122,17 +122,17 @@
 
     <section id="comparar">
       <h2><span class="num">5</span> Comparar todo</h2>
-      <p class="hint">Toca un encabezado para ordenar.</p>
-      <div class="cmp-tools">
-        <div class="filters" id="cmp-filtros"></div>
-      </div>
       <p class="hint small">⭐ Puntaje familiar (0–100): precio 35 · espacio 30 · acceso a pista 15 · niña gratis 10 · horas de viaje 10.</p>
       <div id="cmp-podio" class="podio"></div>
-      <details class="tbl" data-auto>
+      <details class="tbl">
         <summary>📊 Ver tabla completa (16 opciones)</summary>
+        <p class="hint">Toca un encabezado para ordenar.</p>
+        <div class="cmp-tools">
+          <div class="filters" id="cmp-filtros"></div>
+        </div>
         <div class="table-scroll"><table id="cmp" class="cmp"></table></div>
+        <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
       </details>
-      <p class="hint small">🟩 cabe en $6,000 · 🟨 cabe en $8,000 · 🟥 más de $8,000 · ⭐ mejor de la columna</p>
     </section>
 
     <section id="mapa">
@@ -144,11 +144,11 @@
       </div>
       <h3 class="sub-h">⚖️ Viajar contra esquiar, por opción</h3>
       <div id="balance-top" class="podio"></div>
-      <details class="tbl" data-auto>
+      <details class="tbl">
         <summary>⚖️ Ver tabla completa (16 opciones)</summary>
         <div class="table-scroll"><table id="balance" class="cmp balance"></table></div>
+        <p class="hint small" id="balance-nota"></p>
       </details>
-      <p class="hint small" id="balance-nota"></p>
     </section>
 
     <section id="galeria">
@@ -199,6 +199,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script src="mapas_estado.js"></script>
   <script src="data.js?v=f7c77a096c"></script>
-  <script src="app.js?v=340e13322a"></script>
+  <script src="app.js?v=b0b1c52f8f"></script>
 </body>
 </html>

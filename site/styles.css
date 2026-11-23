@@ -325,6 +325,7 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 
 /* ---------- tablas plegables ---------- */
 details.tbl { margin-top: 10px; }
+details.tbl > .hint { margin-top: 12px; }
 details.tbl > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-weight: 600; font-size: .9rem; margin-bottom: 10px; }
 details.tbl > summary::-webkit-details-marker { display: none; }
 details.tbl > summary::after { content: "▾"; }
