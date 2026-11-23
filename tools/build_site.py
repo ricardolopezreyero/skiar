@@ -3,7 +3,6 @@
 
 Uso: python3 tools/build_site.py
 """
-import datetime
 import hashlib
 import re
 import json
@@ -12,6 +11,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BOOK = ROOT / "book"
+FECHA_PRECIOS = "2026-10-10"  # cambiarla solo cuando se revisen los precios
 SITE = ROOT / "site"
 ORDEN = ["keystone", "breckenridge", "steamboat", "snowmass"]
 
@@ -70,7 +70,7 @@ def main():
             pistas.append(p)
 
     payload = {
-        "generado": datetime.date.today().isoformat(),
+        "generado": FECHA_PRECIOS,
         "rama": "claude/dreamy-cori-anrnp2",
         "resorts": resorts,
         "vuelos": load(BOOK / "vuelos.json") or {},

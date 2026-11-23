@@ -302,7 +302,7 @@
   "traslados": [
     {
       "id": "den-renta-suv-awd",
-      "descripcion": "Renta SUV AWD en aeropuerto de Denver, 6 días (DEN→Keystone ~1.5-2 h; Breckenridge ~2-2.5 h; Steamboat ~3-3.5 h; Snowmass ~3.5-4 h)",
+      "descripcion": "Renta SUV AWD en aeropuerto de Denver, 6 días",
       "aplica_a": [
         "keystone",
         "breckenridge",

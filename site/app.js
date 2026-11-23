@@ -19,7 +19,6 @@
     for (const [k, v] of Object.entries(attrs || {})) {
       if (v == null || v === false) continue;
       if (k === "class") n.className = v;
-      else if (k === "html") n.innerHTML = v;
       else if (k === "href") n.setAttribute("href", Array.isArray(v) ? v[0] : String(v).split(/[ ,;]+(?=https?:)/)[0]);
       else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
       else n.setAttribute(k, v === true ? "" : v);
@@ -27,6 +26,9 @@
     for (const kid of kids.flat(Infinity)) if (kid != null && kid !== false) n.append(kid.nodeType ? kid : String(kid));
     return n;
   };
+  const ext = (href, attrs, ...kids) => el("a", { href, target: "_blank", rel: "noopener", ...attrs }, ...kids);
+  const boton = (attrs, ...kids) => el("button", { type: "button", ...attrs }, ...kids);
+  const MEDALLAS = ["🥇", "🥈", "🥉"];
   const money = (n) => (n == null || isNaN(n) ? "—" : "$" + Math.round(n).toLocaleString("en-US"));
   const conf = (c) => el("span", { class: "dot " + (c || "baja"), title: "Confianza: " + (c || "baja / estimado") });
   const num = (x) => (typeof x === "number" && isFinite(x) ? x : null);
@@ -78,6 +80,8 @@
   const M2_TOPE = 120; // arriba de ~120 m² ya no suma más espacio al puntaje
   const PESOS = { precio: 35, espacio: 30, acceso: 15, nina: 10, viaje: 10 };
   const ETQ = { precio: "💰 precio", espacio: "📐 espacio", acceso: "⛷️ acceso a pista", nina: "👧 niña gratis", viaje: "🕒 horas de viaje" };
+  const nivelSki = (l) => ({ verdadero: 2, caminando: 1 })[l.ski_in_out] || 0;
+  const esGratis = (r, l) => l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0;
   let _pcache = null;
   function puntajes() {
     const key = state.v + "|" + state.f;
@@ -88,8 +92,8 @@
       const e = espacio(r.slug, l);
       rows.push({
         k: r.slug + "|" + i, total: t.sinHospedaje ? null : t.total, m2: e && num(e.m2) != null ? Math.min(e.m2, M2_TOPE) : null,
-        ski: l.ski_in_out === "verdadero" ? 2 : l.ski_in_out === "caminando" ? 1 : 0,
-        gratis: l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0,
+        ski: nivelSki(l),
+        gratis: esGratis(r, l),
         viaje: balance(r, i).viajando,
       });
     }));
@@ -153,6 +157,7 @@
     return { total: sum(its), faltan: missing(its), sinHospedaje };
   };
   const level = (t) => (t <= PRESUPUESTO ? "ok" : t <= TOPE ? "warn" : "bad");
+  const COLOR_NIVEL = { ok: "var(--ok)", warn: "var(--warn)", bad: "var(--bad)" };
 
   // ---------- render ----------
   function firstPhoto(resort, cats) {
@@ -163,14 +168,14 @@
   function renderVentanas() {
     const box = $("#ventanas");
     box.replaceChildren(...VENTANAS.map((w) =>
-      el("button", { type: "button", class: "chip" + (state.v === w.id ? " on" : ""), role: "radio", "aria-checked": String(state.v === w.id), onclick: () => { state.v = w.id; render(); } },
+      boton({ class: "chip" + (state.v === w.id ? " on" : ""), role: "radio", "aria-checked": String(state.v === w.id), onclick: () => { state.v = w.id; render(); } },
         el("strong", { class: "largo" }, w.titulo + " 2027"), el("strong", { class: "corto" }, w.corto), el("span", {}, w.nota))));
   }
 
   function renderResorts() {
     const list = [...D.resorts].sort((a, b) => puntaje(b, defaultLodging(b)).score - puntaje(a, defaultLodging(a)).score);
     $("#resorts").replaceChildren(...list.map((r) => {
-      const li = defaultLodging(r, state.v);
+      const li = defaultLodging(r);
       const t = tripTotal(r, li, state.v, state.f);
       const ph = firstPhoto(r, ["ubicacion", "pista"]);
       const badges = [];
@@ -180,14 +185,13 @@
       if (r.aeropuerto) badges.push(el("span", { class: "badge" }, "✈ " + r.aeropuerto));
       const nv = nieve(r.slug, state.v);
       if (nv) badges.push(el("span", { class: "badge " + (nv.prob_buena === "alta" ? "ok" : nv.prob_buena === "baja" ? "warn" : ""), title: nv.nota || "" }, `❄️ ${nv.cm} cm de nieve`));
-      return el("button", { type: "button", class: "resort" + (state.r === r.slug ? " on" : ""), onclick: () => { state.r = r.slug; state.l = null; render(); $("#hospedaje").scrollIntoView(); } },
+      return boton({ class: "resort" + (state.r === r.slug ? " on" : ""), onclick: () => { state.r = r.slug; state.l = null; render(); $("#hospedaje").scrollIntoView(); } },
         el("div", { class: "ph" }, ph ? el("div", { class: "ph-img photo-tone", style: `background-image:url("${ph}")` }) : null, el("span", { class: "score", title: detallePuntaje(puntaje(r, li)) }, "⭐ " + puntaje(r, li).score + "/100")),
         el("div", { class: "body" },
           el("h3", {}, r.nombre),
           el("p", { class: "lead-hosp" }, "🏔️ " + corto((r.alojamientos[li] || {}).nombre) + (m2txt(espacio(r.slug, r.alojamientos[li])) ? " · 📐 " + m2txt(espacio(r.slug, r.alojamientos[li])) : "")),
           el("p", { class: "lead" }, r.resumen || ""),
           el("div", { class: "badges" }, badges),
-          el("ul", {}, (r.magia || []).slice(0, 3).map((m) => el("li", {}, m))),
           el("div", { class: "total" }, el("small", {}, "Total del viaje estimado"), t.sinHospedaje ? "—" : money(t.total), t.faltan ? el("small", { class: "missing" }, t.faltan + " concepto(s) sin dato") : null),
           t.sinHospedaje ? el("span", { class: "badge warn" }, "Falta precio de hospedaje en estas fechas") :
           el("span", { class: "badge " + level(t.total) }, t.total <= PRESUPUESTO ? "Cabe en $6,000" : t.total <= TOPE ? "Cabe en $8,000" : "Arriba de $8,000")));
@@ -200,8 +204,8 @@
     const r = currentResort();
     if (!r) return;
     if (state.r == null) state.r = r.slug;
-    if (state.l == null) state.l = defaultLodging(r, state.v);
-    $("#hospedaje-hint").textContent = `Opciones en ${r.nombre} para las fechas elegidas. Elige una para ver el presupuesto completo.`;
+    if (state.l == null) state.l = defaultLodging(r);
+    $("#hospedaje-hint").textContent = `Opciones en ${r.nombre}.`;
     $("#lodgings").replaceChildren(...(r.alojamientos || []).map((l, i) => {
       const p = lodgingPrice(l, state.v);
       const acceso = { verdadero: ["ok", "Ski-in/ski-out real"], caminando: ["warn", "Caminando a la pista"], shuttle: ["warn", "Necesita shuttle"] }[l.ski_in_out] || ["", l.ski_in_out || "Acceso por confirmar"];
@@ -230,12 +234,12 @@
           (l.contras || []).length ? el("ul", {}, l.contras.map((x) => el("li", {}, "👎 " + x))) : null,
           l.ideal_si ? el("p", {}, el("strong", {}, "Ideal si: "), l.ideal_si) : null,
           (l.amenidades || []).length ? el("p", { class: "meta" }, l.amenidades.join(" · ")) : null,
-          p.src ? el("p", { class: "meta" }, "Fuente del precio: ", el("a", { href: p.src, target: "_blank", rel: "noopener" }, "ver")) : null),
+          p.src ? el("p", { class: "meta" }, "Fuente del precio: ", ext(p.src, null, "ver")) : null),
         el("div", { class: "row" },
-          el("button", { type: "button", class: "btn", onclick: () => { state.l = i; render(); $("#combo").scrollIntoView(); } }, state.l === i ? "Elegido ✓" : "Elegir"),
-          l.link ? el("a", { class: "btn ghost", href: l.link, target: "_blank", rel: "noopener" }, "Sitio oficial") : null,
-          l.galeria ? el("a", { class: "btn ghost", href: l.galeria, target: "_blank", rel: "noopener" }, "Fotos") : null),
-        l.peticion ? el("button", { type: "button", class: "btn ficha-btn", onclick: () => abrirFicha(r, i) }, "📋 Ficha y qué pedir") : null);
+          boton({ class: "btn", onclick: () => { state.l = i; render(); $("#combo").scrollIntoView(); } }, state.l === i ? "Elegido ✓" : "Elegir"),
+          l.link ? ext(l.link, { class: "btn ghost" }, "Sitio oficial") : null,
+          l.galeria ? ext(l.galeria, { class: "btn ghost" }, "Fotos") : null),
+        l.peticion ? boton({ class: "btn ficha-btn", onclick: () => abrirFicha(r, i) }, "📋 Ficha y qué pedir") : null);
     }));
   }
 
@@ -252,11 +256,11 @@
     $("#combo-table").replaceChildren(
       ...its.map((i) => el("tr", {},
         el("td", {}, i.label, i.note ? el("span", { class: "note" }, i.note) : null),
-        el("td", {}, i.amount == null ? el("span", { class: "missing" }, "sin dato") : [money(i.amount), " ", conf(i.conf), i.src ? [" ", el("a", { href: i.src, target: "_blank", rel: "noopener", title: "Fuente" }, "↗")] : null]))),
+        el("td", {}, i.amount == null ? el("span", { class: "missing" }, "sin dato") : [money(i.amount), " ", conf(i.conf), i.src ? [" ", ext(i.src, { title: "Fuente" }, "↗")] : null]))),
       el("tr", { class: "sum" }, el("td", {}, "Total estimado"), el("td", {}, money(total))));
     const pct = Math.min(100, (total / 10000) * 100);
     const lv = level(total);
-    const color = { ok: "var(--ok)", warn: "var(--warn)", bad: "var(--bad)" }[lv];
+    const color = COLOR_NIVEL[lv];
     const faltan = missing(its);
     if (lodgingPrice(l, state.v).total == null) {
       $("#combo-meter").replaceChildren(el("div", { class: "verdict missing" }, "Este hospedaje no tiene precio para estas fechas todavía; el total está incompleto."));
@@ -281,13 +285,13 @@
     const q = encodeURIComponent([nombre, dir].filter(Boolean).join(", "));
     const gmaps = dir || lat == null ? `https://www.google.com/maps/search/?api=1&query=${q}` : `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
     const waze = lat != null ? `https://waze.com/ul?ll=${lat},${lng}&navigate=yes` : `https://waze.com/ul?q=${encodeURIComponent(dir || nombre)}&navigate=yes`;
-    const copiarBtn = dir ? el("button", { type: "button", class: "ct" }, "📋 Copiar dirección") : null;
+    const copiarBtn = dir ? boton({ class: "ct" }, "📋 Copiar dirección") : null;
     if (copiarBtn) copiarBtn.addEventListener("click", () => copiar(`${nombre}\n${dir}`, copiarBtn));
     return el("div", { class: "contacto" },
       c.telefono ? el("a", { class: "ct", href: "tel:" + c.telefono.replace(/[^+\d]/g, "") }, "📞 Llamar", c.telefono_texto ? el("small", {}, c.telefono_texto) : null) : null,
       copiarBtn,
-      el("a", { class: "ct", href: gmaps, target: "_blank", rel: "noopener" }, "📍 Google Maps"),
-      el("a", { class: "ct", href: waze, target: "_blank", rel: "noopener" }, "🚗 Waze"),
+      ext(gmaps, { class: "ct" }, "📍 Google Maps"),
+      ext(waze, { class: "ct" }, "🚗 Waze"),
       dir ? el("p", { class: "ct-dir" }, dir) : null);
   }
 
@@ -306,14 +310,14 @@
     const e = espacio(r.slug, l), lp = lodgingPrice(l, state.v), pt = puntaje(r, i);
     const foto = l.foto ? l.foto : l.foto_zona ? l.foto_zona.url : null;
     const caja = (idioma, bandera, texto) => {
-      const btn = el("button", { type: "button", class: "btn sm" }, "📋 Copiar");
+      const btn = boton({ class: "btn sm" }, "📋 Copiar");
       btn.addEventListener("click", () => copiar(texto, btn));
       return el("div", { class: "pedido" }, el("div", { class: "pedido-h" }, el("strong", {}, `${bandera} ${idioma}`), btn), el("p", {}, texto));
     };
     $("#ficha-body").replaceChildren(
       el("div", { class: "ficha-top" },
         foto ? el("div", { class: "ficha-img photo-tone", style: `background-image:url("${foto}")` }) : null,
-        el("button", { type: "button", class: "ficha-close", "aria-label": "Cerrar", onclick: () => $("#ficha").close() }, "✕")),
+        boton({ class: "ficha-close", "aria-label": "Cerrar", onclick: () => $("#ficha").close() }, "✕")),
       el("div", { class: "ficha-in" },
         el("p", { class: "eyebrow-d" }, r.nombre),
         el("h3", {}, l.nombre),
@@ -337,27 +341,24 @@
         (p.caracteristicas || []).length ? el("h4", {}, "✨ Características") : null,
         (p.caracteristicas || []).length ? el("ul", { class: "carac" }, p.caracteristicas.map((c) => el("li", {}, c))) : null,
         el("div", { class: "row" },
-          l.link ? el("a", { class: "btn ghost", href: l.link, target: "_blank", rel: "noopener" }, "Sitio oficial") : null,
-          el("button", { type: "button", class: "btn", onclick: () => { $("#ficha").close(); state.r = r.slug; state.l = i; render(); $("#combo").scrollIntoView(); } }, "Elegir este hospedaje")),
-        (p.fuentes || []).length ? el("details", { class: "fuentes" }, el("summary", {}, "Fuentes"), el("ul", {}, p.fuentes.slice(0, 12).map((u) => el("li", {}, el("a", { href: u, target: "_blank", rel: "noopener" }, u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 70)))))) : null));
-    const dlg = $("#ficha");
-    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
-    dlg.scrollTop = 0;
+          l.link ? ext(l.link, { class: "btn ghost" }, "Sitio oficial") : null,
+          boton({ class: "btn", onclick: () => { $("#ficha").close(); state.r = r.slug; state.l = i; render(); $("#combo").scrollIntoView(); } }, "Elegir este hospedaje")),
+        (p.fuentes || []).length ? el("details", { class: "fuentes" }, el("summary", {}, "Fuentes"), el("ul", {}, p.fuentes.slice(0, 12).map((u) => el("li", {}, ext(u, null, u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 70)))))) : null));
+    $("#ficha").showModal();
+    $("#ficha").scrollTop = 0;
   }
-  $("#ficha").addEventListener("click", (ev) => { if (ev.target.id === "ficha") $("#ficha").close(); });
 
   // ---------- catálogo de pistas con mapa oficial ----------
   const P = D.pistas || [];
   const ESTADO_MAPA = window.SKIAR_MAPAS || {};
-  const esCelular = () => window.matchMedia("(max-width: 700px)").matches;
+  const CEL = window.matchMedia("(max-width: 700px)");
   const urlOk = (u) => !!u && (ESTADO_MAPA[u] ? ESTADO_MAPA[u].ok !== false : true);
   const fmtN = (n, suf) => (n == null ? "—" : Math.round(n).toLocaleString("es-MX") + (suf || ""));
   let filtroPistas = "Todas";
 
   function renderPistas() {
-    if (!P.length) { $("#pistas-lista").replaceChildren(el("p", { class: "muted" }, "Cargando el catálogo de pistas…")); return; }
     const estados = ["Todas", "Finalistas", ...[...new Set(P.map((p) => p.estado).filter(Boolean))]];
-    $("#pistas-filtros").replaceChildren(...estados.map((e) => el("button", { type: "button", class: "filter" + (filtroPistas === e ? " on" : ""), onclick: () => { filtroPistas = e; renderPistas(); } }, e)));
+    $("#pistas-filtros").replaceChildren(...estados.map((e) => boton({ class: "filter" + (filtroPistas === e ? " on" : ""), onclick: () => { filtroPistas = e; renderPistas(); } }, e)));
     const lista = P.filter((p) => filtroPistas === "Todas" || (filtroPistas === "Finalistas" ? p.finalista : p.estado === filtroPistas))
       .sort((a, b) => (b.finalista ? 1 : 0) - (a.finalista ? 1 : 0));
     $("#pistas-lista").replaceChildren(...lista.map((p) => {
@@ -366,9 +367,8 @@
       const niv = [["ini", s.principiante_pct], ["int", s.intermedio_pct], ["ava", s.avanzado_pct]];
       return el("article", { class: "pista" + (p.finalista ? " fin" : "") },
         el("div", { class: "pista-h" },
-          el("div", {}, el("h3", {}, p.nombre), el("p", { class: "meta" }, [p.estado, p.pase].filter(Boolean).join(" · "))),
+          el("div", {}, el("h3", { title: p.resumen }, p.nombre), el("p", { class: "meta" }, [p.estado, p.pase].filter(Boolean).join(" · "))),
           p.finalista ? el("span", { class: "badge star" }, "⭐ Finalista") : null),
-        p.resumen ? el("p", { class: "pista-res" }, p.resumen) : null,
         el("div", { class: "pista-stats" },
           el("div", {}, el("small", {}, "Pistas"), el("strong", {}, fmtN(s.pistas))),
           el("div", {}, el("small", {}, "Hectáreas"), el("strong", {}, fmtN(s.hectareas))),
@@ -381,9 +381,9 @@
         p.ninos ? el("p", { class: "pista-ninos" }, "👧 ", p.ninos) : null,
         contactos({ nombre: p.nombre, telefono: p.telefono, telefono_texto: p.telefono_texto, direccion: p.direccion, lat: p.lat, lng: p.lng }),
         el("div", { class: "row" },
-          tieneMapa ? el("button", { type: "button", class: "btn", onclick: () => abrirMapa(p) }, "🗺️ Ver mapa") : null,
-          urlOk(p.mapa_pdf) ? el("a", { class: "btn ghost", href: p.mapa_pdf, target: "_blank", rel: "noopener", download: "" }, "⬇️ PDF") : null,
-          p.mapa_pagina ? el("a", { class: "btn ghost", href: p.mapa_pagina, target: "_blank", rel: "noopener" }, tieneMapa ? "Página oficial" : "🗺️ Mapa oficial") : null));
+          tieneMapa ? boton({ class: "btn", onclick: () => abrirMapa(p) }, "🗺️ Ver mapa") : null,
+          urlOk(p.mapa_pdf) ? ext(p.mapa_pdf, { class: "btn ghost", download: "" }, "⬇️ PDF") : null,
+          p.mapa_pagina ? ext(p.mapa_pagina, { class: "btn ghost" }, tieneMapa ? "Página oficial" : "🗺️ Mapa oficial") : null));
     }));
   }
 
@@ -391,23 +391,22 @@
     const img = urlOk(p.mapa_img) ? p.mapa_img : null;
     const pdf = urlOk(p.mapa_pdf) ? p.mapa_pdf : null;
     let visor;
-    if (img) visor = el("a", { href: img, target: "_blank", rel: "noopener", class: "mapa-img" }, el("img", { src: img, alt: "Mapa de pistas de " + p.nombre, referrerpolicy: "no-referrer" }));
-    else if (pdf) visor = el("iframe", { class: "mapa-pdf", title: "Mapa de pistas de " + p.nombre, src: esCelular() ? "https://docs.google.com/viewer?embedded=true&url=" + encodeURIComponent(pdf) : pdf + "#view=FitH" });
+    if (img) visor = ext(img, { class: "mapa-img" }, el("img", { src: img, alt: "Mapa de pistas de " + p.nombre, referrerpolicy: "no-referrer" }));
+    else if (pdf) visor = el("iframe", { class: "mapa-pdf", title: "Mapa de pistas de " + p.nombre, src: CEL.matches ? "https://docs.google.com/viewer?embedded=true&url=" + encodeURIComponent(pdf) : pdf + "#view=FitH" });
     $("#mapa-dlg-body").replaceChildren(
       el("div", { class: "mapa-dlg-h" },
         el("div", {}, el("p", { class: "eyebrow-d" }, [p.estado, p.temporada_mapa ? "Mapa " + p.temporada_mapa : null].filter(Boolean).join(" · ")), el("h3", {}, p.nombre)),
-        el("button", { type: "button", class: "ficha-close static", "aria-label": "Cerrar", onclick: () => $("#mapa-dlg").close() }, "✕")),
+        boton({ class: "ficha-close static", "aria-label": "Cerrar", onclick: () => $("#mapa-dlg").close() }, "✕")),
       visor || el("p", { class: "muted", style: "padding:16px" }, "No hay mapa descargable; usa la página oficial."),
       el("div", { class: "row mapa-dlg-acc" },
-        pdf ? el("a", { class: "btn", href: pdf, target: "_blank", rel: "noopener", download: "" }, "⬇️ Descargar PDF") : null,
-        img ? el("a", { class: "btn ghost", href: img, target: "_blank", rel: "noopener" }, "🔍 Abrir en grande") : null,
-        pdf ? el("a", { class: "btn ghost", href: pdf, target: "_blank", rel: "noopener" }, "Abrir PDF") : null,
-        p.mapa_pagina ? el("a", { class: "btn ghost", href: p.mapa_pagina, target: "_blank", rel: "noopener" }, "Página oficial") : null),
-      el("p", { class: "meta", style: "padding:0 18px 16px" }, "Mapa oficial del resort. Si no se ve aquí, usa «Abrir PDF»."));
-    const dlg = $("#mapa-dlg");
-    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+        pdf ? ext(pdf, { class: "btn", download: "" }, "⬇️ Descargar PDF") : null,
+        img ? ext(img, { class: "btn ghost" }, "🔍 Abrir en grande") : null,
+        pdf ? ext(pdf, { class: "btn ghost" }, "Abrir PDF") : null,
+        p.mapa_pagina ? ext(p.mapa_pagina, { class: "btn ghost" }, "Página oficial") : null),
+      pdf ? el("p", { class: "meta", style: "padding:0 18px 16px" }, "Si no se ve aquí, usa «Abrir PDF».") : null);
+    $("#mapa-dlg").showModal();
   }
-  $("#mapa-dlg").addEventListener("click", (ev) => { if (ev.target.id === "mapa-dlg") $("#mapa-dlg").close(); });
+  ["ficha", "mapa-dlg"].forEach((id) => $("#" + id).addEventListener("click", (ev) => { if (ev.target.id === id) ev.target.close(); }));
 
   // ---------- cuadro comparativo ----------
   const cmp = { sort: "puntaje", dir: 1, soloSki: false, soloPres: false, soloGratis: false };
@@ -420,12 +419,10 @@
       const lp = lodgingPrice(l, state.v);
       rows.push({
         r, l, i, t,
-        porFecha: VENTANAS.map((w) => tripTotal(r, i, w.id, state.f)),
         hosp: lp.total, conf: lp.conf,
-        ski: l.ski_in_out === "verdadero" ? 2 : l.ski_in_out === "caminando" ? 1 : 0,
-        gratis: l.nina_gratis !== false && r.forfaits && r.forfaits.nina_total_usd === 0,
+        ski: nivelSki(l),
+        gratis: esGratis(r, l),
         alt: r.altitud_base_m || 0,
-        cb: r.costo_beneficio || 0,
         viaje: balance(r, i).viajando,
         nieve: (nieve(r.slug, state.v) || {}).cm ?? null,
         m2: (espacio(r.slug, l) || {}).m2 ?? null,
@@ -437,20 +434,19 @@
 
   function renderComparativo() {
     const f = [["soloSki", "⛷️ Solo ski-in/ski-out"], ["soloGratis", "👧 Niña esquía gratis"], ["soloPres", "💰 Hasta $8,000"]];
-    $("#cmp-filtros").replaceChildren(...f.map(([k, txt]) => el("button", { type: "button", class: "filter" + (cmp[k] ? " on" : ""), "aria-pressed": String(cmp[k]), onclick: () => { cmp[k] = !cmp[k]; renderComparativo(); } }, txt)));
+    $("#cmp-filtros").replaceChildren(...f.map(([k, txt]) => boton({ class: "filter" + (cmp[k] ? " on" : ""), "aria-pressed": String(cmp[k]), onclick: () => { cmp[k] = !cmp[k]; renderComparativo(); } }, txt)));
 
     let rows = filasComparativo();
     if (cmp.soloSki) rows = rows.filter((x) => x.ski === 2);
     if (cmp.soloGratis) rows = rows.filter((x) => x.gratis);
     if (cmp.soloPres) rows = rows.filter((x) => !x.t.sinHospedaje && x.t.total <= TOPE);
-    const key = { total: (x) => (x.t.sinHospedaje ? 1e9 : x.t.total), hosp: (x) => x.hosp ?? 1e9, ski: (x) => -x.ski, gratis: (x) => (x.gratis ? 0 : 1), alt: (x) => x.alt, cb: (x) => -x.cb, viaje: (x) => x.viaje ?? 1e9, nieve: (x) => -(x.nieve ?? -1), m2: (x) => -(x.m2 ?? -1), puntaje: (x) => -x.pts.score, nombre: (x) => x.r.nombre + x.l.nombre }[cmp.sort];
+    const key = { total: (x) => (x.t.sinHospedaje ? 1e9 : x.t.total), hosp: (x) => x.hosp ?? 1e9, ski: (x) => -x.ski, gratis: (x) => (x.gratis ? 0 : 1), alt: (x) => x.alt, viaje: (x) => x.viaje ?? 1e9, nieve: (x) => -(x.nieve ?? -1), m2: (x) => -(x.m2 ?? -1), puntaje: (x) => -x.pts.score, nombre: (x) => x.r.nombre + x.l.nombre }[cmp.sort];
     rows.sort((a, b) => { const ka = key(a), kb = key(b); return (ka > kb ? 1 : ka < kb ? -1 : 0) * cmp.dir; });
 
     const conPrecio = rows.filter((x) => !x.t.sinHospedaje);
     const minTotal = Math.min(...conPrecio.map((x) => x.t.total));
     const minHosp = Math.min(...rows.map((x) => x.hosp ?? Infinity));
     const minAlt = Math.min(...rows.map((x) => x.alt || Infinity));
-    const maxCb = Math.max(...rows.map((x) => x.cb));
     const minViaje = Math.min(...rows.map((x) => x.viaje ?? Infinity));
     const maxNieve = Math.max(...rows.map((x) => x.nieve ?? -1));
     const maxM2 = Math.max(...rows.map((x) => x.m2 ?? -1));
@@ -459,8 +455,8 @@
 
     // podio: las 3 con mejor puntaje familiar (precio, espacio, acceso, niña gratis, viaje)
     const podio = filasComparativo().filter((x) => !x.t.sinHospedaje).sort((a, b) => b.pts.score - a.pts.score).slice(0, 3);
-    $("#cmp-podio").replaceChildren(...podio.map((x, n) => el("button", { type: "button", class: "podio-item", title: detallePuntaje(x.pts), onclick: () => elegir(x) },
-      el("span", { class: "medal" }, ["🥇", "🥈", "🥉"][n]),
+    $("#cmp-podio").replaceChildren(...podio.map((x, n) => boton({ class: "podio-item", title: detallePuntaje(x.pts), onclick: () => elegir(x) },
+      el("span", { class: "medal" }, MEDALLAS[n]),
       el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre) + (x.m2 ? ` · 📐 ${x.m2} m²` : "") + ` · ⭐ ${x.pts.score}`)),
       el("span", { class: "podio-total " + level(x.t.total) }, money(x.t.total)))));
 
@@ -469,7 +465,7 @@
     const sel = (x) => state.r === x.r.slug && state.l === x.i;
     const body = rows.map((x) => {
       const pct = x.t.sinHospedaje ? 0 : Math.min(100, (x.t.total / 12000) * 100);
-      const color = { ok: "var(--ok)", warn: "var(--warn)", bad: "var(--bad)" }[level(x.t.total)];
+      const color = COLOR_NIVEL[level(x.t.total)];
       return el("tr", { class: sel(x) ? "sel" : "" },
         el("td", { class: "opt" }, el("strong", {}, x.r.nombre), el("span", {}, corto(x.l.nombre))),
         el("td", { class: "n", title: detallePuntaje(x.pts) }, el("span", { class: "pts" }, `${x.pts.score}`), star(x.pts.score === maxPts)),
@@ -483,7 +479,7 @@
         el("td", { class: "n" }, x.alt ? x.alt.toLocaleString("es-MX") + " m" + star(x.alt === minAlt) : "—"),
         el("td", { class: "n" }, fmtH(x.viaje) + star(x.viaje != null && x.viaje === minViaje)),
         el("td", { class: "n" }, x.nieve == null ? "—" : `❄️ ${x.nieve} cm` + star(x.nieve === maxNieve)),
-        el("td", {}, el("button", { type: "button", class: "btn sm", onclick: () => elegir(x) }, sel(x) ? "✓" : "Elegir")));
+        el("td", {}, boton({ class: "btn sm", onclick: () => elegir(x) }, sel(x) ? "✓" : "Elegir")));
     });
     $("#cmp").replaceChildren(el("thead", {}, head), el("tbody", {}, body.length ? body : [el("tr", {}, el("td", { colspan: 14, class: "muted" }, "Ninguna opción cumple esos filtros."))]));
   }
@@ -513,7 +509,7 @@
     const diario = minEscuela != null ? (minEscuela * 2 * DIAS_ESQUI) / 60 : null;
     const esqui = pistas.horas ? pistas.horas * DIAS_ESQUI : null;
     const viajando = v ? v.ida + v.regreso + (diario || 0) : null;
-    return { v, diario, minEscuela, esqui, viajando, pistas, noche: v && v.it.noche_denver };
+    return { v, diario, minEscuela, esqui, viajando };
   }
 
   let mapa = null, capa = null, mapaSlug = null;
@@ -534,8 +530,8 @@
     mapaSlug = mapaSlug || "todos";
     const todos = mapaSlug === "todos";
     $("#mapa-tabs").replaceChildren(
-      el("button", { type: "button", class: todos ? "on" : "", onclick: () => { mapaSlug = "todos"; renderMapa(); } }, "🌎 Todos"),
-      ...D.resorts.map((r) => el("button", { type: "button", class: mapaSlug === r.slug ? "on" : "", onclick: () => { mapaSlug = r.slug; renderMapa(); } }, el("span", { class: "sw", style: `background:${COLOR_RESORT[r.slug]}` }), r.nombre)));
+      boton({ class: todos ? "on" : "", onclick: () => { mapaSlug = "todos"; renderMapa(); } }, "🌎 Todos"),
+      ...D.resorts.map((r) => boton({ class: mapaSlug === r.slug ? "on" : "", onclick: () => { mapaSlug = r.slug; renderMapa(); } }, el("span", { class: "sw", style: `background:${COLOR_RESORT[r.slug]}` }), r.nombre)));
     const v = todos ? null : viaje(mapaSlug);
     const r = D.resorts.find((x) => x.slug === mapaSlug);
 
@@ -547,10 +543,9 @@
     if (todos) {
       $("#mapa-ruta").replaceChildren(
         el("h4", { style: "margin-top:0" }, "🌎 Los 4 destinos de un vistazo"),
-        el("p", { class: "meta" }, "Toca un destino para ver su ruta paso a paso."),
         ...D.resorts.map((rr) => {
-          const vv = viaje(rr.slug); const b = balance(rr, defaultLodging(rr, state.v));
-          return el("button", { type: "button", class: "dest-row", onclick: () => { mapaSlug = rr.slug; renderMapa(); } },
+          const vv = viaje(rr.slug); const b = balance(rr, defaultLodging(rr));
+          return boton({ class: "dest-row", onclick: () => { mapaSlug = rr.slug; renderMapa(); } },
             el("span", { class: "sw big", style: `background:${COLOR_RESORT[rr.slug]}` }),
             el("span", { class: "dest-name" }, el("strong", {}, rr.nombre), el("small", {}, (() => { const id = (M.itinerarios[rr.slug] || {}).ruta; const ru = (V.rutas || []).find((q) => q.id === id); return ru ? (ru.aerolinea || "") + " · " + (ru.descripcion || id).split("(")[0].trim() : id || ""; })())),
             el("span", { class: "dest-n" }, el("small", {}, "🛫 ida"), fmtH(vv && vv.ida)),
@@ -562,7 +557,7 @@
       const esc = (M.horario_escuela || {})[mapaSlug] || {};
       $("#mapa-ruta").replaceChildren(
         v ? el("div", { class: "ruta-tot" }, el("div", {}, el("small", {}, "Ida, puerta a puerta"), el("strong", {}, fmtH(v.ida))), el("div", {}, el("small", {}, "Regreso"), el("strong", {}, fmtH(v.regreso)))) : el("p", { class: "muted" }, "Sin itinerario."),
-        v ? (() => { const b = balance(r, state.r === r.slug && state.l != null ? state.l : defaultLodging(r, state.v)); return el("div", { class: "ruta-tot" },
+        v ? (() => { const b = balance(r, state.r === r.slug && state.l != null ? state.l : defaultLodging(r)); return el("div", { class: "ruta-tot" },
           el("div", {}, el("small", {}, "⛷️ Días esquiando"), el("strong", {}, DIAS_ESQUI + " días"), el("small", {}, fmtH(b.esqui) + " de pista")),
           el("div", {}, el("small", {}, "🕒 Horas viajando"), el("strong", {}, fmtH(b.viajando)), el("small", {}, (v.it.noche_denver ? "+ 1 noche en Denver · " : "") + "días de viaje: 2"))); })() : null,
         v ? el("h4", {}, "🛫 Ida") : null, v ? el("ol", { class: "pasos" }, pasos(v.it.ida)) : null,
@@ -606,8 +601,8 @@
     const rows = [];
     D.resorts.forEach((r) => (r.alojamientos || []).forEach((l, i) => rows.push({ r, l, i, b: balance(r, i) })));
     rows.sort((a, b) => ((b.b.esqui || 0) / (b.b.viajando || 1e9)) - ((a.b.esqui || 0) / (a.b.viajando || 1e9)));
-    $("#balance-top").replaceChildren(...rows.slice(0, 3).map((x, n) => el("button", { type: "button", class: "podio-item", onclick: () => { mapaSlug = x.r.slug; elegir(x); } },
-      el("span", { class: "medal" }, ["🥇", "🥈", "🥉"][n]),
+    $("#balance-top").replaceChildren(...rows.slice(0, 3).map((x, n) => boton({ class: "podio-item", onclick: () => { mapaSlug = x.r.slug; elegir(x); } },
+      el("span", { class: "medal" }, MEDALLAS[n]),
       el("span", {}, el("strong", {}, x.r.nombre), el("small", {}, corto(x.l.nombre) + " · " + fmtH(x.b.viajando) + " viajando")),
       el("span", { class: "podio-total ok" }, "⛷️ " + fmtH(x.b.esqui)))));
     const head = el("tr", {}, el("th", {}, "Opción"), el("th", {}, "🛫 Ida"), el("th", {}, "🛬 Regreso"), el("th", {}, "🚶 Hotel ↔ escuela (5 días)"), el("th", {}, "🕒 Total viajando"), el("th", {}, "⛷️ Horas de pista (5 días)"), el("th", {}, "📊 Nieve por hora de viaje"), el("th", {}, ""));
@@ -617,13 +612,13 @@
         el("td", { class: "opt" }, el("strong", {}, x.r.nombre), el("span", {}, corto(x.l.nombre))),
         el("td", { class: "n" }, fmtH(x.b.v && x.b.v.ida)),
         el("td", { class: "n" }, fmtH(x.b.v && x.b.v.regreso)),
-        el("td", { class: "n" }, x.b.minEscuela == null ? "—" : `${x.b.minEscuela} min × 2 × 5 = ${fmtH(x.b.diario)}`),
+        el("td", { class: "n", title: x.b.minEscuela == null ? null : `${x.b.minEscuela} min × 2 × 5` }, fmtH(x.b.diario)),
         el("td", { class: "n" }, el("strong", {}, fmtH(x.b.viajando))),
         el("td", { class: "n" }, fmtH(x.b.esqui)),
         el("td", { class: "n" }, ratio ? el("span", { class: "tot-n " + (ratio >= 1.4 ? "ok" : ratio >= 1.1 ? "warn" : "bad") }, ratio.toFixed(1) + " h") : "—"),
-        el("td", {}, el("button", { type: "button", class: "btn sm", onclick: () => { mapaSlug = x.r.slug; elegir(x); } }, "Elegir")));
+        el("td", {}, boton({ class: "btn sm", onclick: () => { mapaSlug = x.r.slug; elegir(x); } }, "Elegir")));
     })));
-    $("#balance-nota").textContent = `${DIAS_ESQUI} días de esquí. "Viajando" = ida + regreso + vueltas diarias a la escuela.`;
+    $("#balance-nota").textContent = `"Viajando" = ida + regreso + vueltas a la escuela.`;
   }
 
   // ---------- nieve estimada ----------
@@ -656,7 +651,7 @@
   const MAX_FOTOS = 10;
   function renderGallery() {
     galSlug = galSlug || state.r || (D.resorts[0] && D.resorts[0].slug);
-    $("#gal-tabs").replaceChildren(...D.resorts.map((r) => el("button", { type: "button", class: galSlug === r.slug ? "on" : "", onclick: () => { galSlug = r.slug; renderGallery(); } }, r.nombre)));
+    $("#gal-tabs").replaceChildren(...D.resorts.map((r) => boton({ class: galSlug === r.slug ? "on" : "", onclick: () => { galSlug = r.slug; renderGallery(); } }, r.nombre)));
     const r = D.resorts.find((x) => x.slug === galSlug);
     if (!r) return;
     const cats = [["ubicacion", "📍 El lugar"], ["pista", "⛷️ La pista"], ["alojamiento", "🏔️ Hospedaje"]];
@@ -675,8 +670,8 @@
       fs.forEach((f) => {
         const link = f.url_pagina || f.url_imagen;
         const img = el("img", { src: f.url_imagen, alt: f.descripcion || "", referrerpolicy: "no-referrer" });
-        const fig = el("figure", { hidden: true }, el("a", { class: "photo", href: link, target: "_blank", rel: "noopener" }, img),
-          el("figcaption", {}, f.descripcion || "", f.credito ? el("span", { class: "note" }, " · " + f.credito) : null));
+        const fig = el("figure", { hidden: true }, ext(link, { class: "photo" }, img),
+          f.credito ? el("figcaption", {}, f.credito) : null);
         box.append(fig);
         img.addEventListener("load", () => {
           if (visibles >= MAX_FOTOS || img.naturalWidth < 50) { fig.remove(); return; }
@@ -694,7 +689,7 @@
     const API = "https://jsonblob.com/api/jsonBlob";
     const KID = "skiar-lista-id", KLOCAL = "skiar-todo";
     const ls = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* sin almacenamiento */ } } };
-    let id = D.lista_id || ls.get(KID) || null;
+    let id = ls.get(KID) || null;
     let done = {};
     try { done = JSON.parse(ls.get(KLOCAL) || "{}"); } catch (e) { done = {}; }
     let status = id ? "cargando" : "local";
@@ -760,7 +755,7 @@
     const tc = $("#tab-count"); if (tc) tc.textContent = `${hechos}/${list.length}`;
     $("#todo").replaceChildren(
       el("div", { class: "sync " + aviso[0] }, el("span", {}, aviso[1], " ", el("strong", {}, `${hechos}/${list.length} listos`)),
-        Nube.id() ? el("button", { type: "button", onclick: async () => { try { await navigator.clipboard.writeText(liga); alert("Liga copiada. Mándasela a Ana y guárdenla en favoritos."); } catch (e) { prompt("Copia esta liga para Ana:", liga); } } }, "📲 Copiar liga para Ana") : null),
+        Nube.id() ? boton({ onclick: async () => { try { await navigator.clipboard.writeText(liga); alert("Liga copiada. Mándasela a Ana y guárdenla en favoritos."); } catch (e) { prompt("Copia esta liga para Ana:", liga); } } }, "📲 Copiar liga para Ana") : null),
       ...list.map((t) => {
         const id = (t.de || "g") + ":" + (t.texto || t).slice(0, 60);
         const cb = el("input", { type: "checkbox" });
@@ -771,9 +766,9 @@
   }
 
   function renderLinks() {
-    const ls = [el("a", { class: "btn ghost", href: REPO + "/reports/" + encodeURIComponent("Esquí familiar Colorado y alternativas.md"), target: "_blank", rel: "noopener" }, "📖 Reporte completo de la investigación")];
-    D.resorts.forEach((r) => ls.push(el("a", { class: "btn ghost", href: REPO + "/book/" + r.slug + "/ficha.md", target: "_blank", rel: "noopener" }, "🏔️ Ficha de " + r.nombre)));
-    ls.push(el("a", { class: "btn ghost", href: REPO + "/book/vuelos.md", target: "_blank", rel: "noopener" }, "✈️ Vuelos y traslados"));
+    const ls = [ext(REPO + "/reports/" + encodeURIComponent("Esquí familiar Colorado y alternativas.md"), { class: "btn ghost" }, "📖 Reporte completo de la investigación")];
+    D.resorts.forEach((r) => ls.push(ext(REPO + "/book/" + r.slug + "/ficha.md", { class: "btn ghost" }, "🏔️ Ficha de " + r.nombre)));
+    ls.push(ext(REPO + "/book/vuelos.md", { class: "btn ghost" }, "✈️ Vuelos y traslados"));
     if (D.generado) ls.push(el("p", { class: "muted" }, "🕒 Precios actualizados el " + new Date(D.generado + "T12:00:00").toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" })));
     $("#links").replaceChildren(...ls);
   }
@@ -817,18 +812,14 @@
   });
 
   // Tablas: abiertas en computadora, plegadas en celular
-  const esCel = window.matchMedia("(max-width: 700px)");
-  const ajustarTablas = () => document.querySelectorAll("details.tbl[data-auto]").forEach((d) => { d.open = !esCel.matches; });
+  const ajustarTablas = () => document.querySelectorAll("details.tbl[data-auto]").forEach((d) => { d.open = !CEL.matches; });
   ajustarTablas();
-  (esCel.addEventListener ? esCel.addEventListener("change", ajustarTablas) : esCel.addListener(ajustarTablas));
+  CEL.addEventListener("change", ajustarTablas);
 
   readHash();
   Nube.onChange(() => { renderTodo(); writeHash(); });
   Nube.pull();
   window.addEventListener("focus", () => Nube.pull());
   setInterval(() => { if (document.visibilityState === "visible") Nube.pull(); }, 30000);
-  if (!D.resorts.length) {
-    $("#destinos .hint").textContent = "Estamos terminando de juntar los precios por fecha. Vuelve en un rato.";
-  }
   render();
 })();

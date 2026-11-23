@@ -108,7 +108,6 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .resort .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .resort h3 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 1.35rem; }
 .resort .lead { margin: 0; color: var(--muted); font-size: .92rem; }
-.resort ul { margin: 0; padding-left: 18px; font-size: .9rem; }
 .total { font-size: 1.6rem; font-weight: 700; letter-spacing: -.01em; }
 .total small { font-size: .8rem; font-weight: 500; color: var(--muted); display: block; letter-spacing: 0; }
 .badges { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -160,19 +159,11 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .share button { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 10px; padding: 8px 12px; font: 500 .88rem Inter, sans-serif; cursor: pointer; }
 
 .table-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
-.matrix { border-collapse: collapse; width: 100%; font-size: .9rem; min-width: 560px; }
-.matrix th, .matrix td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; }
-.matrix td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; cursor: pointer; }
-.matrix tr.grp td { background: var(--bg); font-weight: 700; }
-.matrix td.ok { background: var(--ok-bg); color: var(--ok); font-weight: 600; }
-.matrix td.warn { background: var(--warn-bg); color: var(--warn); font-weight: 600; }
-.matrix td.bad { color: var(--bad); }
 
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
 .gallery figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .gallery img { width: 100%; height: 150px; object-fit: cover; display: block; background: var(--bg); }
 .gallery figcaption { padding: 8px 10px; font-size: .8rem; color: var(--muted); }
-.gallery .linkonly { padding: 14px; font-size: .88rem; }
 .gal-cat { grid-column: 1 / -1; font-weight: 700; margin-top: 8px; }
 
 .todo { display: grid; gap: 8px; }
@@ -239,7 +230,6 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .mini-bar i { display: block; height: 100%; border-radius: 99px; }
 .fechas { white-space: nowrap; }
 .f { display: inline-block; font-size: .75rem; font-weight: 600; padding: 2px 5px; border-radius: 6px; margin-right: 3px; }
-.f.cur { outline: 2px solid var(--brand); }
 .btn.sm { padding: 6px 10px; font-size: .8rem; }
 .fab { position: fixed; right: 16px; bottom: 16px; z-index: 1100; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
 .fab:hover { filter: brightness(1.05); }
@@ -289,8 +279,6 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .dest-n { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; font-size: .92rem; }
 @media (max-width: 480px) { .dest-row { grid-template-columns: 16px 1fr auto auto; } .dest-row .dest-n:last-child { display: none; } }
 .leaflet-tooltip.map-label { background: rgba(255,255,255,.92); border: 0; box-shadow: 0 1px 4px rgba(0,0,0,.25); font: 600 11px Inter, sans-serif; color: #12263a; padding: 2px 6px; }
-.map-btns { display: flex; flex-direction: column; gap: 4px; }
-.map-btns button { background: #fff; color: #12263a; border: 1px solid rgba(0,0,0,.2); border-radius: 8px; padding: 6px 10px; font: 600 12px Inter, sans-serif; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
 
 /* ---------- nieve ---------- */
 .nieve { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
@@ -299,10 +287,6 @@ h2 { font-family: Fraunces, Georgia, serif; font-size: 1.6rem; margin: 0 0 6px; 
 .nv-row { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: center; }
 @media (max-width: 600px) { .nv-row { grid-template-columns: 1fr; gap: 4px; } }
 .nv-name { font-weight: 700; }
-.nv-bars { display: grid; gap: 6px; }
-.nv-bar { display: grid; grid-template-columns: 1fr 250px; gap: 10px; align-items: center; font-size: .82rem; opacity: .7; }
-.nv-bar.cur { opacity: 1; }
-@media (max-width: 600px) { .nv-bar { grid-template-columns: 1fr; gap: 2px; } }
 .nv-track { position: relative; height: 14px; background: var(--bg); border-radius: 99px; overflow: hidden; border: 1px solid var(--line); }
 .nv-range { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--brand) 22%, transparent); }
 .nv-fill { position: absolute; left: 0; top: 3px; bottom: 3px; border-radius: 99px; background: linear-gradient(90deg, #a9d3f5, #4a90d9); }
@@ -371,7 +355,7 @@ details.tbl[open] > summary::after { content: "▴"; }
   /* destinos */
   .grid-resorts { gap: 12px; }
   .resort .ph { height: 110px; }
-  .resort .lead, .resort ul { display: none; }
+  .resort .lead { display: none; }
   .resort .body { gap: 6px; padding: 12px 14px 14px; }
   .total { font-size: 1.35rem; }
 
@@ -459,7 +443,7 @@ dialog.ficha::backdrop { background: rgba(10, 20, 32, .55); backdrop-filter: blu
 .pista-h { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
 .pista h3 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 1.3rem; }
 .pista .meta { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
-.pista-res, .pista-ninos { margin: 0; font-size: .9rem; }
+.pista-ninos { margin: 0; font-size: .9rem; }
 .pista-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .pista-stats div { background: var(--bg); border-radius: 10px; padding: 6px 8px; }
 .pista-stats small { display: block; color: var(--muted); font-size: .7rem; }
@@ -478,7 +462,6 @@ dialog.ficha::backdrop { background: rgba(10, 20, 32, .55); backdrop-filter: blu
 .mapa-dlg-acc { padding: 12px 18px; display: flex; gap: 8px; flex-wrap: wrap; }
 @media (max-width: 700px) {
   .grid-pistas { grid-template-columns: 1fr; }
-  .pista-res { display: none; }
   .mapa-pdf { height: calc(100dvh - 190px); }
 }
 

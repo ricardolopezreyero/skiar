@@ -5,7 +5,7 @@ window.SKIAR = {
   {
    "slug": "keystone",
    "nombre": "Keystone",
-   "resumen": "El resort de Colorado con mejor costo-beneficio para una niña de 5 años: su boleto sale gratis al reservar el hospedaje con Keystone, aprende a esquiar en la cima tras subir en góndola y tiene actividades gratuitas diarias (Kidtopia). Hay ski-in/ski-out verdadero en River Run (The Timbers, Lone Eagle) por unos $345-485 la noche.",
+   "resumen": "El resort de Colorado con mejor costo-beneficio para una niña de 5 años: su boleto sale gratis al reservar el hospedaje con Keystone, aprende a esquiar en la cima tras subir en góndola y tiene actividades gratuitas diarias (Kidtopia).",
    "magia": [
     "Sube en góndola a la escuela de la cima de Dercum: alfombra mágica, zona de 'esquí lento' y zona de aventura infantil.",
     "Kidtopia: actividades gratis todos los días; en temporadas pasadas hubo fuegos artificiales los sábados en River Run, s'mores y chocolate caliente.",
@@ -934,7 +934,7 @@ window.SKIAR = {
   {
    "slug": "breckenridge",
    "nombre": "Breckenridge",
-   "resumen": "El destino con más magia para una niña de 5 años (pueblo victoriano, góndola gratis, castillo con dragones en la pista y esculturas de nieve a finales de enero) y con hoteles realmente ski-in/ski-out con la escuela abajo. Es el más alto (2,926 m) y de los más caros: el combo recomendado ronda US$8,600 (sin vuelos ni maletas ≈ US$7,600).",
+   "resumen": "El destino con más magia para una niña de 5 años (pueblo victoriano, góndola gratis, castillo con dragones en la pista y esculturas de nieve a finales de enero) y con hoteles realmente ski-in/ski-out con la escuela abajo. Es el más alto (2,926 m) y de los más caros.",
    "magia": [
     "Pueblo minero victoriano de cuento (Main Street)",
     "Dragon Trail: pista infantil que cruza el 'Ski-a-Lot Castle' con foso y dragones (Peak 8)",
@@ -2116,7 +2116,7 @@ window.SKIAR = {
   {
    "slug": "steamboat",
    "nombre": "Steamboat",
-   "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes del 19 de noviembre de 2026. Es el más mágico, pero no el más barato: ~US$10,850 con ski-in/ski-out real o ~US$8,750 en versión ajustada (estimados).",
+   "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes del 19 de noviembre de 2026. Es el más mágico, pero no el más barato.",
    "magia": [
     "Pueblo del Viejo Oeste: Lincoln Ave y la tienda western F.M. Light & Sons (desde 1905), para comprarle sombrero y botas",
     "Albercas termales en la nieve: Old Town Hot Springs en el centro (toboganes, alberca infantil) y Strawberry Park (pozas naturales; niños sólo de día)",
@@ -3080,7 +3080,7 @@ window.SKIAR = {
   {
    "slug": "snowmass",
    "nombre": "Snowmass",
-   "resumen": "Es el destino más mágico de Colorado para una niña de 5 años: Treehouse, esquí gratis hasta los 6 y una villa peatonal con pista de hielo y s'mores gratis. Pero no cabe en un precio cómodo: un combo realista ski-in/ski-out cuesta ~US$10,400 (mínimo ~$8,900) sin contar visas.",
+   "resumen": "Es el destino más mágico de Colorado para una niña de 5 años: Treehouse, esquí gratis hasta los 6 y una villa peatonal con pista de hielo y s'mores gratis. Pero no cabe en un precio cómodo.",
    "magia": [
     "Treehouse Kids' Adventure Center: un edificio infantil de ~25,000 ft² con Alpine Climb Room, sede de la escuela y junto a la góndola Elk Camp",
     "La niña esquía gratis (6 años o menos, en las 4 montañas)",
@@ -4497,7 +4497,7 @@ window.SKIAR = {
   "traslados": [
    {
     "id": "den-renta-suv-awd",
-    "descripcion": "Renta SUV AWD en aeropuerto de Denver, 6 días (DEN→Keystone ~1.5-2 h; Breckenridge ~2-2.5 h; Steamboat ~3-3.5 h; Snowmass ~3.5-4 h)",
+    "descripcion": "Renta SUV AWD en aeropuerto de Denver, 6 días",
     "aplica_a": [
      "keystone",
      "breckenridge",
