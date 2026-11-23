@@ -14,6 +14,10 @@
     "C": {
       "ida": "2027-02-28",
       "regreso": "2027-03-06"
+    },
+    "D": {
+      "ida": "2027-03-21",
+      "regreso": "2027-03-28"
     }
   },
   "rutas": [
@@ -51,6 +55,17 @@
           "fechas_reales": "2027-02-28→2027-03-06 si opera en domingo; si no: Sáb 2027-02-27→Sáb 2027-03-06; si jue/dom: Dom 2027-02-28→Dom 2027-03-07",
           "fuente": "https://www.expedia.com/lp/flights/mty/den/monterrey-to-denver",
           "confianza": "media"
+        },
+        "D": {
+          "total_3_usd": 3409,
+          "por_persona_usd": 1136,
+          "fechas_reales": "Sin escala: dom 21 MTY 7:55 → DEN 10:46; dom 28 DEN 18:35 → MTY 21:20",
+          "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-DEN 21→28 mar, 3 adultos, opción 'Book with Viva')",
+          "confianza": "alta",
+          "equipaje_total_usd": 862,
+          "equipaje_confianza": "media",
+          "equipaje_nota": "2 maletas de 25 kg ida y vuelta; Viva da un rango de US$708-1,016.",
+          "nota": "Confirmado: Viva vuela ambos domingos."
         }
       },
       "equipaje": "Tarifa base: sólo artículo personal. Maleta documentada se paga aparte: lista Viva (fecha no clara) MXN 371 hasta 20 kg, +MXN 604 para 25 kg, maleta extra 25 kg MXN 1,010; nota 2026: primera maleta MXN 500-900 (nacional); rutas a EE.UU. (dato antiguo) US$38-65 por maleta 25 kg por trayecto. Esquís = equipaje especial, ~US$60-100 por trayecto (estimación de terceros). Estimado familia: 2 maletas de 25 kg ida y vuelta ≈ US$150-260.",
@@ -93,6 +108,17 @@
           "fechas_reales": "2027-02-28→2027-03-06",
           "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
           "confianza": "baja"
+        },
+        "D": {
+          "total_3_usd": 3030,
+          "por_persona_usd": 1010,
+          "fechas_reales": "United vía IAH. Ida dom 21: MTY 17:00 → DEN 23:33 (escala 2 h 08). Regreso dom 28: DEN 6:00 → MTY 12:58 (escala 2 h 40).",
+          "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-DEN 21→28 mar, 3 adultos)",
+          "confianza": "alta",
+          "equipaje_total_usd": 180,
+          "equipaje_confianza": "media",
+          "equipaje_nota": "2 maletas ida y vuelta.",
+          "nota": "Otras combinaciones de regreso con la misma ida: 7:50→12:58 US$3,273 (escala de 49 min, justa con niña); 20:39→8:37 del lunes US$2,424 (7 h 45 de noche en Houston, no recomendable)."
         }
       },
       "equipaje": "No verificado para 2027. Tarifas básicas de United/American normalmente no incluyen maleta documentada; revisar al cotizar.",
@@ -135,6 +161,17 @@
           "fechas_reales": "2027-02-28→2027-03-06",
           "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
           "confianza": "baja"
+        },
+        "D": {
+          "total_3_usd": 5074,
+          "por_persona_usd": 1691,
+          "fechas_reales": "American vía DFW. Ida dom 21: TRC 11:03 → DEN 17:40 (escala 2 h 29). Regreso dom 28: DEN 5:05 → TRC 10:23 (escala 1 h 05).",
+          "fuente": "https://www.google.com/travel/flights (búsqueda exacta TRC-DEN 21→28 mar, 3 adultos)",
+          "confianza": "alta",
+          "equipaje_total_usd": 180,
+          "equipaje_confianza": "media",
+          "equipaje_nota": "2 maletas ida y vuelta.",
+          "nota": "Regreso muy temprano (5:05)."
         }
       },
       "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
@@ -174,6 +211,17 @@
           "fechas_reales": "2027-02-28→2027-03-06 (puede subir: inicio de spring break en EE.UU.)",
           "fuente": "https://www.kayak.com/flight-routes/Dallas-Ft-Worth-other-airports-DFW/Hayden-Yampa-Valley-HDN",
           "confianza": "baja"
+        },
+        "D": {
+          "total_3_usd": 4063,
+          "por_persona_usd": 1354,
+          "fechas_reales": "American vía DFW, con noche en Dallas en ambos sentidos. Ida: TRC dom 11:03 → HDN lun 13:30 (21 h 44 en DFW). Regreso: HDN dom 14:11 → TRC lun 10:23 (15 h 45 en DFW).",
+          "fuente": "https://www.google.com/travel/flights (búsqueda exacta TRC-HDN 21→28 mar, 3 adultos)",
+          "confianza": "alta",
+          "equipaje_total_usd": 180,
+          "equipaje_confianza": "media",
+          "equipaje_nota": "2 maletas ida y vuelta.",
+          "nota": "NO hay conexión el mismo día en estas fechas."
         }
       },
       "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
@@ -213,6 +261,17 @@
           "fechas_reales": "2027-02-28→2027-03-06",
           "fuente": "https://www.expedia.com/lp/flights/ase/mty/aspen-to-monterrey",
           "confianza": "baja"
+        },
+        "D": {
+          "total_3_usd": 4705,
+          "por_persona_usd": 1568,
+          "fechas_reales": "United vía IAH. Ida dom 21: MTY 7:50 → ASE 14:34 (escala 1 h 35). Regreso dom 28: ASE 7:15 → MTY 12:58 (escala 1 h 09) o 13:25 → 19:30 (escala 1 h 31), mismo precio.",
+          "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-ASE 21→28 mar, 3 adultos)",
+          "confianza": "alta",
+          "equipaje_total_usd": 180,
+          "equipaje_confianza": "media",
+          "equipaje_nota": "2 maletas ida y vuelta.",
+          "nota": "El precio 'desde' de US$2,058-2,371 solo existe con regreso de 14 h y 2 escalas que llega el lunes 29 a las 8:37, o con esperas de 12-17 h; no se usa."
         }
       },
       "equipaje": "No verificado; tarifas básicas United/AA sin maleta documentada.",
@@ -297,6 +356,153 @@
       },
       "equipaje": "No verificado.",
       "notas": "Sin tarifa observada. Probablemente igual o más caro que MTY-ASE/EGE (US$600-700+), pero evita el manejo Torreón-Monterrey."
+    },
+    {
+      "id": "mty-dro-aa",
+      "descripcion": "Manejar Torreón→Monterrey (~4 h) y volar American MTY→Dallas→Durango (DRO), 1 escala",
+      "aerolinea": "American Airlines / American Eagle",
+      "escalas": 1,
+      "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+      "duracion": "Ida 6 h 28 (MTY 10:03 → DRO 16:31, 2 h 21 en DFW). Regreso 5 h 20 (DRO 17:06 → MTY 22:26, 1 h 18 en DFW). Horarios de D.",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 1004,
+          "total_3_usd": 3013,
+          "fechas_reales": "2027-01-10→2027-01-16 · MTY 10:59 → DRO 16:47; DRO 17:24 → MTY 23:26",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta",
+          "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+        },
+        "B": {
+          "por_persona_usd": 887,
+          "total_3_usd": 2662,
+          "fechas_reales": "2027-01-24→2027-01-30 · MTY 10:59 → DRO 16:47; DRO 17:24 → MTY 23:34",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta",
+          "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+        },
+        "C": {
+          "por_persona_usd": 867,
+          "total_3_usd": 2600,
+          "fechas_reales": "2027-02-28→2027-03-06 · MTY 11:03 → DRO 16:31; DRO 17:06 → MTY 23:26",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta",
+          "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+        },
+        "D": {
+          "por_persona_usd": 1646,
+          "total_3_usd": 4937,
+          "fechas_reales": "2027-03-21→2027-03-28 · MTY 10:03 → DRO 16:31; DRO 17:06 → MTY 22:26",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta",
+          "total_3_main_cabin_usd": 5403,
+          "nota": "Basic Economy para 2 adultos y 1 niña, con impuestos. Main Cabin: $5,403, con selección de asiento y cambios sin cargo. Precio de Semana Santa."
+        }
+      },
+      "equipaje": "Incluye 1 equipaje de mano por persona. Primera maleta documentada: $110 redondo por persona en Basic y $100 en Main Cabin.",
+      "notas": "La ruta más cómoda que llega el mismo domingo. Se pasa migración en Dallas. Avión regional en el tramo a Durango. La opción de MTY 16:29 → DRO 22:48 es algo más barata, pero llegarían a la montaña cerca de medianoche con la niña.",
+      "equipaje_total_usd": 220,
+      "equipaje_total_nota": "2 maletas documentadas, ida y vuelta, en Basic Economy ($110 cada una).",
+      "equipaje_confianza": "alta"
+    },
+    {
+      "id": "trc-dro-aa",
+      "descripcion": "Vuelo desde Torreón: American TRC→Dallas→Durango (DRO), 1 escala larga",
+      "aerolinea": "American Airlines / American Eagle",
+      "escalas": 1,
+      "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+      "duracion": "En D: TRC 11:03 → DRO 22:48 (11 h 45, con 7 h 23 en DFW). Opción con noche en Dallas: llega 10:05 del lunes, $4,369 para 3.",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 1160,
+          "total_3_usd": 3481,
+          "fechas_reales": "2027-01-10→2027-01-16 · TRC 12:32 → DRO 22:30",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta"
+        },
+        "B": {
+          "por_persona_usd": 910,
+          "total_3_usd": 2731,
+          "fechas_reales": "2027-01-24→2027-01-30 · TRC 12:32 → DRO 22:30",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta"
+        },
+        "C": {
+          "por_persona_usd": 910,
+          "total_3_usd": 2731,
+          "fechas_reales": "2027-02-28→2027-03-06 · TRC 12:03 → DRO 22:48",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta"
+        },
+        "D": {
+          "por_persona_usd": 1730,
+          "total_3_usd": 5190,
+          "fechas_reales": "2027-03-21→2027-03-28 · TRC 11:03 → DRO 22:48",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta"
+        }
+      },
+      "equipaje": "Mismas reglas de American; revisar según la tarifa.",
+      "notas": "Evita manejar a Monterrey, pero implica 7 horas en Dallas y llegar de noche a la montaña. No se recomienda con una niña de 5.",
+      "equipaje_total_usd": 220,
+      "equipaje_total_nota": "2 maletas ida y vuelta, con la regla de American para Basic Economy.",
+      "equipaje_confianza": "media"
+    },
+    {
+      "id": "mty-abq-ua",
+      "descripcion": "Alternativa: United MTY→Houston→Albuquerque y manejar ~4 h 10 a Purgatory con noche en ABQ",
+      "aerolinea": "United / United Express",
+      "escalas": 1,
+      "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+      "duracion": "En D: MTY 12:10 → ABQ 18:07 (5 h 57); regreso ABQ 12:00 → MTY 17:18 (5 h 18). Más 4 h 10 de carretera por sentido.",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "precios": {
+        "A": {
+          "por_persona_usd": 766,
+          "total_3_usd": 2298,
+          "fechas_reales": "2027-01-10→2027-01-16 · desde, MTY 8:50 → ABQ 13:31",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "media",
+          "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+        },
+        "B": {
+          "por_persona_usd": 727,
+          "total_3_usd": 2180,
+          "fechas_reales": "2027-01-24→2027-01-30 · desde, MTY 8:50 → ABQ 13:31",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "media",
+          "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+        },
+        "C": {
+          "por_persona_usd": 694,
+          "total_3_usd": 2083,
+          "fechas_reales": "2027-02-28→2027-03-06 · desde, MTY 8:50 → ABQ 13:28",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "media",
+          "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+        },
+        "D": {
+          "por_persona_usd": 1190,
+          "total_3_usd": 3571,
+          "fechas_reales": "2027-03-22→2027-03-28 en la montaña · vuelo 21→28: MTY 12:10 → ABQ 18:07; ABQ 12:00 → MTY 17:18",
+          "fuente": "https://www.google.com/travel/flights",
+          "confianza": "alta",
+          "nota": "Tarifa para 3 con impuestos. Con el regreso de las 8:00 baja a $2,925, pero obliga a dormir en ABQ el sábado. La tarifa más barata de United no incluye compartimento superior."
+        }
+      },
+      "equipaje": "La tarifa más barata no incluye compartimento superior; revisar equipaje antes de comprar.",
+      "notas": "Ahorra en vuelo, pero suma renta de carro, una noche en ABQ y más de 8 horas de carretera. Solo si el presupuesto manda. Hospedaje de D: 22→28, 6 noches (Kendall $2,597; Village Center $3,403; Cascade $1,804).",
+      "equipaje_total_usd": null,
+      "equipaje_total_nota": "No verificado para esta tarifa de United.",
+      "equipaje_confianza": "baja"
     }
   ],
   "traslados": [
@@ -312,7 +518,16 @@
       "total_usd": 470,
       "fuente": "https://www.discovercars.com/suv/denver-airport-den_5044",
       "confianza": "media",
-      "notas": "Discovercars (ene 2026): SUV enero desde US$50.26/día, promedio US$77.96/día; RAV4 AWD ~US$67/día → 6 días US$300-470. Kayak: SUV promedio ~US$63/día. Pedir AWD/4WD explícito (llantas all-season, no de nieve). No incluye gasolina ni estacionamiento en el hotel."
+      "notas": "Discovercars (ene 2026): SUV enero desde US$50.26/día, promedio US$77.96/día; RAV4 AWD ~US$67/día → 6 días US$300-470. Kayak: SUV promedio ~US$63/día. Pedir AWD/4WD explícito (llantas all-season, no de nieve). No incluye gasolina ni estacionamiento en el hotel.",
+      "precios": {
+        "D": {
+          "total_usd": 399,
+          "fuente": "https://www.kayak.com/cars/DEN/2027-03-21-12h/2027-03-28-12h/suv?sort=price_a",
+          "confianza": "media",
+          "nota": "7 días, 21→28 mar, recogiendo en DEN a mediodía.",
+          "descripcion": "Renta SUV AWD en aeropuerto de Denver, 7 días"
+        }
+      }
     },
     {
       "id": "den-eme-compartido",
@@ -335,7 +550,15 @@
       "total_usd": 300,
       "fuente": "https://alpineairporttransport.com/pricing/",
       "confianza": "media",
-      "notas": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas. Más barato que compartido para 3."
+      "notas": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas. Más barato que compartido para 3.",
+      "precios": {
+        "D": {
+          "total_usd": 300,
+          "fuente": "https://alpineairporttransport.com/pricing/",
+          "confianza": "media",
+          "nota": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas; la página no trae fecha de vigencia."
+        }
+      }
     },
     {
       "id": "hdn-steamboat-compartido",
@@ -380,6 +603,39 @@
       "fuente": null,
       "confianza": "baja",
       "notas": "Roaring Fork Express aparece con US$130 p/p por trayecto en un listado posiblemente desactualizado; Colorado Mountain Express no publicó tarifa en los resultados."
+    },
+    {
+      "id": "dro-purgatory-shuttle",
+      "descripcion": "Shuttle oficial de Purgatory DRO↔resort, 3 personas, redondo, con una parada en el súper",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "total_usd": 385,
+      "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+      "confianza": "alta",
+      "notas": "$60 por pasajero por trayecto para grupos de 3-6: $360 redondo, más $25 por 30 min de parada en el súper. Operación de 7:00 a 21:00, sujeta a disponibilidad; reservar con 24 h. Puede ser compartido. Teléfono: 970-426-7282."
+    },
+    {
+      "id": "dro-renta-suv-awd",
+      "descripcion": "Renta de SUV en el aeropuerto de Durango, 7 días",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "total_usd": 520,
+      "fuente": "https://www.kayak.com/cars/DRO/2027-03-21-17h/2027-03-28-14h",
+      "confianza": "media",
+      "notas": "Kayak (22-nov-2026): SUV intermedia desde unos $62-72 por día para 21-28 mar; se estima $65 × 7 más ~$65 de gasolina. Confirmar que sea AWD/4x4. Solo vale la pena si quieren pasear por Durango."
+    },
+    {
+      "id": "abq-renta-suv-awd",
+      "descripcion": "Renta de SUV en Albuquerque, 7 días, para la ruta alterna",
+      "aplica_a": [
+        "purgatory"
+      ],
+      "total_usd": 470,
+      "fuente": "https://www.kayak.com/cars/ABQ/2027-03-21-18h/2027-03-28-10h",
+      "confianza": "baja",
+      "notas": "Kayak (22-nov-2026): SUV compacta desde $41 e intermedia ~$57 por día. Estimado: $57 × 7 + ~$70 de gasolina. Confirmar AWD. No incluye la noche en Albuquerque (~$150, estimado)."
     }
   ],
   "estacionamiento_mty_usd": 82,
@@ -406,6 +662,11 @@
       "ruta": "mty-den-viva",
       "traslado": "den-renta-suv-awd",
       "alternativa": "mty-ase-1escala + ase-snowmass-hotel (más cómodo; ~US$880 más para 3: vuelos +1,350 pero sin renta -470; horario invierno ASE sin confirmar) o trc-ase-ege-aa vía DFW-EGE (sin tarifa observada)"
+    },
+    "purgatory": {
+      "ruta": "mty-dro-aa",
+      "traslado": "dro-purgatory-shuttle",
+      "alternativa": "mty-abq-ua + abq-renta-suv-awd si manda el presupuesto: ahorra unos $1,500 en D, pero suma una noche en Albuquerque y más de 8 h de carretera con la niña. Denver se descarta: aunque Viva vuela directo MTY-DEN ($3,414 para 3 en D), faltarían unas 6-7 h de manejo por puertos de montaña."
     }
   },
   "fuentes": [
@@ -465,5 +726,29 @@
     "https://www.liderempresarial.com/superpeso-peso-mexicano-dolar-16-94-cuanto-durara/"
   ],
   "hotel_denver_usd": 160,
-  "hotel_denver_nota": "Estimado: 1 noche cerca del aeropuerto de Denver para aclimatarse (recomendación de Children's Hospital Colorado). Aplica cuando se vuela a DEN."
+  "hotel_denver_nota": "Estimado: 1 noche cerca del aeropuerto de Denver para aclimatarse (recomendación de Children's Hospital Colorado). Aplica cuando se vuela a DEN.",
+  "recomendado_por_ventana": {
+    "D": {
+      "steamboat": {
+        "ruta": "mty-den-viva",
+        "traslado": "den-renta-suv-awd",
+        "alternativa": "American a Hayden obliga a dormir en Dallas de ida y de vuelta en estas fechas."
+      }
+    }
+  },
+  "por_ventana": {
+    "D": {
+      "hotel_denver_usd": 102,
+      "hotel_denver_fuente": "https://www.booking.com/searchresults.html?ss=Denver+International+Airport&checkin=2027-03-21&checkout=2027-03-22&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD",
+      "hotel_denver_confianza": "alta",
+      "hotel_denver_nota": "La Quinta Denver Airport, con desayuno y cancelación gratis.",
+      "estacionamiento_mty_usd": 122,
+      "hotel_monterrey": {
+        "total_usd": 256,
+        "fuente": "https://www.booking.com/hotel/mx/best-western-premier-monterrey-aeropuerto.html?checkin=2027-03-20&checkout=2027-03-21&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+        "confianza": "media",
+        "nota": "Best Western PREMIER Monterrey Aeropuerto (habitación con 2 queens y desayuno): sábado 20 antes del vuelo y domingo 28 al aterrizar de noche, para no manejar de madrugada con la niña. Tarifa exacta del 20; la del 28 se estima igual."
+      }
+    }
+  }
 }

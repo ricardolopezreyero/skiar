@@ -4,31 +4,130 @@
   "enso": "El Niño muy fuerte (CPC sep-2026: >90%; no encontré la actualización del 8-oct). Para el norte y centro de Colorado la señal es débil: ajuste 0% en Summit, -3% en Steamboat en enero y +3/+5% en Snowmass.",
   "resorts": {
     "keystone": {
-      "A": {"cm": 89, "bajo": 53, "alto": 124, "confianza": "media", "prob_buena": "alta", "nota": "Base delgada pero suficiente; Keystone depende mucho de nieve artificial y las pistas verdes casi siempre abren. Hace mucho frío.", "acum_cm": 224, "terreno_pct": 85},
-      "B": {"cm": 102, "bajo": 63, "alto": 137, "confianza": "media", "prob_buena": "alta", "nota": "Lo normal es ~90% del terreno abierto; incluso en el año récord seco (27-ene-2026) tenía 71% y todas las telesillas.", "acum_cm": 268, "terreno_pct": 90},
-      "C": {"cm": 131, "bajo": 83, "alto": 165, "confianza": "media", "prob_buena": "alta", "nota": "Base cerca de su máximo, todo abierto en un año normal y días más templados.", "acum_cm": 393, "terreno_pct": 97},
+      "A": {
+        "cm": 89,
+        "bajo": 53,
+        "alto": 124,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Base delgada pero suficiente; Keystone depende mucho de nieve artificial y las pistas verdes casi siempre abren. Hace mucho frío.",
+        "acum_cm": 224,
+        "terreno_pct": 85
+      },
+      "B": {
+        "cm": 102,
+        "bajo": 63,
+        "alto": 137,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Lo normal es ~90% del terreno abierto; incluso en el año récord seco (27-ene-2026) tenía 71% y todas las telesillas.",
+        "acum_cm": 268,
+        "terreno_pct": 90
+      },
+      "C": {
+        "cm": 131,
+        "bajo": 83,
+        "alto": 165,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Base cerca de su máximo, todo abierto en un año normal y días más templados.",
+        "acum_cm": 393,
+        "terreno_pct": 97
+      },
       "nevada_anual_cm": 546,
       "fuentes": [
         "https://www.onthesnow.com/colorado/keystone/historical-snowfall.html?y=0",
         "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/",
         "https://opensnow.com/news/post/2026-2027-colorado-winter-forecast"
-      ]
+      ],
+      "D": {
+        "cm": 137,
+        "bajo": 56,
+        "alto": 208,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "137 cm es la base promedio de marzo en OnTheSnow (54 in). Bajo = base máxima de 2025-26, año muy seco (22 in). Alto = base máxima de 2018-19 (82 in). Keystone cuenta con nieve artificial en las zonas de principiantes.",
+        "fuente": "https://www.onthesnow.com/colorado/keystone/historical-snowfall.html?y=0"
+      }
     },
     "breckenridge": {
-      "A": {"cm": 107, "bajo": 64, "alto": 149, "confianza": "media", "prob_buena": "alta", "nota": "Base aceptable; las zonas de principiantes tienen nieve artificial. En un año seco puede haber menos de la mitad del terreno.", "acum_cm": 305, "terreno_pct": 85},
-      "B": {"cm": 124, "bajo": 77, "alto": 168, "confianza": "media", "prob_buena": "alta", "nota": "Lo normal es ~90% abierto a fines de enero; en 2026 solo 46%, pero con 30 de 35 telesillas.", "acum_cm": 365, "terreno_pct": 90},
-      "C": {"cm": 167, "bajo": 106, "alto": 211, "confianza": "media", "prob_buena": "alta", "nota": "La mejor ventana: base profunda (en 2019 llegó a 234 cm a fines de marzo) y casi todo abierto.", "acum_cm": 536, "terreno_pct": 97},
+      "A": {
+        "cm": 107,
+        "bajo": 64,
+        "alto": 149,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Base aceptable; las zonas de principiantes tienen nieve artificial. En un año seco puede haber menos de la mitad del terreno.",
+        "acum_cm": 305,
+        "terreno_pct": 85
+      },
+      "B": {
+        "cm": 124,
+        "bajo": 77,
+        "alto": 168,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Lo normal es ~90% abierto a fines de enero; en 2026 solo 46%, pero con 30 de 35 telesillas.",
+        "acum_cm": 365,
+        "terreno_pct": 90
+      },
+      "C": {
+        "cm": 167,
+        "bajo": 106,
+        "alto": 211,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "La mejor ventana: base profunda (en 2019 llegó a 234 cm a fines de marzo) y casi todo abierto.",
+        "acum_cm": 536,
+        "terreno_pct": 97
+      },
       "nevada_anual_cm": 744,
       "fuentes": [
         "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0",
         "https://opensnow.com/dailysnow/breckenridge/post/14778",
         "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/"
-      ]
+      ],
+      "D": {
+        "cm": 175,
+        "bajo": 66,
+        "alto": 272,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "175 cm es la base promedio de marzo en OnTheSnow (69 in). Bajo = base máxima de 2025-26 (26 in). Alto = base máxima de 2018-19 (107 in). OnTheSnow trae un máximo de marzo de 558 in, evidente error, que no se usó.",
+        "fuente": "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0"
+      }
     },
     "steamboat": {
-      "A": {"cm": 106, "bajo": 66, "alto": 153, "confianza": "media", "prob_buena": "alta", "nota": "A media montaña lo normal es ~110 cm a mediados de enero; en el año seco 2026 tenía 71 cm (64%).", "acum_cm": 333, "terreno_pct": 85},
-      "B": {"cm": 128, "bajo": 82, "alto": 178, "confianza": "media", "prob_buena": "alta", "nota": "Es la más nevada de las cuatro y la nieve suele ser seca. El Niño no la favorece; se espera algo cercano a lo normal.", "acum_cm": 396, "terreno_pct": 92},
-      "C": {"cm": 168, "bajo": 109, "alto": 218, "confianza": "media", "prob_buena": "alta", "nota": "La base más profunda del grupo a principios de marzo en un año normal.", "acum_cm": 570, "terreno_pct": 98},
+      "A": {
+        "cm": 106,
+        "bajo": 66,
+        "alto": 153,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "A media montaña lo normal es ~110 cm a mediados de enero; en el año seco 2026 tenía 71 cm (64%).",
+        "acum_cm": 333,
+        "terreno_pct": 85
+      },
+      "B": {
+        "cm": 128,
+        "bajo": 82,
+        "alto": 178,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Es la más nevada de las cuatro y la nieve suele ser seca. El Niño no la favorece; se espera algo cercano a lo normal.",
+        "acum_cm": 396,
+        "terreno_pct": 92
+      },
+      "C": {
+        "cm": 168,
+        "bajo": 109,
+        "alto": 218,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "La base más profunda del grupo a principios de marzo en un año normal.",
+        "acum_cm": 570,
+        "terreno_pct": 98
+      },
       "nevada_anual_cm": 792,
       "fuentes": [
         "https://www.onthesnow.com/colorado/steamboat/historical-snowfall.html?y=0",
@@ -36,18 +135,121 @@
         "https://www.steamboatpilot.com/news/snowfall-at-steamboat-resort-this-winter-has-already-surpassed-all-of-last-season/",
         "https://opensnow.com/news/post/2023-2024-steamboat-ski-resort-winter-forecast-preview",
         "https://www.snow-forecast.com/resorts/Steamboat-Ski/snow-report"
-      ]
+      ],
+      "D": {
+        "cm": 152,
+        "bajo": 124,
+        "alto": 234,
+        "confianza": "media",
+        "prob_buena": "media",
+        "nota": "152 cm es la base promedio de marzo en OnTheSnow (60 in). Bajo = base máxima parcial de 2025 (49 in). Alto = base máxima de 2022-23 (92 in). La base de la montaña es la más baja del grupo: a fines de marzo la parte baja puede estar blanda o con nieve primaveral.",
+        "fuente": "https://www.onthesnow.com/colorado/steamboat/historical-snowfall.html?y=0"
+      }
     },
     "snowmass": {
-      "A": {"cm": 89, "bajo": 52, "alto": 121, "confianza": "baja", "prob_buena": "media", "nota": "Base modesta a mediados de enero; el 5-ene-2026 solo tenía 42% de pistas. Hay pocos datos históricos a media montaña.", "acum_cm": 312, "terreno_pct": 80},
-      "B": {"cm": 102, "bajo": 61, "alto": 134, "confianza": "baja", "prob_buena": "alta", "nota": "Mejora a fines de enero. Al estar más al centro-sur, El Niño le da una ligera ventaja.", "acum_cm": 373, "terreno_pct": 90},
-      "C": {"cm": 139, "bajo": 86, "alto": 172, "confianza": "baja", "prob_buena": "alta", "nota": "Marzo es su mes más nevado y la mejor ventana. Las áreas de principiantes (Elk Camp, Assay Hill) están completas.", "acum_cm": 549, "terreno_pct": 97},
+      "A": {
+        "cm": 89,
+        "bajo": 52,
+        "alto": 121,
+        "confianza": "baja",
+        "prob_buena": "media",
+        "nota": "Base modesta a mediados de enero; el 5-ene-2026 solo tenía 42% de pistas. Hay pocos datos históricos a media montaña.",
+        "acum_cm": 312,
+        "terreno_pct": 80
+      },
+      "B": {
+        "cm": 102,
+        "bajo": 61,
+        "alto": 134,
+        "confianza": "baja",
+        "prob_buena": "alta",
+        "nota": "Mejora a fines de enero. Al estar más al centro-sur, El Niño le da una ligera ventaja.",
+        "acum_cm": 373,
+        "terreno_pct": 90
+      },
+      "C": {
+        "cm": 139,
+        "bajo": 86,
+        "alto": 172,
+        "confianza": "baja",
+        "prob_buena": "alta",
+        "nota": "Marzo es su mes más nevado y la mejor ventana. Las áreas de principiantes (Elk Camp, Assay Hill) están completas.",
+        "acum_cm": 549,
+        "terreno_pct": 97
+      },
       "nevada_anual_cm": 762,
       "fuentes": [
         "https://www.onthesnow.com/colorado/aspen-snowmass/historical-snowfall.html?y=0",
         "https://coyotegulch.blog/2023/04/22/snowmass-topped-400-inches-of-snowfall-before-closing-the-aspen-daily-news-snowpack/",
         "https://www.freeride.com/snow-report/snowmass/",
         "https://www.denvergazette.com/outtherecolorado/2026/01/05/less-than-10-of-trails-open-at-some-colorado-resorts-amid-snowpack-near-record-lows/"
+      ],
+      "D": {
+        "cm": 150,
+        "bajo": 90,
+        "alto": 257,
+        "confianza": "baja",
+        "prob_buena": "alta",
+        "nota": "Estimado: se parte de 139 cm a inicios de marzo en book/nieve.json. Bajo ≈ 60% de lo normal. Alto = base máxima de 2022-23 (101 in). El promedio de marzo de OnTheSnow para Aspen Snowmass (82 in) convive con errores evidentes en la tabla, así que no se usó.",
+        "fuente": "https://www.onthesnow.com/colorado/aspen-snowmass/historical-snowfall.html?y=0"
+      }
+    },
+    "purgatory": {
+      "A": {
+        "cm": 91,
+        "bajo": 50,
+        "alto": 127,
+        "confianza": "media",
+        "prob_buena": "media",
+        "nota": "Base todavía en formación: unas 36 pulgadas en un año normal. Las verdes de Columbine suelen abrir, con apoyo de nieve artificial. Hace mucho frío.",
+        "acum_cm": 218,
+        "terreno_pct": 75
+      },
+      "B": {
+        "cm": 105,
+        "bajo": 58,
+        "alto": 147,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "Base de unas 41 pulgadas en un año normal, con la mayor parte del terreno abierto y días fríos.",
+        "acum_cm": 270,
+        "terreno_pct": 85
+      },
+      "C": {
+        "cm": 122,
+        "bajo": 67,
+        "alto": 171,
+        "confianza": "media",
+        "prob_buena": "alta",
+        "nota": "La mejor combinación: base cerca de su máximo, buen terreno abierto y días menos fríos.",
+        "acum_cm": 424,
+        "terreno_pct": 90
+      },
+      "D": {
+        "cm": 127,
+        "bajo": 60,
+        "alto": 180,
+        "confianza": "baja",
+        "prob_buena": "media",
+        "nota": "En un año normal todavía hay buena base, pero es nieve de primavera: dura temprano y blanda por la tarde. En años secos el resort recorta telesillas desde el 23 de marzo. La zona de principiantes siguió abierta hasta el 30 de marzo en 2025.",
+        "acum_cm": 491,
+        "terreno_pct": 80,
+        "llenura_semana_santa": {
+          "nivel": "media-baja (estimación)",
+          "nota": "The Colorado Sun reportó multitudes en las vacaciones de primavera de 2025, pero el calendario 2026-27 de Purgatory marca el pico del 15 al 17 de marzo. Del 21 al 26 de marzo el boleto de adulto está en su precio más bajo del mes ($29), señal de que el resort espera poca demanda. Aun así, pueden coincidir familias de vacaciones por Semana Santa.",
+          "fuentes": [
+            "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+            "https://coloradosun.com/2025/03/14/purgatory-budget-cuts"
+          ],
+          "confianza": "media"
+        }
+      },
+      "nevada_anual_cm": 531,
+      "fuentes": [
+        "https://www.onthesnow.com/colorado/durango-mountain-resort/historical-snowfall",
+        "https://www.purgatory.ski/press/spring-skiing-update-schedule-changes-exciting-events-ahead/",
+        "https://opensnow.com/news/post/noaa-2026-2027-winter-forecast",
+        "https://unofficialnetworks.com/2026/09/17/noaa-cpc-updated-winter-outlook/"
       ]
     }
   },

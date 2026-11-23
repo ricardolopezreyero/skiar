@@ -374,6 +374,94 @@
       "fuente": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
       "nota": "SIN COORDENADA. Está sobre Fanny Hill, arriba del Snowmass Mall.",
       "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+    },
+    {
+      "id": "dro",
+      "nombre": "Aeropuerto de Durango-La Plata County (DRO)",
+      "tipo": "aeropuerto",
+      "resort": null,
+      "lat": 37.152842,
+      "lng": -107.7586,
+      "precision": "exacta",
+      "fuente": "https://www.openstreetmap.org/search?query=Durango-La%20Plata%20County%20Airport",
+      "nota": "Coordenada de OpenStreetMap. No confundir con Durango, México (DGO)."
+    },
+    {
+      "id": "abq",
+      "nombre": "Aeropuerto Internacional de Albuquerque (ABQ)",
+      "tipo": "aeropuerto",
+      "resort": null,
+      "lat": 35.037669,
+      "lng": -106.61096,
+      "precision": "exacta",
+      "fuente": "https://www.openstreetmap.org/search?query=Albuquerque%20International%20Sunport",
+      "nota": "Coordenada de OpenStreetMap. Solo para la ruta alterna."
+    },
+    {
+      "id": "purgatory",
+      "nombre": "Purgatory – Village (base)",
+      "tipo": "resort",
+      "resort": "purgatory",
+      "lat": 37.6302086,
+      "lng": -107.8141426,
+      "precision": "exacta",
+      "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+      "nota": "Coordenada del mapa oficial de Village Center, en la unión de la base y la Plaza."
+    },
+    {
+      "id": "purgatory-escuela",
+      "nombre": "Purgatory – The Bear's Den (2º piso de Village Center)",
+      "tipo": "escuela",
+      "resort": "purgatory",
+      "lat": 37.6302086,
+      "lng": -107.8141426,
+      "precision": "aproximada",
+      "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+      "nota": "Punto oficial de encuentro de la clase de 4 a 6 años. Se usa la coordenada del edificio."
+    },
+    {
+      "id": "h-purg-village-center-2-recamaras",
+      "nombre": "Village Center, 2 recámaras (mismo edificio de la escuela)",
+      "tipo": "hospedaje",
+      "resort": "purgatory",
+      "lat": 37.6302086,
+      "lng": -107.8141426,
+      "precision": "exacta",
+      "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+      "nota": "Coordenada del mapa de la ficha oficial."
+    },
+    {
+      "id": "h-purg-kendall-1-recamara",
+      "nombre": "Kendall Mountain Lodge, 1 recámara",
+      "tipo": "hospedaje",
+      "resort": "purgatory",
+      "lat": 37.630719,
+      "lng": -107.814045,
+      "precision": "exacta",
+      "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+      "nota": "Coordenada del mapa de la ficha oficial."
+    },
+    {
+      "id": "h-purg-cascade-village-1-recamara",
+      "nombre": "Cascade Village, 1 recámara (shuttle gratis)",
+      "tipo": "hospedaje",
+      "resort": "purgatory",
+      "lat": 37.6486188,
+      "lng": -107.8077953,
+      "precision": "exacta",
+      "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+      "nota": "Coordenada del mapa de la ficha oficial."
+    },
+    {
+      "id": "h-purg-peregrine-point-2-recamaras",
+      "nombre": "Peregrine Point, 2 recámaras",
+      "tipo": "hospedaje",
+      "resort": "purgatory",
+      "lat": 37.6284711,
+      "lng": -107.8138957,
+      "precision": "exacta",
+      "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+      "nota": "Coordenada del mapa de la ficha oficial."
     }
   ],
   "tramos": [
@@ -816,6 +904,171 @@
       "nota": "Al salir de EE.UU. no hay migración en la conexión (doméstico → internacional, mínimo 75-90 min). Duración inferida del sentido de ida (Rome2Rio); sin horario 2027.",
       "fuente": "https://www.rome2rio.com/s/Monterrey/Aspen",
       "confianza": "baja"
+    },
+    {
+      "id": "mty-dfw-vuelo-purg",
+      "de": "mty",
+      "a": "dfw",
+      "modo": "vuelo",
+      "horas": 1.85,
+      "rango": "1 h 45 - 2 h",
+      "nota": "Sale 10:03 de Monterrey. La parte MTY-DFW se deduce del itinerario total de 6 h 28 y la conexión de 2 h 21.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media"
+    },
+    {
+      "id": "dfw-migracion-conexion-purg",
+      "de": "dfw",
+      "a": "dfw",
+      "modo": "espera",
+      "horas": 2.35,
+      "rango": "2 h 21 de conexión programada",
+      "nota": "En Dallas se pasa migración, se recogen y se vuelven a documentar las maletas y se cambia de terminal. Es suficiente, pero no sobra si hay retraso.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+    },
+    {
+      "id": "dfw-dro-vuelo",
+      "de": "dfw",
+      "a": "dro",
+      "modo": "vuelo",
+      "horas": 2.28,
+      "rango": "2 h 10 - 2 h 25",
+      "nota": "Llega a Durango a las 16:31 en D. Avión regional de American Eagle.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media"
+    },
+    {
+      "id": "dro-llegada",
+      "de": "dro",
+      "a": "dro",
+      "modo": "espera",
+      "horas": 0.5,
+      "rango": "20-40 min",
+      "nota": "Aeropuerto pequeño: bajar, recoger maletas y encontrar el shuttle. Estimación.",
+      "fuente": null,
+      "confianza": "baja"
+    },
+    {
+      "id": "dro-purgatory-shuttle",
+      "de": "dro",
+      "a": "purgatory",
+      "modo": "shuttle",
+      "horas": 1.0,
+      "rango": "50-75 min (41 millas); +30 min con parada en el súper",
+      "nota": "Shuttle oficial con reservación de 24 h. Puede ser compartido. Con nieve, la US-550 se hace más lenta.",
+      "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+      "confianza": "media"
+    },
+    {
+      "id": "purgatory-dro-shuttle",
+      "de": "purgatory",
+      "a": "dro",
+      "modo": "shuttle",
+      "horas": 1.0,
+      "rango": "50-75 min",
+      "nota": "Para el vuelo de las 17:06, salir de Purgatory hacia las 14:15. El check-out es a las 10:00: pedir dónde guardar maletas.",
+      "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+      "confianza": "media"
+    },
+    {
+      "id": "dro-espera",
+      "de": "dro",
+      "a": "dro",
+      "modo": "espera",
+      "horas": 1.75,
+      "rango": "1.5-2 h",
+      "nota": "Documentar y pasar seguridad en un aeropuerto chico. Estimación.",
+      "fuente": null,
+      "confianza": "baja"
+    },
+    {
+      "id": "dro-dfw-vuelo",
+      "de": "dro",
+      "a": "dfw",
+      "modo": "vuelo",
+      "horas": 2.0,
+      "rango": "1 h 55 - 2 h 10",
+      "nota": "Sale 17:06 en D. Tiempo deducido del total de 5 h 20 y la conexión de 1 h 18.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media"
+    },
+    {
+      "id": "dfw-conexion-regreso-purg",
+      "de": "dfw",
+      "a": "dfw",
+      "modo": "espera",
+      "horas": 1.3,
+      "rango": "1 h 18 programada",
+      "nota": "Conexión corta en Dallas hacia Monterrey. Si se pierde, puede tocar dormir en Dallas.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+    },
+    {
+      "id": "dfw-mty-vuelo-purg",
+      "de": "dfw",
+      "a": "mty",
+      "modo": "vuelo",
+      "horas": 2.02,
+      "rango": "1 h 55 - 2 h 10",
+      "nota": "Llega a Monterrey a las 22:26 en D. Después conviene dormir en Monterrey en vez de manejar 4 h de noche.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media"
+    },
+    {
+      "id": "mty-iah-abq-vuelo",
+      "de": "mty",
+      "a": "abq",
+      "modo": "vuelo",
+      "horas": 5.95,
+      "rango": "5 h 57 con 1 h 59 de conexión en Houston",
+      "nota": "United MTY 12:10 → ABQ 18:07 en D. Incluye la conexión con migración en Houston.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+    },
+    {
+      "id": "abq-purgatory-carro",
+      "de": "abq",
+      "a": "purgatory",
+      "modo": "carro",
+      "horas": 4.17,
+      "rango": "4 h - 4 h 30 (244 millas)",
+      "nota": "Manejo largo por la US-550; con una niña de 5 se recomienda partirlo con una noche en Albuquerque.",
+      "fuente": "https://www.powderhounds.com/USA/Colorado/Durango-Purgatory/Getting-There.aspx",
+      "confianza": "media"
+    },
+    {
+      "id": "purgatory-abq-carro",
+      "de": "purgatory",
+      "a": "abq",
+      "modo": "carro",
+      "horas": 4.17,
+      "rango": "4 h - 4 h 30",
+      "nota": "Para el vuelo de las 12:00 hay que salir de Purgatory hacia las 5:30 am.",
+      "fuente": "https://www.powderhounds.com/USA/Colorado/Durango-Purgatory/Getting-There.aspx",
+      "confianza": "media"
+    },
+    {
+      "id": "abq-espera",
+      "de": "abq",
+      "a": "abq",
+      "modo": "espera",
+      "horas": 2.0,
+      "rango": "1.5-2.5 h",
+      "nota": "Devolver el carro, documentar y pasar seguridad. Estimación.",
+      "fuente": null,
+      "confianza": "baja"
+    },
+    {
+      "id": "abq-iah-mty-vuelo",
+      "de": "abq",
+      "a": "mty",
+      "modo": "vuelo",
+      "horas": 5.3,
+      "rango": "5 h 18 con 1 h 16 de conexión en Houston",
+      "nota": "United ABQ 12:00 → MTY 17:18 en D.",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
     }
   ],
   "itinerarios": {
@@ -982,6 +1235,33 @@
       "ida_horas_total": 14.41,
       "regreso_horas_total": 13.33,
       "nota": "Todo en un día, sin manejo de montaña. La duración del vuelo con escala depende del horario de invierno a ASE, que aún no está publicado."
+    },
+    "purgatory": {
+      "ruta": "mty-dro-aa",
+      "ida": [
+        "trc-mty-carro",
+        "mty-estacionamiento",
+        "mty-espera-int",
+        "mty-dfw-vuelo-purg",
+        "dfw-migracion-conexion-purg",
+        "dfw-dro-vuelo",
+        "dro-llegada",
+        "dro-purgatory-shuttle"
+      ],
+      "regreso": [
+        "purgatory-dro-shuttle",
+        "dro-espera",
+        "dro-dfw-vuelo",
+        "dfw-conexion-regreso-purg",
+        "dfw-mty-vuelo-purg",
+        "mty-llegada-migracion",
+        "mty-estacionamiento",
+        "mty-trc-carro"
+      ],
+      "noche_denver": false,
+      "ida_horas_total": 15.23,
+      "regreso_horas_total": 13.07,
+      "nota": "Se llega el mismo domingo, así que en D se duermen 7 noches en la montaña. Saliendo de Torreón el mismo día habría que partir hacia las 2:45 am; lo razonable es dormir en Monterrey el sábado 20. Al regreso se aterriza a las 22:26: conviene dormir en Monterrey y manejar el lunes (hoteles no incluidos)."
     }
   },
   "horario_pistas": {
@@ -1016,6 +1296,14 @@
       "fuente": "https://www.gosnowmass.com/things-to-do-5/ski-area/stats-dates/",
       "confianza": "media",
       "nota": "Sitio oficial de Snowmass para 2025-26: todos los lifts de 9:00 a 15:30 diario. La góndola Sky Cab (Skittles, Mall ↔ Base Village) opera de 8:00 a 21:00. Las horas 2026-27 no están publicadas."
+    },
+    "purgatory": {
+      "abre": "9:00",
+      "cierra": "16:00",
+      "horas": 7.0,
+      "fuente": "https://www.purgatory.ski/terms-and-conditions/",
+      "confianza": "alta",
+      "nota": "Horario oficial publicado: abierto a diario de 9 am a 4 pm, sujeto a cambios. A fines de marzo algunos telesillas pueden dejar de operar."
     }
   },
   "horario_escuela": {
@@ -1050,6 +1338,14 @@
       "fuente": "https://www.theavantski.com/aspensnowmass-family",
       "confianza": "baja",
       "nota": "Clase de esquí de 9:30 a 15:00 en el Treehouse (listado de terceros). La guardería del Treehouse abre a las 8:30, pero no se encontró la hora oficial de check-in; probablemente hay que llegar antes de las 9:30."
+    },
+    "purgatory": {
+      "entrega": "9:00",
+      "recoge": "15:00",
+      "horas": 5.5,
+      "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+      "confianza": "alta",
+      "nota": "Entrega desde las 9:00, clase de 9:30 a 15:00 con comida incluida, en The Bear's Den (2º piso de Village Center). Con renta de equipo, llegar 30-60 min antes o recogerlo la tarde anterior."
     }
   },
   "hospedaje_a_escuela_min": {
@@ -1076,6 +1372,12 @@
       "Viceroy Snowmass": 8,
       "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": 15,
       "Woodrun Place (condo, Fanny Hill)": 15
+    },
+    "purgatory": {
+      "Village Center, 2 recámaras (mismo edificio de la escuela)": 2,
+      "Kendall Mountain Lodge, 1 recámara": 3,
+      "Cascade Village, 1 recámara (shuttle gratis)": 15,
+      "Peregrine Point, 2 recámaras": 5
     }
   },
   "hospedaje_a_escuela_nota": {
@@ -1172,5 +1474,33 @@
     "https://www.travelweekly-asia.com/Hotels/Breckenridge-CO/One-Ski-Hill-Place-p8411101",
     "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
     "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr"
-  ]
+  ],
+  "itinerarios_por_ventana": {
+    "D": {
+      "steamboat": {
+        "ruta": "mty-den-viva",
+        "ida": [
+          "trc-mty-carro",
+          "mty-estacionamiento",
+          "mty-espera-int",
+          "mty-den-vuelo",
+          "den-migracion",
+          "den-renta-auto",
+          "den-hotel-carro",
+          "den-steamboat-carro"
+        ],
+        "regreso": [
+          "steamboat-den-carro",
+          "den-devolucion-auto",
+          "den-espera-int",
+          "den-mty-vuelo",
+          "mty-llegada-migracion",
+          "mty-estacionamiento",
+          "mty-trc-carro"
+        ],
+        "noche_denver": true,
+        "nota": "En Semana Santa no hay conexión a Hayden el mismo día, así que se vuela a Denver."
+      }
+    }
+  }
 }

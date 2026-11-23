@@ -79,6 +79,15 @@
           "fuente": "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
           "confianza": "media",
           "nota": "Entre dos tarifas reales de marzo: $1,149 (8-9 mar, Hotels.com) y $890 (23-24 mar, Travelocity)."
+        },
+        "D": {
+          "noche_usd": 1446,
+          "total_6_noches_con_impuestos_usd": 8676,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.booking.com/hotel/us/limelight-snowmass.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "alta",
+          "nota": "Grand Deluxe 2 queens, US$6,966 + US$1,710, cancelación gratis antes del 20-feb-2027."
         }
       },
       "link": "https://www.aspensnowmass.com/visit/lodging/properties/limelight-snowmass",
@@ -141,6 +150,15 @@
           "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
           "confianza": "baja",
           "nota": "Estimación: Kayak marca febrero como el mes más caro; principios de marzo debería ser parecido."
+        },
+        "D": {
+          "noche_usd": 1384,
+          "total_6_noches_con_impuestos_usd": 8302,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.booking.com/hotel/us/viceroy-snowmass.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "alta",
+          "nota": "Habitación 2 queens, US$6,900 + US$1,402, cancelación gratis antes del 20-feb-2027."
         }
       },
       "link": "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass",
@@ -203,6 +221,15 @@
           "fuente": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
           "confianza": "baja",
           "nota": "Tarifas reales de febrero en Hotels.com: $598 (9-10 feb) y $749 (10-11 feb). Para principios de marzo se usa ~$700."
+        },
+        "D": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "disponible": false,
+          "fuente": "https://shop.stayaspensnowmass.com/v2/supplier/details/1987553?adultcount=2&childcount=1&arrivaldate=2027-03-22&departuredate=2027-03-28&salesid=1866797&productsupercategoryid=1",
+          "confianza": "baja",
+          "nota": "Sin disponibilidad 22-28 mar en Aspen Snowmass, Booking y Hotels.com. Referencia: Semana anterior en el motor oficial (15-21 mar 2027): Classic Queen US$809.20/noche con cargos, sin impuestos. El 29-mar al 4-abr tampoco mostró unidades."
         }
       },
       "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass",
@@ -264,6 +291,15 @@
           "fuente": "https://www.hotels.com/ho1703232192/snowmass-woodrun-9954-snowmass-village-united-states-of-america",
           "confianza": "baja",
           "nota": "Promedio de marzo ($798) del listado 'Snowmass Woodrun' de Hotels.com; Kayak da un promedio de $863 para las rentas vacacionales de Snowmass en febrero."
+        },
+        "D": {
+          "noche_usd": 1342,
+          "total_6_noches_con_impuestos_usd": 8050,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://shop.stayaspensnowmass.com/v2/supplier/details/25690684?adultcount=2&childcount=1&arrivaldate=2027-03-22&departuredate=2027-03-28&salesid=1866797&productsupercategoryid=1",
+          "confianza": "media",
+          "nota": "Condo de 2 recámaras (unidades 04, 08 o 18): US$1,186.78/noche con todos los cargos + 13.05 % de impuestos locales (calculado)."
         }
       },
       "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
@@ -886,5 +922,27 @@
     "https://www.uncovercolorado.com/hotels/limelight-hotel-snowmass/",
     "https://www.undercovertourist.com/aspen-snowmass/viceroy-snowmass-hotel/",
     "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass"
-  ]
+  ],
+  "por_ventana": {
+    "D": {
+      "forfaits": {
+        "adultos_total_usd": 2240,
+        "nina_total_usd": 0,
+        "nina_total_sin_programa_usd": 0,
+        "fuente": "https://shop.aspensnowmass.com/l/all-lift-tickets/all-lift-ticket/c/lift-tickets",
+        "confianza": "alta",
+        "como_comprar": "Boleto de 5 días, US$1,120 c/u, con 25% comprando 30 días antes.",
+        "fecha_limite": "Para el 25%: comprar a más tardar ~2027-02-21 (30 días antes)"
+      },
+      "escuela": {
+        "total_5_dias_usd": 1975,
+        "fuente": "https://shop.aspensnowmass.com/l/ski-snowboard-lessons/kids-and-teen-lessons/p/new-max-5-group-lesson-ages-3-to-6",
+        "confianza": "alta",
+        "incluye": "Max 5, día completo con comida y boleto, 23-27 mar."
+      },
+      "renta_equipo_total_usd": 980,
+      "cierre_temporada": "Snowmass cierra el 11 de abril de 2027 (oficial, condiciones permitiendo).",
+      "gente": "alta"
+    }
+  }
 }

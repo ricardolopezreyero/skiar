@@ -217,6 +217,61 @@
         "confianza": "media",
         "nota": "Seis unidades de 2 rec.: 1,135-1,207 ft² (mediana ~1,150, 107 m²), con 2-3 baños. La unidad 19 dice 1,619 ft² (150 m², atípica)."
       }
+    },
+    "purgatory": {
+      "Village Center, 2 recámaras (mismo edificio de la escuela)": {
+        "unidad": "Condo 2 recámaras (402, 406 o 513)",
+        "ft2": 1200,
+        "m2": 111,
+        "rango_m2": "111",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "King + king + sofá cama queen",
+        "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+        "confianza": "alta",
+        "nota": "Dato oficial de Purgatory: 1200 SQ FT, cupo cómodo 4 y máximo 6. Se puede pedir un roll-away."
+      },
+      "Kendall Mountain Lodge, 1 recámara": {
+        "unidad": "Condo 1 recámara (442, 444 o 543)",
+        "ft2": 950,
+        "m2": 88,
+        "rango_m2": "88",
+        "recamaras": 1,
+        "banos": 1,
+        "cocina": "completa",
+        "camas": "Queen en la recámara + sofá cama queen en la sala",
+        "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+        "confianza": "media",
+        "nota": "Purgatory publica 950 SQ FT, una cifra alta para 1 recámara; conviene confirmar los metros de la unidad asignada."
+      },
+      "Cascade Village, 1 recámara (shuttle gratis)": {
+        "unidad": "Condo 1 recámara (314, 317 o 335)",
+        "ft2": 720,
+        "m2": 67,
+        "rango_m2": "60–70",
+        "estimado": true,
+        "recamaras": 1,
+        "banos": 1,
+        "cocina": "completa",
+        "camas": "Sin publicar; cupo para 4",
+        "fuente": "https://www.expedia.com/es/Durango-Hoteles-Cascade-Village-Loft.h66784807.Informacion-Hotel",
+        "confianza": "baja",
+        "nota": "Purgatory no publica la superficie. Los 720 ft² son de un loft de 1 recámara del mismo complejo, usado solo como referencia. Evitar la 357, descrita como loft: las escaleras no convienen con una niña de 5."
+      },
+      "Peregrine Point, 2 recámaras": {
+        "unidad": "Condo 2 recámaras (103, 203, 206 o 208)",
+        "ft2": 1233,
+        "m2": 115,
+        "rango_m2": "≈115",
+        "recamaras": 2,
+        "banos": 2,
+        "cocina": "completa",
+        "camas": "103: king + litera (matrimonial e individual); las demás varían",
+        "fuente": "https://www.expedia.com/Durango-Hotels-Peregrine-Pointe-203-Managed-By-Purgatory-Resort.h88201313.Hotel-Information",
+        "confianza": "baja",
+        "nota": "Los 1,233 ft² vienen de un solo listado de una unidad del edificio; Purgatory no publica la cifra. La 206 tiene cupo de 4 y las demás de 6."
+      }
     }
   }
 }

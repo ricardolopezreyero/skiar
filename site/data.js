@@ -1,5 +1,8 @@
 window.SKIAR = {
  "generado": "2026-10-10",
+ "generado_por_ventana": {
+  "D": "2026-11-22"
+ },
  "rama": "claude/dreamy-cori-anrnp2",
  "resorts": [
   {
@@ -79,6 +82,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 2340,
        "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "disponible": false,
+       "fuente": "https://www.keystoneresort.com/plan-your-trip/stay/lodging-results.aspx?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1",
+       "confianza": "baja",
+       "nota": "Sin 1 recámara reservable con Keystone: el motor oficial no lista The Timbers en estas fechas y el inventario de Vail en Booking solo trae 3 recámaras. Referencia: Tercero, no cuenta como reserva con Keystone (confirmar Kids Ski Free): Booking «3056 The Timbers Condo», 1 recámara, US$4,065 + US$506 = US$4,571 por 6 noches, cancelación gratis antes del 20-feb-2027 Vail en Booking, Timbers 3 recámaras: US$7,504."
       }
      },
      "link": "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
@@ -190,6 +202,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 3240,
        "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "disponible": false,
+       "fuente": "https://www.keystoneresort.com/Plan-Your-Trip/stay/details/Lone-Eagle-Condominiums?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50016722&package=50009155",
+       "confianza": "baja",
+       "nota": "Sin unidad de 2 recámaras en estas fechas: Keystone solo ofrece 3 recámaras/3 baños (LNE3043, queda 1). Referencia: Misma fecha, unidad mayor: 3 recámaras en Keystone US$6,461 con cargos, tarifa anticipada no reembolsable; unos US$7,002 con 8.375 % de impuestos. Expedia: US$7,049 con impuestos."
       }
      },
      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
@@ -304,6 +325,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 1800,
        "fuente": "https://es.hotels.com/nh10819028/hoteles-en-river-run-keystone-colorado/",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": 352,
+       "total_6_noches_con_impuestos_usd": 2111,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.keystoneresort.com/Plan-Your-Trip/stay/details/Expedition-Station?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50755329&package=50009129",
+       "confianza": "media",
+       "nota": "Expedition Station, 1 recámara/1 baño, directo con Keystone, tarifa Winter Stay Longer: US$1,948 con cargos + 8.375 % de impuestos locales (calculado)."
       }
      },
      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=RIVER-RUN-CONDOMINIUMS",
@@ -422,6 +452,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 1650,
        "fuente": "https://www.hotels.com/ho3635789056",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": 269,
+       "total_6_noches_con_impuestos_usd": 1612,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.booking.com/hotel/us/the-keystone-lodge-and-spa.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "alta",
+       "nota": "Habitación 2 queens, US$1,243 + US$369 de impuestos y cargos, cancelación gratis antes del 20-mar-2027."
       }
      },
      "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodge-and-spa.aspx",
@@ -929,7 +968,29 @@ window.SKIAR = {
     "https://childrenscolorado.org/just-ask-childrens/articles/altitude-sickness",
     "https://en.wikipedia.org/wiki/Comparison_of_Colorado_ski_resorts",
     "https://www.zrankings.com/best-time-to-ski/keystone"
-   ]
+   ],
+   "por_ventana": {
+    "D": {
+     "forfaits": {
+      "adultos_total_usd": 902,
+      "nina_total_usd": 0,
+      "nina_total_sin_programa_usd": 185,
+      "fuente": "https://www.keystoneresort.com/plan-your-trip/lift-access/passes/epic-day-pass?days=5&access=0&restricted=true",
+      "confianza": "alta",
+      "como_comprar": "Epic Day Pass de 5 días (32 Resorts), US$451 c/u. Se vende hasta el 6-dic-2026.",
+      "fecha_limite": "2026-12-06 (el Epic Day Pass deja de venderse después de esta fecha)"
+     },
+     "escuela": {
+      "total_5_dias_usd": 2141,
+      "fuente": "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/category/child.aspx?ages=Child%205-6&levels=First%20Time&lessonTypes=Group&date=03/23/2027&lessonId=8442",
+      "confianza": "alta",
+      "incluye": "Clase grupal de 5-6 años, día completo con comida, 23-27 mar."
+     },
+     "renta_equipo_total_usd": 714,
+     "cierre_temporada": "Sin fecha oficial 2026-27. OnTheSnow proyecta 4-5 abr 2027; en 2026 cerró el 5 de abril. La semana del viaje queda dentro de temporada.",
+     "gente": "alta"
+    }
+   }
   },
   {
    "slug": "breckenridge",
@@ -1014,6 +1075,15 @@ window.SKIAR = {
        "fuente": "https://www.redweek.com/posting/R1491908",
        "confianza": "baja",
        "nota": "Estimado: no hay renta para 28 feb-6 mar; rentas reales cercanas: 31 ene-7 feb a $500-571 y 28 mar-4 abr a $514. Promo oficial 'desde $189' posible (vigente hasta 31-may-2027)."
+      },
+      "D": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "disponible": false,
+       "fuente": "https://reservations.grandcolorado.com/book/accommodations?adults=2&children=1&datein=03/22/2027&dateout=03/28/2027&languageid=1&rooms=1",
+       "confianza": "baja",
+       "nota": "Sin disponibilidad 22-28 mar en el motor oficial ni en Booking. Referencia: Fecha más cercana en Booking: 25-28 mar (3 noches) desde US$3,019.50; no es cotización del viaje y no se confirmó si incluye impuestos."
       }
      },
      "link": "https://grandcolorado.com/",
@@ -1130,6 +1200,15 @@ window.SKIAR = {
        "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
        "confianza": "media",
        "nota": "Renta real RedWeek 27 feb-6 mar 2027, 1 rec./4 personas: $475/noche, $3,649 por 7 noches antes de impuestos (otra: 28 feb-7 mar a $500/noche)."
+      },
+      "D": {
+       "noche_usd": 1227,
+       "total_6_noches_con_impuestos_usd": 7360,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.booking.com/hotel/us/grand-lodge-on-peak-7-breckenridge123456.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "alta",
+       "nota": "Departamento de 1 recámara, US$5,922 + US$1,438, cancelación gratis antes del 8-mar-2027."
       }
      },
      "link": "https://www.grandlodgeonpeak7.com/",
@@ -1247,6 +1326,15 @@ window.SKIAR = {
        "fuente": "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
        "confianza": "baja",
        "nota": "Estimado: ancla = estancia verificada mar-2026 a $240.68 promedio; estudio ~$300 con 33% off + 19.01%. Sin descuento ≈ $2,142. Estacionamiento aparte ~$237."
+      },
+      "D": {
+       "noche_usd": 391,
+       "total_6_noches_con_impuestos_usd": 2349,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.breckenridge.com/Plan-Your-Trip/stay/details/Beaver-Run-Resort?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=48849&package=50009115",
+       "confianza": "media",
+       "nota": "Estudio, tarifa Winter Stay Longer en breckenridge.com: US$2,092 con cargos + 12.275 % de impuestos locales (calculado)."
       }
      },
      "link": "https://beaverrun.com/",
@@ -1369,6 +1457,15 @@ window.SKIAR = {
        "fuente": "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
        "confianza": "baja",
        "nota": "Estimado: principios de marzo más caro; + resort fee 15.43% + 12.275%."
+      },
+      "D": {
+       "noche_usd": 1224,
+       "total_6_noches_con_impuestos_usd": 7343,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.breckenridge.com/Plan-Your-Trip/stay/details/One-Ski-Hill-Place-A-RockResort?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50016617&package=50009115",
+       "confianza": "media",
+       "nota": "1 recámara, tarifa Winter Stay Longer: US$6,540 con cargos + 12.275 % de impuestos locales (calculado)."
       }
      },
      "link": "https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx",
@@ -2111,12 +2208,34 @@ window.SKIAR = {
     "https://ww1.aaa.com/tripcanvas/thing-to-do/breckenridge-ski-rental-packages-for-adult-and-youth-315406P6",
     "https://tripoutside.com/browse/item:Christy_Sports_Dillon:i1w3hsqcmv8ym8q734xfknwwfjxuck27r2d9ekyvtewajrgucvd6kdr",
     "https://www.breckenridge.com/the-mountain/about-the-mountain/capital-investments.aspx"
-   ]
+   ],
+   "por_ventana": {
+    "D": {
+     "forfaits": {
+      "adultos_total_usd": 1164,
+      "nina_total_usd": 303,
+      "nina_total_sin_programa_usd": 303,
+      "fuente": "https://www.breckenridge.com/plan-your-trip/lift-access/passes/epic-day-pass?days=5&access=0&restricted=true",
+      "confianza": "alta",
+      "como_comprar": "Epic Day Pass de 5 días (All Resorts): adulto US$582, niña US$303. Se vende hasta el 6-dic-2026.",
+      "fecha_limite": "2026-12-06 (el Epic Day Pass deja de venderse después de esta fecha)"
+     },
+     "escuela": {
+      "total_5_dias_usd": 1838,
+      "fuente": "https://www.breckenridge.com/plan-your-trip/ski-and-ride-lessons/category/child.aspx?ages=Child%205-6&levels=First%20Time&lessonTypes=Group&date=03/23/2027",
+      "confianza": "alta",
+      "incluye": "Clase grupal de 5-6 años, día completo, 23-27 mar. Precio con el pase de la niña."
+     },
+     "renta_equipo_total_usd": 698,
+     "cierre_temporada": "Sin fecha oficial 2026-27. Un listado de pases indica temporada hasta mediados de abril y Breckenridge suele cerrar más tarde que Keystone. La semana del viaje queda dentro de temporada.",
+     "gente": "alta"
+    }
+   }
   },
   {
    "slug": "steamboat",
    "nombre": "Steamboat",
-   "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes del 19 de noviembre de 2026. Es el más mágico, pero no el más barato.",
+   "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes de que abra la temporada (27 de noviembre, por confirmar). Es el más mágico, pero no el más barato.",
    "magia": [
     "Pueblo del Viejo Oeste: Lincoln Ave y la tienda western F.M. Light & Sons (desde 1905), para comprarle sombrero y botas",
     "Albercas termales en la nieve: Old Town Hot Springs en el centro (toboganes, alberca infantil) y Strawberry Park (pozas naturales; niños sólo de día)",
@@ -2191,6 +2310,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 3347,
        "fuente": "https://www.vacasa.com/usa/Torian-Plum-CO/",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": 756,
+       "total_6_noches_con_impuestos_usd": 4534,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.booking.com/hotel/us/torian-plum.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "alta",
+       "nota": "1 recámara, 65 m². 6 noches: US$3,500 + US$1,034, cancelación gratis antes del 21-ene-2027. 7 noches: US$4,131 + US$1,176, antes del 20-ene-2027."
       }
      },
      "nota_precios": "Estimados. Dato real más cercano: promedios por unidad en Vacasa, sin fecha y sin impuestos (US$231-814; Plaza 403 US$338; Plaza 702 US$486) y un listado de 1 rec. con ~US$303 de promedio. Total = (6 × tarifa + limpieza 200 + damage waiver 120) × 1.204.",
@@ -2317,6 +2445,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 2206,
        "fuente": "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": 982,
+       "total_6_noches_con_impuestos_usd": 5889,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.steamboat.com/plan-your-trip/lodging/steamboat-grand?arrivalDate=2027-03-22&departureDate=2027-03-28&adultCount=2&childCount=1",
+       "confianza": "media",
+       "nota": "Habitación 2 queens (hasta 4), solo cuarto: US$881.08/noche (6) y US$887.42/noche (7) con cargos + 11.4 % de impuestos locales (calculado)."
       }
      },
      "nota_precios": "Estimados. Dato real más cercano: Expedia, noviembre, US$164-171/noche (US$198-205 con impuestos); Kayak 'desde US$259'; hoteles con jacuzzi en Steamboat, febrero: US$201 entre semana y US$300 en fin de semana. Total = 6 × tarifa × 1.114 (hotel, sin el impuesto STR de 9%). Confirmar si cobran 'resort lodging fee'.",
@@ -2446,6 +2583,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 3666,
        "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": 627,
+       "total_6_noches_con_impuestos_usd": 3760,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information?chkin=2027-03-22&chkout=2027-03-28&rm1=a2:c5&currency=USD&locale=en_US",
+       "confianza": "alta",
+       "nota": "Condo de 2 recámaras con loft (duermen 6), queda 1; total con impuestos y cargos."
       }
      },
      "nota_precios": "Estimados. Dato real más cercano: promedios de Vacasa, sin fecha, 2 rec. US$378-392/noche. Total = (6 × tarifa + limpieza 225 + damage waiver 120) × 1.204.",
@@ -2563,6 +2709,15 @@ window.SKIAR = {
        "total_6_noches_con_impuestos_usd": 11893,
        "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
        "confianza": "baja"
+      },
+      "D": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "disponible": false,
+       "fuente": "https://www.booking.com/hotel/us/one-steamboat-place-307-buck-mountain-2-bedroom.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "baja",
+       "nota": "Sin unidad de 2 recámaras publicada: Booking no tiene disponibilidad en 22-28 ni 21-28 mar; en VRBO solo se vieron unidades de 4 recámaras. Referencia: Misma fecha, unidad mayor: VRBO, 4 recámaras desde US$19,566 por 6 noches. Booking, fecha cercana: 20-23 mar desde US$10,191; no es cotización del viaje."
       }
      },
      "nota_precios": "Estimados. Sólo hay tarifas de verano 2024 (US$641-727/noche). Cargos: resort fee de 16% + impuestos, club fee de US$80/noche y limpieza. Total = (6 × tarifa × 1.16 + 480 + ~350) × 1.204. Hay service fee para huéspedes mayores de 10 años; no aplica a la niña.",
@@ -3075,7 +3230,29 @@ window.SKIAR = {
     "https://www.ski.com/blog/5-days-in-steamboat-a-family-ski-vacation-guide",
     "https://scoutski.com/kutuk-condos",
     "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205"
-   ]
+   ],
+   "por_ventana": {
+    "D": {
+     "forfaits": {
+      "adultos_total_usd": 2236,
+      "nina_total_usd": 0,
+      "nina_total_sin_programa_usd": 956,
+      "fuente": "https://shop.steamboat.com/l/winter-lift-tickets/day-lift-tickets/c/daylifttickets",
+      "confianza": "media",
+      "como_comprar": "Boleto 5 de 7 días, US$1,118 c/u. El gratis de la niña se compra antes de abrir la temporada (27-nov); confirmar al 877-262-2628.",
+      "fecha_limite": "Antes de la apertura del 2026-11-27 (último día práctico 2026-11-26; fecha por confirmar)"
+     },
+     "escuela": {
+      "total_5_dias_usd": 2090,
+      "fuente": "https://shop.steamboat.com/l/winter-lessons/group-lessons/p/grouplessons",
+      "confianza": "alta",
+      "incluye": "Sundance/Bandits, 4-6 años, 6 horas al día, 23-27 mar."
+     },
+     "renta_equipo_total_usd": 605,
+     "cierre_temporada": "Sin fecha oficial 2026-27. En 2026 tenía previsto el 12 de abril y adelantó el cierre por falta de nieve. La semana del viaje queda dentro de temporada normal.",
+     "gente": "alta"
+    }
+   }
   },
   {
    "slug": "snowmass",
@@ -3158,6 +3335,15 @@ window.SKIAR = {
        "fuente": "https://hotels.com/ho802998720/limelight-hotel-snowmass-snowmass-village-united-states-of-america",
        "confianza": "media",
        "nota": "Entre dos tarifas reales de marzo: $1,149 (8-9 mar, Hotels.com) y $890 (23-24 mar, Travelocity)."
+      },
+      "D": {
+       "noche_usd": 1446,
+       "total_6_noches_con_impuestos_usd": 8676,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.booking.com/hotel/us/limelight-snowmass.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "alta",
+       "nota": "Grand Deluxe 2 queens, US$6,966 + US$1,710, cancelación gratis antes del 20-feb-2027."
       }
      },
      "link": "https://www.aspensnowmass.com/visit/lodging/properties/limelight-snowmass",
@@ -3269,6 +3455,15 @@ window.SKIAR = {
        "fuente": "https://www.kayak.com/Snowmass-Village-Hotels-Viceroy-Snowmass.312045.ksp",
        "confianza": "baja",
        "nota": "Estimación: Kayak marca febrero como el mes más caro; principios de marzo debería ser parecido."
+      },
+      "D": {
+       "noche_usd": 1384,
+       "total_6_noches_con_impuestos_usd": 8302,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://www.booking.com/hotel/us/viceroy-snowmass.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+       "confianza": "alta",
+       "nota": "Habitación 2 queens, US$6,900 + US$1,402, cancelación gratis antes del 20-feb-2027."
       }
      },
      "link": "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass",
@@ -3389,6 +3584,15 @@ window.SKIAR = {
        "fuente": "https://hotels.com/ho414789/viewline-resort-snowmass-autograph-collection-snowmass-village-united-states-of-america",
        "confianza": "baja",
        "nota": "Tarifas reales de febrero en Hotels.com: $598 (9-10 feb) y $749 (10-11 feb). Para principios de marzo se usa ~$700."
+      },
+      "D": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "disponible": false,
+       "fuente": "https://shop.stayaspensnowmass.com/v2/supplier/details/1987553?adultcount=2&childcount=1&arrivaldate=2027-03-22&departuredate=2027-03-28&salesid=1866797&productsupercategoryid=1",
+       "confianza": "baja",
+       "nota": "Sin disponibilidad 22-28 mar en Aspen Snowmass, Booking y Hotels.com. Referencia: Semana anterior en el motor oficial (15-21 mar 2027): Classic Queen US$809.20/noche con cargos, sin impuestos. El 29-mar al 4-abr tampoco mostró unidades."
       }
      },
      "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/hotel/viewline-resort-snowmass",
@@ -3506,6 +3710,15 @@ window.SKIAR = {
        "fuente": "https://www.hotels.com/ho1703232192/snowmass-woodrun-9954-snowmass-village-united-states-of-america",
        "confianza": "baja",
        "nota": "Promedio de marzo ($798) del listado 'Snowmass Woodrun' de Hotels.com; Kayak da un promedio de $863 para las rentas vacacionales de Snowmass en febrero."
+      },
+      "D": {
+       "noche_usd": 1342,
+       "total_6_noches_con_impuestos_usd": 8050,
+       "noches": 6,
+       "disponible": true,
+       "fuente": "https://shop.stayaspensnowmass.com/v2/supplier/details/25690684?adultcount=2&childcount=1&arrivaldate=2027-03-22&departuredate=2027-03-28&salesid=1866797&productsupercategoryid=1",
+       "confianza": "media",
+       "nota": "Condo de 2 recámaras (unidades 04, 08 o 18): US$1,186.78/noche con todos los cargos + 13.05 % de impuestos locales (calculado)."
       }
      },
      "link": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
@@ -4190,7 +4403,762 @@ window.SKIAR = {
     "https://www.uncovercolorado.com/hotels/limelight-hotel-snowmass/",
     "https://www.undercovertourist.com/aspen-snowmass/viceroy-snowmass-hotel/",
     "https://www.virtuoso.com/hotels/6164522/viceroy-snowmass"
-   ]
+   ],
+   "por_ventana": {
+    "D": {
+     "forfaits": {
+      "adultos_total_usd": 2240,
+      "nina_total_usd": 0,
+      "nina_total_sin_programa_usd": 0,
+      "fuente": "https://shop.aspensnowmass.com/l/all-lift-tickets/all-lift-ticket/c/lift-tickets",
+      "confianza": "alta",
+      "como_comprar": "Boleto de 5 días, US$1,120 c/u, con 25% comprando 30 días antes.",
+      "fecha_limite": "Para el 25%: comprar a más tardar ~2027-02-21 (30 días antes)"
+     },
+     "escuela": {
+      "total_5_dias_usd": 1975,
+      "fuente": "https://shop.aspensnowmass.com/l/ski-snowboard-lessons/kids-and-teen-lessons/p/new-max-5-group-lesson-ages-3-to-6",
+      "confianza": "alta",
+      "incluye": "Max 5, día completo con comida y boleto, 23-27 mar."
+     },
+     "renta_equipo_total_usd": 980,
+     "cierre_temporada": "Snowmass cierra el 11 de abril de 2027 (oficial, condiciones permitiendo).",
+     "gente": "alta"
+    }
+   }
+  },
+  {
+   "slug": "purgatory",
+   "nombre": "Purgatory",
+   "resumen": "La escuela de la niña está dentro del mismo edificio que los mejores condominios y su boleto es gratis toda la temporada, sin fechas bloqueadas. Su punto débil en Semana Santa es el vuelo a Durango, que encarece mucho el viaje.",
+   "magia": [
+    "La escuela infantil (The Bear's Den) está en el 2º piso de Village Center: se puede bajar en elevador desde el condominio.",
+    "Boleto gratis para menores de 13 años todos los días de la temporada, sin fechas bloqueadas (Power Kids).",
+    "Zona de principiantes Columbine, con 2 telesillas y alfombra mágica, donde no se permite esquiar rápido.",
+    "Alberca climatizada con resbaladilla en Purgatory Lodge; los huéspedes de Village Center y Kendall tienen acceso.",
+    "Tubing por la tarde junto a Columbine (desde 3 años; de 3 a 5 años, con 36 pulgadas de estatura y con un adulto).",
+    "Waffles belgas en The Waffle Cabin y pizza con helado en Paradise Pizzeria, a pasos de la escuela.",
+    "Vista a las Needle Mountains desde las pistas y los balcones.",
+    "Tren de vapor Durango & Silverton en la ciudad, para un día sin esquí (confirmar horario de invierno)."
+   ],
+   "costo_beneficio": 7,
+   "altitud_base_m": 2680,
+   "aeropuerto": "DRO",
+   "traslado": "DRO–Purgatory: unas 41 millas (66 km), cerca de 1 hora por Durango y la US-550. Lo más sencillo es el shuttle oficial de Purgatory: $60 por persona por trayecto para 3 pasajeros ($360 redondo), más $25 por una parada de 30 min en el súper de Durango; se reserva con 24 h de anticipación y puede ser compartido. Como todo queda a pie en la villa, no hace falta rentar carro. El total incluye Torreón↔Monterrey (gasolina, casetas y Superpark) y el shuttle; no incluye vuelos.",
+   "ruta": "Torreón → Monterrey en carro (~4 h; conviene dormir en Monterrey el sábado) → American MTY 10:03 → Dallas (migración y conexión de 2 h 21) → Durango DRO 16:31 → shuttle a Purgatory (~1 h). Regreso el domingo: DRO 17:06 → Dallas (conexión de 1 h 18) → MTY 22:26.",
+   "ninos_gratis": "Sí aplica a los 5 años. El Power Kids Pass 2026-27 es gratis para 12 años o menos, sin compra obligatoria y sin fechas bloqueadas, así que Semana Santa sí aplica. Se registra en línea con comprobante de edad (acta de nacimiento) y exención firmada, y la tarjeta se recoge en persona en Purgatory Sports (Main Ave, Durango) o en el Mountain Fulfillment Center del resort; ya no se envía por correo. No hay fecha límite publicada. Alternativa: pedir el boleto infantil gratis del día en taquilla antes de la clase.",
+   "escuela": {
+    "programa": "Purgatory Ski & Snowboard School: Child's Full-Day Lesson, de 4 a 6 años, niveles 1-6 (principiante e intermedio).",
+    "punto_encuentro": "The Bear's Den, 2º piso de Village Center. Entrega desde las 9:00, clase de 9:30 a 15:00, recogida a las 15:00. Con renta de equipo, llegar 30-60 min antes o recoger el equipo la tarde anterior (12:30-16:30, sin costo extra).",
+    "precio_dia_usd": 199,
+    "total_5_dias_usd": 995,
+    "incluye": "Clase de día completo con comida, 4-6 años, en Village Center.",
+    "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+    "confianza": "alta"
+   },
+   "forfaits": {
+    "adultos_total_usd": 290,
+    "nina_total_usd": 0,
+    "como_comprar": "Boletos por día en store.purgatory.ski; el precio sube al acercarse la fecha.",
+    "fuente": "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+    "confianza": "alta"
+   },
+   "renta_equipo_total_usd": 685,
+   "renta_equipo_nota": "Tarifa oficial 2026-27 en la tienda de la montaña, 5 días, paquete estándar. D (temporada tardía): tope de $44 por adulto y $34 niña; A, B y C (entre semana): $49 y $39. Incluye casco de la niña a $15 por día ($75); sin casco, restar $75. La tienda no muestra el precio exacto por día antes de capturar datos, así que D puede salir más barato (desde $25 por paquete). Fuente: https://www.purgatory.ski/mountain/rentals-service/",
+   "traslados_total_usd": 612,
+   "comida_total_usd": {
+    "cocinando": 730,
+    "restaurantes": 1350
+   },
+   "comida_nota": "Estimado para 7 días (D). Cocinando: súper en Durango ~$280, comidas de 2 adultos en la montaña ~$250 y 2 cenas fuera ~$200. Restaurantes: desayuno, comida y cena. Referencia publicada: bufé de Purgy's $22 adulto y $12 niño. La comida de la niña va incluida en la escuela los días de clase.",
+   "alojamientos": [
+    {
+     "nombre": "Village Center, 2 recámaras (mismo edificio de la escuela)",
+     "tipo": "condo",
+     "ski_in_out": "verdadero",
+     "detalle_acceso": "Purgatory lo describe como ski-in/ski-out verdadero: el edificio está donde se unen la base principal y la Plaza, y adentro tiene la escuela, la renta de equipo y Paradise Pizzeria.",
+     "distancia_escuela": "Dentro del mismo edificio: la escuela (The Bear's Den) está en el 2º piso; unos 2 min en elevador (estimación).",
+     "recamaras": "2 recámaras (king + king), 2 baños y sofá cama queen; 111 m²",
+     "cocina": true,
+     "amenidades": [
+      "Jacuzzi en la azotea",
+      "Acceso a la alberca climatizada y jacuzzi de Purgatory Lodge, cruzando la Plaza",
+      "Chimenea de leña",
+      "Balcón",
+      "Garage gratis",
+      "Lavandería del edificio",
+      "Wi-Fi"
+     ],
+     "nina_gratis": true,
+     "precios": {
+      "A": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+       "confianza": "baja",
+       "disponible": false,
+       "unidad_cotizada": "Village Center 402",
+       "nota": "Sin unidades libres en estas fechas.",
+       "referencia_usd": 3705.39
+      },
+      "B": {
+       "noche_usd": 396,
+       "total_6_noches_con_impuestos_usd": 3128,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/village-center-401/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Village Center 401",
+       "nota": "Unidad Village Center 401, tarifa oficial con impuestos."
+      },
+      "C": {
+       "noche_usd": 512,
+       "total_6_noches_con_impuestos_usd": 3969,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Village Center 402",
+       "nota": "Unidad Village Center 402, tarifa oficial con impuestos."
+      },
+      "D": {
+       "noche_usd": 428,
+       "total_6_noches_con_impuestos_usd": 3890,
+       "noches": 7,
+       "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Village Center 402",
+       "nota": "Unidad Village Center 402, tarifa oficial con impuestos."
+      }
+     },
+     "link": "https://www.purgatory.ski/lodge/village-center-402/",
+     "galeria": "https://www.purgatory.ski/lodge/village-center-402/",
+     "pros": [
+      "La niña llega a su clase sin salir del edificio ni cargar equipo por la calle",
+      "Tiene su propia recámara y hay 2 baños",
+      "Renta de equipo y pizzería en el mismo edificio"
+     ],
+     "contras": [
+      "Unos $900 más que el 1 recámara de Kendall en Semana Santa",
+      "Sin aire acondicionado (irrelevante en marzo) y chimenea de leña: cuidado con la niña",
+      "Cada unidad tiene su dueño: la decoración varía",
+      "En enero (fecha A) ya no hay unidades"
+     ],
+     "ideal_si": "Quieren lo más cómodo para la niña: dormir, desayunar y bajar a la escuela sin salir del edificio.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+      "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+      "credito": "Wikimedia Commons (ver página)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 2 recámaras de 1,200 ft² (111 m²), con king en cada recámara, 2 baños, sofá cama queen, cocina completa, comedor, chimenea de leña y balcón.",
+       "El edificio alberga la escuela infantil The Bear's Den (2º piso), la renta de equipo, la tienda Expert Edge y Paradise Pizzeria.",
+       "Purgatory lo anuncia como ski-in/ski-out y como unidad pensada para familias con niños.",
+       "Jacuzzi en la azotea, acceso a la alberca y jacuzzi de Purgatory Lodge, garage gratis y lavandería.",
+       "Libres en D al 22-nov: 402, 406 y 513. Mismo precio en las tres.",
+       "Cada unidad tiene su dueño: acabados y decoración pueden variar."
+      ],
+      "recomendacion": {
+       "pedir": "Unidad 402 o 406 (por su número, en el 4º piso), cerca del elevador. Si no, la 513.",
+       "por_que": "Un piso intermedio deja a un elevador de distancia la escuela del 2º piso y evita cargar el equipo por escaleras. Las tres cuestan lo mismo en Semana Santa.",
+       "unidades": [
+        "402",
+        "406",
+        "513"
+       ],
+       "evitar": [
+        "Unidades A o B sueltas: son estudio o 1 recámara y no son la misma oferta.",
+        "Dejar a la niña sola cerca de la chimenea de leña o del balcón."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil The Bear's Den. Si fuera posible, nos encantaría la unidad 402 o 406, o la que quede más cerca del elevador, para bajar fácilmente a su clase con el equipo. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend The Bear's Den kids' ski school. If at all possible, we'd love unit 402 or 406, or whichever is closest to the elevator, so we can easily take her down to class with her gear. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19703852100",
+      "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+      "direccion": "Village Center, #1 Skier Place, Durango, CO 81301",
+      "lat": 37.6302086,
+      "lng": -107.8141426,
+      "fuentes": [
+       "https://www.purgatory.ski/lodge/village-center-402/",
+       "https://www.purgatory.ski/lodge/village-center-504-b/",
+       "https://www.purgatory.ski/mountain/child-lessons/"
+      ]
+     }
+    },
+    {
+     "nombre": "Kendall Mountain Lodge, 1 recámara",
+     "tipo": "condo",
+     "ski_in_out": "verdadero",
+     "detalle_acceso": "Kendall está en la base de las pistas, junto a la Plaza, según Purgatory; otra unidad del edificio anuncia ski-in/ski-out con locker a unos pasos de la base.",
+     "distancia_escuela": "A unos pasos, cruzando la Plaza hasta Village Center; aprox. 3 min a pie (estimación con las coordenadas oficiales: unos 60 m).",
+     "recamaras": "1 recámara (queen), 1 baño y sofá cama queen; 88 m²",
+     "cocina": true,
+     "amenidades": [
+      "Jacuzzi en la azotea",
+      "Acceso a la alberca climatizada y jacuzzi de Purgatory Lodge",
+      "Chimenea de leña",
+      "Balcón",
+      "Estacionamiento gratis",
+      "Lavandería del edificio",
+      "Wi-Fi"
+     ],
+     "nina_gratis": true,
+     "precios": {
+      "A": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+       "confianza": "baja",
+       "disponible": false,
+       "unidad_cotizada": "Kendall 442",
+       "nota": "Sin unidades libres en estas fechas.",
+       "referencia_usd": 2739.54
+      },
+      "B": {
+       "noche_usd": 326,
+       "total_6_noches_con_impuestos_usd": 2558,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Kendall 442",
+       "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+      },
+      "C": {
+       "noche_usd": 395,
+       "total_6_noches_con_impuestos_usd": 3061,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Kendall 442",
+       "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+      },
+      "D": {
+       "noche_usd": 329,
+       "total_6_noches_con_impuestos_usd": 2990,
+       "noches": 7,
+       "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Kendall 442",
+       "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+      }
+     },
+     "link": "https://www.purgatory.ski/lodge/kendall-442/",
+     "galeria": "https://www.purgatory.ski/lodge/kendall-442/",
+     "pros": [
+      "El mejor precio con ski-in/ski-out real",
+      "A pasos de la escuela, del mercado y de los restaurantes de la Plaza",
+      "Cocina completa y buen espacio para 3"
+     ],
+     "contras": [
+      "Un solo baño",
+      "La niña dormiría en el sofá cama de la sala",
+      "En enero (fecha A) ya no hay unidades"
+     ],
+     "ideal_si": "Quieren ski-in/ski-out real cuidando el presupuesto.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+      "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+      "credito": "Wikimedia Commons (ver página)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 1 recámara de 950 ft² publicados (88 m²), con cama queen, sofá cama queen, 1 baño, cocina completa, comedor, chimenea de leña y balcón.",
+       "En la base de las pistas, a pasos de la Plaza, los restaurantes, las taquillas y Village Center.",
+       "Jacuzzi en la azotea, acceso a la alberca y jacuzzi de Purgatory Lodge, estacionamiento gratis y lavandería.",
+       "Village Market & Deli está en el edificio Kendall.",
+       "Libres en D al 22-nov: 442, 444 y 543. La 543 anuncia cama de base ajustable."
+      ],
+      "recomendacion": {
+       "pedir": "Unidad 543 o 442, en piso alto y cerca del elevador.",
+       "por_que": "Quedan a una caminata corta de la escuela y mantienen el mejor precio de los ski-in/ski-out. Un piso alto da mejor vista hacia las Needles.",
+       "unidades": [
+        "543",
+        "442",
+        "444"
+       ],
+       "evitar": [
+        "Estudios de Kendall: tienen cupo para 2.",
+        "Unidades junto a la zona de elevadores si la niña tiene sueño ligero."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil en Village Center. Si fuera posible, nos encantaría la unidad 543 o 442, en un piso alto y cerca del elevador, para caminar poco con su equipo. Agradeceríamos que el sofá cama estuviera listo con ropa de cama para ella. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend the kids' ski school in the Village Center. If at all possible, we'd love unit 543 or 442, on a higher floor and close to the elevator, so we don't have far to walk with her gear. We'd also appreciate having the sleeper sofa made up for her. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19703852100",
+      "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+      "direccion": "Kendall Mountain Lodge, Purgatory Village, #1 Skier Place, Durango, CO 81301",
+      "lat": 37.630719,
+      "lng": -107.814045,
+      "fuentes": [
+       "https://www.purgatory.ski/lodge/kendall-442/",
+       "https://www.purgatory.ski/lodge/kendall-543-5/",
+       "https://www.purgatory.ski/lodge/kendall-351/",
+       "https://www.purgatory.ski/resort-dining/"
+      ]
+     }
+    },
+    {
+     "nombre": "Cascade Village, 1 recámara (shuttle gratis)",
+     "tipo": "condo",
+     "ski_in_out": "shuttle",
+     "detalle_acceso": "No está en la pista: queda a 2 millas (3.2 km) al norte de la entrada de Purgatory, con shuttle de esquí gratis en horarios fijos (recepción: 970-259-3500).",
+     "distancia_escuela": "Unos 15 min de puerta a puerta en shuttle gratis, más la espera (estimación).",
+     "recamaras": "1 recámara, 1 baño, cupo para 4; superficie no publicada (referencia: 67 m² en un loft del mismo complejo)",
+     "cocina": true,
+     "amenidades": [
+      "Alberca techada",
+      "Jacuzzis",
+      "Sala de juegos y arcade",
+      "Gimnasio",
+      "Chimenea de leña",
+      "Guardaesquís",
+      "Garage techado",
+      "Lavandería",
+      "Acceso a la alberca de Purgatory Lodge"
+     ],
+     "nina_gratis": true,
+     "precios": {
+      "A": {
+       "noche_usd": 248,
+       "total_6_noches_con_impuestos_usd": 1926,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Cascade Village 314",
+       "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+      },
+      "B": {
+       "noche_usd": 223,
+       "total_6_noches_con_impuestos_usd": 1757,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Cascade Village 314",
+       "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+      },
+      "C": {
+       "noche_usd": 280,
+       "total_6_noches_con_impuestos_usd": 2151,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Cascade Village 314",
+       "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+      },
+      "D": {
+       "noche_usd": 228,
+       "total_6_noches_con_impuestos_usd": 2066,
+       "noches": 7,
+       "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Cascade Village 314",
+       "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+      }
+     },
+     "link": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+     "galeria": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+     "pros": [
+      "El más barato de los cuatro",
+      "Alberca techada y sala de juegos: buen plan para la tarde",
+      "La única opción con cuartos libres en las cuatro fechas"
+     ],
+     "contras": [
+      "Depende del shuttle dos veces al día con la niña y su equipo",
+      "Si la niña se cansa, no se puede regresar caminando",
+      "Hay que confirmar el horario del shuttle antes de la entrada de las 9:00"
+     ],
+     "ideal_si": "El presupuesto pesa más que caminar a la escuela y no les molesta depender del shuttle.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain_Durango.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain_Durango.jpg",
+      "descripcion": "Engineer Mountain nevada, a cuyo pie está Cascade Village",
+      "credito": "einalem / Wikimedia Commons"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 1 recámara con cupo para 4, 1 baño, cocina y chimenea de leña. Purgatory no publica los metros ni el tipo de camas.",
+       "A 2 millas al norte de la entrada de Purgatory, al pie de Engineer Mountain, con shuttle de esquí gratis en horarios fijos.",
+       "Alberca techada, jacuzzis, sala de juegos y arcade, gimnasio, guardaesquís, lavandería y garage techado.",
+       "También da acceso a la alberca de Purgatory Lodge.",
+       "Libres en D al 22-nov: 314, 317, 335 y 357; la 357 se describe como loft."
+      ],
+      "recomendacion": {
+       "pedir": "Unidad 314 o 335 en planta accesible, cerca del punto del shuttle.",
+       "por_que": "Se camina menos con la niña y su equipo hasta el shuttle. Evitar el loft reduce el riesgo de escaleras con una niña de 5.",
+       "unidades": [
+        "314",
+        "335",
+        "317"
+       ],
+       "evitar": [
+        "La 357, descrita como loft, aunque sea la más barata.",
+        "Elegir este complejo sin confirmar que el shuttle llega antes de las 9:00."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que irá a la escuela infantil de Purgatory, con entrega a las 9:00. Si fuera posible, nos encantaría la unidad 314 o 335, sin escaleras interiores y cerca de la parada del shuttle. ¿Podrían compartirnos el horario del shuttle para llegar a tiempo cada mañana? Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who will attend the Purgatory kids' ski school with a 9:00 am drop-off. If at all possible, we'd love unit 314 or 335, with no interior stairs and close to the shuttle stop. Could you please share the shuttle schedule so we can arrive on time each morning? We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19703852100",
+      "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones); recepción de Cascade: +1 970-259-3500",
+      "direccion": "Cascade Village, 50827 US Hwy 550 N, Durango, CO 81301",
+      "lat": 37.6486188,
+      "lng": -107.8077953,
+      "fuentes": [
+       "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+       "https://www.purgatory.ski/lodge/cascade-village-335/",
+       "https://www.purgatory.ski/lodge/cascade-village-357/",
+       "https://www.purgatory.ski/transportation-and-shuttle-services/",
+       "https://www.durango.org/listing/cascade-village/2255/"
+      ]
+     }
+    },
+    {
+     "nombre": "Peregrine Point, 2 recámaras",
+     "tipo": "condo",
+     "ski_in_out": "caminando",
+     "detalle_acceso": "Purgatory lo ubica a unos metros de los telesillas, frente a la Plaza. Se llega caminando; no se anuncia como ski-in/ski-out directo.",
+     "distancia_escuela": "Frente a la Plaza; aprox. 5 min a pie hasta Village Center con el equipo (estimación con las coordenadas oficiales: unos 200 m).",
+     "recamaras": "2 recámaras, 2 baños, cupo para 6; unos 115 m² (dato de un listado)",
+     "cocina": true,
+     "amenidades": [
+      "Alberca climatizada y jacuzzi",
+      "Cubiertas de granito y electrodomésticos de acero",
+      "Balcón privado",
+      "Garage con calefacción",
+      "Gimnasio",
+      "Wi-Fi"
+     ],
+     "nina_gratis": true,
+     "precios": {
+      "A": {
+       "noche_usd": null,
+       "total_6_noches_con_impuestos_usd": null,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+       "confianza": "baja",
+       "disponible": false,
+       "unidad_cotizada": "Peregrine Point 203",
+       "nota": "Sin unidades libres en estas fechas.",
+       "referencia_usd": 3802.17
+      },
+      "B": {
+       "noche_usd": 396,
+       "total_6_noches_con_impuestos_usd": 3128,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Peregrine Point 208",
+       "nota": "Unidad Peregrine Point 208, tarifa oficial con impuestos."
+      },
+      "C": {
+       "noche_usd": 524,
+       "total_6_noches_con_impuestos_usd": 4059,
+       "noches": 6,
+       "fuente": "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Peregrine Point 208",
+       "nota": "Unidad Peregrine Point 208, tarifa oficial con impuestos."
+      },
+      "D": {
+       "noche_usd": 428,
+       "total_6_noches_con_impuestos_usd": 3895,
+       "noches": 7,
+       "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+       "confianza": "alta",
+       "disponible": true,
+       "unidad_cotizada": "Peregrine Point 203",
+       "nota": "Unidad Peregrine Point 203, tarifa oficial con impuestos."
+      }
+     },
+     "link": "https://www.purgatory.ski/lodge/peregrine-point-103/",
+     "galeria": "https://www.purgatory.ski/lodge/peregrine-point-103/",
+     "pros": [
+      "El acabado más cuidado de los que siguen libres en Semana Santa",
+      "La unidad 103 tiene un cuarto con litera (matrimonial + individual) para la niña",
+      "Garage con calefacción"
+     ],
+     "contras": [
+      "Cuesta lo mismo que Village Center y queda más lejos de la escuela",
+      "Hay que caminar con el equipo de la niña",
+      "En enero (fecha A) ya no hay unidades"
+     ],
+     "ideal_si": "Priorizan acabados y recámara propia para la niña, y no les importa caminar 5 minutos.",
+     "foto_zona": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+      "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+      "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+      "credito": "Wikimedia Commons (ver página)"
+     },
+     "peticion": {
+      "caracteristicas": [
+       "Condo de 2 recámaras y 2 baños con cupo para 6 (la 206, para 4), cocina completa, sala, comedor y balcón privado. Un listado da 1,233 ft² (115 m²).",
+       "A unos metros de los telesillas y frente a la Plaza, con garage con calefacción, cubiertas de granito y electrodomésticos de acero.",
+       "La unidad 103 tiene recámara king y una segunda recámara con litera (matrimonial abajo e individual arriba).",
+       "Alberca climatizada, jacuzzi y gimnasio.",
+       "Libres en D al 22-nov: 103, 203, 206 y 208.",
+       "Purgatory Lodge, el edificio premium, ya no tiene unidades de 2 recámaras libres en D; si se libera alguna, vale la pena compararla."
+      ],
+      "recomendacion": {
+       "pedir": "Unidad 103, por la recámara con litera; por su número estaría en el primer nivel (confirmar).",
+       "por_que": "La niña tendría su propia recámara con la cama de abajo y, si es primer nivel, se carga menos el equipo hasta la Plaza.",
+       "unidades": [
+        "103",
+        "203",
+        "208"
+       ],
+       "evitar": [
+        "Dejar a la niña en la cama superior de la litera.",
+        "La 206 si quieren más amplitud: su cupo es de 4."
+       ],
+       "confianza": "media"
+      },
+      "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil en Village Center. Si fuera posible, nos encantaría la unidad 103, con la recámara de litera para ella, o la unidad disponible más cercana a la Plaza. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+      "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend the kids' ski school in the Village Center. If at all possible, we'd love unit 103, with the bunk room for her, or whichever available unit is closest to the Plaza. We expect to arrive around [arrival time]. Thank you so much!",
+      "telefono": "+19703852100",
+      "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+      "direccion": "Peregrine Point, Purgatory Village, #1 Skier Place, Durango, CO 81301",
+      "lat": 37.6284711,
+      "lng": -107.8138957,
+      "fuentes": [
+       "https://www.purgatory.ski/lodge/peregrine-point-103/",
+       "https://www.purgatory.ski/lodge/peregrine-point-203/",
+       "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+       "https://www.purgatory.ski/lodge/purgatory-lodge-305/"
+      ]
+     }
+    }
+   ],
+   "fotos": [
+    {
+     "categoria": "ubicacion",
+     "opcion": "general",
+     "descripcion": "Entrada de Purgatory sobre la carretera US-550",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Purgatory_at_Durango_Mountain_Resort_entrance_gate_and_sign.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Purgatory_at_Durango_Mountain_Resort_entrance_gate_and_sign.JPG",
+     "credito": "Jeffrey Beall / Wikimedia Commons",
+     "licencia": "CC BY 4.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "general",
+     "descripcion": "Panorámica de Purgatory en otoño",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Purgatory,_Colorado_(37481339960).jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Purgatory,_Colorado_(37481339960).jpg",
+     "credito": "John Fowler / Wikimedia Commons",
+     "licencia": "CC BY 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "general",
+     "descripcion": "Bosque de álamos en Purgatory al atardecer",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspens_at_Sunset,_Purgatory.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspens_at_Sunset,_Purgatory.jpg",
+     "credito": "John Fowler / Wikimedia Commons",
+     "licencia": "CC BY 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "engineer",
+     "descripcion": "Engineer Mountain nevada, junto a Cascade Village",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain_Durango.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain_Durango.jpg",
+     "credito": "einalem / Wikimedia Commons",
+     "licencia": "CC BY-SA 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "engineer",
+     "descripcion": "Engineer Mountain en verano",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain.jpg",
+     "credito": "mark byzewski / Wikimedia Commons",
+     "licencia": "CC BY 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "needles",
+     "descripcion": "Needle Mountains desde el cañón del Animas (imagen histórica)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Needle_Mountains_from_Animas_Canyon,_Colorado-LCCN2008678202.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Needle_Mountains_from_Animas_Canyon,_Colorado-LCCN2008678202.jpg",
+     "credito": "Biblioteca del Congreso de EE. UU. / Wikimedia Commons",
+     "licencia": "Dominio público"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "carretera",
+     "descripcion": "Paso Coal Bank, en la US-550 al norte de Purgatory",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Coal_Bank_Pass_(16065809896).jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Coal_Bank_Pass_(16065809896).jpg",
+     "credito": "Chris M Morris / Wikimedia Commons",
+     "licencia": "CC BY 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "durango",
+     "descripcion": "Main Avenue, en el centro de Durango",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango_Co,_Main_Avenue_-_panoramio.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango_Co,_Main_Avenue_-_panoramio.jpg",
+     "credito": "Frans-Banja Mulder / Wikimedia Commons",
+     "licencia": "CC BY 3.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "aeropuerto",
+     "descripcion": "Terminal del aeropuerto de Durango (DRO)",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango%E2%80%93La_Plata_County_Airport_terminal_building.JPG?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango%E2%80%93La_Plata_County_Airport_terminal_building.JPG",
+     "credito": "Jeffrey Beall / Wikimedia Commons",
+     "licencia": "CC BY 4.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "durango",
+     "descripcion": "Tren de vapor Durango & Silverton por el cañón",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango_Silverton_Train.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango_Silverton_Train.jpg",
+     "credito": "cwbash / Wikimedia Commons",
+     "licencia": "CC BY 2.0"
+    },
+    {
+     "categoria": "ubicacion",
+     "opcion": "durango",
+     "descripcion": "Locomotora del tren Durango & Silverton",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Train_by_the_Durango_and_Silverton_Narrow_Gauge_Railroad.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:Train_by_the_Durango_and_Silverton_Narrow_Gauge_Railroad.jpg",
+     "credito": "Michael Gäbler / Wikimedia Commons",
+     "licencia": "CC BY 3.0"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "general",
+     "descripcion": "Vista invernal desde Purgatory hacia las montañas",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio.jpg",
+     "credito": "Jacob Montgomery / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "general",
+     "descripcion": "Bosque nevado desde la montaña",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio_(1).jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio_(1).jpg",
+     "credito": "Jacob Montgomery / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0"
+    },
+    {
+     "categoria": "pista",
+     "opcion": "general",
+     "descripcion": "Valle y cumbres desde Purgatory en invierno",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio_(2).jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio_(2).jpg",
+     "credito": "Jacob Montgomery / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0"
+    },
+    {
+     "categoria": "alojamiento",
+     "opcion": "village",
+     "descripcion": "Base de Purgatory y sus condominios, vistos desde un telesilla",
+     "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+     "url_pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+     "credito": "Wikimedia Commons (ver página)",
+     "licencia": "CC BY 3.0"
+    }
+   ],
+   "verificar": [
+    "Visas B1/B2 vigentes de los tres, sobre todo la de la niña.",
+    "DISPONIBILIDAD: el 22-nov quedaban en D solo 3 unidades de 2 recámaras en Village Center (402, 406 y 513) y 3 de 1 recámara en Kendall (442, 444 y 543). Reservar pronto.",
+    "Vuelo: la tarifa de $4,937 es Basic Economy (sin cambios ni selección de asiento gratis). Main Cabin cuesta $5,403 para los 3; confirmar que la niña se siente con un adulto.",
+    "El vuelo sale de Monterrey a las 10:03: para no manejar de madrugada, dormir en Monterrey el sábado 20 (hotel no incluido en el total).",
+    "Cierre: la temporada está programada hasta el 4-abr-2027, pero en 2025-26 cerró el 29 de marzo en vez del 5 de abril, y en 2025 varios telesillas cerraron el 23 de marzo. Revisar la nieve a inicios de marzo.",
+    "Política de cancelación del hospedaje. La cotización de D cobra un anticipo y el resto el 19-feb-2027.",
+    "Power Kids: confirmar con Purgatory Sports (970-385-8901) que se puede registrar a una niña extranjera con acta mexicana; si no, pedir el boleto gratis del día en taquilla.",
+    "Escuela: reservar los 5 días con anticipación y confirmar el precio exacto de la semana del 22 de marzo.",
+    "Shuttle DRO–Purgatory (970-426-7282): reservar con 24 h, confirmar la parada en el súper y el horario del regreso.",
+    "Cascade Village: pedir el horario del shuttle gratis antes de elegirlo.",
+    "Altitud: se duerme a unos 2,680 m. Consultar al pediatra, hidratar a la niña y tomar el primer día con calma.",
+    "No confundir Durango, Colorado (DRO) con Durango, México (DGO) al comprar vuelos."
+   ],
+   "fuentes": [
+    "https://www.purgatory.ski/power-kids-season-pass/",
+    "https://www.purgatory.ski/season-pass-faq/",
+    "https://www.purgatory.ski/mountain/child-lessons/",
+    "https://www.purgatory.ski/mountain/lift-tickets/",
+    "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+    "https://www.purgatory.ski/mountain/rentals-service/",
+    "https://www.purgatory.ski/winter-rentals-faq/",
+    "https://www.purgatory.ski/transportation-and-shuttle-services/",
+    "https://www.purgatory.ski/lodging/",
+    "https://www.purgatory.ski/winter-lodging-deals/",
+    "https://www.purgatory.ski/lodge/village-center-402/",
+    "https://www.purgatory.ski/lodge/kendall-442/",
+    "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+    "https://www.purgatory.ski/lodge/peregrine-point-103/",
+    "https://www.purgatory.ski/resort-dining/",
+    "https://www.purgatory.ski/activities/tubing/",
+    "https://www.purgatory.ski/terms-and-conditions/",
+    "https://www.purgatory.ski/press/spring-skiing-update-schedule-changes-exciting-events-ahead/",
+    "https://www.purgatory.ski/press/mountain-update-how-the-season-has-played-out-and-what-comes-next/",
+    "https://www.onthesnow.com/colorado/durango-mountain-resort/historical-snowfall",
+    "https://www.google.com/travel/flights",
+    "https://www.kayak.com/cars/DRO/2027-03-21-17h/2027-03-28-14h",
+    "https://opensnow.com/news/post/noaa-2026-2027-winter-forecast"
+   ],
+   "comida_dias": 7,
+   "por_ventana": {
+    "A": {
+     "forfaits": {
+      "adultos_total_usd": 550
+     },
+     "escuela": {
+      "total_5_dias_usd": 1045
+     },
+     "renta_equipo_total_usd": 760
+    },
+    "B": {
+     "forfaits": {
+      "adultos_total_usd": 510
+     },
+     "escuela": {
+      "total_5_dias_usd": 1045
+     },
+     "renta_equipo_total_usd": 760
+    },
+    "C": {
+     "forfaits": {
+      "adultos_total_usd": 490
+     },
+     "escuela": {
+      "total_5_dias_usd": 1045
+     },
+     "renta_equipo_total_usd": 760
+    },
+    "D": {
+     "forfaits": {
+      "adultos_total_usd": 290
+     },
+     "escuela": {
+      "total_5_dias_usd": 995
+     },
+     "renta_equipo_total_usd": 685
+    }
+   }
   }
  ],
  "vuelos": {
@@ -4209,6 +5177,10 @@ window.SKIAR = {
    "C": {
     "ida": "2027-02-28",
     "regreso": "2027-03-06"
+   },
+   "D": {
+    "ida": "2027-03-21",
+    "regreso": "2027-03-28"
    }
   },
   "rutas": [
@@ -4246,6 +5218,17 @@ window.SKIAR = {
       "fechas_reales": "2027-02-28→2027-03-06 si opera en domingo; si no: Sáb 2027-02-27→Sáb 2027-03-06; si jue/dom: Dom 2027-02-28→Dom 2027-03-07",
       "fuente": "https://www.expedia.com/lp/flights/mty/den/monterrey-to-denver",
       "confianza": "media"
+     },
+     "D": {
+      "total_3_usd": 3409,
+      "por_persona_usd": 1136,
+      "fechas_reales": "Sin escala: dom 21 MTY 7:55 → DEN 10:46; dom 28 DEN 18:35 → MTY 21:20",
+      "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-DEN 21→28 mar, 3 adultos, opción 'Book with Viva')",
+      "confianza": "alta",
+      "equipaje_total_usd": 862,
+      "equipaje_confianza": "media",
+      "equipaje_nota": "2 maletas de 25 kg ida y vuelta; Viva da un rango de US$708-1,016.",
+      "nota": "Confirmado: Viva vuela ambos domingos."
      }
     },
     "equipaje": "Tarifa base: sólo artículo personal. Maleta documentada se paga aparte: lista Viva (fecha no clara) MXN 371 hasta 20 kg, +MXN 604 para 25 kg, maleta extra 25 kg MXN 1,010; nota 2026: primera maleta MXN 500-900 (nacional); rutas a EE.UU. (dato antiguo) US$38-65 por maleta 25 kg por trayecto. Esquís = equipaje especial, ~US$60-100 por trayecto (estimación de terceros). Estimado familia: 2 maletas de 25 kg ida y vuelta ≈ US$150-260.",
@@ -4288,6 +5271,17 @@ window.SKIAR = {
       "fechas_reales": "2027-02-28→2027-03-06",
       "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
       "confianza": "baja"
+     },
+     "D": {
+      "total_3_usd": 3030,
+      "por_persona_usd": 1010,
+      "fechas_reales": "United vía IAH. Ida dom 21: MTY 17:00 → DEN 23:33 (escala 2 h 08). Regreso dom 28: DEN 6:00 → MTY 12:58 (escala 2 h 40).",
+      "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-DEN 21→28 mar, 3 adultos)",
+      "confianza": "alta",
+      "equipaje_total_usd": 180,
+      "equipaje_confianza": "media",
+      "equipaje_nota": "2 maletas ida y vuelta.",
+      "nota": "Otras combinaciones de regreso con la misma ida: 7:50→12:58 US$3,273 (escala de 49 min, justa con niña); 20:39→8:37 del lunes US$2,424 (7 h 45 de noche en Houston, no recomendable)."
      }
     },
     "equipaje": "No verificado para 2027. Tarifas básicas de United/American normalmente no incluyen maleta documentada; revisar al cotizar.",
@@ -4330,6 +5324,17 @@ window.SKIAR = {
       "fechas_reales": "2027-02-28→2027-03-06",
       "fuente": "https://www.expedia.com/lp/flights/trc/den/torreon-to-denver",
       "confianza": "baja"
+     },
+     "D": {
+      "total_3_usd": 5074,
+      "por_persona_usd": 1691,
+      "fechas_reales": "American vía DFW. Ida dom 21: TRC 11:03 → DEN 17:40 (escala 2 h 29). Regreso dom 28: DEN 5:05 → TRC 10:23 (escala 1 h 05).",
+      "fuente": "https://www.google.com/travel/flights (búsqueda exacta TRC-DEN 21→28 mar, 3 adultos)",
+      "confianza": "alta",
+      "equipaje_total_usd": 180,
+      "equipaje_confianza": "media",
+      "equipaje_nota": "2 maletas ida y vuelta.",
+      "nota": "Regreso muy temprano (5:05)."
      }
     },
     "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
@@ -4369,6 +5374,17 @@ window.SKIAR = {
       "fechas_reales": "2027-02-28→2027-03-06 (puede subir: inicio de spring break en EE.UU.)",
       "fuente": "https://www.kayak.com/flight-routes/Dallas-Ft-Worth-other-airports-DFW/Hayden-Yampa-Valley-HDN",
       "confianza": "baja"
+     },
+     "D": {
+      "total_3_usd": 4063,
+      "por_persona_usd": 1354,
+      "fechas_reales": "American vía DFW, con noche en Dallas en ambos sentidos. Ida: TRC dom 11:03 → HDN lun 13:30 (21 h 44 en DFW). Regreso: HDN dom 14:11 → TRC lun 10:23 (15 h 45 en DFW).",
+      "fuente": "https://www.google.com/travel/flights (búsqueda exacta TRC-HDN 21→28 mar, 3 adultos)",
+      "confianza": "alta",
+      "equipaje_total_usd": 180,
+      "equipaje_confianza": "media",
+      "equipaje_nota": "2 maletas ida y vuelta.",
+      "nota": "NO hay conexión el mismo día en estas fechas."
      }
     },
     "equipaje": "No verificado; tarifa Básica de AA no incluye maleta documentada.",
@@ -4408,6 +5424,17 @@ window.SKIAR = {
       "fechas_reales": "2027-02-28→2027-03-06",
       "fuente": "https://www.expedia.com/lp/flights/ase/mty/aspen-to-monterrey",
       "confianza": "baja"
+     },
+     "D": {
+      "total_3_usd": 4705,
+      "por_persona_usd": 1568,
+      "fechas_reales": "United vía IAH. Ida dom 21: MTY 7:50 → ASE 14:34 (escala 1 h 35). Regreso dom 28: ASE 7:15 → MTY 12:58 (escala 1 h 09) o 13:25 → 19:30 (escala 1 h 31), mismo precio.",
+      "fuente": "https://www.google.com/travel/flights (búsqueda exacta MTY-ASE 21→28 mar, 3 adultos)",
+      "confianza": "alta",
+      "equipaje_total_usd": 180,
+      "equipaje_confianza": "media",
+      "equipaje_nota": "2 maletas ida y vuelta.",
+      "nota": "El precio 'desde' de US$2,058-2,371 solo existe con regreso de 14 h y 2 escalas que llega el lunes 29 a las 8:37, o con esperas de 12-17 h; no se usa."
      }
     },
     "equipaje": "No verificado; tarifas básicas United/AA sin maleta documentada.",
@@ -4492,6 +5519,153 @@ window.SKIAR = {
     },
     "equipaje": "No verificado.",
     "notas": "Sin tarifa observada. Probablemente igual o más caro que MTY-ASE/EGE (US$600-700+), pero evita el manejo Torreón-Monterrey."
+   },
+   {
+    "id": "mty-dro-aa",
+    "descripcion": "Manejar Torreón→Monterrey (~4 h) y volar American MTY→Dallas→Durango (DRO), 1 escala",
+    "aerolinea": "American Airlines / American Eagle",
+    "escalas": 1,
+    "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+    "duracion": "Ida 6 h 28 (MTY 10:03 → DRO 16:31, 2 h 21 en DFW). Regreso 5 h 20 (DRO 17:06 → MTY 22:26, 1 h 18 en DFW). Horarios de D.",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "precios": {
+     "A": {
+      "por_persona_usd": 1004,
+      "total_3_usd": 3013,
+      "fechas_reales": "2027-01-10→2027-01-16 · MTY 10:59 → DRO 16:47; DRO 17:24 → MTY 23:26",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta",
+      "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+     },
+     "B": {
+      "por_persona_usd": 887,
+      "total_3_usd": 2662,
+      "fechas_reales": "2027-01-24→2027-01-30 · MTY 10:59 → DRO 16:47; DRO 17:24 → MTY 23:34",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta",
+      "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+     },
+     "C": {
+      "por_persona_usd": 867,
+      "total_3_usd": 2600,
+      "fechas_reales": "2027-02-28→2027-03-06 · MTY 11:03 → DRO 16:31; DRO 17:06 → MTY 23:26",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta",
+      "nota": "Tarifa para 3 con impuestos, consultada el 22-nov-2026."
+     },
+     "D": {
+      "por_persona_usd": 1646,
+      "total_3_usd": 4937,
+      "fechas_reales": "2027-03-21→2027-03-28 · MTY 10:03 → DRO 16:31; DRO 17:06 → MTY 22:26",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta",
+      "total_3_main_cabin_usd": 5403,
+      "nota": "Basic Economy para 2 adultos y 1 niña, con impuestos. Main Cabin: $5,403, con selección de asiento y cambios sin cargo. Precio de Semana Santa."
+     }
+    },
+    "equipaje": "Incluye 1 equipaje de mano por persona. Primera maleta documentada: $110 redondo por persona en Basic y $100 en Main Cabin.",
+    "notas": "La ruta más cómoda que llega el mismo domingo. Se pasa migración en Dallas. Avión regional en el tramo a Durango. La opción de MTY 16:29 → DRO 22:48 es algo más barata, pero llegarían a la montaña cerca de medianoche con la niña.",
+    "equipaje_total_usd": 220,
+    "equipaje_total_nota": "2 maletas documentadas, ida y vuelta, en Basic Economy ($110 cada una).",
+    "equipaje_confianza": "alta"
+   },
+   {
+    "id": "trc-dro-aa",
+    "descripcion": "Vuelo desde Torreón: American TRC→Dallas→Durango (DRO), 1 escala larga",
+    "aerolinea": "American Airlines / American Eagle",
+    "escalas": 1,
+    "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+    "duracion": "En D: TRC 11:03 → DRO 22:48 (11 h 45, con 7 h 23 en DFW). Opción con noche en Dallas: llega 10:05 del lunes, $4,369 para 3.",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "precios": {
+     "A": {
+      "por_persona_usd": 1160,
+      "total_3_usd": 3481,
+      "fechas_reales": "2027-01-10→2027-01-16 · TRC 12:32 → DRO 22:30",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+     },
+     "B": {
+      "por_persona_usd": 910,
+      "total_3_usd": 2731,
+      "fechas_reales": "2027-01-24→2027-01-30 · TRC 12:32 → DRO 22:30",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+     },
+     "C": {
+      "por_persona_usd": 910,
+      "total_3_usd": 2731,
+      "fechas_reales": "2027-02-28→2027-03-06 · TRC 12:03 → DRO 22:48",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+     },
+     "D": {
+      "por_persona_usd": 1730,
+      "total_3_usd": 5190,
+      "fechas_reales": "2027-03-21→2027-03-28 · TRC 11:03 → DRO 22:48",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta"
+     }
+    },
+    "equipaje": "Mismas reglas de American; revisar según la tarifa.",
+    "notas": "Evita manejar a Monterrey, pero implica 7 horas en Dallas y llegar de noche a la montaña. No se recomienda con una niña de 5.",
+    "equipaje_total_usd": 220,
+    "equipaje_total_nota": "2 maletas ida y vuelta, con la regla de American para Basic Economy.",
+    "equipaje_confianza": "media"
+   },
+   {
+    "id": "mty-abq-ua",
+    "descripcion": "Alternativa: United MTY→Houston→Albuquerque y manejar ~4 h 10 a Purgatory con noche en ABQ",
+    "aerolinea": "United / United Express",
+    "escalas": 1,
+    "dias_operacion": "Con vuelos en las cuatro fechas consultadas en Google Flights el 22-nov-2026.",
+    "duracion": "En D: MTY 12:10 → ABQ 18:07 (5 h 57); regreso ABQ 12:00 → MTY 17:18 (5 h 18). Más 4 h 10 de carretera por sentido.",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "precios": {
+     "A": {
+      "por_persona_usd": 766,
+      "total_3_usd": 2298,
+      "fechas_reales": "2027-01-10→2027-01-16 · desde, MTY 8:50 → ABQ 13:31",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media",
+      "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+     },
+     "B": {
+      "por_persona_usd": 727,
+      "total_3_usd": 2180,
+      "fechas_reales": "2027-01-24→2027-01-30 · desde, MTY 8:50 → ABQ 13:31",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media",
+      "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+     },
+     "C": {
+      "por_persona_usd": 694,
+      "total_3_usd": 2083,
+      "fechas_reales": "2027-02-28→2027-03-06 · desde, MTY 8:50 → ABQ 13:28",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "media",
+      "nota": "Precio «desde»: el horario de regreso puede cambiarlo."
+     },
+     "D": {
+      "por_persona_usd": 1190,
+      "total_3_usd": 3571,
+      "fechas_reales": "2027-03-22→2027-03-28 en la montaña · vuelo 21→28: MTY 12:10 → ABQ 18:07; ABQ 12:00 → MTY 17:18",
+      "fuente": "https://www.google.com/travel/flights",
+      "confianza": "alta",
+      "nota": "Tarifa para 3 con impuestos. Con el regreso de las 8:00 baja a $2,925, pero obliga a dormir en ABQ el sábado. La tarifa más barata de United no incluye compartimento superior."
+     }
+    },
+    "equipaje": "La tarifa más barata no incluye compartimento superior; revisar equipaje antes de comprar.",
+    "notas": "Ahorra en vuelo, pero suma renta de carro, una noche en ABQ y más de 8 horas de carretera. Solo si el presupuesto manda. Hospedaje de D: 22→28, 6 noches (Kendall $2,597; Village Center $3,403; Cascade $1,804).",
+    "equipaje_total_usd": null,
+    "equipaje_total_nota": "No verificado para esta tarifa de United.",
+    "equipaje_confianza": "baja"
    }
   ],
   "traslados": [
@@ -4507,7 +5681,16 @@ window.SKIAR = {
     "total_usd": 470,
     "fuente": "https://www.discovercars.com/suv/denver-airport-den_5044",
     "confianza": "media",
-    "notas": "Discovercars (ene 2026): SUV enero desde US$50.26/día, promedio US$77.96/día; RAV4 AWD ~US$67/día → 6 días US$300-470. Kayak: SUV promedio ~US$63/día. Pedir AWD/4WD explícito (llantas all-season, no de nieve). No incluye gasolina ni estacionamiento en el hotel."
+    "notas": "Discovercars (ene 2026): SUV enero desde US$50.26/día, promedio US$77.96/día; RAV4 AWD ~US$67/día → 6 días US$300-470. Kayak: SUV promedio ~US$63/día. Pedir AWD/4WD explícito (llantas all-season, no de nieve). No incluye gasolina ni estacionamiento en el hotel.",
+    "precios": {
+     "D": {
+      "total_usd": 399,
+      "fuente": "https://www.kayak.com/cars/DEN/2027-03-21-12h/2027-03-28-12h/suv?sort=price_a",
+      "confianza": "media",
+      "nota": "7 días, 21→28 mar, recogiendo en DEN a mediodía.",
+      "descripcion": "Renta SUV AWD en aeropuerto de Denver, 7 días"
+     }
+    }
    },
    {
     "id": "den-eme-compartido",
@@ -4530,7 +5713,15 @@ window.SKIAR = {
     "total_usd": 300,
     "fuente": "https://alpineairporttransport.com/pricing/",
     "confianza": "media",
-    "notas": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas. Más barato que compartido para 3."
+    "notas": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas. Más barato que compartido para 3.",
+    "precios": {
+     "D": {
+      "total_usd": 300,
+      "fuente": "https://alpineairporttransport.com/pricing/",
+      "confianza": "media",
+      "nota": "Alpine Airport Transport: US$150 por trayecto para 1-3 personas; la página no trae fecha de vigencia."
+     }
+    }
    },
    {
     "id": "hdn-steamboat-compartido",
@@ -4575,6 +5766,39 @@ window.SKIAR = {
     "fuente": null,
     "confianza": "baja",
     "notas": "Roaring Fork Express aparece con US$130 p/p por trayecto en un listado posiblemente desactualizado; Colorado Mountain Express no publicó tarifa en los resultados."
+   },
+   {
+    "id": "dro-purgatory-shuttle",
+    "descripcion": "Shuttle oficial de Purgatory DRO↔resort, 3 personas, redondo, con una parada en el súper",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "total_usd": 385,
+    "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+    "confianza": "alta",
+    "notas": "$60 por pasajero por trayecto para grupos de 3-6: $360 redondo, más $25 por 30 min de parada en el súper. Operación de 7:00 a 21:00, sujeta a disponibilidad; reservar con 24 h. Puede ser compartido. Teléfono: 970-426-7282."
+   },
+   {
+    "id": "dro-renta-suv-awd",
+    "descripcion": "Renta de SUV en el aeropuerto de Durango, 7 días",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "total_usd": 520,
+    "fuente": "https://www.kayak.com/cars/DRO/2027-03-21-17h/2027-03-28-14h",
+    "confianza": "media",
+    "notas": "Kayak (22-nov-2026): SUV intermedia desde unos $62-72 por día para 21-28 mar; se estima $65 × 7 más ~$65 de gasolina. Confirmar que sea AWD/4x4. Solo vale la pena si quieren pasear por Durango."
+   },
+   {
+    "id": "abq-renta-suv-awd",
+    "descripcion": "Renta de SUV en Albuquerque, 7 días, para la ruta alterna",
+    "aplica_a": [
+     "purgatory"
+    ],
+    "total_usd": 470,
+    "fuente": "https://www.kayak.com/cars/ABQ/2027-03-21-18h/2027-03-28-10h",
+    "confianza": "baja",
+    "notas": "Kayak (22-nov-2026): SUV compacta desde $41 e intermedia ~$57 por día. Estimado: $57 × 7 + ~$70 de gasolina. Confirmar AWD. No incluye la noche en Albuquerque (~$150, estimado)."
    }
   ],
   "estacionamiento_mty_usd": 82,
@@ -4601,6 +5825,11 @@ window.SKIAR = {
     "ruta": "mty-den-viva",
     "traslado": "den-renta-suv-awd",
     "alternativa": "mty-ase-1escala + ase-snowmass-hotel (más cómodo; ~US$880 más para 3: vuelos +1,350 pero sin renta -470; horario invierno ASE sin confirmar) o trc-ase-ege-aa vía DFW-EGE (sin tarifa observada)"
+   },
+   "purgatory": {
+    "ruta": "mty-dro-aa",
+    "traslado": "dro-purgatory-shuttle",
+    "alternativa": "mty-abq-ua + abq-renta-suv-awd si manda el presupuesto: ahorra unos $1,500 en D, pero suma una noche en Albuquerque y más de 8 h de carretera con la niña. Denver se descarta: aunque Viva vuela directo MTY-DEN ($3,414 para 3 en D), faltarían unas 6-7 h de manejo por puertos de montaña."
    }
   },
   "fuentes": [
@@ -4660,7 +5889,31 @@ window.SKIAR = {
    "https://www.liderempresarial.com/superpeso-peso-mexicano-dolar-16-94-cuanto-durara/"
   ],
   "hotel_denver_usd": 160,
-  "hotel_denver_nota": "Estimado: 1 noche cerca del aeropuerto de Denver para aclimatarse (recomendación de Children's Hospital Colorado). Aplica cuando se vuela a DEN."
+  "hotel_denver_nota": "Estimado: 1 noche cerca del aeropuerto de Denver para aclimatarse (recomendación de Children's Hospital Colorado). Aplica cuando se vuela a DEN.",
+  "recomendado_por_ventana": {
+   "D": {
+    "steamboat": {
+     "ruta": "mty-den-viva",
+     "traslado": "den-renta-suv-awd",
+     "alternativa": "American a Hayden obliga a dormir en Dallas de ida y de vuelta en estas fechas."
+    }
+   }
+  },
+  "por_ventana": {
+   "D": {
+    "hotel_denver_usd": 102,
+    "hotel_denver_fuente": "https://www.booking.com/searchresults.html?ss=Denver+International+Airport&checkin=2027-03-21&checkout=2027-03-22&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD",
+    "hotel_denver_confianza": "alta",
+    "hotel_denver_nota": "La Quinta Denver Airport, con desayuno y cancelación gratis.",
+    "estacionamiento_mty_usd": 122,
+    "hotel_monterrey": {
+     "total_usd": 256,
+     "fuente": "https://www.booking.com/hotel/mx/best-western-premier-monterrey-aeropuerto.html?checkin=2027-03-20&checkout=2027-03-21&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+     "confianza": "media",
+     "nota": "Best Western PREMIER Monterrey Aeropuerto (habitación con 2 queens y desayuno): sábado 20 antes del vuelo y domingo 28 al aterrizar de noche, para no manejar de madrugada con la niña. Tarifa exacta del 20; la del 28 se estima igual."
+    }
+   }
+  }
  },
  "pendientes": [
   {
@@ -4685,7 +5938,7 @@ window.SKIAR = {
   },
   {
    "texto": "Si eligen Steamboat: comprar pases de adulto de 5+ días y el gratis de la niña antes de que abra la temporada.",
-   "fecha": "Antes del ~19 nov 2026",
+   "fecha": "Antes del 27 nov 2026 (confirmar)",
    "icono": "🎟️"
   },
   {
@@ -4695,7 +5948,7 @@ window.SKIAR = {
   },
   {
    "texto": "Comprar los Epic Day Pass de los adultos (Keystone/Breckenridge). En 2025 dejaron de venderse el 4 de diciembre.",
-   "fecha": "Antes del ~1 dic 2026",
+   "fecha": "Antes del 6 dic 2026",
    "icono": "🎟️"
   },
   {
@@ -5095,6 +6348,94 @@ window.SKIAR = {
     "fuente": "https://www.lodgingcompany.com/lodging/snowmass/snowmass-village/condo/woodrun-place",
     "nota": "SIN COORDENADA. Está sobre Fanny Hill, arriba del Snowmass Mall.",
     "fuente_nota": "Coordenada de referencia aproximada (sin fuente verificada); puede variar unos cientos de metros."
+   },
+   {
+    "id": "dro",
+    "nombre": "Aeropuerto de Durango-La Plata County (DRO)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 37.152842,
+    "lng": -107.7586,
+    "precision": "exacta",
+    "fuente": "https://www.openstreetmap.org/search?query=Durango-La%20Plata%20County%20Airport",
+    "nota": "Coordenada de OpenStreetMap. No confundir con Durango, México (DGO)."
+   },
+   {
+    "id": "abq",
+    "nombre": "Aeropuerto Internacional de Albuquerque (ABQ)",
+    "tipo": "aeropuerto",
+    "resort": null,
+    "lat": 35.037669,
+    "lng": -106.61096,
+    "precision": "exacta",
+    "fuente": "https://www.openstreetmap.org/search?query=Albuquerque%20International%20Sunport",
+    "nota": "Coordenada de OpenStreetMap. Solo para la ruta alterna."
+   },
+   {
+    "id": "purgatory",
+    "nombre": "Purgatory – Village (base)",
+    "tipo": "resort",
+    "resort": "purgatory",
+    "lat": 37.6302086,
+    "lng": -107.8141426,
+    "precision": "exacta",
+    "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+    "nota": "Coordenada del mapa oficial de Village Center, en la unión de la base y la Plaza."
+   },
+   {
+    "id": "purgatory-escuela",
+    "nombre": "Purgatory – The Bear's Den (2º piso de Village Center)",
+    "tipo": "escuela",
+    "resort": "purgatory",
+    "lat": 37.6302086,
+    "lng": -107.8141426,
+    "precision": "aproximada",
+    "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+    "nota": "Punto oficial de encuentro de la clase de 4 a 6 años. Se usa la coordenada del edificio."
+   },
+   {
+    "id": "h-purg-village-center-2-recamaras",
+    "nombre": "Village Center, 2 recámaras (mismo edificio de la escuela)",
+    "tipo": "hospedaje",
+    "resort": "purgatory",
+    "lat": 37.6302086,
+    "lng": -107.8141426,
+    "precision": "exacta",
+    "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+    "nota": "Coordenada del mapa de la ficha oficial."
+   },
+   {
+    "id": "h-purg-kendall-1-recamara",
+    "nombre": "Kendall Mountain Lodge, 1 recámara",
+    "tipo": "hospedaje",
+    "resort": "purgatory",
+    "lat": 37.630719,
+    "lng": -107.814045,
+    "precision": "exacta",
+    "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+    "nota": "Coordenada del mapa de la ficha oficial."
+   },
+   {
+    "id": "h-purg-cascade-village-1-recamara",
+    "nombre": "Cascade Village, 1 recámara (shuttle gratis)",
+    "tipo": "hospedaje",
+    "resort": "purgatory",
+    "lat": 37.6486188,
+    "lng": -107.8077953,
+    "precision": "exacta",
+    "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+    "nota": "Coordenada del mapa de la ficha oficial."
+   },
+   {
+    "id": "h-purg-peregrine-point-2-recamaras",
+    "nombre": "Peregrine Point, 2 recámaras",
+    "tipo": "hospedaje",
+    "resort": "purgatory",
+    "lat": 37.6284711,
+    "lng": -107.8138957,
+    "precision": "exacta",
+    "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+    "nota": "Coordenada del mapa de la ficha oficial."
    }
   ],
   "tramos": [
@@ -5537,6 +6878,171 @@ window.SKIAR = {
     "nota": "Al salir de EE.UU. no hay migración en la conexión (doméstico → internacional, mínimo 75-90 min). Duración inferida del sentido de ida (Rome2Rio); sin horario 2027.",
     "fuente": "https://www.rome2rio.com/s/Monterrey/Aspen",
     "confianza": "baja"
+   },
+   {
+    "id": "mty-dfw-vuelo-purg",
+    "de": "mty",
+    "a": "dfw",
+    "modo": "vuelo",
+    "horas": 1.85,
+    "rango": "1 h 45 - 2 h",
+    "nota": "Sale 10:03 de Monterrey. La parte MTY-DFW se deduce del itinerario total de 6 h 28 y la conexión de 2 h 21.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "media"
+   },
+   {
+    "id": "dfw-migracion-conexion-purg",
+    "de": "dfw",
+    "a": "dfw",
+    "modo": "espera",
+    "horas": 2.35,
+    "rango": "2 h 21 de conexión programada",
+    "nota": "En Dallas se pasa migración, se recogen y se vuelven a documentar las maletas y se cambia de terminal. Es suficiente, pero no sobra si hay retraso.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "alta"
+   },
+   {
+    "id": "dfw-dro-vuelo",
+    "de": "dfw",
+    "a": "dro",
+    "modo": "vuelo",
+    "horas": 2.28,
+    "rango": "2 h 10 - 2 h 25",
+    "nota": "Llega a Durango a las 16:31 en D. Avión regional de American Eagle.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "media"
+   },
+   {
+    "id": "dro-llegada",
+    "de": "dro",
+    "a": "dro",
+    "modo": "espera",
+    "horas": 0.5,
+    "rango": "20-40 min",
+    "nota": "Aeropuerto pequeño: bajar, recoger maletas y encontrar el shuttle. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "dro-purgatory-shuttle",
+    "de": "dro",
+    "a": "purgatory",
+    "modo": "shuttle",
+    "horas": 1.0,
+    "rango": "50-75 min (41 millas); +30 min con parada en el súper",
+    "nota": "Shuttle oficial con reservación de 24 h. Puede ser compartido. Con nieve, la US-550 se hace más lenta.",
+    "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+    "confianza": "media"
+   },
+   {
+    "id": "purgatory-dro-shuttle",
+    "de": "purgatory",
+    "a": "dro",
+    "modo": "shuttle",
+    "horas": 1.0,
+    "rango": "50-75 min",
+    "nota": "Para el vuelo de las 17:06, salir de Purgatory hacia las 14:15. El check-out es a las 10:00: pedir dónde guardar maletas.",
+    "fuente": "https://www.purgatory.ski/transportation-and-shuttle-services/",
+    "confianza": "media"
+   },
+   {
+    "id": "dro-espera",
+    "de": "dro",
+    "a": "dro",
+    "modo": "espera",
+    "horas": 1.75,
+    "rango": "1.5-2 h",
+    "nota": "Documentar y pasar seguridad en un aeropuerto chico. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "dro-dfw-vuelo",
+    "de": "dro",
+    "a": "dfw",
+    "modo": "vuelo",
+    "horas": 2.0,
+    "rango": "1 h 55 - 2 h 10",
+    "nota": "Sale 17:06 en D. Tiempo deducido del total de 5 h 20 y la conexión de 1 h 18.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "media"
+   },
+   {
+    "id": "dfw-conexion-regreso-purg",
+    "de": "dfw",
+    "a": "dfw",
+    "modo": "espera",
+    "horas": 1.3,
+    "rango": "1 h 18 programada",
+    "nota": "Conexión corta en Dallas hacia Monterrey. Si se pierde, puede tocar dormir en Dallas.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "alta"
+   },
+   {
+    "id": "dfw-mty-vuelo-purg",
+    "de": "dfw",
+    "a": "mty",
+    "modo": "vuelo",
+    "horas": 2.02,
+    "rango": "1 h 55 - 2 h 10",
+    "nota": "Llega a Monterrey a las 22:26 en D. Después conviene dormir en Monterrey en vez de manejar 4 h de noche.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "media"
+   },
+   {
+    "id": "mty-iah-abq-vuelo",
+    "de": "mty",
+    "a": "abq",
+    "modo": "vuelo",
+    "horas": 5.95,
+    "rango": "5 h 57 con 1 h 59 de conexión en Houston",
+    "nota": "United MTY 12:10 → ABQ 18:07 en D. Incluye la conexión con migración en Houston.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "alta"
+   },
+   {
+    "id": "abq-purgatory-carro",
+    "de": "abq",
+    "a": "purgatory",
+    "modo": "carro",
+    "horas": 4.17,
+    "rango": "4 h - 4 h 30 (244 millas)",
+    "nota": "Manejo largo por la US-550; con una niña de 5 se recomienda partirlo con una noche en Albuquerque.",
+    "fuente": "https://www.powderhounds.com/USA/Colorado/Durango-Purgatory/Getting-There.aspx",
+    "confianza": "media"
+   },
+   {
+    "id": "purgatory-abq-carro",
+    "de": "purgatory",
+    "a": "abq",
+    "modo": "carro",
+    "horas": 4.17,
+    "rango": "4 h - 4 h 30",
+    "nota": "Para el vuelo de las 12:00 hay que salir de Purgatory hacia las 5:30 am.",
+    "fuente": "https://www.powderhounds.com/USA/Colorado/Durango-Purgatory/Getting-There.aspx",
+    "confianza": "media"
+   },
+   {
+    "id": "abq-espera",
+    "de": "abq",
+    "a": "abq",
+    "modo": "espera",
+    "horas": 2.0,
+    "rango": "1.5-2.5 h",
+    "nota": "Devolver el carro, documentar y pasar seguridad. Estimación.",
+    "fuente": null,
+    "confianza": "baja"
+   },
+   {
+    "id": "abq-iah-mty-vuelo",
+    "de": "abq",
+    "a": "mty",
+    "modo": "vuelo",
+    "horas": 5.3,
+    "rango": "5 h 18 con 1 h 16 de conexión en Houston",
+    "nota": "United ABQ 12:00 → MTY 17:18 en D.",
+    "fuente": "https://www.google.com/travel/flights",
+    "confianza": "alta"
    }
   ],
   "itinerarios": {
@@ -5703,6 +7209,33 @@ window.SKIAR = {
     "ida_horas_total": 14.41,
     "regreso_horas_total": 13.33,
     "nota": "Todo en un día, sin manejo de montaña. La duración del vuelo con escala depende del horario de invierno a ASE, que aún no está publicado."
+   },
+   "purgatory": {
+    "ruta": "mty-dro-aa",
+    "ida": [
+     "trc-mty-carro",
+     "mty-estacionamiento",
+     "mty-espera-int",
+     "mty-dfw-vuelo-purg",
+     "dfw-migracion-conexion-purg",
+     "dfw-dro-vuelo",
+     "dro-llegada",
+     "dro-purgatory-shuttle"
+    ],
+    "regreso": [
+     "purgatory-dro-shuttle",
+     "dro-espera",
+     "dro-dfw-vuelo",
+     "dfw-conexion-regreso-purg",
+     "dfw-mty-vuelo-purg",
+     "mty-llegada-migracion",
+     "mty-estacionamiento",
+     "mty-trc-carro"
+    ],
+    "noche_denver": false,
+    "ida_horas_total": 15.23,
+    "regreso_horas_total": 13.07,
+    "nota": "Se llega el mismo domingo, así que en D se duermen 7 noches en la montaña. Saliendo de Torreón el mismo día habría que partir hacia las 2:45 am; lo razonable es dormir en Monterrey el sábado 20. Al regreso se aterriza a las 22:26: conviene dormir en Monterrey y manejar el lunes (hoteles no incluidos)."
    }
   },
   "horario_pistas": {
@@ -5737,6 +7270,14 @@ window.SKIAR = {
     "fuente": "https://www.gosnowmass.com/things-to-do-5/ski-area/stats-dates/",
     "confianza": "media",
     "nota": "Sitio oficial de Snowmass para 2025-26: todos los lifts de 9:00 a 15:30 diario. La góndola Sky Cab (Skittles, Mall ↔ Base Village) opera de 8:00 a 21:00. Las horas 2026-27 no están publicadas."
+   },
+   "purgatory": {
+    "abre": "9:00",
+    "cierra": "16:00",
+    "horas": 7.0,
+    "fuente": "https://www.purgatory.ski/terms-and-conditions/",
+    "confianza": "alta",
+    "nota": "Horario oficial publicado: abierto a diario de 9 am a 4 pm, sujeto a cambios. A fines de marzo algunos telesillas pueden dejar de operar."
    }
   },
   "horario_escuela": {
@@ -5771,6 +7312,14 @@ window.SKIAR = {
     "fuente": "https://www.theavantski.com/aspensnowmass-family",
     "confianza": "baja",
     "nota": "Clase de esquí de 9:30 a 15:00 en el Treehouse (listado de terceros). La guardería del Treehouse abre a las 8:30, pero no se encontró la hora oficial de check-in; probablemente hay que llegar antes de las 9:30."
+   },
+   "purgatory": {
+    "entrega": "9:00",
+    "recoge": "15:00",
+    "horas": 5.5,
+    "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+    "confianza": "alta",
+    "nota": "Entrega desde las 9:00, clase de 9:30 a 15:00 con comida incluida, en The Bear's Den (2º piso de Village Center). Con renta de equipo, llegar 30-60 min antes o recogerlo la tarde anterior."
    }
   },
   "hospedaje_a_escuela_min": {
@@ -5797,6 +7346,12 @@ window.SKIAR = {
     "Viceroy Snowmass": 8,
     "Viewline Resort Snowmass, Autograph Collection (antes Westin Snowmass)": 15,
     "Woodrun Place (condo, Fanny Hill)": 15
+   },
+   "purgatory": {
+    "Village Center, 2 recámaras (mismo edificio de la escuela)": 2,
+    "Kendall Mountain Lodge, 1 recámara": 3,
+    "Cascade Village, 1 recámara (shuttle gratis)": 15,
+    "Peregrine Point, 2 recámaras": 5
    }
   },
   "hospedaje_a_escuela_nota": {
@@ -5893,7 +7448,35 @@ window.SKIAR = {
    "https://www.travelweekly-asia.com/Hotels/Breckenridge-CO/One-Ski-Hill-Place-p8411101",
    "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
    "https://www.zoocasa.com/keystone-co-real-estate/silver-mill-condominiums/8192-140-ida-belle-dr"
-  ]
+  ],
+  "itinerarios_por_ventana": {
+   "D": {
+    "steamboat": {
+     "ruta": "mty-den-viva",
+     "ida": [
+      "trc-mty-carro",
+      "mty-estacionamiento",
+      "mty-espera-int",
+      "mty-den-vuelo",
+      "den-migracion",
+      "den-renta-auto",
+      "den-hotel-carro",
+      "den-steamboat-carro"
+     ],
+     "regreso": [
+      "steamboat-den-carro",
+      "den-devolucion-auto",
+      "den-espera-int",
+      "den-mty-vuelo",
+      "mty-llegada-migracion",
+      "mty-estacionamiento",
+      "mty-trc-carro"
+     ],
+     "noche_denver": true,
+     "nota": "En Semana Santa no hay conexión a Hayden el mismo día, así que se vuela a Denver."
+    }
+   }
+  }
  },
  "nieve": {
   "actualizado": "2026-10-10",
@@ -5936,7 +7519,16 @@ window.SKIAR = {
      "https://www.onthesnow.com/colorado/keystone/historical-snowfall.html?y=0",
      "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/",
      "https://opensnow.com/news/post/2026-2027-colorado-winter-forecast"
-    ]
+    ],
+    "D": {
+     "cm": 137,
+     "bajo": 56,
+     "alto": 208,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "137 cm es la base promedio de marzo en OnTheSnow (54 in). Bajo = base máxima de 2025-26, año muy seco (22 in). Alto = base máxima de 2018-19 (82 in). Keystone cuenta con nieve artificial en las zonas de principiantes.",
+     "fuente": "https://www.onthesnow.com/colorado/keystone/historical-snowfall.html?y=0"
+    }
    },
    "breckenridge": {
     "A": {
@@ -5974,7 +7566,16 @@ window.SKIAR = {
      "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0",
      "https://opensnow.com/dailysnow/breckenridge/post/14778",
      "https://www.denvergazette.com/2026/01/28/colorados-lack-of-snow-pack-hurting-outdoor-industry-could-spell-drought-conditions-this-summer/"
-    ]
+    ],
+    "D": {
+     "cm": 175,
+     "bajo": 66,
+     "alto": 272,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "175 cm es la base promedio de marzo en OnTheSnow (69 in). Bajo = base máxima de 2025-26 (26 in). Alto = base máxima de 2018-19 (107 in). OnTheSnow trae un máximo de marzo de 558 in, evidente error, que no se usó.",
+     "fuente": "https://www.onthesnow.com/colorado/breckenridge/historical-snowfall.html?y=0"
+    }
    },
    "steamboat": {
     "A": {
@@ -6014,7 +7615,16 @@ window.SKIAR = {
      "https://www.steamboatpilot.com/news/snowfall-at-steamboat-resort-this-winter-has-already-surpassed-all-of-last-season/",
      "https://opensnow.com/news/post/2023-2024-steamboat-ski-resort-winter-forecast-preview",
      "https://www.snow-forecast.com/resorts/Steamboat-Ski/snow-report"
-    ]
+    ],
+    "D": {
+     "cm": 152,
+     "bajo": 124,
+     "alto": 234,
+     "confianza": "media",
+     "prob_buena": "media",
+     "nota": "152 cm es la base promedio de marzo en OnTheSnow (60 in). Bajo = base máxima parcial de 2025 (49 in). Alto = base máxima de 2022-23 (92 in). La base de la montaña es la más baja del grupo: a fines de marzo la parte baja puede estar blanda o con nieve primaveral.",
+     "fuente": "https://www.onthesnow.com/colorado/steamboat/historical-snowfall.html?y=0"
+    }
    },
    "snowmass": {
     "A": {
@@ -6053,6 +7663,73 @@ window.SKIAR = {
      "https://coyotegulch.blog/2023/04/22/snowmass-topped-400-inches-of-snowfall-before-closing-the-aspen-daily-news-snowpack/",
      "https://www.freeride.com/snow-report/snowmass/",
      "https://www.denvergazette.com/outtherecolorado/2026/01/05/less-than-10-of-trails-open-at-some-colorado-resorts-amid-snowpack-near-record-lows/"
+    ],
+    "D": {
+     "cm": 150,
+     "bajo": 90,
+     "alto": 257,
+     "confianza": "baja",
+     "prob_buena": "alta",
+     "nota": "Estimado: se parte de 139 cm a inicios de marzo en book/nieve.json. Bajo ≈ 60% de lo normal. Alto = base máxima de 2022-23 (101 in). El promedio de marzo de OnTheSnow para Aspen Snowmass (82 in) convive con errores evidentes en la tabla, así que no se usó.",
+     "fuente": "https://www.onthesnow.com/colorado/aspen-snowmass/historical-snowfall.html?y=0"
+    }
+   },
+   "purgatory": {
+    "A": {
+     "cm": 91,
+     "bajo": 50,
+     "alto": 127,
+     "confianza": "media",
+     "prob_buena": "media",
+     "nota": "Base todavía en formación: unas 36 pulgadas en un año normal. Las verdes de Columbine suelen abrir, con apoyo de nieve artificial. Hace mucho frío.",
+     "acum_cm": 218,
+     "terreno_pct": 75
+    },
+    "B": {
+     "cm": 105,
+     "bajo": 58,
+     "alto": 147,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "Base de unas 41 pulgadas en un año normal, con la mayor parte del terreno abierto y días fríos.",
+     "acum_cm": 270,
+     "terreno_pct": 85
+    },
+    "C": {
+     "cm": 122,
+     "bajo": 67,
+     "alto": 171,
+     "confianza": "media",
+     "prob_buena": "alta",
+     "nota": "La mejor combinación: base cerca de su máximo, buen terreno abierto y días menos fríos.",
+     "acum_cm": 424,
+     "terreno_pct": 90
+    },
+    "D": {
+     "cm": 127,
+     "bajo": 60,
+     "alto": 180,
+     "confianza": "baja",
+     "prob_buena": "media",
+     "nota": "En un año normal todavía hay buena base, pero es nieve de primavera: dura temprano y blanda por la tarde. En años secos el resort recorta telesillas desde el 23 de marzo. La zona de principiantes siguió abierta hasta el 30 de marzo en 2025.",
+     "acum_cm": 491,
+     "terreno_pct": 80,
+     "llenura_semana_santa": {
+      "nivel": "media-baja (estimación)",
+      "nota": "The Colorado Sun reportó multitudes en las vacaciones de primavera de 2025, pero el calendario 2026-27 de Purgatory marca el pico del 15 al 17 de marzo. Del 21 al 26 de marzo el boleto de adulto está en su precio más bajo del mes ($29), señal de que el resort espera poca demanda. Aun así, pueden coincidir familias de vacaciones por Semana Santa.",
+      "fuentes": [
+       "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+       "https://coloradosun.com/2025/03/14/purgatory-budget-cuts"
+      ],
+      "confianza": "media"
+     }
+    },
+    "nevada_anual_cm": 531,
+    "fuentes": [
+     "https://www.onthesnow.com/colorado/durango-mountain-resort/historical-snowfall",
+     "https://www.purgatory.ski/press/spring-skiing-update-schedule-changes-exciting-events-ahead/",
+     "https://opensnow.com/news/post/noaa-2026-2027-winter-forecast",
+     "https://unofficialnetworks.com/2026/09/17/noaa-cpc-updated-winter-outlook/"
     ]
    }
   },
@@ -6286,6 +7963,61 @@ window.SKIAR = {
      "fuente": "https://www.expedia.co.uk/Snowmass-Village-Hotels-Woodrun-Place-02-Two-Bedroom-Residence.h110439338.Hotel-Information",
      "confianza": "media",
      "nota": "Seis unidades de 2 rec.: 1,135-1,207 ft² (mediana ~1,150, 107 m²), con 2-3 baños. La unidad 19 dice 1,619 ft² (150 m², atípica)."
+    }
+   },
+   "purgatory": {
+    "Village Center, 2 recámaras (mismo edificio de la escuela)": {
+     "unidad": "Condo 2 recámaras (402, 406 o 513)",
+     "ft2": 1200,
+     "m2": 111,
+     "rango_m2": "111",
+     "recamaras": 2,
+     "banos": 2,
+     "cocina": "completa",
+     "camas": "King + king + sofá cama queen",
+     "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+     "confianza": "alta",
+     "nota": "Dato oficial de Purgatory: 1200 SQ FT, cupo cómodo 4 y máximo 6. Se puede pedir un roll-away."
+    },
+    "Kendall Mountain Lodge, 1 recámara": {
+     "unidad": "Condo 1 recámara (442, 444 o 543)",
+     "ft2": 950,
+     "m2": 88,
+     "rango_m2": "88",
+     "recamaras": 1,
+     "banos": 1,
+     "cocina": "completa",
+     "camas": "Queen en la recámara + sofá cama queen en la sala",
+     "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+     "confianza": "media",
+     "nota": "Purgatory publica 950 SQ FT, una cifra alta para 1 recámara; conviene confirmar los metros de la unidad asignada."
+    },
+    "Cascade Village, 1 recámara (shuttle gratis)": {
+     "unidad": "Condo 1 recámara (314, 317 o 335)",
+     "ft2": 720,
+     "m2": 67,
+     "rango_m2": "60–70",
+     "estimado": true,
+     "recamaras": 1,
+     "banos": 1,
+     "cocina": "completa",
+     "camas": "Sin publicar; cupo para 4",
+     "fuente": "https://www.expedia.com/es/Durango-Hoteles-Cascade-Village-Loft.h66784807.Informacion-Hotel",
+     "confianza": "baja",
+     "nota": "Purgatory no publica la superficie. Los 720 ft² son de un loft de 1 recámara del mismo complejo, usado solo como referencia. Evitar la 357, descrita como loft: las escaleras no convienen con una niña de 5."
+    },
+    "Peregrine Point, 2 recámaras": {
+     "unidad": "Condo 2 recámaras (103, 203, 206 o 208)",
+     "ft2": 1233,
+     "m2": 115,
+     "rango_m2": "≈115",
+     "recamaras": 2,
+     "banos": 2,
+     "cocina": "completa",
+     "camas": "103: king + litera (matrimonial e individual); las demás varían",
+     "fuente": "https://www.expedia.com/Durango-Hotels-Peregrine-Pointe-203-Managed-By-Purgatory-Resort.h88201313.Hotel-Information",
+     "confianza": "baja",
+     "nota": "Los 1,233 ft² vienen de un solo listado de una unidad del edificio; Purgatory no publica la cifra. La 206 tiene cupo de 4 y las demás de 6."
     }
    }
   }
@@ -6894,7 +8626,7 @@ window.SKIAR = {
    "nombre": "Purgatory",
    "estado": "Colorado",
    "pase": "independiente",
-   "finalista": false,
+   "finalista": true,
    "lat": 37.6303,
    "lng": -107.814,
    "sitio": "https://www.purgatory.ski/",

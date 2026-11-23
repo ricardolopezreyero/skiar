@@ -12,8 +12,9 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BOOK = ROOT / "book"
 FECHA_PRECIOS = "2026-10-10"  # cambiarla solo cuando se revisen los precios
+FECHAS_POR_VENTANA = {"D": "2026-11-22"}
 SITE = ROOT / "site"
-ORDEN = ["keystone", "breckenridge", "steamboat", "snowmass"]
+ORDEN = ["keystone", "breckenridge", "steamboat", "snowmass", "purgatory"]
 
 
 def load(path):
@@ -71,6 +72,7 @@ def main():
 
     payload = {
         "generado": FECHA_PRECIOS,
+        "generado_por_ventana": FECHAS_POR_VENTANA,
         "rama": "claude/dreamy-cori-anrnp2",
         "resorts": resorts,
         "vuelos": load(BOOK / "vuelos.json") or {},

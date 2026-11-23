@@ -1,0 +1,148 @@
+{
+  "Village Center, 2 recámaras (mismo edificio de la escuela)": {
+    "caracteristicas": [
+      "Condo de 2 recámaras de 1,200 ft² (111 m²), con king en cada recámara, 2 baños, sofá cama queen, cocina completa, comedor, chimenea de leña y balcón.",
+      "El edificio alberga la escuela infantil The Bear's Den (2º piso), la renta de equipo, la tienda Expert Edge y Paradise Pizzeria.",
+      "Purgatory lo anuncia como ski-in/ski-out y como unidad pensada para familias con niños.",
+      "Jacuzzi en la azotea, acceso a la alberca y jacuzzi de Purgatory Lodge, garage gratis y lavandería.",
+      "Libres en D al 22-nov: 402, 406 y 513. Mismo precio en las tres.",
+      "Cada unidad tiene su dueño: acabados y decoración pueden variar."
+    ],
+    "recomendacion": {
+      "pedir": "Unidad 402 o 406 (por su número, en el 4º piso), cerca del elevador. Si no, la 513.",
+      "por_que": "Un piso intermedio deja a un elevador de distancia la escuela del 2º piso y evita cargar el equipo por escaleras. Las tres cuestan lo mismo en Semana Santa.",
+      "unidades": [
+        "402",
+        "406",
+        "513"
+      ],
+      "evitar": [
+        "Unidades A o B sueltas: son estudio o 1 recámara y no son la misma oferta.",
+        "Dejar a la niña sola cerca de la chimenea de leña o del balcón."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil The Bear's Den. Si fuera posible, nos encantaría la unidad 402 o 406, o la que quede más cerca del elevador, para bajar fácilmente a su clase con el equipo. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+    "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend The Bear's Den kids' ski school. If at all possible, we'd love unit 402 or 406, or whichever is closest to the elevator, so we can easily take her down to class with her gear. We expect to arrive around [arrival time]. Thank you so much!",
+    "telefono": "+19703852100",
+    "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+    "direccion": "Village Center, #1 Skier Place, Durango, CO 81301",
+    "lat": 37.6302086,
+    "lng": -107.8141426,
+    "fuentes": [
+      "https://www.purgatory.ski/lodge/village-center-402/",
+      "https://www.purgatory.ski/lodge/village-center-504-b/",
+      "https://www.purgatory.ski/mountain/child-lessons/"
+    ]
+  },
+  "Kendall Mountain Lodge, 1 recámara": {
+    "caracteristicas": [
+      "Condo de 1 recámara de 950 ft² publicados (88 m²), con cama queen, sofá cama queen, 1 baño, cocina completa, comedor, chimenea de leña y balcón.",
+      "En la base de las pistas, a pasos de la Plaza, los restaurantes, las taquillas y Village Center.",
+      "Jacuzzi en la azotea, acceso a la alberca y jacuzzi de Purgatory Lodge, estacionamiento gratis y lavandería.",
+      "Village Market & Deli está en el edificio Kendall.",
+      "Libres en D al 22-nov: 442, 444 y 543. La 543 anuncia cama de base ajustable."
+    ],
+    "recomendacion": {
+      "pedir": "Unidad 543 o 442, en piso alto y cerca del elevador.",
+      "por_que": "Quedan a una caminata corta de la escuela y mantienen el mejor precio de los ski-in/ski-out. Un piso alto da mejor vista hacia las Needles.",
+      "unidades": [
+        "543",
+        "442",
+        "444"
+      ],
+      "evitar": [
+        "Estudios de Kendall: tienen cupo para 2.",
+        "Unidades junto a la zona de elevadores si la niña tiene sueño ligero."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil en Village Center. Si fuera posible, nos encantaría la unidad 543 o 442, en un piso alto y cerca del elevador, para caminar poco con su equipo. Agradeceríamos que el sofá cama estuviera listo con ropa de cama para ella. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+    "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend the kids' ski school in the Village Center. If at all possible, we'd love unit 543 or 442, on a higher floor and close to the elevator, so we don't have far to walk with her gear. We'd also appreciate having the sleeper sofa made up for her. We expect to arrive around [arrival time]. Thank you so much!",
+    "telefono": "+19703852100",
+    "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+    "direccion": "Kendall Mountain Lodge, Purgatory Village, #1 Skier Place, Durango, CO 81301",
+    "lat": 37.630719,
+    "lng": -107.814045,
+    "fuentes": [
+      "https://www.purgatory.ski/lodge/kendall-442/",
+      "https://www.purgatory.ski/lodge/kendall-543-5/",
+      "https://www.purgatory.ski/lodge/kendall-351/",
+      "https://www.purgatory.ski/resort-dining/"
+    ]
+  },
+  "Cascade Village, 1 recámara (shuttle gratis)": {
+    "caracteristicas": [
+      "Condo de 1 recámara con cupo para 4, 1 baño, cocina y chimenea de leña. Purgatory no publica los metros ni el tipo de camas.",
+      "A 2 millas al norte de la entrada de Purgatory, al pie de Engineer Mountain, con shuttle de esquí gratis en horarios fijos.",
+      "Alberca techada, jacuzzis, sala de juegos y arcade, gimnasio, guardaesquís, lavandería y garage techado.",
+      "También da acceso a la alberca de Purgatory Lodge.",
+      "Libres en D al 22-nov: 314, 317, 335 y 357; la 357 se describe como loft."
+    ],
+    "recomendacion": {
+      "pedir": "Unidad 314 o 335 en planta accesible, cerca del punto del shuttle.",
+      "por_que": "Se camina menos con la niña y su equipo hasta el shuttle. Evitar el loft reduce el riesgo de escaleras con una niña de 5.",
+      "unidades": [
+        "314",
+        "335",
+        "317"
+      ],
+      "evitar": [
+        "La 357, descrita como loft, aunque sea la más barata.",
+        "Elegir este complejo sin confirmar que el shuttle llega antes de las 9:00."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que irá a la escuela infantil de Purgatory, con entrega a las 9:00. Si fuera posible, nos encantaría la unidad 314 o 335, sin escaleras interiores y cerca de la parada del shuttle. ¿Podrían compartirnos el horario del shuttle para llegar a tiempo cada mañana? Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+    "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who will attend the Purgatory kids' ski school with a 9:00 am drop-off. If at all possible, we'd love unit 314 or 335, with no interior stairs and close to the shuttle stop. Could you please share the shuttle schedule so we can arrive on time each morning? We expect to arrive around [arrival time]. Thank you so much!",
+    "telefono": "+19703852100",
+    "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones); recepción de Cascade: +1 970-259-3500",
+    "direccion": "Cascade Village, 50827 US Hwy 550 N, Durango, CO 81301",
+    "lat": 37.6486188,
+    "lng": -107.8077953,
+    "fuentes": [
+      "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+      "https://www.purgatory.ski/lodge/cascade-village-335/",
+      "https://www.purgatory.ski/lodge/cascade-village-357/",
+      "https://www.purgatory.ski/transportation-and-shuttle-services/",
+      "https://www.durango.org/listing/cascade-village/2255/"
+    ]
+  },
+  "Peregrine Point, 2 recámaras": {
+    "caracteristicas": [
+      "Condo de 2 recámaras y 2 baños con cupo para 6 (la 206, para 4), cocina completa, sala, comedor y balcón privado. Un listado da 1,233 ft² (115 m²).",
+      "A unos metros de los telesillas y frente a la Plaza, con garage con calefacción, cubiertas de granito y electrodomésticos de acero.",
+      "La unidad 103 tiene recámara king y una segunda recámara con litera (matrimonial abajo e individual arriba).",
+      "Alberca climatizada, jacuzzi y gimnasio.",
+      "Libres en D al 22-nov: 103, 203, 206 y 208.",
+      "Purgatory Lodge, el edificio premium, ya no tiene unidades de 2 recámaras libres en D; si se libera alguna, vale la pena compararla."
+    ],
+    "recomendacion": {
+      "pedir": "Unidad 103, por la recámara con litera; por su número estaría en el primer nivel (confirmar).",
+      "por_que": "La niña tendría su propia recámara con la cama de abajo y, si es primer nivel, se carga menos el equipo hasta la Plaza.",
+      "unidades": [
+        "103",
+        "203",
+        "208"
+      ],
+      "evitar": [
+        "Dejar a la niña en la cama superior de la litera.",
+        "La 206 si quieren más amplitud: su cupo es de 4."
+      ],
+      "confianza": "media"
+    },
+    "solicitud_es": "¡Hola! Somos una familia de México con nuestra hija de 5 años, que hará su primer viaje de esquí e irá a la escuela infantil en Village Center. Si fuera posible, nos encantaría la unidad 103, con la recámara de litera para ella, o la unidad disponible más cercana a la Plaza. Llegaremos aprox. a las [hora de llegada]. ¡Muchísimas gracias!",
+    "solicitud_en": "Hi! We are a family from Mexico with our 5-year-old daughter, who is coming on her first ski trip and will attend the kids' ski school in the Village Center. If at all possible, we'd love unit 103, with the bunk room for her, or whichever available unit is closest to the Plaza. We expect to arrive around [arrival time]. Thank you so much!",
+    "telefono": "+19703852100",
+    "telefono_texto": "+1 970-385-2100, ext. 0 (reservaciones de Purgatory)",
+    "direccion": "Peregrine Point, Purgatory Village, #1 Skier Place, Durango, CO 81301",
+    "lat": 37.6284711,
+    "lng": -107.8138957,
+    "fuentes": [
+      "https://www.purgatory.ski/lodge/peregrine-point-103/",
+      "https://www.purgatory.ski/lodge/peregrine-point-203/",
+      "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+      "https://www.purgatory.ski/lodge/purgatory-lodge-305/"
+    ]
+  }
+}

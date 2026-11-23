@@ -1,7 +1,7 @@
 {
   "slug": "steamboat",
   "nombre": "Steamboat",
-  "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes del 19 de noviembre de 2026. Es el más mágico, pero no el más barato.",
+  "resumen": "Pueblo vaquero de verdad con albercas termales en la nieve y la base más baja de los grandes resorts de Colorado (2,103 m); la niña esquía gratis si compran 5 días de adulto antes de que abra la temporada (27 de noviembre, por confirmar). Es el más mágico, pero no el más barato.",
   "magia": [
     "Pueblo del Viejo Oeste: Lincoln Ave y la tienda western F.M. Light & Sons (desde 1905), para comprarle sombrero y botas",
     "Albercas termales en la nieve: Old Town Hot Springs en el centro (toboganes, alberca infantil) y Strawberry Park (pozas naturales; niños sólo de día)",
@@ -76,6 +76,15 @@
           "total_6_noches_con_impuestos_usd": 3347,
           "fuente": "https://www.vacasa.com/usa/Torian-Plum-CO/",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": 756,
+          "total_6_noches_con_impuestos_usd": 4534,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.booking.com/hotel/us/torian-plum.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "alta",
+          "nota": "1 recámara, 65 m². 6 noches: US$3,500 + US$1,034, cancelación gratis antes del 21-ene-2027. 7 noches: US$4,131 + US$1,176, antes del 20-ene-2027."
         }
       },
       "nota_precios": "Estimados. Dato real más cercano: promedios por unidad en Vacasa, sin fecha y sin impuestos (US$231-814; Plaza 403 US$338; Plaza 702 US$486) y un listado de 1 rec. con ~US$303 de promedio. Total = (6 × tarifa + limpieza 200 + damage waiver 120) × 1.204.",
@@ -136,6 +145,15 @@
           "total_6_noches_con_impuestos_usd": 2206,
           "fuente": "https://www.KAYAK.com/Steamboat-Springs-Hotels-The-Steamboat-Grand.61477.ksp",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": 982,
+          "total_6_noches_con_impuestos_usd": 5889,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.steamboat.com/plan-your-trip/lodging/steamboat-grand?arrivalDate=2027-03-22&departureDate=2027-03-28&adultCount=2&childCount=1",
+          "confianza": "media",
+          "nota": "Habitación 2 queens (hasta 4), solo cuarto: US$881.08/noche (6) y US$887.42/noche (7) con cargos + 11.4 % de impuestos locales (calculado)."
         }
       },
       "nota_precios": "Estimados. Dato real más cercano: Expedia, noviembre, US$164-171/noche (US$198-205 con impuestos); Kayak 'desde US$259'; hoteles con jacuzzi en Steamboat, febrero: US$201 entre semana y US$300 en fin de semana. Total = 6 × tarifa × 1.114 (hotel, sin el impuesto STR de 9%). Confirmar si cobran 'resort lodging fee'.",
@@ -197,6 +215,15 @@
           "total_6_noches_con_impuestos_usd": 3666,
           "fuente": "https://vacasa.com/usa/Kutuk-Condos-CO",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": 627,
+          "total_6_noches_con_impuestos_usd": 3760,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.expedia.com/Steamboat-Springs-Hotels-Kutuk-Condominiums.h791198.Hotel-Information?chkin=2027-03-22&chkout=2027-03-28&rm1=a2:c5&currency=USD&locale=en_US",
+          "confianza": "alta",
+          "nota": "Condo de 2 recámaras con loft (duermen 6), queda 1; total con impuestos y cargos."
         }
       },
       "nota_precios": "Estimados. Dato real más cercano: promedios de Vacasa, sin fecha, 2 rec. US$378-392/noche. Total = (6 × tarifa + limpieza 225 + damage waiver 120) × 1.204.",
@@ -254,6 +281,15 @@
           "total_6_noches_con_impuestos_usd": 11893,
           "fuente": "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "disponible": false,
+          "fuente": "https://www.booking.com/hotel/us/one-steamboat-place-307-buck-mountain-2-bedroom.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "baja",
+          "nota": "Sin unidad de 2 recámaras publicada: Booking no tiene disponibilidad en 22-28 ni 21-28 mar; en VRBO solo se vieron unidades de 4 recámaras. Referencia: Misma fecha, unidad mayor: VRBO, 4 recámaras desde US$19,566 por 6 noches. Booking, fecha cercana: 20-23 mar desde US$10,191; no es cotización del viaje."
         }
       },
       "nota_precios": "Estimados. Sólo hay tarifas de verano 2024 (US$641-727/noche). Cargos: resort fee de 16% + impuestos, club fee de US$80/noche y limpieza. Total = (6 × tarifa × 1.16 + 480 + ~350) × 1.204. Hay service fee para huéspedes mayores de 10 años; no aplica a la niña.",
@@ -705,5 +741,27 @@
     "https://www.ski.com/blog/5-days-in-steamboat-a-family-ski-vacation-guide",
     "https://scoutski.com/kutuk-condos",
     "https://www.villasofdistinction.com/villa/colorado/steamboat-springs/crestone-peak-205"
-  ]
+  ],
+  "por_ventana": {
+    "D": {
+      "forfaits": {
+        "adultos_total_usd": 2236,
+        "nina_total_usd": 0,
+        "nina_total_sin_programa_usd": 956,
+        "fuente": "https://shop.steamboat.com/l/winter-lift-tickets/day-lift-tickets/c/daylifttickets",
+        "confianza": "media",
+        "como_comprar": "Boleto 5 de 7 días, US$1,118 c/u. El gratis de la niña se compra antes de abrir la temporada (27-nov); confirmar al 877-262-2628.",
+        "fecha_limite": "Antes de la apertura del 2026-11-27 (último día práctico 2026-11-26; fecha por confirmar)"
+      },
+      "escuela": {
+        "total_5_dias_usd": 2090,
+        "fuente": "https://shop.steamboat.com/l/winter-lessons/group-lessons/p/grouplessons",
+        "confianza": "alta",
+        "incluye": "Sundance/Bandits, 4-6 años, 6 horas al día, 23-27 mar."
+      },
+      "renta_equipo_total_usd": 605,
+      "cierre_temporada": "Sin fecha oficial 2026-27. En 2026 tenía previsto el 12 de abril y adelantó el cierre por falta de nieve. La semana del viaje queda dentro de temporada normal.",
+      "gente": "alta"
+    }
+  }
 }

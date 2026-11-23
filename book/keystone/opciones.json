@@ -75,6 +75,15 @@
           "total_6_noches_con_impuestos_usd": 2340,
           "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "disponible": false,
+          "fuente": "https://www.keystoneresort.com/plan-your-trip/stay/lodging-results.aspx?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1",
+          "confianza": "baja",
+          "nota": "Sin 1 recámara reservable con Keystone: el motor oficial no lista The Timbers en estas fechas y el inventario de Vail en Booking solo trae 3 recámaras. Referencia: Tercero, no cuenta como reserva con Keystone (confirmar Kids Ski Free): Booking «3056 The Timbers Condo», 1 recámara, US$4,065 + US$506 = US$4,571 por 6 noches, cancelación gratis antes del 20-feb-2027 Vail en Booking, Timbers 3 recámaras: US$7,504."
         }
       },
       "link": "https://www.keystoneresort.com/travel-guide/keystone-ski-in-ski-out.aspx",
@@ -131,6 +140,15 @@
           "total_6_noches_con_impuestos_usd": 3240,
           "fuente": "https://www.kayak.com/Keystone-Hotels-Timbers-Lone-Eagle-by-Keystone-Resort.879179.ksp",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "disponible": false,
+          "fuente": "https://www.keystoneresort.com/Plan-Your-Trip/stay/details/Lone-Eagle-Condominiums?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50016722&package=50009155",
+          "confianza": "baja",
+          "nota": "Sin unidad de 2 recámaras en estas fechas: Keystone solo ofrece 3 recámaras/3 baños (LNE3043, queda 1). Referencia: Misma fecha, unidad mayor: 3 recámaras en Keystone US$6,461 con cargos, tarifa anticipada no reembolsable; unos US$7,002 con 8.375 % de impuestos. Expedia: US$7,049 con impuestos."
         }
       },
       "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=LONE-EAGLE-CONDOMINIUMS",
@@ -186,6 +204,15 @@
           "total_6_noches_con_impuestos_usd": 1800,
           "fuente": "https://es.hotels.com/nh10819028/hoteles-en-river-run-keystone-colorado/",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": 352,
+          "total_6_noches_con_impuestos_usd": 2111,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.keystoneresort.com/Plan-Your-Trip/stay/details/Expedition-Station?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50755329&package=50009129",
+          "confianza": "media",
+          "nota": "Expedition Station, 1 recámara/1 baño, directo con Keystone, tarifa Winter Stay Longer: US$1,948 con cargos + 8.375 % de impuestos locales (calculado)."
         }
       },
       "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodging.aspx?Code=RIVER-RUN-CONDOMINIUMS",
@@ -241,6 +268,15 @@
           "total_6_noches_con_impuestos_usd": 1650,
           "fuente": "https://www.hotels.com/ho3635789056",
           "confianza": "baja"
+        },
+        "D": {
+          "noche_usd": 269,
+          "total_6_noches_con_impuestos_usd": 1612,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.booking.com/hotel/us/the-keystone-lodge-and-spa.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "alta",
+          "nota": "Habitación 2 queens, US$1,243 + US$369 de impuestos y cargos, cancelación gratis antes del 20-mar-2027."
         }
       },
       "link": "https://www.keystoneresort.com/plan-your-trip/stay/keystone-lodge-and-spa.aspx",
@@ -691,5 +727,27 @@
     "https://childrenscolorado.org/just-ask-childrens/articles/altitude-sickness",
     "https://en.wikipedia.org/wiki/Comparison_of_Colorado_ski_resorts",
     "https://www.zrankings.com/best-time-to-ski/keystone"
-  ]
+  ],
+  "por_ventana": {
+    "D": {
+      "forfaits": {
+        "adultos_total_usd": 902,
+        "nina_total_usd": 0,
+        "nina_total_sin_programa_usd": 185,
+        "fuente": "https://www.keystoneresort.com/plan-your-trip/lift-access/passes/epic-day-pass?days=5&access=0&restricted=true",
+        "confianza": "alta",
+        "como_comprar": "Epic Day Pass de 5 días (32 Resorts), US$451 c/u. Se vende hasta el 6-dic-2026.",
+        "fecha_limite": "2026-12-06 (el Epic Day Pass deja de venderse después de esta fecha)"
+      },
+      "escuela": {
+        "total_5_dias_usd": 2141,
+        "fuente": "https://www.keystoneresort.com/plan-your-trip/ski-and-ride-lessons/category/child.aspx?ages=Child%205-6&levels=First%20Time&lessonTypes=Group&date=03/23/2027&lessonId=8442",
+        "confianza": "alta",
+        "incluye": "Clase grupal de 5-6 años, día completo con comida, 23-27 mar."
+      },
+      "renta_equipo_total_usd": 714,
+      "cierre_temporada": "Sin fecha oficial 2026-27. OnTheSnow proyecta 4-5 abr 2027; en 2026 cerró el 5 de abril. La semana del viaje queda dentro de temporada.",
+      "gente": "alta"
+    }
+  }
 }

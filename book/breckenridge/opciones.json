@@ -81,6 +81,15 @@
           "fuente": "https://www.redweek.com/posting/R1491908",
           "confianza": "baja",
           "nota": "Estimado: no hay renta para 28 feb-6 mar; rentas reales cercanas: 31 ene-7 feb a $500-571 y 28 mar-4 abr a $514. Promo oficial 'desde $189' posible (vigente hasta 31-may-2027)."
+        },
+        "D": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "disponible": false,
+          "fuente": "https://reservations.grandcolorado.com/book/accommodations?adults=2&children=1&datein=03/22/2027&dateout=03/28/2027&languageid=1&rooms=1",
+          "confianza": "baja",
+          "nota": "Sin disponibilidad 22-28 mar en el motor oficial ni en Booking. Referencia: Fecha más cercana en Booking: 25-28 mar (3 noches) desde US$3,019.50; no es cotización del viaje y no se confirmó si incluye impuestos."
         }
       },
       "link": "https://grandcolorado.com/",
@@ -141,6 +150,15 @@
           "fuente": "https://www.redweek.com/resort/P5849-grand-lodge-on-peak-7",
           "confianza": "media",
           "nota": "Renta real RedWeek 27 feb-6 mar 2027, 1 rec./4 personas: $475/noche, $3,649 por 7 noches antes de impuestos (otra: 28 feb-7 mar a $500/noche)."
+        },
+        "D": {
+          "noche_usd": 1227,
+          "total_6_noches_con_impuestos_usd": 7360,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.booking.com/hotel/us/grand-lodge-on-peak-7-breckenridge123456.html?checkin=2027-03-22&checkout=2027-03-28&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=USD&lang=en-us",
+          "confianza": "alta",
+          "nota": "Departamento de 1 recámara, US$5,922 + US$1,438, cancelación gratis antes del 8-mar-2027."
         }
       },
       "link": "https://www.grandlodgeonpeak7.com/",
@@ -203,6 +221,15 @@
           "fuente": "https://www.hotelplanner.com/Hotels/249528/Reservations-Beaver-Run-Resort-Conference-Center-Breckenridge-620-Village-Rd-80424",
           "confianza": "baja",
           "nota": "Estimado: ancla = estancia verificada mar-2026 a $240.68 promedio; estudio ~$300 con 33% off + 19.01%. Sin descuento ≈ $2,142. Estacionamiento aparte ~$237."
+        },
+        "D": {
+          "noche_usd": 391,
+          "total_6_noches_con_impuestos_usd": 2349,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.breckenridge.com/Plan-Your-Trip/stay/details/Beaver-Run-Resort?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=48849&package=50009115",
+          "confianza": "media",
+          "nota": "Estudio, tarifa Winter Stay Longer en breckenridge.com: US$2,092 con cargos + 12.275 % de impuestos locales (calculado)."
         }
       },
       "link": "https://beaverrun.com/",
@@ -266,6 +293,15 @@
           "fuente": "https://www.villarental.com/villa/colorado/breckenridge/one-ski-hill-place-8513-agate-residence",
           "confianza": "baja",
           "nota": "Estimado: principios de marzo más caro; + resort fee 15.43% + 12.275%."
+        },
+        "D": {
+          "noche_usd": 1224,
+          "total_6_noches_con_impuestos_usd": 7343,
+          "noches": 6,
+          "disponible": true,
+          "fuente": "https://www.breckenridge.com/Plan-Your-Trip/stay/details/One-Ski-Hill-Place-A-RockResort?arrivaldate=03%2F22%2F2027&departuredate=03%2F28%2F2027&childagearray=5&pmi=50&pma=20000&adultcount=2&childcount=1&location=50016617&package=50009115",
+          "confianza": "media",
+          "nota": "1 recámara, tarifa Winter Stay Longer: US$6,540 con cargos + 12.275 % de impuestos locales (calculado)."
         }
       },
       "link": "https://www.breckenridge.com/plan-your-trip/stay/one-ski-hill-place.aspx",
@@ -948,5 +984,27 @@
     "https://ww1.aaa.com/tripcanvas/thing-to-do/breckenridge-ski-rental-packages-for-adult-and-youth-315406P6",
     "https://tripoutside.com/browse/item:Christy_Sports_Dillon:i1w3hsqcmv8ym8q734xfknwwfjxuck27r2d9ekyvtewajrgucvd6kdr",
     "https://www.breckenridge.com/the-mountain/about-the-mountain/capital-investments.aspx"
-  ]
+  ],
+  "por_ventana": {
+    "D": {
+      "forfaits": {
+        "adultos_total_usd": 1164,
+        "nina_total_usd": 303,
+        "nina_total_sin_programa_usd": 303,
+        "fuente": "https://www.breckenridge.com/plan-your-trip/lift-access/passes/epic-day-pass?days=5&access=0&restricted=true",
+        "confianza": "alta",
+        "como_comprar": "Epic Day Pass de 5 días (All Resorts): adulto US$582, niña US$303. Se vende hasta el 6-dic-2026.",
+        "fecha_limite": "2026-12-06 (el Epic Day Pass deja de venderse después de esta fecha)"
+      },
+      "escuela": {
+        "total_5_dias_usd": 1838,
+        "fuente": "https://www.breckenridge.com/plan-your-trip/ski-and-ride-lessons/category/child.aspx?ages=Child%205-6&levels=First%20Time&lessonTypes=Group&date=03/23/2027",
+        "confianza": "alta",
+        "incluye": "Clase grupal de 5-6 años, día completo, 23-27 mar. Precio con el pase de la niña."
+      },
+      "renta_equipo_total_usd": 698,
+      "cierre_temporada": "Sin fecha oficial 2026-27. Un listado de pases indica temporada hasta mediados de abril y Breckenridge suele cerrar más tarde que Keystone. La semana del viaje queda dentro de temporada.",
+      "gente": "alta"
+    }
+  }
 }

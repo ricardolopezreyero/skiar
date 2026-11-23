@@ -380,7 +380,7 @@
     "nombre": "Purgatory",
     "estado": "Colorado",
     "pase": "independiente",
-    "finalista": false,
+    "finalista": true,
     "lat": 37.6303,
     "lng": -107.814,
     "sitio": "https://www.purgatory.ski/",

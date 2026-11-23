@@ -344,7 +344,7 @@ details.tbl[open] > summary::after { content: "▴"; }
   .hint, .hint.small, #hospedaje-hint, .nieve .hint { display: none; }
 
   /* fechas: tres botones compactos */
-  .chips { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .chips { grid-template-columns: repeat(2, 1fr); gap: 6px; }
   .chip { padding: 9px 8px; border-radius: 12px; text-align: center; }
   .chip strong { font-size: .8rem; }
   .chip span { display: none; }

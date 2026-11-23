@@ -1,0 +1,587 @@
+{
+  "slug": "purgatory",
+  "nombre": "Purgatory",
+  "resumen": "La escuela de la niña está dentro del mismo edificio que los mejores condominios y su boleto es gratis toda la temporada, sin fechas bloqueadas. Su punto débil en Semana Santa es el vuelo a Durango, que encarece mucho el viaje.",
+  "magia": [
+    "La escuela infantil (The Bear's Den) está en el 2º piso de Village Center: se puede bajar en elevador desde el condominio.",
+    "Boleto gratis para menores de 13 años todos los días de la temporada, sin fechas bloqueadas (Power Kids).",
+    "Zona de principiantes Columbine, con 2 telesillas y alfombra mágica, donde no se permite esquiar rápido.",
+    "Alberca climatizada con resbaladilla en Purgatory Lodge; los huéspedes de Village Center y Kendall tienen acceso.",
+    "Tubing por la tarde junto a Columbine (desde 3 años; de 3 a 5 años, con 36 pulgadas de estatura y con un adulto).",
+    "Waffles belgas en The Waffle Cabin y pizza con helado en Paradise Pizzeria, a pasos de la escuela.",
+    "Vista a las Needle Mountains desde las pistas y los balcones.",
+    "Tren de vapor Durango & Silverton en la ciudad, para un día sin esquí (confirmar horario de invierno)."
+  ],
+  "costo_beneficio": 7,
+  "altitud_base_m": 2680,
+  "aeropuerto": "DRO",
+  "traslado": "DRO–Purgatory: unas 41 millas (66 km), cerca de 1 hora por Durango y la US-550. Lo más sencillo es el shuttle oficial de Purgatory: $60 por persona por trayecto para 3 pasajeros ($360 redondo), más $25 por una parada de 30 min en el súper de Durango; se reserva con 24 h de anticipación y puede ser compartido. Como todo queda a pie en la villa, no hace falta rentar carro. El total incluye Torreón↔Monterrey (gasolina, casetas y Superpark) y el shuttle; no incluye vuelos.",
+  "ruta": "Torreón → Monterrey en carro (~4 h; conviene dormir en Monterrey el sábado) → American MTY 10:03 → Dallas (migración y conexión de 2 h 21) → Durango DRO 16:31 → shuttle a Purgatory (~1 h). Regreso el domingo: DRO 17:06 → Dallas (conexión de 1 h 18) → MTY 22:26.",
+  "ninos_gratis": "Sí aplica a los 5 años. El Power Kids Pass 2026-27 es gratis para 12 años o menos, sin compra obligatoria y sin fechas bloqueadas, así que Semana Santa sí aplica. Se registra en línea con comprobante de edad (acta de nacimiento) y exención firmada, y la tarjeta se recoge en persona en Purgatory Sports (Main Ave, Durango) o en el Mountain Fulfillment Center del resort; ya no se envía por correo. No hay fecha límite publicada. Alternativa: pedir el boleto infantil gratis del día en taquilla antes de la clase.",
+  "escuela": {
+    "programa": "Purgatory Ski & Snowboard School: Child's Full-Day Lesson, de 4 a 6 años, niveles 1-6 (principiante e intermedio).",
+    "punto_encuentro": "The Bear's Den, 2º piso de Village Center. Entrega desde las 9:00, clase de 9:30 a 15:00, recogida a las 15:00. Con renta de equipo, llegar 30-60 min antes o recoger el equipo la tarde anterior (12:30-16:30, sin costo extra).",
+    "precio_dia_usd": 199,
+    "total_5_dias_usd": 995,
+    "incluye": "Clase de día completo con comida, 4-6 años, en Village Center.",
+    "fuente": "https://www.purgatory.ski/mountain/child-lessons/",
+    "confianza": "alta"
+  },
+  "forfaits": {
+    "adultos_total_usd": 290,
+    "nina_total_usd": 0,
+    "como_comprar": "Boletos por día en store.purgatory.ski; el precio sube al acercarse la fecha.",
+    "fuente": "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+    "confianza": "alta"
+  },
+  "renta_equipo_total_usd": 685,
+  "renta_equipo_nota": "Tarifa oficial 2026-27 en la tienda de la montaña, 5 días, paquete estándar. D (temporada tardía): tope de $44 por adulto y $34 niña; A, B y C (entre semana): $49 y $39. Incluye casco de la niña a $15 por día ($75); sin casco, restar $75. La tienda no muestra el precio exacto por día antes de capturar datos, así que D puede salir más barato (desde $25 por paquete). Fuente: https://www.purgatory.ski/mountain/rentals-service/",
+  "traslados_total_usd": 612,
+  "comida_total_usd": {
+    "cocinando": 730,
+    "restaurantes": 1350
+  },
+  "comida_nota": "Estimado para 7 días (D). Cocinando: súper en Durango ~$280, comidas de 2 adultos en la montaña ~$250 y 2 cenas fuera ~$200. Restaurantes: desayuno, comida y cena. Referencia publicada: bufé de Purgy's $22 adulto y $12 niño. La comida de la niña va incluida en la escuela los días de clase.",
+  "alojamientos": [
+    {
+      "nombre": "Village Center, 2 recámaras (mismo edificio de la escuela)",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Purgatory lo describe como ski-in/ski-out verdadero: el edificio está donde se unen la base principal y la Plaza, y adentro tiene la escuela, la renta de equipo y Paradise Pizzeria.",
+      "distancia_escuela": "Dentro del mismo edificio: la escuela (The Bear's Den) está en el 2º piso; unos 2 min en elevador (estimación).",
+      "recamaras": "2 recámaras (king + king), 2 baños y sofá cama queen; 111 m²",
+      "cocina": true,
+      "amenidades": [
+        "Jacuzzi en la azotea",
+        "Acceso a la alberca climatizada y jacuzzi de Purgatory Lodge, cruzando la Plaza",
+        "Chimenea de leña",
+        "Balcón",
+        "Garage gratis",
+        "Lavandería del edificio",
+        "Wi-Fi"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+          "confianza": "baja",
+          "disponible": false,
+          "unidad_cotizada": "Village Center 402",
+          "nota": "Sin unidades libres en estas fechas.",
+          "referencia_usd": 3705.39
+        },
+        "B": {
+          "noche_usd": 396,
+          "total_6_noches_con_impuestos_usd": 3128,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/village-center-401/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Village Center 401",
+          "nota": "Unidad Village Center 401, tarifa oficial con impuestos."
+        },
+        "C": {
+          "noche_usd": 512,
+          "total_6_noches_con_impuestos_usd": 3969,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Village Center 402",
+          "nota": "Unidad Village Center 402, tarifa oficial con impuestos."
+        },
+        "D": {
+          "noche_usd": 428,
+          "total_6_noches_con_impuestos_usd": 3890,
+          "noches": 7,
+          "fuente": "https://www.purgatory.ski/lodge/village-center-402/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Village Center 402",
+          "nota": "Unidad Village Center 402, tarifa oficial con impuestos."
+        }
+      },
+      "link": "https://www.purgatory.ski/lodge/village-center-402/",
+      "galeria": "https://www.purgatory.ski/lodge/village-center-402/",
+      "pros": [
+        "La niña llega a su clase sin salir del edificio ni cargar equipo por la calle",
+        "Tiene su propia recámara y hay 2 baños",
+        "Renta de equipo y pizzería en el mismo edificio"
+      ],
+      "contras": [
+        "Unos $900 más que el 1 recámara de Kendall en Semana Santa",
+        "Sin aire acondicionado (irrelevante en marzo) y chimenea de leña: cuidado con la niña",
+        "Cada unidad tiene su dueño: la decoración varía",
+        "En enero (fecha A) ya no hay unidades"
+      ],
+      "ideal_si": "Quieren lo más cómodo para la niña: dormir, desayunar y bajar a la escuela sin salir del edificio.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+        "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+        "credito": "Wikimedia Commons (ver página)"
+      }
+    },
+    {
+      "nombre": "Kendall Mountain Lodge, 1 recámara",
+      "tipo": "condo",
+      "ski_in_out": "verdadero",
+      "detalle_acceso": "Kendall está en la base de las pistas, junto a la Plaza, según Purgatory; otra unidad del edificio anuncia ski-in/ski-out con locker a unos pasos de la base.",
+      "distancia_escuela": "A unos pasos, cruzando la Plaza hasta Village Center; aprox. 3 min a pie (estimación con las coordenadas oficiales: unos 60 m).",
+      "recamaras": "1 recámara (queen), 1 baño y sofá cama queen; 88 m²",
+      "cocina": true,
+      "amenidades": [
+        "Jacuzzi en la azotea",
+        "Acceso a la alberca climatizada y jacuzzi de Purgatory Lodge",
+        "Chimenea de leña",
+        "Balcón",
+        "Estacionamiento gratis",
+        "Lavandería del edificio",
+        "Wi-Fi"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+          "confianza": "baja",
+          "disponible": false,
+          "unidad_cotizada": "Kendall 442",
+          "nota": "Sin unidades libres en estas fechas.",
+          "referencia_usd": 2739.54
+        },
+        "B": {
+          "noche_usd": 326,
+          "total_6_noches_con_impuestos_usd": 2558,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Kendall 442",
+          "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+        },
+        "C": {
+          "noche_usd": 395,
+          "total_6_noches_con_impuestos_usd": 3061,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Kendall 442",
+          "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+        },
+        "D": {
+          "noche_usd": 329,
+          "total_6_noches_con_impuestos_usd": 2990,
+          "noches": 7,
+          "fuente": "https://www.purgatory.ski/lodge/kendall-442/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Kendall 442",
+          "nota": "Unidad Kendall 442, tarifa oficial con impuestos."
+        }
+      },
+      "link": "https://www.purgatory.ski/lodge/kendall-442/",
+      "galeria": "https://www.purgatory.ski/lodge/kendall-442/",
+      "pros": [
+        "El mejor precio con ski-in/ski-out real",
+        "A pasos de la escuela, del mercado y de los restaurantes de la Plaza",
+        "Cocina completa y buen espacio para 3"
+      ],
+      "contras": [
+        "Un solo baño",
+        "La niña dormiría en el sofá cama de la sala",
+        "En enero (fecha A) ya no hay unidades"
+      ],
+      "ideal_si": "Quieren ski-in/ski-out real cuidando el presupuesto.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+        "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+        "credito": "Wikimedia Commons (ver página)"
+      }
+    },
+    {
+      "nombre": "Cascade Village, 1 recámara (shuttle gratis)",
+      "tipo": "condo",
+      "ski_in_out": "shuttle",
+      "detalle_acceso": "No está en la pista: queda a 2 millas (3.2 km) al norte de la entrada de Purgatory, con shuttle de esquí gratis en horarios fijos (recepción: 970-259-3500).",
+      "distancia_escuela": "Unos 15 min de puerta a puerta en shuttle gratis, más la espera (estimación).",
+      "recamaras": "1 recámara, 1 baño, cupo para 4; superficie no publicada (referencia: 67 m² en un loft del mismo complejo)",
+      "cocina": true,
+      "amenidades": [
+        "Alberca techada",
+        "Jacuzzis",
+        "Sala de juegos y arcade",
+        "Gimnasio",
+        "Chimenea de leña",
+        "Guardaesquís",
+        "Garage techado",
+        "Lavandería",
+        "Acceso a la alberca de Purgatory Lodge"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": 248,
+          "total_6_noches_con_impuestos_usd": 1926,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Cascade Village 314",
+          "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+        },
+        "B": {
+          "noche_usd": 223,
+          "total_6_noches_con_impuestos_usd": 1757,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Cascade Village 314",
+          "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+        },
+        "C": {
+          "noche_usd": 280,
+          "total_6_noches_con_impuestos_usd": 2151,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Cascade Village 314",
+          "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+        },
+        "D": {
+          "noche_usd": 228,
+          "total_6_noches_con_impuestos_usd": 2066,
+          "noches": 7,
+          "fuente": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Cascade Village 314",
+          "nota": "Unidad Cascade Village 314, tarifa oficial con impuestos."
+        }
+      },
+      "link": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+      "galeria": "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+      "pros": [
+        "El más barato de los cuatro",
+        "Alberca techada y sala de juegos: buen plan para la tarde",
+        "La única opción con cuartos libres en las cuatro fechas"
+      ],
+      "contras": [
+        "Depende del shuttle dos veces al día con la niña y su equipo",
+        "Si la niña se cansa, no se puede regresar caminando",
+        "Hay que confirmar el horario del shuttle antes de la entrada de las 9:00"
+      ],
+      "ideal_si": "El presupuesto pesa más que caminar a la escuela y no les molesta depender del shuttle.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain_Durango.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain_Durango.jpg",
+        "descripcion": "Engineer Mountain nevada, a cuyo pie está Cascade Village",
+        "credito": "einalem / Wikimedia Commons"
+      }
+    },
+    {
+      "nombre": "Peregrine Point, 2 recámaras",
+      "tipo": "condo",
+      "ski_in_out": "caminando",
+      "detalle_acceso": "Purgatory lo ubica a unos metros de los telesillas, frente a la Plaza. Se llega caminando; no se anuncia como ski-in/ski-out directo.",
+      "distancia_escuela": "Frente a la Plaza; aprox. 5 min a pie hasta Village Center con el equipo (estimación con las coordenadas oficiales: unos 200 m).",
+      "recamaras": "2 recámaras, 2 baños, cupo para 6; unos 115 m² (dato de un listado)",
+      "cocina": true,
+      "amenidades": [
+        "Alberca climatizada y jacuzzi",
+        "Cubiertas de granito y electrodomésticos de acero",
+        "Balcón privado",
+        "Garage con calefacción",
+        "Gimnasio",
+        "Wi-Fi"
+      ],
+      "nina_gratis": true,
+      "precios": {
+        "A": {
+          "noche_usd": null,
+          "total_6_noches_con_impuestos_usd": null,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+          "confianza": "baja",
+          "disponible": false,
+          "unidad_cotizada": "Peregrine Point 203",
+          "nota": "Sin unidades libres en estas fechas.",
+          "referencia_usd": 3802.17
+        },
+        "B": {
+          "noche_usd": 396,
+          "total_6_noches_con_impuestos_usd": 3128,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Peregrine Point 208",
+          "nota": "Unidad Peregrine Point 208, tarifa oficial con impuestos."
+        },
+        "C": {
+          "noche_usd": 524,
+          "total_6_noches_con_impuestos_usd": 4059,
+          "noches": 6,
+          "fuente": "https://www.purgatory.ski/lodge/peregrine-point-208-2/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Peregrine Point 208",
+          "nota": "Unidad Peregrine Point 208, tarifa oficial con impuestos."
+        },
+        "D": {
+          "noche_usd": 428,
+          "total_6_noches_con_impuestos_usd": 3895,
+          "noches": 7,
+          "fuente": "https://www.purgatory.ski/lodge/peregrine-point-203/",
+          "confianza": "alta",
+          "disponible": true,
+          "unidad_cotizada": "Peregrine Point 203",
+          "nota": "Unidad Peregrine Point 203, tarifa oficial con impuestos."
+        }
+      },
+      "link": "https://www.purgatory.ski/lodge/peregrine-point-103/",
+      "galeria": "https://www.purgatory.ski/lodge/peregrine-point-103/",
+      "pros": [
+        "El acabado más cuidado de los que siguen libres en Semana Santa",
+        "La unidad 103 tiene un cuarto con litera (matrimonial + individual) para la niña",
+        "Garage con calefacción"
+      ],
+      "contras": [
+        "Cuesta lo mismo que Village Center y queda más lejos de la escuela",
+        "Hay que caminar con el equipo de la niña",
+        "En enero (fecha A) ya no hay unidades"
+      ],
+      "ideal_si": "Priorizan acabados y recámara propia para la niña, y no les importa caminar 5 minutos.",
+      "foto_zona": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+        "pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+        "descripcion": "Vista desde un telesilla de Purgatory hacia la base y los condominios",
+        "credito": "Wikimedia Commons (ver página)"
+      }
+    }
+  ],
+  "fotos": [
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Entrada de Purgatory sobre la carretera US-550",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Purgatory_at_Durango_Mountain_Resort_entrance_gate_and_sign.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Purgatory_at_Durango_Mountain_Resort_entrance_gate_and_sign.JPG",
+      "credito": "Jeffrey Beall / Wikimedia Commons",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Panorámica de Purgatory en otoño",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Purgatory,_Colorado_(37481339960).jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Purgatory,_Colorado_(37481339960).jpg",
+      "credito": "John Fowler / Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "general",
+      "descripcion": "Bosque de álamos en Purgatory al atardecer",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspens_at_Sunset,_Purgatory.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Aspens_at_Sunset,_Purgatory.jpg",
+      "credito": "John Fowler / Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "engineer",
+      "descripcion": "Engineer Mountain nevada, junto a Cascade Village",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain_Durango.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain_Durango.jpg",
+      "credito": "einalem / Wikimedia Commons",
+      "licencia": "CC BY-SA 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "engineer",
+      "descripcion": "Engineer Mountain en verano",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Engineer_Mountain.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Engineer_Mountain.jpg",
+      "credito": "mark byzewski / Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "needles",
+      "descripcion": "Needle Mountains desde el cañón del Animas (imagen histórica)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Needle_Mountains_from_Animas_Canyon,_Colorado-LCCN2008678202.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Needle_Mountains_from_Animas_Canyon,_Colorado-LCCN2008678202.jpg",
+      "credito": "Biblioteca del Congreso de EE. UU. / Wikimedia Commons",
+      "licencia": "Dominio público"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "carretera",
+      "descripcion": "Paso Coal Bank, en la US-550 al norte de Purgatory",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Coal_Bank_Pass_(16065809896).jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Coal_Bank_Pass_(16065809896).jpg",
+      "credito": "Chris M Morris / Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "durango",
+      "descripcion": "Main Avenue, en el centro de Durango",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango_Co,_Main_Avenue_-_panoramio.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango_Co,_Main_Avenue_-_panoramio.jpg",
+      "credito": "Frans-Banja Mulder / Wikimedia Commons",
+      "licencia": "CC BY 3.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "aeropuerto",
+      "descripcion": "Terminal del aeropuerto de Durango (DRO)",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango%E2%80%93La_Plata_County_Airport_terminal_building.JPG?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango%E2%80%93La_Plata_County_Airport_terminal_building.JPG",
+      "credito": "Jeffrey Beall / Wikimedia Commons",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "durango",
+      "descripcion": "Tren de vapor Durango & Silverton por el cañón",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Durango_Silverton_Train.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Durango_Silverton_Train.jpg",
+      "credito": "cwbash / Wikimedia Commons",
+      "licencia": "CC BY 2.0"
+    },
+    {
+      "categoria": "ubicacion",
+      "opcion": "durango",
+      "descripcion": "Locomotora del tren Durango & Silverton",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Train_by_the_Durango_and_Silverton_Narrow_Gauge_Railroad.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:Train_by_the_Durango_and_Silverton_Narrow_Gauge_Railroad.jpg",
+      "credito": "Michael Gäbler / Wikimedia Commons",
+      "licencia": "CC BY 3.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Vista invernal desde Purgatory hacia las montañas",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio.jpg",
+      "credito": "Jacob Montgomery / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Bosque nevado desde la montaña",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio_(1).jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio_(1).jpg",
+      "credito": "Jacob Montgomery / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "pista",
+      "opcion": "general",
+      "descripcion": "Valle y cumbres desde Purgatory en invierno",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Durango_Mountain_Resort_-_panoramio_(2).jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:View_from_Durango_Mountain_Resort_-_panoramio_(2).jpg",
+      "credito": "Jacob Montgomery / Wikimedia Commons",
+      "licencia": "CC BY-SA 3.0"
+    },
+    {
+      "categoria": "alojamiento",
+      "opcion": "village",
+      "descripcion": "Base de Purgatory y sus condominios, vistos desde un telesilla",
+      "url_imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/DurangoMountainResort.jpg?width=1600",
+      "url_pagina": "https://commons.wikimedia.org/wiki/File:DurangoMountainResort.jpg",
+      "credito": "Wikimedia Commons (ver página)",
+      "licencia": "CC BY 3.0"
+    }
+  ],
+  "verificar": [
+    "Visas B1/B2 vigentes de los tres, sobre todo la de la niña.",
+    "DISPONIBILIDAD: el 22-nov quedaban en D solo 3 unidades de 2 recámaras en Village Center (402, 406 y 513) y 3 de 1 recámara en Kendall (442, 444 y 543). Reservar pronto.",
+    "Vuelo: la tarifa de $4,937 es Basic Economy (sin cambios ni selección de asiento gratis). Main Cabin cuesta $5,403 para los 3; confirmar que la niña se siente con un adulto.",
+    "El vuelo sale de Monterrey a las 10:03: para no manejar de madrugada, dormir en Monterrey el sábado 20 (hotel no incluido en el total).",
+    "Cierre: la temporada está programada hasta el 4-abr-2027, pero en 2025-26 cerró el 29 de marzo en vez del 5 de abril, y en 2025 varios telesillas cerraron el 23 de marzo. Revisar la nieve a inicios de marzo.",
+    "Política de cancelación del hospedaje. La cotización de D cobra un anticipo y el resto el 19-feb-2027.",
+    "Power Kids: confirmar con Purgatory Sports (970-385-8901) que se puede registrar a una niña extranjera con acta mexicana; si no, pedir el boleto gratis del día en taquilla.",
+    "Escuela: reservar los 5 días con anticipación y confirmar el precio exacto de la semana del 22 de marzo.",
+    "Shuttle DRO–Purgatory (970-426-7282): reservar con 24 h, confirmar la parada en el súper y el horario del regreso.",
+    "Cascade Village: pedir el horario del shuttle gratis antes de elegirlo.",
+    "Altitud: se duerme a unos 2,680 m. Consultar al pediatra, hidratar a la niña y tomar el primer día con calma.",
+    "No confundir Durango, Colorado (DRO) con Durango, México (DGO) al comprar vuelos."
+  ],
+  "fuentes": [
+    "https://www.purgatory.ski/power-kids-season-pass/",
+    "https://www.purgatory.ski/season-pass-faq/",
+    "https://www.purgatory.ski/mountain/child-lessons/",
+    "https://www.purgatory.ski/mountain/lift-tickets/",
+    "https://store.purgatory.ski/Calendar.aspx?Department=TICKET:WIN&Category=VARIABLE&Item=1DAY&Link=Lift+Tickets",
+    "https://www.purgatory.ski/mountain/rentals-service/",
+    "https://www.purgatory.ski/winter-rentals-faq/",
+    "https://www.purgatory.ski/transportation-and-shuttle-services/",
+    "https://www.purgatory.ski/lodging/",
+    "https://www.purgatory.ski/winter-lodging-deals/",
+    "https://www.purgatory.ski/lodge/village-center-402/",
+    "https://www.purgatory.ski/lodge/kendall-442/",
+    "https://www.purgatory.ski/lodge/cascade-village-314-7/",
+    "https://www.purgatory.ski/lodge/peregrine-point-103/",
+    "https://www.purgatory.ski/resort-dining/",
+    "https://www.purgatory.ski/activities/tubing/",
+    "https://www.purgatory.ski/terms-and-conditions/",
+    "https://www.purgatory.ski/press/spring-skiing-update-schedule-changes-exciting-events-ahead/",
+    "https://www.purgatory.ski/press/mountain-update-how-the-season-has-played-out-and-what-comes-next/",
+    "https://www.onthesnow.com/colorado/durango-mountain-resort/historical-snowfall",
+    "https://www.google.com/travel/flights",
+    "https://www.kayak.com/cars/DRO/2027-03-21-17h/2027-03-28-14h",
+    "https://opensnow.com/news/post/noaa-2026-2027-winter-forecast"
+  ],
+  "comida_dias": 7,
+  "por_ventana": {
+    "A": {
+      "forfaits": {
+        "adultos_total_usd": 550
+      },
+      "escuela": {
+        "total_5_dias_usd": 1045
+      },
+      "renta_equipo_total_usd": 760
+    },
+    "B": {
+      "forfaits": {
+        "adultos_total_usd": 510
+      },
+      "escuela": {
+        "total_5_dias_usd": 1045
+      },
+      "renta_equipo_total_usd": 760
+    },
+    "C": {
+      "forfaits": {
+        "adultos_total_usd": 490
+      },
+      "escuela": {
+        "total_5_dias_usd": 1045
+      },
+      "renta_equipo_total_usd": 760
+    },
+    "D": {
+      "forfaits": {
+        "adultos_total_usd": 290
+      },
+      "escuela": {
+        "total_5_dias_usd": 995
+      },
+      "renta_equipo_total_usd": 685
+    }
+  }
+}

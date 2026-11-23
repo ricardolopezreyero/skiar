@@ -2,21 +2,21 @@
 
 **Ver en vivo: [ricardolopezreyero.github.io/skiar](https://ricardolopezreyero.github.io/skiar/)**
 
-Una página para decidir juntos a dónde ir a esquiar, cuándo y dónde dormir. Compara **Keystone, Breckenridge, Steamboat y Snowmass** para dos adultos y una niña que va a aprender a esquiar. Se abre desde el celular o la computadora, sin usuario ni contraseña.
+Una página para decidir juntos a dónde ir a esquiar, cuándo y dónde dormir. Compara **Keystone, Breckenridge, Steamboat, Snowmass y Purgatory** para dos adultos y una niña que va a aprender a esquiar. Se abre desde el celular o la computadora, sin usuario ni contraseña.
 
-**La recomendación de la investigación es Keystone**, porque el boleto de la niña sale gratis al reservar el hospedaje con el resort y tiene actividades infantiles todos los días. **Steamboat es el plan B** si el pediatra prefiere que duerma a menor altitud.
+**Para la semana favorita, la mejor opción por valor es Purgatory**, con la escuela a pasos del hospedaje y el boleto de la niña gratis. **Keystone es la alternativa** con vuelo directo a Denver y más nieve.
 
 ## Cómo usar la página
 
 | Pestaña | Para qué sirve |
 |---|---|
-| 🧭 **Decidir** | Elegir la semana, el destino y uno de los 16 hospedajes. El total del viaje se recalcula con cada elección. |
+| 🧭 **Decidir** | Elegir la semana, el destino y uno de los 20 hospedajes. El total del viaje se recalcula con cada elección. |
 | ⛷️ **Pistas** | Ver mapas y datos de 40 opciones en Colorado y otros estados. |
 | ✅ **Checklist** | Marcar lo que falta antes de reservar, con su fecha límite. |
 
 **Para compartir la misma checklist:** una persona marca la primera tarea, toca el botón de copiar la liga y se la manda a la otra. Desde esa liga, lo que marque una lo ve la otra. La liga general abre una lista nueva en cada dispositivo.
 
-> **Antes de pagar:** los precios, promociones y fechas límite se investigaron el **10 de octubre de 2026**. Confirma cada dato directo con el resort, el hotel o la aerolínea.
+> **Antes de pagar:** los precios de la semana favorita y los de Purgatory se consultaron el **22 de noviembre de 2026**; el resto, el **10 de octubre de 2026**. Confirma cada dato directo con el resort, el hotel o la aerolínea.
 
 ## Dónde está cada cosa
 
